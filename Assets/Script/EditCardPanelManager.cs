@@ -1,0 +1,319 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class EditCardPanelManager : MonoBehaviour
+{
+    private enum SortStatus
+    {
+        Default,
+        InkSort,
+        ColorSort,
+    }
+
+    private class EditCardPanelTemp
+    {
+        public CardInfo m_CardInfo;
+        public int cardCount;
+
+        public EditCardPanelTemp(CardInfo m_CardInfo, int cardCount)
+        {
+            this.m_CardInfo = m_CardInfo;
+            this.cardCount = cardCount;
+        }
+    }
+
+    public SearchClass m_SearchClass;
+    public string DeckName = "";
+
+    public List<CardInfo> m_CardInfo_TheFirstChapter = new List<CardInfo>();
+    public List<EditCardPanel> m_EditCardPanelList_TheFirstChapter = new List<EditCardPanel>();
+    public List<CardInfo> DeckList = new List<CardInfo>();
+
+    public Sprite Common;
+    public Sprite UnCommon;
+    public Sprite Rare;
+    public Sprite SuperRare;
+    public Sprite Legendary;
+    public Sprite Enchanted;
+    public Sprite Iconic;
+    public Sprite Promo;
+
+    public Sprite DefaultSortIcon;
+    public Sprite InkSortIcon;
+    public Sprite ColorSortIcon;
+    public Sprite DeckAllSwitchBtn1;
+    public Sprite DeckAllSwitchBtn2;
+
+    public GameObject MenuObj;
+    public Image SortImage;
+    public Image DeckAllSwitchBtnImage;
+
+
+    private SortStatus m_SortStatus = SortStatus.Default;
+
+    private bool SwitchOwn= false;
+
+    public void onUpdateDeckList()
+    {
+        DeckList = new List<CardInfo>();
+        for (int i = 0; i < m_EditCardPanelList_TheFirstChapter.Count; i++)
+        {
+            if(m_EditCardPanelList_TheFirstChapter[i] == null)
+            {
+                continue;
+            }
+            int t = m_EditCardPanelList_TheFirstChapter[i].cardCount;
+            if (t == 0)
+            {
+                continue;
+            }
+            for(int k = 0; k < t; k++)
+            {
+                DeckList.Add(m_EditCardPanelList_TheFirstChapter[i].m_CardInfo);
+            }
+        }
+    }
+
+    public void onSearchBtn()
+    {
+        m_SearchClass.Open();
+    }
+
+    public void onSwitchBtn()
+    {
+        if (SwitchOwn)
+        {
+            SwitchOwn = false;
+        }
+        else
+        {
+            SwitchOwn = true;
+        }
+
+        if (SwitchOwn)
+        {
+            for (int i = 0; i < m_EditCardPanelList_TheFirstChapter.Count; i++)
+            {
+                if (m_EditCardPanelList_TheFirstChapter[i] == null)
+                {
+                    continue;
+                }
+                if (m_EditCardPanelList_TheFirstChapter[i].cardCount == 0)
+                {
+                    m_EditCardPanelList_TheFirstChapter[i].SwitchActive(false);
+                }
+                else
+                {
+                    m_EditCardPanelList_TheFirstChapter[i].SwitchActive(true);
+                }
+            }
+            DeckAllSwitchBtnImage.sprite = DeckAllSwitchBtn2;
+        }
+        else
+        {
+            for (int i = 0; i < m_EditCardPanelList_TheFirstChapter.Count; i++)
+            {
+                if (m_EditCardPanelList_TheFirstChapter[i] == null)
+                {
+                    continue;
+                }
+                m_EditCardPanelList_TheFirstChapter[i].SwitchActive(true);
+            }
+            DeckAllSwitchBtnImage.sprite = DeckAllSwitchBtn1;
+        }
+
+    }
+
+    public void onMenuBtn()
+    {
+        MenuObj.SetActive(true);
+    }
+
+    public void onSortBtn()
+    {
+        switch (m_SortStatus)
+        {
+            case SortStatus.Default:
+                m_SortStatus = SortStatus.InkSort;
+                break;
+            case SortStatus.InkSort:
+                m_SortStatus = SortStatus.ColorSort;
+                break;
+            case SortStatus.ColorSort:
+                m_SortStatus = SortStatus.Default;
+                break;
+        }
+
+        switch (m_SortStatus)
+        {
+            case SortStatus.Default:
+                SortImage.sprite = DefaultSortIcon;
+                onDefaultSort(m_CardInfo_TheFirstChapter);
+                break;
+            case SortStatus.InkSort:
+                SortImage.sprite = InkSortIcon;
+                onInkCostSort(m_CardInfo_TheFirstChapter);
+                break;
+            case SortStatus.ColorSort:
+                SortImage.sprite = ColorSortIcon;
+                onColorSort(m_CardInfo_TheFirstChapter);
+                break;
+        }
+    }
+
+    private void onDefaultSort(List<CardInfo> paramaterList)
+    {
+        List<EditCardPanelTemp> EditCardPanelTempList = new List<EditCardPanelTemp>();
+        List<EditCardPanelTemp> temp_return = new List<EditCardPanelTemp>();
+
+        for (int i = 0; i < m_EditCardPanelList_TheFirstChapter.Count; i++)
+        {
+            if (m_EditCardPanelList_TheFirstChapter[i] == null)
+            {
+                continue;
+            }
+            EditCardPanelTemp m_EditCardPanelTemp = new EditCardPanelTemp(m_EditCardPanelList_TheFirstChapter[i].m_CardInfo, m_EditCardPanelList_TheFirstChapter[i].cardCount);
+            EditCardPanelTempList.Add(m_EditCardPanelTemp);
+        }
+
+        for (int k = 0; k < paramaterList.Count; k++)
+        {
+            for (int i = 0; i < EditCardPanelTempList.Count; i++)
+            {
+                if (EditCardPanelTempList[i] == null)
+                {
+                    continue;
+                }
+
+                if (EditCardPanelTempList[i].m_CardInfo == paramaterList[k])
+                {
+                    temp_return.Add(EditCardPanelTempList[i]);
+                    EditCardPanelTempList[i] = null;
+                    continue;
+                }
+            }
+        }
+
+        for (int i = 0; i < temp_return.Count; i++)
+        {
+            CardInfo c = temp_return[i].m_CardInfo;
+            int n = temp_return[i].cardCount;
+            m_EditCardPanelList_TheFirstChapter[i].SetEditCardPanel(c, n);
+
+            if (SwitchOwn)
+            {
+                if (n == 0)
+                {
+                    m_EditCardPanelList_TheFirstChapter[i].SwitchActive(false);
+                }
+                else
+                {
+                    m_EditCardPanelList_TheFirstChapter[i].SwitchActive(true);
+                }
+            }
+        }
+    }
+
+    private void onInkCostSort(List<CardInfo> paramaterList)
+    {
+        List<EditCardPanelTemp> EditCardPanelTempList = new List<EditCardPanelTemp>();
+        List<EditCardPanelTemp> temp_return = new List<EditCardPanelTemp>();
+
+        for (int i = 0; i < m_EditCardPanelList_TheFirstChapter.Count; i++)
+        {
+            if (m_EditCardPanelList_TheFirstChapter[i] == null)
+            {
+                continue;
+            }
+            EditCardPanelTemp m_EditCardPanelTemp = new EditCardPanelTemp(m_EditCardPanelList_TheFirstChapter[i].m_CardInfo, m_EditCardPanelList_TheFirstChapter[i].cardCount);
+            EditCardPanelTempList.Add(m_EditCardPanelTemp);
+        }
+
+        for(int k = 0; k < 11; k++)
+        {
+            for (int i = 0; i < EditCardPanelTempList.Count; i++)
+            {
+                if(EditCardPanelTempList[i] == null)
+                {
+                    continue;
+                }
+
+                if (EditCardPanelTempList[i].m_CardInfo.GetInkCost() == k)
+                {
+                    temp_return.Add(EditCardPanelTempList[i]);
+                    EditCardPanelTempList[i] = null;
+                    continue;
+                }
+            }
+        }
+
+        for (int i = 0; i < temp_return.Count; i++)
+        {
+            CardInfo c = temp_return[i].m_CardInfo;
+            int n = temp_return[i].cardCount;
+            m_EditCardPanelList_TheFirstChapter[i].SetEditCardPanel(c, n);
+
+            if (SwitchOwn)
+            {
+                if (n == 0)
+                {
+                    m_EditCardPanelList_TheFirstChapter[i].SwitchActive(false);
+                }
+                else
+                {
+                    m_EditCardPanelList_TheFirstChapter[i].SwitchActive(true);
+                }
+            }
+        }
+    }
+
+    private void onColorSort(List<CardInfo> paramaterList)
+    {
+        /*List<CardInfo> temp = new List<CardInfo>();
+        List<CardInfo> temp_return = new List<CardInfo>();
+
+        for (int i = 0; i < paramaterList.Count; i++)
+        {
+            if (paramaterList[i] == null)
+            {
+                continue;
+            }
+            temp.Add(paramaterList[i]);
+        }
+
+        List<EnumController.Colors> enumColorList = new List<EnumController.Colors>() { EnumController.Colors.Amber, EnumController.Colors.Amethyst, EnumController.Colors.Emerald, EnumController.Colors.Ruby, EnumController.Colors.Sapphire, EnumController.Colors.Steel };
+
+        foreach (EnumController.Colors k in enumColorList)
+        {
+            for (int i = 0; i < temp.Count; i++)
+            {
+                if (temp[i] == null)
+                {
+                    continue;
+                }
+                List<EnumController.Colors> colorList = temp[i].GetColor();
+                if (colorList.Count > 1)
+                {
+                    continue;
+                }
+                else
+                {
+                    if (colorList[0] == k)
+                    {
+                        temp_return.Add(temp[i]);
+                        temp[i] = null;
+                        continue;
+                    }
+                }
+            }
+        }
+
+        for (int i = 0; i < temp_return.Count; i++)
+        {
+            m_EditCardPanelList_TheFirstChapter[i].SetEditCardPanel(temp_return[i]);
+        }*/
+    }
+}
