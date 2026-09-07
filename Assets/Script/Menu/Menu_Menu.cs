@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Menu_Menu : MonoBehaviour
 {
@@ -43,6 +44,10 @@ public class Menu_Menu : MonoBehaviour
         {
             m_Text.text = e.ToString();
         }
+    }
 
+    public void onNewProjectBtn()
+    {
+        SceneManager.LoadScene("DeckBuild");
     }
 }

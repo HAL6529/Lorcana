@@ -120,7 +120,6 @@
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_013_JA_01.cs" />
     <Compile Include="Assets\Script\Menu\Menu_SelectDeckPanel.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_029_JA_01.cs" />
-    <Compile Include="Assets\Script\Menu\NewDeckDialog.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_188_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_191_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_108_JA_01.cs" />

@@ -68,7 +68,10 @@ public class EnumController
 
     public enum OKBtnParamater
     {
+        FailedFileCreate,
         NamelessError,
+        NotFoundSecureDataPass,
+        SuccessFileCreate,
     }
 
     public enum Title

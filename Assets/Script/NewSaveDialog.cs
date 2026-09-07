@@ -32,6 +32,8 @@ public class NewSaveDialog : MonoBehaviour
         string SecureDataPass = m_ExtendUtil.GetSecureDataPath();
         if (SecureDataPass == "")
         {
+            m_DialogManager.AllClose();
+            m_DialogManager.OKDialog_Open(EnumController.OKBtnParamater.NotFoundSecureDataPass);
             return;
         }
 
@@ -57,12 +59,18 @@ public class NewSaveDialog : MonoBehaviour
             using (AndroidJavaObject cachedFile = new AndroidJavaObject("java.io.File", pass, file)) 
             {
                 cachedFile.Call<bool>("createNewFile");
-            } 
+            }
+            m_DialogManager.AllClose();
+            m_DialogManager.OKDialog_Open(EnumController.OKBtnParamater.SuccessFileCreate);
+            return;
         }
         catch (Exception e)
         {
             Debug.Log(e);
         }
+        m_DialogManager.AllClose();
+        m_DialogManager.OKDialog_Open(EnumController.OKBtnParamater.FailedFileCreate);
+        return;
     }
 
     private string CreateSaveData()
