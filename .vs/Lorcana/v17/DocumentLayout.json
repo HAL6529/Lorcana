@@ -3,48 +3,64 @@
   "WorkspaceRootPath": "C:\\Users\\matty\\Unity\\Lorcana\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\Util\\ExtendUtil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\Util\\ExtendUtil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\Menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\Menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\ViewMode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\ViewMode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\Menu\\Menu_Menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\Menu\\Menu_Menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\EditCardPanelManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\EditCardPanelManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\NewSaveDialog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\NewSaveDialog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\EditCardPanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\EditCardPanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\CardInfo\\CardInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\CardInfo\\CardInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\EnumController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\EnumController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\CardInfo\\TheFirstChapter\\CardInfo_171_JA_01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\CardInfo\\TheFirstChapter\\CardInfo_171_JA_01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\Menu\\Menu_SelectDeckPanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\Menu\\Menu_SelectDeckPanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\PanelPicture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\PanelPicture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Assets\\OKDialog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\OKDialog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\SearchClass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\SearchClass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\CardInfo\\TheFirstChapter\\CardInfo_170_JA_01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\CardInfo\\TheFirstChapter\\CardInfo_170_JA_01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\DialogManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\DialogManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\ExtendUtil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\ExtendUtil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\EnumController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\EnumController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\EditCardPanelManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\EditCardPanelManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\CardInfo\\CardInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\CardInfo\\CardInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\CardInfo\\TheFirstChapter\\CardInfo_171_JA_01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\CardInfo\\TheFirstChapter\\CardInfo_171_JA_01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\CardInfo\\TheFirstChapter\\CardInfo_170_JA_01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\CardInfo\\TheFirstChapter\\CardInfo_170_JA_01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,45 +70,111 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "ExtendUtil.cs",
-              "DocumentMoniker": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\ExtendUtil.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\ExtendUtil.cs",
-              "ToolTip": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\ExtendUtil.cs",
-              "RelativeToolTip": "Assets\\Script\\ExtendUtil.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAADEAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-25T08:37:02.403Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "EnumController.cs",
               "DocumentMoniker": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\EnumController.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\EnumController.cs",
               "ToolTip": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\EnumController.cs",
               "RelativeToolTip": "Assets\\Script\\EnumController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAEYAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-28T13:38:56.982Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Menu_SelectDeckPanel.cs",
+              "DocumentMoniker": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\Menu\\Menu_SelectDeckPanel.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Menu\\Menu_SelectDeckPanel.cs",
+              "ToolTip": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\Menu\\Menu_SelectDeckPanel.cs",
+              "RelativeToolTip": "Assets\\Script\\Menu\\Menu_SelectDeckPanel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-18T23:17:28.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Menu_Menu.cs",
+              "DocumentMoniker": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\Menu\\Menu_Menu.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Menu\\Menu_Menu.cs",
+              "ToolTip": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\Menu\\Menu_Menu.cs",
+              "RelativeToolTip": "Assets\\Script\\Menu\\Menu_Menu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-13T13:48:53.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NewSaveDialog.cs",
+              "DocumentMoniker": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\NewSaveDialog.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\NewSaveDialog.cs",
+              "ToolTip": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\NewSaveDialog.cs",
+              "RelativeToolTip": "Assets\\Script\\NewSaveDialog.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA0AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-14T05:30:55.482Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ExtendUtil.cs",
+              "DocumentMoniker": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\Util\\ExtendUtil.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Util\\ExtendUtil.cs",
+              "ToolTip": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\Util\\ExtendUtil.cs",
+              "RelativeToolTip": "Assets\\Script\\Util\\ExtendUtil.cs",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAAAI8AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-14T05:54:12.088Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ViewMode.cs",
-              "DocumentMoniker": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\ViewMode.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\ViewMode.cs",
-              "ToolTip": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\ViewMode.cs",
-              "RelativeToolTip": "Assets\\Script\\ViewMode.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAgAAAAAAAAAA==",
+              "Title": "Menu.cs",
+              "DocumentMoniker": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\Menu.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\Menu.cs",
+              "ToolTip": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\Menu.cs",
+              "RelativeToolTip": "Assets\\Script\\Menu.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAEAAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-20T13:28:24.367Z",
+              "WhenOpened": "2026-07-01T15:50:50.466Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "OKDialog.cs",
+              "DocumentMoniker": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\OKDialog.cs",
+              "RelativeDocumentMoniker": "Assets\\OKDialog.cs",
+              "ToolTip": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\OKDialog.cs",
+              "RelativeToolTip": "Assets\\OKDialog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-16T15:02:08.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DialogManager.cs",
+              "DocumentMoniker": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\DialogManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\DialogManager.cs",
+              "ToolTip": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\DialogManager.cs",
+              "RelativeToolTip": "Assets\\Script\\DialogManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-14T05:39:05.999Z",
               "EditorCaption": ""
             },
             {
@@ -105,11 +187,12 @@
               "RelativeToolTip": "Assets\\Script\\SearchClass.cs",
               "ViewState": "AgIAAEgAAAAAAAAAAAAlwGUAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-09T13:06:36.96Z"
+              "WhenOpened": "2026-07-09T13:06:36.96Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 13,
               "Title": "CardInfo_171_JA_01.cs",
               "DocumentMoniker": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\CardInfo\\TheFirstChapter\\CardInfo_171_JA_01.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\CardInfo\\TheFirstChapter\\CardInfo_171_JA_01.cs",
@@ -121,7 +204,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 14,
               "Title": "CardInfo_170_JA_01.cs",
               "DocumentMoniker": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\CardInfo\\TheFirstChapter\\CardInfo_170_JA_01.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\CardInfo\\TheFirstChapter\\CardInfo_170_JA_01.cs",
@@ -133,20 +216,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Menu.cs",
-              "DocumentMoniker": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\Menu.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\Menu.cs",
-              "ToolTip": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\Menu.cs",
-              "RelativeToolTip": "Assets\\Script\\Menu.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-01T15:50:50.466Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "PanelPicture.cs",
               "DocumentMoniker": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\PanelPicture.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\PanelPicture.cs",
@@ -154,37 +224,38 @@
               "RelativeToolTip": "Assets\\Script\\PanelPicture.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-25T14:56:56.907Z"
+              "WhenOpened": "2026-06-25T14:56:56.907Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "EditCardPanel.cs",
               "DocumentMoniker": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\EditCardPanel.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\EditCardPanel.cs",
               "ToolTip": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\EditCardPanel.cs",
               "RelativeToolTip": "Assets\\Script\\EditCardPanel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-25T08:33:20.346Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 11,
               "Title": "EditCardPanelManager.cs",
               "DocumentMoniker": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\EditCardPanelManager.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\EditCardPanelManager.cs",
               "ToolTip": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\EditCardPanelManager.cs",
               "RelativeToolTip": "Assets\\Script\\EditCardPanelManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAL8AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-25T08:33:00.749Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 12,
               "Title": "CardInfo.cs",
               "DocumentMoniker": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\CardInfo\\CardInfo.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\CardInfo\\CardInfo.cs",
@@ -192,8 +263,7 @@
               "RelativeToolTip": "Assets\\Script\\CardInfo\\CardInfo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-25T08:31:13.245Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-25T08:31:13.245Z"
             }
           ]
         }

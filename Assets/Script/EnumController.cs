@@ -66,6 +66,11 @@ public class EnumController
 
     }
 
+    public enum OKBtnParamater
+    {
+        NamelessError,
+    }
+
     public enum Title
     {
         Aladdin, //ƒAƒ‰ƒWƒ“

@@ -1250,6 +1250,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_sprite: {fileID: 1088994396019164146}
+  i_Base1: {fileID: 0}
+  i_Base2: {fileID: 0}
+  i_class: {fileID: 0}
+  i_label: {fileID: 0}
+  i_power: {fileID: 0}
+  i_toughness: {fileID: 0}
   inkCost: {fileID: 9032559299604354418}
   cardName1: {fileID: 492203221679149287}
   cardName2: {fileID: 6020156214211703890}
@@ -1406,6 +1412,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_sprite: {fileID: 1606651792305230583}
+  i_Base1: {fileID: 0}
+  i_Base2: {fileID: 0}
+  i_class: {fileID: 0}
+  i_label: {fileID: 0}
+  i_power: {fileID: 0}
+  i_toughness: {fileID: 0}
   inkCost: {fileID: 2029192996737403448}
   cardName1: {fileID: 8206560995878115089}
   cardName2: {fileID: 5333025320472938492}
@@ -3178,6 +3190,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_sprite: {fileID: 3444209735773955006}
+  i_Base1: {fileID: 0}
+  i_Base2: {fileID: 0}
+  i_class: {fileID: 0}
+  i_label: {fileID: 0}
+  i_power: {fileID: 0}
+  i_toughness: {fileID: 0}
   inkCost: {fileID: 5209884840192165213}
   cardName1: {fileID: 6894878061465686009}
   cardName2: {fileID: 786514515931510665}
@@ -5279,6 +5297,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_sprite: {fileID: 1274880487271103612}
+  i_Base1: {fileID: 0}
+  i_Base2: {fileID: 0}
+  i_class: {fileID: 0}
+  i_label: {fileID: 0}
+  i_power: {fileID: 0}
+  i_toughness: {fileID: 0}
   inkCost: {fileID: 7996211851411915122}
   cardName1: {fileID: 5619453212466196401}
   cardName2: {fileID: 3744378461533369917}
@@ -7418,6 +7442,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_sprite: {fileID: 110780244470900099}
+  i_Base1: {fileID: 0}
+  i_Base2: {fileID: 0}
+  i_class: {fileID: 0}
+  i_label: {fileID: 0}
+  i_power: {fileID: 0}
+  i_toughness: {fileID: 0}
   inkCost: {fileID: 5995614893020257327}
   cardName1: {fileID: 928711946761949895}
   cardName2: {fileID: 1268417264382918532}
@@ -11422,6 +11452,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_sprite: {fileID: 337431539957262062}
+  i_Base1: {fileID: 0}
+  i_Base2: {fileID: 0}
+  i_class: {fileID: 0}
+  i_label: {fileID: 0}
+  i_power: {fileID: 0}
+  i_toughness: {fileID: 0}
   inkCost: {fileID: 2080410050393103165}
   cardName1: {fileID: 6224027736201018199}
   cardName2: {fileID: 3413415721431889260}
@@ -12256,6 +12292,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_sprite: {fileID: 3881870573948240560}
+  i_Base1: {fileID: 0}
+  i_Base2: {fileID: 0}
+  i_class: {fileID: 0}
+  i_label: {fileID: 0}
+  i_power: {fileID: 0}
+  i_toughness: {fileID: 0}
   inkCost: {fileID: 8779366915256437629}
   cardName1: {fileID: 4797192520065926736}
   cardName2: {fileID: 4033158572646161850}
@@ -17070,6 +17112,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_sprite: {fileID: 567870472865781852}
+  i_Base1: {fileID: 0}
+  i_Base2: {fileID: 0}
+  i_class: {fileID: 0}
+  i_label: {fileID: 0}
+  i_power: {fileID: 0}
+  i_toughness: {fileID: 0}
   inkCost: {fileID: 2524598835004273184}
   cardName1: {fileID: 4158681221003160828}
   cardName2: {fileID: 8547375592093045608}
@@ -23417,8 +23465,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 224681253261507248}
   m_HandleRect: {fileID: 1337255348683058640}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.49061102
+  m_Value: 0
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -31092,6 +31140,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_sprite: {fileID: 3349854244063685071}
+  i_Base1: {fileID: 0}
+  i_Base2: {fileID: 0}
+  i_class: {fileID: 0}
+  i_label: {fileID: 0}
+  i_power: {fileID: 0}
+  i_toughness: {fileID: 0}
   inkCost: {fileID: 2202580595364058150}
   cardName1: {fileID: 4429052175440095101}
   cardName2: {fileID: 6988921425229674608}
@@ -31886,6 +31940,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_sprite: {fileID: 4113554912188833801}
+  i_Base1: {fileID: 0}
+  i_Base2: {fileID: 0}
+  i_class: {fileID: 0}
+  i_label: {fileID: 0}
+  i_power: {fileID: 0}
+  i_toughness: {fileID: 0}
   inkCost: {fileID: 96352942537715977}
   cardName1: {fileID: 2124603495784192682}
   cardName2: {fileID: 9216458783204710737}
@@ -34191,8 +34251,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c0cda16a08ec8c43a5a87057b9fd68e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_CardInfoList: []
-  m_EditCardPanelList: []
+  m_SearchClass: {fileID: 0}
+  DeckName: 
+  m_CardInfo_TheFirstChapter: []
+  m_EditCardPanelList_TheFirstChapter: []
+  DeckList: []
   Common: {fileID: 21300000, guid: 0622fdf52995a2c48a1dfa28fe92768b, type: 3}
   UnCommon: {fileID: 21300000, guid: 0220d71bef78c8842a147ebd137d66a1, type: 3}
   Rare: {fileID: 21300000, guid: 172696ea001eb1d4e81712864b6da9a8, type: 3}
@@ -34201,6 +34264,14 @@ MonoBehaviour:
   Enchanted: {fileID: 0}
   Iconic: {fileID: 0}
   Promo: {fileID: 0}
+  DefaultSortIcon: {fileID: 0}
+  InkSortIcon: {fileID: 0}
+  ColorSortIcon: {fileID: 0}
+  DeckAllSwitchBtn1: {fileID: 0}
+  DeckAllSwitchBtn2: {fileID: 0}
+  MenuObj: {fileID: 0}
+  SortImage: {fileID: 0}
+  DeckAllSwitchBtnImage: {fileID: 0}
 --- !u!1 &7684977289707744148
 GameObject:
   m_ObjectHideFlags: 0
@@ -34680,6 +34751,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_sprite: {fileID: 7708801423815991118}
+  i_Base1: {fileID: 0}
+  i_Base2: {fileID: 0}
+  i_class: {fileID: 0}
+  i_label: {fileID: 0}
+  i_power: {fileID: 0}
+  i_toughness: {fileID: 0}
   inkCost: {fileID: 6254978386839912681}
   cardName1: {fileID: 3488376441955306690}
   cardName2: {fileID: 5851516064035427596}
@@ -36526,7 +36603,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 4164854426369991499}
   m_Direction: 0
   m_Value: 0
-  m_Size: 1
+  m_Size: 0.5
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
