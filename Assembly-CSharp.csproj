@@ -102,6 +102,7 @@
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_151_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_184_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_042_JA_01.cs" />
+    <Compile Include="Assets\Script\Menu\SaveData.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_128_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_165_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_121_JA_01.cs" />

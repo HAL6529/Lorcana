@@ -33,16 +33,24 @@ public class Menu_Menu : MonoBehaviour
             else
             {
                 m_Text.text = "ëŒè€Ç†ÇË";
-                list[0].SetText(SaveDataList[0]);
             }
 
-            for (int i = 0; i < SaveDataList.Count; i++)
+            for (int i = 0; i < list.Count; i++)
             {
-                m_Text.text += ", " + SaveDataList[i];
+                if(i > SaveDataList.Count - 1)
+                {
+                    list[i].SetText("");
+                    continue;
+                }
+                list[i].SetText(SaveDataList[i]);
             }
         }catch(Exception e)
         {
             m_Text.text = e.ToString();
+            for (int i = 0; i < list.Count; i++)
+            {
+                list[i].SetText("");
+            }
         }
     }
 

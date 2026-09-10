@@ -9,6 +9,15 @@ public class Menu_SelectDeckPanel : MonoBehaviour
 
     public void SetText(string s)
     {
-        m_Text.text = s;
+        if(s == "")
+        {
+            m_Text.text = "";
+            this.gameObject.SetActive(false);
+        }
+        else
+        {
+            m_Text.text = s;
+            this.gameObject.SetActive(true);
+        }
     }
 }

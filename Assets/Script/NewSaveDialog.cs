@@ -44,22 +44,17 @@ public class NewSaveDialog : MonoBehaviour
             return;
         }
 
-        //string pass = SecureDataPass + "/Save";
-
         string pass = SecureDataPass;
         string file = m_ExtendUtil.ConvertToUTF8FromString(m_InputField.text) + Extension;
 
         try
         {
-            /*AndroidJavaClass unityPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
-            AndroidJavaObject currentActivity = unityPlayer.GetStatic<AndroidJavaObject>("currentActivity");
-            AndroidJavaObject cacheDir = currentActivity.Call<AndroidJavaObject>("getCacheDir");*/
-
-            // Create a File object pointing to a new file in the cache directory
-            using (AndroidJavaObject cachedFile = new AndroidJavaObject("java.io.File", pass, file)) 
+            FileStream fs = File.Create(SecureDataPass + "/" + file);
+            fs.Close();
+            /*using (AndroidJavaObject cachedFile = new AndroidJavaObject("java.io.File", pass, file)) 
             {
                 cachedFile.Call<bool>("createNewFile");
-            }
+            }*/
             m_DialogManager.AllClose();
             m_DialogManager.OKDialog_Open(EnumController.OKBtnParamater.SuccessFileCreate);
             return;
