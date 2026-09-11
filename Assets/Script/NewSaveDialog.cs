@@ -1,5 +1,6 @@
 using System;
 using System.IO;
+using System.Text;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -51,10 +52,13 @@ public class NewSaveDialog : MonoBehaviour
         {
             FileStream fs = File.Create(SecureDataPass + "/" + file);
             fs.Close();
-            /*using (AndroidJavaObject cachedFile = new AndroidJavaObject("java.io.File", pass, file)) 
-            {
-                cachedFile.Call<bool>("createNewFile");
-            }*/
+
+            // 文字コードを指定
+            Encoding enc = Encoding.GetEncoding("utf-8");
+
+            StreamWriter sw = new StreamWriter(SecureDataPass + "/" + file, false, enc);
+            sw.Write(CreateSaveData());
+
             m_DialogManager.AllClose();
             m_DialogManager.OKDialog_Open(EnumController.OKBtnParamater.SuccessFileCreate);
             return;
@@ -70,7 +74,7 @@ public class NewSaveDialog : MonoBehaviour
 
     private string CreateSaveData()
     {
-        string SaveData = "";
+        string SaveData = m_InputField.text;
         List<CardInfo> list = m_EditCardPanelManager.DeckList;
         for (int i = 0; i < m_EditCardPanelManager.DeckList.Count; i++)
         {

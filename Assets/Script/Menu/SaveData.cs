@@ -4,15 +4,48 @@ using UnityEngine;
 
 public class SaveData
 {
-    private static string DeckTitle;
+    private string DeckTitle;
 
-    private static CardInfo m_CardInfo;
+    private CardInfo m_CardInfo;
 
-    private static List<CardInfo> m_CardInfoList = new List<CardInfo>();
+    private CardInfo favoriteCard;
+
+    private List<CardInfo> m_CardInfoList = new List<CardInfo>();
+
+    private ExtendUtil m_ExtendUtil = new ExtendUtil();
+
+    public SaveData()
+    {
+
+    }
 
     public SaveData(string s)
     {
+        string[] array = s.Split(',');
+        List<string> list = new List<string>();
 
+        for (int i = 0; i < array.Length; i++)
+        {
+            list.Add(array[i]);
+        }
+
+        if(list.Count > 0)
+        {
+            SetDeckTitle(list[0]);
+        }
+
+        if(list.Count > 1)
+        {
+            favoriteCard = m_ExtendUtil.ConvertToCardInfoFromString(list[1]);
+        }
+
+        if (list.Count > 1)
+        {
+            for (int i = 2; i < list.Count; i++)
+            {
+                m_CardInfoList.Add(m_ExtendUtil.ConvertToCardInfoFromString(list[i]));
+            }
+        }
     }
 
     public string GetDeckTitle()

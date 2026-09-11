@@ -32,17 +32,17 @@ public class Menu_Menu : MonoBehaviour
             }
             else
             {
-                m_Text.text = "ëŒè€Ç†ÇË";
+                m_Text.text = "ëŒè€Ç†ÇË:" + SaveDataList.Count;
             }
 
             for (int i = 0; i < list.Count; i++)
             {
-                if(i > SaveDataList.Count - 1)
+                if (i > SaveDataList.Count - 1)
                 {
-                    list[i].SetText("");
+                    list[i].SetSaveData(new SaveData());
                     continue;
                 }
-                list[i].SetText(SaveDataList[i]);
+                list[i].SetSaveData(new SaveData("testDeck,171_JA_01,171_JA_01"));
             }
         }catch(Exception e)
         {
