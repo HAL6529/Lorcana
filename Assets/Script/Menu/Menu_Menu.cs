@@ -19,7 +19,7 @@ public class Menu_Menu : MonoBehaviour
         Load();
     }
 
-    private void Load()
+    public void Load()
     {
         try
         {
@@ -42,7 +42,8 @@ public class Menu_Menu : MonoBehaviour
                     list[i].SetSaveData(new SaveData());
                     continue;
                 }
-                list[i].SetSaveData(new SaveData("testDeck,171_JA_01,171_JA_01"));
+
+                list[i].SetSaveData(new SaveData("testDeck,171_JA_01,171_JA_01", SaveDataList[i]));
             }
         }catch(Exception e)
         {

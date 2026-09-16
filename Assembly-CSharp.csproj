@@ -220,6 +220,7 @@
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_079_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_065_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_100_JA_01.cs" />
+    <Compile Include="Assets\Script\Menu\SaveDataStatic.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_105_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_155_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_112_JA_01.cs" />

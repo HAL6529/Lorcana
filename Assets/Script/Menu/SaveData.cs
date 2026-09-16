@@ -12,6 +12,8 @@ public class SaveData
 
     private List<CardInfo> m_CardInfoList = new List<CardInfo>();
 
+    private string SaveDataPass;
+
     private ExtendUtil m_ExtendUtil = new ExtendUtil();
 
     public SaveData()
@@ -19,7 +21,7 @@ public class SaveData
 
     }
 
-    public SaveData(string s)
+    public SaveData(string s, string SaveDataPass)
     {
         string[] array = s.Split(',');
         List<string> list = new List<string>();
@@ -46,6 +48,18 @@ public class SaveData
                 m_CardInfoList.Add(m_ExtendUtil.ConvertToCardInfoFromString(list[i]));
             }
         }
+
+        SetSaveDataPass(SaveDataPass);
+    }
+
+    public string GetSaveDataPass()
+    {
+        return SaveDataPass;
+    }
+
+    public void SetSaveDataPass(string paramater)
+    {
+        SaveDataPass = paramater;
     }
 
     public string GetDeckTitle()

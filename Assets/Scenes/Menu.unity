@@ -625,6 +625,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: Menu_SelectDeckPanel (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5079956338732073815, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5079956338732073815, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5079956338732073815, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 273096457}
+    - target: {fileID: 5079956338732073815, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5079956338732073815, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: onDeleteBtn
+      objectReference: {fileID: 0}
+    - target: {fileID: 5079956338732073815, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Menu_SelectDeckPanel, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5079956338732073815, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5514841986371316664, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -673,6 +701,34 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8146628914228465530, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146628914228465530, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146628914228465530, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 273096457}
+    - target: {fileID: 8146628914228465530, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146628914228465530, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: onFixBtn
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146628914228465530, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Menu_SelectDeckPanel, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146628914228465530, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8785513427614262995, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -689,6 +745,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8795362358008190044, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_Menu_Menu
+      value: 
+      objectReference: {fileID: 288012812}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1483,6 +1543,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: Menu_SelectDeckPanel (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5079956338732073815, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5079956338732073815, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5079956338732073815, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1204135343}
+    - target: {fileID: 5079956338732073815, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5079956338732073815, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: onDeleteBtn
+      objectReference: {fileID: 0}
+    - target: {fileID: 5079956338732073815, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Menu_SelectDeckPanel, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5079956338732073815, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5514841986371316664, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1531,6 +1619,34 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8146628914228465530, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146628914228465530, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146628914228465530, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1204135343}
+    - target: {fileID: 8146628914228465530, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146628914228465530, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: onFixBtn
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146628914228465530, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Menu_SelectDeckPanel, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146628914228465530, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8785513427614262995, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1547,6 +1663,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8795362358008190044, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_Menu_Menu
+      value: 
+      objectReference: {fileID: 288012812}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1843,6 +1963,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: Menu_SelectDeckPanel (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5079956338732073815, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5079956338732073815, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5079956338732073815, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1358044060}
+    - target: {fileID: 5079956338732073815, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5079956338732073815, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: onDeleteBtn
+      objectReference: {fileID: 0}
+    - target: {fileID: 5079956338732073815, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Menu_SelectDeckPanel, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5079956338732073815, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5514841986371316664, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1891,6 +2039,34 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8146628914228465530, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146628914228465530, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146628914228465530, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1358044060}
+    - target: {fileID: 8146628914228465530, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146628914228465530, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: onFixBtn
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146628914228465530, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Menu_SelectDeckPanel, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146628914228465530, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8785513427614262995, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1907,6 +2083,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8795362358008190044, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_Menu_Menu
+      value: 
+      objectReference: {fileID: 288012812}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2539,6 +2719,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: Menu_SelectDeckPanel (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5079956338732073815, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5079956338732073815, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5079956338732073815, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1825161246}
+    - target: {fileID: 5079956338732073815, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5079956338732073815, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: onDeleteBtn
+      objectReference: {fileID: 0}
+    - target: {fileID: 5079956338732073815, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Menu_SelectDeckPanel, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5079956338732073815, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5514841986371316664, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -2587,6 +2795,34 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8146628914228465530, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146628914228465530, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146628914228465530, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1825161246}
+    - target: {fileID: 8146628914228465530, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146628914228465530, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: onFixBtn
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146628914228465530, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Menu_SelectDeckPanel, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146628914228465530, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8785513427614262995, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -2603,6 +2839,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8795362358008190044, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_Menu_Menu
+      value: 
+      objectReference: {fileID: 288012812}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2960,6 +3200,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: Menu_SelectDeckPanel
       objectReference: {fileID: 0}
+    - target: {fileID: 5079956338732073815, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5079956338732073815, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5079956338732073815, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2051355938}
+    - target: {fileID: 5079956338732073815, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5079956338732073815, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: onDeleteBtn
+      objectReference: {fileID: 0}
+    - target: {fileID: 5079956338732073815, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Menu_SelectDeckPanel, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5079956338732073815, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 5514841986371316664, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -3008,6 +3276,34 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8146628914228465530, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146628914228465530, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146628914228465530, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2051355938}
+    - target: {fileID: 8146628914228465530, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146628914228465530, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: onFixBtn
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146628914228465530, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Menu_SelectDeckPanel, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8146628914228465530, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8785513427614262995, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -3024,6 +3320,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8795362358008190044, guid: c38cbb77da7f875408241b5270e4b01f, type: 3}
+      propertyPath: m_Menu_Menu
+      value: 
+      objectReference: {fileID: 288012812}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
