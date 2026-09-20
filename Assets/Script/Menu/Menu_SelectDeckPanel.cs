@@ -9,19 +9,24 @@ public class Menu_SelectDeckPanel : MonoBehaviour
 {
     public Text m_Text;
 
+    public Image FavoriteImage; 
+
     private SaveData m_SaveData;
 
     public Menu_Menu m_Menu_Menu;
+
+    public Menu_ConvertSpriteFromCardNo m_Menu_ConvertSpriteFromCardNo;
 
     public void SetSaveData(SaveData paramater)
     {
         m_SaveData = paramater;
         SetText(m_SaveData.GetDeckTitle());
+        FixImage();
     } 
 
     public void SetText(string s)
     {
-        if(s == null)
+        if(s == "")
         {
             m_Text.text = "";
             this.gameObject.SetActive(false);
@@ -73,4 +78,10 @@ public class Menu_SelectDeckPanel : MonoBehaviour
             Debug.Log(e);
         }
     }
+
+    private void FixImage()
+    {
+        CardInfo c = m_SaveData.GetFavoriteCardInfo();
+        FavoriteImage.sprite = m_Menu_ConvertSpriteFromCardNo.ConvertSpriteFromCardNo(c.GetCardNo());
+    }   
 }

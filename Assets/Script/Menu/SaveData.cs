@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class SaveData
 {
-    private string DeckTitle;
+    private string DeckTitle = "";
 
-    private CardInfo m_CardInfo;
+    private CardInfo m_CardInfo = new CardInfo();
 
-    private CardInfo favoriteCard;
+    private CardInfo favoriteCard = new CardInfo();
 
     private List<CardInfo> m_CardInfoList = new List<CardInfo>();
 
-    private string SaveDataPass;
+    private string SaveDataPass = "";
 
     private ExtendUtil m_ExtendUtil = new ExtendUtil();
 
@@ -50,6 +50,11 @@ public class SaveData
         }
 
         SetSaveDataPass(SaveDataPass);
+    }
+
+    public CardInfo GetFavoriteCardInfo()
+    {
+        return favoriteCard;
     }
 
     public string GetSaveDataPass()

@@ -504,6 +504,94 @@ public class ExtendUtil
                 return new CardInfo_170_JA_01();
             case "171_JA_01":
                 return new CardInfo_171_JA_01();
+            case "172_JA_01":
+                return new CardInfo_172_JA_01();
+            case "173_JA_01":
+                return new CardInfo_173_JA_01();
+            case "174_JA_01":
+                return new CardInfo_174_JA_01();
+            case "175_JA_01":
+                return new CardInfo_175_JA_01();
+            case "176_JA_01":
+                return new CardInfo_176_JA_01();
+            case "177_JA_01":
+                return new CardInfo_177_JA_01();
+            case "178_JA_01":
+                return new CardInfo_178_JA_01();
+            case "179_JA_01":
+                return new CardInfo_179_JA_01();
+            case "180_JA_01":
+                return new CardInfo_180_JA_01();
+            case "181_JA_01":
+                return new CardInfo_181_JA_01();
+            case "182_JA_01":
+                return new CardInfo_182_JA_01();
+            case "183_JA_01":
+                return new CardInfo_183_JA_01();
+            case "184_JA_01":
+                return new CardInfo_184_JA_01();
+            case "185_JA_01":
+                return new CardInfo_185_JA_01();
+            case "186_JA_01":
+                return new CardInfo_186_JA_01();
+            case "187_JA_01":
+                return new CardInfo_187_JA_01();
+            case "188_JA_01":
+                return new CardInfo_188_JA_01();
+            case "189_JA_01":
+                return new CardInfo_189_JA_01();
+            case "190_JA_01":
+                return new CardInfo_190_JA_01();
+            case "191_JA_01":
+                return new CardInfo_191_JA_01();
+            case "192_JA_01":
+                return new CardInfo_192_JA_01();
+            case "193_JA_01":
+                return new CardInfo_193_JA_01();
+            case "194_JA_01":
+                return new CardInfo_194_JA_01();
+            case "195_JA_01":
+                return new CardInfo_195_JA_01();
+            case "196_JA_01":
+                return new CardInfo_196_JA_01();
+            case "197_JA_01":
+                return new CardInfo_197_JA_01();
+            case "198_JA_01":
+                return new CardInfo_198_JA_01();
+            case "199_JA_01":
+                return new CardInfo_199_JA_01();
+            case "200_JA_01":
+                return new CardInfo_200_JA_01();
+            case "201_JA_01":
+                return new CardInfo_201_JA_01();
+            case "202_JA_01":
+                return new CardInfo_202_JA_01();
+            case "203_JA_01":
+                return new CardInfo_203_JA_01();
+            case "204_JA_01":
+                return new CardInfo_204_JA_01();
+            case "205_JA_01":
+                return new CardInfo();
+            case "206_JA_01":
+                return new CardInfo();
+            case "207_JA_01":
+                return new CardInfo();
+            case "208_JA_01":
+                return new CardInfo();
+            case "209_JA_01":
+                return new CardInfo();
+            case "210_JA_01":
+                return new CardInfo();
+            case "211_JA_01":
+                return new CardInfo();
+            case "212_JA_01":
+                return new CardInfo();
+            case "213_JA_01":
+                return new CardInfo();
+            case "214_JA_01":
+                return new CardInfo();
+            case "215_JA_01":
+                return new CardInfo();
             default:
                 return new CardInfo();
         }

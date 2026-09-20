@@ -170,6 +170,7 @@
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_095_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_129_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_171_JA_01.cs" />
+    <Compile Include="Assets\Script\Menu\Menu_ConvertSpriteFromCardNo.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_109_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_071_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_046_JA_01.cs" />
