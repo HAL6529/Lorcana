@@ -8,8 +8,6 @@ public class SaveData
 
     private CardInfo m_CardInfo = new CardInfo();
 
-    private CardInfo favoriteCard = new CardInfo();
-
     private List<CardInfo> m_CardInfoList = new List<CardInfo>();
 
     private string SaveDataPass = "";
@@ -38,7 +36,7 @@ public class SaveData
 
         if(list.Count > 1)
         {
-            favoriteCard = m_ExtendUtil.ConvertToCardInfoFromString(list[1]);
+            SetCardInfo(m_ExtendUtil.ConvertToCardInfoFromString(list[1]));
         }
 
         if (list.Count > 1)
@@ -50,11 +48,6 @@ public class SaveData
         }
 
         SetSaveDataPass(SaveDataPass);
-    }
-
-    public CardInfo GetFavoriteCardInfo()
-    {
-        return favoriteCard;
     }
 
     public string GetSaveDataPass()
@@ -74,7 +67,7 @@ public class SaveData
 
     public void SetDeckTitle(string paramater)
     {
-        DeckTitle = paramater;
+        DeckTitle = paramater + m_CardInfoList.Count;
     }
 
     public CardInfo GetCardInfo()

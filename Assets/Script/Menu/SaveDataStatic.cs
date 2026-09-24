@@ -2,17 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SaveDataStatic : MonoBehaviour
+public class SaveDataStatic
 {
-    private static string DeckTitle;
+    private static string DeckTitle = "";
 
-    private static CardInfo m_CardInfo;
+    private static CardInfo m_CardInfo = new CardInfo();
 
-    private static CardInfo favoriteCard;
+    private static CardInfo favoriteCard = new CardInfo();
 
     private static List<CardInfo> m_CardInfoList = new List<CardInfo>();
 
     private ExtendUtil m_ExtendUtil = new ExtendUtil();
+
+    public SaveDataStatic()
+    {
+
+    }
 
     public SaveDataStatic(SaveData paramater)
     {

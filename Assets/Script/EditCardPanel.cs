@@ -40,6 +40,12 @@ public class EditCardPanel : MonoBehaviour
     public void Start()
     {
         SetEditCardPanel(m_CardInfo, 0);
+        m_EditCardPanelManager.CheckStandby();
+    }
+
+    public string GetCardNo()
+    {
+        return m_CardInfo.GetCardNo();
     }
 
     public void SetEditCardPanel(CardInfo m_CardInfo, int m_count)

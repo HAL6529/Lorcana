@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Menu_SelectDeckPanel : MonoBehaviour
 {
@@ -41,6 +42,7 @@ public class Menu_SelectDeckPanel : MonoBehaviour
     public void onFixBtn()
     {
         SaveDataStatic m_SaveDataStatic = new SaveDataStatic(m_SaveData);
+        SceneManager.LoadScene("DeckBuild");
     }
 
     public void onDeleteBtn()
@@ -81,7 +83,7 @@ public class Menu_SelectDeckPanel : MonoBehaviour
 
     private void FixImage()
     {
-        CardInfo c = m_SaveData.GetFavoriteCardInfo();
+        CardInfo c = m_SaveData.GetCardInfo();
         FavoriteImage.sprite = m_Menu_ConvertSpriteFromCardNo.ConvertSpriteFromCardNo(c.GetCardNo());
     }   
 }

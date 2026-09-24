@@ -43,7 +43,7 @@ public class Menu_Menu : MonoBehaviour
                     continue;
                 }
 
-                list[i].SetSaveData(new SaveData("testDeck,171_JA_01,171_JA_01", SaveDataList[i]));
+                list[i].SetSaveData(new SaveData("testDeck,003_JA_01,003_JA_01", SaveDataList[i]));
             }
         }catch(Exception e)
         {
