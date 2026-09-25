@@ -64,12 +64,10 @@ public class Menu_SelectDeckPanel : MonoBehaviour
                     if (fileObject.Call<bool>("delete"))
                     {
                         m_Menu_Menu.Load();
-                        m_Menu_Menu.m_Text.text = "íœ¬Œ÷";
                     }
                     else
                     {
                         m_Menu_Menu.Load();
-                        m_Menu_Menu.m_Text.text = "íœ¸”s:" + DataPass;
                     }
 
                 }

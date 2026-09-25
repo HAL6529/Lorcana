@@ -67,7 +67,7 @@ public class SaveData
 
     public void SetDeckTitle(string paramater)
     {
-        DeckTitle = paramater + m_CardInfoList.Count;
+        DeckTitle = paramater;
     }
 
     public CardInfo GetCardInfo()

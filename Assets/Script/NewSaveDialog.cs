@@ -57,7 +57,8 @@ public class NewSaveDialog : MonoBehaviour
             Encoding enc = Encoding.GetEncoding("utf-8");
 
             StreamWriter sw = new StreamWriter(SecureDataPass + "/" + file, false, enc);
-            sw.Write(CreateSaveData());
+            sw.WriteLine(CreateSaveData());
+            sw.Close();
 
             m_DialogManager.AllClose();
             m_DialogManager.OKDialog_Open(EnumController.OKBtnParamater.SuccessFileCreate);
@@ -75,13 +76,11 @@ public class NewSaveDialog : MonoBehaviour
     private string CreateSaveData()
     {
         string SaveData = m_InputField.text;
+        SaveData += ",003_JA_01";
         List<CardInfo> list = m_EditCardPanelManager.DeckList;
         for (int i = 0; i < m_EditCardPanelManager.DeckList.Count; i++)
         {
-            if (i != 0)
-            {
-                SaveData += ",";
-            }
+            SaveData += ",";
             SaveData += list[i].GetCardNo();
         }
         return SaveData;
