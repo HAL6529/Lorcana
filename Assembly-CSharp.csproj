@@ -102,6 +102,7 @@
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_151_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_184_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_042_JA_01.cs" />
+    <Compile Include="Assets\Script\Menu\SaveData.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_128_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_165_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_121_JA_01.cs" />
@@ -118,6 +119,7 @@
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_080_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_103_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_013_JA_01.cs" />
+    <Compile Include="Assets\Script\Menu\Menu_SelectDeckPanel.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_029_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_188_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_191_JA_01.cs" />
@@ -147,6 +149,7 @@
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_138_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_086_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_145_JA_01.cs" />
+    <Compile Include="Assets\Script\Menu\Menu_Menu.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_025_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_096_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_139_JA_01.cs" />
@@ -160,7 +163,6 @@
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_084_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_031_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_135_JA_01.cs" />
-    <Compile Include="Assets\Script\ExtendUtil.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_049_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_157_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_010_JA_01.cs" />
@@ -168,6 +170,7 @@
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_095_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_129_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_171_JA_01.cs" />
+    <Compile Include="Assets\Script\Menu\Menu_ConvertSpriteFromCardNo.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_109_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_071_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_046_JA_01.cs" />
@@ -179,6 +182,7 @@
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_122_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_017_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_197_JA_01.cs" />
+    <Compile Include="Assets\Script\NewSaveDialog.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_027_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_166_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_175_JA_01.cs" />
@@ -195,6 +199,7 @@
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_098_JA_01.cs" />
     <Compile Include="Assets\Script\EditCardPanel.cs" />
     <Compile Include="Assets\Script\EnumController.cs" />
+    <Compile Include="Assets\Script\Util\ExtendUtil.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_192_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_199_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_036_JA_01.cs" />
@@ -212,9 +217,11 @@
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_169_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_039_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_006_JA_01.cs" />
+    <Compile Include="Assets\Script\OKDialog.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_079_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_065_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_100_JA_01.cs" />
+    <Compile Include="Assets\Script\Menu\SaveDataStatic.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_105_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_155_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_112_JA_01.cs" />
@@ -226,7 +233,6 @@
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_056_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_028_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_152_JA_01.cs" />
-    <Compile Include="Assets\Script\NewDeckDialog.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_055_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_200_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_024_JA_01.cs" />
@@ -246,6 +252,7 @@
     <Compile Include="Assets\Script\ViewMode.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_120_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_102_JA_01.cs" />
+    <Compile Include="Assets\Script\DialogManager.cs" />
     <Compile Include="Assets\Search.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_041_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_107_JA_01.cs" />

@@ -25,6 +25,7 @@ public class EditCardPanelManager : MonoBehaviour
         }
     }
 
+    public SaveDataStatic m_SaveDataStatic = new SaveDataStatic();
     public SearchClass m_SearchClass;
     public string DeckName = "";
 
@@ -51,10 +52,48 @@ public class EditCardPanelManager : MonoBehaviour
     public Image SortImage;
     public Image DeckAllSwitchBtnImage;
 
-
     private SortStatus m_SortStatus = SortStatus.Default;
 
     private bool SwitchOwn= false;
+
+    private int standbyCnt = 0;
+
+    public void CheckStandby()
+    {
+        //if(standbyCnt == m_EditCardPanelList_TheFirstChapter.Count)
+        if (standbyCnt == 203)
+        {
+            LoadDeckList();
+        }
+        else
+        {
+            standbyCnt++;
+        }
+    }
+
+    private void LoadDeckList()
+    {
+        onDefaultSort(m_CardInfo_TheFirstChapter);
+        //DeckList = m_SaveDataStatic.GetCardInfoList();
+        List<CardInfo> TempDeckList = m_SaveDataStatic.GetCardInfoList();
+        for (int i = 0; i < TempDeckList.Count; i++)
+        {
+            //DeckList[i].SetSprite(m_Menu_ConvertSpriteFromCardNo.ConvertSpriteFromCardNo(DeckList[i].GetCardNo()));
+            for (int k = 0; k < m_EditCardPanelList_TheFirstChapter.Count; k++)
+            {
+                if (m_EditCardPanelList_TheFirstChapter[k] == null)
+                {
+                    continue;
+                }
+
+                if(TempDeckList[i].GetCardNo() == m_EditCardPanelList_TheFirstChapter[k].GetCardNo())
+                {
+                    m_EditCardPanelList_TheFirstChapter[k].onPlusBtn();
+                    continue;
+                }
+            }
+        }
+    }
 
     public void onUpdateDeckList()
     {
