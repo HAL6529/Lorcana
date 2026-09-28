@@ -18,6 +18,15 @@ public class Menu_SelectDeckPanel : MonoBehaviour
 
     public Menu_ConvertSpriteFromCardNo m_Menu_ConvertSpriteFromCardNo;
 
+    public RectTransform Parent;
+    public RectTransform Image_Parent;
+    public RectTransform Image_Child;
+    public RectTransform Middle_Parent;
+    public RectTransform Name;
+    public RectTransform Colors;
+    public RectTransform Button_Parent;
+    public List<RectTransform> ButtonList = new List<RectTransform>();
+
     public void SetSaveData(SaveData paramater)
     {
         m_SaveData = paramater;
@@ -83,5 +92,27 @@ public class Menu_SelectDeckPanel : MonoBehaviour
     {
         CardInfo c = m_SaveData.GetCardInfo();
         FavoriteImage.sprite = m_Menu_ConvertSpriteFromCardNo.ConvertSpriteFromCardNo(c.GetCardNo());
-    }   
+    }
+    
+    public void UpdateImage(float magnification_x, float magnification_y)
+    {
+        Parent.sizeDelta = new Vector2(Parent.sizeDelta.x * magnification_x, Parent.sizeDelta.y * magnification_y);
+        Image_Parent.sizeDelta = new Vector2(Image_Parent.sizeDelta.x * magnification_x, Image_Parent.sizeDelta.y * magnification_y);
+        Middle_Parent.sizeDelta = new Vector2(Middle_Parent.sizeDelta.x * magnification_x, Middle_Parent.sizeDelta.y * magnification_y);
+        Name.sizeDelta = new Vector2(Name.sizeDelta.x * magnification_x, Name.sizeDelta.y * magnification_y);
+        Colors.sizeDelta = new Vector2(Colors.sizeDelta.x * magnification_x, Colors.sizeDelta.y * magnification_y);
+        Button_Parent.sizeDelta = new Vector2(Button_Parent.sizeDelta.x * magnification_x, Button_Parent.sizeDelta.y * magnification_y);
+
+        float magnification = magnification_x;
+        if (magnification_x < magnification_y)
+        {
+            magnification = magnification_y;
+        }
+        Image_Child.sizeDelta = new Vector2(Image_Child.sizeDelta.x * magnification, Image_Child.sizeDelta.y * magnification);
+
+        for(int i = 0; i < ButtonList.Count; i++)
+        {
+            ButtonList[i].sizeDelta = new Vector2(ButtonList[i].sizeDelta.x * magnification, ButtonList[i].sizeDelta.y * magnification);
+        }
+    }
 }

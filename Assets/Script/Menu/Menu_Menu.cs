@@ -13,8 +13,33 @@ public class Menu_Menu : MonoBehaviour
 
     private ExtendUtil m_ExtendUtil = new ExtendUtil();
 
+    public RectTransform CanvasRectTransform;
+
+    public RectTransform ScrollView_Parent;
+    public RectTransform ScrollView_Space;
+    public RectTransform ScrollView;
+    public RectTransform Header_Parent_Parent;
+    public RectTransform Header_Parent;
+    public RectTransform Header_Text;
+    public RectTransform Header_CreateBtn;
+
     public void Start()
     {
+        float magnification_x = CanvasRectTransform.sizeDelta.x / 890;
+        float magnification_y = CanvasRectTransform.sizeDelta.y / 1920;
+
+        ScrollView_Parent.sizeDelta = new Vector2(ScrollView_Parent.sizeDelta.x * magnification_x, ScrollView_Parent.sizeDelta.y * magnification_y);
+        ScrollView_Space.sizeDelta = new Vector2(ScrollView_Space.sizeDelta.x * magnification_x, ScrollView_Space.sizeDelta.y * magnification_y);
+        ScrollView.sizeDelta = new Vector2(ScrollView.sizeDelta.x * magnification_x, ScrollView.sizeDelta.y * magnification_y);
+        Header_Parent_Parent.sizeDelta = new Vector2(Header_Parent_Parent.sizeDelta.x * magnification_x, Header_Parent_Parent.sizeDelta.y * magnification_y);
+        Header_Parent.sizeDelta = new Vector2(Header_Parent.sizeDelta.x * magnification_x, Header_Parent.sizeDelta.y * magnification_y);
+        Header_Text.sizeDelta = new Vector2(Header_Text.sizeDelta.x * magnification_x, Header_Text.sizeDelta.y * magnification_y);
+        Header_CreateBtn.sizeDelta = new Vector2(Header_CreateBtn.sizeDelta.x * magnification_x, Header_CreateBtn.sizeDelta.y * magnification_y);
+
+        for (int i = 0; i < list.Count; i++)
+        {
+            list[i].UpdateImage(magnification_x, magnification_y);
+        }
         Load();
     }
 
