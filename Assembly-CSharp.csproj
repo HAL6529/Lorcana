@@ -117,6 +117,7 @@
     <Compile Include="Assets\Script\SearchClass.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_202_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_080_JA_01.cs" />
+    <Compile Include="Assets\DeckBuild.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_103_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_013_JA_01.cs" />
     <Compile Include="Assets\Script\Menu\Menu_SelectDeckPanel.cs" />

@@ -9,6 +9,15 @@ public class OKDialog : MonoBehaviour
 
     public Text m_Text;
 
+    public RectTransform Parent;
+    public RectTransform header;
+    public RectTransform space1;
+    public RectTransform text;
+    public RectTransform space2;
+    public RectTransform btnLine;
+    public RectTransform okBtn;
+    public RectTransform space3;
+
     public void Close()
     {
         this.gameObject.SetActive(false);
@@ -46,5 +55,23 @@ public class OKDialog : MonoBehaviour
         }
 
         this.gameObject.SetActive(true);
+    }
+
+    public void UpdateImage(float magnification_x, float magnification_y)
+    {
+        Parent.sizeDelta = new Vector2(Parent.sizeDelta.x * magnification_x, Parent.sizeDelta.y * magnification_y);
+        header.sizeDelta = new Vector2(header.sizeDelta.x * magnification_x, header.sizeDelta.y * magnification_y);
+        space1.sizeDelta = new Vector2(space1.sizeDelta.x * magnification_x, space1.sizeDelta.y * magnification_y);
+        text.sizeDelta = new Vector2(text.sizeDelta.x * magnification_x, text.sizeDelta.y * magnification_y);
+        space2.sizeDelta = new Vector2(space2.sizeDelta.x * magnification_x, space2.sizeDelta.y * magnification_y);
+        btnLine.sizeDelta = new Vector2(btnLine.sizeDelta.x * magnification_x, btnLine.sizeDelta.y * magnification_y);
+        space3.sizeDelta = new Vector2(space3.sizeDelta.x * magnification_x, space3.sizeDelta.y * magnification_y);
+
+        float magnification = magnification_x;
+        if (magnification_x > magnification_y)
+        {
+            magnification = magnification_y;
+        }
+        okBtn.sizeDelta = new Vector2(okBtn.sizeDelta.x * magnification, okBtn.sizeDelta.y * magnification);
     }
 }

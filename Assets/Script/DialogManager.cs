@@ -9,6 +9,8 @@ public class DialogManager : MonoBehaviour
 
     public OKDialog m_OKDialog;
 
+    public RectTransform Parent;
+
     public void AllClose()
     {
         m_NewSaveDialog.Close();
@@ -26,5 +28,12 @@ public class DialogManager : MonoBehaviour
     {
         this.gameObject.SetActive(true);
         m_OKDialog.Open(paramater);
+    }
+
+    public void UpdateImage(float magnification_x, float magnification_y)
+    {
+        Parent.sizeDelta = new Vector2(Parent.sizeDelta.x * magnification_x, Parent.sizeDelta.y * magnification_y);
+        m_NewSaveDialog.UpdateImage(magnification_x, magnification_y);
+        m_OKDialog.UpdateImage(magnification_x, magnification_y);
     }
 }

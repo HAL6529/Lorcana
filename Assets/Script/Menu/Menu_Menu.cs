@@ -34,7 +34,13 @@ public class Menu_Menu : MonoBehaviour
         Header_Parent_Parent.sizeDelta = new Vector2(Header_Parent_Parent.sizeDelta.x * magnification_x, Header_Parent_Parent.sizeDelta.y * magnification_y);
         Header_Parent.sizeDelta = new Vector2(Header_Parent.sizeDelta.x * magnification_x, Header_Parent.sizeDelta.y * magnification_y);
         Header_Text.sizeDelta = new Vector2(Header_Text.sizeDelta.x * magnification_x, Header_Text.sizeDelta.y * magnification_y);
-        Header_CreateBtn.sizeDelta = new Vector2(Header_CreateBtn.sizeDelta.x * magnification_x, Header_CreateBtn.sizeDelta.y * magnification_y);
+
+        float magnification = magnification_x;
+        if (magnification_x > magnification_y)
+        {
+            magnification = magnification_y;
+        }
+        Header_CreateBtn.sizeDelta = new Vector2(Header_CreateBtn.sizeDelta.x * magnification, Header_CreateBtn.sizeDelta.y * magnification);
 
         for (int i = 0; i < list.Count; i++)
         {

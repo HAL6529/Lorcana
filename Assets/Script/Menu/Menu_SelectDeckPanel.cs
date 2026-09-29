@@ -104,7 +104,7 @@ public class Menu_SelectDeckPanel : MonoBehaviour
         Button_Parent.sizeDelta = new Vector2(Button_Parent.sizeDelta.x * magnification_x, Button_Parent.sizeDelta.y * magnification_y);
 
         float magnification = magnification_x;
-        if (magnification_x < magnification_y)
+        if (magnification_x > magnification_y)
         {
             magnification = magnification_y;
         }
