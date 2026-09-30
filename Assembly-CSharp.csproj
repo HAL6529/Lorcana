@@ -72,6 +72,7 @@
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_033_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_075_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_180_JA_01.cs" />
+    <Compile Include="Assets\Script\DeckBuild.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_195_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_148_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_117_JA_01.cs" />

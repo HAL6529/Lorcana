@@ -24,6 +24,7 @@ public class EditCardPanelManager : MonoBehaviour
             this.cardCount = cardCount;
         }
     }
+    public RectTransform parent;
 
     public SaveDataStatic m_SaveDataStatic = new SaveDataStatic();
     public SearchClass m_SearchClass;
@@ -354,5 +355,18 @@ public class EditCardPanelManager : MonoBehaviour
         {
             m_EditCardPanelList_TheFirstChapter[i].SetEditCardPanel(temp_return[i]);
         }*/
+    }
+
+    public void UpdateImage(float magnification_x, float magnification_y)
+    {
+        parent.sizeDelta = new Vector2(parent.sizeDelta.x * magnification_x, parent.sizeDelta.y * magnification_y);
+        for (int i = 0; i < m_EditCardPanelList_TheFirstChapter.Count; i++)
+        {
+            if(m_EditCardPanelList_TheFirstChapter[i] == null)
+            {
+                continue;
+            }
+            m_EditCardPanelList_TheFirstChapter[i].UpdateImage(magnification_x, magnification_y);
+        }
     }
 }

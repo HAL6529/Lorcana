@@ -14,6 +14,17 @@ public class NewSaveDialog : MonoBehaviour
 
     public EditCardPanelManager m_EditCardPanelManager;
 
+    public RectTransform Parent;
+    public RectTransform Btn_header;
+    public RectTransform CloseBtn;
+    public RectTransform space1;
+    public RectTransform text;
+    public RectTransform space2;
+    public RectTransform inputField_parent;
+    public RectTransform inputField;
+    public RectTransform inputField_Btn;
+    public RectTransform space3;
+
     private const string Extension = ".txt";
 
     private ExtendUtil m_ExtendUtil = new ExtendUtil();
@@ -90,5 +101,25 @@ public class NewSaveDialog : MonoBehaviour
     {
         m_InputField.text = "";
         this.gameObject.SetActive(true);
+    }
+
+    public void UpdateImage(float magnification_x, float magnification_y)
+    {
+        Parent.sizeDelta = new Vector2(Parent.sizeDelta.x * magnification_x, Parent.sizeDelta.y * magnification_y);
+        Btn_header.sizeDelta = new Vector2(Btn_header.sizeDelta.x * magnification_x, Btn_header.sizeDelta.y * magnification_y);
+        space1.sizeDelta = new Vector2(space1.sizeDelta.x * magnification_x, space1.sizeDelta.y * magnification_y);
+        text.sizeDelta = new Vector2(text.sizeDelta.x * magnification_x, text.sizeDelta.y * magnification_y);
+        space2.sizeDelta = new Vector2(space2.sizeDelta.x * magnification_x, space2.sizeDelta.y * magnification_y);
+        inputField_parent.sizeDelta = new Vector2(inputField_parent.sizeDelta.x * magnification_x, inputField_parent.sizeDelta.y * magnification_y);
+        inputField.sizeDelta = new Vector2(inputField.sizeDelta.x * magnification_x, inputField.sizeDelta.y * magnification_y);
+        space3.sizeDelta = new Vector2(space3.sizeDelta.x * magnification_x, space3.sizeDelta.y * magnification_y);
+
+        float magnification = magnification_x;
+        if (magnification_x > magnification_y)
+        {
+            magnification = magnification_y;
+        }
+        CloseBtn.sizeDelta = new Vector2(CloseBtn.sizeDelta.x * magnification, CloseBtn.sizeDelta.y * magnification);
+        inputField_Btn.sizeDelta = new Vector2(inputField_Btn.sizeDelta.x * magnification, inputField_Btn.sizeDelta.y * magnification);
     }
 }

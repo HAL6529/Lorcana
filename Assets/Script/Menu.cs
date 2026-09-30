@@ -16,6 +16,15 @@ public class Menu : MonoBehaviour
 
     public Text m_Text;
 
+    public RectTransform Parent;
+    public RectTransform CloseBtn;
+    public RectTransform NewSaveBtn;
+    public RectTransform SaveBtn;
+    public RectTransform DisplayBtn;
+    public RectTransform space;
+    public RectTransform MenuBtn;
+    public RectTransform Text;
+
     public void onCloseBtn()
     {
         this.gameObject.SetActive(false);
@@ -45,5 +54,17 @@ public class Menu : MonoBehaviour
     private void onSave()
     {
 
+    }
+
+    public void UpdateImage(float magnification_x, float magnification_y)
+    {
+        Parent.sizeDelta = new Vector2(Parent.sizeDelta.x * magnification_x, Parent.sizeDelta.y * magnification_y);
+        CloseBtn.sizeDelta = new Vector2(CloseBtn.sizeDelta.x * magnification_x, CloseBtn.sizeDelta.y * magnification_y);
+        NewSaveBtn.sizeDelta = new Vector2(NewSaveBtn.sizeDelta.x * magnification_x, NewSaveBtn.sizeDelta.y * magnification_y);
+        SaveBtn.sizeDelta = new Vector2(SaveBtn.sizeDelta.x * magnification_x, SaveBtn.sizeDelta.y * magnification_y);
+        DisplayBtn.sizeDelta = new Vector2(DisplayBtn.sizeDelta.x * magnification_x, DisplayBtn.sizeDelta.y * magnification_y);
+        space.sizeDelta = new Vector2(space.sizeDelta.x * magnification_x, space.sizeDelta.y * magnification_y);
+        MenuBtn.sizeDelta = new Vector2(MenuBtn.sizeDelta.x * magnification_x, MenuBtn.sizeDelta.y * magnification_y);
+        Text.sizeDelta = new Vector2(Text.sizeDelta.x * magnification_x, Text.sizeDelta.y * magnification_y);
     }
 }
