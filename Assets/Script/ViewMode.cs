@@ -42,6 +42,19 @@ public class ViewMode : MonoBehaviour
     public RectTransform scrollView_line11;
     public RectTransform scrollView_line12;
     public RectTransform scrollView_line13;
+    public List<RectTransform> scrollView_line1_list = new List<RectTransform>();
+    public List<RectTransform> scrollView_line2_list = new List<RectTransform>();
+    public List<RectTransform> scrollView_line3_list = new List<RectTransform>();
+    public List<RectTransform> scrollView_line4_list = new List<RectTransform>();
+    public List<RectTransform> scrollView_line5_list = new List<RectTransform>();
+    public List<RectTransform> scrollView_line6_list = new List<RectTransform>();
+    public List<RectTransform> scrollView_line7_list = new List<RectTransform>();
+    public List<RectTransform> scrollView_line8_list = new List<RectTransform>();
+    public List<RectTransform> scrollView_line9_list = new List<RectTransform>();
+    public List<RectTransform> scrollView_line10_list = new List<RectTransform>();
+    public List<RectTransform> scrollView_line11_list = new List<RectTransform>();
+    public List<RectTransform> scrollView_line12_list = new List<RectTransform>();
+    public List<RectTransform> scrollView_line13_list = new List<RectTransform>();
 
     public void Open()
     {
@@ -142,6 +155,59 @@ public class ViewMode : MonoBehaviour
         for (int i = 0; i < hand_line3_list.Count; i++)
         {
             hand_line3_list[i].sizeDelta = new Vector2(hand_line3_list[i].sizeDelta.x * magnification, hand_line3_list[i].sizeDelta.y * magnification);
+        }
+
+        for (int i = 0; i < scrollView_line1_list.Count; i++)
+        {
+            scrollView_line1_list[i].sizeDelta = new Vector2(scrollView_line1_list[i].sizeDelta.x * magnification, scrollView_line1_list[i].sizeDelta.y * magnification);
+        }
+        for (int i = 0; i < scrollView_line2_list.Count; i++)
+        {
+            scrollView_line2_list[i].sizeDelta = new Vector2(scrollView_line2_list[i].sizeDelta.x * magnification, scrollView_line2_list[i].sizeDelta.y * magnification);
+        }
+        for (int i = 0; i < scrollView_line3_list.Count; i++)
+        {
+            scrollView_line3_list[i].sizeDelta = new Vector2(scrollView_line3_list[i].sizeDelta.x * magnification, scrollView_line3_list[i].sizeDelta.y * magnification);
+        }
+        for (int i = 0; i < scrollView_line4_list.Count; i++)
+        {
+            scrollView_line4_list[i].sizeDelta = new Vector2(scrollView_line4_list[i].sizeDelta.x * magnification, scrollView_line4_list[i].sizeDelta.y * magnification);
+        }
+        for (int i = 0; i < scrollView_line5_list.Count; i++)
+        {
+            scrollView_line5_list[i].sizeDelta = new Vector2(scrollView_line5_list[i].sizeDelta.x * magnification, scrollView_line5_list[i].sizeDelta.y * magnification);
+        }
+        for (int i = 0; i < scrollView_line6_list.Count; i++)
+        {
+            scrollView_line6_list[i].sizeDelta = new Vector2(scrollView_line6_list[i].sizeDelta.x * magnification, scrollView_line6_list[i].sizeDelta.y * magnification);
+        }
+        for (int i = 0; i < scrollView_line7_list.Count; i++)
+        {
+            scrollView_line7_list[i].sizeDelta = new Vector2(scrollView_line7_list[i].sizeDelta.x * magnification, scrollView_line7_list[i].sizeDelta.y * magnification);
+        }
+        for (int i = 0; i < scrollView_line8_list.Count; i++)
+        {
+            scrollView_line8_list[i].sizeDelta = new Vector2(scrollView_line8_list[i].sizeDelta.x * magnification, scrollView_line8_list[i].sizeDelta.y * magnification);
+        }
+        for (int i = 0; i < scrollView_line9_list.Count; i++)
+        {
+            scrollView_line9_list[i].sizeDelta = new Vector2(scrollView_line9_list[i].sizeDelta.x * magnification, scrollView_line9_list[i].sizeDelta.y * magnification);
+        }
+        for (int i = 0; i < scrollView_line10_list.Count; i++)
+        {
+            scrollView_line10_list[i].sizeDelta = new Vector2(scrollView_line10_list[i].sizeDelta.x * magnification, scrollView_line10_list[i].sizeDelta.y * magnification);
+        }
+        for (int i = 0; i < scrollView_line11_list.Count; i++)
+        {
+            scrollView_line11_list[i].sizeDelta = new Vector2(scrollView_line11_list[i].sizeDelta.x * magnification, scrollView_line11_list[i].sizeDelta.y * magnification);
+        }
+        for (int i = 0; i < scrollView_line12_list.Count; i++)
+        {
+            scrollView_line12_list[i].sizeDelta = new Vector2(scrollView_line12_list[i].sizeDelta.x * magnification, scrollView_line12_list[i].sizeDelta.y * magnification);
+        }
+        for (int i = 0; i < scrollView_line13_list.Count; i++)
+        {
+            scrollView_line13_list[i].sizeDelta = new Vector2(scrollView_line13_list[i].sizeDelta.x * magnification, scrollView_line13_list[i].sizeDelta.y * magnification);
         }
     }
 }
