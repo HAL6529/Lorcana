@@ -49882,6 +49882,135 @@ MonoBehaviour:
   isAddInk: 0
   isItem: 0
   isLocation: 0
+  parent: {fileID: 479190002}
+  closeBtn_Header: {fileID: 1676963187}
+  closeBtn_Header_closeBtn: {fileID: 1622157619}
+  space1: {fileID: 1532355806}
+  colorExplanation_Header: {fileID: 471502069}
+  colorExplanation_Header_text1: {fileID: 949051316}
+  colorExplanation_Header_text2: {fileID: 476512604}
+  colors_Header: {fileID: 2056522173}
+  colors_Header_amethyst: {fileID: 832673990}
+  colors_Header_amber: {fileID: 1546681351}
+  colors_Header_emerald: {fileID: 2025521856}
+  colors_Header_sapphire: {fileID: 893851958}
+  colors_Header_steel: {fileID: 1278454443}
+  colors_Header_ruby: {fileID: 697831179}
+  space2: {fileID: 1315702725}
+  typeExplanation_Header: {fileID: 88741906}
+  typeExplanation_Header_text1: {fileID: 276208447}
+  typeExplanation_Header_text2: {fileID: 1860786028}
+  type_Header: {fileID: 657256422}
+  type_Header_action: {fileID: 1885825516}
+  type_Header_action_text: {fileID: 986283852}
+  type_Header_character: {fileID: 1917251177}
+  type_Header_character_text: {fileID: 1440552448}
+  type_Header_location: {fileID: 1352876503}
+  type_Header_location_text: {fileID: 352713223}
+  type_Header_item: {fileID: 1669639247}
+  type_Header_item_text: {fileID: 684511661}
+  type_Header_song: {fileID: 206510826}
+  type_Header_song_text: {fileID: 789490928}
+  space3: {fileID: 2032710916}
+  keywordExplanation_header: {fileID: 1509842994}
+  keywordExplanation_header_text1: {fileID: 1919312089}
+  keywordExplanation_header_text2: {fileID: 583415753}
+  keyword_header: {fileID: 2084289098}
+  keyword_header_left: {fileID: 1717286800}
+  keyword_header_left_bodyguard: {fileID: 1084334454}
+  keyword_header_left_bodyguard_btn: {fileID: 1436191492}
+  keyword_header_left_bodyguard_space: {fileID: 1808380605}
+  keyword_header_left_bodyguard_text: {fileID: 1931269708}
+  keyword_header_left_challenger: {fileID: 1926562399}
+  keyword_header_left_challenger_btn: {fileID: 436189873}
+  keyword_header_left_challenger_space: {fileID: 1981737678}
+  keyword_header_left_challenger_text: {fileID: 1255416492}
+  keyword_header_left_evasive: {fileID: 539266553}
+  keyword_header_left_evasive_btn: {fileID: 1341425188}
+  keyword_header_left_evasive_space: {fileID: 1653670247}
+  keyword_header_left_evasive_text: {fileID: 1415015689}
+  keyword_header_left_shift: {fileID: 1626079940}
+  keyword_header_left_shift_btn: {fileID: 74791168}
+  keyword_header_left_shift_space: {fileID: 1701457067}
+  keyword_header_left_shift_text: {fileID: 1929572342}
+  keyword_header_left_singer: {fileID: 2023947266}
+  keyword_header_left_singer_btn: {fileID: 73548701}
+  keyword_header_left_singer_space: {fileID: 175716309}
+  keyword_header_left_singer_text: {fileID: 1478791955}
+  keyword_header_right: {fileID: 1000776535}
+  keyword_header_right_support: {fileID: 1702858192}
+  keyword_header_right_support_btn: {fileID: 116560239}
+  keyword_header_right_support_space: {fileID: 1693491231}
+  keyword_header_right_support_text: {fileID: 331225614}
+  keyword_header_right_reckless: {fileID: 1523548161}
+  keyword_header_right_reckless_btn: {fileID: 743166093}
+  keyword_header_right_reckless_space: {fileID: 653722247}
+  keyword_header_right_reckless_text: {fileID: 1592540791}
+  keyword_header_right_rush: {fileID: 350501297}
+  keyword_header_right_rush_btn: {fileID: 114963065}
+  keyword_header_right_rush_space: {fileID: 1543210190}
+  keyword_header_right_rush_text: {fileID: 445712309}
+  keyword_header_right_ward: {fileID: 1295067961}
+  keyword_header_right_ward_btn: {fileID: 566696550}
+  keyword_header_right_ward_space: {fileID: 1465914105}
+  keyword_header_right_ward_text: {fileID: 1801514843}
+  keyword_header_right_null: {fileID: 1481937435}
+  space4: {fileID: 78069755}
+  abilityExplanation_header: {fileID: 983310142}
+  abilityExplanation_header_text1: {fileID: 1007077987}
+  abilityExplanation_header_text2: {fileID: 1186254561}
+  ability_header: {fileID: 504155728}
+  ability_header_left: {fileID: 1627097509}
+  ability_header_left_handDestruction: {fileID: 843279482}
+  ability_header_left_handDestruction_btn: {fileID: 851626670}
+  ability_header_left_handDestruction_space: {fileID: 1629911437}
+  ability_header_left_handDestruction_text: {fileID: 1716312510}
+  ability_header_left_CIP: {fileID: 1025657459}
+  ability_header_left_CIP_btn: {fileID: 420260192}
+  ability_header_left_CIP_space: {fileID: 616554843}
+  ability_header_left_CIP_text: {fileID: 1851349607}
+  ability_header_left_PIG: {fileID: 980680415}
+  ability_header_left_PIG_btn: {fileID: 2112793982}
+  ability_header_left_PIG_space: {fileID: 540982714}
+  ability_header_left_PIG_text: {fileID: 292210201}
+  ability_header_left_challenge: {fileID: 126300721}
+  ability_header_left_challenge_btn: {fileID: 1614574721}
+  ability_header_left_challenge_space: {fileID: 151787386}
+  ability_header_left_challenge_text: {fileID: 724143794}
+  ability_header_left_action: {fileID: 1118606756}
+  ability_header_left_action_btn: {fileID: 1504991004}
+  ability_header_left_action_space: {fileID: 1365266081}
+  ability_header_left_action_text: {fileID: 340912709}
+  ability_header_right: {fileID: 1601348314}
+  ability_header_right_getLore: {fileID: 725516877}
+  ability_header_right_getLore_btn: {fileID: 1107410110}
+  ability_header_right_getLore_space: {fileID: 1804854640}
+  ability_header_right_getLore_text: {fileID: 1309997122}
+  ability_header_right_lostLore: {fileID: 583788282}
+  ability_header_right_lostLore_btn: {fileID: 1513217746}
+  ability_header_right_lostLore_space: {fileID: 603580745}
+  ability_header_right_lostLore_text: {fileID: 449595872}
+  ability_header_right_addInk: {fileID: 2043720105}
+  ability_header_right_addInk_btn: {fileID: 72361883}
+  ability_header_right_addInk_space: {fileID: 779722950}
+  ability_header_right_addInk_text: {fileID: 1114104644}
+  ability_header_right_item: {fileID: 1214718505}
+  ability_header_right_item_btn: {fileID: 963918719}
+  ability_header_right_item_space: {fileID: 749330590}
+  ability_header_right_item_text: {fileID: 1114104644}
+  ability_header_right_location: {fileID: 1440625455}
+  ability_header_right_locationbtn: {fileID: 666189374}
+  ability_header_right_location_space: {fileID: 1745871907}
+  ability_header_right_location_text: {fileID: 132036854}
+  space5: {fileID: 132036854}
+  titleExplanation_header: {fileID: 1938561646}
+  titleExplanation_header_text1: {fileID: 381060659}
+  titleExplanation_header_text2: {fileID: 483948684}
+  title_header: {fileID: 1306088034}
+  title_header_dropdown: {fileID: 314336389}
+  space6: {fileID: 1534116959}
+  searchBtn: {fileID: 677133535}
+  searchBtn_text: {fileID: 598417092}
   m_TitleDropdown: {fileID: 314336390}
   t_TitleDropdown: {fileID: 101968403}
 --- !u!1001 &479750130
@@ -123289,6 +123418,7 @@ MonoBehaviour:
   m_DialogManager: {fileID: 1802370523}
   m_ViewMode: {fileID: 1962415522}
   m_EditCardPanelManager: {fileID: 8361859508844763780}
+  m_SearchClass: {fileID: 479190006}
   CanvasRectTransform: {fileID: 186012624}
   Parent: {fileID: 8630466890166433785}
   header_parent: {fileID: 5285346755331787183}
