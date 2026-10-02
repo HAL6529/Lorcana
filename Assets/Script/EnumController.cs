@@ -76,6 +76,7 @@ public class EnumController
 
     public enum Title
     {
+        None,
         Aladdin, //アラジン
         AliceInWonderland, //不思議の国のアリス
         BeautyAndTheBeast, //美女と野獣

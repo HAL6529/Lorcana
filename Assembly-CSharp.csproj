@@ -258,6 +258,7 @@
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_041_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_107_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_062_JA_01.cs" />
+    <Compile Include="Assets\Script\SearchFilterClass.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_083_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_002_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_008_JA_01.cs" />

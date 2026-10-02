@@ -357,6 +357,18 @@ public class EditCardPanelManager : MonoBehaviour
         }*/
     }
 
+    public void Search(SearchFilterClass m_SearchFilterClass)
+    {
+        for (int i = 0; i < m_EditCardPanelList_TheFirstChapter.Count; i++)
+        {
+            if(m_EditCardPanelList_TheFirstChapter[i] == null)
+            {
+                continue;
+            }
+            m_EditCardPanelList_TheFirstChapter[i].isSearchHit(m_SearchFilterClass);
+        }
+    }
+
     public void UpdateImage(float magnification_x, float magnification_y)
     {
         parent.sizeDelta = new Vector2(parent.sizeDelta.x * magnification_x, parent.sizeDelta.y * magnification_y);

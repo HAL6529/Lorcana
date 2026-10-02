@@ -123,6 +123,61 @@ public class ExtendUtil
         }
     }
 
+    public EnumController.Title ConvertToTitleFromString(string paramater)
+    {
+        switch (paramater)
+        {
+            case "アラジン":
+                return EnumController.Title.Aladdin;
+            case "不思議の国のアリス":
+                return EnumController.Title.AliceInWonderland;
+            case "美女と野獣":
+                return EnumController.Title.BeautyAndTheBeast;
+            case "シンデレラ":
+                return EnumController.Title.Cinderella;
+            case "ファンタジア":
+                return EnumController.Title.Fantasia;
+            case "アナと雪の女王":
+                return EnumController.Title.Frozen;
+            case "ヘラクレス":
+                return EnumController.Title.Hercules;
+            case "塔の上のラプンツェル":
+                return EnumController.Title.Tangled;
+            case  "ラマになった王様":
+                return EnumController.Title.TheEmperorsNewGroove;
+            case  "ライオンキング":
+                return EnumController.Title.TheLionKing;
+            case  "リトル・マーメイド":
+                return EnumController.Title.TheLittleMermaid;
+            case  "プリンセスと魔法のキス":
+                return EnumController.Title.ThePrincessAndTheFrog;
+            case  "王様の剣":
+                return EnumController.Title.TheSwordInTheStone;
+            case  "トレジャー・プラネット":
+                return EnumController.Title.TreasurePlanet;
+            case  "リロ・アンド・スティッチ":
+                return EnumController.Title.LiloAndStitch;
+            case  "ミッキーマウス":
+                return EnumController.Title.MickeyMouse;
+            case  "モアナと伝説の海":
+                return EnumController.Title.Moana;
+            case  "ムーラン":
+                return EnumController.Title.Mulan;
+            case  "101匹わんちゃん":
+                return EnumController.Title.OneHundredAndOneDalmatians;
+            case  "ピーターパン":
+                return EnumController.Title.PeterPan;
+            case  "ロビン・フッド":
+                return EnumController.Title.RobinHood;
+            case  "眠れる森の美女":
+                return EnumController.Title.SleepingBeauty;
+            case "白雪姫":
+                return EnumController.Title.SnowWhiteAndTheSevenDwarfs;
+            default:
+                return EnumController.Title.None;
+        }
+    }
+
     public string GetSecureDataPath()
     {
         try
