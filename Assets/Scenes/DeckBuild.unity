@@ -50013,6 +50013,8 @@ MonoBehaviour:
   searchBtn_text: {fileID: 598417092}
   m_TitleDropdown: {fileID: 314336390}
   t_TitleDropdown: {fileID: 101968403}
+  m_EditCardPanelManager: {fileID: 8361859508844763780}
+  SerachObj: {fileID: 479190001}
 --- !u!1001 &479750130
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -61244,7 +61246,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 598417094}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 479190006}
+        m_TargetAssemblyTypeName: SearchClass, Assembly-CSharp
+        m_MethodName: onSearchBtn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &598417094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -198060,7 +198074,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3240975521696806762}
   m_HandleRect: {fileID: 4164854425213757719}
   m_Direction: 0
-  m_Value: 0
+  m_Value: 0.0000017951517
   m_Size: 0.98089886
   m_NumberOfSteps: 0
   m_OnValueChanged:

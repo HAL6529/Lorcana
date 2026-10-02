@@ -209,6 +209,12 @@ public class SearchClass : MonoBehaviour
     public Dropdown m_TitleDropdown;
     public Text t_TitleDropdown;
 
+    public ExtendUtil m_ExtendUtil = new ExtendUtil();
+
+    public EditCardPanelManager m_EditCardPanelManager;
+
+    public GameObject SerachObj;
+
     private List<string> TitleDropdownList = new List<string>() { "--選択なし--", "アラジン", "不思議の国のアリス", "美女と野獣", "シンデレラ", 
                                                                     "ファンタジア", "アナと雪の女王", "ヘラクレス","塔の上のラプンツェル",
                                                                     "ラマになった王様","ライオンキング","リトル・マーメイド","プリンセスと魔法のキス",
@@ -659,6 +665,56 @@ public class SearchClass : MonoBehaviour
                 }
                 break;
         }
+    }
+
+    public void onSearchBtn()
+    {
+        SearchFilterClass m_SearchFilterClass = new SearchFilterClass();
+        m_SearchFilterClass.isAmethyst = isAmethyst;
+        m_SearchFilterClass.isAmber = isAmber;
+        m_SearchFilterClass.isEmerald = isEmerald;
+        m_SearchFilterClass.isSapphire = isSapphire;
+        m_SearchFilterClass.isSteel = isSteel;
+        m_SearchFilterClass.isRuby = isRuby;
+
+        m_SearchFilterClass.a_isAction = a_isAction;
+        m_SearchFilterClass.a_isCharacter = a_isCharacter;
+        m_SearchFilterClass.a_isLocation = a_isLocation;
+        m_SearchFilterClass.a_isItem = a_isItem;
+        m_SearchFilterClass.a_isSong = a_isSong;
+
+        m_SearchFilterClass.isBodyGuard = isBodyGuard;
+        m_SearchFilterClass.isChallenger = isChallenger;
+        m_SearchFilterClass.isEvasive = isEvasive;
+        m_SearchFilterClass.isShift = isShift;
+        m_SearchFilterClass.isSinger = isSinger;
+        m_SearchFilterClass.isSupport = isSupport;
+        m_SearchFilterClass.isReckless = isReckless;
+        m_SearchFilterClass.isRush = isRush;
+        m_SearchFilterClass.isWard = isWard;
+
+        m_SearchFilterClass.isHandDestraction = isHandDestraction;
+        m_SearchFilterClass.isCIP = isCIP;
+        m_SearchFilterClass.isPIG = isPIG;
+        m_SearchFilterClass.isChallenge = isChallenge;
+        m_SearchFilterClass.isAction = isAction;
+        m_SearchFilterClass.isGetLore = isGetLore;
+        m_SearchFilterClass.isLostLore = isLostLore;
+        m_SearchFilterClass.isAddInk = isAddInk;
+        m_SearchFilterClass.isItem = isItem;
+        m_SearchFilterClass.isLocation = isLocation;
+
+        if(t_TitleDropdown.text == "--選択なし--")
+        {
+            m_SearchFilterClass.title = EnumController.Title.None;
+        }
+        else
+        {
+            m_SearchFilterClass.title = m_ExtendUtil.ConvertToTitleFromString(t_TitleDropdown.text);
+        }
+
+        m_EditCardPanelManager.Search(m_SearchFilterClass);
+        SerachObj.SetActive(false);
     }
 
     public void UpdateImage(float magnification_x, float magnification_y)
