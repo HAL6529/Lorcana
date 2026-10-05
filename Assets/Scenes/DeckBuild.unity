@@ -81240,7 +81240,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a79945efa5b28df44aa14ce01c498815, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 889f02803d45bc14db8ce7ca294dd899, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -127210,7 +127210,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 216433d5be18d0e49a505919d090dcdb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 32db5ddfa38929842abcec928efcf8f3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -155201,14 +155201,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.7058824}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 216433d5be18d0e49a505919d090dcdb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 32db5ddfa38929842abcec928efcf8f3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -200747,11 +200747,11 @@ MonoBehaviour:
   Enchanted: {fileID: 0}
   Iconic: {fileID: 0}
   Promo: {fileID: 0}
-  DefaultSortIcon: {fileID: 21300000, guid: 216433d5be18d0e49a505919d090dcdb, type: 3}
-  InkSortIcon: {fileID: 21300000, guid: 21852e8d921a1ab43ab647f6222ecf67, type: 3}
-  ColorSortIcon: {fileID: 21300000, guid: 16799e4337b45cd4cb673965a1468f83, type: 3}
-  DeckAllSwitchBtn1: {fileID: 21300000, guid: a79945efa5b28df44aa14ce01c498815, type: 3}
-  DeckAllSwitchBtn2: {fileID: 21300000, guid: 55f389b8b613a6e46bf15a7aa6a6608a, type: 3}
+  DefaultSortIcon: {fileID: 21300000, guid: 32db5ddfa38929842abcec928efcf8f3, type: 3}
+  InkSortIcon: {fileID: 21300000, guid: 1102b8f068f1059499c6a402b38530eb, type: 3}
+  ColorSortIcon: {fileID: 21300000, guid: 82de85d7535065d4ab6919373b170b57, type: 3}
+  DeckAllSwitchBtn1: {fileID: 21300000, guid: 889f02803d45bc14db8ce7ca294dd899, type: 3}
+  DeckAllSwitchBtn2: {fileID: 21300000, guid: 01319b605bab9a64f949581088129473, type: 3}
   MenuObj: {fileID: 1917513366}
   SortImage: {fileID: 1681440286}
   DeckAllSwitchBtnImage: {fileID: 856827558}
