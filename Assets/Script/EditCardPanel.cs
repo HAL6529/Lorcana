@@ -26,8 +26,6 @@ public class EditCardPanel : MonoBehaviour
     public Button plusBtn;
     public Button minusBtn;
 
-    public GameObject ScrollView;
-
     public int cardCount;
 
     public List<GameObject> loreList;
@@ -186,7 +184,6 @@ public class EditCardPanel : MonoBehaviour
 
     public void onViewBtn()
     {
-        ScrollView.SetActive(false);
         m_PanelPicture.SetView(m_CardInfo);
     }
 
