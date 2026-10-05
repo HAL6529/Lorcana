@@ -55,4 +55,14 @@ public class SaveDataStatic
     {
         m_CardInfoList = paramater;
     }
+
+    public CardInfo GetFavoriteCardInfo()
+    {
+        return favoriteCard;
+    }
+
+    public void SetFavoriteCardInfo(CardInfo paramater)
+    {
+        favoriteCard = paramater;
+    }
 }

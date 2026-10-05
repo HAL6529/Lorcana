@@ -5,16 +5,21 @@ using UnityEngine.UI;
 
 public class PanelPicture : MonoBehaviour
 {
-    public GameObject ScrollView;
     public Image m_image;
 
     public RectTransform Parent;
     public RectTransform Button_Header;
+    public RectTransform Button_Favorite;
     public RectTransform Button_Close;
     public RectTransform Image;
 
+    private CardInfo c;
+
+    public SaveDataStatic m_SaveDataStatic = new SaveDataStatic();
+
     public void SetView(CardInfo m_CardInfo)
     {
+        c = m_CardInfo;
         m_image.sprite = m_CardInfo.GetSprite();
         this.gameObject.SetActive(true);
     }
@@ -22,7 +27,12 @@ public class PanelPicture : MonoBehaviour
     public void onCloseBtn()
     {
         this.gameObject.SetActive(false);
-        ScrollView.SetActive(true);
+    }
+
+    public void onFavoriteBtn()
+    {
+        m_SaveDataStatic.SetFavoriteCardInfo(c);
+        Debug.Log(m_SaveDataStatic.GetFavoriteCardInfo());
     }
 
     public void UpdateImage(float magnification_x, float magnification_y)
@@ -36,6 +46,7 @@ public class PanelPicture : MonoBehaviour
             magnification = magnification_y;
         }
 
+        Button_Favorite.sizeDelta = new Vector2(Button_Favorite.sizeDelta.x * magnification, Button_Favorite.sizeDelta.y * magnification);
         Button_Close.sizeDelta = new Vector2(Button_Close.sizeDelta.x * magnification, Button_Close.sizeDelta.y * magnification);
         Image.sizeDelta = new Vector2(Image.sizeDelta.x * magnification, Image.sizeDelta.y * magnification);
     }

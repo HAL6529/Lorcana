@@ -29,6 +29,8 @@ public class NewSaveDialog : MonoBehaviour
 
     private ExtendUtil m_ExtendUtil = new ExtendUtil();
 
+    public SaveDataStatic m_SaveDataStatic = new SaveDataStatic();
+
     public void Close()
     {
         this.gameObject.SetActive(false);
@@ -87,7 +89,9 @@ public class NewSaveDialog : MonoBehaviour
     private string CreateSaveData()
     {
         string SaveData = m_InputField.text;
-        SaveData += ",003_JA_01";
+        m_EditCardPanelManager.DeckName = m_InputField.text;
+        SaveData += ",";
+        SaveData += m_SaveDataStatic.GetFavoriteCardInfo().GetCardNo();
         List<CardInfo> list = m_EditCardPanelManager.DeckList;
         for (int i = 0; i < m_EditCardPanelManager.DeckList.Count; i++)
         {

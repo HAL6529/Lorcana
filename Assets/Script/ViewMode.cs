@@ -9,6 +9,7 @@ public class ViewMode : MonoBehaviour
     public List<Image> deckImageList = new List<Image>();
     public GameObject DeckName;
     public Text DeckNameText;
+    public Image FavoriteCard;
 
     public RectTransform Parent;
     public RectTransform header;
@@ -56,11 +57,16 @@ public class ViewMode : MonoBehaviour
     public List<RectTransform> scrollView_line12_list = new List<RectTransform>();
     public List<RectTransform> scrollView_line13_list = new List<RectTransform>();
 
+    public SaveDataStatic m_SaveDataStatic = new SaveDataStatic();
+    private ExtendUtil m_ExtendUtil = new ExtendUtil();
+    public Menu_ConvertSpriteFromCardNo m_Menu_ConvertSpriteFromCardNo;
+
     public void Open()
     {
         this.gameObject.SetActive(true);
         UpdateDeckName();
         UpdateDeckList();
+        FavoriteCard.sprite = m_Menu_ConvertSpriteFromCardNo.ConvertSpriteFromCardNo(m_SaveDataStatic.GetFavoriteCardInfo().GetCardNo());
     }
 
     public void UpdateDeckList()
