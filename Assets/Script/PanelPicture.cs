@@ -13,8 +13,13 @@ public class PanelPicture : MonoBehaviour
     public RectTransform Button_Close;
     public RectTransform Image;
 
+    private CardInfo c;
+
+    public SaveDataStatic m_SaveDataStatic = new SaveDataStatic();
+
     public void SetView(CardInfo m_CardInfo)
     {
+        c = m_CardInfo;
         m_image.sprite = m_CardInfo.GetSprite();
         this.gameObject.SetActive(true);
     }
@@ -26,7 +31,8 @@ public class PanelPicture : MonoBehaviour
 
     public void onFavoriteBtn()
     {
-
+        m_SaveDataStatic.SetFavoriteCardInfo(c);
+        Debug.Log(m_SaveDataStatic.GetFavoriteCardInfo());
     }
 
     public void UpdateImage(float magnification_x, float magnification_y)

@@ -80,6 +80,8 @@ public class Menu_Menu : MonoBehaviour
 
     public void onNewProjectBtn()
     {
+        SaveData m_SaveData = new SaveData();
+        SaveDataStatic m_SaveDataStatic = new SaveDataStatic(m_SaveData);
         SceneManager.LoadScene("DeckBuild");
     }
 }

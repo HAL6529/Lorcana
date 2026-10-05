@@ -75,11 +75,10 @@ public class EditCardPanelManager : MonoBehaviour
     private void LoadDeckList()
     {
         onDefaultSort(m_CardInfo_TheFirstChapter);
-        //DeckList = m_SaveDataStatic.GetCardInfoList();
         List<CardInfo> TempDeckList = m_SaveDataStatic.GetCardInfoList();
+        DeckName = m_SaveDataStatic.GetDeckTitle();
         for (int i = 0; i < TempDeckList.Count; i++)
         {
-            //DeckList[i].SetSprite(m_Menu_ConvertSpriteFromCardNo.ConvertSpriteFromCardNo(DeckList[i].GetCardNo()));
             for (int k = 0; k < m_EditCardPanelList_TheFirstChapter.Count; k++)
             {
                 if (m_EditCardPanelList_TheFirstChapter[k] == null)
