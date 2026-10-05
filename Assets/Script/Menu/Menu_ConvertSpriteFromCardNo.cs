@@ -5,6 +5,7 @@ using UnityEngine;
 public class Menu_ConvertSpriteFromCardNo : MonoBehaviour
 {
     public List<Sprite> TheFirstChapterList = new List<Sprite> ();
+    public Sprite noImage;
 
     public Sprite ConvertSpriteFromCardNo(string paramater)
     {
@@ -441,7 +442,7 @@ public class Menu_ConvertSpriteFromCardNo : MonoBehaviour
             case "215_JA_01":
                 return TheFirstChapterList[214];
             default:
-                return null;
+                return noImage;
         }
     }
 }

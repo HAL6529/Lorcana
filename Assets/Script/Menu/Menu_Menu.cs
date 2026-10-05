@@ -21,6 +21,7 @@ public class Menu_Menu : MonoBehaviour
     public RectTransform Header_Parent_Parent;
     public RectTransform Header_Parent;
     //public RectTransform Header_Text;
+    public RectTransform Header_Header_CreateBtn;
     public RectTransform Header_CreateBtn;
 
     public void Start()
@@ -33,6 +34,7 @@ public class Menu_Menu : MonoBehaviour
         ScrollView.sizeDelta = new Vector2(ScrollView.sizeDelta.x * magnification_x, ScrollView.sizeDelta.y * magnification_y);
         Header_Parent_Parent.sizeDelta = new Vector2(Header_Parent_Parent.sizeDelta.x * magnification_x, Header_Parent_Parent.sizeDelta.y * magnification_y);
         Header_Parent.sizeDelta = new Vector2(Header_Parent.sizeDelta.x * magnification_x, Header_Parent.sizeDelta.y * magnification_y);
+        Header_Header_CreateBtn.sizeDelta = new Vector2(Header_Header_CreateBtn.sizeDelta.x * magnification_x, Header_Header_CreateBtn.sizeDelta.y * magnification_y);
         //Header_Text.sizeDelta = new Vector2(Header_Text.sizeDelta.x * magnification_x, Header_Text.sizeDelta.y * magnification_y);
 
         float magnification = magnification_x;

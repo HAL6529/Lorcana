@@ -14,8 +14,6 @@ public class Menu : MonoBehaviour
 
     private ExtendUtil m_ExtendUtil = new ExtendUtil();
 
-    public Text m_Text;
-
     public RectTransform Parent;
     public RectTransform CloseBtn;
     public RectTransform NewSaveBtn;
@@ -23,7 +21,6 @@ public class Menu : MonoBehaviour
     public RectTransform DisplayBtn;
     public RectTransform space;
     public RectTransform MenuBtn;
-    public RectTransform Text;
 
     public void onCloseBtn()
     {
@@ -65,6 +62,5 @@ public class Menu : MonoBehaviour
         DisplayBtn.sizeDelta = new Vector2(DisplayBtn.sizeDelta.x * magnification_x, DisplayBtn.sizeDelta.y * magnification_y);
         space.sizeDelta = new Vector2(space.sizeDelta.x * magnification_x, space.sizeDelta.y * magnification_y);
         MenuBtn.sizeDelta = new Vector2(MenuBtn.sizeDelta.x * magnification_x, MenuBtn.sizeDelta.y * magnification_y);
-        Text.sizeDelta = new Vector2(Text.sizeDelta.x * magnification_x, Text.sizeDelta.y * magnification_y);
     }
 }
