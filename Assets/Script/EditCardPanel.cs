@@ -90,7 +90,14 @@ public class EditCardPanel : MonoBehaviour
     {
         if (m_SearchFilterClass.isSearchHit(m_CardInfo))
         {
-            SwitchActive(true);
+            if ((m_EditCardPanelManager.SwitchOwn && cardCount > 0) || !m_EditCardPanelManager.SwitchOwn)
+            {
+                SwitchActive(true);
+            }
+            else
+            {
+                SwitchActive(false);
+            }
         }
         else
         {

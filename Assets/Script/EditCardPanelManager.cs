@@ -55,7 +55,7 @@ public class EditCardPanelManager : MonoBehaviour
 
     private SortStatus m_SortStatus = SortStatus.Default;
 
-    private bool SwitchOwn= false;
+    public bool SwitchOwn= false;
 
     private int standbyCnt = 0;
 
