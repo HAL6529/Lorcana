@@ -59,11 +59,14 @@ public class EditCardPanelManager : MonoBehaviour
 
     private int standbyCnt = 0;
 
+    public SearchFilterClass m_SearchFilterClass;
+
     public void CheckStandby()
     {
         //if(standbyCnt == m_EditCardPanelList_TheFirstChapter.Count)
         if (standbyCnt == 203)
         {
+            m_SearchFilterClass = new SearchFilterClass();
             LoadDeckList();
         }
         else
@@ -134,7 +137,7 @@ public class EditCardPanelManager : MonoBehaviour
 
         if (SwitchOwn)
         {
-            for (int i = 0; i < m_EditCardPanelList_TheFirstChapter.Count; i++)
+            /*for (int i = 0; i < m_EditCardPanelList_TheFirstChapter.Count; i++)
             {
                 if (m_EditCardPanelList_TheFirstChapter[i] == null)
                 {
@@ -148,22 +151,37 @@ public class EditCardPanelManager : MonoBehaviour
                 {
                     m_EditCardPanelList_TheFirstChapter[i].SwitchActive(true);
                 }
-            }
+            }*/
             DeckAllSwitchBtnImage.sprite = DeckAllSwitchBtn2;
         }
         else
         {
-            for (int i = 0; i < m_EditCardPanelList_TheFirstChapter.Count; i++)
+            /*for (int i = 0; i < m_EditCardPanelList_TheFirstChapter.Count; i++)
             {
                 if (m_EditCardPanelList_TheFirstChapter[i] == null)
                 {
                     continue;
                 }
                 m_EditCardPanelList_TheFirstChapter[i].SwitchActive(true);
-            }
+            }*/
             DeckAllSwitchBtnImage.sprite = DeckAllSwitchBtn1;
         }
 
+        switch (m_SortStatus)
+        {
+            case SortStatus.Default:
+                SortImage.sprite = DefaultSortIcon;
+                onDefaultSort(m_CardInfo_TheFirstChapter);
+                break;
+            case SortStatus.InkSort:
+                SortImage.sprite = InkSortIcon;
+                onInkCostSort(m_CardInfo_TheFirstChapter);
+                break;
+            case SortStatus.ColorSort:
+                SortImage.sprite = ColorSortIcon;
+                onColorSort(m_CardInfo_TheFirstChapter);
+                break;
+        }
     }
 
     public void onMenuBtn()
@@ -254,6 +272,15 @@ public class EditCardPanelManager : MonoBehaviour
                 }
             }
         }
+
+        for (int i = 0; i < m_EditCardPanelList_TheFirstChapter.Count; i++)
+        {
+            if (m_EditCardPanelList_TheFirstChapter[i] == null)
+            {
+                continue;
+            }
+            m_EditCardPanelList_TheFirstChapter[i].isSearchHit();
+        }
     }
 
     private void onInkCostSort(List<CardInfo> paramaterList)
@@ -307,6 +334,15 @@ public class EditCardPanelManager : MonoBehaviour
                 }
             }
         }
+
+        for (int i = 0; i < m_EditCardPanelList_TheFirstChapter.Count; i++)
+        {
+            if (m_EditCardPanelList_TheFirstChapter[i] == null)
+            {
+                continue;
+            }
+            m_EditCardPanelList_TheFirstChapter[i].isSearchHit();
+        }
     }
 
     private void onColorSort(List<CardInfo> paramaterList)
@@ -356,15 +392,23 @@ public class EditCardPanelManager : MonoBehaviour
         }*/
     }
 
-    public void Search(SearchFilterClass m_SearchFilterClass)
+    public void Search(SearchFilterClass paramater)
     {
-        for (int i = 0; i < m_EditCardPanelList_TheFirstChapter.Count; i++)
+        m_SearchFilterClass = paramater;
+        switch (m_SortStatus)
         {
-            if(m_EditCardPanelList_TheFirstChapter[i] == null)
-            {
-                continue;
-            }
-            m_EditCardPanelList_TheFirstChapter[i].isSearchHit(m_SearchFilterClass);
+            case SortStatus.Default:
+                SortImage.sprite = DefaultSortIcon;
+                onDefaultSort(m_CardInfo_TheFirstChapter);
+                break;
+            case SortStatus.InkSort:
+                SortImage.sprite = InkSortIcon;
+                onInkCostSort(m_CardInfo_TheFirstChapter);
+                break;
+            case SortStatus.ColorSort:
+                SortImage.sprite = ColorSortIcon;
+                onColorSort(m_CardInfo_TheFirstChapter);
+                break;
         }
     }
 

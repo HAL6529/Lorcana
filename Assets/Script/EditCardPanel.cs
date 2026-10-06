@@ -86,9 +86,9 @@ public class EditCardPanel : MonoBehaviour
         return m_CardInfo.GetCardNo();
     }
 
-    public void isSearchHit(SearchFilterClass m_SearchFilterClass)
+    public void isSearchHit()
     {
-        if (m_SearchFilterClass.isSearchHit(m_CardInfo))
+        if (m_EditCardPanelManager.m_SearchFilterClass.isSearchHit(m_CardInfo))
         {
             if ((m_EditCardPanelManager.SwitchOwn && cardCount > 0) || !m_EditCardPanelManager.SwitchOwn)
             {
