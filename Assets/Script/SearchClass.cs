@@ -202,9 +202,21 @@ public class SearchClass : MonoBehaviour
     public RectTransform titleExplanation_header_text2;
     public RectTransform title_header;
     public RectTransform title_header_dropdown;
+    public RectTransform title_header_dropdown_Content;
+    public RectTransform title_header_dropdown_Content_Item;
+    public RectTransform title_header_dropdown_Content_Item_ItemBackGround;
+    public RectTransform title_header_dropdown_Content_Item_Checkmark;
+    public RectTransform title_header_dropdown_Content_Item_Label;
     public RectTransform space6;
+    public RectTransform searchBtn_header;
     public RectTransform searchBtn;
     public RectTransform searchBtn_text;
+    public RectTransform searchReset;
+    public RectTransform searchReset_header;
+    public RectTransform searchReset_header_text;
+    public RectTransform searchReset_header_text_text;
+    public RectTransform searchReset_header_Button;
+    public RectTransform searchReset_header_space;
 
     public Dropdown m_TitleDropdown;
     public Text t_TitleDropdown;
@@ -831,8 +843,19 @@ public class SearchClass : MonoBehaviour
         titleExplanation_header_text2.sizeDelta = new Vector2(titleExplanation_header_text2.sizeDelta.x * magnification_x, titleExplanation_header_text2.sizeDelta.y * magnification_y);
         title_header.sizeDelta = new Vector2(title_header.sizeDelta.x * magnification_x, title_header.sizeDelta.y * magnification_y);
         title_header_dropdown.sizeDelta = new Vector2(title_header_dropdown.sizeDelta.x * magnification_x, title_header_dropdown.sizeDelta.y * magnification_y);
+        title_header_dropdown_Content.sizeDelta = new Vector2(title_header_dropdown_Content.sizeDelta.x * magnification_x, title_header_dropdown_Content.sizeDelta.y * magnification_y);
+        title_header_dropdown_Content_Item.sizeDelta = new Vector2(title_header_dropdown_Content_Item.sizeDelta.x * magnification_x, title_header_dropdown_Content_Item.sizeDelta.y * magnification_y);
+        title_header_dropdown_Content_Item_ItemBackGround.sizeDelta = new Vector2(title_header_dropdown_Content_Item_ItemBackGround.sizeDelta.x * magnification_x, title_header_dropdown_Content_Item_ItemBackGround.sizeDelta.y * magnification_y);
+        title_header_dropdown_Content_Item_Checkmark.sizeDelta = new Vector2(title_header_dropdown_Content_Item_Checkmark.sizeDelta.x * magnification_x, title_header_dropdown_Content_Item_Checkmark.sizeDelta.y * magnification_y);
+        title_header_dropdown_Content_Item_Label.sizeDelta = new Vector2(title_header_dropdown_Content_Item_Label.sizeDelta.x * magnification_x, title_header_dropdown_Content_Item_Label.sizeDelta.y * magnification_y);
         space6.sizeDelta = new Vector2(space6.sizeDelta.x * magnification_x, space6.sizeDelta.y * magnification_y);
-
+        searchBtn_header.sizeDelta = new Vector2(searchBtn_header.sizeDelta.x * magnification_x, searchBtn_header.sizeDelta.y * magnification_y);
+        searchReset.sizeDelta = new Vector2(searchReset.sizeDelta.x * magnification_x, searchReset.sizeDelta.y * magnification_y);
+        searchReset_header.sizeDelta = new Vector2(searchReset_header.sizeDelta.x * magnification_x, searchReset_header.sizeDelta.y * magnification_y);
+        searchReset_header_text.sizeDelta = new Vector2(searchReset_header_text.sizeDelta.x * magnification_x, searchReset_header_text.sizeDelta.y * magnification_y);
+        searchReset_header_text_text.sizeDelta = new Vector2(searchReset_header_text_text.sizeDelta.x * magnification_x, searchReset_header_text_text.sizeDelta.y * magnification_y);
+        searchReset_header_Button.sizeDelta = new Vector2(searchReset_header_Button.sizeDelta.x * magnification_x, searchReset_header_Button.sizeDelta.y * magnification_y);
+        searchReset_header_space.sizeDelta = new Vector2(searchReset_header_space.sizeDelta.x * magnification_x, searchReset_header_space.sizeDelta.y * magnification_y);
 
         float magnification = magnification_x;
         if (magnification_x > magnification_y)
