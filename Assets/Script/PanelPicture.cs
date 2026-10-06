@@ -32,7 +32,6 @@ public class PanelPicture : MonoBehaviour
     public void onFavoriteBtn()
     {
         m_SaveDataStatic.SetFavoriteCardInfo(c);
-        Debug.Log(m_SaveDataStatic.GetFavoriteCardInfo());
     }
 
     public void UpdateImage(float magnification_x, float magnification_y)
