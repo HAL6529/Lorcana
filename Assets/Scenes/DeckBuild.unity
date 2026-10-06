@@ -201284,6 +201284,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_image: {fileID: 9094192497850056867}
+  favoriteBtn_image: {fileID: 524036361}
+  FavoriteOn: {fileID: 21300000, guid: f9b5b8b2cd0600a49bc527e39d6e36f7, type: 3}
+  FavoriteOff: {fileID: 21300000, guid: b51bb204fbfa74a41af3e35616b53597, type: 3}
   Parent: {fileID: 2792485668602230061}
   Button_Header: {fileID: 949536781308994900}
   Button_Favorite: {fileID: 524036359}

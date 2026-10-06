@@ -6,6 +6,10 @@ using UnityEngine.UI;
 public class PanelPicture : MonoBehaviour
 {
     public Image m_image;
+    public Image favoriteBtn_image;
+
+    public Sprite FavoriteOn;
+    public Sprite FavoriteOff;
 
     public RectTransform Parent;
     public RectTransform Button_Header;
@@ -17,11 +21,22 @@ public class PanelPicture : MonoBehaviour
 
     public SaveDataStatic m_SaveDataStatic = new SaveDataStatic();
 
+    private bool favoriteBtn = false;
+
     public void SetView(CardInfo m_CardInfo)
     {
         c = m_CardInfo;
         m_image.sprite = m_CardInfo.GetSprite();
         this.gameObject.SetActive(true);
+        if(m_CardInfo.GetCardNo() == m_SaveDataStatic.GetFavoriteCardInfo().GetCardNo())
+        {
+            favoriteBtn = true;
+        }
+        else
+        {
+            favoriteBtn = false;
+        }
+        ChangeFavoriteBtnSprite();
     }
 
     public void onCloseBtn()
@@ -31,7 +46,30 @@ public class PanelPicture : MonoBehaviour
 
     public void onFavoriteBtn()
     {
-        m_SaveDataStatic.SetFavoriteCardInfo(c);
+        if (favoriteBtn)
+        {
+            favoriteBtn = false;
+            CardInfo favoriteCard = new CardInfo();
+            m_SaveDataStatic.SetFavoriteCardInfo(favoriteCard);
+        }
+        else
+        {
+            favoriteBtn = true;
+            m_SaveDataStatic.SetFavoriteCardInfo(c);
+        }
+        ChangeFavoriteBtnSprite();
+    }
+
+    private void ChangeFavoriteBtnSprite()
+    {
+        if (favoriteBtn)
+        {
+            favoriteBtn_image.sprite = FavoriteOn;
+        }
+        else
+        {
+            favoriteBtn_image.sprite = FavoriteOff;
+        }
     }
 
     public void UpdateImage(float magnification_x, float magnification_y)
