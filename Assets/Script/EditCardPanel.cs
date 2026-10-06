@@ -229,6 +229,10 @@ public class EditCardPanel : MonoBehaviour
         if(cardCount == 0)
         {
             minusBtn.interactable = false;
+            if (m_EditCardPanelManager.SwitchOwn)
+            {
+                SwitchActive(false);
+            }
         }
         else
         {

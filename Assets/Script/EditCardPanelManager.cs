@@ -55,7 +55,7 @@ public class EditCardPanelManager : MonoBehaviour
 
     private SortStatus m_SortStatus = SortStatus.Default;
 
-    public bool SwitchOwn= false;
+    public bool SwitchOwn = false;
 
     private int standbyCnt = 0;
 
@@ -137,33 +137,10 @@ public class EditCardPanelManager : MonoBehaviour
 
         if (SwitchOwn)
         {
-            /*for (int i = 0; i < m_EditCardPanelList_TheFirstChapter.Count; i++)
-            {
-                if (m_EditCardPanelList_TheFirstChapter[i] == null)
-                {
-                    continue;
-                }
-                if (m_EditCardPanelList_TheFirstChapter[i].cardCount == 0)
-                {
-                    m_EditCardPanelList_TheFirstChapter[i].SwitchActive(false);
-                }
-                else
-                {
-                    m_EditCardPanelList_TheFirstChapter[i].SwitchActive(true);
-                }
-            }*/
             DeckAllSwitchBtnImage.sprite = DeckAllSwitchBtn2;
         }
         else
         {
-            /*for (int i = 0; i < m_EditCardPanelList_TheFirstChapter.Count; i++)
-            {
-                if (m_EditCardPanelList_TheFirstChapter[i] == null)
-                {
-                    continue;
-                }
-                m_EditCardPanelList_TheFirstChapter[i].SwitchActive(true);
-            }*/
             DeckAllSwitchBtnImage.sprite = DeckAllSwitchBtn1;
         }
 
