@@ -10,11 +10,17 @@ public class ViewMode : MonoBehaviour
     public GameObject DeckName;
     public Text DeckNameText;
     public Image FavoriteCard;
+    public Image BackGround1;
+    public Image BackGround2;
 
     public RectTransform Parent;
     public RectTransform header;
+    public RectTransform header_background;
+    public RectTransform header_background_background1;
+    public RectTransform header_background_background2;
     public RectTransform header_Image_Parent;
     public RectTransform header_Image;
+    public RectTransform header_header_Parent;
     public RectTransform header_header;
     public RectTransform header_header_line1;
     public RectTransform header_header_line1_closeBtn;
@@ -61,12 +67,132 @@ public class ViewMode : MonoBehaviour
     private ExtendUtil m_ExtendUtil = new ExtendUtil();
     public Menu_ConvertSpriteFromCardNo m_Menu_ConvertSpriteFromCardNo;
 
+    private List<EnumController.Colors> colors = new List<EnumController.Colors>();
+
     public void Open()
     {
         this.gameObject.SetActive(true);
         UpdateDeckName();
         UpdateDeckList();
         FavoriteCard.sprite = m_Menu_ConvertSpriteFromCardNo.ConvertSpriteFromCardNo(m_SaveDataStatic.GetFavoriteCardInfo().GetCardNo());
+        UpdateHeader();
+    }
+
+    private void UpdateHeader()
+    {
+        colors = new List<EnumController.Colors>();
+        for (int i = 0; i< m_EditCardPanelManager.DeckList.Count; i++)
+        {
+            if(colors.Count == 2)
+            {
+                break;
+            }
+
+            List<EnumController.Colors> temp = m_EditCardPanelManager.DeckList[i].GetColor();
+            for (int k = 0; k < temp.Count; k++)
+            {
+                if (colors.Contains(temp[k]))
+                {
+                    continue;
+                }
+                else
+                {
+                    colors.Add(temp[k]);
+                }
+            }
+        }
+
+        if(colors.Count == 2)
+        {
+            switch (colors[0])
+            {
+                case EnumController.Colors.Amber:
+                    BackGround1.color = new Color(220f / 255f, 180f / 255f, 0, 145f / 255f);
+                    break;
+                case EnumController.Colors.Amethyst:
+                    BackGround1.color = new Color(160f / 255f, 0, 185f / 255f, 145f / 255f);
+                    break;
+                case EnumController.Colors.Emerald:
+                    BackGround1.color = new Color(0, 150f / 255f, 40f / 255f, 145f / 255f);
+                    break;
+                case EnumController.Colors.Sapphire:
+                    BackGround1.color = new Color(25f / 255f, 130f / 255f, 200f / 255f, 145f / 255f);
+                    break;
+                case EnumController.Colors.Steel:
+                    BackGround1.color = new Color(145f / 255f, 150f / 255f, 160f / 255f, 145f / 255f);
+                    break;
+                case EnumController.Colors.Ruby:
+                    BackGround1.color = new Color(215f / 255f, 0, 40f / 255f, 145f / 255f);
+                    break;
+                default:
+                    BackGround1.color = new Color(1, 1, 1, 0);
+                    break;
+            }
+
+            switch (colors[1])
+            {
+                case EnumController.Colors.Amber:
+                    BackGround2.color = new Color(220f / 255f, 180f / 255f, 0, 145f / 255f);
+                    break;
+                case EnumController.Colors.Amethyst:
+                    BackGround2.color = new Color(160f / 255f, 0, 185f / 255f, 145f / 255f);
+                    break;
+                case EnumController.Colors.Emerald:
+                    BackGround2.color = new Color(0, 150f / 255f, 40f / 255f, 145f / 255f);
+                    break;
+                case EnumController.Colors.Sapphire:
+                    BackGround2.color = new Color(25f / 255f, 130f / 255f, 200f / 255f, 145f / 255f);
+                    break;
+                case EnumController.Colors.Steel:
+                    BackGround2.color = new Color(145f / 255f, 150f / 255f, 160f / 255f, 145f / 255f);
+                    break;
+                case EnumController.Colors.Ruby:
+                    BackGround2.color = new Color(215f / 255f, 0, 40f / 255f, 145f / 255f);
+                    break;
+                default:
+                    BackGround2.color = new Color(1, 1, 1, 0);
+                    break;
+            }
+        }
+        else if (colors.Count == 1)
+        {
+            switch (colors[0])
+            {
+                case EnumController.Colors.Amber:
+                    BackGround1.color = new Color(220f / 255f, 180f / 255f, 0, 145f / 255f);
+                    BackGround2.color = new Color(220f / 255f, 180f / 255f, 0, 145f / 255f);
+                    break;
+                case EnumController.Colors.Amethyst:
+                    BackGround1.color = new Color(160f / 255f, 0, 185f / 255f, 145f / 255f);
+                    BackGround2.color = new Color(160f / 255f, 0, 185f / 255f, 145f / 255f);
+                    break;
+                case EnumController.Colors.Emerald:
+                    BackGround1.color = new Color(0, 150f / 255f, 40f / 255f, 145f / 255f);
+                    BackGround2.color = new Color(0, 150f / 255f, 40f / 255f, 145f / 255f);
+                    break;
+                case EnumController.Colors.Sapphire:
+                    BackGround1.color = new Color(25f / 255f, 130f / 255f, 200f / 255f, 145f / 255f);
+                    BackGround2.color = new Color(25f / 255f, 130f / 255f, 200f / 255f, 145f / 255f);
+                    break;
+                case EnumController.Colors.Steel:
+                    BackGround1.color = new Color(145f / 255f, 150f / 255f, 160f / 255f, 145f / 255f);
+                    BackGround2.color = new Color(145f / 255f, 150f / 255f, 160f / 255f, 145f / 255f);
+                    break;
+                case EnumController.Colors.Ruby:
+                    BackGround1.color = new Color(215f / 255f, 0, 40f / 255f, 145f / 255f);
+                    BackGround2.color = new Color(215f / 255f, 0, 40f / 255f, 145f / 255f);
+                    break;
+                default:
+                    BackGround1.color = new Color(1, 1, 1, 0);
+                    BackGround2.color = new Color(1, 1, 1, 0);
+                    break;
+            }
+        }
+        else
+        {
+            BackGround1.color = new Color(1, 1, 1, 0);
+            BackGround2.color = new Color(1, 1, 1, 0);
+        }
     }
 
     public void UpdateDeckList()
@@ -89,14 +215,7 @@ public class ViewMode : MonoBehaviour
 
     private void UpdateDeckName()
     {
-        if(m_EditCardPanelManager.DeckName == "")
-        {
-            DeckNameText.text = "--–¼‘O‚È‚µ--";
-        }
-        else
-        {
-            DeckNameText.text = m_EditCardPanelManager.DeckName;
-        }
+        DeckNameText.text = m_EditCardPanelManager.DeckName;
     }
 
     public void onCloseBtn()
@@ -130,6 +249,10 @@ public class ViewMode : MonoBehaviour
         hand_line2_firstDrawBtn.sizeDelta = new Vector2(hand_line2_firstDrawBtn.sizeDelta.x * magnification_x, hand_line2_firstDrawBtn.sizeDelta.y * magnification_y);
         hand_line2_oneDrawBtn.sizeDelta = new Vector2(hand_line2_oneDrawBtn.sizeDelta.x * magnification_x, hand_line2_oneDrawBtn.sizeDelta.y * magnification_y);
         hand_line3.sizeDelta = new Vector2(hand_line3.sizeDelta.x * magnification_x, hand_line3.sizeDelta.y * magnification_y);
+        header_background.sizeDelta = new Vector2(header_background.sizeDelta.x * magnification_x, header_background.sizeDelta.y * magnification_y);
+        header_background_background1.sizeDelta = new Vector2(header_background_background1.sizeDelta.x * magnification_x, header_background_background1.sizeDelta.y * magnification_y);
+        header_background_background2.sizeDelta = new Vector2(header_background_background2.sizeDelta.x * magnification_x, header_background_background2.sizeDelta.y * magnification_y);
+        header_header_Parent.sizeDelta = new Vector2(header_header_Parent.sizeDelta.x * magnification_x, header_header_Parent.sizeDelta.y * magnification_y);
 
         float magnification = magnification_x;
         if (magnification_x > magnification_y)
