@@ -91,6 +91,115 @@ public class NewSaveDialog : MonoBehaviour
         string SaveData = m_InputField.text;
         m_EditCardPanelManager.DeckName = m_InputField.text;
         SaveData += ",";
+
+        List<EnumController.Colors> colors = new List<EnumController.Colors>();
+        for (int i = 0; i < m_EditCardPanelManager.DeckList.Count; i++)
+        {
+            if (colors.Count == 2)
+            {
+                break;
+            }
+
+            List<EnumController.Colors> temp = m_EditCardPanelManager.DeckList[i].GetColor();
+            for (int k = 0; k < temp.Count; k++)
+            {
+                if (colors.Contains(temp[k]))
+                {
+                    continue;
+                }
+                else
+                {
+                    colors.Add(temp[k]);
+                }
+            }
+        }
+
+        if(colors.Count == 0)
+        {
+            SaveData += "None,None,";
+        }
+        else if(colors.Count == 1)
+        {
+            switch (colors[0])
+            {
+                case EnumController.Colors.Amber:
+                    SaveData += "Amber";
+                    break;
+                case EnumController.Colors.Amethyst:
+                    SaveData += "Amethyst";
+                    break;
+                case EnumController.Colors.Emerald:
+                    SaveData += "Emerald";
+                    break;
+                case EnumController.Colors.Sapphire:
+                    SaveData += "Sapphire";
+                    break;
+                case EnumController.Colors.Steel:
+                    SaveData += "Steel";
+                    break;
+                case EnumController.Colors.Ruby:
+                    SaveData += "Ruby";
+                    break;
+                default:
+                    SaveData += "None";
+                    break;
+            }
+            SaveData += ",None,";
+        }
+        else
+        {
+            switch (colors[0])
+            {
+                case EnumController.Colors.Amber:
+                    SaveData += "Amber";
+                    break;
+                case EnumController.Colors.Amethyst:
+                    SaveData += "Amethyst";
+                    break;
+                case EnumController.Colors.Emerald:
+                    SaveData += "Emerald";
+                    break;
+                case EnumController.Colors.Sapphire:
+                    SaveData += "Sapphire";
+                    break;
+                case EnumController.Colors.Steel:
+                    SaveData += "Steel";
+                    break;
+                case EnumController.Colors.Ruby:
+                    SaveData += "Ruby";
+                    break;
+                default:
+                    SaveData += "None";
+                    break;
+            }
+            SaveData += ",";
+            switch (colors[1])
+            {
+                case EnumController.Colors.Amber:
+                    SaveData += "Amber";
+                    break;
+                case EnumController.Colors.Amethyst:
+                    SaveData += "Amethyst";
+                    break;
+                case EnumController.Colors.Emerald:
+                    SaveData += "Emerald";
+                    break;
+                case EnumController.Colors.Sapphire:
+                    SaveData += "Sapphire";
+                    break;
+                case EnumController.Colors.Steel:
+                    SaveData += "Steel";
+                    break;
+                case EnumController.Colors.Ruby:
+                    SaveData += "Ruby";
+                    break;
+                default:
+                    SaveData += "None";
+                    break;
+            }
+            SaveData += ",";
+        }
+
         SaveData += m_SaveDataStatic.GetFavoriteCardInfo().GetCardNo();
         List<CardInfo> list = m_EditCardPanelManager.DeckList;
         for (int i = 0; i < m_EditCardPanelManager.DeckList.Count; i++)

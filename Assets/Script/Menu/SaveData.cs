@@ -12,6 +12,9 @@ public class SaveData
 
     private string SaveDataPass = "";
 
+    private string colors1 = "None";
+    private string colors2 = "None";
+
     private ExtendUtil m_ExtendUtil = new ExtendUtil();
 
     public SaveData()
@@ -34,14 +37,23 @@ public class SaveData
             SetDeckTitle(list[0]);
         }
 
-        if(list.Count > 1)
-        {
-            SetCardInfo(m_ExtendUtil.ConvertToCardInfoFromString(list[1]));
-        }
-
         if (list.Count > 1)
         {
-            for (int i = 2; i < list.Count; i++)
+            colors1 = list[1];
+        }
+        if (list.Count > 2)
+        {
+            colors2 = list[2];
+        }
+
+        if (list.Count > 3)
+        {
+            SetCardInfo(m_ExtendUtil.ConvertToCardInfoFromString(list[3]));
+        }
+
+        if (list.Count > 4)
+        {
+            for (int i = 4; i < list.Count; i++)
             {
                 m_CardInfoList.Add(m_ExtendUtil.ConvertToCardInfoFromString(list[i]));
             }
@@ -88,5 +100,15 @@ public class SaveData
     public void SetCardInfoList(List<CardInfo> paramater)
     {
         m_CardInfoList = paramater;
+    }
+
+    public string GetColors1()
+    {
+        return colors1;
+    }
+
+    public string GetColors2()
+    {
+        return colors2;
     }
 }
