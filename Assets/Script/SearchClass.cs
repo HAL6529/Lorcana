@@ -202,9 +202,21 @@ public class SearchClass : MonoBehaviour
     public RectTransform titleExplanation_header_text2;
     public RectTransform title_header;
     public RectTransform title_header_dropdown;
+    public RectTransform title_header_dropdown_Content;
+    public RectTransform title_header_dropdown_Content_Item;
+    public RectTransform title_header_dropdown_Content_Item_ItemBackGround;
+    public RectTransform title_header_dropdown_Content_Item_Checkmark;
+    public RectTransform title_header_dropdown_Content_Item_Label;
     public RectTransform space6;
+    public RectTransform searchBtn_header;
     public RectTransform searchBtn;
     public RectTransform searchBtn_text;
+    public RectTransform searchReset;
+    public RectTransform searchReset_header;
+    public RectTransform searchReset_header_text;
+    public RectTransform searchReset_header_text_text;
+    public RectTransform searchReset_header_Button;
+    public RectTransform searchReset_header_space;
 
     public Dropdown m_TitleDropdown;
     public Text t_TitleDropdown;
@@ -717,6 +729,74 @@ public class SearchClass : MonoBehaviour
         SerachObj.SetActive(false);
     }
 
+    public void onResetBtn()
+    {
+        isAmethyst = true;
+        AmethystBtn.color = new(1, 1, 1, 1);
+        isAmber = true;
+        AmberBtn.color = new(1, 1, 1, 1);
+        isEmerald = true;
+        EmeraldBtn.color = new(1, 1, 1, 1);
+        isSapphire = true;
+        SapphireBtn.color = new(1, 1, 1, 1);
+        isSteel = true;
+        SteelBtn.color = new(1, 1, 1, 1);
+        isRuby = true;
+        RubyBtn.color = new(1, 1, 1, 1);
+
+        a_isAction = true;
+        a_ActionBtn.color = new(1, 1, 1, 1);
+        a_isCharacter = true;
+        a_CharacterBtn.color = new(1, 1, 1, 1);
+        a_isLocation = true;
+        a_LocationBtn.color = new(1, 1, 1, 1);
+        a_isItem = true;
+        a_ItemBtn.color = new(1, 1, 1, 1);
+        a_isSong = true;
+        a_SongBtn.color = new(1, 1, 1, 1);
+
+
+        isBodyGuard = false;
+        BodyGuardBtn.sprite = s_checkbtn_off;
+        isChallenger = false;
+        ChallengerBtn.sprite = s_checkbtn_off;
+        isEvasive = false;
+        EvasiveBtn.sprite = s_checkbtn_off;
+        isShift = false;
+        ShiftBtn.sprite = s_checkbtn_off;
+        isSinger = false;
+        SingerBtn.sprite = s_checkbtn_off;
+        isSupport = false;
+        SupportBtn.sprite = s_checkbtn_off;
+        isReckless = false;
+        RecklessBtn.sprite = s_checkbtn_off;
+        isRush = false;
+        RushBtn.sprite = s_checkbtn_off;
+        isWard = false;
+        WardBtn.sprite = s_checkbtn_off;
+
+        isHandDestraction = false;
+        HandDestractionBtn.sprite = s_checkbtn_off;
+        isCIP = false;
+        CIPBtn.sprite = s_checkbtn_off;
+        isPIG = false;
+        PIGBtn.sprite = s_checkbtn_off;
+        isChallenge = false;
+        ChallengeBtn.sprite = s_checkbtn_off;
+        isAction = false;
+        ActionBtn.sprite = s_checkbtn_off;
+        isGetLore = false;
+        GetLoreBtn.sprite = s_checkbtn_off;
+        isLostLore = false;
+        LostLoreBtn.sprite = s_checkbtn_off;
+        isAddInk = false;
+        AddInkBtn.sprite = s_checkbtn_off;
+        isItem = false;
+        ItemBtn.sprite = s_checkbtn_off;
+        isLocation = false;
+        LocationBtn.sprite = s_checkbtn_off;
+    }
+
     public void UpdateImage(float magnification_x, float magnification_y)
     {
         parent.sizeDelta = new Vector2(parent.sizeDelta.x * magnification_x, parent.sizeDelta.y * magnification_y);
@@ -831,8 +911,19 @@ public class SearchClass : MonoBehaviour
         titleExplanation_header_text2.sizeDelta = new Vector2(titleExplanation_header_text2.sizeDelta.x * magnification_x, titleExplanation_header_text2.sizeDelta.y * magnification_y);
         title_header.sizeDelta = new Vector2(title_header.sizeDelta.x * magnification_x, title_header.sizeDelta.y * magnification_y);
         title_header_dropdown.sizeDelta = new Vector2(title_header_dropdown.sizeDelta.x * magnification_x, title_header_dropdown.sizeDelta.y * magnification_y);
+        title_header_dropdown_Content.sizeDelta = new Vector2(title_header_dropdown_Content.sizeDelta.x * magnification_x, title_header_dropdown_Content.sizeDelta.y * magnification_y);
+        title_header_dropdown_Content_Item.sizeDelta = new Vector2(title_header_dropdown_Content_Item.sizeDelta.x * magnification_x, title_header_dropdown_Content_Item.sizeDelta.y * magnification_y);
+        title_header_dropdown_Content_Item_ItemBackGround.sizeDelta = new Vector2(title_header_dropdown_Content_Item_ItemBackGround.sizeDelta.x * magnification_x, title_header_dropdown_Content_Item_ItemBackGround.sizeDelta.y * magnification_y);
+        title_header_dropdown_Content_Item_Checkmark.sizeDelta = new Vector2(title_header_dropdown_Content_Item_Checkmark.sizeDelta.x * magnification_x, title_header_dropdown_Content_Item_Checkmark.sizeDelta.y * magnification_y);
+        title_header_dropdown_Content_Item_Label.sizeDelta = new Vector2(title_header_dropdown_Content_Item_Label.sizeDelta.x * magnification_x, title_header_dropdown_Content_Item_Label.sizeDelta.y * magnification_y);
         space6.sizeDelta = new Vector2(space6.sizeDelta.x * magnification_x, space6.sizeDelta.y * magnification_y);
-
+        searchBtn_header.sizeDelta = new Vector2(searchBtn_header.sizeDelta.x * magnification_x, searchBtn_header.sizeDelta.y * magnification_y);
+        searchReset.sizeDelta = new Vector2(searchReset.sizeDelta.x * magnification_x, searchReset.sizeDelta.y * magnification_y);
+        searchReset_header.sizeDelta = new Vector2(searchReset_header.sizeDelta.x * magnification_x, searchReset_header.sizeDelta.y * magnification_y);
+        searchReset_header_text.sizeDelta = new Vector2(searchReset_header_text.sizeDelta.x * magnification_x, searchReset_header_text.sizeDelta.y * magnification_y);
+        searchReset_header_text_text.sizeDelta = new Vector2(searchReset_header_text_text.sizeDelta.x * magnification_x, searchReset_header_text_text.sizeDelta.y * magnification_y);
+        searchReset_header_Button.sizeDelta = new Vector2(searchReset_header_Button.sizeDelta.x * magnification_x, searchReset_header_Button.sizeDelta.y * magnification_y);
+        searchReset_header_space.sizeDelta = new Vector2(searchReset_header_space.sizeDelta.x * magnification_x, searchReset_header_space.sizeDelta.y * magnification_y);
 
         float magnification = magnification_x;
         if (magnification_x > magnification_y)
