@@ -729,6 +729,74 @@ public class SearchClass : MonoBehaviour
         SerachObj.SetActive(false);
     }
 
+    public void onResetBtn()
+    {
+        isAmethyst = true;
+        AmethystBtn.color = new(1, 1, 1, 1);
+        isAmber = true;
+        AmberBtn.color = new(1, 1, 1, 1);
+        isEmerald = true;
+        EmeraldBtn.color = new(1, 1, 1, 1);
+        isSapphire = true;
+        SapphireBtn.color = new(1, 1, 1, 1);
+        isSteel = true;
+        SteelBtn.color = new(1, 1, 1, 1);
+        isRuby = true;
+        RubyBtn.color = new(1, 1, 1, 1);
+
+        a_isAction = true;
+        a_ActionBtn.color = new(1, 1, 1, 1);
+        a_isCharacter = true;
+        a_CharacterBtn.color = new(1, 1, 1, 1);
+        a_isLocation = true;
+        a_LocationBtn.color = new(1, 1, 1, 1);
+        a_isItem = true;
+        a_ItemBtn.color = new(1, 1, 1, 1);
+        a_isSong = true;
+        a_SongBtn.color = new(1, 1, 1, 1);
+
+
+        isBodyGuard = false;
+        BodyGuardBtn.sprite = s_checkbtn_off;
+        isChallenger = false;
+        ChallengerBtn.sprite = s_checkbtn_off;
+        isEvasive = false;
+        EvasiveBtn.sprite = s_checkbtn_off;
+        isShift = false;
+        ShiftBtn.sprite = s_checkbtn_off;
+        isSinger = false;
+        SingerBtn.sprite = s_checkbtn_off;
+        isSupport = false;
+        SupportBtn.sprite = s_checkbtn_off;
+        isReckless = false;
+        RecklessBtn.sprite = s_checkbtn_off;
+        isRush = false;
+        RushBtn.sprite = s_checkbtn_off;
+        isWard = false;
+        WardBtn.sprite = s_checkbtn_off;
+
+        isHandDestraction = false;
+        HandDestractionBtn.sprite = s_checkbtn_off;
+        isCIP = false;
+        CIPBtn.sprite = s_checkbtn_off;
+        isPIG = false;
+        PIGBtn.sprite = s_checkbtn_off;
+        isChallenge = false;
+        ChallengeBtn.sprite = s_checkbtn_off;
+        isAction = false;
+        ActionBtn.sprite = s_checkbtn_off;
+        isGetLore = false;
+        GetLoreBtn.sprite = s_checkbtn_off;
+        isLostLore = false;
+        LostLoreBtn.sprite = s_checkbtn_off;
+        isAddInk = false;
+        AddInkBtn.sprite = s_checkbtn_off;
+        isItem = false;
+        ItemBtn.sprite = s_checkbtn_off;
+        isLocation = false;
+        LocationBtn.sprite = s_checkbtn_off;
+    }
+
     public void UpdateImage(float magnification_x, float magnification_y)
     {
         parent.sizeDelta = new Vector2(parent.sizeDelta.x * magnification_x, parent.sizeDelta.y * magnification_y);
