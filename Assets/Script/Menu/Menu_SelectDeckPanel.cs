@@ -107,99 +107,123 @@ public class Menu_SelectDeckPanel : MonoBehaviour
 
     private void UpdateBackground()
     {
-        string colors1 = m_SaveData.GetColors1();
-        string colors2 = m_SaveData.GetColors2();
+        bool flg1 = false;
+        bool flg2 = false;
+        string flg_s = "";
 
-        if (colors1 != "None" && colors2 != "None")
+        if (m_SaveData.GetIsAmethyst())
         {
-            switch (colors1)
-            {
-                case "Amber":
-                    background1.color = new Color(220f / 255f, 180f / 255f, 0, 145f / 255f);
-                    break;
-                case "Amethyst":
-                    background1.color = new Color(160f / 255f, 0, 185f / 255f, 145f / 255f);
-                    break;
-                case "Emerald":
-                    background1.color = new Color(0, 150f / 255f, 40f / 255f, 145f / 255f);
-                    break;
-                case "Sapphire":
-                    background1.color = new Color(25f / 255f, 130f / 255f, 200f / 255f, 145f / 255f);
-                    break;
-                case "Steel":
-                    background1.color = new Color(145f / 255f, 150f / 255f, 160f / 255f, 145f / 255f);
-                    break;
-                case "Ruby":
-                    background1.color = new Color(215f / 255f, 0, 40f / 255f, 145f / 255f);
-                    break;
-                default:
-                    background1.color = new Color(1, 1, 1, 0);
-                    break;
-            }
+            flg1 = true;
+            background1.color = new Color(160f / 255f, 0, 185f / 255f, 145f / 255f);
+            flg_s = "Amethyst";
+        }
 
-            switch (colors2)
+        if (m_SaveData.GetIsAmber() && (!flg1 || !flg2))
+        {
+            if (flg1)
             {
-                case "Amber":
-                    background2.color = new Color(220f / 255f, 180f / 255f, 0, 145f / 255f);
-                    break;
-                case "Amethyst":
-                    background2.color = new Color(160f / 255f, 0, 185f / 255f, 145f / 255f);
-                    break;
-                case "Emerald":
-                    background2.color = new Color(0, 150f / 255f, 40f / 255f, 145f / 255f);
-                    break;
-                case "Sapphire":
-                    background2.color = new Color(25f / 255f, 130f / 255f, 200f / 255f, 145f / 255f);
-                    break;
-                case "Steel":
-                    background2.color = new Color(145f / 255f, 150f / 255f, 160f / 255f, 145f / 255f);
-                    break;
-                case "Ruby":
-                    background2.color = new Color(215f / 255f, 0, 40f / 255f, 145f / 255f);
-                    break;
-                default:
-                    background2.color = new Color(1, 1, 1, 0);
-                    break;
+                flg2 = true;
+                background2.color = new Color(220f / 255f, 180f / 255f, 0, 145f / 255f);
+            }
+            else
+            {
+                flg1 = true;
+                background1.color = new Color(220f / 255f, 180f / 255f, 0, 145f / 255f);
+                flg_s = "Amber";
             }
         }
-        else if (colors1 != "None" && colors2 == "None")
+
+        if (m_SaveData.GetIsEmerald() && (!flg1 || !flg2))
         {
-            switch (colors1)
+            if (flg1)
             {
-                case "Amber":
-                    background1.color = new Color(220f / 255f, 180f / 255f, 0, 145f / 255f);
-                    background2.color = new Color(220f / 255f, 180f / 255f, 0, 145f / 255f);
-                    break;
-                case "Amethyst":
-                    background1.color = new Color(160f / 255f, 0, 185f / 255f, 145f / 255f);
-                    background2.color = new Color(160f / 255f, 0, 185f / 255f, 145f / 255f);
-                    break;
-                case "Emerald":
-                    background1.color = new Color(0, 150f / 255f, 40f / 255f, 145f / 255f);
-                    background2.color = new Color(0, 150f / 255f, 40f / 255f, 145f / 255f);
-                    break;
-                case "Sapphire":
-                    background1.color = new Color(25f / 255f, 130f / 255f, 200f / 255f, 145f / 255f);
-                    background2.color = new Color(25f / 255f, 130f / 255f, 200f / 255f, 145f / 255f);
-                    break;
-                case "Steel":
-                    background1.color = new Color(145f / 255f, 150f / 255f, 160f / 255f, 145f / 255f);
-                    background2.color = new Color(145f / 255f, 150f / 255f, 160f / 255f, 145f / 255f);
-                    break;
-                case "Ruby":
-                    background1.color = new Color(215f / 255f, 0, 40f / 255f, 145f / 255f);
-                    background2.color = new Color(215f / 255f, 0, 40f / 255f, 145f / 255f);
-                    break;
-                default:
-                    background1.color = new Color(1, 1, 1, 0);
-                    background2.color = new Color(1, 1, 1, 0);
-                    break;
+                flg2 = true;
+                background2.color = new Color(0, 150f / 255f, 40f / 255f, 145f / 255f);
+            }
+            else
+            {
+                flg1 = true;
+                background1.color = new Color(0, 150f / 255f, 40f / 255f, 145f / 255f);
+                flg_s = "Emerald";
             }
         }
-        else
+
+        if (m_SaveData.GetIsSapphire() && (!flg1 || !flg2))
+        {
+            if (flg1)
+            {
+                flg2 = true;
+                background2.color = new Color(25f / 255f, 130f / 255f, 200f / 255f, 145f / 255f);
+            }
+            else
+            {
+                flg1 = true;
+                background1.color = new Color(25f / 255f, 130f / 255f, 200f / 255f, 145f / 255f);
+                flg_s = "Sapphire";
+            }
+        }
+
+        if (m_SaveData.GetisSteel() && (!flg1 || !flg2))
+        {
+            if (flg1)
+            {
+                flg2 = true;
+                background2.color = new Color(145f / 255f, 150f / 255f, 160f / 255f, 145f / 255f);
+            }
+            else
+            {
+                flg1 = true;
+                background1.color = new Color(145f / 255f, 150f / 255f, 160f / 255f, 145f / 255f);
+                flg_s = "Steel";
+            }
+        }
+
+        if (m_SaveData.GetIsRuby() && (!flg1 || !flg2))
+        {
+            if (flg1)
+            {
+                flg2 = true;
+                background2.color = new Color(215f / 255f, 0, 40f / 255f, 145f / 255f);
+            }
+            else
+            {
+                flg1 = true;
+                background1.color = new Color(215f / 255f, 0, 40f / 255f, 145f / 255f);
+                flg_s = "Ruby";
+            }
+        }
+
+        if (!flg1)
         {
             background1.color = new Color(1, 1, 1, 0);
-            background2.color = new Color(1, 1, 1, 0);
+        }
+        if (!flg2)
+        {
+            switch (flg_s)
+            {
+                case "Amethyst":
+                    background2.color = new Color(160f / 255f, 0, 185f / 255f, 145f / 255f);
+                    break;
+                case "Amber":
+                    background2.color = new Color(220f / 255f, 180f / 255f, 0, 145f / 255f);
+                    break;
+                case "Emerald":
+                    background2.color = new Color(0, 150f / 255f, 40f / 255f, 145f / 255f);
+                    break;
+                case "Sapphire":
+                    background2.color = new Color(25f / 255f, 130f / 255f, 200f / 255f, 145f / 255f);
+                    break;
+                case "Steel":
+                    background2.color = new Color(145f / 255f, 150f / 255f, 160f / 255f, 145f / 255f);
+                    break;
+                case "Ruby":
+                    background2.color = new Color(215f / 255f, 0, 40f / 255f, 145f / 255f);
+                    break;
+                default:
+                    background2.color = new Color(1, 1, 1, 0);
+                    break;
+            }
+
         }
     }
 

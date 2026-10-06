@@ -12,8 +12,12 @@ public class SaveData
 
     private string SaveDataPass = "";
 
-    private string colors1 = "None";
-    private string colors2 = "None";
+    private bool isAmethyst = false;
+    private bool isAmber = false;
+    private bool isEmerald = false;
+    private bool isSapphire = false;
+    private bool isSteel = false;
+    private bool isRuby = false;
 
     private ExtendUtil m_ExtendUtil = new ExtendUtil();
 
@@ -39,21 +43,84 @@ public class SaveData
 
         if (list.Count > 1)
         {
-            colors1 = list[1];
+            if(list[1] == "Amethyst")
+            {
+                isAmethyst = true;
+            }
+            else
+            {
+                isAmethyst = false;
+            }
         }
+
         if (list.Count > 2)
         {
-            colors2 = list[2];
+            if (list[2] == "Amber")
+            {
+                isAmber = true;
+            }
+            else
+            {
+                isAmber = false;
+            }
         }
 
         if (list.Count > 3)
         {
-            SetCardInfo(m_ExtendUtil.ConvertToCardInfoFromString(list[3]));
+            if (list[3] == "Emerald")
+            {
+                isEmerald = true;
+            }
+            else
+            {
+                isEmerald = false;
+            }
         }
 
         if (list.Count > 4)
         {
-            for (int i = 4; i < list.Count; i++)
+            if (list[4] == "Sapphire")
+            {
+                isSapphire = true;
+            }
+            else
+            {
+                isSapphire = false;
+            }
+        }
+
+        if (list.Count > 5)
+        {
+            if (list[5] == "Steel")
+            {
+                isSteel = true;
+            }
+            else
+            {
+                isSteel = false;
+            }
+        }
+
+        if (list.Count > 6)
+        {
+            if (list[6] == "Ruby")
+            {
+                isRuby = true;
+            }
+            else
+            {
+                isRuby = false;
+            }
+        }
+
+        if (list.Count > 7)
+        {
+            SetCardInfo(m_ExtendUtil.ConvertToCardInfoFromString(list[7]));
+        }
+
+        if (list.Count > 8)
+        {
+            for (int i = 8; i < list.Count; i++)
             {
                 m_CardInfoList.Add(m_ExtendUtil.ConvertToCardInfoFromString(list[i]));
             }
@@ -102,13 +169,33 @@ public class SaveData
         m_CardInfoList = paramater;
     }
 
-    public string GetColors1()
+    public bool GetIsAmethyst()
     {
-        return colors1;
+        return isAmethyst;
     }
 
-    public string GetColors2()
+    public bool GetIsAmber()
     {
-        return colors2;
+        return isAmber;
+    }
+
+    public bool GetIsEmerald()
+    {
+        return isEmerald;
+    }
+
+    public bool GetIsSapphire()
+    {
+        return isSapphire;
+    }
+
+    public bool GetisSteel()
+    {
+        return isSteel;
+    }
+
+    public bool GetIsRuby()
+    {
+        return isRuby;
     }
 }
