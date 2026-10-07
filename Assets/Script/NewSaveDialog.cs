@@ -63,9 +63,6 @@ public class NewSaveDialog : MonoBehaviour
 
         try
         {
-            FileStream fs = File.Create(SecureDataPass + "/" + file);
-            fs.Close();
-
             // 文字コードを指定
             Encoding enc = Encoding.GetEncoding("utf-8");
 
@@ -176,6 +173,7 @@ public class NewSaveDialog : MonoBehaviour
             SaveData += ",";
             SaveData += list[i].GetCardNo();
         }
+        SaveData += ",";
         return SaveData;
     }
 
