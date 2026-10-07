@@ -13,6 +13,18 @@ public class Menu_SelectDeckPanel : MonoBehaviour
     public Image FavoriteImage;
     public Image background1;
     public Image background2;
+    public Image Mark1;
+    public Image Mark2;
+    public Image Mark3;
+    public Image Mark4;
+    public Image Mark5;
+    public Image Mark6;
+    public Sprite Amethyst;
+    public Sprite Amber;
+    public Sprite Emerald;
+    public Sprite Ruby;
+    public Sprite Sapphire;
+    public Sprite Steel;
 
     private SaveData m_SaveData;
 
@@ -33,6 +45,18 @@ public class Menu_SelectDeckPanel : MonoBehaviour
     public RectTransform Name;
     public RectTransform space2;
     public RectTransform Colors;
+    public RectTransform Colors_space1;
+    public RectTransform Colors_mark1;
+    public RectTransform Colors_space2;
+    public RectTransform Colors_mark2;
+    public RectTransform Colors_space3;
+    public RectTransform Colors_mark3;
+    public RectTransform Colors_space4;
+    public RectTransform Colors_mark4;
+    public RectTransform Colors_space5;
+    public RectTransform Colors_mark5;
+    public RectTransform Colors_space6;
+    public RectTransform Colors_mark6;
     public RectTransform space3;
     public RectTransform Button_Parent;
     public List<RectTransform> ButtonList = new List<RectTransform>();
@@ -103,6 +127,7 @@ public class Menu_SelectDeckPanel : MonoBehaviour
         CardInfo c = m_SaveData.GetCardInfo();
         FavoriteImage.sprite = m_Menu_ConvertSpriteFromCardNo.ConvertSpriteFromCardNo(c.GetCardNo());
         UpdateBackground();
+        UpdateColorMark();
     }
 
     private void UpdateBackground()
@@ -163,7 +188,7 @@ public class Menu_SelectDeckPanel : MonoBehaviour
             }
         }
 
-        if (m_SaveData.GetisSteel() && (!flg1 || !flg2))
+        if (m_SaveData.GetIsSteel() && (!flg1 || !flg2))
         {
             if (flg1)
             {
@@ -227,6 +252,122 @@ public class Menu_SelectDeckPanel : MonoBehaviour
         }
     }
 
+    public void UpdateColorMark()
+    {
+        List<EnumController.Colors> colors = new List<EnumController.Colors>();
+        if (m_SaveData.GetIsAmethyst())
+        {
+            colors.Add(EnumController.Colors.Amethyst);
+        }
+        if (m_SaveData.GetIsAmber())
+        {
+            colors.Add(EnumController.Colors.Amber);
+        }
+        if (m_SaveData.GetIsEmerald())
+        {
+            colors.Add(EnumController.Colors.Emerald);
+        }
+        if (m_SaveData.GetIsSapphire())
+        {
+            colors.Add(EnumController.Colors.Sapphire);
+        }
+        if (m_SaveData.GetIsSteel())
+        {
+            colors.Add(EnumController.Colors.Steel);
+        }
+        if (m_SaveData.GetIsRuby())
+        {
+            colors.Add(EnumController.Colors.Ruby);
+        }
+
+        if (colors.Count == 0)
+        {
+            Mark1.sprite = null;
+            Mark1.color = new Color(1, 1, 1, 0);
+        }
+        else
+        {
+            Mark1.sprite = ConvertToSpriteFromColors(colors[0]);
+            Mark1.color = new Color(1, 1, 1, 1);
+        }
+
+        if (colors.Count > 1)
+        {
+            Mark2.sprite = ConvertToSpriteFromColors(colors[1]);
+            Mark2.color = new Color(1, 1, 1, 1);
+        }
+        else
+        {
+            Mark2.sprite = null;
+            Mark2.color = new Color(1, 1, 1, 0);
+        }
+
+        if (colors.Count > 2)
+        {
+            Mark3.sprite = ConvertToSpriteFromColors(colors[2]);
+            Mark3.color = new Color(1, 1, 1, 1);
+        }
+        else
+        {
+            Mark3.sprite = null;
+            Mark3.color = new Color(1, 1, 1, 0);
+        }
+
+        if (colors.Count > 3)
+        {
+            Mark4.sprite = ConvertToSpriteFromColors(colors[3]);
+            Mark4.color = new Color(1, 1, 1, 1);
+        }
+        else
+        {
+            Mark4.sprite = null;
+            Mark4.color = new Color(1, 1, 1, 0);
+        }
+
+        if (colors.Count > 4)
+        {
+            Mark5.sprite = ConvertToSpriteFromColors(colors[4]);
+            Mark5.color = new Color(1, 1, 1, 1);
+        }
+        else
+        {
+            Mark5.sprite = null;
+            Mark5.color = new Color(1, 1, 1, 0);
+        }
+
+        if (colors.Count > 5)
+        {
+            Mark6.sprite = ConvertToSpriteFromColors(colors[5]);
+            Mark6.color = new Color(1, 1, 1, 1);
+        }
+        else
+        {
+            Mark6.sprite = null;
+            Mark6.color = new Color(1, 1, 1, 0);
+        }
+    }
+
+    private Sprite ConvertToSpriteFromColors(EnumController.Colors paramater)
+    {
+        switch (paramater)
+        {
+            case EnumController.Colors.Amber:
+                return Amber;
+            case EnumController.Colors.Amethyst:
+                return Amethyst;
+            case EnumController.Colors.Emerald:
+                return Emerald;
+            case EnumController.Colors.Sapphire:
+                return Sapphire;
+            case EnumController.Colors.Steel:
+                return Steel;
+            case EnumController.Colors.Ruby:
+                return Ruby;
+            default:
+                return null;
+        }
+    }
+
     public void UpdateImage(float magnification_x, float magnification_y)
     {
         Parent.sizeDelta = new Vector2(Parent.sizeDelta.x * magnification_x, Parent.sizeDelta.y * magnification_y);
@@ -234,6 +375,12 @@ public class Menu_SelectDeckPanel : MonoBehaviour
         Middle_Parent.sizeDelta = new Vector2(Middle_Parent.sizeDelta.x * magnification_x, Middle_Parent.sizeDelta.y * magnification_y);
         Name.sizeDelta = new Vector2(Name.sizeDelta.x * magnification_x, Name.sizeDelta.y * magnification_y);
         Colors.sizeDelta = new Vector2(Colors.sizeDelta.x * magnification_x, Colors.sizeDelta.y * magnification_y);
+        Colors_space1.sizeDelta = new Vector2(Colors_space1.sizeDelta.x * magnification_x, Colors_space1.sizeDelta.y * magnification_y);
+        Colors_space2.sizeDelta = new Vector2(Colors_space2.sizeDelta.x * magnification_x, Colors_space2.sizeDelta.y * magnification_y);
+        Colors_space3.sizeDelta = new Vector2(Colors_space3.sizeDelta.x * magnification_x, Colors_space3.sizeDelta.y * magnification_y);
+        Colors_space4.sizeDelta = new Vector2(Colors_space4.sizeDelta.x * magnification_x, Colors_space4.sizeDelta.y * magnification_y);
+        Colors_space5.sizeDelta = new Vector2(Colors_space5.sizeDelta.x * magnification_x, Colors_space5.sizeDelta.y * magnification_y);
+        Colors_space6.sizeDelta = new Vector2(Colors_space6.sizeDelta.x * magnification_x, Colors_space6.sizeDelta.y * magnification_y);
         Button_Parent.sizeDelta = new Vector2(Button_Parent.sizeDelta.x * magnification_x, Button_Parent.sizeDelta.y * magnification_y);
         Middle_Parent_Header.sizeDelta = new Vector2(Middle_Parent_Header.sizeDelta.x * magnification_x, Middle_Parent_Header.sizeDelta.y * magnification_y);
         Middle_Parent_Header_background.sizeDelta = new Vector2(Middle_Parent_Header_background.sizeDelta.x * magnification_x, Middle_Parent_Header_background.sizeDelta.y * magnification_y);
@@ -255,5 +402,12 @@ public class Menu_SelectDeckPanel : MonoBehaviour
         {
             ButtonList[i].sizeDelta = new Vector2(ButtonList[i].sizeDelta.x * magnification, ButtonList[i].sizeDelta.y * magnification);
         }
+
+        Colors_mark1.sizeDelta = new Vector2(Colors_mark1.sizeDelta.x * magnification, Colors_mark1.sizeDelta.y * magnification);
+        Colors_mark2.sizeDelta = new Vector2(Colors_mark2.sizeDelta.x * magnification, Colors_mark2.sizeDelta.y * magnification);
+        Colors_mark3.sizeDelta = new Vector2(Colors_mark3.sizeDelta.x * magnification, Colors_mark3.sizeDelta.y * magnification);
+        Colors_mark4.sizeDelta = new Vector2(Colors_mark4.sizeDelta.x * magnification, Colors_mark4.sizeDelta.y * magnification);
+        Colors_mark5.sizeDelta = new Vector2(Colors_mark5.sizeDelta.x * magnification, Colors_mark5.sizeDelta.y * magnification);
+        Colors_mark6.sizeDelta = new Vector2(Colors_mark6.sizeDelta.x * magnification, Colors_mark6.sizeDelta.y * magnification);
     }
 }

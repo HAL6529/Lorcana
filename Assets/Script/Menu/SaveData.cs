@@ -189,7 +189,7 @@ public class SaveData
         return isSapphire;
     }
 
-    public bool GetisSteel()
+    public bool GetIsSteel()
     {
         return isSteel;
     }
