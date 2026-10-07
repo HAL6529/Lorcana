@@ -795,6 +795,8 @@ public class SearchClass : MonoBehaviour
         ItemBtn.sprite = s_checkbtn_off;
         isLocation = false;
         LocationBtn.sprite = s_checkbtn_off;
+
+        m_TitleDropdown.value = 0;
     }
 
     public void UpdateImage(float magnification_x, float magnification_y)
