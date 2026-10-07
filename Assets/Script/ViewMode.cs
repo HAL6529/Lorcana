@@ -37,6 +37,8 @@ public class ViewMode : MonoBehaviour
     public RectTransform header_header_line1;
     public RectTransform header_header_line1_closeBtn;
     public RectTransform header_header_line2;
+    public RectTransform header_header_line2_space;
+    public RectTransform header_header_line2_text;
     public RectTransform header_header_line3;
     public RectTransform header_header_line3_space1;
     public RectTransform header_header_line3_mark1;
@@ -358,6 +360,8 @@ public class ViewMode : MonoBehaviour
         hand.sizeDelta = new Vector2(hand.sizeDelta.x * magnification_x, hand.sizeDelta.y * magnification_y);
         hand_line1.sizeDelta = new Vector2(hand_line1.sizeDelta.x * magnification_x, hand_line1.sizeDelta.y * magnification_y);
         hand_line2.sizeDelta = new Vector2(hand_line2.sizeDelta.x * magnification_x, hand_line2.sizeDelta.y * magnification_y);
+        header_header_line2_space.sizeDelta = new Vector2(header_header_line2_space.sizeDelta.x * magnification_x, header_header_line2_space.sizeDelta.y * magnification_y);
+        header_header_line2_text.sizeDelta = new Vector2(header_header_line2_text.sizeDelta.x * magnification_x, header_header_line2_text.sizeDelta.y * magnification_y);
         hand_line2_firstDrawBtn.sizeDelta = new Vector2(hand_line2_firstDrawBtn.sizeDelta.x * magnification_x, hand_line2_firstDrawBtn.sizeDelta.y * magnification_y);
         hand_line2_oneDrawBtn.sizeDelta = new Vector2(hand_line2_oneDrawBtn.sizeDelta.x * magnification_x, hand_line2_oneDrawBtn.sizeDelta.y * magnification_y);
         hand_line3.sizeDelta = new Vector2(hand_line3.sizeDelta.x * magnification_x, hand_line3.sizeDelta.y * magnification_y);
