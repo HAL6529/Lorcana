@@ -44,6 +44,7 @@ public class NewSaveDialog : MonoBehaviour
     public void onOKBtn()
     {
         string SecureDataPass = m_ExtendUtil.GetSecureDataPath();
+        string deckName = m_InputField.text;
         if (SecureDataPass == "")
         {
             m_DialogManager.AllClose();
@@ -51,7 +52,7 @@ public class NewSaveDialog : MonoBehaviour
             return;
         }
 
-        if (m_InputField.text == "")
+        if (deckName == "")
         {
             m_DialogManager.AllClose();
             m_DialogManager.OKDialog_Open(EnumController.OKBtnParamater.NamelessError);
@@ -59,28 +60,31 @@ public class NewSaveDialog : MonoBehaviour
         }
 
         string pass = SecureDataPass;
-        string file = m_ExtendUtil.ConvertToUTF8FromString(m_InputField.text) + Extension;
+        m_DialogManager.saveDeckName = deckName;
+        m_DialogManager.saveDeckFile = m_ExtendUtil.ConvertToUTF8FromString(deckName) + Extension;
 
-        try
+        List<string> SaveDataList = new List<string>(Directory.GetFiles(SecureDataPass));
+        List<string> nameList = new List<string>();
+
+        for(int i = 0; i < SaveDataList.Count; i++)
         {
-            // 文字コードを指定
-            Encoding enc = Encoding.GetEncoding("utf-8");
-
-            StreamWriter sw = new StreamWriter(SecureDataPass + "/" + file, false, enc);
-            sw.WriteLine(CreateSaveData());
-            sw.Close();
-
-            m_DialogManager.AllClose();
-            m_DialogManager.OKDialog_Open(EnumController.OKBtnParamater.SuccessFileCreate);
-            return;
+            StreamReader sr = new StreamReader(SaveDataList[i]);
+            string s = sr.ReadToEnd();
+            sr.Close();
+            string[] array = s.Split(',');
+            nameList.Add(array[0]);
         }
-        catch (Exception e)
+
+        for(int i = 0; i < nameList.Count; i++)
         {
-            Debug.Log(e);
+            if (deckName == nameList[i])
+            {
+                m_DialogManager.YesOrNoDialog_Open(EnumController.YesOrNoParamater.ConfirmOverWrite);
+                return;
+            }
         }
-        m_DialogManager.AllClose();
-        m_DialogManager.OKDialog_Open(EnumController.OKBtnParamater.FailedFileCreate);
-        return;
+
+        m_DialogManager.Save();
     }
 
     private string CreateSaveData()

@@ -122,4 +122,9 @@ public class EnumController
         Iconic,
         Promo,
     }
+
+    public enum YesOrNoParamater
+    {
+        ConfirmOverWrite,
+    }
 }
