@@ -25,7 +25,7 @@ public class NewSaveDialog : MonoBehaviour
     public RectTransform inputField_Btn;
     public RectTransform space3;
 
-    private const string Extension = ".txt";
+    //private const string Extension = ".txt";
 
     private ExtendUtil m_ExtendUtil = new ExtendUtil();
 
@@ -61,7 +61,6 @@ public class NewSaveDialog : MonoBehaviour
 
         string pass = SecureDataPass;
         m_DialogManager.saveDeckName = deckName;
-        m_DialogManager.saveDeckFile = m_ExtendUtil.ConvertToUTF8FromString(deckName) + Extension;
 
         List<string> SaveDataList = new List<string>(Directory.GetFiles(SecureDataPass));
         List<string> nameList = new List<string>();
@@ -84,101 +83,8 @@ public class NewSaveDialog : MonoBehaviour
             }
         }
 
+        m_EditCardPanelManager.DeckName = m_DialogManager.saveDeckName;
         m_DialogManager.Save();
-    }
-
-    private string CreateSaveData()
-    {
-        string SaveData = m_InputField.text;
-        m_EditCardPanelManager.DeckName = m_InputField.text;
-        SaveData += ",";
-
-        List<EnumController.Colors> colors = new List<EnumController.Colors>();
-        for (int i = 0; i < m_EditCardPanelManager.DeckList.Count; i++)
-        {
-            List<EnumController.Colors> temp = m_EditCardPanelManager.DeckList[i].GetColor();
-            for (int k = 0; k < temp.Count; k++)
-            {
-                if (colors.Contains(temp[k]))
-                {
-                    continue;
-                }
-                else
-                {
-                    colors.Add(temp[k]);
-                }
-            }
-        }
-
-        if (colors.Contains(EnumController.Colors.Amethyst))
-        {
-            SaveData += "Amethyst";
-        }
-        else
-        {
-            SaveData += "None";
-        }
-        SaveData += ",";
-
-        if (colors.Contains(EnumController.Colors.Amber))
-        {
-            SaveData += "Amber";
-        }
-        else
-        {
-            SaveData += "None";
-        }
-        SaveData += ",";
-
-        if (colors.Contains(EnumController.Colors.Emerald))
-        {
-            SaveData += "Emerald";
-        }
-        else
-        {
-            SaveData += "None";
-        }
-        SaveData += ",";
-
-        if (colors.Contains(EnumController.Colors.Sapphire))
-        {
-            SaveData += "Sapphire";
-        }
-        else
-        {
-            SaveData += "None";
-        }
-        SaveData += ",";
-
-        if (colors.Contains(EnumController.Colors.Steel))
-        {
-            SaveData += "Steel";
-        }
-        else
-        {
-            SaveData += "None";
-        }
-        SaveData += ",";
-
-        if (colors.Contains(EnumController.Colors.Ruby))
-        {
-            SaveData += "Ruby";
-        }
-        else
-        {
-            SaveData += "None";
-        }
-        SaveData += ",";
-
-        SaveData += m_SaveDataStatic.GetFavoriteCardInfo().GetCardNo();
-        List<CardInfo> list = m_EditCardPanelManager.DeckList;
-        for (int i = 0; i < m_EditCardPanelManager.DeckList.Count; i++)
-        {
-            SaveData += ",";
-            SaveData += list[i].GetCardNo();
-        }
-        SaveData += ",";
-        return SaveData;
     }
 
     public void Open()

@@ -168125,6 +168125,7 @@ MonoBehaviour:
   m_YesOrNoDialog: {fileID: 2095608173}
   Parent: {fileID: 1802370522}
   m_EditCardPanelManager: {fileID: 8361859508844763780}
+  saveDeckName: 
 --- !u!114 &1802370524
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -196504,6 +196505,7 @@ MonoBehaviour:
   Parent_space3: {fileID: 515117737}
   m_Text: {fileID: 1716972690}
   m_DialogManager: {fileID: 1802370523}
+  m_EditCardPanelManager: {fileID: 8361859508844763780}
 --- !u!1 &2097054254
 GameObject:
   m_ObjectHideFlags: 0
@@ -200838,7 +200840,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3240975521696806762}
   m_HandleRect: {fileID: 4164854425213757719}
   m_Direction: 0
-  m_Value: 0.0000017951517
+  m_Value: 0
   m_Size: 0.98089886
   m_NumberOfSteps: 0
   m_OnValueChanged:

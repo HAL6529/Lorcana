@@ -23,6 +23,8 @@ public class YesOrNoDialog : MonoBehaviour
     public Text m_Text;
 
     public DialogManager m_DialogManager;
+    private EnumController.YesOrNoParamater Paramater;
+    public EditCardPanelManager m_EditCardPanelManager;
 
     public void Close()
     {
@@ -31,10 +33,20 @@ public class YesOrNoDialog : MonoBehaviour
 
     public void Open(EnumController.YesOrNoParamater paramater)
     {
-        switch (paramater)
+        Paramater = paramater;
+        switch (Paramater)
         {
             case EnumController.YesOrNoParamater.ConfirmOverWrite:
                 m_Text.text = "同じデッキ名のデータが既に存在しています。\r\n上書き保存しますか";
+                break;
+            case EnumController.YesOrNoParamater.ConfirmOverWrite_OverWriteBtn:
+                if(m_EditCardPanelManager.DeckName == "")
+                {
+                    m_DialogManager.AllClose();
+                    m_DialogManager.NewSaveDialog_Open();
+                    return;
+                }
+                m_Text.text = "【" + m_EditCardPanelManager.DeckName + "】に\r\n上書き保存しますか";
                 break;
             default:
                 m_Text.text = "";
@@ -46,8 +58,20 @@ public class YesOrNoDialog : MonoBehaviour
 
     public void onYesBtn()
     {
-        m_DialogManager.AllClose();
-        m_DialogManager.Save();
+        switch (Paramater)
+        {
+            case EnumController.YesOrNoParamater.ConfirmOverWrite:
+                m_EditCardPanelManager.DeckName = m_DialogManager.saveDeckName;
+                m_DialogManager.AllClose();
+                m_DialogManager.Save();
+                break;
+            case EnumController.YesOrNoParamater.ConfirmOverWrite_OverWriteBtn:
+                m_DialogManager.AllClose();
+                m_DialogManager.Save();
+                break;
+            default:
+                break;
+        }
     }
 
     public void onNoBtn()

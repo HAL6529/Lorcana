@@ -20,8 +20,9 @@ public class DialogManager : MonoBehaviour
     public SaveDataStatic m_SaveDataStatic = new SaveDataStatic();
     private ExtendUtil m_ExtendUtil = new ExtendUtil();
 
+    private const string Extension = ".txt";
+
     public string saveDeckName;
-    public string saveDeckFile;
 
     public void AllClose()
     {
@@ -65,7 +66,7 @@ public class DialogManager : MonoBehaviour
             // 文字コードを指定
             Encoding enc = Encoding.GetEncoding("utf-8");
 
-            StreamWriter sw = new StreamWriter(SecureDataPass + "/" + saveDeckFile, false, enc);
+            StreamWriter sw = new StreamWriter(SecureDataPass + "/" + m_ExtendUtil.ConvertToUTF8FromString(m_EditCardPanelManager.DeckName) + Extension, false, enc);
             sw.WriteLine(CreateSaveData());
             sw.Close();
 
@@ -84,8 +85,7 @@ public class DialogManager : MonoBehaviour
 
     private string CreateSaveData()
     {
-        string SaveData = saveDeckName;
-        m_EditCardPanelManager.DeckName = saveDeckName;
+        string SaveData = m_EditCardPanelManager.DeckName;
         SaveData += ",";
 
         List<EnumController.Colors> colors = new List<EnumController.Colors>();
