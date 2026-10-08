@@ -7,6 +7,7 @@ public class ViewMode : MonoBehaviour
 {
     public EditCardPanelManager m_EditCardPanelManager;
     public List<Image> deckImageList = new List<Image>();
+    public List<ViewMode_Image> ViewMode_Image_List = new List<ViewMode_Image>();
     public GameObject DeckName;
     public Text DeckNameText;
     public Image FavoriteCard;
@@ -306,17 +307,22 @@ public class ViewMode : MonoBehaviour
     public void UpdateDeckList()
     {
         List<CardInfo> DeckList = m_EditCardPanelManager.DeckList;
-        for (int i = 0; i < deckImageList.Count; i++)
+        for (int i = 0; i < ViewMode_Image_List.Count; i++)
         {
             if(i < DeckList.Count)
             {
-                deckImageList[i].sprite = DeckList[i].m_sprite;
-                deckImageList[i].color = new Color(1, 1, 1, 1);
+                ViewMode_Image_List[i].SetImage(DeckList[i].m_sprite, true);
             }
             else
             {
-                deckImageList[i].sprite = null;
-                deckImageList[i].color = new Color(0, 0, 0, 0);
+                if (i < DeckList.Count + (130 - DeckList.Count) % 10)
+                {
+                    ViewMode_Image_List[i].SetImage(null, true);
+                }
+                else
+                {
+                    ViewMode_Image_List[i].SetImage(null, false);
+                }
             }
         }
     }

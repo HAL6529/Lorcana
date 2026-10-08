@@ -267,6 +267,7 @@
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_021_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_067_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_159_JA_01.cs" />
+    <Compile Include="Assets\ViewMode_Image.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_045_JA_01.cs" />
     <Compile Include="Assets\Script\Menu.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_035_JA_01.cs" />
