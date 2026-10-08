@@ -324,49 +324,104 @@ public class EditCardPanelManager : MonoBehaviour
 
     private void onColorSort(List<CardInfo> paramaterList)
     {
-        /*List<CardInfo> temp = new List<CardInfo>();
-        List<CardInfo> temp_return = new List<CardInfo>();
+        onDefaultSort(paramaterList);
+        List<EditCardPanelTemp> EditCardPanelTempList = new List<EditCardPanelTemp>();
+        List<EditCardPanelTemp> temp_return = new List<EditCardPanelTemp>();
 
-        for (int i = 0; i < paramaterList.Count; i++)
+        for (int i = 0; i < m_EditCardPanelList_TheFirstChapter.Count; i++)
         {
-            if (paramaterList[i] == null)
+            if (m_EditCardPanelList_TheFirstChapter[i] == null)
             {
                 continue;
             }
-            temp.Add(paramaterList[i]);
+            EditCardPanelTemp m_EditCardPanelTemp = new EditCardPanelTemp(m_EditCardPanelList_TheFirstChapter[i].m_CardInfo, m_EditCardPanelList_TheFirstChapter[i].cardCount);
+            EditCardPanelTempList.Add(m_EditCardPanelTemp);
         }
-
         List<EnumController.Colors> enumColorList = new List<EnumController.Colors>() { EnumController.Colors.Amber, EnumController.Colors.Amethyst, EnumController.Colors.Emerald, EnumController.Colors.Ruby, EnumController.Colors.Sapphire, EnumController.Colors.Steel };
 
-        foreach (EnumController.Colors k in enumColorList)
+
+        for(int i = 0; i < EditCardPanelTempList.Count; i++)
         {
-            for (int i = 0; i < temp.Count; i++)
+            List<EnumController.Colors> colors = EditCardPanelTempList[i].m_CardInfo.GetColor();
+            if (colors.Contains(EnumController.Colors.Amber))
             {
-                if (temp[i] == null)
-                {
-                    continue;
-                }
-                List<EnumController.Colors> colorList = temp[i].GetColor();
-                if (colorList.Count > 1)
-                {
-                    continue;
-                }
-                else
-                {
-                    if (colorList[0] == k)
-                    {
-                        temp_return.Add(temp[i]);
-                        temp[i] = null;
-                        continue;
-                    }
-                }
+                temp_return.Add(EditCardPanelTempList[i]);
+            }
+        }
+
+        for (int i = 0; i < EditCardPanelTempList.Count; i++)
+        {
+            List<EnumController.Colors> colors = EditCardPanelTempList[i].m_CardInfo.GetColor();
+            if (colors.Contains(EnumController.Colors.Amethyst))
+            {
+                temp_return.Add(EditCardPanelTempList[i]);
+            }
+        }
+
+        for (int i = 0; i < EditCardPanelTempList.Count; i++)
+        {
+            List<EnumController.Colors> colors = EditCardPanelTempList[i].m_CardInfo.GetColor();
+            if (colors.Contains(EnumController.Colors.Emerald))
+            {
+                temp_return.Add(EditCardPanelTempList[i]);
+            }
+        }
+
+        for (int i = 0; i < EditCardPanelTempList.Count; i++)
+        {
+            List<EnumController.Colors> colors = EditCardPanelTempList[i].m_CardInfo.GetColor();
+            if (colors.Contains(EnumController.Colors.Ruby))
+            {
+                temp_return.Add(EditCardPanelTempList[i]);
+            }
+        }
+
+
+        for (int i = 0; i < EditCardPanelTempList.Count; i++)
+        {
+            List<EnumController.Colors> colors = EditCardPanelTempList[i].m_CardInfo.GetColor();
+            if (colors.Contains(EnumController.Colors.Sapphire))
+            {
+                temp_return.Add(EditCardPanelTempList[i]);
+            }
+        }
+
+        for (int i = 0; i < EditCardPanelTempList.Count; i++)
+        {
+            List<EnumController.Colors> colors = EditCardPanelTempList[i].m_CardInfo.GetColor();
+            if (colors.Contains(EnumController.Colors.Steel))
+            {
+                temp_return.Add(EditCardPanelTempList[i]);
             }
         }
 
         for (int i = 0; i < temp_return.Count; i++)
         {
-            m_EditCardPanelList_TheFirstChapter[i].SetEditCardPanel(temp_return[i]);
-        }*/
+            CardInfo c = temp_return[i].m_CardInfo;
+            int n = temp_return[i].cardCount;
+            m_EditCardPanelList_TheFirstChapter[i].SetEditCardPanel(c, n);
+
+            if (SwitchOwn)
+            {
+                if (n == 0)
+                {
+                    m_EditCardPanelList_TheFirstChapter[i].SwitchActive(false);
+                }
+                else
+                {
+                    m_EditCardPanelList_TheFirstChapter[i].SwitchActive(true);
+                }
+            }
+        }
+
+        for (int i = 0; i < m_EditCardPanelList_TheFirstChapter.Count; i++)
+        {
+            if (m_EditCardPanelList_TheFirstChapter[i] == null)
+            {
+                continue;
+            }
+            m_EditCardPanelList_TheFirstChapter[i].isSearchHit();
+        }
     }
 
     public void Search(SearchFilterClass paramater)
