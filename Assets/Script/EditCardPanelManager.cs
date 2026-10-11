@@ -63,8 +63,7 @@ public class EditCardPanelManager : MonoBehaviour
 
     public void CheckStandby()
     {
-        //if(standbyCnt == m_EditCardPanelList_TheFirstChapter.Count)
-        if (standbyCnt == 203)
+        if(standbyCnt == m_EditCardPanelList_TheFirstChapter.Count)
         {
             m_SearchFilterClass = new SearchFilterClass();
             LoadDeckList();
