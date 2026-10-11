@@ -19,6 +19,7 @@ public class Menu_SelectDeckPanel : MonoBehaviour
     public Image Mark4;
     public Image Mark5;
     public Image Mark6;
+    public Image buttons;
     public Sprite Amethyst;
     public Sprite Amber;
     public Sprite Emerald;
@@ -149,6 +150,7 @@ public class Menu_SelectDeckPanel : MonoBehaviour
             {
                 flg2 = true;
                 background2.color = new Color(220f / 255f, 180f / 255f, 0, 145f / 255f);
+                buttons.color = new Color(220f / 255f, 180f / 255f, 0, 145f / 255f);
             }
             else
             {
@@ -164,6 +166,7 @@ public class Menu_SelectDeckPanel : MonoBehaviour
             {
                 flg2 = true;
                 background2.color = new Color(0, 150f / 255f, 40f / 255f, 145f / 255f);
+                buttons.color = new Color(0, 150f / 255f, 40f / 255f, 145f / 255f);
             }
             else
             {
@@ -179,6 +182,7 @@ public class Menu_SelectDeckPanel : MonoBehaviour
             {
                 flg2 = true;
                 background2.color = new Color(25f / 255f, 130f / 255f, 200f / 255f, 145f / 255f);
+                buttons.color = new Color(25f / 255f, 130f / 255f, 200f / 255f, 145f / 255f);
             }
             else
             {
@@ -194,6 +198,7 @@ public class Menu_SelectDeckPanel : MonoBehaviour
             {
                 flg2 = true;
                 background2.color = new Color(145f / 255f, 150f / 255f, 160f / 255f, 145f / 255f);
+                buttons.color = new Color(145f / 255f, 150f / 255f, 160f / 255f, 145f / 255f);
             }
             else
             {
@@ -209,6 +214,7 @@ public class Menu_SelectDeckPanel : MonoBehaviour
             {
                 flg2 = true;
                 background2.color = new Color(215f / 255f, 0, 40f / 255f, 145f / 255f);
+                buttons.color = new Color(215f / 255f, 0, 40f / 255f, 145f / 255f);
             }
             else
             {
@@ -228,24 +234,31 @@ public class Menu_SelectDeckPanel : MonoBehaviour
             {
                 case "Amethyst":
                     background2.color = new Color(160f / 255f, 0, 185f / 255f, 145f / 255f);
+                    buttons.color = new Color(160f / 255f, 0, 185f / 255f, 145f / 255f);
                     break;
                 case "Amber":
                     background2.color = new Color(220f / 255f, 180f / 255f, 0, 145f / 255f);
+                    buttons.color = new Color(220f / 255f, 180f / 255f, 0, 145f / 255f);
                     break;
                 case "Emerald":
                     background2.color = new Color(0, 150f / 255f, 40f / 255f, 145f / 255f);
+                    buttons.color = new Color(0, 150f / 255f, 40f / 255f, 145f / 255f);
                     break;
                 case "Sapphire":
                     background2.color = new Color(25f / 255f, 130f / 255f, 200f / 255f, 145f / 255f);
+                    buttons.color = new Color(25f / 255f, 130f / 255f, 200f / 255f, 145f / 255f);
                     break;
                 case "Steel":
                     background2.color = new Color(145f / 255f, 150f / 255f, 160f / 255f, 145f / 255f);
+                    buttons.color = new Color(145f / 255f, 150f / 255f, 160f / 255f, 145f / 255f);
                     break;
                 case "Ruby":
                     background2.color = new Color(215f / 255f, 0, 40f / 255f, 145f / 255f);
+                    buttons.color = new Color(215f / 255f, 0, 40f / 255f, 145f / 255f);
                     break;
                 default:
                     background2.color = new Color(1, 1, 1, 0);
+                    buttons.color = new Color(1, 1, 1, 1);
                     break;
             }
 
