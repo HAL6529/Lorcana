@@ -796,7 +796,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a20d38d1d14374b4183eb7d5be5986fa, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8d36c47ded465ca4c9930f2557825b19, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1343,6 +1343,7 @@ MonoBehaviour:
   Mark4: {fileID: 7692537821073098745}
   Mark5: {fileID: 8513525693452556736}
   Mark6: {fileID: 2664541818568968475}
+  buttons: {fileID: 1143033622997440944}
   Amethyst: {fileID: 21300000, guid: a2d298a32b4041d46bdcfce4180b74be, type: 3}
   Amber: {fileID: 21300000, guid: b2852cd406539b448a16b77e69588deb, type: 3}
   Emerald: {fileID: 21300000, guid: 93e5a28fd9b151b49b80e4c60c85cf79, type: 3}
@@ -1775,7 +1776,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c5aef4a3349b6744d99edb677220d336, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6dbae38399261314894415effef2dcd7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1876,14 +1877,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 28986ab10b7dbb44daef929531df6f9f, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
