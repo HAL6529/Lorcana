@@ -86,6 +86,7 @@ public class EnumController
         AliceInWonderland, //不思議の国のアリス
         BeautyAndTheBeast, //美女と野獣
         Cinderella, //シンデレラ
+        DuckTales, //ダックテイル
         Fantasia, //ファンタジア
         Frozen, //アナと雪の女王
         Hercules, //ヘラクレス
@@ -96,6 +97,7 @@ public class EnumController
         TheLionKing, //ライオンキング
         TheLittleMermaid,  //リトル・マーメイド
         ThePrincessAndTheFrog, //プリンセスと魔法のキス
+        TheRescuers, // ビアンカの大冒険
         TheSwordInTheStone, //王様の剣
         TreasurePlanet, //トレジャー・プラネット
         LiloAndStitch, //リロ・アンド・スティッチ
@@ -110,6 +112,7 @@ public class EnumController
         SleepingBeauty, //眠れる森の美女
         SnowWhiteAndTheSevenDwarfs, //白雪姫
         WinnieThePooh, //クマのプーさん
+        Zootopia, //ズートピア
     }
 
     public enum Type

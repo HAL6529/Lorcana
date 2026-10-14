@@ -15,7 +15,7 @@ C:/Users/matty/Unity/Lorcana
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-58175
+58066
 Successfully changed project path to: C:/Users/matty/Unity/Lorcana
 C:/Users/matty/Unity/Lorcana
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,11 +49,11 @@ C:/Users/matty/Unity/Lorcana
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [59088] Host "[IP] 192.168.10.102 [Port] 0 [Flags] 2 [Guid] 335900921 [EditorId] 335900921 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-62U0HVH) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [42496] Host "[IP] 192.168.10.102 [Port] 0 [Flags] 2 [Guid] 3961140983 [EditorId] 3961140983 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-62U0HVH) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [59088] Host "[IP] 192.168.10.102 [Port] 0 [Flags] 2 [Guid] 335900921 [EditorId] 335900921 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-62U0HVH) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [42496] Host "[IP] 192.168.10.102 [Port] 0 [Flags] 2 [Guid] 3961140983 [EditorId] 3961140983 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-62U0HVH) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 14.59 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 15.70 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.3f1 (7cdc2969a641)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/Resources/UnitySubsystems
@@ -69,53 +69,53 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56244
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56924
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.008275 seconds.
-- Loaded All Assemblies, in  0.241 seconds
+Registered in 0.009597 seconds.
+- Loaded All Assemblies, in  0.261 seconds
 Native extension for WindowsStandalone target not found
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 Native extension for iOS target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 254 ms
+Android Extension - Scanning For ADB Devices 351 ms
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.483 seconds
-Domain Reload Profiling: 723ms
-	BeginReloadAssembly (66ms)
+- Finished resetting the current domain, in  0.577 seconds
+Domain Reload Profiling: 837ms
+	BeginReloadAssembly (78ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (0ms)
-	RebuildCommonClasses (22ms)
-	RebuildNativeTypeToScriptingClass (6ms)
-	initialDomainReloadingComplete (44ms)
-	LoadAllAssembliesAndSetupDomain (102ms)
-		LoadAssemblies (65ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (24ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (46ms)
+	LoadAllAssembliesAndSetupDomain (104ms)
+		LoadAssemblies (78ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (97ms)
-			TypeCache.Refresh (96ms)
-				TypeCache.ScanAssembly (86ms)
+		AnalyzeDomain (99ms)
+			TypeCache.Refresh (98ms)
+				TypeCache.ScanAssembly (88ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (483ms)
+	FinalizeReload (577ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (445ms)
+		SetupLoadedEditorAssemblies (538ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (351ms)
+			InitializePlatformSupportModulesInManaged (441ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (1ms)
-			ProcessInitializeOnLoadAttributes (59ms)
-			ProcessInitializeOnLoadMethodAttributes (31ms)
+			ProcessInitializeOnLoadAttributes (60ms)
+			ProcessInitializeOnLoadMethodAttributes (33ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -125,54 +125,54 @@ Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\matty\Unity\Lorcana\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\matty\Unity\Lorcana\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.570 seconds
-Refreshing native plugins compatible for Editor in 3.55 ms, found 5 plugins.
+- Loaded All Assemblies, in  0.602 seconds
+Refreshing native plugins compatible for Editor in 3.85 ms, found 5 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.425 seconds
-Domain Reload Profiling: 993ms
-	BeginReloadAssembly (89ms)
+- Finished resetting the current domain, in  0.460 seconds
+Domain Reload Profiling: 1060ms
+	BeginReloadAssembly (106ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (3ms)
+		DisableScriptedObjects (4ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (16ms)
-	RebuildCommonClasses (22ms)
-	RebuildNativeTypeToScriptingClass (6ms)
-	initialDomainReloadingComplete (29ms)
-	LoadAllAssembliesAndSetupDomain (422ms)
-		LoadAssemblies (234ms)
+		CreateAndSetChildDomain (18ms)
+	RebuildCommonClasses (26ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (33ms)
+	LoadAllAssembliesAndSetupDomain (428ms)
+		LoadAssemblies (260ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (231ms)
-			TypeCache.Refresh (208ms)
-				TypeCache.ScanAssembly (197ms)
-			ScanForSourceGeneratedMonoScriptInfo (18ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (425ms)
+		AnalyzeDomain (218ms)
+			TypeCache.Refresh (197ms)
+				TypeCache.ScanAssembly (187ms)
+			ScanForSourceGeneratedMonoScriptInfo (15ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (461ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (303ms)
+		SetupLoadedEditorAssemblies (330ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (24ms)
-			SetLoadedEditorAssemblies (3ms)
+			InitializePlatformSupportModulesInManaged (26ms)
+			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (50ms)
-			ProcessInitializeOnLoadAttributes (194ms)
-			ProcessInitializeOnLoadMethodAttributes (27ms)
-			AfterProcessingInitializeOnLoad (5ms)
+			BeforeProcessingInitializeOnLoad (51ms)
+			ProcessInitializeOnLoadAttributes (220ms)
+			ProcessInitializeOnLoadMethodAttributes (25ms)
+			AfterProcessingInitializeOnLoad (4ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (7ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 6.54 ms, found 5 plugins.
+		AwakeInstancesAfterBackupRestoration (6ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 5.90 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4793 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 77 unused Assets / (248.8 KB). Loaded Objects now: 5249.
-Memory consumption went from 159.8 MB to 159.5 MB.
-Total: 2.735900 ms (FindLiveObjects: 0.229800 ms CreateObjectMapping: 0.118900 ms MarkObjects: 2.208300 ms  DeleteObjects: 0.177900 ms)
+Unloading 4826 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 77 unused Assets / (248.5 KB). Loaded Objects now: 5282.
+Memory consumption went from 160.4 MB to 160.1 MB.
+Total: 3.092700 ms (FindLiveObjects: 0.337700 ms CreateObjectMapping: 0.198900 ms MarkObjects: 2.357600 ms  DeleteObjects: 0.197800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -187,844 +187,162 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 1578177.935700 seconds.
-  path: Assets/picture/lorcana/RiseOfTheFloodborn/093_JA_02.png
-  artifactKey: Guid(fb7759ed98a483045a6733c65bb3451c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/RiseOfTheFloodborn/093_JA_02.png using Guid(fb7759ed98a483045a6733c65bb3451c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f3b100ddb37a9e06a28b98befa6cc0e') in 0.056346 seconds
+  Time since last request: 1650051.332754 seconds.
+  path: Assets/picture/lorcana/RiseOfTheFloodborn/015_JA_02.png
+  artifactKey: Guid(0548f638b5cc0564baa8f8653432231c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/picture/lorcana/RiseOfTheFloodborn/015_JA_02.png using Guid(0548f638b5cc0564baa8f8653432231c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd47054ea8efed7fc30a6ba0770eee6a9') in 0.060622 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 11.034057 seconds.
-  path: Assets/picture/lorcana/RiseOfTheFloodborn/092_JA_02.png
-  artifactKey: Guid(ad4a7e3a920a78c4ab540f7ded0a2eb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/RiseOfTheFloodborn/092_JA_02.png using Guid(ad4a7e3a920a78c4ab540f7ded0a2eb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5c1cbc73e5f792b0d361740919a9f7e') in 0.034139 seconds
+  Time since last request: 0.308455 seconds.
+  path: Assets/picture/lorcana/RiseOfTheFloodborn/020_JA_02.png
+  artifactKey: Guid(f5f9833e0c5d17d4385452b6ba651008) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/picture/lorcana/RiseOfTheFloodborn/020_JA_02.png using Guid(f5f9833e0c5d17d4385452b6ba651008) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98d42960e2138b3f9f557215a6849903') in 0.015405 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 9.609576 seconds.
-  path: Assets/picture/lorcana/RiseOfTheFloodborn/091_JA_02.png
-  artifactKey: Guid(6241b6bf0362c87418df7a9e67e1cfde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/RiseOfTheFloodborn/091_JA_02.png using Guid(6241b6bf0362c87418df7a9e67e1cfde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30044c56c187d1707cf928736f93df2d') in 0.030474 seconds
+  Time since last request: 0.186634 seconds.
+  path: Assets/picture/lorcana/RiseOfTheFloodborn/021_JA_02.png
+  artifactKey: Guid(28f4b3c19c17bd249ac109ec0e46b335) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/picture/lorcana/RiseOfTheFloodborn/021_JA_02.png using Guid(28f4b3c19c17bd249ac109ec0e46b335) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '635a002bdb876af9446954a1203de6cd') in 0.019095 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 9.313934 seconds.
-  path: Assets/picture/lorcana/RiseOfTheFloodborn/190_JA_02.png
-  artifactKey: Guid(efa22524894aeb643b18417c7084d642) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/RiseOfTheFloodborn/190_JA_02.png using Guid(efa22524894aeb643b18417c7084d642) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c7c7e372b0fa9b70a7def7233f3ac96') in 0.017218 seconds
+  Time since last request: 0.000020 seconds.
+  path: Assets/picture/lorcana/RiseOfTheFloodborn/024_JA_02.png
+  artifactKey: Guid(41c85def0aa9f1247811b158000fd7c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/picture/lorcana/RiseOfTheFloodborn/024_JA_02.png using Guid(41c85def0aa9f1247811b158000fd7c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c446143fecc86db0f9f4c57760b6616') in 0.011639 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 11.620131 seconds.
-  path: Assets/picture/lorcana/RiseOfTheFloodborn/018_JA_02.png
-  artifactKey: Guid(3ebbbf5b0faa8444881b4271d4ed67ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/RiseOfTheFloodborn/018_JA_02.png using Guid(3ebbbf5b0faa8444881b4271d4ed67ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84c91899ce79de16397cdab9dcb01664') in 0.011603 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/picture/lorcana/RiseOfTheFloodborn/068_JA_02.png
-  artifactKey: Guid(c389586ab5cac36449ad4b26dfde7e46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/RiseOfTheFloodborn/068_JA_02.png using Guid(c389586ab5cac36449ad4b26dfde7e46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '121acb5181f9306881fd06efa0956a35') in 0.010251 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/picture/lorcana/TheFirstChapter/068_JA_01.png
-  artifactKey: Guid(1cbef73ff76111b4e9e558ec659cf807) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/TheFirstChapter/068_JA_01.png using Guid(1cbef73ff76111b4e9e558ec659cf807) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9feaebb9ac7f702edd423397509ff3b') in 0.010120 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/picture/lorcana/RiseOfTheFloodborn/081_JA_02.png
-  artifactKey: Guid(cf69de5bd51b70845ac8f100bf654b06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/RiseOfTheFloodborn/081_JA_02.png using Guid(cf69de5bd51b70845ac8f100bf654b06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '044fb801a6407420e157497da0d4bc32') in 0.010967 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.191312 seconds.
-  path: Assets/picture/lorcana/RiseOfTheFloodborn/189_JA_02.png
-  artifactKey: Guid(851509abd220af448aa5aae347c77894) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/RiseOfTheFloodborn/189_JA_02.png using Guid(851509abd220af448aa5aae347c77894) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd751f559ccc19b0edd602d360a4354b') in 0.010448 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 8.545764 seconds.
-  path: Assets/picture/lorcana/RiseOfTheFloodborn/088_JA_02.png
-  artifactKey: Guid(0c39d9e34b639e7428e138def0a49087) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/RiseOfTheFloodborn/088_JA_02.png using Guid(0c39d9e34b639e7428e138def0a49087) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b33aac71299c7d3b9e6178c0da24b2e') in 0.020007 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 9.257687 seconds.
-  path: Assets/picture/lorcana/RiseOfTheFloodborn/087_JA_02.png
-  artifactKey: Guid(322283c7ad0ae534b814da9123692534) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/RiseOfTheFloodborn/087_JA_02.png using Guid(322283c7ad0ae534b814da9123692534) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '327222b4a20797ee713db05aa01b3315') in 0.032934 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 11.523560 seconds.
-  path: Assets/picture/lorcana/RiseOfTheFloodborn/086_JA_02.png
-  artifactKey: Guid(1d42eff2a7f394d4594f723d1746db2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/RiseOfTheFloodborn/086_JA_02.png using Guid(1d42eff2a7f394d4594f723d1746db2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b5912cf4b945ca1a79add839d8baa32') in 0.022220 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 10.251324 seconds.
-  path: Assets/picture/lorcana/RiseOfTheFloodborn/085_JA_02.png
-  artifactKey: Guid(5bd8ff902e56fa04997a13487fd0f871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/RiseOfTheFloodborn/085_JA_02.png using Guid(5bd8ff902e56fa04997a13487fd0f871) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a23cdf627cad5368dba8ddcbc83025e') in 0.019334 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 10.324423 seconds.
-  path: Assets/picture/lorcana/RiseOfTheFloodborn/084_JA_02.png
-  artifactKey: Guid(aafcec643ead8474bb4fbb3466a96db0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/RiseOfTheFloodborn/084_JA_02.png using Guid(aafcec643ead8474bb4fbb3466a96db0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6dbabcd1aed5c1065b7f7ae93c18e496') in 0.012254 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 9.784245 seconds.
-  path: Assets/picture/lorcana/RiseOfTheFloodborn/083_JA_02.png
-  artifactKey: Guid(113253705fe97454b828ad65e5b33c10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/RiseOfTheFloodborn/083_JA_02.png using Guid(113253705fe97454b828ad65e5b33c10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10bcbd10f47c8c6a9dcdbbf27366c3e6') in 0.019538 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 10.429533 seconds.
-  path: Assets/picture/lorcana/RiseOfTheFloodborn/082_JA_02.png
-  artifactKey: Guid(c31c049a6bfde8d4b91fbee64bd19bf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/RiseOfTheFloodborn/082_JA_02.png using Guid(c31c049a6bfde8d4b91fbee64bd19bf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d718998ce997d6d866780e831faead7') in 0.018225 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 8.860436 seconds.
-  path: Assets/picture/lorcana/RiseOfTheFloodborn/181_JA_02.png
-  artifactKey: Guid(7d90d67b602336c41a7ac95ca00cb6dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/RiseOfTheFloodborn/181_JA_02.png using Guid(7d90d67b602336c41a7ac95ca00cb6dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29d912cf66d43f016ae57e975ac55c97') in 0.026957 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 9.099077 seconds.
-  path: Assets/picture/lorcana/RiseOfTheFloodborn/180_JA_02.png
-  artifactKey: Guid(8fb3da158dbde104a94c626d36a0b131) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/RiseOfTheFloodborn/180_JA_02.png using Guid(8fb3da158dbde104a94c626d36a0b131) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56d3057525bacfaaff1b0663cf86cae1') in 0.018098 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 14.213625 seconds.
-  path: Assets/picture/lorcana/RiseOfTheFloodborn/016_JA_02.png
-  artifactKey: Guid(90b3adda927b37646bedcc766685c0b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/RiseOfTheFloodborn/016_JA_02.png using Guid(90b3adda927b37646bedcc766685c0b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f93260e55f5408e212bdb3fdc989bc27') in 0.022631 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/picture/lorcana/TheFirstChapter/036_JA_01.png
-  artifactKey: Guid(d7537f2a6f60da34ea24e39a66a0ba9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/TheFirstChapter/036_JA_01.png using Guid(d7537f2a6f60da34ea24e39a66a0ba9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5a283882d6396fa4d48829a7d2f6253') in 0.014195 seconds
+  Time since last request: 0.173239 seconds.
+  path: Assets/picture/lorcana/RiseOfTheFloodborn/030_JA_02.png
+  artifactKey: Guid(d814f0ee03441364198209eb857e05c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/picture/lorcana/RiseOfTheFloodborn/030_JA_02.png using Guid(d814f0ee03441364198209eb857e05c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd260fc02b1cb273c40448b7fb1c0edd5') in 0.012974 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
   Time since last request: 0.000018 seconds.
-  path: Assets/picture/lorcana/RiseOfTheFloodborn/062_JA_02.png
-  artifactKey: Guid(475271a8166395e4d86591ae98f151e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/RiseOfTheFloodborn/062_JA_02.png using Guid(475271a8166395e4d86591ae98f151e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93d42a77c258b9df046f7c33e065e1c5') in 0.012853 seconds
+  path: Assets/picture/lorcana/RiseOfTheFloodborn/032_JA_02.png
+  artifactKey: Guid(ef2907c2786dc0347859de9e9fe085d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/picture/lorcana/RiseOfTheFloodborn/032_JA_02.png using Guid(ef2907c2786dc0347859de9e9fe085d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a1f00fee076e768583eeb908310d6a1') in 0.009993 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/picture/lorcana/TheFirstChapter/063_JA_01.png
-  artifactKey: Guid(bdafe2e162af1cf4795a6a4d15c3ef85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/TheFirstChapter/063_JA_01.png using Guid(bdafe2e162af1cf4795a6a4d15c3ef85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd30fa9b1dcc1911d1bb3e8dc8260a4b') in 0.011972 seconds
+  Time since last request: 0.384883 seconds.
+  path: Assets/picture/lorcana/TheFirstChapter/034_JA_01.png
+  artifactKey: Guid(43f04936bf1c7ce41a50438f4ec84fe3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/picture/lorcana/TheFirstChapter/034_JA_01.png using Guid(43f04936bf1c7ce41a50438f4ec84fe3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fce1475c97d725d206619bb719a526b') in 0.017320 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/picture/lorcana/RiseOfTheFloodborn/046_JA_02.png
-  artifactKey: Guid(0072a6e678bdcfc41803148ca5803464) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/RiseOfTheFloodborn/046_JA_02.png using Guid(0072a6e678bdcfc41803148ca5803464) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dce07881033344dccd3c59aea9ba1dad') in 0.009755 seconds
+  Time since last request: 0.197239 seconds.
+  path: Assets/picture/lorcana/RiseOfTheFloodborn/040_JA_02.png
+  artifactKey: Guid(6485199bd0485ed418bed61b0ea320ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/picture/lorcana/RiseOfTheFloodborn/040_JA_02.png using Guid(6485199bd0485ed418bed61b0ea320ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d69c27a9b4f5af12ac6aa93187e6ebf') in 0.013526 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 0.334871 seconds.
-  path: Assets/picture/lorcana/RiseOfTheFloodborn/169_JA_02.png
-  artifactKey: Guid(7b84d4db95a4c454bb8fe744a4858531) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/RiseOfTheFloodborn/169_JA_02.png using Guid(7b84d4db95a4c454bb8fe744a4858531) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14a2c0bca636b51916f60a1ff543bd69') in 0.009480 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 8.186583 seconds.
-  path: Assets/picture/lorcana/RiseOfTheFloodborn/017_JA_02.png
-  artifactKey: Guid(231607faf9047dc4e824015cee7014c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/RiseOfTheFloodborn/017_JA_02.png using Guid(231607faf9047dc4e824015cee7014c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '247a00416c42634c3b4739bc59af5c62') in 0.011848 seconds
+  Time since last request: 0.182222 seconds.
+  path: Assets/picture/lorcana/RiseOfTheFloodborn/041_JA_02.png
+  artifactKey: Guid(71b14a9f49389774498f5a1b5f2cec14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/picture/lorcana/RiseOfTheFloodborn/041_JA_02.png using Guid(71b14a9f49389774498f5a1b5f2cec14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54b1bc81340a8b8915c2c6a0f8ea9971') in 0.026182 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
   Time since last request: 0.000017 seconds.
-  path: Assets/picture/lorcana/RiseOfTheFloodborn/037_JA_02.png
-  artifactKey: Guid(f9f6e32542ec7984997ed8b82776ebf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/RiseOfTheFloodborn/037_JA_02.png using Guid(f9f6e32542ec7984997ed8b82776ebf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11af1a185309a290b9441db08b39f8bf') in 0.013171 seconds
+  path: Assets/picture/lorcana/TheFirstChapter/045_JA_01.png
+  artifactKey: Guid(1ff0067271798a641887b757a0e42656) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/picture/lorcana/TheFirstChapter/045_JA_01.png using Guid(1ff0067271798a641887b757a0e42656) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ec30a1efa9b025da15fed07060ff386') in 0.013683 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/picture/lorcana/RiseOfTheFloodborn/047_JA_02.png
-  artifactKey: Guid(e4e4c47f3607e9649b498ac92f84ba0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/RiseOfTheFloodborn/047_JA_02.png using Guid(e4e4c47f3607e9649b498ac92f84ba0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f40b40b5788f3c6408843ac160e1ed4') in 0.012694 seconds
+  Time since last request: 0.166042 seconds.
+  path: Assets/picture/lorcana/RiseOfTheFloodborn/051_JA_02.png
+  artifactKey: Guid(88af03aa7afcce24890a12638a45fb45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/picture/lorcana/RiseOfTheFloodborn/051_JA_02.png using Guid(88af03aa7afcce24890a12638a45fb45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd5293396689877e1d8fb4535def718e') in 0.017290 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/picture/lorcana/TheFirstChapter/047_JA_01.png
-  artifactKey: Guid(1aced21c4b53b4647815e2ec63b36d47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/TheFirstChapter/047_JA_01.png using Guid(1aced21c4b53b4647815e2ec63b36d47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd506d23a6d17cba06bafc91f8f22c2e2') in 0.010264 seconds
+  Time since last request: 0.000028 seconds.
+  path: Assets/picture/lorcana/RiseOfTheFloodborn/053_JA_02.png
+  artifactKey: Guid(ba5464ec1428a1e449e40a46bf63e8fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/picture/lorcana/RiseOfTheFloodborn/053_JA_02.png using Guid(ba5464ec1428a1e449e40a46bf63e8fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd203f90676d66bef64af48976b82f1a') in 0.011289 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/picture/lorcana/RiseOfTheFloodborn/070_JA_02.png
-  artifactKey: Guid(e1f601a795a70e84286ba4fce7bf72ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/RiseOfTheFloodborn/070_JA_02.png using Guid(e1f601a795a70e84286ba4fce7bf72ec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fb86b820e5ed9f449e57c73caf99f7c') in 0.008886 seconds
+  Time since last request: 0.169048 seconds.
+  path: Assets/picture/lorcana/RiseOfTheFloodborn/064_JA_02.png
+  artifactKey: Guid(7adcb70f7d5d25a4281288ec221ff832) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/picture/lorcana/RiseOfTheFloodborn/064_JA_02.png using Guid(7adcb70f7d5d25a4281288ec221ff832) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2e648c796e49de046d0b22c388042d0') in 0.014401 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 0.382860 seconds.
-  path: Assets/picture/lorcana/RiseOfTheFloodborn/170_JA_02.png
-  artifactKey: Guid(3847d9545d9201e49ac03b5a1ad83ee6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/RiseOfTheFloodborn/170_JA_02.png using Guid(3847d9545d9201e49ac03b5a1ad83ee6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '279f054c21beb126338ef692d62e82a5') in 0.017838 seconds
+  Time since last request: 55.702498 seconds.
+  path: Assets/picture/lorcana/RiseOfTheFloodborn/109_JA_02.png
+  artifactKey: Guid(78d952fbe39bb7e4da0b99bf241b88d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/picture/lorcana/RiseOfTheFloodborn/109_JA_02.png using Guid(78d952fbe39bb7e4da0b99bf241b88d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4dd360950ddd4abc8da7833c0247131') in 0.019028 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 10.124389 seconds.
-  path: Assets/picture/lorcana/RiseOfTheFloodborn/171_JA_02.png
-  artifactKey: Guid(c31f8e56409c0164b933becef2d32774) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/RiseOfTheFloodborn/171_JA_02.png using Guid(c31f8e56409c0164b933becef2d32774) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4525c9b9984950a6a8bd5349abd3fd6') in 0.019120 seconds
+  Time since last request: 9.349088 seconds.
+  path: Assets/picture/lorcana/RiseOfTheFloodborn/110_JA_02.png
+  artifactKey: Guid(3d77708cc2c13df45b4cb4594023ebea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/picture/lorcana/RiseOfTheFloodborn/110_JA_02.png using Guid(3d77708cc2c13df45b4cb4594023ebea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e45bf885b238414c6b76c599066698eb') in 0.014358 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 10.726293 seconds.
-  path: Assets/picture/lorcana/RiseOfTheFloodborn/172_JA_02.png
-  artifactKey: Guid(4e32bcaa2f19c8248913602ccc7bc985) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/RiseOfTheFloodborn/172_JA_02.png using Guid(4e32bcaa2f19c8248913602ccc7bc985) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df2bd7ee2010658e66c72fea3e762983') in 0.011938 seconds
+  Time since last request: 0.009733 seconds.
+  path: Assets/picture/lorcana/RiseOfTheFloodborn/111_JA_02.png
+  artifactKey: Guid(5ab06eac2782b054baa46921b5c10473) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/picture/lorcana/RiseOfTheFloodborn/111_JA_02.png using Guid(5ab06eac2782b054baa46921b5c10473) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ef1eeca502bce240067807d947f745d') in 0.017114 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 12.948385 seconds.
-  path: Assets/picture/lorcana/RiseOfTheFloodborn/073_JA_02.png
-  artifactKey: Guid(d934483f05aa6174d929b8db6714fce2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/RiseOfTheFloodborn/073_JA_02.png using Guid(d934483f05aa6174d929b8db6714fce2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af18ab68aaaf7b2f361fd2a796abf434') in 0.033717 seconds
+  Time since last request: 0.000039 seconds.
+  path: Assets/picture/lorcana/TheFirstChapter/118_JA_01.png
+  artifactKey: Guid(6be978e2e16f24c498350ba68e202b35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/picture/lorcana/TheFirstChapter/118_JA_01.png using Guid(6be978e2e16f24c498350ba68e202b35) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c89b9ce4d9f751a5f36134173c8a187f') in 0.018543 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 8.190275 seconds.
-  path: Assets/picture/lorcana/RiseOfTheFloodborn/074_JA_02.png
-  artifactKey: Guid(097b8e7d8a6b33649979b782665bf046) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/RiseOfTheFloodborn/074_JA_02.png using Guid(097b8e7d8a6b33649979b782665bf046) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ee9adfcef304d1ff1975ab40d1a5d4f') in 0.019512 seconds
+  Time since last request: 0.000075 seconds.
+  path: Assets/picture/lorcana/TheFirstChapter/115_JA_01.png
+  artifactKey: Guid(6e786b70e24d04144b0b40025f5449fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/picture/lorcana/TheFirstChapter/115_JA_01.png using Guid(6e786b70e24d04144b0b40025f5449fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f285d11d494cd126f119c6a8b6ca0f37') in 0.013484 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 11.989509 seconds.
-  path: Assets/picture/lorcana/RiseOfTheFloodborn/075_JA_02.png
-  artifactKey: Guid(347f2f7823199b840a3103835c638212) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/RiseOfTheFloodborn/075_JA_02.png using Guid(347f2f7823199b840a3103835c638212) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '398a90c90bebcabc35e50a2109eee273') in 0.011421 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 11.312346 seconds.
-  path: Assets/picture/lorcana/RiseOfTheFloodborn/076_JA_02.png
-  artifactKey: Guid(67d311869b7289b4c8348fe8620a3af4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/RiseOfTheFloodborn/076_JA_02.png using Guid(67d311869b7289b4c8348fe8620a3af4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e8fc52eb7e49aee2e8bfae76fd3b072') in 0.013028 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 8.508100 seconds.
-  path: Assets/picture/lorcana/RiseOfTheFloodborn/077_JA_02.png
-  artifactKey: Guid(6e3fa416943839b4a807d3f676623114) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/RiseOfTheFloodborn/077_JA_02.png using Guid(6e3fa416943839b4a807d3f676623114) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2ffda289ee4ae53a1922a16d8f7add0') in 0.011912 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 9.226750 seconds.
-  path: Assets/picture/lorcana/RiseOfTheFloodborn/178_JA_02.png
-  artifactKey: Guid(0cfa650e2b0b33b4eb0632036f62ad44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/RiseOfTheFloodborn/178_JA_02.png using Guid(0cfa650e2b0b33b4eb0632036f62ad44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c4131adaf80ec96437fb4b8a3fb114a') in 0.010838 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 8.668319 seconds.
-  path: Assets/picture/lorcana/RiseOfTheFloodborn/179_JA_02.png
-  artifactKey: Guid(34d3f6add91f4f54ea18b01cbacfc8be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/RiseOfTheFloodborn/179_JA_02.png using Guid(34d3f6add91f4f54ea18b01cbacfc8be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e749bf336c57046aed792453162501c5') in 0.011739 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\matty\Unity\Lorcana\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\matty\Unity\Lorcana\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.515 seconds
-Refreshing native plugins compatible for Editor in 4.20 ms, found 5 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.636 seconds
-Domain Reload Profiling: 1149ms
-	BeginReloadAssembly (116ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (9ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (33ms)
-	RebuildCommonClasses (23ms)
-	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (22ms)
-	LoadAllAssembliesAndSetupDomain (345ms)
-		LoadAssemblies (210ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (179ms)
-			TypeCache.Refresh (173ms)
-				TypeCache.ScanAssembly (167ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (636ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (268ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (24ms)
-			SetLoadedEditorAssemblies (4ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (49ms)
-			ProcessInitializeOnLoadAttributes (169ms)
-			ProcessInitializeOnLoadMethodAttributes (19ms)
-			AfterProcessingInitializeOnLoad (4ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (9ms)
-Refreshing native plugins compatible for Editor in 4.59 ms, found 5 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4786 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 49 unused Assets / (222.2 KB). Loaded Objects now: 5260.
-Memory consumption went from 157.8 MB to 157.6 MB.
-Total: 2.649500 ms (FindLiveObjects: 0.229700 ms CreateObjectMapping: 0.120200 ms MarkObjects: 2.154200 ms  DeleteObjects: 0.144500 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\matty\Unity\Lorcana\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\matty\Unity\Lorcana\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.487 seconds
-Refreshing native plugins compatible for Editor in 4.77 ms, found 5 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.634 seconds
-Domain Reload Profiling: 1119ms
-	BeginReloadAssembly (106ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (8ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (30ms)
-	RebuildCommonClasses (21ms)
-	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (21ms)
-	LoadAllAssembliesAndSetupDomain (330ms)
-		LoadAssemblies (194ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (175ms)
-			TypeCache.Refresh (167ms)
-				TypeCache.ScanAssembly (161ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (8ms)
-	FinalizeReload (634ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (268ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (23ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (48ms)
-			ProcessInitializeOnLoadAttributes (171ms)
-			ProcessInitializeOnLoadMethodAttributes (18ms)
-			AfterProcessingInitializeOnLoad (4ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (10ms)
-Refreshing native plugins compatible for Editor in 5.43 ms, found 5 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4787 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 49 unused Assets / (221.2 KB). Loaded Objects now: 5265.
-Memory consumption went from 158.0 MB to 157.8 MB.
-Total: 2.558200 ms (FindLiveObjects: 0.256800 ms CreateObjectMapping: 0.133500 ms MarkObjects: 2.014100 ms  DeleteObjects: 0.152800 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 8.47 ms, found 5 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 7 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7 unused Assets / (198.4 KB). Loaded Objects now: 5265.
-Memory consumption went from 84.8 MB to 84.6 MB.
-Total: 3.454400 ms (FindLiveObjects: 0.224100 ms CreateObjectMapping: 0.111600 ms MarkObjects: 2.982300 ms  DeleteObjects: 0.134600 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\matty\Unity\Lorcana\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\matty\Unity\Lorcana\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.662 seconds
-Refreshing native plugins compatible for Editor in 4.28 ms, found 5 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.511 seconds
-Domain Reload Profiling: 2172ms
-	BeginReloadAssembly (167ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (15ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (63ms)
-	RebuildCommonClasses (26ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (24ms)
-	LoadAllAssembliesAndSetupDomain (436ms)
-		LoadAssemblies (285ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (203ms)
-			TypeCache.Refresh (193ms)
-				TypeCache.ScanAssembly (178ms)
-			ScanForSourceGeneratedMonoScriptInfo (4ms)
-			ResolveRequiredComponents (6ms)
-	FinalizeReload (1512ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (318ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (28ms)
-			SetLoadedEditorAssemblies (4ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (52ms)
-			ProcessInitializeOnLoadAttributes (200ms)
-			ProcessInitializeOnLoadMethodAttributes (28ms)
-			AfterProcessingInitializeOnLoad (6ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (10ms)
-Refreshing native plugins compatible for Editor in 4.83 ms, found 5 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4787 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 49 unused Assets / (221.1 KB). Loaded Objects now: 5270.
-Memory consumption went from 158.1 MB to 157.9 MB.
-Total: 2.806000 ms (FindLiveObjects: 0.223100 ms CreateObjectMapping: 0.108800 ms MarkObjects: 2.318300 ms  DeleteObjects: 0.154900 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 42586.341349 seconds.
-  path: Assets/Script/CardInfo/RiseOfTheFloodborn/CardInfo_101_JA_02.cs
-  artifactKey: Guid(d7da68cbfadc4c843b8e76b79bcc1eed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/CardInfo/RiseOfTheFloodborn/CardInfo_101_JA_02.cs using Guid(d7da68cbfadc4c843b8e76b79bcc1eed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb7c34152ed118dca4149ad24fb63421') in 0.006020 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\matty\Unity\Lorcana\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\matty\Unity\Lorcana\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.515 seconds
-Refreshing native plugins compatible for Editor in 4.31 ms, found 5 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.663 seconds
-Domain Reload Profiling: 1176ms
-	BeginReloadAssembly (118ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (8ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (30ms)
-	RebuildCommonClasses (23ms)
-	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (24ms)
-	LoadAllAssembliesAndSetupDomain (340ms)
-		LoadAssemblies (213ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (177ms)
-			TypeCache.Refresh (169ms)
-				TypeCache.ScanAssembly (163ms)
-			ScanForSourceGeneratedMonoScriptInfo (2ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (664ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (272ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (25ms)
-			SetLoadedEditorAssemblies (4ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (47ms)
-			ProcessInitializeOnLoadAttributes (172ms)
-			ProcessInitializeOnLoadMethodAttributes (20ms)
-			AfterProcessingInitializeOnLoad (4ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (9ms)
-Refreshing native plugins compatible for Editor in 3.77 ms, found 5 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4786 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 49 unused Assets / (222.1 KB). Loaded Objects now: 5275.
-Memory consumption went from 157.9 MB to 157.7 MB.
-Total: 2.549700 ms (FindLiveObjects: 0.279700 ms CreateObjectMapping: 0.136400 ms MarkObjects: 1.977800 ms  DeleteObjects: 0.154900 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\matty\Unity\Lorcana\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\matty\Unity\Lorcana\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.515 seconds
-Refreshing native plugins compatible for Editor in 4.82 ms, found 5 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.662 seconds
-Domain Reload Profiling: 1174ms
-	BeginReloadAssembly (113ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (9ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (30ms)
-	RebuildCommonClasses (24ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (22ms)
-	LoadAllAssembliesAndSetupDomain (344ms)
-		LoadAssemblies (204ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (183ms)
-			TypeCache.Refresh (175ms)
-				TypeCache.ScanAssembly (167ms)
-			ScanForSourceGeneratedMonoScriptInfo (2ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (662ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (277ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (24ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (49ms)
-			ProcessInitializeOnLoadAttributes (175ms)
-			ProcessInitializeOnLoadMethodAttributes (20ms)
-			AfterProcessingInitializeOnLoad (5ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
-Refreshing native plugins compatible for Editor in 3.49 ms, found 5 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4787 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 49 unused Assets / (221.4 KB). Loaded Objects now: 5280.
-Memory consumption went from 158.2 MB to 157.9 MB.
-Total: 2.652900 ms (FindLiveObjects: 0.311200 ms CreateObjectMapping: 0.149700 ms MarkObjects: 2.031700 ms  DeleteObjects: 0.159500 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 339.485973 seconds.
-  path: Assets/picture/lorcana/RiseOfTheFloodborn/095_JA_02.png
-  artifactKey: Guid(4df84f488574a3d43ada9b1bf0078ec9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/RiseOfTheFloodborn/095_JA_02.png using Guid(4df84f488574a3d43ada9b1bf0078ec9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '596400fd02231237ef95ddcb76455edf') in 0.056399 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/picture/lorcana/RiseOfTheFloodborn/195_JA_02.png
-  artifactKey: Guid(71ef4c09180a89b4db648a8578d78577) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/RiseOfTheFloodborn/195_JA_02.png using Guid(71ef4c09180a89b4db648a8578d78577) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39931b862e78622ebcfe737ff9998696') in 0.014626 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 6.384923 seconds.
-  path: Assets/picture/lorcana/RiseOfTheFloodborn/096_JA_02.png
-  artifactKey: Guid(ca0e2dfa0597ada48a81b9e48fe22da0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/RiseOfTheFloodborn/096_JA_02.png using Guid(ca0e2dfa0597ada48a81b9e48fe22da0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbdf85a51b487a2f23f0ff9620f37a95') in 0.018684 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/picture/lorcana/RiseOfTheFloodborn/196_JA_02.png
-  artifactKey: Guid(ee3fd4c5346cba6469a66ca2080481aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/RiseOfTheFloodborn/196_JA_02.png using Guid(ee3fd4c5346cba6469a66ca2080481aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b697269e9f2a03777f19c9d546c51a5') in 0.012175 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 5.110483 seconds.
-  path: Assets/picture/lorcana/RiseOfTheFloodborn/097_JA_02.png
-  artifactKey: Guid(a503b72365fdbdd42b296791648fb44e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/RiseOfTheFloodborn/097_JA_02.png using Guid(a503b72365fdbdd42b296791648fb44e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '919e03ad2fb34fb1bad09f40712db1c1') in 0.011982 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/picture/lorcana/TheFirstChapter/197_JA_01.png
-  artifactKey: Guid(5fd101bf41b886f45a40bbd21ccc8059) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/TheFirstChapter/197_JA_01.png using Guid(5fd101bf41b886f45a40bbd21ccc8059) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ee95486c25904fc2754bfd70267b267') in 0.010793 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 4.780755 seconds.
-  path: Assets/picture/lorcana/RiseOfTheFloodborn/098_JA_02.png
-  artifactKey: Guid(3b7428a60ad74ab459e237558ad87e41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/RiseOfTheFloodborn/098_JA_02.png using Guid(3b7428a60ad74ab459e237558ad87e41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '153add425e0325b7bcd7d59e078294ec') in 0.011252 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/picture/lorcana/RiseOfTheFloodborn/198_JA_02.png
-  artifactKey: Guid(de2d9ba04d540a847964177e04449a03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/RiseOfTheFloodborn/198_JA_02.png using Guid(de2d9ba04d540a847964177e04449a03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '975205dbab2c052d873a5e75fe797628') in 0.009383 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 7.231132 seconds.
-  path: Assets/picture/lorcana/RiseOfTheFloodborn/099_JA_02.png
-  artifactKey: Guid(d8584d77d82de0d478034066283a3cd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/RiseOfTheFloodborn/099_JA_02.png using Guid(d8584d77d82de0d478034066283a3cd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7e6bf3b8621fb54c915d00221856bf4') in 0.022845 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/picture/lorcana/TheFirstChapter/199_JA_01.png
-  artifactKey: Guid(c0a7052a24a934c4b9c7682b4cd5ffd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/TheFirstChapter/199_JA_01.png using Guid(c0a7052a24a934c4b9c7682b4cd5ffd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52a620399be7908b1b4ede50bc8b7dd9') in 0.010423 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 5.654202 seconds.
-  path: Assets/picture/lorcana/RiseOfTheFloodborn/011_JA_02.png
-  artifactKey: Guid(ef9cd1f5053fdb148a335d01eb19c857) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/RiseOfTheFloodborn/011_JA_02.png using Guid(ef9cd1f5053fdb148a335d01eb19c857) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f8cb1e7e30d05120d5377596f7395ef') in 0.011847 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.128715 seconds.
-  path: Assets/picture/lorcana/RiseOfTheFloodborn/012_JA_02.png
-  artifactKey: Guid(ea002a0e34a5ba347bb4954019f0e7b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/RiseOfTheFloodborn/012_JA_02.png using Guid(ea002a0e34a5ba347bb4954019f0e7b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d862ab784875caaaa19c13d2cc47db1') in 0.012497 seconds
+  Time since last request: 0.000033 seconds.
+  path: Assets/picture/lorcana/TheFirstChapter/117_JA_01.png
+  artifactKey: Guid(aa7267bebcd7e8648b1cdb48ff0a7586) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/picture/lorcana/TheFirstChapter/117_JA_01.png using Guid(aa7267bebcd7e8648b1cdb48ff0a7586) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d580bde32c758f304794abdb5fd7350') in 0.015114 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
   Time since last request: 0.000022 seconds.
-  path: Assets/picture/lorcana/RiseOfTheFloodborn/014_JA_02.png
-  artifactKey: Guid(476ae307685f1044ebfa7c984f95f673) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/RiseOfTheFloodborn/014_JA_02.png using Guid(476ae307685f1044ebfa7c984f95f673) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eba9b2a11b1b209e3a477e3a905fb90f') in 0.009446 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/picture/lorcana/RiseOfTheFloodborn/013_JA_02.png
-  artifactKey: Guid(0304f00805c0a424495d4c4654613508) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/RiseOfTheFloodborn/013_JA_02.png using Guid(0304f00805c0a424495d4c4654613508) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b46170bad65e1487c5572cfdf934ee06') in 0.010967 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.510407 seconds.
-  path: Assets/picture/lorcana/RiseOfTheFloodborn/100_JA_02.png
-  artifactKey: Guid(ee7a51e03263ca14994733b784bb2f6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/RiseOfTheFloodborn/100_JA_02.png using Guid(ee7a51e03263ca14994733b784bb2f6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b33057f33549a98657338871bf495b2f') in 0.009703 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 4.712551 seconds.
-  path: Assets/picture/lorcana/RiseOfTheFloodborn/101_JA_02.png
-  artifactKey: Guid(79f6f348fac67194ea6eb349d251a40e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/RiseOfTheFloodborn/101_JA_02.png using Guid(79f6f348fac67194ea6eb349d251a40e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f1b44cbebf9175cc80b05641ea563b2') in 0.011694 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.006009 seconds.
-  path: Assets/picture/lorcana/TheFirstChapter/105_JA_01.png
-  artifactKey: Guid(ae69ea6348b9289418304878adba244f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/TheFirstChapter/105_JA_01.png using Guid(ae69ea6348b9289418304878adba244f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00ef0169e935397572f11bd6a4e59fee') in 0.013123 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/picture/lorcana/TheFirstChapter/107_JA_01.png
-  artifactKey: Guid(9b357b24e8eb5c549a84a584ed0c1dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/TheFirstChapter/107_JA_01.png using Guid(9b357b24e8eb5c549a84a584ed0c1dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecde6cfd378fdc62a62b671d19affbf9') in 0.013389 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/picture/lorcana/RiseOfTheFloodborn/103_JA_02.png
-  artifactKey: Guid(3899feb323104574da269d0dcda0b85a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/RiseOfTheFloodborn/103_JA_02.png using Guid(3899feb323104574da269d0dcda0b85a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3e2753e46ef9f4a4694cae696bff66d') in 0.013151 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/picture/lorcana/RiseOfTheFloodborn/108_JA_02.png
-  artifactKey: Guid(a46323faffcc84945a7e583094acc52f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/RiseOfTheFloodborn/108_JA_02.png using Guid(a46323faffcc84945a7e583094acc52f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '817878e74a0e6d65ff91b2d28226ccb4') in 0.012839 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/picture/lorcana/RiseOfTheFloodborn/107_JA_02.png
-  artifactKey: Guid(2fed2054d0de2104188ba854c876b51f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/RiseOfTheFloodborn/107_JA_02.png using Guid(2fed2054d0de2104188ba854c876b51f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f60316425a49ba0236b6713878abaab') in 0.015628 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/picture/lorcana/TheFirstChapter/103_JA_01.png
-  artifactKey: Guid(c6e94a5c709c0b34bb21598b7326aecf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/TheFirstChapter/103_JA_01.png using Guid(c6e94a5c709c0b34bb21598b7326aecf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6729b03e1e5279e43689aa85bb6620b9') in 0.012354 seconds
+  path: Assets/picture/lorcana/RiseOfTheFloodborn/116_JA_02.png
+  artifactKey: Guid(babc3bcc130e1f84f81474fd8a9c762d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/picture/lorcana/RiseOfTheFloodborn/116_JA_02.png using Guid(babc3bcc130e1f84f81474fd8a9c762d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95591dde8c281b754f43b710511c8731') in 0.011631 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
