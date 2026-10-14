@@ -13,7 +13,7 @@ public class DeckBuild : MonoBehaviour
     public Menu m_Menu;
     public DialogManager m_DialogManager;
     public ViewMode m_ViewMode;
-    public EditCardPanelManager m_EditCardPanelManager;
+    //public EditCardPanelManager m_EditCardPanelManager;
     public SearchClass m_SearchClass;
 
     public RectTransform CanvasRectTransform;
@@ -74,7 +74,7 @@ public class DeckBuild : MonoBehaviour
         m_Menu.UpdateImage(magnification_x, magnification_y);
         m_DialogManager.UpdateImage(magnification_x, magnification_y);
         m_ViewMode.UpdateImage(magnification_x, magnification_y);
-        m_EditCardPanelManager.UpdateImage(magnification_x, magnification_y);
+        //m_EditCardPanelManager.UpdateImage(magnification_x, magnification_y);
         m_SearchClass.UpdateImage(magnification_x, magnification_y);
     }
 }

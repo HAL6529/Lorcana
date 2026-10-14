@@ -31,7 +31,11 @@ public class EditCardPanelManager : MonoBehaviour
     public string DeckName = "";
 
     public List<CardInfo> m_CardInfo_TheFirstChapter = new List<CardInfo>();
+    public List<CardInfo> m_CardInfo_RiseOfTheFloodBorn = new List<CardInfo>();
+    private List<CardInfo> m_CardInfoList = new List<CardInfo>();
     public List<EditCardPanel> m_EditCardPanelList_TheFirstChapter = new List<EditCardPanel>();
+    public List<EditCardPanel> m_EditCardPanelList_RiseOfTheFloodBorn = new List<EditCardPanel>();
+    private List<EditCardPanel> m_EditCardPanelList = new List<EditCardPanel>();
     public List<CardInfo> DeckList = new List<CardInfo>();
 
     public Sprite Common;
@@ -60,12 +64,34 @@ public class EditCardPanelManager : MonoBehaviour
     private int standbyCnt = 0;
 
     public SearchFilterClass m_SearchFilterClass;
+    public RectTransform CanvasRectTransform;
+
+    void Start()
+    {
+        m_SearchFilterClass = new SearchFilterClass();
+
+        m_CardInfoList = m_CardInfo_TheFirstChapter;
+        for(int i = 0; i < m_CardInfo_RiseOfTheFloodBorn.Count; i++)
+        {
+            m_CardInfoList.Add(m_CardInfo_RiseOfTheFloodBorn[i]);
+        }
+
+        m_EditCardPanelList = m_EditCardPanelList_TheFirstChapter;
+        for(int i = 0; i < m_EditCardPanelList_RiseOfTheFloodBorn.Count; i++)
+        {
+            m_EditCardPanelList.Add(m_EditCardPanelList_RiseOfTheFloodBorn[i]);
+        }
+
+        float magnification_x = CanvasRectTransform.sizeDelta.x / 890;
+        float magnification_y = CanvasRectTransform.sizeDelta.y / 1920;
+        UpdateImage(magnification_x, magnification_y);
+    }
 
     public void CheckStandby()
     {
-        if(standbyCnt == m_EditCardPanelList_TheFirstChapter.Count)
+        if(standbyCnt == m_EditCardPanelList.Count)
         {
-            m_SearchFilterClass = new SearchFilterClass();
+            //m_SearchFilterClass = new SearchFilterClass();
             LoadDeckList();
         }
         else
@@ -76,21 +102,21 @@ public class EditCardPanelManager : MonoBehaviour
 
     private void LoadDeckList()
     {
-        onDefaultSort(m_CardInfo_TheFirstChapter);
+        onDefaultSort(m_CardInfoList);
         List<CardInfo> TempDeckList = m_SaveDataStatic.GetCardInfoList();
         DeckName = m_SaveDataStatic.GetDeckTitle();
         for (int i = 0; i < TempDeckList.Count; i++)
         {
-            for (int k = 0; k < m_EditCardPanelList_TheFirstChapter.Count; k++)
+            for (int k = 0; k < m_EditCardPanelList.Count; k++)
             {
-                if (m_EditCardPanelList_TheFirstChapter[k] == null)
+                if (m_EditCardPanelList[k] == null)
                 {
                     continue;
                 }
 
-                if(TempDeckList[i].GetCardNo() == m_EditCardPanelList_TheFirstChapter[k].GetCardNo())
+                if(TempDeckList[i].GetCardNo() == m_EditCardPanelList[k].GetCardNo())
                 {
-                    m_EditCardPanelList_TheFirstChapter[k].onPlusBtn();
+                    m_EditCardPanelList[k].onPlusBtn();
                     continue;
                 }
             }
@@ -100,20 +126,20 @@ public class EditCardPanelManager : MonoBehaviour
     public void onUpdateDeckList()
     {
         DeckList = new List<CardInfo>();
-        for (int i = 0; i < m_EditCardPanelList_TheFirstChapter.Count; i++)
+        for (int i = 0; i < m_EditCardPanelList.Count; i++)
         {
-            if(m_EditCardPanelList_TheFirstChapter[i] == null)
+            if(m_EditCardPanelList[i] == null)
             {
                 continue;
             }
-            int t = m_EditCardPanelList_TheFirstChapter[i].cardCount;
+            int t = m_EditCardPanelList[i].cardCount;
             if (t == 0)
             {
                 continue;
             }
             for(int k = 0; k < t; k++)
             {
-                DeckList.Add(m_EditCardPanelList_TheFirstChapter[i].m_CardInfo);
+                DeckList.Add(m_EditCardPanelList[i].m_CardInfo);
             }
         }
     }
@@ -147,15 +173,15 @@ public class EditCardPanelManager : MonoBehaviour
         {
             case SortStatus.Default:
                 SortImage.sprite = DefaultSortIcon;
-                onDefaultSort(m_CardInfo_TheFirstChapter);
+                onDefaultSort(m_CardInfoList);
                 break;
             case SortStatus.InkSort:
                 SortImage.sprite = InkSortIcon;
-                onInkCostSort(m_CardInfo_TheFirstChapter);
+                onInkCostSort(m_CardInfoList);
                 break;
             case SortStatus.ColorSort:
                 SortImage.sprite = ColorSortIcon;
-                onColorSort(m_CardInfo_TheFirstChapter);
+                onColorSort(m_CardInfoList);
                 break;
         }
     }
@@ -184,15 +210,15 @@ public class EditCardPanelManager : MonoBehaviour
         {
             case SortStatus.Default:
                 SortImage.sprite = DefaultSortIcon;
-                onDefaultSort(m_CardInfo_TheFirstChapter);
+                onDefaultSort(m_CardInfoList);
                 break;
             case SortStatus.InkSort:
                 SortImage.sprite = InkSortIcon;
-                onInkCostSort(m_CardInfo_TheFirstChapter);
+                onInkCostSort(m_CardInfoList);
                 break;
             case SortStatus.ColorSort:
                 SortImage.sprite = ColorSortIcon;
-                onColorSort(m_CardInfo_TheFirstChapter);
+                onColorSort(m_CardInfoList);
                 break;
         }
     }
@@ -202,13 +228,13 @@ public class EditCardPanelManager : MonoBehaviour
         List<EditCardPanelTemp> EditCardPanelTempList = new List<EditCardPanelTemp>();
         List<EditCardPanelTemp> temp_return = new List<EditCardPanelTemp>();
 
-        for (int i = 0; i < m_EditCardPanelList_TheFirstChapter.Count; i++)
+        for (int i = 0; i < m_EditCardPanelList.Count; i++)
         {
-            if (m_EditCardPanelList_TheFirstChapter[i] == null)
+            if (m_EditCardPanelList[i] == null)
             {
                 continue;
             }
-            EditCardPanelTemp m_EditCardPanelTemp = new EditCardPanelTemp(m_EditCardPanelList_TheFirstChapter[i].m_CardInfo, m_EditCardPanelList_TheFirstChapter[i].cardCount);
+            EditCardPanelTemp m_EditCardPanelTemp = new EditCardPanelTemp(m_EditCardPanelList[i].m_CardInfo, m_EditCardPanelList[i].cardCount);
             EditCardPanelTempList.Add(m_EditCardPanelTemp);
         }
 
@@ -234,28 +260,28 @@ public class EditCardPanelManager : MonoBehaviour
         {
             CardInfo c = temp_return[i].m_CardInfo;
             int n = temp_return[i].cardCount;
-            m_EditCardPanelList_TheFirstChapter[i].SetEditCardPanel(c, n);
+            m_EditCardPanelList[i].SetEditCardPanel(c, n);
 
             if (SwitchOwn)
             {
                 if (n == 0)
                 {
-                    m_EditCardPanelList_TheFirstChapter[i].SwitchActive(false);
+                    m_EditCardPanelList[i].SwitchActive(false);
                 }
                 else
                 {
-                    m_EditCardPanelList_TheFirstChapter[i].SwitchActive(true);
+                    m_EditCardPanelList[i].SwitchActive(true);
                 }
             }
         }
 
-        for (int i = 0; i < m_EditCardPanelList_TheFirstChapter.Count; i++)
+        for (int i = 0; i < m_EditCardPanelList.Count; i++)
         {
-            if (m_EditCardPanelList_TheFirstChapter[i] == null)
+            if (m_EditCardPanelList[i] == null)
             {
                 continue;
             }
-            m_EditCardPanelList_TheFirstChapter[i].isSearchHit();
+            m_EditCardPanelList[i].isSearchHit();
         }
     }
 
@@ -264,13 +290,13 @@ public class EditCardPanelManager : MonoBehaviour
         List<EditCardPanelTemp> EditCardPanelTempList = new List<EditCardPanelTemp>();
         List<EditCardPanelTemp> temp_return = new List<EditCardPanelTemp>();
 
-        for (int i = 0; i < m_EditCardPanelList_TheFirstChapter.Count; i++)
+        for (int i = 0; i < m_EditCardPanelList.Count; i++)
         {
-            if (m_EditCardPanelList_TheFirstChapter[i] == null)
+            if (m_EditCardPanelList[i] == null)
             {
                 continue;
             }
-            EditCardPanelTemp m_EditCardPanelTemp = new EditCardPanelTemp(m_EditCardPanelList_TheFirstChapter[i].m_CardInfo, m_EditCardPanelList_TheFirstChapter[i].cardCount);
+            EditCardPanelTemp m_EditCardPanelTemp = new EditCardPanelTemp(m_EditCardPanelList[i].m_CardInfo, m_EditCardPanelList[i].cardCount);
             EditCardPanelTempList.Add(m_EditCardPanelTemp);
         }
 
@@ -296,28 +322,28 @@ public class EditCardPanelManager : MonoBehaviour
         {
             CardInfo c = temp_return[i].m_CardInfo;
             int n = temp_return[i].cardCount;
-            m_EditCardPanelList_TheFirstChapter[i].SetEditCardPanel(c, n);
+            m_EditCardPanelList[i].SetEditCardPanel(c, n);
 
             if (SwitchOwn)
             {
                 if (n == 0)
                 {
-                    m_EditCardPanelList_TheFirstChapter[i].SwitchActive(false);
+                    m_EditCardPanelList[i].SwitchActive(false);
                 }
                 else
                 {
-                    m_EditCardPanelList_TheFirstChapter[i].SwitchActive(true);
+                    m_EditCardPanelList[i].SwitchActive(true);
                 }
             }
         }
 
-        for (int i = 0; i < m_EditCardPanelList_TheFirstChapter.Count; i++)
+        for (int i = 0; i < m_EditCardPanelList.Count; i++)
         {
-            if (m_EditCardPanelList_TheFirstChapter[i] == null)
+            if (m_EditCardPanelList[i] == null)
             {
                 continue;
             }
-            m_EditCardPanelList_TheFirstChapter[i].isSearchHit();
+            m_EditCardPanelList[i].isSearchHit();
         }
     }
 
@@ -327,13 +353,13 @@ public class EditCardPanelManager : MonoBehaviour
         List<EditCardPanelTemp> EditCardPanelTempList = new List<EditCardPanelTemp>();
         List<EditCardPanelTemp> temp_return = new List<EditCardPanelTemp>();
 
-        for (int i = 0; i < m_EditCardPanelList_TheFirstChapter.Count; i++)
+        for (int i = 0; i < m_EditCardPanelList.Count; i++)
         {
-            if (m_EditCardPanelList_TheFirstChapter[i] == null)
+            if (m_EditCardPanelList[i] == null)
             {
                 continue;
             }
-            EditCardPanelTemp m_EditCardPanelTemp = new EditCardPanelTemp(m_EditCardPanelList_TheFirstChapter[i].m_CardInfo, m_EditCardPanelList_TheFirstChapter[i].cardCount);
+            EditCardPanelTemp m_EditCardPanelTemp = new EditCardPanelTemp(m_EditCardPanelList[i].m_CardInfo, m_EditCardPanelList[i].cardCount);
             EditCardPanelTempList.Add(m_EditCardPanelTemp);
         }
         List<EnumController.Colors> enumColorList = new List<EnumController.Colors>() { EnumController.Colors.Amber, EnumController.Colors.Amethyst, EnumController.Colors.Emerald, EnumController.Colors.Ruby, EnumController.Colors.Sapphire, EnumController.Colors.Steel };
@@ -398,28 +424,28 @@ public class EditCardPanelManager : MonoBehaviour
         {
             CardInfo c = temp_return[i].m_CardInfo;
             int n = temp_return[i].cardCount;
-            m_EditCardPanelList_TheFirstChapter[i].SetEditCardPanel(c, n);
+            m_EditCardPanelList[i].SetEditCardPanel(c, n);
 
             if (SwitchOwn)
             {
                 if (n == 0)
                 {
-                    m_EditCardPanelList_TheFirstChapter[i].SwitchActive(false);
+                    m_EditCardPanelList[i].SwitchActive(false);
                 }
                 else
                 {
-                    m_EditCardPanelList_TheFirstChapter[i].SwitchActive(true);
+                    m_EditCardPanelList[i].SwitchActive(true);
                 }
             }
         }
 
-        for (int i = 0; i < m_EditCardPanelList_TheFirstChapter.Count; i++)
+        for (int i = 0; i < m_EditCardPanelList.Count; i++)
         {
-            if (m_EditCardPanelList_TheFirstChapter[i] == null)
+            if (m_EditCardPanelList[i] == null)
             {
                 continue;
             }
-            m_EditCardPanelList_TheFirstChapter[i].isSearchHit();
+            m_EditCardPanelList[i].isSearchHit();
         }
     }
 
@@ -430,15 +456,15 @@ public class EditCardPanelManager : MonoBehaviour
         {
             case SortStatus.Default:
                 SortImage.sprite = DefaultSortIcon;
-                onDefaultSort(m_CardInfo_TheFirstChapter);
+                onDefaultSort(m_CardInfoList);
                 break;
             case SortStatus.InkSort:
                 SortImage.sprite = InkSortIcon;
-                onInkCostSort(m_CardInfo_TheFirstChapter);
+                onInkCostSort(m_CardInfoList);
                 break;
             case SortStatus.ColorSort:
                 SortImage.sprite = ColorSortIcon;
-                onColorSort(m_CardInfo_TheFirstChapter);
+                onColorSort(m_CardInfoList);
                 break;
         }
     }
@@ -446,13 +472,13 @@ public class EditCardPanelManager : MonoBehaviour
     public void UpdateImage(float magnification_x, float magnification_y)
     {
         parent.sizeDelta = new Vector2(parent.sizeDelta.x * magnification_x, parent.sizeDelta.y * magnification_y);
-        for (int i = 0; i < m_EditCardPanelList_TheFirstChapter.Count; i++)
+        for (int i = 0; i < m_EditCardPanelList.Count; i++)
         {
-            if(m_EditCardPanelList_TheFirstChapter[i] == null)
+            if(m_EditCardPanelList[i] == null)
             {
                 continue;
             }
-            m_EditCardPanelList_TheFirstChapter[i].UpdateImage(magnification_x, magnification_y);
+            m_EditCardPanelList[i].UpdateImage(magnification_x, magnification_y);
         }
     }
 }

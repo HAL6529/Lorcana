@@ -171,7 +171,8 @@ public class SearchFilterClass : MonoBehaviour
         }
 
         if (isShift 
-            && (keywordList.Contains(EnumController.KeywordAvility.Shift3)
+            && (keywordList.Contains(EnumController.KeywordAvility.Shift2)
+            || keywordList.Contains(EnumController.KeywordAvility.Shift3)
             || keywordList.Contains(EnumController.KeywordAvility.Shift4)
             || keywordList.Contains(EnumController.KeywordAvility.Shift5)
             || keywordList.Contains(EnumController.KeywordAvility.Shift6)))
@@ -180,7 +181,8 @@ public class SearchFilterClass : MonoBehaviour
         }
 
         if (isSinger 
-            && (keywordList.Contains(EnumController.KeywordAvility.Singer4)
+            && (keywordList.Contains(EnumController.KeywordAvility.Singer3)
+            || keywordList.Contains(EnumController.KeywordAvility.Singer4)
             || keywordList.Contains(EnumController.KeywordAvility.Singer5)))
         {
             keywordJudge = true;

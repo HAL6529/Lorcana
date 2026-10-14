@@ -17,6 +17,7 @@ public class EnumController
         Fairy, //妖精
         FloodBorn, //フラッドボーン
         Hero, //ヒーロー
+        Hunny, //ハニー
         Inventor, //発明家
         King, //王様
         Mentor, //導き手
@@ -25,6 +26,7 @@ public class EnumController
         Prince,　//プリンス
         Princess, //プリンセス
         Queen, //女王
+        SevenDwarfs, //7人の小人
         StoryBorn, //ストーリーボーン
         Sorcerer, //魔法使い
         Tigger, //ティガー
@@ -44,6 +46,7 @@ public class EnumController
     public enum Expansion
     {
         TheFirstChapter,
+        RiseOfTheFloodBorn,
     }
 
     public enum KeywordAvility
@@ -52,11 +55,13 @@ public class EnumController
         Challenger2, //果敢+2
         Challenger3, //果敢+3
         Challenger4, //果敢+4
-        Evasive,　//回避
+        Evasive, //回避
+        Shift2,
         Shift3,
         Shift4,
         Shift5,
         Shift6,
+        Singer3,
         Singer4,
         Singer5,
         Support,
@@ -86,6 +91,8 @@ public class EnumController
         Hercules, //ヘラクレス
         Tangled, //塔の上のラプンツェル
         TheEmperorsNewGroove, //ラマになった王様
+        TheGreatMouseDetective, //オリビアちゃんの大冒険
+        TheJungleBook, //ジャングル・ブック
         TheLionKing, //ライオンキング
         TheLittleMermaid,  //リトル・マーメイド
         ThePrincessAndTheFrog, //プリンセスと魔法のキス
@@ -97,9 +104,12 @@ public class EnumController
         Mulan, //ムーラン
         OneHundredAndOneDalmatians, //101匹わんちゃん
         PeterPan, //ピーターパン
+        Pinocchio, //ピノキオ
+        RayaAndTheLastDragon, //ラーヤと龍の王国
         RobinHood, //ロビン・フッド
         SleepingBeauty, //眠れる森の美女
         SnowWhiteAndTheSevenDwarfs, //白雪姫
+        WinnieThePooh, //クマのプーさん
     }
 
     public enum Type

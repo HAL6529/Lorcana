@@ -788,6 +788,7 @@ PlayerSettings:
   il2cppCompilerConfiguration: {}
   il2cppCodeGeneration: {}
   managedStrippingLevel:
+    Android: 2
     Bratwurst: 1
     EmbeddedLinux: 1
     GameCoreScarlett: 1
