@@ -7,14 +7,14 @@ public class CardInfo_189_JA_02 : CardInfo
     public CardInfo_189_JA_02()
     {
         this.cardNo = "189_JA_02";
-        this.inkCost = 7;
-        this.availableInk = true;
-        this.cardName1 = "シンバ";
-        this.cardName2 = "帰還した王";
-        this.power = 4;
-        this.toughness = 6;
-        this.lore = 2;
-        this.illustrator = "Nicholas Kole";
+        this.inkCost = 4;
+        this.availableInk = false;
+        this.cardName1 = "ナマーリ";
+        this.cardName2 = "朝霧";
+        this.power = 2;
+        this.toughness = 4;
+        this.lore = 1;
+        this.illustrator = "Jenna Gray";
         this.isHandDestraction = false; //ハンデス効果を持つ
         this.isCIP = false; //CIP効果を持つ
         this.isPIG = false; //PIG効果を持つ
@@ -25,12 +25,12 @@ public class CardInfo_189_JA_02 : CardInfo
         this.isAddInk = false; //インクを増やす効果を持つ
         this.isItem = false; //アイテムに関連する効果を持つ
         this.isLocation = false; //ロケーションに関連する効果を持つ
-        this.classList = new List<EnumController.Class> { EnumController.Class.StoryBorn, EnumController.Class.Hero, EnumController.Class.King };
+        this.classList = new List<EnumController.Class> { EnumController.Class.StoryBorn, EnumController.Class.Villain, EnumController.Class.Princess };
         this.color = new List<EnumController.Colors> { EnumController.Colors.Steel };
-        this.keywordAvility = new List<EnumController.KeywordAvility>() { EnumController.KeywordAvility.Challenger4 };
-        this.expansion = EnumController.Expansion.TheFirstChapter;
-        this.title = EnumController.Title.TheLionKing;
+        this.keywordAvility = new List<EnumController.KeywordAvility>() { EnumController.KeywordAvility.Bodyguard };
+        this.expansion = EnumController.Expansion.RiseOfTheFloodBorn;
+        this.title = EnumController.Title.RayaAndTheLastDragon;
         this.type = EnumController.Type.Character;
-        this.rare = EnumController.Rare.Rare;
+        this.rare = EnumController.Rare.Legendary;
     }
 }

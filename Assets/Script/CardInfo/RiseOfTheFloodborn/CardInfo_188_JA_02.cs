@@ -7,14 +7,14 @@ public class CardInfo_188_JA_02 : CardInfo
     public CardInfo_188_JA_02()
     {
         this.cardNo = "188_JA_02";
-        this.inkCost = 1;
+        this.inkCost = 3;
         this.availableInk = true;
-        this.cardName1 = "シンバ";
-        this.cardName2 = "未来の王様";
-        this.power = 1;
-        this.toughness = 2;
+        this.cardName1 = "魔法のほうき";
+        this.cardName2 = "産業用モデル";
+        this.power = 2;
+        this.toughness = 3;
         this.lore = 1;
-        this.illustrator = "Nicholas Kole";
+        this.illustrator = "Cristian Romero";
         this.isHandDestraction = false; //ハンデス効果を持つ
         this.isCIP = true; //CIP効果を持つ
         this.isPIG = false; //PIG効果を持つ
@@ -25,11 +25,11 @@ public class CardInfo_188_JA_02 : CardInfo
         this.isAddInk = false; //インクを増やす効果を持つ
         this.isItem = false; //アイテムに関連する効果を持つ
         this.isLocation = false; //ロケーションに関連する効果を持つ
-        this.classList = new List<EnumController.Class> { EnumController.Class.StoryBorn, EnumController.Class.Hero, EnumController.Class.Prince };
+        this.classList = new List<EnumController.Class> { EnumController.Class.DreamBorn, EnumController.Class.Broom };
         this.color = new List<EnumController.Colors> { EnumController.Colors.Steel };
         this.keywordAvility = new List<EnumController.KeywordAvility>();
-        this.expansion = EnumController.Expansion.TheFirstChapter;
-        this.title = EnumController.Title.TheLionKing;
+        this.expansion = EnumController.Expansion.RiseOfTheFloodBorn;
+        this.title = EnumController.Title.Fantasia;
         this.type = EnumController.Type.Character;
         this.rare = EnumController.Rare.Common;
     }

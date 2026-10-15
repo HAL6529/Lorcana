@@ -15,7 +15,7 @@ C:/Users/matty/Unity/Lorcana
 -logFile
 Logs/AssetImportWorker5.log
 -srvPort
-58066
+64905
 Successfully changed project path to: C:/Users/matty/Unity/Lorcana
 C:/Users/matty/Unity/Lorcana
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,11 +49,11 @@ C:/Users/matty/Unity/Lorcana
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [11200] Host "[IP] 192.168.10.102 [Port] 0 [Flags] 2 [Guid] 875239813 [EditorId] 875239813 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-62U0HVH) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [38164] Host "[IP] 192.168.10.102 [Port] 0 [Flags] 2 [Guid] 2056454507 [EditorId] 2056454507 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-62U0HVH) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [11200] Host "[IP] 192.168.10.102 [Port] 0 [Flags] 2 [Guid] 875239813 [EditorId] 875239813 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-62U0HVH) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [38164] Host "[IP] 192.168.10.102 [Port] 0 [Flags] 2 [Guid] 2056454507 [EditorId] 2056454507 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-62U0HVH) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 10.58 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 10.15 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.3f1 (7cdc2969a641)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/Resources/UnitySubsystems
@@ -69,53 +69,53 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56828
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56048
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.009270 seconds.
-- Loaded All Assemblies, in  0.246 seconds
+Registered in 0.008696 seconds.
+- Loaded All Assemblies, in  0.262 seconds
 Native extension for WindowsStandalone target not found
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 Native extension for iOS target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 284 ms
+Android Extension - Scanning For ADB Devices 308 ms
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.499 seconds
-Domain Reload Profiling: 744ms
-	BeginReloadAssembly (62ms)
+- Finished resetting the current domain, in  0.552 seconds
+Domain Reload Profiling: 813ms
+	BeginReloadAssembly (68ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (24ms)
-	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (49ms)
-	LoadAllAssembliesAndSetupDomain (103ms)
-		LoadAssemblies (61ms)
+		CreateAndSetChildDomain (0ms)
+	RebuildCommonClasses (25ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (47ms)
+	LoadAllAssembliesAndSetupDomain (113ms)
+		LoadAssemblies (67ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (98ms)
-			TypeCache.Refresh (98ms)
-				TypeCache.ScanAssembly (88ms)
+		AnalyzeDomain (107ms)
+			TypeCache.Refresh (106ms)
+				TypeCache.ScanAssembly (97ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (499ms)
+	FinalizeReload (553ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (461ms)
+		SetupLoadedEditorAssemblies (508ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (367ms)
+			InitializePlatformSupportModulesInManaged (397ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (1ms)
-			ProcessInitializeOnLoadAttributes (60ms)
-			ProcessInitializeOnLoadMethodAttributes (30ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (73ms)
+			ProcessInitializeOnLoadMethodAttributes (33ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -125,54 +125,54 @@ Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\matty\Unity\Lorcana\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\matty\Unity\Lorcana\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.562 seconds
-Refreshing native plugins compatible for Editor in 4.55 ms, found 5 plugins.
+- Loaded All Assemblies, in  0.584 seconds
+Refreshing native plugins compatible for Editor in 5.11 ms, found 5 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.439 seconds
-Domain Reload Profiling: 999ms
-	BeginReloadAssembly (94ms)
+- Finished resetting the current domain, in  0.436 seconds
+Domain Reload Profiling: 1017ms
+	BeginReloadAssembly (99ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (4ms)
+		DisableScriptedObjects (3ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (17ms)
-	RebuildCommonClasses (26ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (38ms)
-	LoadAllAssembliesAndSetupDomain (394ms)
-		LoadAssemblies (237ms)
+	RebuildCommonClasses (22ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (34ms)
+	LoadAllAssembliesAndSetupDomain (419ms)
+		LoadAssemblies (245ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (200ms)
-			TypeCache.Refresh (180ms)
-				TypeCache.ScanAssembly (172ms)
-			ScanForSourceGeneratedMonoScriptInfo (15ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (440ms)
+		AnalyzeDomain (220ms)
+			TypeCache.Refresh (198ms)
+				TypeCache.ScanAssembly (189ms)
+			ScanForSourceGeneratedMonoScriptInfo (16ms)
+			ResolveRequiredComponents (7ms)
+	FinalizeReload (437ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (322ms)
+		SetupLoadedEditorAssemblies (314ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (24ms)
+			InitializePlatformSupportModulesInManaged (25ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (47ms)
-			ProcessInitializeOnLoadAttributes (222ms)
-			ProcessInitializeOnLoadMethodAttributes (22ms)
+			BeforeProcessingInitializeOnLoad (50ms)
+			ProcessInitializeOnLoadAttributes (204ms)
+			ProcessInitializeOnLoadMethodAttributes (28ms)
 			AfterProcessingInitializeOnLoad (4ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (8ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 5.56 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 4.37 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4826 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 77 unused Assets / (248.5 KB). Loaded Objects now: 5282.
-Memory consumption went from 160.4 MB to 160.2 MB.
-Total: 3.481200 ms (FindLiveObjects: 0.254300 ms CreateObjectMapping: 0.145700 ms MarkObjects: 2.877500 ms  DeleteObjects: 0.202900 ms)
+Unloading 4906 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 77 unused Assets / (248.7 KB). Loaded Objects now: 5362.
+Memory consumption went from 161.9 MB to 161.6 MB.
+Total: 3.128600 ms (FindLiveObjects: 0.338200 ms CreateObjectMapping: 0.155300 ms MarkObjects: 2.424100 ms  DeleteObjects: 0.209400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -187,74 +187,10 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 1650214.213054 seconds.
-  path: Assets/picture/lorcana/RiseOfTheFloodborn/119_JA_02.png
-  artifactKey: Guid(765ad320a9fa60947ab08967f8e008ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/RiseOfTheFloodborn/119_JA_02.png using Guid(765ad320a9fa60947ab08967f8e008ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c7083d19a21f7f7d47d4d5f9b4de637') in 0.069163 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 7.892015 seconds.
-  path: Assets/picture/lorcana/RiseOfTheFloodborn/120_JA_02.png
-  artifactKey: Guid(f3fca47cd38bf394fa586effce232f11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/RiseOfTheFloodborn/120_JA_02.png using Guid(f3fca47cd38bf394fa586effce232f11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '175bfaf4413a5ec6c4dc7ba6c439414f') in 0.027369 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.002211 seconds.
-  path: Assets/picture/lorcana/TheFirstChapter/124_JA_01.png
-  artifactKey: Guid(60023be6fb7bb954d8d0fd94dd04618a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/TheFirstChapter/124_JA_01.png using Guid(60023be6fb7bb954d8d0fd94dd04618a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '650b39d7ece1226983f181fa53a5e023') in 0.012997 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/picture/lorcana/TheFirstChapter/127_JA_01.png
-  artifactKey: Guid(5017b0672feabd94c9dc6f627e51ce29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/TheFirstChapter/127_JA_01.png using Guid(5017b0672feabd94c9dc6f627e51ce29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '302edf3b08bea1c9410276d4b2c60e4a') in 0.013797 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/picture/lorcana/TheFirstChapter/126_JA_01.png
-  artifactKey: Guid(4084aaae46ad7ae4fa45b20c94cabdf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/TheFirstChapter/126_JA_01.png using Guid(4084aaae46ad7ae4fa45b20c94cabdf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e830b503c28bd683005fba650d6a427') in 0.012966 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/picture/lorcana/TheFirstChapter/121_JA_01.png
-  artifactKey: Guid(556525f7c08257742bf140c8c626fd9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/TheFirstChapter/121_JA_01.png using Guid(556525f7c08257742bf140c8c626fd9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65135c53d419a34c79f75630f8f449a8') in 0.010497 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/picture/lorcana/RiseOfTheFloodborn/124_JA_02.png
-  artifactKey: Guid(e7be5aa90a565974d8353e04bcbbf1c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/RiseOfTheFloodborn/124_JA_02.png using Guid(e7be5aa90a565974d8353e04bcbbf1c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a59f00d39cbf2a3c876fadb5fcd7e47') in 0.012261 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/picture/lorcana/RiseOfTheFloodborn/122_JA_02.png
-  artifactKey: Guid(6218f4de13708ff42813194e1f0b22df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/RiseOfTheFloodborn/122_JA_02.png using Guid(6218f4de13708ff42813194e1f0b22df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67b47e015c5c363266902d74666198c9') in 0.010849 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000010 seconds.
-  path: Assets/picture/lorcana/TheFirstChapter/122_JA_01.png
-  artifactKey: Guid(66a47764e724813489e415900f6811f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/TheFirstChapter/122_JA_01.png using Guid(66a47764e724813489e415900f6811f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d2b0d89fc87d08a80a5822286576557') in 0.008625 seconds
+  Time since last request: 1665061.557140 seconds.
+  path: Assets/picture/lorcana/RiseOfTheFloodborn/161_JA_02.png
+  artifactKey: Guid(15c97c2cc30cef6408c2f87e7545ace1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/picture/lorcana/RiseOfTheFloodborn/161_JA_02.png using Guid(15c97c2cc30cef6408c2f87e7545ace1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43e3123be95f86b6a93a861047b21d1f') in 0.056743 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout

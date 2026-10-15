@@ -7,14 +7,14 @@ public class CardInfo_198_JA_02 : CardInfo
     public CardInfo_198_JA_02()
     {
         this.cardNo = "198_JA_02";
-        this.inkCost = 5;
-        this.availableInk = false;
-        this.cardName1 = "Œ•‚ğ‚Ó‚é‚¦!";
+        this.inkCost = 2;
+        this.availableInk = true;
+        this.cardName1 = "“ËŒ‚!";
         this.cardName2 = "";
         this.power = -1;
         this.toughness = -1;
         this.lore = -1;
-        this.illustrator = "Peter Brockhammer";
+        this.illustrator = "Hedvig H-S";
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = false; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â
@@ -28,9 +28,9 @@ public class CardInfo_198_JA_02 : CardInfo
         this.classList = new List<EnumController.Class>();
         this.color = new List<EnumController.Colors> { EnumController.Colors.Steel };
         this.keywordAvility = new List<EnumController.KeywordAvility>();
-        this.expansion = EnumController.Expansion.TheFirstChapter;
-        this.title = EnumController.Title.BeautyAndTheBeast;
-        this.type = EnumController.Type.Song;
-        this.rare = EnumController.Rare.Rare;
+        this.expansion = EnumController.Expansion.RiseOfTheFloodBorn;
+        this.title = EnumController.Title.RayaAndTheLastDragon;
+        this.type = EnumController.Type.Action;
+        this.rare = EnumController.Rare.Common;
     }
 }

@@ -7,14 +7,14 @@ public class CardInfo_182_JA_02 : CardInfo
     public CardInfo_182_JA_02()
     {
         this.cardNo = "182_JA_02";
-        this.inkCost = 3;
+        this.inkCost = 2;
         this.availableInk = true;
-        this.cardName1 = "クリストフ";
-        this.cardName2 = "王室御用達氷職人";
-        this.power = 3;
+        this.cardName1 = "ヘラクレス";
+        this.cardName2 = "訓練中のヒーロー";
+        this.power = 2;
         this.toughness = 3;
-        this.lore = 2;
-        this.illustrator = "Ron Baird";
+        this.lore = 1;
+        this.illustrator = "Eva Widermann";
         this.isHandDestraction = false; //ハンデス効果を持つ
         this.isCIP = false; //CIP効果を持つ
         this.isPIG = false; //PIG効果を持つ
@@ -25,11 +25,11 @@ public class CardInfo_182_JA_02 : CardInfo
         this.isAddInk = false; //インクを増やす効果を持つ
         this.isItem = false; //アイテムに関連する効果を持つ
         this.isLocation = false; //ロケーションに関連する効果を持つ
-        this.classList = new List<EnumController.Class> { EnumController.Class.StoryBorn, EnumController.Class.Ally };
+        this.classList = new List<EnumController.Class> { EnumController.Class.StoryBorn, EnumController.Class.Hero, EnumController.Class.Prince };
         this.color = new List<EnumController.Colors> { EnumController.Colors.Steel };
         this.keywordAvility = new List<EnumController.KeywordAvility>();
-        this.expansion = EnumController.Expansion.TheFirstChapter;
-        this.title = EnumController.Title.Frozen;
+        this.expansion = EnumController.Expansion.RiseOfTheFloodBorn;
+        this.title = EnumController.Title.Hercules;
         this.type = EnumController.Type.Character;
         this.rare = EnumController.Rare.Common;
     }

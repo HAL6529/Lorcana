@@ -7,14 +7,14 @@ public class CardInfo_200_JA_02 : CardInfo
     public CardInfo_200_JA_02()
     {
         this.cardNo = "200_JA_02";
-        this.inkCost = 3;
-        this.availableInk = true;
-        this.cardName1 = "スマッシュ";
+        this.inkCost = 2;
+        this.availableInk = false;
+        this.cardName1 = "一丁やろうぜ!";
         this.cardName2 = "";
         this.power = -1;
         this.toughness = -1;
         this.lore = -1;
-        this.illustrator = "Simangaliso Sibaya";
+        this.illustrator = "Pablo Hidalgo / Jeff Merghart";
         this.isHandDestraction = false; //ハンデス効果を持つ
         this.isCIP = false; //CIP効果を持つ
         this.isPIG = false; //PIG効果を持つ
@@ -28,8 +28,8 @@ public class CardInfo_200_JA_02 : CardInfo
         this.classList = new List<EnumController.Class>();
         this.color = new List<EnumController.Colors> { EnumController.Colors.Steel };
         this.keywordAvility = new List<EnumController.KeywordAvility>();
-        this.expansion = EnumController.Expansion.TheFirstChapter;
-        this.title = EnumController.Title.Frozen;
+        this.expansion = EnumController.Expansion.RiseOfTheFloodBorn;
+        this.title = EnumController.Title.WreckItRalph;
         this.type = EnumController.Type.Action;
         this.rare = EnumController.Rare.Uncommon;
     }

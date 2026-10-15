@@ -7,14 +7,14 @@ public class CardInfo_175_JA_02 : CardInfo
     public CardInfo_175_JA_02()
     {
         this.cardNo = "175_JA_02";
-        this.inkCost = 5;
+        this.inkCost = 4;
         this.availableInk = false;
-        this.cardName1 = "フック船長";
-        this.cardName2 = "あくどいことを考え";
+        this.cardName1 = "ボゴ署長";
+        this.cardName2 = "一目置かれた警官";
         this.power = 2;
-        this.toughness = 5;
-        this.lore = 1;
-        this.illustrator = "Elliot Bocxtaele";
+        this.toughness = 4;
+        this.lore = 2;
+        this.illustrator = "Adam Bunch";
         this.isHandDestraction = false; //ハンデス効果を持つ
         this.isCIP = false; //CIP効果を持つ
         this.isPIG = false; //PIG効果を持つ
@@ -25,11 +25,11 @@ public class CardInfo_175_JA_02 : CardInfo
         this.isAddInk = false; //インクを増やす効果を持つ
         this.isItem = false; //アイテムに関連する効果を持つ
         this.isLocation = false; //ロケーションに関連する効果を持つ
-        this.classList = new List<EnumController.Class> { EnumController.Class.FloodBorn, EnumController.Class.Villain, EnumController.Class.Pirate, EnumController.Class.Captain };
+        this.classList = new List<EnumController.Class> { EnumController.Class.DreamBorn };
         this.color = new List<EnumController.Colors> { EnumController.Colors.Steel };
-        this.keywordAvility = new List<EnumController.KeywordAvility>() { EnumController.KeywordAvility.Shift3, EnumController.KeywordAvility.Challenger3 };
-        this.expansion = EnumController.Expansion.TheFirstChapter;
-        this.title = EnumController.Title.PeterPan;
+        this.keywordAvility = new List<EnumController.KeywordAvility>();
+        this.expansion = EnumController.Expansion.RiseOfTheFloodBorn;
+        this.title = EnumController.Title.Zootopia;
         this.type = EnumController.Type.Character;
         this.rare = EnumController.Rare.Rare;
     }

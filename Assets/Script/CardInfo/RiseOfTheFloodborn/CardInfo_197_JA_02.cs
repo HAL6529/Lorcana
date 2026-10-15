@@ -8,13 +8,13 @@ public class CardInfo_197_JA_02 : CardInfo
     {
         this.cardNo = "197_JA_02";
         this.inkCost = 1;
-        this.availableInk = false;
-        this.cardName1 = "大砲発射";
-        this.cardName2 = "";
-        this.power = -1;
-        this.toughness = -1;
-        this.lore = -1;
-        this.illustrator = "Matt Chapman";
+        this.availableInk = true;
+        this.cardName1 = "ティアナ";
+        this.cardName2 = "勤勉なウェイトレス";
+        this.power = 1;
+        this.toughness = 3;
+        this.lore = 1;
+        this.illustrator = "Samanta Erdini";
         this.isHandDestraction = false; //ハンデス効果を持つ
         this.isCIP = false; //CIP効果を持つ
         this.isPIG = false; //PIG効果を持つ
@@ -25,12 +25,12 @@ public class CardInfo_197_JA_02 : CardInfo
         this.isAddInk = false; //インクを増やす効果を持つ
         this.isItem = false; //アイテムに関連する効果を持つ
         this.isLocation = false; //ロケーションに関連する効果を持つ
-        this.classList = new List<EnumController.Class>();
+        this.classList = new List<EnumController.Class>() { EnumController.Class.DreamBorn, EnumController.Class.Hero, EnumController.Class.Princess };
         this.color = new List<EnumController.Colors> { EnumController.Colors.Steel };
         this.keywordAvility = new List<EnumController.KeywordAvility>();
-        this.expansion = EnumController.Expansion.TheFirstChapter;
-        this.title = EnumController.Title.PeterPan;
-        this.type = EnumController.Type.Action;
+        this.expansion = EnumController.Expansion.RiseOfTheFloodBorn;
+        this.title = EnumController.Title.ThePrincessAndTheFrog;
+        this.type = EnumController.Type.Character;
         this.rare = EnumController.Rare.Common;
     }
 }

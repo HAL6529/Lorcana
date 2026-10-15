@@ -8,13 +8,13 @@ public class CardInfo_204_JA_02 : CardInfo
     {
         this.cardNo = "204_JA_02";
         this.inkCost = 3;
-        this.availableInk = false;
-        this.cardName1 = "プラズマブラスター";
+        this.availableInk = true;
+        this.cardName1 = "筋トレ器具";
         this.cardName2 = "";
         this.power = -1;
         this.toughness = -1;
         this.lore = -1;
-        this.illustrator = "Oleg Yurkov";
+        this.illustrator = "Antonia Flechsig";
         this.isHandDestraction = false; //ハンデス効果を持つ
         this.isCIP = false; //CIP効果を持つ
         this.isPIG = false; //PIG効果を持つ
@@ -28,8 +28,8 @@ public class CardInfo_204_JA_02 : CardInfo
         this.classList = new List<EnumController.Class>();
         this.color = new List<EnumController.Colors> { EnumController.Colors.Steel };
         this.keywordAvility = new List<EnumController.KeywordAvility>();
-        this.expansion = EnumController.Expansion.TheFirstChapter;
-        this.title = EnumController.Title.LiloAndStitch;
+        this.expansion = EnumController.Expansion.RiseOfTheFloodBorn;
+        this.title = EnumController.Title.Hercules;
         this.type = EnumController.Type.Item;
         this.rare = EnumController.Rare.Rare;
     }

@@ -7,14 +7,14 @@ public class CardInfo_203_JA_02 : CardInfo
     public CardInfo_203_JA_02()
     {
         this.cardNo = "203_JA_02";
-        this.inkCost = 4;
+        this.inkCost = 2;
         this.availableInk = false;
-        this.cardName1 = "銃士のタバード";
+        this.cardName1 = "ネズミのカッチュー";
         this.cardName2 = "";
         this.power = -1;
         this.toughness = -1;
         this.lore = -1;
-        this.illustrator = "Dav Augereau";
+        this.illustrator = "Gaku Kumatori";
         this.isHandDestraction = false; //ハンデス効果を持つ
         this.isCIP = false; //CIP効果を持つ
         this.isPIG = false; //PIG効果を持つ
@@ -28,9 +28,9 @@ public class CardInfo_203_JA_02 : CardInfo
         this.classList = new List<EnumController.Class>();
         this.color = new List<EnumController.Colors> { EnumController.Colors.Steel };
         this.keywordAvility = new List<EnumController.KeywordAvility>();
-        this.expansion = EnumController.Expansion.TheFirstChapter;
-        this.title = EnumController.Title.MickeyMouse;
+        this.expansion = EnumController.Expansion.RiseOfTheFloodBorn;
+        this.title = EnumController.Title.TheTaleOfAMouse;
         this.type = EnumController.Type.Item;
-        this.rare = EnumController.Rare.Rare;
+        this.rare = EnumController.Rare.Uncommon;
     }
 }

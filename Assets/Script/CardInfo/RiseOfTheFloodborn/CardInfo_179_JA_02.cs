@@ -7,14 +7,14 @@ public class CardInfo_179_JA_01 : CardInfo
     public CardInfo_179_JA_01()
     {
         this.cardNo = "179_JA_01";
-        this.inkCost = 1;
+        this.inkCost = 4;
         this.availableInk = true;
-        this.cardName1 = "グーンズ";
-        this.cardName2 = "マレフィセントの手下";
+        this.cardName1 = "イーライ・ラバフ";
+        this.cardName2 = "ビッグ・ダディ";
         this.power = 2;
-        this.toughness = 2;
-        this.lore = 1;
-        this.illustrator = "Cam Kendell";
+        this.toughness = 5;
+        this.lore = 2;
+        this.illustrator = "Isaiah Mesq";
         this.isHandDestraction = false; //ハンデス効果を持つ
         this.isCIP = false; //CIP効果を持つ
         this.isPIG = false; //PIG効果を持つ
@@ -25,12 +25,12 @@ public class CardInfo_179_JA_01 : CardInfo
         this.isAddInk = false; //インクを増やす効果を持つ
         this.isItem = false; //アイテムに関連する効果を持つ
         this.isLocation = false; //ロケーションに関連する効果を持つ
-        this.classList = new List<EnumController.Class> { EnumController.Class.StoryBorn, EnumController.Class.Ally };
+        this.classList = new List<EnumController.Class> { EnumController.Class.StoryBorn, EnumController.Class.Mentor };
         this.color = new List<EnumController.Colors> { EnumController.Colors.Steel };
         this.keywordAvility = new List<EnumController.KeywordAvility>();
-        this.expansion = EnumController.Expansion.TheFirstChapter;
-        this.title = EnumController.Title.SleepingBeauty;
+        this.expansion = EnumController.Expansion.RiseOfTheFloodBorn;
+        this.title = EnumController.Title.ThePrincessAndTheFrog;
         this.type = EnumController.Type.Character;
-        this.rare = EnumController.Rare.Common;
+        this.rare = EnumController.Rare.Uncommon;
     }
 }

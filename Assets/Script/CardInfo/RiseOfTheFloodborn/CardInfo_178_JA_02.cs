@@ -7,14 +7,14 @@ public class CardInfo_178_JA_02 : CardInfo
     public CardInfo_178_JA_02()
     {
         this.cardNo = "178_JA_02";
-        this.inkCost = 8;
+        this.inkCost = 5;
         this.availableInk = true;
-        this.cardName1 = "ガントゥ";
-        this.cardName2 = "銀河連邦大尉";
+        this.cardName1 = "ドナルドダック";
+        this.cardName2 = "深海ダイバー";
         this.power = 6;
-        this.toughness = 6;
-        this.lore = 2;
-        this.illustrator = "Luis Huerta";
+        this.toughness = 5;
+        this.lore = 1;
+        this.illustrator = "Nicholas Kole";
         this.isHandDestraction = false; //ハンデス効果を持つ
         this.isCIP = false; //CIP効果を持つ
         this.isPIG = false; //PIG効果を持つ
@@ -25,12 +25,12 @@ public class CardInfo_178_JA_02 : CardInfo
         this.isAddInk = false; //インクを増やす効果を持つ
         this.isItem = false; //アイテムに関連する効果を持つ
         this.isLocation = false; //ロケーションに関連する効果を持つ
-        this.classList = new List<EnumController.Class> { EnumController.Class.StoryBorn, EnumController.Class.Alien, EnumController.Class.Captain };
+        this.classList = new List<EnumController.Class> { EnumController.Class.DreamBorn, EnumController.Class.Hero };
         this.color = new List<EnumController.Colors> { EnumController.Colors.Steel };
         this.keywordAvility = new List<EnumController.KeywordAvility>();
-        this.expansion = EnumController.Expansion.TheFirstChapter;
-        this.title = EnumController.Title.LiloAndStitch;
+        this.expansion = EnumController.Expansion.RiseOfTheFloodBorn;
+        this.title = EnumController.Title.MickeyMouse;
         this.type = EnumController.Type.Character;
-        this.rare = EnumController.Rare.Legendary;
+        this.rare = EnumController.Rare.Common;
     }
 }

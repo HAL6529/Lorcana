@@ -7,14 +7,15 @@ public class CardInfo_180_JA_02 : CardInfo
     public CardInfo_180_JA_02()
     {
         this.cardNo = "180_JA_02";
-        this.inkCost = 4;
+        this.inkCost = 9;
         this.availableInk = true;
-        this.cardName1 = "ハンス";
-        this.cardName2 = "王位継承権第13位";
-        this.power = 3;
-        this.toughness = 3;
-        this.lore = 2;
-        this.illustrator = "Kendall Hale";
+        this.cardName1 = "グーフィー";
+        this.cardName2 = "一日騎士";
+        this.power = 10;
+        this.toughness = 10;
+        this.lore = 4;
+        this.lore = 4;
+        this.illustrator = "Marco Giorgianni";
         this.isHandDestraction = false; //ハンデス効果を持つ
         this.isCIP = false; //CIP効果を持つ
         this.isPIG = false; //PIG効果を持つ
@@ -25,12 +26,12 @@ public class CardInfo_180_JA_02 : CardInfo
         this.isAddInk = false; //インクを増やす効果を持つ
         this.isItem = false; //アイテムに関連する効果を持つ
         this.isLocation = false; //ロケーションに関連する効果を持つ
-        this.classList = new List<EnumController.Class> { EnumController.Class.StoryBorn, EnumController.Class.Villain, EnumController.Class.Prince };
+        this.classList = new List<EnumController.Class> { EnumController.Class.DreamBorn, EnumController.Class.Hero, EnumController.Class.Knight };
         this.color = new List<EnumController.Colors> { EnumController.Colors.Steel };
         this.keywordAvility = new List<EnumController.KeywordAvility>();
-        this.expansion = EnumController.Expansion.TheFirstChapter;
-        this.title = EnumController.Title.Frozen;
+        this.expansion = EnumController.Expansion.RiseOfTheFloodBorn;
+        this.title = EnumController.Title.MickeyMouse;
         this.type = EnumController.Type.Character;
-        this.rare = EnumController.Rare.SuperRare;
+        this.rare = EnumController.Rare.Rare;
     }
 }

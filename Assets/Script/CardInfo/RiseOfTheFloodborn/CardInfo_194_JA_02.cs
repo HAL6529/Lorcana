@@ -7,14 +7,14 @@ public class CardInfo_194_JA_02 : CardInfo
     public CardInfo_194_JA_02()
     {
         this.cardNo = "194_JA_02";
-        this.inkCost = 3;
+        this.inkCost = 2;
         this.availableInk = true;
-        this.cardName1 = "ティンカー・ベル";
-        this.cardName2 = "小さな戦術家";
-        this.power = 2;
-        this.toughness = 4;
-        this.lore = 1;
-        this.illustrator = "Grace Tran";
+        this.cardName1 = "兵士";
+        this.cardName2 = "不本意な刺客";
+        this.power = 1;
+        this.toughness = 1;
+        this.lore = 2;
+        this.illustrator = "Gaku Kumatori";
         this.isHandDestraction = false; //ハンデス効果を持つ
         this.isCIP = false; //CIP効果を持つ
         this.isPIG = false; //PIG効果を持つ
@@ -25,12 +25,12 @@ public class CardInfo_194_JA_02 : CardInfo
         this.isAddInk = false; //インクを増やす効果を持つ
         this.isItem = false; //アイテムに関連する効果を持つ
         this.isLocation = false; //ロケーションに関連する効果を持つ
-        this.classList = new List<EnumController.Class> { EnumController.Class.DreamBorn, EnumController.Class.Ally, EnumController.Class.Fairy };
+        this.classList = new List<EnumController.Class> { EnumController.Class.StoryBorn, EnumController.Class.Ally };
         this.color = new List<EnumController.Colors> { EnumController.Colors.Steel };
         this.keywordAvility = new List<EnumController.KeywordAvility>();
-        this.expansion = EnumController.Expansion.TheFirstChapter;
-        this.title = EnumController.Title.PeterPan;
+        this.expansion = EnumController.Expansion.RiseOfTheFloodBorn;
+        this.title = EnumController.Title.SnowWhiteAndTheSevenDwarfs;
         this.type = EnumController.Type.Character;
-        this.rare = EnumController.Rare.Common;
+        this.rare = EnumController.Rare.Rare;
     }
 }

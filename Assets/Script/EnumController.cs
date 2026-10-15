@@ -20,6 +20,7 @@ public class EnumController
         Hunny, //ハニー
         Inventor, //発明家
         King, //王様
+        Knight, //騎士
         Mentor, //導き手
         Musketeer, //銃士
         Pirate, //海賊
@@ -66,6 +67,8 @@ public class EnumController
         Singer5,
         Support,
         Reckless, //暴勇
+        Resist1, //耐久+1
+        Resist2, //耐久+2
         Rush, //突進
         Ward, //魔除
 
@@ -99,6 +102,7 @@ public class EnumController
         ThePrincessAndTheFrog, //プリンセスと魔法のキス
         TheRescuers, // ビアンカの大冒険
         TheSwordInTheStone, //王様の剣
+        TheTaleOfAMouse, //The Tale of a Mouse
         TreasurePlanet, //トレジャー・プラネット
         LiloAndStitch, //リロ・アンド・スティッチ
         MickeyMouse, //ミッキーマウス
@@ -112,6 +116,7 @@ public class EnumController
         SleepingBeauty, //眠れる森の美女
         SnowWhiteAndTheSevenDwarfs, //白雪姫
         WinnieThePooh, //クマのプーさん
+        WreckItRalph, //シュガーラッシュ
         Zootopia, //ズートピア
     }
 

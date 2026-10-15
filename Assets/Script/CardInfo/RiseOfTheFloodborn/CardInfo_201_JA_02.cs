@@ -7,14 +7,14 @@ public class CardInfo_201_JA_02 : CardInfo
     public CardInfo_201_JA_02()
     {
         this.cardNo = "201_JA_02";
-        this.inkCost = 2;
+        this.inkCost = 3;
         this.availableInk = true;
-        this.cardName1 = "野獣の鏡";
+        this.cardName1 = "持つんだ熱い心";
         this.cardName2 = "";
         this.power = -1;
         this.toughness = -1;
         this.lore = -1;
-        this.illustrator = "Samanta Erdini";
+        this.illustrator = "Jared Nickerl / Alex Accorsi";
         this.isHandDestraction = false; //ハンデス効果を持つ
         this.isCIP = false; //CIP効果を持つ
         this.isPIG = false; //PIG効果を持つ
@@ -28,9 +28,9 @@ public class CardInfo_201_JA_02 : CardInfo
         this.classList = new List<EnumController.Class>();
         this.color = new List<EnumController.Colors> { EnumController.Colors.Steel };
         this.keywordAvility = new List<EnumController.KeywordAvility>();
-        this.expansion = EnumController.Expansion.TheFirstChapter;
-        this.title = EnumController.Title.BeautyAndTheBeast;
-        this.type = EnumController.Type.Item;
-        this.rare = EnumController.Rare.Common;
+        this.expansion = EnumController.Expansion.RiseOfTheFloodBorn;
+        this.title = EnumController.Title.Mulan;
+        this.type = EnumController.Type.Song;
+        this.rare = EnumController.Rare.Rare;
     }
 }
