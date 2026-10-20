@@ -15,7 +15,7 @@ C:/Users/matty/Unity/Lorcana
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-53660
+64160
 Successfully changed project path to: C:/Users/matty/Unity/Lorcana
 C:/Users/matty/Unity/Lorcana
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,11 +49,11 @@ C:/Users/matty/Unity/Lorcana
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [37712] Host "[IP] 192.168.10.102 [Port] 0 [Flags] 2 [Guid] 2263362755 [EditorId] 2263362755 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-62U0HVH) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [42780] Host "[IP] 192.168.10.102 [Port] 0 [Flags] 2 [Guid] 1601535934 [EditorId] 1601535934 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-62U0HVH) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [37712] Host "[IP] 192.168.10.102 [Port] 0 [Flags] 2 [Guid] 2263362755 [EditorId] 2263362755 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-62U0HVH) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [42780] Host "[IP] 192.168.10.102 [Port] 0 [Flags] 2 [Guid] 1601535934 [EditorId] 1601535934 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-62U0HVH) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 9.80 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 10.30 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.3f1 (7cdc2969a641)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/Resources/UnitySubsystems
@@ -69,53 +69,53 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56756
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56060
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.007318 seconds.
-- Loaded All Assemblies, in  0.274 seconds
+Registered in 0.008539 seconds.
+- Loaded All Assemblies, in  0.254 seconds
 Native extension for WindowsStandalone target not found
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 Native extension for iOS target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 285 ms
+Android Extension - Scanning For ADB Devices 292 ms
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.532 seconds
-Domain Reload Profiling: 805ms
-	BeginReloadAssembly (82ms)
+- Finished resetting the current domain, in  0.537 seconds
+Domain Reload Profiling: 790ms
+	BeginReloadAssembly (66ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (26ms)
+	RebuildCommonClasses (25ms)
 	RebuildNativeTypeToScriptingClass (7ms)
 	initialDomainReloadingComplete (45ms)
-	LoadAllAssembliesAndSetupDomain (112ms)
-		LoadAssemblies (81ms)
+	LoadAllAssembliesAndSetupDomain (109ms)
+		LoadAssemblies (64ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (107ms)
-			TypeCache.Refresh (107ms)
-				TypeCache.ScanAssembly (98ms)
+		AnalyzeDomain (104ms)
+			TypeCache.Refresh (103ms)
+				TypeCache.ScanAssembly (93ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (0ms)
-	FinalizeReload (533ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (537ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (489ms)
+		SetupLoadedEditorAssemblies (494ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (377ms)
-			SetLoadedEditorAssemblies (3ms)
+			InitializePlatformSupportModulesInManaged (390ms)
+			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (1ms)
-			ProcessInitializeOnLoadAttributes (70ms)
-			ProcessInitializeOnLoadMethodAttributes (37ms)
+			ProcessInitializeOnLoadAttributes (67ms)
+			ProcessInitializeOnLoadMethodAttributes (32ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -125,54 +125,54 @@ Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\matty\Unity\Lorcana\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\matty\Unity\Lorcana\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.554 seconds
-Refreshing native plugins compatible for Editor in 3.63 ms, found 5 plugins.
+- Loaded All Assemblies, in  0.571 seconds
+Refreshing native plugins compatible for Editor in 7.95 ms, found 5 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.412 seconds
-Domain Reload Profiling: 964ms
-	BeginReloadAssembly (87ms)
+- Finished resetting the current domain, in  0.444 seconds
+Domain Reload Profiling: 1013ms
+	BeginReloadAssembly (91ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (3ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (15ms)
-	RebuildCommonClasses (24ms)
-	RebuildNativeTypeToScriptingClass (9ms)
+		CreateAndSetChildDomain (17ms)
+	RebuildCommonClasses (23ms)
+	RebuildNativeTypeToScriptingClass (6ms)
 	initialDomainReloadingComplete (32ms)
-	LoadAllAssembliesAndSetupDomain (400ms)
-		LoadAssemblies (232ms)
+	LoadAllAssembliesAndSetupDomain (417ms)
+		LoadAssemblies (230ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (209ms)
-			TypeCache.Refresh (188ms)
-				TypeCache.ScanAssembly (180ms)
-			ScanForSourceGeneratedMonoScriptInfo (15ms)
-			ResolveRequiredComponents (6ms)
-	FinalizeReload (413ms)
+		AnalyzeDomain (230ms)
+			TypeCache.Refresh (203ms)
+				TypeCache.ScanAssembly (194ms)
+			ScanForSourceGeneratedMonoScriptInfo (17ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (444ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (298ms)
+		SetupLoadedEditorAssemblies (322ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (25ms)
-			SetLoadedEditorAssemblies (3ms)
+			InitializePlatformSupportModulesInManaged (31ms)
+			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (49ms)
-			ProcessInitializeOnLoadAttributes (195ms)
-			ProcessInitializeOnLoadMethodAttributes (22ms)
-			AfterProcessingInitializeOnLoad (4ms)
+			BeforeProcessingInitializeOnLoad (50ms)
+			ProcessInitializeOnLoadAttributes (207ms)
+			ProcessInitializeOnLoadMethodAttributes (26ms)
+			AfterProcessingInitializeOnLoad (5ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (6ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 3.80 ms, found 5 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 5.21 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4906 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 77 unused Assets / (248.5 KB). Loaded Objects now: 5362.
 Memory consumption went from 161.8 MB to 161.6 MB.
-Total: 3.014800 ms (FindLiveObjects: 0.361200 ms CreateObjectMapping: 0.217800 ms MarkObjects: 2.258900 ms  DeleteObjects: 0.175900 ms)
+Total: 2.872300 ms (FindLiveObjects: 0.264200 ms CreateObjectMapping: 0.124200 ms MarkObjects: 2.304600 ms  DeleteObjects: 0.178200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -187,100 +187,172 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 1795060.307453 seconds.
-  path: Assets/picture/lorcana/IntoTheInklands/001_JA_03.png
-  artifactKey: Guid(28da66cdeec3e5c4f816c5c5647bddd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/IntoTheInklands/001_JA_03.png using Guid(28da66cdeec3e5c4f816c5c5647bddd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7badaed4dcaf8b622817b1883cbc84ba') in 0.055590 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 4.834740 seconds.
-  path: Assets/picture/lorcana/IntoTheInklands/170_JA_03.png
-  artifactKey: Guid(084f60a40a900ee46b610b0992346b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/IntoTheInklands/170_JA_03.png using Guid(084f60a40a900ee46b610b0992346b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6d12f00758317d40a87fd4c71106b9d') in 0.086131 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 17.838745 seconds.
-  path: Assets/picture/lorcana/IntoTheInklands/170_JA_03.png
-  artifactKey: Guid(084f60a40a900ee46b610b0992346b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/IntoTheInklands/170_JA_03.png using Guid(084f60a40a900ee46b610b0992346b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20f42cac03c935d79c63a600e7725565') in 0.014004 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 4.348087 seconds.
-  path: Assets/picture/lorcana/Ursula'sReturn
-  artifactKey: Guid(a73583d7bed79554392251be2ed70704) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/Ursula'sReturn using Guid(a73583d7bed79554392251be2ed70704) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6de3228d2ecbbd5a2a6a7c508b700909') in 0.000440 seconds
+  Time since last request: 1900913.649752 seconds.
+  path: Assets/picture/lorcana/AttackOfTheVine
+  artifactKey: Guid(1b9f17322062482418792767f662b635) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/picture/lorcana/AttackOfTheVine using Guid(1b9f17322062482418792767f662b635) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5fc2b953e767476611870b481ceae25') in 0.002192 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.550399 seconds.
-  path: Assets/picture/lorcana/Ursula'sReturn/004_JA_04.png
-  artifactKey: Guid(8e4911e3a530ea446860b7f62d2f4302) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/Ursula'sReturn/004_JA_04.png using Guid(8e4911e3a530ea446860b7f62d2f4302) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6462b865a29fdd754a232d34d76a97f8') in 0.012611 seconds
+  Time since last request: 0.659603 seconds.
+  path: Assets/picture/lorcana/AttackOfTheVine/003_JA_13.png
+  artifactKey: Guid(f79a311e667e01847a983e73464b2a37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/picture/lorcana/AttackOfTheVine/003_JA_13.png using Guid(f79a311e667e01847a983e73464b2a37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1364bb49a202f66e759e08ca588f85d4') in 0.050028 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 0.865569 seconds.
-  path: Assets/picture/lorcana/Ursula'sReturn/211_JA_04.png
-  artifactKey: Guid(8ee6a3eda106b5b40baa610e6158f4f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/Ursula'sReturn/211_JA_04.png using Guid(8ee6a3eda106b5b40baa610e6158f4f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f56c199f68d70981baeb8331189ad1e1') in 0.080316 seconds
+  Time since last request: 1.201516 seconds.
+  path: Assets/picture/lorcana/AttackOfTheVine/074_JA_13.png
+  artifactKey: Guid(e81130cc4fe5dd646a28d1278ddd11b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/picture/lorcana/AttackOfTheVine/074_JA_13.png using Guid(e81130cc4fe5dd646a28d1278ddd11b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b3d51bac3d07e7b4220de49b0bf70ca') in 0.043061 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 16.393227 seconds.
-  path: Assets/picture/lorcana/Ursula'sReturn/211_JA_04.png
-  artifactKey: Guid(8ee6a3eda106b5b40baa610e6158f4f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/Ursula'sReturn/211_JA_04.png using Guid(8ee6a3eda106b5b40baa610e6158f4f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a312379a501aa059ed1b0f3c77fe1017') in 0.008902 seconds
+  Time since last request: 21.796666 seconds.
+  path: Assets/picture/lorcana/AttackOfTheVine/074_JA_13.png
+  artifactKey: Guid(e81130cc4fe5dd646a28d1278ddd11b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/picture/lorcana/AttackOfTheVine/074_JA_13.png using Guid(e81130cc4fe5dd646a28d1278ddd11b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef55c905b1ebd39b55f8de85d0770787') in 0.009606 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 10.951794 seconds.
-  path: Assets/picture/lorcana/IntoTheInklands/003_JA_03.png
-  artifactKey: Guid(a8ea7407bcee55e49b5b90ca3e939e61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/IntoTheInklands/003_JA_03.png using Guid(a8ea7407bcee55e49b5b90ca3e939e61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '137d949db0c512a87fa89709e2ed8e26') in 0.009616 seconds
+  Time since last request: 9.386814 seconds.
+  path: Assets/picture/lorcana/HyperiaCity
+  artifactKey: Guid(90a03166a1176f04b95feda6d05fe028) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/picture/lorcana/HyperiaCity using Guid(90a03166a1176f04b95feda6d05fe028) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25392b5612b0186c078c3a2a6d65e988') in 0.000476 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.504573 seconds.
+  path: Assets/picture/lorcana/HyperiaCity/006_JA_14.png
+  artifactKey: Guid(42a997cc6f815224d8429aade94406bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/picture/lorcana/HyperiaCity/006_JA_14.png using Guid(42a997cc6f815224d8429aade94406bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '029336cd8e4c6e53f22b29c8dad9dd0d') in 0.025956 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 15.771960 seconds.
-  path: Assets/picture/lorcana/IntoTheInklands/170_JA_03.png
-  artifactKey: Guid(084f60a40a900ee46b610b0992346b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/IntoTheInklands/170_JA_03.png using Guid(084f60a40a900ee46b610b0992346b79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93720adcec0720aa7bb9f289e660c4c6') in 0.007661 seconds
+  Time since last request: 0.811926 seconds.
+  path: Assets/picture/lorcana/HyperiaCity/241_JA_14.png
+  artifactKey: Guid(acc1c8506b1d9044faea85da18d0d290) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/picture/lorcana/HyperiaCity/241_JA_14.png using Guid(acc1c8506b1d9044faea85da18d0d290) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '126daf1d0c37dc68f90c4cef6af4ece2') in 0.012167 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 2.511574 seconds.
-  path: Assets/picture/lorcana/Ursula'sReturn/004_JA_04.png
-  artifactKey: Guid(8e4911e3a530ea446860b7f62d2f4302) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/Ursula'sReturn/004_JA_04.png using Guid(8e4911e3a530ea446860b7f62d2f4302) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1450aca2acd398497c49e01c7670a333') in 0.009716 seconds
+  Time since last request: 22.876903 seconds.
+  path: Assets/picture/lorcana/HyperiaCity/241_JA_14.png
+  artifactKey: Guid(acc1c8506b1d9044faea85da18d0d290) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/picture/lorcana/HyperiaCity/241_JA_14.png using Guid(acc1c8506b1d9044faea85da18d0d290) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '109dec37f5229a7243d405b00bf87f9b') in 0.013334 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 15.394627 seconds.
-  path: Assets/picture/lorcana/Ursula'sReturn/211_JA_04.png
-  artifactKey: Guid(8ee6a3eda106b5b40baa610e6158f4f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/Ursula'sReturn/211_JA_04.png using Guid(8ee6a3eda106b5b40baa610e6158f4f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '141f149fb4a0c8b3d5e981db00d4a7b6') in 0.022966 seconds
+  Time since last request: 17.463961 seconds.
+  path: Assets/picture/lorcana/ReignOfJafar/008_JA_08.png
+  artifactKey: Guid(16f428571acaca44e80dcabdb194d59e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/picture/lorcana/ReignOfJafar/008_JA_08.png using Guid(16f428571acaca44e80dcabdb194d59e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c47d923167e3d7db438d6729286f6d1') in 0.014195 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 8.972233 seconds.
+  path: Assets/picture/lorcana/ShimmeringSkies/009_JA_05.png
+  artifactKey: Guid(acfa844807f92524f9acf2358ea99ad8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/picture/lorcana/ShimmeringSkies/009_JA_05.png using Guid(acfa844807f92524f9acf2358ea99ad8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4da35e966aff287c6bdf3a24c5d6e7ce') in 0.012248 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 3.254984 seconds.
+  path: Assets/picture/lorcana/Ursula'sReturn/009_JA_04.png
+  artifactKey: Guid(e689e4b3febc8b347bdfcc3dc036e7ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/picture/lorcana/Ursula'sReturn/009_JA_04.png using Guid(e689e4b3febc8b347bdfcc3dc036e7ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '401afc5e7cd4e0d43378249040aa1f35') in 0.010783 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.385739 seconds.
+  path: Assets/picture/lorcana/Ursula'sReturn/001_JA_04.png
+  artifactKey: Guid(f73e9fa6829b86c469d0a9ff55bafb42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/picture/lorcana/Ursula'sReturn/001_JA_04.png using Guid(f73e9fa6829b86c469d0a9ff55bafb42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '883fbe7ef9ea47e5b169f8516c8128fe') in 0.013950 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 1.662610 seconds.
+  path: Assets/picture/lorcana/WildsUnknown
+  artifactKey: Guid(6f188cf522e4910459a886c6afe086de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/picture/lorcana/WildsUnknown using Guid(6f188cf522e4910459a886c6afe086de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4a6cdd53492d6f0bf676f3620708e99') in 0.000457 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.503902 seconds.
+  path: Assets/picture/lorcana/WildsUnknown/010_JA_12.png
+  artifactKey: Guid(9f6bb6d28a9d96448b8e7190ad28bcf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/picture/lorcana/WildsUnknown/010_JA_12.png using Guid(9f6bb6d28a9d96448b8e7190ad28bcf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '383912b59443a6941bfd92b6d0bbf50c') in 0.010208 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.923541 seconds.
+  path: Assets/picture/lorcana/WildsUnknown/073_JA_12.png
+  artifactKey: Guid(a366ce068c7c3d347857322f35d326b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/picture/lorcana/WildsUnknown/073_JA_12.png using Guid(a366ce068c7c3d347857322f35d326b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38605eae8b272adb2d2bf94a7a8cab74') in 0.010502 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 18.491244 seconds.
+  path: Assets/picture/lorcana/WildsUnknown/073_JA_12.png
+  artifactKey: Guid(a366ce068c7c3d347857322f35d326b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/picture/lorcana/WildsUnknown/073_JA_12.png using Guid(a366ce068c7c3d347857322f35d326b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03e5f7f64c816d6656a6c3e89b5247df') in 0.015666 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 6.651939 seconds.
+  path: Assets/picture/lorcana/WildsUnknown/012_JA_12.png
+  artifactKey: Guid(6ca32dff01c589441bdfd5b9fd09ab88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/picture/lorcana/WildsUnknown/012_JA_12.png using Guid(6ca32dff01c589441bdfd5b9fd09ab88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '884c8ae508ecfbd8f214eb610c709bb9') in 0.011223 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 3.605676 seconds.
+  path: Assets/picture/lorcana/WinterSpell
+  artifactKey: Guid(bfe30633cf8738b4ea1bb9413b776825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/picture/lorcana/WinterSpell using Guid(bfe30633cf8738b4ea1bb9413b776825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63eb6c1a78b0e4f6a0faaca3219f3b1a') in 0.000475 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.855093 seconds.
+  path: Assets/picture/lorcana/WinterSpell/158_JA_11.png
+  artifactKey: Guid(667bb017af75de64fb101e0971f8a732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/picture/lorcana/WinterSpell/158_JA_11.png using Guid(667bb017af75de64fb101e0971f8a732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '946c8bb10dd74cebe800296b7725ff92') in 0.111973 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 14.773980 seconds.
+  path: Assets/picture/lorcana/WinterSpell/158_JA_11.png
+  artifactKey: Guid(667bb017af75de64fb101e0971f8a732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/picture/lorcana/WinterSpell/158_JA_11.png using Guid(667bb017af75de64fb101e0971f8a732) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a27216d7f63a483d194cc41ebdeab735') in 0.016960 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
 ========================================================================
 Received Prepare
-Refreshing native plugins compatible for Editor in 5.34 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 4.30 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 7 unused Assets / (195.9 KB). Loaded Objects now: 5368.
-Memory consumption went from 84.7 MB to 84.5 MB.
-Total: 2.825700 ms (FindLiveObjects: 0.273200 ms CreateObjectMapping: 0.136800 ms MarkObjects: 2.304600 ms  DeleteObjects: 0.110300 ms)
+Memory consumption went from 84.7 MB to 84.6 MB.
+Total: 3.086400 ms (FindLiveObjects: 0.297400 ms CreateObjectMapping: 0.151000 ms MarkObjects: 2.519200 ms  DeleteObjects: 0.118100 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -294,323 +366,3 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 37239.140166 seconds.
-  path: Assets/picture/lorcana/Ursula'sReturn/010_JA_04.png
-  artifactKey: Guid(283601ae67d573140baa1beb80070b67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/Ursula'sReturn/010_JA_04.png using Guid(283601ae67d573140baa1beb80070b67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa5c550f4e3c7bce1b2c7a6fe4bfb2cc') in 0.093429 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 4.512471 seconds.
-  path: Assets/picture/lorcana/ShimmeringSkies
-  artifactKey: Guid(1ad8f141ed8357a4a93ef695e67eace0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/ShimmeringSkies using Guid(1ad8f141ed8357a4a93ef695e67eace0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33ab8381b6be3e0ce1e20ce189467885') in 0.000502 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.687481 seconds.
-  path: Assets/picture/lorcana/ShimmeringSkies/009_JA_05.png
-  artifactKey: Guid(acfa844807f92524f9acf2358ea99ad8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/ShimmeringSkies/009_JA_05.png using Guid(acfa844807f92524f9acf2358ea99ad8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6d3e56935415d11a1314eca167bdbe2') in 0.022603 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.868401 seconds.
-  path: Assets/picture/lorcana/ShimmeringSkies/105_JA_05.png
-  artifactKey: Guid(6f5eb922cd8da1d4e97c33e4f35ad988) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/ShimmeringSkies/105_JA_05.png using Guid(6f5eb922cd8da1d4e97c33e4f35ad988) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c88329bb7c19bb9be3e8912f22cec44') in 0.033092 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 33.722335 seconds.
-  path: Assets/picture/lorcana/ShimmeringSkies/105_JA_05.png
-  artifactKey: Guid(6f5eb922cd8da1d4e97c33e4f35ad988) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/ShimmeringSkies/105_JA_05.png using Guid(6f5eb922cd8da1d4e97c33e4f35ad988) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efcc97b6806506b9a465ba758471e608') in 0.015912 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 18.506344 seconds.
-  path: Assets/picture/lorcana/ShimmeringSkies/105_JA_05.png
-  artifactKey: Guid(6f5eb922cd8da1d4e97c33e4f35ad988) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/ShimmeringSkies/105_JA_05.png using Guid(6f5eb922cd8da1d4e97c33e4f35ad988) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec7c743650dcee8306c019ffeeec67db') in 0.016229 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 9.429652 seconds.
-  path: Assets/picture/lorcana/ReignOfJafar
-  artifactKey: Guid(74532934140e7ba4db050813b90a9885) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/ReignOfJafar using Guid(74532934140e7ba4db050813b90a9885) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98547cd81d51bb31a9aebdf50369b476') in 0.000737 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.541284 seconds.
-  path: Assets/picture/lorcana/ReignOfJafar/006_JA_08.png
-  artifactKey: Guid(09b3cacb288bd484683f46a4d433de00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/ReignOfJafar/006_JA_08.png using Guid(09b3cacb288bd484683f46a4d433de00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fd926bdcbf4a03c44f3c91a25c067c2') in 0.016292 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.932072 seconds.
-  path: Assets/picture/lorcana/ReignOfJafar/014_JA_08.png
-  artifactKey: Guid(d4d8440bb37b405409c790640bcfc430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/ReignOfJafar/014_JA_08.png using Guid(d4d8440bb37b405409c790640bcfc430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3717edc200d5966083af61b29ed1acba') in 0.091334 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 18.402641 seconds.
-  path: Assets/picture/lorcana/ReignOfJafar/014_JA_08.png
-  artifactKey: Guid(d4d8440bb37b405409c790640bcfc430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/ReignOfJafar/014_JA_08.png using Guid(d4d8440bb37b405409c790640bcfc430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49f3ab4dbecb1a8f412aefa087743e26') in 0.015989 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 18.668222 seconds.
-  path: Assets/picture/lorcana/ReignOfJafar/014_JA_08.png
-  artifactKey: Guid(d4d8440bb37b405409c790640bcfc430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/ReignOfJafar/014_JA_08.png using Guid(d4d8440bb37b405409c790640bcfc430) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60c76551d1da50c443527cb583ff351d') in 0.009607 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 6.071899 seconds.
-  path: Assets/picture/lorcana/IntoTheInklands/004a_JA_03.png
-  artifactKey: Guid(33ee81b329651a049aa2cebbaaee6718) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/IntoTheInklands/004a_JA_03.png using Guid(33ee81b329651a049aa2cebbaaee6718) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfbea7117e9ac45a1df00a2a344ac276') in 0.009388 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 4.934539 seconds.
-  path: Assets/picture/lorcana/FABLEDvol.2
-  artifactKey: Guid(dd3964e0231204a4e91228e13d342862) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/FABLEDvol.2 using Guid(dd3964e0231204a4e91228e13d342862) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a96ff63777dec5addfbe7f6bd7ab380') in 0.000549 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.762797 seconds.
-  path: Assets/picture/lorcana/FABLEDvol.2/075_JA_09.png
-  artifactKey: Guid(005b842e5db27d446a64785c3e64b245) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/FABLEDvol.2/075_JA_09.png using Guid(005b842e5db27d446a64785c3e64b245) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd983916a6ad3e0c88633c7d257436e30') in 0.012202 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 1.367771 seconds.
-  path: Assets/picture/lorcana/FABLEDvol.2/114_JA_09.png
-  artifactKey: Guid(d21d9aaaece3e0d4fb1fe4f533a9b424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/FABLEDvol.2/114_JA_09.png using Guid(d21d9aaaece3e0d4fb1fe4f533a9b424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f26642889b265f423e01f546d0e88443') in 0.009566 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 10.559247 seconds.
-  path: Assets/picture/lorcana/FABLEDvol.2/114_JA_09.png
-  artifactKey: Guid(d21d9aaaece3e0d4fb1fe4f533a9b424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/FABLEDvol.2/114_JA_09.png using Guid(d21d9aaaece3e0d4fb1fe4f533a9b424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12d24245b123f69483496a6ba884e2dc') in 0.031953 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 8.536044 seconds.
-  path: Assets/picture/lorcana/FABLEDvol.2/114_JA_09.png
-  artifactKey: Guid(d21d9aaaece3e0d4fb1fe4f533a9b424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/FABLEDvol.2/114_JA_09.png using Guid(d21d9aaaece3e0d4fb1fe4f533a9b424) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07d6c35bc1f77d7c165b5d68d008ce85') in 0.012331 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 7.548529 seconds.
-  path: Assets/picture/lorcana/FABLEDvol.1
-  artifactKey: Guid(e014c01c98e829e4385286ae5544cc1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/FABLEDvol.1 using Guid(e014c01c98e829e4385286ae5544cc1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecda9d9eb36cb23938ad175727b70133') in 0.000474 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.724777 seconds.
-  path: Assets/picture/lorcana/FABLEDvol.1/224_JA_09.png
-  artifactKey: Guid(340cc4f252cf286438e437461f721a7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/FABLEDvol.1/224_JA_09.png using Guid(340cc4f252cf286438e437461f721a7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82e8ac8f91576804dce173e1723c9fd2') in 0.010738 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 9.561139 seconds.
-  path: Assets/picture/lorcana/FABLEDvol.1/224_JA_09.png
-  artifactKey: Guid(340cc4f252cf286438e437461f721a7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/FABLEDvol.1/224_JA_09.png using Guid(340cc4f252cf286438e437461f721a7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01115c02d29a4933bcc844b61467d26f') in 0.010895 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 9.292889 seconds.
-  path: Assets/picture/lorcana/FABLEDvol.1/224_JA_09.png
-  artifactKey: Guid(340cc4f252cf286438e437461f721a7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/FABLEDvol.1/224_JA_09.png using Guid(340cc4f252cf286438e437461f721a7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb7ca497c12f60a3b1bfadbcc37c4426') in 0.012238 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 3.460356 seconds.
-  path: Assets/picture/lorcana/FABLEDvol.1/001_JA_09.png
-  artifactKey: Guid(503295aededdf23499f998664ec41a07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/FABLEDvol.1/001_JA_09.png using Guid(503295aededdf23499f998664ec41a07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90282b8b778d660efb2724c43ef3d085') in 0.013894 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 2.311528 seconds.
-  path: Assets/picture/lorcana/AzuriteSea
-  artifactKey: Guid(0a72c6cf1c7ee21459c829ec91b48bcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/AzuriteSea using Guid(0a72c6cf1c7ee21459c829ec91b48bcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cfeb0ee4c971fadbcec545d1adf70d5e') in 0.000444 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.633099 seconds.
-  path: Assets/picture/lorcana/AzuriteSea/004_JA_06.png
-  artifactKey: Guid(b289d9f75e77bc64b9b2dccb5815b5ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/AzuriteSea/004_JA_06.png using Guid(b289d9f75e77bc64b9b2dccb5815b5ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e108e535a5ba12085b8d6905d985576d') in 0.010290 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.785473 seconds.
-  path: Assets/picture/lorcana/AzuriteSea/065_JA_06.png
-  artifactKey: Guid(1a2e71f55113aaa4b96640686f23070f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/AzuriteSea/065_JA_06.png using Guid(1a2e71f55113aaa4b96640686f23070f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e740834d42d0597580e07e9d7684f2ad') in 0.031492 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 32.848028 seconds.
-  path: Assets/picture/lorcana/AzuriteSea/065_JA_06.png
-  artifactKey: Guid(1a2e71f55113aaa4b96640686f23070f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/AzuriteSea/065_JA_06.png using Guid(1a2e71f55113aaa4b96640686f23070f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f446593f2012b6aabad34961c91d115') in 0.016744 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 17.858220 seconds.
-  path: Assets/picture/lorcana/AzuriteSea/065_JA_06.png
-  artifactKey: Guid(1a2e71f55113aaa4b96640686f23070f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/AzuriteSea/065_JA_06.png using Guid(1a2e71f55113aaa4b96640686f23070f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b9f06dd06c4438a837726a658c21a46') in 0.013072 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 3.437131 seconds.
-  path: Assets/picture/lorcana/FABLEDvol.1/006_JA_09.png
-  artifactKey: Guid(b5a335e725dc4624ea9d5558524731be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/FABLEDvol.1/006_JA_09.png using Guid(b5a335e725dc4624ea9d5558524731be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65408def1e8717ff9fd9be5dd3ff60ba') in 0.009950 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 2.028557 seconds.
-  path: Assets/picture/lorcana/AzuriteSea/003_JA_06.png
-  artifactKey: Guid(64b50b55229e7054c8962297208a4ce2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/AzuriteSea/003_JA_06.png using Guid(64b50b55229e7054c8962297208a4ce2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73f83c4da7d5046744b1e9037ad5b411') in 0.009952 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 2.466993 seconds.
-  path: Assets/picture/lorcana/ArchaziasIsland
-  artifactKey: Guid(b8a066f144baa5248a1a0e1d1b109b03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/ArchaziasIsland using Guid(b8a066f144baa5248a1a0e1d1b109b03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3845c61051be914e55ea884fa1b238b1') in 0.000464 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.601154 seconds.
-  path: Assets/picture/lorcana/ArchaziasIsland/003_JA_07.png
-  artifactKey: Guid(44d00fee955bcdb4293dd62388254de9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/ArchaziasIsland/003_JA_07.png using Guid(44d00fee955bcdb4293dd62388254de9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '862294870f40ec2c3b0336826f6f74c7') in 0.011293 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 1.826113 seconds.
-  path: Assets/picture/lorcana/ArchaziasIsland/193_JA_07.png
-  artifactKey: Guid(271fe02c9277e8d4cb9eb1380abd3014) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/ArchaziasIsland/193_JA_07.png using Guid(271fe02c9277e8d4cb9eb1380abd3014) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a20b307e9b33c8999fbccb76d71c303') in 0.011158 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 16.474251 seconds.
-  path: Assets/picture/lorcana/ArchaziasIsland/193_JA_07.png
-  artifactKey: Guid(271fe02c9277e8d4cb9eb1380abd3014) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/ArchaziasIsland/193_JA_07.png using Guid(271fe02c9277e8d4cb9eb1380abd3014) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91a7f02f75d957dc7873888decc86da0') in 0.016362 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 22.538260 seconds.
-  path: Assets/picture/lorcana/ArchaziasIsland/193_JA_07.png
-  artifactKey: Guid(271fe02c9277e8d4cb9eb1380abd3014) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/ArchaziasIsland/193_JA_07.png using Guid(271fe02c9277e8d4cb9eb1380abd3014) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71f0cd0eb014d35ef087b449d5c39406') in 0.017499 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 2.782338 seconds.
-  path: Assets/picture/lorcana/FABLEDvol.1/026_JA_09.png
-  artifactKey: Guid(8f00c73abad0c66418b7f3de4eeec961) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/FABLEDvol.1/026_JA_09.png using Guid(8f00c73abad0c66418b7f3de4eeec961) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2f862f318037b2863a717c9ee911685') in 0.008039 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 2.512806 seconds.
-  path: Assets/picture/lorcana/FABLEDvol.2/074_JA_09.png
-  artifactKey: Guid(f223e406019e03b479a8c369917e87c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/FABLEDvol.2/074_JA_09.png using Guid(f223e406019e03b479a8c369917e87c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbbd20d67bf2f1da66c1bbadce067280') in 0.013417 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 2.602685 seconds.
-  path: Assets/picture/lorcana/FABLEDvol.2/077_JA_09.png
-  artifactKey: Guid(1082e613914094d41911bd1f667ad87e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/FABLEDvol.2/077_JA_09.png using Guid(1082e613914094d41911bd1f667ad87e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5125ccebb0d2780c4a7c312c7b1a798') in 0.008526 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 2.464167 seconds.
-  path: Assets/picture/lorcana/IntoTheInklands/005_JA_03.png
-  artifactKey: Guid(dec2e30e091c01340b206301203acd13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/IntoTheInklands/005_JA_03.png using Guid(dec2e30e091c01340b206301203acd13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5cd4971dbcd3617b2a09ea50585016e') in 0.010355 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 3.299309 seconds.
-  path: Assets/picture/lorcana/ReignOfJafar/006_JA_08.png
-  artifactKey: Guid(09b3cacb288bd484683f46a4d433de00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/ReignOfJafar/006_JA_08.png using Guid(09b3cacb288bd484683f46a4d433de00) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1590a08a38e7aa0e8a7725e0b6bf258') in 0.007900 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 6.997362 seconds.
-  path: Assets/picture/lorcana/ShimmeringSkies/008_JA_05.png
-  artifactKey: Guid(d5dcb0f2d95d1a745b03eb2629b861bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/picture/lorcana/ShimmeringSkies/008_JA_05.png using Guid(d5dcb0f2d95d1a745b03eb2629b861bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '404949be146888b7c61519aa24151e3a') in 0.008535 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3

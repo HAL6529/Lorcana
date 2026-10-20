@@ -18,6 +18,7 @@ public class EnumController
         FloodBorn, //フラッドボーン
         Hero, //ヒーロー
         Hunny, //ハニー
+        Hyena, //ハイエナ
         Inventor, //発明家
         King, //王様
         Knight, //騎士
@@ -26,11 +27,13 @@ public class EnumController
         Pirate, //海賊
         Prince,　//プリンス
         Princess, //プリンセス
+        Puppy, //子犬
         Queen, //女王
         SevenDwarfs, //7人の小人
         StoryBorn, //ストーリーボーン
         Sorcerer, //魔法使い
         Tigger, //ティガー
+        Titan, //タイタン
         Villain, //ヴィラン
     }
 
@@ -48,6 +51,7 @@ public class EnumController
     {
         TheFirstChapter,
         RiseOfTheFloodBorn,
+        IntoTheInkLands,
     }
 
     public enum KeywordAvility
@@ -87,12 +91,14 @@ public class EnumController
         None,
         Aladdin, //アラジン
         AliceInWonderland, //不思議の国のアリス
+        AtlantisTheLostEmpire, //アトランティス 失われた帝国
         BeautyAndTheBeast, //美女と野獣
         Cinderella, //シンデレラ
         DuckTales, //ダックテイル
         Fantasia, //ファンタジア
         Frozen, //アナと雪の女王
         Hercules, //ヘラクレス
+        TaleSpin, //テイルスピン
         Tangled, //塔の上のラプンツェル
         TheEmperorsNewGroove, //ラマになった王様
         TheGreatMouseDetective, //オリビアちゃんの大冒険
@@ -105,6 +111,7 @@ public class EnumController
         TheTaleOfAMouse, //The Tale of a Mouse
         TreasurePlanet, //トレジャー・プラネット
         LiloAndStitch, //リロ・アンド・スティッチ
+        Lorcana, //ロルカナ
         MickeyMouse, //ミッキーマウス
         Moana, //モアナと伝説の海
         Mulan, //ムーラン
