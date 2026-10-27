@@ -541,6 +541,21 @@ public class EditCardPanel : MonoBehaviour
         powerToughness.pivot = new Vector2(0, 1);
         powerToughness.anchoredPosition = Vector2.zero;
 
+        expantionName_expantion.anchorMin = new Vector2(0, 1);
+        expantionName_expantion.anchorMax = new Vector2(0, 1);
+        expantionName_expantion.pivot = new Vector2(0, 1);
+        expantionName_expantion.anchoredPosition = Vector2.zero;
+
+        expantionName_power.anchorMin = new Vector2(0, 1);
+        expantionName_power.anchorMax = new Vector2(0, 1);
+        expantionName_power.pivot = new Vector2(0, 1);
+        expantionName_power.anchoredPosition = new Vector2(expantionName_expantion.sizeDelta.x, 0);
+
+        expantionName_toughness.anchorMin = new Vector2(0, 1);
+        expantionName_toughness.anchorMax = new Vector2(0, 1);
+        expantionName_toughness.pivot = new Vector2(0, 1);
+        expantionName_toughness.anchoredPosition = new Vector2(expantionName_expantion.sizeDelta.x + expantionName_power.sizeDelta.x, 0);
+
         expantionName_power_power.anchorMin = new Vector2(0, 1);
         expantionName_power_power.anchorMax = new Vector2(0, 1);
         expantionName_power_power.pivot = new Vector2(0, 1);
