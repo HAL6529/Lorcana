@@ -510,8 +510,50 @@ public class EditCardPanel : MonoBehaviour
         rareHeader.pivot = new Vector2(0, 1);
         rareHeader.anchoredPosition = new Vector2(0, middleSize_y * (-1));
 
+        inkHeader_ink.anchorMin = new Vector2(0, 1);
+        inkHeader_ink.anchorMax = new Vector2(0, 1);
+        inkHeader_ink.pivot = new Vector2(0, 1);
+        inkHeader_ink.anchoredPosition = Vector2.zero;
+
+        cardNameHeader_cardName.anchorMin = new Vector2(0, 1);
+        cardNameHeader_cardName.anchorMax = new Vector2(0, 1);
+        cardNameHeader_cardName.pivot = new Vector2(0, 1);
+        cardNameHeader_cardName.anchoredPosition = Vector2.zero;
+
+        cardName2Header_cardName.anchorMin = new Vector2(0, 1);
+        cardName2Header_cardName.anchorMax = new Vector2(0, 1);
+        cardName2Header_cardName.pivot = new Vector2(0, 1);
+        cardName2Header_cardName.anchoredPosition = Vector2.zero;
+
+        classHeader_className.anchorMin = new Vector2(0, 1);
+        classHeader_className.anchorMax = new Vector2(0, 1);
+        classHeader_className.pivot = new Vector2(0, 1);
+        classHeader_className.anchoredPosition = Vector2.zero;
+
+        cardTextHeader_middle.anchorMin = new Vector2(0, 1);
+        cardTextHeader_middle.anchorMax = new Vector2(0, 1);
+        cardTextHeader_middle.pivot = new Vector2(0, 1);
+        cardTextHeader_middle.anchoredPosition = Vector2.zero;
+
+        lores.anchorMin = new Vector2(0, 1);
+        lores.anchorMax = new Vector2(0, 1);
+        lores.pivot = new Vector2(0, 1);
+        lores.anchoredPosition = new Vector2(cardTextHeader_middle.sizeDelta.x, 0);
+
+        lores_lore.anchorMin = new Vector2(0, 1);
+        lores_lore.anchorMax = new Vector2(0, 1);
+        lores_lore.pivot = new Vector2(0, 1);
+        lores_lore.anchoredPosition = new Vector2((lores.sizeDelta.x - lores_lore.sizeDelta.x) / 2, 0);
+
+        rareHeader_rare.anchorMin = new Vector2(0, 1);
+        rareHeader_rare.anchorMax = new Vector2(0, 1);
+        rareHeader_rare.pivot = new Vector2(0, 1);
+        rareHeader_rare.anchoredPosition = new Vector2((rareHeader.sizeDelta.x - rareHeader_rare.sizeDelta.x) / 2, 0);
         //==============================================================================================
         //真ん中 --ここまで--
+        //==============================================================================================
+        //==============================================================================================
+        //プラスマイナスボタン --ここから--
         //==============================================================================================
 
         plusMinusHeader.anchorMin = new Vector2(0, 1);
@@ -573,5 +615,9 @@ public class EditCardPanel : MonoBehaviour
         plusMinusHeader_label2.anchorMax = new Vector2(0, 1);
         plusMinusHeader_label2.pivot = new Vector2(0, 1);
         plusMinusHeader_label2.anchoredPosition = new Vector2(0, plusMinusHeaderSize_y * (-1));
+
+        //==============================================================================================
+        //プラスマイナスボタン --ここまで--
+        //==============================================================================================
     }
 }
