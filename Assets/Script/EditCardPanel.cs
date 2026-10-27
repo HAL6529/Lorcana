@@ -29,8 +29,6 @@ public class EditCardPanel : MonoBehaviour
 
     public int cardCount;
 
-    //public List<GameObject> loreList;
-
     public RectTransform parent;
     public RectTransform image_parent;
     public RectTransform image;
@@ -58,7 +56,6 @@ public class EditCardPanel : MonoBehaviour
     public RectTransform space2;
     public RectTransform lores;
     public RectTransform lores_lore;
-    //public List<RectTransform> lores_loreList = new List<RectTransform>();
     public RectTransform rareHeader;
     public RectTransform rareHeader_rare;
     public RectTransform plusMinusHeader;
@@ -478,5 +475,60 @@ public class EditCardPanel : MonoBehaviour
         plusMinusHeader.anchorMax = new Vector2(0, 1);
         plusMinusHeader.pivot = new Vector2(0, 1);
         plusMinusHeader.anchoredPosition = new Vector2(image_parent.sizeDelta.x + middle.sizeDelta.x, 0);
+
+        float plusMinusHeaderSize_y = 0;
+
+        plusMinusHeader_label.anchorMin = new Vector2(0, 1);
+        plusMinusHeader_label.anchorMax = new Vector2(0, 1);
+        plusMinusHeader_label.pivot = new Vector2(0, 1);
+        plusMinusHeader_label.anchoredPosition = Vector2.zero;
+
+        plusMinusHeaderSize_y += plusMinusHeader_label.sizeDelta.y;
+        plusMinusHeader_space1.anchorMin = new Vector2(0, 1);
+        plusMinusHeader_space1.anchorMax = new Vector2(0, 1);
+        plusMinusHeader_space1.pivot = new Vector2(0, 1);
+        plusMinusHeader_space1.anchoredPosition = new Vector2(0, plusMinusHeaderSize_y * (-1));
+
+        plusMinusHeaderSize_y += plusMinusHeader_space1.sizeDelta.y;
+        plusMinusHeader_plus.anchorMin = new Vector2(0, 1);
+        plusMinusHeader_plus.anchorMax = new Vector2(0, 1);
+        plusMinusHeader_plus.pivot = new Vector2(0, 1);
+        plusMinusHeader_plus.anchoredPosition = new Vector2((plusMinusHeader.sizeDelta.x - plusMinusHeader_plus.sizeDelta.x) / 2, plusMinusHeaderSize_y * (-1));
+
+        plusMinusHeaderSize_y += plusMinusHeader_plus.sizeDelta.y;
+        plusMinusHeader_space2.anchorMin = new Vector2(0, 1);
+        plusMinusHeader_space2.anchorMax = new Vector2(0, 1);
+        plusMinusHeader_space2.pivot = new Vector2(0, 1);
+        plusMinusHeader_space2.anchoredPosition = new Vector2(0, plusMinusHeaderSize_y * (-1));
+
+        plusMinusHeaderSize_y += plusMinusHeader_space2.sizeDelta.y;
+        plusMinusHeader_count.anchorMin = new Vector2(0, 1);
+        plusMinusHeader_count.anchorMax = new Vector2(0, 1);
+        plusMinusHeader_count.pivot = new Vector2(0, 1);
+        plusMinusHeader_count.anchoredPosition = new Vector2(0, plusMinusHeaderSize_y * (-1));
+
+        plusMinusHeaderSize_y += plusMinusHeader_count.sizeDelta.y;
+        plusMinusHeader_space3.anchorMin = new Vector2(0, 1);
+        plusMinusHeader_space3.anchorMax = new Vector2(0, 1);
+        plusMinusHeader_space3.pivot = new Vector2(0, 1);
+        plusMinusHeader_space3.anchoredPosition = new Vector2(0, plusMinusHeaderSize_y * (-1));
+
+        plusMinusHeaderSize_y += plusMinusHeader_space3.sizeDelta.y;
+        plusMinusHeader_minus.anchorMin = new Vector2(0, 1);
+        plusMinusHeader_minus.anchorMax = new Vector2(0, 1);
+        plusMinusHeader_minus.pivot = new Vector2(0, 1);
+        plusMinusHeader_minus.anchoredPosition = new Vector2((plusMinusHeader.sizeDelta.x - plusMinusHeader_minus.sizeDelta.x) / 2, plusMinusHeaderSize_y * (-1));
+
+        plusMinusHeaderSize_y += plusMinusHeader_minus.sizeDelta.y;
+        plusMinusHeader_space4.anchorMin = new Vector2(0, 1);
+        plusMinusHeader_space4.anchorMax = new Vector2(0, 1);
+        plusMinusHeader_space4.pivot = new Vector2(0, 1);
+        plusMinusHeader_space4.anchoredPosition = new Vector2(0, plusMinusHeaderSize_y * (-1));
+
+        plusMinusHeaderSize_y += plusMinusHeader_space4.sizeDelta.y;
+        plusMinusHeader_label2.anchorMin = new Vector2(0, 1);
+        plusMinusHeader_label2.anchorMax = new Vector2(0, 1);
+        plusMinusHeader_label2.pivot = new Vector2(0, 1);
+        plusMinusHeader_label2.anchoredPosition = new Vector2(0, plusMinusHeaderSize_y * (-1));
     }
 }
