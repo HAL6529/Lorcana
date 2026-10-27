@@ -431,11 +431,6 @@ public class EditCardPanel : MonoBehaviour
         space2.sizeDelta = new Vector2(space2.sizeDelta.x * magnification_x, space2.sizeDelta.y * magnification_y);
         lores.sizeDelta = new Vector2(lores.sizeDelta.x * magnification_x, lores.sizeDelta.y * magnification_y);
 
-        /*for(int i = 0; i < lores_loreList.Count; i++)
-        {
-            lores_loreList[i].sizeDelta = new Vector2(lores_loreList[i].sizeDelta.x * magnification_x, lores_loreList[i].sizeDelta.y * magnification_y);
-        }*/
-
         rareHeader.sizeDelta = new Vector2(rareHeader.sizeDelta.x * magnification_x, rareHeader.sizeDelta.y * magnification_y);
         
         plusMinusHeader.sizeDelta = new Vector2(plusMinusHeader.sizeDelta.x * magnification_x, plusMinusHeader.sizeDelta.y * magnification_y);
@@ -471,10 +466,53 @@ public class EditCardPanel : MonoBehaviour
         image.pivot = new Vector2(0, 1);
         image.anchoredPosition = new Vector2((image_parent.sizeDelta.x - image.sizeDelta.x) / 2, (image_parent.sizeDelta.y - image.sizeDelta.y) / 2);
 
+        //==============================================================================================
+        //^‚ñ’† --‚±‚±‚©‚ç--
+        //==============================================================================================
         middle.anchorMin = new Vector2(0, 1);
         middle.anchorMax = new Vector2(0, 1);
         middle.pivot = new Vector2(0, 1);
         middle.anchoredPosition = new Vector2(image_parent.sizeDelta.x, 0);
+
+        float middleSize_y = 0;
+        inkHeader.anchorMin = new Vector2(0, 1);
+        inkHeader.anchorMax = new Vector2(0, 1);
+        inkHeader.pivot = new Vector2(0, 1);
+        inkHeader.anchoredPosition = Vector2.zero;
+
+        middleSize_y += inkHeader.sizeDelta.y;
+        cardNameHeader.anchorMin = new Vector2(0, 1);
+        cardNameHeader.anchorMax = new Vector2(0, 1);
+        cardNameHeader.pivot = new Vector2(0, 1);
+        cardNameHeader.anchoredPosition = new Vector2(0, middleSize_y * (-1));
+
+        middleSize_y += cardNameHeader.sizeDelta.y;
+        cardName2Header.anchorMin = new Vector2(0, 1);
+        cardName2Header.anchorMax = new Vector2(0, 1);
+        cardName2Header.pivot = new Vector2(0, 1);
+        cardName2Header.anchoredPosition = new Vector2(0, middleSize_y * (-1));
+
+        middleSize_y += cardName2Header.sizeDelta.y;
+        classHeader.anchorMin = new Vector2(0, 1);
+        classHeader.anchorMax = new Vector2(0, 1);
+        classHeader.pivot = new Vector2(0, 1);
+        classHeader.anchoredPosition = new Vector2(0, middleSize_y * (-1));
+
+        middleSize_y += classHeader.sizeDelta.y;
+        cardTextHeader.anchorMin = new Vector2(0, 1);
+        cardTextHeader.anchorMax = new Vector2(0, 1);
+        cardTextHeader.pivot = new Vector2(0, 1);
+        cardTextHeader.anchoredPosition = new Vector2(0, middleSize_y * (-1));
+
+        middleSize_y += cardTextHeader.sizeDelta.y;
+        rareHeader.anchorMin = new Vector2(0, 1);
+        rareHeader.anchorMax = new Vector2(0, 1);
+        rareHeader.pivot = new Vector2(0, 1);
+        rareHeader.anchoredPosition = new Vector2(0, middleSize_y * (-1));
+
+        //==============================================================================================
+        //^‚ñ’† --‚±‚±‚Ü‚Å--
+        //==============================================================================================
 
         plusMinusHeader.anchorMin = new Vector2(0, 1);
         plusMinusHeader.anchorMax = new Vector2(0, 1);
