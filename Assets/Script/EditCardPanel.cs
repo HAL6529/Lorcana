@@ -535,6 +535,30 @@ public class EditCardPanel : MonoBehaviour
         cardTextHeader_middle.pivot = new Vector2(0, 1);
         cardTextHeader_middle.anchoredPosition = Vector2.zero;
 
+        float cardTextHeader_middleSize_y = 0;
+        powerToughness.anchorMin = new Vector2(0, 1);
+        powerToughness.anchorMax = new Vector2(0, 1);
+        powerToughness.pivot = new Vector2(0, 1);
+        powerToughness.anchoredPosition = Vector2.zero;
+
+        cardTextHeader_middleSize_y += powerToughness.sizeDelta.y;
+        titleHeader.anchorMin = new Vector2(0, 1);
+        titleHeader.anchorMax = new Vector2(0, 1);
+        titleHeader.pivot = new Vector2(0, 1);
+        titleHeader.anchoredPosition = new Vector2(0, cardTextHeader_middleSize_y * (-1));
+
+        cardTextHeader_middleSize_y += titleHeader.sizeDelta.y;
+        space1.anchorMin = new Vector2(0, 1);
+        space1.anchorMax = new Vector2(0, 1);
+        space1.pivot = new Vector2(0, 1);
+        space1.anchoredPosition = new Vector2(0, cardTextHeader_middleSize_y * (-1));
+
+        cardTextHeader_middleSize_y += space1.sizeDelta.y;
+        space2.anchorMin = new Vector2(0, 1);
+        space2.anchorMax = new Vector2(0, 1);
+        space2.pivot = new Vector2(0, 1);
+        space2.anchoredPosition = new Vector2(0, cardTextHeader_middleSize_y * (-1));
+
         lores.anchorMin = new Vector2(0, 1);
         lores.anchorMax = new Vector2(0, 1);
         lores.pivot = new Vector2(0, 1);
