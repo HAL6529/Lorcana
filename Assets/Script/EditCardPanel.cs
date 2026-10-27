@@ -138,33 +138,30 @@ public class EditCardPanel : MonoBehaviour
     private string EditClass(List<EnumController.Class> paramater)
     {
         string temp = "";
-        
-        if(m_CardInfo.GetType() == EnumController.Type.Song)
-        {
-            temp = "アクション・歌";
-            return temp;
-        }
-        else if(m_CardInfo.GetType() == EnumController.Type.Action)
-        {
-            temp = "アクション";
-            return temp;
-        }
-        else if (m_CardInfo.GetType() == EnumController.Type.Item)
-        {
-            temp = "アイテム";
-            return temp;
-        }
 
-        for (int i = 0; i < paramater.Count; i++)
+        switch (m_CardInfo.GetType())
         {
-            if (i > 0)
-            {
-                temp += ", ";
-            }
+            case EnumController.Type.Song:
+                temp = "アクション・歌";
+                return temp;
+            case EnumController.Type.Action:
+                temp = "アクション";
+                return temp;
+            case EnumController.Type.Item:
+                temp = "アイテム";
+                return temp;
+            default:
+                for (int i = 0; i < paramater.Count; i++)
+                {
+                    if (i > 0)
+                    {
+                        temp += ", ";
+                    }
 
-            temp += m_ExtendUtil.ConvertToStringFromClass(paramater[i]);
+                    temp += m_ExtendUtil.ConvertToStringFromClass(paramater[i]);
+                }
+                return temp;
         }
-        return temp;
     }
 
     public void onMinusBtn()
