@@ -466,6 +466,11 @@ public class EditCardPanel : MonoBehaviour
         image_parent.pivot = new Vector2(0, 1);
         image_parent.anchoredPosition = Vector2.zero;
 
+        image.anchorMin = new Vector2(0, 1);
+        image.anchorMax = new Vector2(0, 1);
+        image.pivot = new Vector2(0, 1);
+        image.anchoredPosition = new Vector2((image_parent.sizeDelta.x - image.sizeDelta.x) / 2, (image_parent.sizeDelta.y - image.sizeDelta.y) / 2);
+
         middle.anchorMin = new Vector2(0, 1);
         middle.anchorMax = new Vector2(0, 1);
         middle.pivot = new Vector2(0, 1);
