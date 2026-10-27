@@ -22,13 +22,14 @@ public class EditCardPanel : MonoBehaviour
     public Text toughness;
     public Text count;
     public Image rareSprite;
+    public Image i_lore;
     public CardInfo m_CardInfo;
     public Button plusBtn;
     public Button minusBtn;
 
     public int cardCount;
 
-    public List<GameObject> loreList;
+    //public List<GameObject> loreList;
 
     public RectTransform parent;
     public RectTransform image_parent;
@@ -56,7 +57,8 @@ public class EditCardPanel : MonoBehaviour
     public RectTransform space1;
     public RectTransform space2;
     public RectTransform lores;
-    public List<RectTransform> lores_loreList = new List<RectTransform>();
+    public RectTransform lores_lore;
+    //public List<RectTransform> lores_loreList = new List<RectTransform>();
     public RectTransform rareHeader;
     public RectTransform rareHeader_rare;
     public RectTransform plusMinusHeader;
@@ -74,6 +76,11 @@ public class EditCardPanel : MonoBehaviour
 
     public EditCardPanelManager m_EditCardPanelManager;
     public PanelPicture m_PanelPicture;
+
+    public Sprite Lore1;
+    public Sprite Lore2;
+    public Sprite Lore3;
+    public Sprite Lore4;
 
     public void Start()
     {
@@ -198,7 +205,30 @@ public class EditCardPanel : MonoBehaviour
 
     private void UpdateLore()
     {
-        if (m_CardInfo.GetLore() < 5)
+        switch (m_CardInfo.GetLore())
+        {
+            case 1:
+                i_lore.color = new Color(1, 1, 1, 1);
+                i_lore.sprite = Lore1;
+                return;
+            case 2:
+                i_lore.color = new Color(1, 1, 1, 1);
+                i_lore.sprite = Lore2;
+                return;
+            case 3:
+                i_lore.color = new Color(1, 1, 1, 1);
+                i_lore.sprite = Lore3;
+                return;
+            case 4:
+                i_lore.color = new Color(1, 1, 1, 1);
+                i_lore.sprite = Lore4;
+                return;
+            default:
+                i_lore.color = new Color(1, 1, 1, 0);
+                return;
+        }
+
+        /*if (m_CardInfo.GetLore() < 5)
         {
             for(int i = 0; i < 4; i++)
             {
@@ -218,7 +248,7 @@ public class EditCardPanel : MonoBehaviour
             {
                 loreList[i].SetActive(false);
             }
-        }
+        }*/
     }
 
     private void UpdatePlusMinusBtn()
@@ -404,10 +434,10 @@ public class EditCardPanel : MonoBehaviour
         space2.sizeDelta = new Vector2(space2.sizeDelta.x * magnification_x, space2.sizeDelta.y * magnification_y);
         lores.sizeDelta = new Vector2(lores.sizeDelta.x * magnification_x, lores.sizeDelta.y * magnification_y);
 
-        for(int i = 0; i < lores_loreList.Count; i++)
+        /*for(int i = 0; i < lores_loreList.Count; i++)
         {
             lores_loreList[i].sizeDelta = new Vector2(lores_loreList[i].sizeDelta.x * magnification_x, lores_loreList[i].sizeDelta.y * magnification_y);
-        }
+        }*/
 
         rareHeader.sizeDelta = new Vector2(rareHeader.sizeDelta.x * magnification_x, rareHeader.sizeDelta.y * magnification_y);
         
@@ -430,6 +460,7 @@ public class EditCardPanel : MonoBehaviour
         }
         image.sizeDelta = new Vector2(image.sizeDelta.x * magnification, image.sizeDelta.y * magnification);
         rareHeader_rare.sizeDelta = new Vector2(rareHeader_rare.sizeDelta.x * magnification, rareHeader_rare.sizeDelta.y * magnification);
+        lores_lore.sizeDelta = new Vector2(lores_lore.sizeDelta.x * magnification, lores_lore.sizeDelta.y * magnification);
         plusMinusHeader_plus.sizeDelta = new Vector2(plusMinusHeader_plus.sizeDelta.x * magnification, plusMinusHeader_plus.sizeDelta.y * magnification);
         plusMinusHeader_minus.sizeDelta = new Vector2(plusMinusHeader_minus.sizeDelta.x * magnification, plusMinusHeader_minus.sizeDelta.y * magnification);
     }
