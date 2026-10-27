@@ -463,5 +463,20 @@ public class EditCardPanel : MonoBehaviour
         lores_lore.sizeDelta = new Vector2(lores_lore.sizeDelta.x * magnification, lores_lore.sizeDelta.y * magnification);
         plusMinusHeader_plus.sizeDelta = new Vector2(plusMinusHeader_plus.sizeDelta.x * magnification, plusMinusHeader_plus.sizeDelta.y * magnification);
         plusMinusHeader_minus.sizeDelta = new Vector2(plusMinusHeader_minus.sizeDelta.x * magnification, plusMinusHeader_minus.sizeDelta.y * magnification);
+        
+        image_parent.anchorMin = new Vector2(0, 1);
+        image_parent.anchorMax = new Vector2(0, 1);
+        image_parent.pivot = new Vector2(0, 1);
+        image_parent.anchoredPosition = Vector2.zero;
+
+        middle.anchorMin = new Vector2(0, 1);
+        middle.anchorMax = new Vector2(0, 1);
+        middle.pivot = new Vector2(0, 1);
+        middle.anchoredPosition = new Vector2(image_parent.sizeDelta.x, 0);
+
+        plusMinusHeader.anchorMin = new Vector2(0, 1);
+        plusMinusHeader.anchorMax = new Vector2(0, 1);
+        plusMinusHeader.pivot = new Vector2(0, 1);
+        plusMinusHeader.anchoredPosition = new Vector2(image_parent.sizeDelta.x + middle.sizeDelta.x, 0);
     }
 }
