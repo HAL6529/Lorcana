@@ -62,5 +62,41 @@ public class Menu : MonoBehaviour
         DisplayBtn.sizeDelta = new Vector2(DisplayBtn.sizeDelta.x * magnification_x, DisplayBtn.sizeDelta.y * magnification_y);
         space.sizeDelta = new Vector2(space.sizeDelta.x * magnification_x, space.sizeDelta.y * magnification_y);
         MenuBtn.sizeDelta = new Vector2(MenuBtn.sizeDelta.x * magnification_x, MenuBtn.sizeDelta.y * magnification_y);
+
+        float Menu_Y = 0;
+        CloseBtn.anchorMin = new Vector2(0, 1);
+        CloseBtn.anchorMax = new Vector2(0, 1);
+        CloseBtn.pivot = new Vector2(0, 1);
+        CloseBtn.anchoredPosition = Vector2.zero;
+
+        Menu_Y += CloseBtn.sizeDelta.y + 10;
+        NewSaveBtn.anchorMin = new Vector2(0, 1);
+        NewSaveBtn.anchorMax = new Vector2(0, 1);
+        NewSaveBtn.pivot = new Vector2(0, 1);
+        NewSaveBtn.anchoredPosition = new Vector2(0, Menu_Y * (-1));
+
+        Menu_Y += NewSaveBtn.sizeDelta.y + 10;
+        SaveBtn.anchorMin = new Vector2(0, 1);
+        SaveBtn.anchorMax = new Vector2(0, 1);
+        SaveBtn.pivot = new Vector2(0, 1);
+        SaveBtn.anchoredPosition = new Vector2(0, Menu_Y * (-1));
+
+        Menu_Y += SaveBtn.sizeDelta.y + 10;
+        DisplayBtn.anchorMin = new Vector2(0, 1);
+        DisplayBtn.anchorMax = new Vector2(0, 1);
+        DisplayBtn.pivot = new Vector2(0, 1);
+        DisplayBtn.anchoredPosition = new Vector2(0, Menu_Y * (-1));
+
+        Menu_Y += DisplayBtn.sizeDelta.y + 10;
+        space.anchorMin = new Vector2(0, 1);
+        space.anchorMax = new Vector2(0, 1);
+        space.pivot = new Vector2(0, 1);
+        space.anchoredPosition = new Vector2(0, Menu_Y * (-1));
+
+        Menu_Y += space.sizeDelta.y + 10;
+        MenuBtn.anchorMin = new Vector2(0, 1);
+        MenuBtn.anchorMax = new Vector2(0, 1);
+        MenuBtn.pivot = new Vector2(0, 1);
+        MenuBtn.anchoredPosition = new Vector2(0, Menu_Y * (-1));
     }
 }

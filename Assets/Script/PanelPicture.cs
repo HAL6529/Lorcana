@@ -86,5 +86,27 @@ public class PanelPicture : MonoBehaviour
         Button_Favorite.sizeDelta = new Vector2(Button_Favorite.sizeDelta.x * magnification, Button_Favorite.sizeDelta.y * magnification);
         Button_Close.sizeDelta = new Vector2(Button_Close.sizeDelta.x * magnification, Button_Close.sizeDelta.y * magnification);
         Image.sizeDelta = new Vector2(Image.sizeDelta.x * magnification, Image.sizeDelta.y * magnification);
+
+        float ButtonHeader_Y = (Parent.sizeDelta.y - (Button_Header.sizeDelta.y + Image.sizeDelta.y)) / 2;
+        Button_Header.anchorMin = new Vector2(0, 1);
+        Button_Header.anchorMax = new Vector2(0, 1);
+        Button_Header.pivot = new Vector2(0, 1);
+        Button_Header.anchoredPosition = new Vector2(0, ButtonHeader_Y * (-1));
+
+        ButtonHeader_Y += Button_Header.sizeDelta.y;
+        Image.anchorMin = new Vector2(0, 1);
+        Image.anchorMax = new Vector2(0, 1);
+        Image.pivot = new Vector2(0, 1);
+        Image.anchoredPosition = new Vector2((Parent.sizeDelta.x - Image.sizeDelta.x) / 2, ButtonHeader_Y * (-1));
+
+        Button_Close.anchorMin = new Vector2(1, 1);
+        Button_Close.anchorMax = new Vector2(1, 1);
+        Button_Close.pivot = new Vector2(1, 1);
+        Button_Close.anchoredPosition = Vector2.zero;
+
+        Button_Favorite.anchorMin = new Vector2(1, 1);
+        Button_Favorite.anchorMax = new Vector2(1, 1);
+        Button_Favorite.pivot = new Vector2(1, 1);
+        Button_Favorite.anchoredPosition = new Vector2(Button_Close.sizeDelta.x * (-1), 0);
     }
 }

@@ -96,5 +96,35 @@ public class DeckBuild : MonoBehaviour
         header2_Space.anchorMax = new Vector2(0, 1);
         header2_Space.pivot = new Vector2(0, 1);
         header2_Space.anchoredPosition = new Vector2(0, header2_parent.sizeDelta.y * (-1));
+
+        float Header2_SizeDelta_X = 0;
+        header2_sortBtn.anchorMin = new Vector2(0, 1);
+        header2_sortBtn.anchorMax = new Vector2(0, 1);
+        header2_sortBtn.pivot = new Vector2(0, 1);
+        header2_sortBtn.anchoredPosition = Vector2.zero;
+
+        Header2_SizeDelta_X += header2_sortBtn.sizeDelta.x;
+        header2_space1.anchorMin = new Vector2(0, 1);
+        header2_space1.anchorMax = new Vector2(0, 1);
+        header2_space1.pivot = new Vector2(0, 1);
+        header2_space1.anchoredPosition = new Vector2(Header2_SizeDelta_X, 0);
+
+        Header2_SizeDelta_X += header2_space1.sizeDelta.x;
+        header2_switchDeckBtn.anchorMin = new Vector2(0, 1);
+        header2_switchDeckBtn.anchorMax = new Vector2(0, 1);
+        header2_switchDeckBtn.pivot = new Vector2(0, 1);
+        header2_switchDeckBtn.anchoredPosition = new Vector2(Header2_SizeDelta_X, 0);
+
+        Header2_SizeDelta_X += header2_switchDeckBtn.sizeDelta.x;
+        header2_space2.anchorMin = new Vector2(0, 1);
+        header2_space2.anchorMax = new Vector2(0, 1);
+        header2_space2.pivot = new Vector2(0, 1);
+        header2_space2.anchoredPosition = new Vector2(Header2_SizeDelta_X, 0);
+
+        Header2_SizeDelta_X += header2_space2.sizeDelta.x;
+        header2_searchBtn.anchorMin = new Vector2(0, 1);
+        header2_searchBtn.anchorMax = new Vector2(0, 1);
+        header2_searchBtn.pivot = new Vector2(0, 1);
+        header2_searchBtn.anchoredPosition = new Vector2(Header2_SizeDelta_X, 0);
     }
 }
