@@ -981,6 +981,11 @@ public class SearchClass : MonoBehaviour
         closeBtn_Header.pivot = new Vector2(0, 1);
         closeBtn_Header.anchoredPosition = Vector2.zero;
 
+        closeBtn_Header_closeBtn.anchorMin = new Vector2(1, 1);
+        closeBtn_Header_closeBtn.anchorMax = new Vector2(1, 1);
+        closeBtn_Header_closeBtn.pivot = new Vector2(1, 1);
+        closeBtn_Header_closeBtn.anchoredPosition = Vector2.zero;
+
         Search_Y += closeBtn_Header.sizeDelta.y;
         space1.anchorMin = new Vector2(0, 1);
         space1.anchorMax = new Vector2(0, 1);
@@ -992,6 +997,16 @@ public class SearchClass : MonoBehaviour
         colorExplanation_Header.anchorMax = new Vector2(0, 1);
         colorExplanation_Header.pivot = new Vector2(0, 1);
         colorExplanation_Header.anchoredPosition = new Vector2(0, Search_Y * (-1));
+
+        colorExplanation_Header_text1.anchorMin = new Vector2(0, 1);
+        colorExplanation_Header_text1.anchorMax = new Vector2(0, 1);
+        colorExplanation_Header_text1.pivot = new Vector2(0, 1);
+        colorExplanation_Header_text1.anchoredPosition = new Vector2((colorExplanation_Header.sizeDelta.x - colorExplanation_Header_text1.sizeDelta.x) / 2, 0);
+
+        colorExplanation_Header_text2.anchorMin = new Vector2(0, 1);
+        colorExplanation_Header_text2.anchorMax = new Vector2(0, 1);
+        colorExplanation_Header_text2.pivot = new Vector2(0, 1);
+        colorExplanation_Header_text2.anchoredPosition = new Vector2((colorExplanation_Header.sizeDelta.x - colorExplanation_Header_text2.sizeDelta.x) / 2, colorExplanation_Header_text1.sizeDelta.y * (-1));
 
         Search_Y += colorExplanation_Header.sizeDelta.y;
         colors_Header.anchorMin = new Vector2(0, 1);
@@ -1011,6 +1026,16 @@ public class SearchClass : MonoBehaviour
         typeExplanation_Header.pivot = new Vector2(0, 1);
         typeExplanation_Header.anchoredPosition = new Vector2(0, Search_Y * (-1));
 
+        typeExplanation_Header_text1.anchorMin = new Vector2(0, 1);
+        typeExplanation_Header_text1.anchorMax = new Vector2(0, 1);
+        typeExplanation_Header_text1.pivot = new Vector2(0, 1);
+        typeExplanation_Header_text1.anchoredPosition = new Vector2((typeExplanation_Header.sizeDelta.x - typeExplanation_Header_text1.sizeDelta.x) / 2, 0);
+
+        typeExplanation_Header_text2.anchorMin = new Vector2(0, 1);
+        typeExplanation_Header_text2.anchorMax = new Vector2(0, 1);
+        typeExplanation_Header_text2.pivot = new Vector2(0, 1);
+        typeExplanation_Header_text2.anchoredPosition = new Vector2((typeExplanation_Header.sizeDelta.x - typeExplanation_Header_text2.sizeDelta.x) / 2, typeExplanation_Header_text1.sizeDelta.y * (-1));
+
         Search_Y += typeExplanation_Header.sizeDelta.y;
         type_Header.anchorMin = new Vector2(0, 1);
         type_Header.anchorMax = new Vector2(0, 1);
@@ -1028,6 +1053,16 @@ public class SearchClass : MonoBehaviour
         keywordExplanation_header.anchorMax = new Vector2(0, 1);
         keywordExplanation_header.pivot = new Vector2(0, 1);
         keywordExplanation_header.anchoredPosition = new Vector2(0, Search_Y * (-1));
+
+        keywordExplanation_header_text1.anchorMin = new Vector2(0, 1);
+        keywordExplanation_header_text1.anchorMax = new Vector2(0, 1);
+        keywordExplanation_header_text1.pivot = new Vector2(0, 1);
+        keywordExplanation_header_text1.anchoredPosition = new Vector2((keywordExplanation_header.sizeDelta.x - keywordExplanation_header_text1.sizeDelta.x) / 2, 0);
+
+        keywordExplanation_header_text2.anchorMin = new Vector2(0, 1);
+        keywordExplanation_header_text2.anchorMax = new Vector2(0, 1);
+        keywordExplanation_header_text2.pivot = new Vector2(0, 1);
+        keywordExplanation_header_text2.anchoredPosition = new Vector2((keywordExplanation_header.sizeDelta.x - keywordExplanation_header_text2.sizeDelta.x) / 2, keywordExplanation_header_text1.sizeDelta.y * (-1));
 
         Search_Y += keywordExplanation_header.sizeDelta.y;
         keyword_header.anchorMin = new Vector2(0, 1);

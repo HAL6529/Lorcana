@@ -10613,7 +10613,6 @@ GameObject:
   m_Component:
   - component: {fileID: 88741906}
   - component: {fileID: 88741908}
-  - component: {fileID: 88741907}
   m_Layer: 0
   m_Name: TypeExplanation
   m_TagString: Untagged
@@ -10643,32 +10642,6 @@ RectTransform:
   m_AnchoredPosition: {x: 445, y: -389}
   m_SizeDelta: {x: 890, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &88741907
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 88741905}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Padding:
-    m_Left: 0
-    m_Right: 0
-    m_Top: 0
-    m_Bottom: 0
-  m_ChildAlignment: 0
-  m_Spacing: 0
-  m_ChildForceExpandWidth: 0
-  m_ChildForceExpandHeight: 1
-  m_ChildControlWidth: 0
-  m_ChildControlHeight: 0
-  m_ChildScaleWidth: 0
-  m_ChildScaleHeight: 0
-  m_ReverseArrangement: 0
 --- !u!222 &88741908
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -52909,7 +52882,6 @@ GameObject:
   m_Component:
   - component: {fileID: 471502069}
   - component: {fileID: 471502071}
-  - component: {fileID: 471502070}
   m_Layer: 0
   m_Name: ColorExplanation
   m_TagString: Untagged
@@ -52939,32 +52911,6 @@ RectTransform:
   m_AnchoredPosition: {x: 445, y: -165}
   m_SizeDelta: {x: 890, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &471502070
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 471502068}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Padding:
-    m_Left: 0
-    m_Right: 0
-    m_Top: 0
-    m_Bottom: 0
-  m_ChildAlignment: 0
-  m_Spacing: 0
-  m_ChildForceExpandWidth: 0
-  m_ChildForceExpandHeight: 1
-  m_ChildControlWidth: 0
-  m_ChildControlHeight: 0
-  m_ChildScaleWidth: 0
-  m_ChildScaleHeight: 0
-  m_ReverseArrangement: 0
 --- !u!222 &471502071
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -169568,7 +169514,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1676963187}
-  - component: {fileID: 1676963189}
   - component: {fileID: 1676963188}
   m_Layer: 0
   m_Name: CloseBtn
@@ -169606,32 +169551,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1676963186}
   m_CullTransparentMesh: 1
---- !u!114 &1676963189
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1676963186}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Padding:
-    m_Left: 0
-    m_Right: 0
-    m_Top: 0
-    m_Bottom: 0
-  m_ChildAlignment: 2
-  m_Spacing: 0
-  m_ChildForceExpandWidth: 0
-  m_ChildForceExpandHeight: 0
-  m_ChildControlWidth: 0
-  m_ChildControlHeight: 0
-  m_ChildScaleWidth: 0
-  m_ChildScaleHeight: 0
-  m_ReverseArrangement: 0
 --- !u!1 &1678352279 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4730730890806818434, guid: e3a62bcddc21d5c47a8792e8201645ca, type: 3}
