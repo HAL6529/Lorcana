@@ -92,6 +92,6 @@ public class Menu_Menu : MonoBehaviour
     {
         SaveData m_SaveData = new SaveData();
         SaveDataStatic m_SaveDataStatic = new SaveDataStatic(m_SaveData);
-        SceneManager.LoadScene("DeckBuild");
+        SceneManager.LoadSceneAsync("DeckBuild");
     }
 }
