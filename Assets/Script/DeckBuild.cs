@@ -66,5 +66,35 @@ public class DeckBuild : MonoBehaviour
         m_ViewMode.UpdateImage(magnification_x, magnification_y);
         //m_EditCardPanelManager.UpdateImage(magnification_x, magnification_y);
         m_SearchClass.UpdateImage(magnification_x, magnification_y);
+
+        header_parent.anchorMin = new Vector2(0, 1);
+        header_parent.anchorMax = new Vector2(0, 1);
+        header_parent.pivot = new Vector2(0, 1);
+        header_parent.anchoredPosition = Vector2.zero;
+
+        ScrollView_Parent.anchorMin = new Vector2(0, 1);
+        ScrollView_Parent.anchorMax = new Vector2(0, 1);
+        ScrollView_Parent.pivot = new Vector2(0, 1);
+        ScrollView_Parent.anchoredPosition = new Vector2(0, header_parent.sizeDelta.y * (-1));
+
+        bottom.anchorMin = new Vector2(0, 1);
+        bottom.anchorMax = new Vector2(0, 1);
+        bottom.pivot = new Vector2(0, 1);
+        bottom.anchoredPosition = new Vector2(0, (header_parent.sizeDelta.y + ScrollView_Parent.sizeDelta.y) * (-1));
+
+        bottom_MenuBtn.anchorMin = new Vector2(0, 1);
+        bottom_MenuBtn.anchorMax = new Vector2(0, 1);
+        bottom_MenuBtn.pivot = new Vector2(0, 1);
+        bottom_MenuBtn.anchoredPosition = new Vector2((bottom.sizeDelta.x - bottom_MenuBtn.sizeDelta.x) / 2, 0);
+
+        header2_parent.anchorMin = new Vector2(0, 1);
+        header2_parent.anchorMax = new Vector2(0, 1);
+        header2_parent.pivot = new Vector2(0, 1);
+        header2_parent.anchoredPosition = Vector2.zero;
+
+        header2_Space.anchorMin = new Vector2(0, 1);
+        header2_Space.anchorMax = new Vector2(0, 1);
+        header2_Space.pivot = new Vector2(0, 1);
+        header2_Space.anchoredPosition = new Vector2(0, header2_parent.sizeDelta.y * (-1));
     }
 }
