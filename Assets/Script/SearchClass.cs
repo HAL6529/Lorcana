@@ -974,5 +974,119 @@ public class SearchClass : MonoBehaviour
         ability_header_right_locationbtn.sizeDelta = new Vector2(ability_header_right_locationbtn.sizeDelta.x * magnification, ability_header_right_locationbtn.sizeDelta.y * magnification);
         searchBtn.sizeDelta = new Vector2(searchBtn.sizeDelta.x * magnification, searchBtn.sizeDelta.y * magnification);
         searchBtn_text.sizeDelta = new Vector2(searchBtn_text.sizeDelta.x * magnification, searchBtn_text.sizeDelta.y * magnification);
+
+        float Search_Y = 0;
+        closeBtn_Header.anchorMin = new Vector2(0, 1);
+        closeBtn_Header.anchorMax = new Vector2(0, 1);
+        closeBtn_Header.pivot = new Vector2(0, 1);
+        closeBtn_Header.anchoredPosition = Vector2.zero;
+
+        Search_Y += closeBtn_Header.sizeDelta.y;
+        space1.anchorMin = new Vector2(0, 1);
+        space1.anchorMax = new Vector2(0, 1);
+        space1.pivot = new Vector2(0, 1);
+        space1.anchoredPosition = new Vector2(0, Search_Y * (-1));
+
+        Search_Y += space1.sizeDelta.y;
+        colorExplanation_Header.anchorMin = new Vector2(0, 1);
+        colorExplanation_Header.anchorMax = new Vector2(0, 1);
+        colorExplanation_Header.pivot = new Vector2(0, 1);
+        colorExplanation_Header.anchoredPosition = new Vector2(0, Search_Y * (-1));
+
+        Search_Y += colorExplanation_Header.sizeDelta.y;
+        colors_Header.anchorMin = new Vector2(0, 1);
+        colors_Header.anchorMax = new Vector2(0, 1);
+        colors_Header.pivot = new Vector2(0, 1);
+        colors_Header.anchoredPosition = new Vector2(0, Search_Y * (-1));
+
+        Search_Y += colors_Header.sizeDelta.y;
+        space2.anchorMin = new Vector2(0, 1);
+        space2.anchorMax = new Vector2(0, 1);
+        space2.pivot = new Vector2(0, 1);
+        space2.anchoredPosition = new Vector2(0, Search_Y * (-1));
+
+        Search_Y += space2.sizeDelta.y;
+        typeExplanation_Header.anchorMin = new Vector2(0, 1);
+        typeExplanation_Header.anchorMax = new Vector2(0, 1);
+        typeExplanation_Header.pivot = new Vector2(0, 1);
+        typeExplanation_Header.anchoredPosition = new Vector2(0, Search_Y * (-1));
+
+        Search_Y += typeExplanation_Header.sizeDelta.y;
+        type_Header.anchorMin = new Vector2(0, 1);
+        type_Header.anchorMax = new Vector2(0, 1);
+        type_Header.pivot = new Vector2(0, 1);
+        type_Header.anchoredPosition = new Vector2(0, Search_Y * (-1));
+
+        Search_Y += type_Header.sizeDelta.y;
+        space3.anchorMin = new Vector2(0, 1);
+        space3.anchorMax = new Vector2(0, 1);
+        space3.pivot = new Vector2(0, 1);
+        space3.anchoredPosition = new Vector2(0, Search_Y * (-1));
+
+        Search_Y += space3.sizeDelta.y;
+        keywordExplanation_header.anchorMin = new Vector2(0, 1);
+        keywordExplanation_header.anchorMax = new Vector2(0, 1);
+        keywordExplanation_header.pivot = new Vector2(0, 1);
+        keywordExplanation_header.anchoredPosition = new Vector2(0, Search_Y * (-1));
+
+        Search_Y += keywordExplanation_header.sizeDelta.y;
+        keyword_header.anchorMin = new Vector2(0, 1);
+        keyword_header.anchorMax = new Vector2(0, 1);
+        keyword_header.pivot = new Vector2(0, 1);
+        keyword_header.anchoredPosition = new Vector2(0, Search_Y * (-1));
+
+        Search_Y += keyword_header.sizeDelta.y;
+        space4.anchorMin = new Vector2(0, 1);
+        space4.anchorMax = new Vector2(0, 1);
+        space4.pivot = new Vector2(0, 1);
+        space4.anchoredPosition = new Vector2(0, Search_Y * (-1));
+
+        Search_Y += space4.sizeDelta.y;
+        abilityExplanation_header.anchorMin = new Vector2(0, 1);
+        abilityExplanation_header.anchorMax = new Vector2(0, 1);
+        abilityExplanation_header.pivot = new Vector2(0, 1);
+        abilityExplanation_header.anchoredPosition = new Vector2(0, Search_Y * (-1));
+
+        Search_Y += abilityExplanation_header.sizeDelta.y;
+        ability_header.anchorMin = new Vector2(0, 1);
+        ability_header.anchorMax = new Vector2(0, 1);
+        ability_header.pivot = new Vector2(0, 1);
+        ability_header.anchoredPosition = new Vector2(0, Search_Y * (-1));
+
+        Search_Y += ability_header.sizeDelta.y;
+        space5.anchorMin = new Vector2(0, 1);
+        space5.anchorMax = new Vector2(0, 1);
+        space5.pivot = new Vector2(0, 1);
+        space5.anchoredPosition = new Vector2(0, Search_Y * (-1));
+
+        Search_Y += space5.sizeDelta.y;
+        titleExplanation_header.anchorMin = new Vector2(0, 1);
+        titleExplanation_header.anchorMax = new Vector2(0, 1);
+        titleExplanation_header.pivot = new Vector2(0, 1);
+        titleExplanation_header.anchoredPosition = new Vector2(0, Search_Y * (-1));
+
+        Search_Y += titleExplanation_header.sizeDelta.y;
+        title_header.anchorMin = new Vector2(0, 1);
+        title_header.anchorMax = new Vector2(0, 1);
+        title_header.pivot = new Vector2(0, 1);
+        title_header.anchoredPosition = new Vector2(0, Search_Y * (-1));
+
+        Search_Y += title_header.sizeDelta.y;
+        space6.anchorMin = new Vector2(0, 1);
+        space6.anchorMax = new Vector2(0, 1);
+        space6.pivot = new Vector2(0, 1);
+        space6.anchoredPosition = new Vector2(0, Search_Y * (-1));
+
+        Search_Y += space6.sizeDelta.y;
+        searchBtn_header.anchorMin = new Vector2(0, 1);
+        searchBtn_header.anchorMax = new Vector2(0, 1);
+        searchBtn_header.pivot = new Vector2(0, 1);
+        searchBtn_header.anchoredPosition = new Vector2(0, Search_Y * (-1));
+
+        Search_Y += searchBtn_header.sizeDelta.y;
+        searchReset.anchorMin = new Vector2(0, 1);
+        searchReset.anchorMax = new Vector2(0, 1);
+        searchReset.pivot = new Vector2(0, 1);
+        searchReset.anchoredPosition = new Vector2(0, Search_Y * (-1));
     }
 }
