@@ -28,6 +28,7 @@ public class EditCardPanel : MonoBehaviour
     public Button minusBtn;
 
     public int cardCount;
+    public int index;
 
     public RectTransform parent;
     public RectTransform image_parent;
@@ -81,7 +82,7 @@ public class EditCardPanel : MonoBehaviour
 
     public void Start()
     {
-        SetEditCardPanel(m_CardInfo, 0);
+        SetEditCardPanel(m_CardInfo, 0, 0, true);
         m_EditCardPanelManager.CheckStandby();
     }
 
@@ -109,8 +110,18 @@ public class EditCardPanel : MonoBehaviour
         }
     }
 
-    public void SetEditCardPanel(CardInfo m_CardInfo, int m_count)
+    public void SetEditCardPanel(CardInfo m_CardInfo, int m_count, int index, bool isDisplay)
     {
+        this.index = index;
+        if (!isDisplay)
+        {
+            SwitchActive(false);
+            return;
+        }
+        else
+        {
+            SwitchActive(true);
+        }
         this.m_CardInfo = m_CardInfo;
         m_sprite.sprite = m_CardInfo.GetSprite();
         inkCost.text = m_CardInfo.GetInkCost().ToString();

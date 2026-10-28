@@ -15,15 +15,60 @@ public class EditCardPanelManager : MonoBehaviour
 
     private class EditCardPanelTemp
     {
-        public CardInfo m_CardInfo;
-        public int cardCount;
+        private bool isSerachHit;
+        private CardInfo m_CardInfo;
+        private int cardCount;
+        private int index;
 
         public EditCardPanelTemp(CardInfo m_CardInfo, int cardCount)
         {
+            this.isSerachHit = true;
             this.m_CardInfo = m_CardInfo;
             this.cardCount = cardCount;
+            this.index = 0;
+        }
+
+        public int GetCardCount() 
+        {
+            return cardCount;
+        }
+
+        public CardInfo GetCardInfo()
+        {
+            return m_CardInfo;
+        }
+
+        public bool GetIsSerachHit()
+        {
+            return isSerachHit;
+        }
+
+        public int GetIndex()
+        {
+            return index;
+        }
+
+        public void SetCardCount(int paramater)
+        {
+            cardCount = paramater;
+        }
+
+        public void SetCardInfo(CardInfo paramater)
+        {
+            m_CardInfo = paramater;
+        }
+
+        public void SetIsSerachHit(bool paramater)
+        {
+            isSerachHit = paramater;
+        }
+
+        public void SetIndex(int paramater)
+        {
+            index = paramater;
         }
     }
+
     public RectTransform parent;
 
     public SaveDataStatic m_SaveDataStatic = new SaveDataStatic();
@@ -37,6 +82,7 @@ public class EditCardPanelManager : MonoBehaviour
     public List<EditCardPanel> m_EditCardPanelList_RiseOfTheFloodBorn = new List<EditCardPanel>();
     private List<EditCardPanel> m_EditCardPanelList = new List<EditCardPanel>();
     public List<CardInfo> DeckList = new List<CardInfo>();
+    private List<EditCardPanelTemp> EditCardPanelTempList = new List<EditCardPanelTemp>();
 
     public Sprite Common;
     public Sprite UnCommon;
@@ -64,6 +110,8 @@ public class EditCardPanelManager : MonoBehaviour
     private int standbyCnt = 0;
 
     public SearchFilterClass m_SearchFilterClass;
+    public List<RectTransform> rt_EditCardPanelList = new List<RectTransform>();
+    public RectTransform rt_content;
     public RectTransform CanvasRectTransform;
 
     void Start()
@@ -74,6 +122,12 @@ public class EditCardPanelManager : MonoBehaviour
         for(int i = 0; i < m_CardInfo_RiseOfTheFloodBorn.Count; i++)
         {
             m_CardInfoList.Add(m_CardInfo_RiseOfTheFloodBorn[i]);
+        }
+
+        for(int i = 0; i < m_CardInfoList.Count; i++)
+        {
+            EditCardPanelTempList.Add(new EditCardPanelTemp(m_CardInfoList[i], 0));
+            EditCardPanelTempList[i].SetIndex(i);
         }
 
         m_EditCardPanelList = m_EditCardPanelList_TheFirstChapter;
@@ -225,7 +279,12 @@ public class EditCardPanelManager : MonoBehaviour
 
     private void onDefaultSort(List<CardInfo> paramaterList)
     {
-        List<EditCardPanelTemp> EditCardPanelTempList = new List<EditCardPanelTemp>();
+        List<EditCardPanelTemp> temp_return = EditCardPanelTempList;
+        for(int i = 0; i < m_EditCardPanelList.Count; i++)
+        {
+            m_EditCardPanelList[i].SetEditCardPanel(EditCardPanelTempList[i].GetCardInfo(), EditCardPanelTempList[i].GetCardCount(), EditCardPanelTempList[i].GetIndex(), true);
+        }
+        /*List<EditCardPanelTemp> EditCardPanelTempList = new List<EditCardPanelTemp>();
         List<EditCardPanelTemp> temp_return = new List<EditCardPanelTemp>();
 
         for (int i = 0; i < m_EditCardPanelList.Count; i++)
@@ -282,12 +341,12 @@ public class EditCardPanelManager : MonoBehaviour
                 continue;
             }
             m_EditCardPanelList[i].isSearchHit();
-        }
+        }*/
     }
 
     private void onInkCostSort(List<CardInfo> paramaterList)
     {
-        List<EditCardPanelTemp> EditCardPanelTempList = new List<EditCardPanelTemp>();
+        /*List<EditCardPanelTemp> EditCardPanelTempList = new List<EditCardPanelTemp>();
         List<EditCardPanelTemp> temp_return = new List<EditCardPanelTemp>();
 
         for (int i = 0; i < m_EditCardPanelList.Count; i++)
@@ -344,12 +403,12 @@ public class EditCardPanelManager : MonoBehaviour
                 continue;
             }
             m_EditCardPanelList[i].isSearchHit();
-        }
+        }*/
     }
 
     private void onColorSort(List<CardInfo> paramaterList)
     {
-        onDefaultSort(paramaterList);
+        /*onDefaultSort(paramaterList);
         List<EditCardPanelTemp> EditCardPanelTempList = new List<EditCardPanelTemp>();
         List<EditCardPanelTemp> temp_return = new List<EditCardPanelTemp>();
 
@@ -446,7 +505,7 @@ public class EditCardPanelManager : MonoBehaviour
                 continue;
             }
             m_EditCardPanelList[i].isSearchHit();
-        }
+        }*/
     }
 
     public void Search(SearchFilterClass paramater)
@@ -480,5 +539,18 @@ public class EditCardPanelManager : MonoBehaviour
             }
             m_EditCardPanelList[i].UpdateImage(magnification_x, magnification_y);
         }
+
+        float rt_EditCardPanelList_SizeY = 0;
+        for (int i = 0; i < rt_EditCardPanelList.Count; i++)
+        {
+            rt_EditCardPanelList[i].anchorMin = new Vector2(0, 1);
+            rt_EditCardPanelList[i].anchorMax = new Vector2(0, 1);
+            rt_EditCardPanelList[i].pivot = new Vector2(0, 1);
+            rt_EditCardPanelList[i].anchoredPosition = new Vector2(0, rt_EditCardPanelList_SizeY * (-1));
+            rt_EditCardPanelList_SizeY += rt_EditCardPanelList[i].sizeDelta.y;
+        }
+
+        rt_content.sizeDelta = new Vector2(rt_content.sizeDelta.x, rt_EditCardPanelList[0].sizeDelta.y * rt_EditCardPanelList.Count);
     }
 }
+

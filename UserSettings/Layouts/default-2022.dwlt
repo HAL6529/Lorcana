@@ -15,11 +15,11 @@ MonoBehaviour:
   m_PixelRect:
     serializedVersion: 2
     x: 852.6667
-    y: 150
+    y: 55.333336
     width: 1264
     height: 1329.3334
   m_ShowMode: 4
-  m_Title: Simulator
+  m_Title: Hierarchy
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -298,7 +298,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 852.6667
-    y: 960
+    y: 865.3334
     width: 801.6667
     height: 478.33337
   m_SerializedDataModeController:
@@ -1408,7 +1408,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 6e910000
     m_LastClickedID: 37230
-    m_ExpandedIDs: 000000002c910000
+    m_ExpandedIDs: 0000000026910000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1436,7 +1436,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000002c910000
+    m_ExpandedIDs: 0000000026910000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1513,7 +1513,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 1655.3334
-    y: 180
+    y: 85.333336
     width: 460.3333
     height: 1258.3334
   m_SerializedDataModeController:
@@ -1560,7 +1560,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 852.6667
-    y: 180
+    y: 85.333336
     width: 389
     height: 759
   m_SerializedDataModeController:
@@ -1575,24 +1575,24 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 0cfbffffa26b0000c86f000054700000487f0000e88200007884000042850000f8870000148800004288000060880000
+      scrollPos: {x: 0, y: 6574}
+      m_SelectedIDs: ee411700
+      m_LastClickedID: 1524206
+      m_ExpandedIDs: f474fbff3a75fbff3e76fdff7c7afdff0cfbffffa26b000054700000487f0000f487000010880000208800003e88000088071600625a16009a5d17004ad5170022f017003cf017004cf017006af01700
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: CardInfo_038_JA_01
+        m_OriginalName: CardInfo_038_JA_01
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: 29152
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 4}
       m_SearchString: 
@@ -1622,7 +1622,7 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1294
+    x: 1242.6667
     y: 85.333336
     width: 410.6667
     height: 759
@@ -1971,9 +1971,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 4.635825, y: 17.304592, z: -0.14343254}
+    m_Target: {x: 8.252106, y: -2.793521, z: -0.15815367}
     speed: 2
-    m_Value: {x: 4.635825, y: 17.304592, z: -0.14343254}
+    m_Value: {x: 8.252106, y: -2.793521, z: -0.15815367}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -2023,9 +2023,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 15.557252
+    m_Target: 17.028278
     speed: 2
-    m_Value: 15.557252
+    m_Value: 17.028278
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -2071,7 +2071,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 1242.6667
-    y: 180
+    y: 85.333336
     width: 410.6667
     height: 759
   m_SerializedDataModeController:
