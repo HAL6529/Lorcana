@@ -114,25 +114,30 @@ public class EditCardPanelManager : MonoBehaviour
     public RectTransform rt_content;
     public RectTransform CanvasRectTransform;
 
-    void Start()
+    IEnumerator Start()
     {
         m_CardInfoList = m_CardInfo_TheFirstChapter;
-        for(int i = 0; i < m_CardInfo_RiseOfTheFloodBorn.Count; i++)
+        yield return null;
+
+        for (int i = 0; i < m_CardInfo_RiseOfTheFloodBorn.Count; i++)
         {
             m_CardInfoList.Add(m_CardInfo_RiseOfTheFloodBorn[i]);
         }
+        yield return null;
 
-        for(int i = 0; i < m_CardInfoList.Count; i++)
+        for (int i = 0; i < m_CardInfoList.Count; i++)
         {
             EditCardPanelTempList.Add(new EditCardPanelTemp(m_CardInfoList[i], 0));
             EditCardPanelTempList[i].SetIndex(i);
         }
+        yield return null;
 
         m_EditCardPanelList = m_EditCardPanelList_TheFirstChapter;
         for(int i = 0; i < m_EditCardPanelList_RiseOfTheFloodBorn.Count; i++)
         {
             m_EditCardPanelList.Add(m_EditCardPanelList_RiseOfTheFloodBorn[i]);
         }
+        yield return null;
 
         float magnification_x = CanvasRectTransform.sizeDelta.x / 890;
         float magnification_y = CanvasRectTransform.sizeDelta.y / 1920;
