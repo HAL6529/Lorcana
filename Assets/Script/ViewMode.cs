@@ -487,6 +487,30 @@ public class ViewMode : MonoBehaviour
         header_header_Parent.pivot = new Vector2(0, 1);
         header_header_Parent.anchoredPosition = new Vector2(header_Image_Parent.sizeDelta.x, 0);
 
+        float header_header_line_Y = 0;
+        header_header_line1.anchorMin = new Vector2(0, 1);
+        header_header_line1.anchorMax = new Vector2(0, 1);
+        header_header_line1.pivot = new Vector2(0, 1);
+        header_header_line1.anchoredPosition = new Vector2(0, 0);
+
+        header_header_line_Y += header_header_line1.sizeDelta.y;
+        header_header_line2.anchorMin = new Vector2(0, 1);
+        header_header_line2.anchorMax = new Vector2(0, 1);
+        header_header_line2.pivot = new Vector2(0, 1);
+        header_header_line2.anchoredPosition = new Vector2(0, header_header_line_Y * (-1));
+
+        header_header_line_Y += header_header_line2.sizeDelta.y;
+        header_header_line3.anchorMin = new Vector2(0, 1);
+        header_header_line3.anchorMax = new Vector2(0, 1);
+        header_header_line3.pivot = new Vector2(0, 1);
+        header_header_line3.anchoredPosition = new Vector2(0, header_header_line_Y * (-1));
+
+        header_header_line_Y += header_header_line3.sizeDelta.y;
+        header_header_line4.anchorMin = new Vector2(0, 1);
+        header_header_line4.anchorMax = new Vector2(0, 1);
+        header_header_line4.pivot = new Vector2(0, 1);
+        header_header_line4.anchoredPosition = new Vector2(0, header_header_line_Y * (-1));
+
         hand.anchorMin = new Vector2(0, 1);
         hand.anchorMax = new Vector2(0, 1);
         hand.pivot = new Vector2(0, 1);
@@ -514,5 +538,83 @@ public class ViewMode : MonoBehaviour
         scrollView.anchorMax = new Vector2(0, 1);
         scrollView.pivot = new Vector2(0, 1);
         scrollView.anchoredPosition = new Vector2((Parent.sizeDelta.x - scrollView.sizeDelta.x) / 2, (header.sizeDelta.y + hand.sizeDelta.y) * (-1));
+
+        float scrollView_Y = 0;
+        scrollView_line1.anchorMin = new Vector2(0, 1);
+        scrollView_line1.anchorMax = new Vector2(0, 1);
+        scrollView_line1.pivot = new Vector2(0, 1);
+        scrollView_line1.anchoredPosition = Vector2.zero;
+
+        scrollView_Y += scrollView_line1.sizeDelta.y;
+        scrollView_line2.anchorMin = new Vector2(0, 1);
+        scrollView_line2.anchorMax = new Vector2(0, 1);
+        scrollView_line2.pivot = new Vector2(0, 1);
+        scrollView_line2.anchoredPosition = new Vector2(0, scrollView_Y * (-1));
+
+        scrollView_Y += scrollView_line2.sizeDelta.y;
+        scrollView_line3.anchorMin = new Vector2(0, 1);
+        scrollView_line3.anchorMax = new Vector2(0, 1);
+        scrollView_line3.pivot = new Vector2(0, 1);
+        scrollView_line3.anchoredPosition = new Vector2(0, scrollView_Y * (-1));
+
+        scrollView_Y += scrollView_line3.sizeDelta.y;
+        scrollView_line4.anchorMin = new Vector2(0, 1);
+        scrollView_line4.anchorMax = new Vector2(0, 1);
+        scrollView_line4.pivot = new Vector2(0, 1);
+        scrollView_line4.anchoredPosition = new Vector2(0, scrollView_Y * (-1));
+
+        scrollView_Y += scrollView_line4.sizeDelta.y;
+        scrollView_line5.anchorMin = new Vector2(0, 1);
+        scrollView_line5.anchorMax = new Vector2(0, 1);
+        scrollView_line5.pivot = new Vector2(0, 1);
+        scrollView_line5.anchoredPosition = new Vector2(0, scrollView_Y * (-1));
+
+        scrollView_Y += scrollView_line5.sizeDelta.y;
+        scrollView_line6.anchorMin = new Vector2(0, 1);
+        scrollView_line6.anchorMax = new Vector2(0, 1);
+        scrollView_line6.pivot = new Vector2(0, 1);
+        scrollView_line6.anchoredPosition = new Vector2(0, scrollView_Y * (-1));
+
+        scrollView_Y += scrollView_line6.sizeDelta.y;
+        scrollView_line7.anchorMin = new Vector2(0, 1);
+        scrollView_line7.anchorMax = new Vector2(0, 1);
+        scrollView_line7.pivot = new Vector2(0, 1);
+        scrollView_line7.anchoredPosition = new Vector2(0, scrollView_Y * (-1));
+
+        scrollView_Y += scrollView_line7.sizeDelta.y;
+        scrollView_line8.anchorMin = new Vector2(0, 1);
+        scrollView_line8.anchorMax = new Vector2(0, 1);
+        scrollView_line8.pivot = new Vector2(0, 1);
+        scrollView_line8.anchoredPosition = new Vector2(0, scrollView_Y * (-1));
+
+        scrollView_Y += scrollView_line8.sizeDelta.y;
+        scrollView_line9.anchorMin = new Vector2(0, 1);
+        scrollView_line9.anchorMax = new Vector2(0, 1);
+        scrollView_line9.pivot = new Vector2(0, 1);
+        scrollView_line9.anchoredPosition = new Vector2(0, scrollView_Y * (-1));
+
+        scrollView_Y += scrollView_line9.sizeDelta.y;
+        scrollView_line10.anchorMin = new Vector2(0, 1);
+        scrollView_line10.anchorMax = new Vector2(0, 1);
+        scrollView_line10.pivot = new Vector2(0, 1);
+        scrollView_line10.anchoredPosition = new Vector2(0, scrollView_Y * (-1));
+
+        scrollView_Y += scrollView_line10.sizeDelta.y;
+        scrollView_line11.anchorMin = new Vector2(0, 1);
+        scrollView_line11.anchorMax = new Vector2(0, 1);
+        scrollView_line11.pivot = new Vector2(0, 1);
+        scrollView_line11.anchoredPosition = new Vector2(0, scrollView_Y * (-1));
+
+        scrollView_Y += scrollView_line11.sizeDelta.y;
+        scrollView_line12.anchorMin = new Vector2(0, 1);
+        scrollView_line12.anchorMax = new Vector2(0, 1);
+        scrollView_line12.pivot = new Vector2(0, 1);
+        scrollView_line12.anchoredPosition = new Vector2(0, scrollView_Y * (-1));
+
+        scrollView_Y += scrollView_line12.sizeDelta.y;
+        scrollView_line13.anchorMin = new Vector2(0, 1);
+        scrollView_line13.anchorMax = new Vector2(0, 1);
+        scrollView_line13.pivot = new Vector2(0, 1);
+        scrollView_line13.anchoredPosition = new Vector2(0, scrollView_Y * (-1));
     }
 }
