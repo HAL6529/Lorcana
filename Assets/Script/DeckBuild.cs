@@ -63,18 +63,6 @@ public class DeckBuild : MonoBehaviour
         header2_space2.sizeDelta = new Vector2(header2_parent.sizeDelta.x - header2_sortBtn.sizeDelta.x - header2_space1.sizeDelta.x - header2_switchDeckBtn.sizeDelta.x - header2_searchBtn.sizeDelta.x, header2_space2.sizeDelta.y * magnification);
         yield return null;
 
-        m_PanelPicture.UpdateImage(magnification_x, magnification_y);
-        yield return null;
-        m_Menu.UpdateImage(magnification_x, magnification_y);
-        yield return null;
-        m_DialogManager.UpdateImage(magnification_x, magnification_y);
-        yield return null;
-        m_ViewMode.UpdateImage(magnification_x, magnification_y);
-        yield return null;
-        //m_EditCardPanelManager.UpdateImage(magnification_x, magnification_y);
-        m_SearchClass.UpdateImage(magnification_x, magnification_y);
-        yield return null;
-
         header_parent.anchorMin = new Vector2(0, 1);
         header_parent.anchorMax = new Vector2(0, 1);
         header_parent.pivot = new Vector2(0, 1);
@@ -137,5 +125,17 @@ public class DeckBuild : MonoBehaviour
         header2_searchBtn.anchorMax = new Vector2(0, 1);
         header2_searchBtn.pivot = new Vector2(0, 1);
         header2_searchBtn.anchoredPosition = new Vector2(Header2_SizeDelta_X, 0);
+
+        m_PanelPicture.UpdateImage(magnification_x, magnification_y);
+        yield return null;
+        m_Menu.UpdateImage(magnification_x, magnification_y);
+        yield return null;
+        m_DialogManager.UpdateImage(magnification_x, magnification_y);
+        yield return null;
+        m_ViewMode.UpdateImage(magnification_x, magnification_y);
+        yield return null;
+        //m_EditCardPanelManager.UpdateImage(magnification_x, magnification_y);
+        m_SearchClass.UpdateImage(magnification_x, magnification_y);
+        yield return null;
     }
 }

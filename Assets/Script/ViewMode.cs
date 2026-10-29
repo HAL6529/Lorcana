@@ -493,17 +493,104 @@ public class ViewMode : MonoBehaviour
         header_header_line1.pivot = new Vector2(0, 1);
         header_header_line1.anchoredPosition = new Vector2(0, 0);
 
+        header_header_line1_closeBtn.anchorMin = new Vector2(1, 1);
+        header_header_line1_closeBtn.anchorMax = new Vector2(1, 1);
+        header_header_line1_closeBtn.pivot = new Vector2(1, 1);
+        header_header_line1_closeBtn.anchoredPosition = Vector2.zero;
+
         header_header_line_Y += header_header_line1.sizeDelta.y;
         header_header_line2.anchorMin = new Vector2(0, 1);
         header_header_line2.anchorMax = new Vector2(0, 1);
         header_header_line2.pivot = new Vector2(0, 1);
         header_header_line2.anchoredPosition = new Vector2(0, header_header_line_Y * (-1));
 
+        header_header_line2_space.anchorMin = new Vector2(1, 1);
+        header_header_line2_space.anchorMax = new Vector2(1, 1);
+        header_header_line2_space.pivot = new Vector2(1, 1);
+        header_header_line2_space.anchoredPosition = Vector2.zero;
+
+        header_header_line2_text.anchorMin = new Vector2(1, 1);
+        header_header_line2_text.anchorMax = new Vector2(1, 1);
+        header_header_line2_text.pivot = new Vector2(1, 1);
+        header_header_line2_text.anchoredPosition = new Vector2(header_header_line2_space.sizeDelta.x, 0);
+
         header_header_line_Y += header_header_line2.sizeDelta.y;
         header_header_line3.anchorMin = new Vector2(0, 1);
         header_header_line3.anchorMax = new Vector2(0, 1);
         header_header_line3.pivot = new Vector2(0, 1);
         header_header_line3.anchoredPosition = new Vector2(0, header_header_line_Y * (-1));
+
+        float header_header_line3_X = 0;
+        header_header_line3_space1.anchorMin = new Vector2(0, 1);
+        header_header_line3_space1.anchorMax = new Vector2(0, 1);
+        header_header_line3_space1.pivot = new Vector2(0, 1);
+        header_header_line3_space1.anchoredPosition = Vector2.zero;
+
+        header_header_line3_X += header_header_line3_space1.sizeDelta.x;
+        header_header_line3_mark1.anchorMin = new Vector2(0, 1);
+        header_header_line3_mark1.anchorMax = new Vector2(0, 1);
+        header_header_line3_mark1.pivot = new Vector2(0, 1);
+        header_header_line3_mark1.anchoredPosition = new Vector2(header_header_line3_X, 0);
+
+        header_header_line3_X += header_header_line3_mark1.sizeDelta.x;
+        header_header_line3_space2.anchorMin = new Vector2(0, 1);
+        header_header_line3_space2.anchorMax = new Vector2(0, 1);
+        header_header_line3_space2.pivot = new Vector2(0, 1);
+        header_header_line3_space2.anchoredPosition = new Vector2(header_header_line3_X, 0);
+
+        header_header_line3_X += header_header_line3_space2.sizeDelta.x;
+        header_header_line3_mark2.anchorMin = new Vector2(0, 1);
+        header_header_line3_mark2.anchorMax = new Vector2(0, 1);
+        header_header_line3_mark2.pivot = new Vector2(0, 1);
+        header_header_line3_mark2.anchoredPosition = new Vector2(header_header_line3_X, 0);
+
+        header_header_line3_X += header_header_line3_mark2.sizeDelta.x;
+        header_header_line3_space3.anchorMin = new Vector2(0, 1);
+        header_header_line3_space3.anchorMax = new Vector2(0, 1);
+        header_header_line3_space3.pivot = new Vector2(0, 1);
+        header_header_line3_space3.anchoredPosition = new Vector2(header_header_line3_X, 0);
+
+        header_header_line3_X += header_header_line3_space3.sizeDelta.x;
+        header_header_line3_mark3.anchorMin = new Vector2(0, 1);
+        header_header_line3_mark3.anchorMax = new Vector2(0, 1);
+        header_header_line3_mark3.pivot = new Vector2(0, 1);
+        header_header_line3_mark3.anchoredPosition = new Vector2(header_header_line3_X, 0);
+
+        header_header_line3_X += header_header_line3_mark3.sizeDelta.x;
+        header_header_line3_space4.anchorMin = new Vector2(0, 1);
+        header_header_line3_space4.anchorMax = new Vector2(0, 1);
+        header_header_line3_space4.pivot = new Vector2(0, 1);
+        header_header_line3_space4.anchoredPosition = new Vector2(header_header_line3_X, 0);
+
+        header_header_line3_X += header_header_line3_space4.sizeDelta.x;
+        header_header_line3_mark4.anchorMin = new Vector2(0, 1);
+        header_header_line3_mark4.anchorMax = new Vector2(0, 1);
+        header_header_line3_mark4.pivot = new Vector2(0, 1);
+        header_header_line3_mark4.anchoredPosition = new Vector2(header_header_line3_X, 0);
+
+        header_header_line3_X += header_header_line3_mark4.sizeDelta.x;
+        header_header_line3_space5.anchorMin = new Vector2(0, 1);
+        header_header_line3_space5.anchorMax = new Vector2(0, 1);
+        header_header_line3_space5.pivot = new Vector2(0, 1);
+        header_header_line3_space5.anchoredPosition = new Vector2(header_header_line3_X, 0);
+
+        header_header_line3_X += header_header_line3_space5.sizeDelta.x;
+        header_header_line3_mark5.anchorMin = new Vector2(0, 1);
+        header_header_line3_mark5.anchorMax = new Vector2(0, 1);
+        header_header_line3_mark5.pivot = new Vector2(0, 1);
+        header_header_line3_mark5.anchoredPosition = new Vector2(header_header_line3_X, 0);
+
+        header_header_line3_X += header_header_line3_mark5.sizeDelta.x;
+        header_header_line3_space6.anchorMin = new Vector2(0, 1);
+        header_header_line3_space6.anchorMax = new Vector2(0, 1);
+        header_header_line3_space6.pivot = new Vector2(0, 1);
+        header_header_line3_space6.anchoredPosition = new Vector2(header_header_line3_X, 0);
+
+        header_header_line3_X += header_header_line3_space6.sizeDelta.x;
+        header_header_line3_mark6.anchorMin = new Vector2(0, 1);
+        header_header_line3_mark6.anchorMax = new Vector2(0, 1);
+        header_header_line3_mark6.pivot = new Vector2(0, 1);
+        header_header_line3_mark6.anchoredPosition = new Vector2(header_header_line3_X, 0);
 
         header_header_line_Y += header_header_line3.sizeDelta.y;
         header_header_line4.anchorMin = new Vector2(0, 1);
@@ -522,17 +609,53 @@ public class ViewMode : MonoBehaviour
         hand_line1.pivot = new Vector2(0, 1);
         hand_line1.anchoredPosition = Vector2.zero;
 
+        float hand_line1_list_space = (hand_line1.sizeDelta.x - hand_line1_list[0].sizeDelta.x * 8) / 9;
+        float hand_line1_list_space_temp = hand_line1_list_space;
+        for (int i = 0; i < hand_line1_list.Count; i++)
+        {
+            hand_line1_list[i].anchorMin = new Vector2(0, 1);
+            hand_line1_list[i].anchorMax = new Vector2(0, 1);
+            hand_line1_list[i].pivot = new Vector2(0, 1);
+            hand_line1_list[i].anchoredPosition = new Vector2(hand_line1_list_space_temp, 0);
+            hand_line1_list_space_temp += hand_line1_list[0].sizeDelta.x + hand_line1_list_space;
+        }
+
         hand_line_Y += hand_line1.sizeDelta.y;
         hand_line2.anchorMin = new Vector2(0, 1);
         hand_line2.anchorMax = new Vector2(0, 1);
         hand_line2.pivot = new Vector2(0, 1);
         hand_line2.anchoredPosition = new Vector2(0, hand_line_Y * (-1));
 
+        float hand_line2_list_space = (hand_line2.sizeDelta.x - hand_line2_firstDrawBtn.sizeDelta.x - hand_line2_oneDrawBtn.sizeDelta.x) / 3;
+        float hand_line2_list_space_temp = hand_line2_list_space;
+        hand_line2_firstDrawBtn.anchorMin = new Vector2(0, 1);
+        hand_line2_firstDrawBtn.anchorMax = new Vector2(0, 1);
+        hand_line2_firstDrawBtn.pivot = new Vector2(0, 1);
+        hand_line2_firstDrawBtn.anchoredPosition = new Vector2(hand_line2_list_space_temp, 0);
+        hand_line2_list_space_temp += hand_line2_firstDrawBtn.sizeDelta.x + hand_line2_list_space;
+
+        hand_line2_oneDrawBtn.anchorMin = new Vector2(0, 1);
+        hand_line2_oneDrawBtn.anchorMax = new Vector2(0, 1);
+        hand_line2_oneDrawBtn.pivot = new Vector2(0, 1);
+        hand_line2_oneDrawBtn.anchoredPosition = new Vector2(hand_line2_list_space_temp, 0);
+        hand_line2_list_space_temp += hand_line2_oneDrawBtn.sizeDelta.x + hand_line2_list_space;
+
         hand_line_Y += hand_line2.sizeDelta.y;
         hand_line3.anchorMin = new Vector2(0, 1);
         hand_line3.anchorMax = new Vector2(0, 1);
         hand_line3.pivot = new Vector2(0, 1);
         hand_line3.anchoredPosition = new Vector2(0, hand_line_Y * (-1));
+
+        float hand_line3_list_space = (hand_line3.sizeDelta.x - hand_line3_list[0].sizeDelta.x * 10) / 11;
+        float hand_line3_list_space_temp = hand_line3_list_space;
+        for (int i = 0; i < hand_line3_list.Count; i++)
+        {
+            hand_line3_list[i].anchorMin = new Vector2(0, 1);
+            hand_line3_list[i].anchorMax = new Vector2(0, 1);
+            hand_line3_list[i].pivot = new Vector2(0, 1);
+            hand_line3_list[i].anchoredPosition = new Vector2(hand_line3_list_space_temp, 0);
+            hand_line3_list_space_temp += hand_line3_list[0].sizeDelta.x + hand_line3_list_space;
+        }
 
         scrollView.anchorMin = new Vector2(0, 1);
         scrollView.anchorMax = new Vector2(0, 1);
