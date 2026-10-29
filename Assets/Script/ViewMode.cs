@@ -466,5 +466,53 @@ public class ViewMode : MonoBehaviour
         {
             scrollView_line13_list[i].sizeDelta = new Vector2(scrollView_line13_list[i].sizeDelta.x * magnification, scrollView_line13_list[i].sizeDelta.y * magnification);
         }
+
+        header.anchorMin = new Vector2(0, 1);
+        header.anchorMax = new Vector2(0, 1);
+        header.pivot = new Vector2(0, 1);
+        header.anchoredPosition = Vector2.zero;
+
+        header_Image_Parent.anchorMin = new Vector2(0, 1);
+        header_Image_Parent.anchorMax = new Vector2(0, 1);
+        header_Image_Parent.pivot = new Vector2(0, 1);
+        header_Image_Parent.anchoredPosition = Vector2.zero;
+
+        header_Image.anchorMin = new Vector2(0, 1);
+        header_Image.anchorMax = new Vector2(0, 1);
+        header_Image.pivot = new Vector2(0, 1);
+        header_Image.anchoredPosition = new Vector2((header_Image_Parent.sizeDelta.x - header_Image.sizeDelta.x) / 2, (header_Image_Parent.sizeDelta.y - header_Image.sizeDelta.y) / 2);
+
+        header_header_Parent.anchorMin = new Vector2(0, 1);
+        header_header_Parent.anchorMax = new Vector2(0, 1);
+        header_header_Parent.pivot = new Vector2(0, 1);
+        header_header_Parent.anchoredPosition = new Vector2(header_Image_Parent.sizeDelta.x, 0);
+
+        hand.anchorMin = new Vector2(0, 1);
+        hand.anchorMax = new Vector2(0, 1);
+        hand.pivot = new Vector2(0, 1);
+        hand.anchoredPosition = new Vector2(0, header.sizeDelta.y * (-1));
+
+        float hand_line_Y = 0;
+        hand_line1.anchorMin = new Vector2(0, 1);
+        hand_line1.anchorMax = new Vector2(0, 1);
+        hand_line1.pivot = new Vector2(0, 1);
+        hand_line1.anchoredPosition = Vector2.zero;
+
+        hand_line_Y += hand_line1.sizeDelta.y;
+        hand_line2.anchorMin = new Vector2(0, 1);
+        hand_line2.anchorMax = new Vector2(0, 1);
+        hand_line2.pivot = new Vector2(0, 1);
+        hand_line2.anchoredPosition = new Vector2(0, hand_line_Y * (-1));
+
+        hand_line_Y += hand_line2.sizeDelta.y;
+        hand_line3.anchorMin = new Vector2(0, 1);
+        hand_line3.anchorMax = new Vector2(0, 1);
+        hand_line3.pivot = new Vector2(0, 1);
+        hand_line3.anchoredPosition = new Vector2(0, hand_line_Y * (-1));
+
+        scrollView.anchorMin = new Vector2(0, 1);
+        scrollView.anchorMax = new Vector2(0, 1);
+        scrollView.pivot = new Vector2(0, 1);
+        scrollView.anchoredPosition = new Vector2((Parent.sizeDelta.x - scrollView.sizeDelta.x) / 2, (header.sizeDelta.y + hand.sizeDelta.y) * (-1));
     }
 }

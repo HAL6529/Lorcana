@@ -109,15 +109,13 @@ public class EditCardPanelManager : MonoBehaviour
 
     private int standbyCnt = 0;
 
-    public SearchFilterClass m_SearchFilterClass;
+    public SearchFilterClass m_SearchFilterClass = new SearchFilterClass();
     public List<RectTransform> rt_EditCardPanelList = new List<RectTransform>();
     public RectTransform rt_content;
     public RectTransform CanvasRectTransform;
 
     void Start()
     {
-        m_SearchFilterClass = new SearchFilterClass();
-
         m_CardInfoList = m_CardInfo_TheFirstChapter;
         for(int i = 0; i < m_CardInfo_RiseOfTheFloodBorn.Count; i++)
         {
@@ -156,7 +154,7 @@ public class EditCardPanelManager : MonoBehaviour
 
     private void LoadDeckList()
     {
-        onDefaultSort(m_CardInfoList);
+        /*onDefaultSort(m_CardInfoList);
         List<CardInfo> TempDeckList = m_SaveDataStatic.GetCardInfoList();
         DeckName = m_SaveDataStatic.GetDeckTitle();
         for (int i = 0; i < TempDeckList.Count; i++)
@@ -174,7 +172,7 @@ public class EditCardPanelManager : MonoBehaviour
                     continue;
                 }
             }
-        }
+        }*/
     }
 
     public void onUpdateDeckList()
@@ -279,11 +277,11 @@ public class EditCardPanelManager : MonoBehaviour
 
     private void onDefaultSort(List<CardInfo> paramaterList)
     {
-        List<EditCardPanelTemp> temp_return = EditCardPanelTempList;
+        /*List<EditCardPanelTemp> temp_return = EditCardPanelTempList;
         for(int i = 0; i < m_EditCardPanelList.Count; i++)
         {
             m_EditCardPanelList[i].SetEditCardPanel(EditCardPanelTempList[i].GetCardInfo(), EditCardPanelTempList[i].GetCardCount(), EditCardPanelTempList[i].GetIndex(), true);
-        }
+        }*/
         /*List<EditCardPanelTemp> EditCardPanelTempList = new List<EditCardPanelTemp>();
         List<EditCardPanelTemp> temp_return = new List<EditCardPanelTemp>();
 

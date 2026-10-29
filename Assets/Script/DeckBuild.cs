@@ -33,7 +33,7 @@ public class DeckBuild : MonoBehaviour
     public RectTransform header2_Space;
 
     // Start is called before the first frame update
-    void Start()
+    IEnumerator Start()
     {
         float magnification_x = CanvasRectTransform.sizeDelta.x / 890;
         float magnification_y = CanvasRectTransform.sizeDelta.y / 1920;
@@ -42,11 +42,13 @@ public class DeckBuild : MonoBehaviour
         header_parent.sizeDelta = new Vector2(header_parent.sizeDelta.x * magnification_x, header_parent.sizeDelta.y * magnification_y);
         ScrollView_Parent.sizeDelta = new Vector2(ScrollView_Parent.sizeDelta.x * magnification_x, ScrollView_Parent.sizeDelta.y * magnification_y);
         bottom.sizeDelta = new Vector2(bottom.sizeDelta.x * magnification_x, bottom.sizeDelta.y * magnification_y);
-        
+        yield return null;
+
         Parent2.sizeDelta = new Vector2(Parent2.sizeDelta.x * magnification_x, Parent2.sizeDelta.y * magnification_y);
         header2_parent.sizeDelta = new Vector2(header2_parent.sizeDelta.x * magnification_x, header2_parent.sizeDelta.y * magnification_y);
         header2_space1.sizeDelta = new Vector2(header2_space1.sizeDelta.x * magnification_x, header2_space1.sizeDelta.y * magnification_y);
         header2_Space.sizeDelta = new Vector2(header2_Space.sizeDelta.x * magnification_x, header2_Space.sizeDelta.y * magnification_y);
+        yield return null;
 
         float magnification = magnification_x;
         if (magnification_x > magnification_y)
@@ -59,13 +61,19 @@ public class DeckBuild : MonoBehaviour
         header2_searchBtn.sizeDelta = new Vector2(header2_searchBtn.sizeDelta.x * magnification, header2_searchBtn.sizeDelta.y * magnification);
 
         header2_space2.sizeDelta = new Vector2(header2_parent.sizeDelta.x - header2_sortBtn.sizeDelta.x - header2_space1.sizeDelta.x - header2_switchDeckBtn.sizeDelta.x - header2_searchBtn.sizeDelta.x, header2_space2.sizeDelta.y * magnification);
+        yield return null;
 
         m_PanelPicture.UpdateImage(magnification_x, magnification_y);
+        yield return null;
         m_Menu.UpdateImage(magnification_x, magnification_y);
+        yield return null;
         m_DialogManager.UpdateImage(magnification_x, magnification_y);
+        yield return null;
         m_ViewMode.UpdateImage(magnification_x, magnification_y);
+        yield return null;
         //m_EditCardPanelManager.UpdateImage(magnification_x, magnification_y);
         m_SearchClass.UpdateImage(magnification_x, magnification_y);
+        yield return null;
 
         header_parent.anchorMin = new Vector2(0, 1);
         header_parent.anchorMax = new Vector2(0, 1);
@@ -76,6 +84,7 @@ public class DeckBuild : MonoBehaviour
         ScrollView_Parent.anchorMax = new Vector2(0, 1);
         ScrollView_Parent.pivot = new Vector2(0, 1);
         ScrollView_Parent.anchoredPosition = new Vector2(0, header_parent.sizeDelta.y * (-1));
+        yield return null;
 
         bottom.anchorMin = new Vector2(0, 1);
         bottom.anchorMax = new Vector2(0, 1);
@@ -86,6 +95,7 @@ public class DeckBuild : MonoBehaviour
         bottom_MenuBtn.anchorMax = new Vector2(0, 1);
         bottom_MenuBtn.pivot = new Vector2(0, 1);
         bottom_MenuBtn.anchoredPosition = new Vector2((bottom.sizeDelta.x - bottom_MenuBtn.sizeDelta.x) / 2, 0);
+        yield return null;
 
         header2_parent.anchorMin = new Vector2(0, 1);
         header2_parent.anchorMax = new Vector2(0, 1);
@@ -96,6 +106,7 @@ public class DeckBuild : MonoBehaviour
         header2_Space.anchorMax = new Vector2(0, 1);
         header2_Space.pivot = new Vector2(0, 1);
         header2_Space.anchoredPosition = new Vector2(0, header2_parent.sizeDelta.y * (-1));
+        yield return null;
 
         float Header2_SizeDelta_X = 0;
         header2_sortBtn.anchorMin = new Vector2(0, 1);
