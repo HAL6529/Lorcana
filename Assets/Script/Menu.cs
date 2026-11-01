@@ -22,6 +22,13 @@ public class Menu : MonoBehaviour
     public RectTransform space;
     public RectTransform MenuBtn;
 
+    private const int Parent_X = 890;
+    private const int Parent_Y = 1920;
+    private const int Btn_X = 890;
+    private const int Btn_Y = 70;
+    private const int space_X = 890;
+    private const int space_Y = 100;
+
     public void onCloseBtn()
     {
         this.gameObject.SetActive(false);
@@ -55,48 +62,49 @@ public class Menu : MonoBehaviour
 
     public void UpdateImage(float magnification_x, float magnification_y)
     {
-        Parent.sizeDelta = new Vector2(Parent.sizeDelta.x * magnification_x, Parent.sizeDelta.y * magnification_y);
-        CloseBtn.sizeDelta = new Vector2(CloseBtn.sizeDelta.x * magnification_x, CloseBtn.sizeDelta.y * magnification_y);
-        NewSaveBtn.sizeDelta = new Vector2(NewSaveBtn.sizeDelta.x * magnification_x, NewSaveBtn.sizeDelta.y * magnification_y);
-        SaveBtn.sizeDelta = new Vector2(SaveBtn.sizeDelta.x * magnification_x, SaveBtn.sizeDelta.y * magnification_y);
-        DisplayBtn.sizeDelta = new Vector2(DisplayBtn.sizeDelta.x * magnification_x, DisplayBtn.sizeDelta.y * magnification_y);
-        space.sizeDelta = new Vector2(space.sizeDelta.x * magnification_x, space.sizeDelta.y * magnification_y);
-        MenuBtn.sizeDelta = new Vector2(MenuBtn.sizeDelta.x * magnification_x, MenuBtn.sizeDelta.y * magnification_y);
+        Parent.sizeDelta = new Vector2(Parent_X * magnification_x, Parent_Y * magnification_y);
+        CloseBtn.sizeDelta = new Vector2(Btn_X * magnification_x, Btn_Y * magnification_y);
+        NewSaveBtn.sizeDelta = new Vector2(Btn_X * magnification_x, Btn_Y * magnification_y);
+        SaveBtn.sizeDelta = new Vector2(Btn_X * magnification_x, Btn_Y * magnification_y);
+        DisplayBtn.sizeDelta = new Vector2(Btn_X * magnification_x, Btn_Y * magnification_y);
+        space.sizeDelta = new Vector2(space_X * magnification_x, space_Y * magnification_y);
+        MenuBtn.sizeDelta = new Vector2(Btn_X * magnification_x, Btn_Y * magnification_y);
 
+        Vector2 left_position = new Vector2(0, 1);
         float Menu_Y = 0;
-        CloseBtn.anchorMin = new Vector2(0, 1);
-        CloseBtn.anchorMax = new Vector2(0, 1);
-        CloseBtn.pivot = new Vector2(0, 1);
+        CloseBtn.anchorMin = left_position;
+        CloseBtn.anchorMax = left_position;
+        CloseBtn.pivot = left_position;
         CloseBtn.anchoredPosition = Vector2.zero;
 
         Menu_Y += CloseBtn.sizeDelta.y + 10;
-        NewSaveBtn.anchorMin = new Vector2(0, 1);
-        NewSaveBtn.anchorMax = new Vector2(0, 1);
-        NewSaveBtn.pivot = new Vector2(0, 1);
+        NewSaveBtn.anchorMin = left_position;
+        NewSaveBtn.anchorMax = left_position;
+        NewSaveBtn.pivot = left_position;
         NewSaveBtn.anchoredPosition = new Vector2(0, Menu_Y * (-1));
 
         Menu_Y += NewSaveBtn.sizeDelta.y + 10;
-        SaveBtn.anchorMin = new Vector2(0, 1);
-        SaveBtn.anchorMax = new Vector2(0, 1);
-        SaveBtn.pivot = new Vector2(0, 1);
+        SaveBtn.anchorMin = left_position;
+        SaveBtn.anchorMax = left_position;
+        SaveBtn.pivot = left_position;
         SaveBtn.anchoredPosition = new Vector2(0, Menu_Y * (-1));
 
         Menu_Y += SaveBtn.sizeDelta.y + 10;
-        DisplayBtn.anchorMin = new Vector2(0, 1);
-        DisplayBtn.anchorMax = new Vector2(0, 1);
-        DisplayBtn.pivot = new Vector2(0, 1);
+        DisplayBtn.anchorMin = left_position;
+        DisplayBtn.anchorMax = left_position;
+        DisplayBtn.pivot = left_position;
         DisplayBtn.anchoredPosition = new Vector2(0, Menu_Y * (-1));
 
         Menu_Y += DisplayBtn.sizeDelta.y + 10;
-        space.anchorMin = new Vector2(0, 1);
-        space.anchorMax = new Vector2(0, 1);
-        space.pivot = new Vector2(0, 1);
+        space.anchorMin = left_position;
+        space.anchorMax = left_position;
+        space.pivot = left_position;
         space.anchoredPosition = new Vector2(0, Menu_Y * (-1));
 
         Menu_Y += space.sizeDelta.y + 10;
-        MenuBtn.anchorMin = new Vector2(0, 1);
-        MenuBtn.anchorMax = new Vector2(0, 1);
-        MenuBtn.pivot = new Vector2(0, 1);
+        MenuBtn.anchorMin = left_position;
+        MenuBtn.anchorMax = left_position;
+        MenuBtn.pivot = left_position;
         MenuBtn.anchoredPosition = new Vector2(0, Menu_Y * (-1));
     }
 }

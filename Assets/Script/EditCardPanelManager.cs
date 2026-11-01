@@ -560,9 +560,10 @@ public class EditCardPanelManager : MonoBehaviour
 
     private IEnumerator EditCardPanelListInitialize(int index, float size, float magnification_x, float magnification_y)
     {
-        rt_EditCardPanelList[index].anchorMin = new Vector2(0, 1);
-        rt_EditCardPanelList[index].anchorMax = new Vector2(0, 1);
-        rt_EditCardPanelList[index].pivot = new Vector2(0, 1);
+        Vector2 left_position = new Vector2(0, 1);
+        rt_EditCardPanelList[index].anchorMin = left_position;
+        rt_EditCardPanelList[index].anchorMax = left_position;
+        rt_EditCardPanelList[index].pivot = left_position;
         rt_EditCardPanelList[index].anchoredPosition = new Vector2(0, size * (-1));
         m_EditCardPanelList[index].UpdateImage(magnification_x, magnification_y);
         if(index % 5 == 0)

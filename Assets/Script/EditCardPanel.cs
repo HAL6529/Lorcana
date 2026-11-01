@@ -528,152 +528,153 @@ public class EditCardPanel : MonoBehaviour
         plusMinusHeader_plus.sizeDelta = new Vector2(plusMinusHeader_plus_X * magnification, plusMinusHeader_plus_Y * magnification);
         plusMinusHeader_minus.sizeDelta = new Vector2(plusMinusHeader_minus_X * magnification, plusMinusHeader_minus_Y * magnification);
 
-        image_parent.anchorMin = new Vector2(0, 1);
-        image_parent.anchorMax = new Vector2(0, 1);
-        image_parent.pivot = new Vector2(0, 1);
+        Vector2 left_position = new Vector2(0, 1);
+        image_parent.anchorMin = left_position;
+        image_parent.anchorMax = left_position;
+        image_parent.pivot = left_position;
         image_parent.anchoredPosition = Vector2.zero;
 
-        image.anchorMin = new Vector2(0, 1);
-        image.anchorMax = new Vector2(0, 1);
-        image.pivot = new Vector2(0, 1);
+        image.anchorMin = left_position;
+        image.anchorMax = left_position;
+        image.pivot = left_position;
         image.anchoredPosition = new Vector2((image_parent.sizeDelta.x - image.sizeDelta.x) / 2, (image_parent.sizeDelta.y - image.sizeDelta.y) / 2);
 
         //==============================================================================================
         //真ん中 --ここから--
         //==============================================================================================
-        middle.anchorMin = new Vector2(0, 1);
-        middle.anchorMax = new Vector2(0, 1);
-        middle.pivot = new Vector2(0, 1);
+        middle.anchorMin = left_position;
+        middle.anchorMax = left_position;
+        middle.pivot = left_position;
         middle.anchoredPosition = new Vector2(image_parent.sizeDelta.x, 0);
 
         float middleSize_y = 0;
-        inkHeader.anchorMin = new Vector2(0, 1);
-        inkHeader.anchorMax = new Vector2(0, 1);
-        inkHeader.pivot = new Vector2(0, 1);
+        inkHeader.anchorMin = left_position;
+        inkHeader.anchorMax = left_position;
+        inkHeader.pivot = left_position;
         inkHeader.anchoredPosition = Vector2.zero;
 
         middleSize_y += inkHeader.sizeDelta.y;
-        cardNameHeader.anchorMin = new Vector2(0, 1);
-        cardNameHeader.anchorMax = new Vector2(0, 1);
-        cardNameHeader.pivot = new Vector2(0, 1);
+        cardNameHeader.anchorMin = left_position;
+        cardNameHeader.anchorMax = left_position;
+        cardNameHeader.pivot = left_position;
         cardNameHeader.anchoredPosition = new Vector2(0, middleSize_y * (-1));
 
         middleSize_y += cardNameHeader.sizeDelta.y;
-        cardName2Header.anchorMin = new Vector2(0, 1);
-        cardName2Header.anchorMax = new Vector2(0, 1);
-        cardName2Header.pivot = new Vector2(0, 1);
+        cardName2Header.anchorMin = left_position;
+        cardName2Header.anchorMax = left_position;
+        cardName2Header.pivot = left_position;
         cardName2Header.anchoredPosition = new Vector2(0, middleSize_y * (-1));
 
         middleSize_y += cardName2Header.sizeDelta.y;
-        classHeader.anchorMin = new Vector2(0, 1);
-        classHeader.anchorMax = new Vector2(0, 1);
-        classHeader.pivot = new Vector2(0, 1);
+        classHeader.anchorMin = left_position;
+        classHeader.anchorMax = left_position;
+        classHeader.pivot = left_position;
         classHeader.anchoredPosition = new Vector2(0, middleSize_y * (-1));
 
         middleSize_y += classHeader.sizeDelta.y;
-        cardTextHeader.anchorMin = new Vector2(0, 1);
-        cardTextHeader.anchorMax = new Vector2(0, 1);
-        cardTextHeader.pivot = new Vector2(0, 1);
+        cardTextHeader.anchorMin = left_position;
+        cardTextHeader.anchorMax = left_position;
+        cardTextHeader.pivot = left_position;
         cardTextHeader.anchoredPosition = new Vector2(0, middleSize_y * (-1));
 
         middleSize_y += cardTextHeader.sizeDelta.y;
-        rareHeader.anchorMin = new Vector2(0, 1);
-        rareHeader.anchorMax = new Vector2(0, 1);
-        rareHeader.pivot = new Vector2(0, 1);
+        rareHeader.anchorMin = left_position;
+        rareHeader.anchorMax = left_position;
+        rareHeader.pivot = left_position;
         rareHeader.anchoredPosition = new Vector2(0, middleSize_y * (-1));
 
-        inkHeader_ink.anchorMin = new Vector2(0, 1);
-        inkHeader_ink.anchorMax = new Vector2(0, 1);
-        inkHeader_ink.pivot = new Vector2(0, 1);
+        inkHeader_ink.anchorMin = left_position;
+        inkHeader_ink.anchorMax = left_position;
+        inkHeader_ink.pivot = left_position;
         inkHeader_ink.anchoredPosition = Vector2.zero;
 
-        cardNameHeader_cardName.anchorMin = new Vector2(0, 1);
-        cardNameHeader_cardName.anchorMax = new Vector2(0, 1);
-        cardNameHeader_cardName.pivot = new Vector2(0, 1);
+        cardNameHeader_cardName.anchorMin = left_position;
+        cardNameHeader_cardName.anchorMax = left_position;
+        cardNameHeader_cardName.pivot = left_position;
         cardNameHeader_cardName.anchoredPosition = Vector2.zero;
 
-        cardName2Header_cardName.anchorMin = new Vector2(0, 1);
-        cardName2Header_cardName.anchorMax = new Vector2(0, 1);
-        cardName2Header_cardName.pivot = new Vector2(0, 1);
+        cardName2Header_cardName.anchorMin = left_position;
+        cardName2Header_cardName.anchorMax = left_position;
+        cardName2Header_cardName.pivot = left_position;
         cardName2Header_cardName.anchoredPosition = Vector2.zero;
 
-        classHeader_className.anchorMin = new Vector2(0, 1);
-        classHeader_className.anchorMax = new Vector2(0, 1);
-        classHeader_className.pivot = new Vector2(0, 1);
+        classHeader_className.anchorMin = left_position;
+        classHeader_className.anchorMax = left_position;
+        classHeader_className.pivot = left_position;
         classHeader_className.anchoredPosition = Vector2.zero;
 
-        cardTextHeader_middle.anchorMin = new Vector2(0, 1);
-        cardTextHeader_middle.anchorMax = new Vector2(0, 1);
-        cardTextHeader_middle.pivot = new Vector2(0, 1);
+        cardTextHeader_middle.anchorMin = left_position;
+        cardTextHeader_middle.anchorMax = left_position;
+        cardTextHeader_middle.pivot = left_position;
         cardTextHeader_middle.anchoredPosition = Vector2.zero;
 
         float cardTextHeader_middleSize_y = 0;
-        powerToughness.anchorMin = new Vector2(0, 1);
-        powerToughness.anchorMax = new Vector2(0, 1);
-        powerToughness.pivot = new Vector2(0, 1);
+        powerToughness.anchorMin = left_position;
+        powerToughness.anchorMax = left_position;
+        powerToughness.pivot = left_position;
         powerToughness.anchoredPosition = Vector2.zero;
 
-        expantionName_expantion.anchorMin = new Vector2(0, 1);
-        expantionName_expantion.anchorMax = new Vector2(0, 1);
-        expantionName_expantion.pivot = new Vector2(0, 1);
+        expantionName_expantion.anchorMin = left_position;
+        expantionName_expantion.anchorMax = left_position;
+        expantionName_expantion.pivot = left_position;
         expantionName_expantion.anchoredPosition = Vector2.zero;
 
-        expantionName_power.anchorMin = new Vector2(0, 1);
-        expantionName_power.anchorMax = new Vector2(0, 1);
-        expantionName_power.pivot = new Vector2(0, 1);
+        expantionName_power.anchorMin = left_position;
+        expantionName_power.anchorMax = left_position;
+        expantionName_power.pivot = left_position;
         expantionName_power.anchoredPosition = new Vector2(expantionName_expantion.sizeDelta.x, 0);
 
-        expantionName_toughness.anchorMin = new Vector2(0, 1);
-        expantionName_toughness.anchorMax = new Vector2(0, 1);
-        expantionName_toughness.pivot = new Vector2(0, 1);
+        expantionName_toughness.anchorMin = left_position;
+        expantionName_toughness.anchorMax = left_position;
+        expantionName_toughness.pivot = left_position;
         expantionName_toughness.anchoredPosition = new Vector2(expantionName_expantion.sizeDelta.x + expantionName_power.sizeDelta.x, 0);
 
-        expantionName_power_power.anchorMin = new Vector2(0, 1);
-        expantionName_power_power.anchorMax = new Vector2(0, 1);
-        expantionName_power_power.pivot = new Vector2(0, 1);
+        expantionName_power_power.anchorMin = left_position;
+        expantionName_power_power.anchorMax = left_position;
+        expantionName_power_power.pivot = left_position;
         expantionName_power_power.anchoredPosition = Vector2.zero;
 
-        expantionName_toughness_toughness.anchorMin = new Vector2(0, 1);
-        expantionName_toughness_toughness.anchorMax = new Vector2(0, 1);
-        expantionName_toughness_toughness.pivot = new Vector2(0, 1);
+        expantionName_toughness_toughness.anchorMin = left_position;
+        expantionName_toughness_toughness.anchorMax = left_position;
+        expantionName_toughness_toughness.pivot = left_position;
         expantionName_toughness_toughness.anchoredPosition = Vector2.zero;
 
         cardTextHeader_middleSize_y += powerToughness.sizeDelta.y;
-        titleHeader.anchorMin = new Vector2(0, 1);
-        titleHeader.anchorMax = new Vector2(0, 1);
-        titleHeader.pivot = new Vector2(0, 1);
+        titleHeader.anchorMin = left_position;
+        titleHeader.anchorMax = left_position;
+        titleHeader.pivot = left_position;
         titleHeader.anchoredPosition = new Vector2(0, cardTextHeader_middleSize_y * (-1));
 
-        titleHeader_title.anchorMin = new Vector2(0, 1);
-        titleHeader_title.anchorMax = new Vector2(0, 1);
-        titleHeader_title.pivot = new Vector2(0, 1);
+        titleHeader_title.anchorMin = left_position;
+        titleHeader_title.anchorMax = left_position;
+        titleHeader_title.pivot = left_position;
         titleHeader_title.anchoredPosition = Vector2.zero;
 
         cardTextHeader_middleSize_y += titleHeader.sizeDelta.y;
-        space1.anchorMin = new Vector2(0, 1);
-        space1.anchorMax = new Vector2(0, 1);
-        space1.pivot = new Vector2(0, 1);
+        space1.anchorMin = left_position;
+        space1.anchorMax = left_position;
+        space1.pivot = left_position;
         space1.anchoredPosition = new Vector2(0, cardTextHeader_middleSize_y * (-1));
 
         cardTextHeader_middleSize_y += space1.sizeDelta.y;
-        space2.anchorMin = new Vector2(0, 1);
-        space2.anchorMax = new Vector2(0, 1);
-        space2.pivot = new Vector2(0, 1);
+        space2.anchorMin = left_position;
+        space2.anchorMax = left_position;
+        space2.pivot = left_position;
         space2.anchoredPosition = new Vector2(0, cardTextHeader_middleSize_y * (-1));
 
-        lores.anchorMin = new Vector2(0, 1);
-        lores.anchorMax = new Vector2(0, 1);
-        lores.pivot = new Vector2(0, 1);
+        lores.anchorMin = left_position;
+        lores.anchorMax = left_position;
+        lores.pivot = left_position;
         lores.anchoredPosition = new Vector2(cardTextHeader_middle.sizeDelta.x, 0);
 
-        lores_lore.anchorMin = new Vector2(0, 1);
-        lores_lore.anchorMax = new Vector2(0, 1);
-        lores_lore.pivot = new Vector2(0, 1);
+        lores_lore.anchorMin = left_position;
+        lores_lore.anchorMax = left_position;
+        lores_lore.pivot = left_position;
         lores_lore.anchoredPosition = new Vector2((lores.sizeDelta.x - lores_lore.sizeDelta.x) / 2, 0);
 
-        rareHeader_rare.anchorMin = new Vector2(0, 1);
-        rareHeader_rare.anchorMax = new Vector2(0, 1);
-        rareHeader_rare.pivot = new Vector2(0, 1);
+        rareHeader_rare.anchorMin = left_position;
+        rareHeader_rare.anchorMax = left_position;
+        rareHeader_rare.pivot = left_position;
         rareHeader_rare.anchoredPosition = new Vector2((rareHeader.sizeDelta.x - rareHeader_rare.sizeDelta.x) / 2, 0);
         //==============================================================================================
         //真ん中 --ここまで--
@@ -682,49 +683,48 @@ public class EditCardPanel : MonoBehaviour
         //プラスマイナスボタン --ここから--
         //==============================================================================================
 
-        plusMinusHeader.anchorMin = new Vector2(0, 1);
-        plusMinusHeader.anchorMax = new Vector2(0, 1);
-        plusMinusHeader.pivot = new Vector2(0, 1);
+        plusMinusHeader.anchorMin = left_position;
+        plusMinusHeader.anchorMax = left_position;
+        plusMinusHeader.pivot = left_position;
         plusMinusHeader.anchoredPosition = new Vector2(image_parent.sizeDelta.x + middle.sizeDelta.x, 0);
 
         float plusMinusHeaderSize_y = 0;
 
-        Vector2 plusMinusHeader_space1 = new Vector2(147, 27);
-        plusMinusHeader_label.anchorMin = new Vector2(0, 1);
-        plusMinusHeader_label.anchorMax = new Vector2(0, 1);
-        plusMinusHeader_label.pivot = new Vector2(0, 1);
+        plusMinusHeader_label.anchorMin = left_position;
+        plusMinusHeader_label.anchorMax = left_position;
+        plusMinusHeader_label.pivot = left_position;
         plusMinusHeader_label.anchoredPosition = Vector2.zero;
 
         plusMinusHeaderSize_y += plusMinusHeader_label.sizeDelta.y;
         plusMinusHeaderSize_y += 27 * magnification_y;
 
-        plusMinusHeader_plus.anchorMin = new Vector2(0, 1);
-        plusMinusHeader_plus.anchorMax = new Vector2(0, 1);
-        plusMinusHeader_plus.pivot = new Vector2(0, 1);
+        plusMinusHeader_plus.anchorMin = left_position;
+        plusMinusHeader_plus.anchorMax = left_position;
+        plusMinusHeader_plus.pivot = left_position;
         plusMinusHeader_plus.anchoredPosition = new Vector2((plusMinusHeader.sizeDelta.x - plusMinusHeader_plus.sizeDelta.x) / 2, plusMinusHeaderSize_y * (-1));
 
         plusMinusHeaderSize_y += plusMinusHeader_plus.sizeDelta.y;
         plusMinusHeaderSize_y += 20 * magnification_y;
 
-        plusMinusHeader_count.anchorMin = new Vector2(0, 1);
-        plusMinusHeader_count.anchorMax = new Vector2(0, 1);
-        plusMinusHeader_count.pivot = new Vector2(0, 1);
+        plusMinusHeader_count.anchorMin = left_position;
+        plusMinusHeader_count.anchorMax = left_position;
+        plusMinusHeader_count.pivot = left_position;
         plusMinusHeader_count.anchoredPosition = new Vector2(0, plusMinusHeaderSize_y * (-1));
 
         plusMinusHeaderSize_y += plusMinusHeader_count.sizeDelta.y;
         plusMinusHeaderSize_y += 20 * magnification_y;
 
-        plusMinusHeader_minus.anchorMin = new Vector2(0, 1);
-        plusMinusHeader_minus.anchorMax = new Vector2(0, 1);
-        plusMinusHeader_minus.pivot = new Vector2(0, 1);
+        plusMinusHeader_minus.anchorMin = left_position;
+        plusMinusHeader_minus.anchorMax = left_position;
+        plusMinusHeader_minus.pivot = left_position;
         plusMinusHeader_minus.anchoredPosition = new Vector2((plusMinusHeader.sizeDelta.x - plusMinusHeader_minus.sizeDelta.x) / 2, plusMinusHeaderSize_y * (-1));
 
         plusMinusHeaderSize_y += plusMinusHeader_minus.sizeDelta.y;
         plusMinusHeaderSize_y += 27 * magnification_y;
 
-        plusMinusHeader_label2.anchorMin = new Vector2(0, 1);
-        plusMinusHeader_label2.anchorMax = new Vector2(0, 1);
-        plusMinusHeader_label2.pivot = new Vector2(0, 1);
+        plusMinusHeader_label2.anchorMin = left_position;
+        plusMinusHeader_label2.anchorMax = left_position;
+        plusMinusHeader_label2.pivot = left_position;
         plusMinusHeader_label2.anchoredPosition = new Vector2(0, plusMinusHeaderSize_y * (-1));
 
         //==============================================================================================
