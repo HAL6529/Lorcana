@@ -1266,18 +1266,57 @@ MonoBehaviour:
   toughness: {fileID: 4264538529029949534}
   count: {fileID: 1784414784683758422}
   rareSprite: {fileID: 9073974139592115766}
+  i_lore: {fileID: 0}
   m_CardInfo: {fileID: 8255942596717074805}
   plusBtn: {fileID: 6098081469682052543}
   minusBtn: {fileID: 5462062262755605572}
-  ScrollView: {fileID: 5781072322775876073}
   cardCount: 0
-  loreList:
-  - {fileID: 3053169768461628834}
-  - {fileID: 6119830643002970303}
-  - {fileID: 1655264412704513133}
-  - {fileID: 2679073983340685589}
+  index: 0
+  parent: {fileID: 0}
+  image_parent: {fileID: 0}
+  image: {fileID: 0}
+  middle: {fileID: 0}
+  inkHeader: {fileID: 0}
+  inkHeader_ink: {fileID: 0}
+  cardNameHeader: {fileID: 0}
+  cardNameHeader_cardName: {fileID: 0}
+  cardName2Header: {fileID: 0}
+  cardName2Header_cardName: {fileID: 0}
+  classHeader: {fileID: 0}
+  classHeader_className: {fileID: 0}
+  cardTextHeader: {fileID: 0}
+  cardTextHeader_middle: {fileID: 0}
+  powerToughness: {fileID: 0}
+  expantionName: {fileID: 0}
+  expantionName_expantion: {fileID: 0}
+  expantionName_power: {fileID: 0}
+  expantionName_power_power: {fileID: 0}
+  expantionName_toughness: {fileID: 0}
+  expantionName_toughness_toughness: {fileID: 0}
+  titleHeader: {fileID: 0}
+  titleHeader_title: {fileID: 0}
+  space1: {fileID: 0}
+  space2: {fileID: 0}
+  lores: {fileID: 0}
+  lores_lore: {fileID: 0}
+  rareHeader: {fileID: 0}
+  rareHeader_rare: {fileID: 0}
+  plusMinusHeader: {fileID: 0}
+  plusMinusHeader_label: {fileID: 0}
+  plusMinusHeader_space1: {fileID: 0}
+  plusMinusHeader_plus: {fileID: 0}
+  plusMinusHeader_space2: {fileID: 0}
+  plusMinusHeader_count: {fileID: 0}
+  plusMinusHeader_space3: {fileID: 0}
+  plusMinusHeader_minus: {fileID: 0}
+  plusMinusHeader_space4: {fileID: 0}
+  plusMinusHeader_label2: {fileID: 0}
   m_EditCardPanelManager: {fileID: 8361859509718700248}
   m_PanelPicture: {fileID: 8926446434655292024}
+  Lore1: {fileID: 0}
+  Lore2: {fileID: 0}
+  Lore3: {fileID: 0}
+  Lore4: {fileID: 0}
 --- !u!114 &8255942596717074805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1428,18 +1467,57 @@ MonoBehaviour:
   toughness: {fileID: 8196490355726551972}
   count: {fileID: 5449160271287946173}
   rareSprite: {fileID: 8812061127204241572}
+  i_lore: {fileID: 0}
   m_CardInfo: {fileID: 8498397030019394496}
   plusBtn: {fileID: 1880965231795312775}
   minusBtn: {fileID: 4546517800946244405}
-  ScrollView: {fileID: 5781072322775876073}
   cardCount: 0
-  loreList:
-  - {fileID: 2776623410516505956}
-  - {fileID: 4371213155680402883}
-  - {fileID: 504315419860219966}
-  - {fileID: 6470825757887779167}
+  index: 0
+  parent: {fileID: 0}
+  image_parent: {fileID: 0}
+  image: {fileID: 0}
+  middle: {fileID: 0}
+  inkHeader: {fileID: 0}
+  inkHeader_ink: {fileID: 0}
+  cardNameHeader: {fileID: 0}
+  cardNameHeader_cardName: {fileID: 0}
+  cardName2Header: {fileID: 0}
+  cardName2Header_cardName: {fileID: 0}
+  classHeader: {fileID: 0}
+  classHeader_className: {fileID: 0}
+  cardTextHeader: {fileID: 0}
+  cardTextHeader_middle: {fileID: 0}
+  powerToughness: {fileID: 0}
+  expantionName: {fileID: 0}
+  expantionName_expantion: {fileID: 0}
+  expantionName_power: {fileID: 0}
+  expantionName_power_power: {fileID: 0}
+  expantionName_toughness: {fileID: 0}
+  expantionName_toughness_toughness: {fileID: 0}
+  titleHeader: {fileID: 0}
+  titleHeader_title: {fileID: 0}
+  space1: {fileID: 0}
+  space2: {fileID: 0}
+  lores: {fileID: 0}
+  lores_lore: {fileID: 0}
+  rareHeader: {fileID: 0}
+  rareHeader_rare: {fileID: 0}
+  plusMinusHeader: {fileID: 0}
+  plusMinusHeader_label: {fileID: 0}
+  plusMinusHeader_space1: {fileID: 0}
+  plusMinusHeader_plus: {fileID: 0}
+  plusMinusHeader_space2: {fileID: 0}
+  plusMinusHeader_count: {fileID: 0}
+  plusMinusHeader_space3: {fileID: 0}
+  plusMinusHeader_minus: {fileID: 0}
+  plusMinusHeader_space4: {fileID: 0}
+  plusMinusHeader_label2: {fileID: 0}
   m_EditCardPanelManager: {fileID: 8361859509718700248}
   m_PanelPicture: {fileID: 8926446434655292024}
+  Lore1: {fileID: 0}
+  Lore2: {fileID: 0}
+  Lore3: {fileID: 0}
+  Lore4: {fileID: 0}
 --- !u!114 &8498397030019394496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3206,18 +3284,57 @@ MonoBehaviour:
   toughness: {fileID: 4531681557251334653}
   count: {fileID: 6628621160736244886}
   rareSprite: {fileID: 5048475322153008757}
+  i_lore: {fileID: 0}
   m_CardInfo: {fileID: 2036924203582561039}
   plusBtn: {fileID: 3256948266573526613}
   minusBtn: {fileID: 7188767177954432376}
-  ScrollView: {fileID: 5781072322775876073}
   cardCount: 0
-  loreList:
-  - {fileID: 7378405216792998616}
-  - {fileID: 4652897121102862255}
-  - {fileID: 1963796344630397304}
-  - {fileID: 3658683599302845087}
+  index: 0
+  parent: {fileID: 0}
+  image_parent: {fileID: 0}
+  image: {fileID: 0}
+  middle: {fileID: 0}
+  inkHeader: {fileID: 0}
+  inkHeader_ink: {fileID: 0}
+  cardNameHeader: {fileID: 0}
+  cardNameHeader_cardName: {fileID: 0}
+  cardName2Header: {fileID: 0}
+  cardName2Header_cardName: {fileID: 0}
+  classHeader: {fileID: 0}
+  classHeader_className: {fileID: 0}
+  cardTextHeader: {fileID: 0}
+  cardTextHeader_middle: {fileID: 0}
+  powerToughness: {fileID: 0}
+  expantionName: {fileID: 0}
+  expantionName_expantion: {fileID: 0}
+  expantionName_power: {fileID: 0}
+  expantionName_power_power: {fileID: 0}
+  expantionName_toughness: {fileID: 0}
+  expantionName_toughness_toughness: {fileID: 0}
+  titleHeader: {fileID: 0}
+  titleHeader_title: {fileID: 0}
+  space1: {fileID: 0}
+  space2: {fileID: 0}
+  lores: {fileID: 0}
+  lores_lore: {fileID: 0}
+  rareHeader: {fileID: 0}
+  rareHeader_rare: {fileID: 0}
+  plusMinusHeader: {fileID: 0}
+  plusMinusHeader_label: {fileID: 0}
+  plusMinusHeader_space1: {fileID: 0}
+  plusMinusHeader_plus: {fileID: 0}
+  plusMinusHeader_space2: {fileID: 0}
+  plusMinusHeader_count: {fileID: 0}
+  plusMinusHeader_space3: {fileID: 0}
+  plusMinusHeader_minus: {fileID: 0}
+  plusMinusHeader_space4: {fileID: 0}
+  plusMinusHeader_label2: {fileID: 0}
   m_EditCardPanelManager: {fileID: 8361859509718700248}
   m_PanelPicture: {fileID: 8926446434655292024}
+  Lore1: {fileID: 0}
+  Lore2: {fileID: 0}
+  Lore3: {fileID: 0}
+  Lore4: {fileID: 0}
 --- !u!114 &2036924203582561039
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5313,18 +5430,57 @@ MonoBehaviour:
   toughness: {fileID: 2218969606723088939}
   count: {fileID: 7625448624425446686}
   rareSprite: {fileID: 7227374213918053376}
+  i_lore: {fileID: 0}
   m_CardInfo: {fileID: 6753570695332054787}
   plusBtn: {fileID: 4724584028496304111}
   minusBtn: {fileID: 4723782979338589124}
-  ScrollView: {fileID: 5781072322775876073}
   cardCount: 0
-  loreList:
-  - {fileID: 1372345797824245789}
-  - {fileID: 5774403456583142301}
-  - {fileID: 4224838379106460340}
-  - {fileID: 4884147210622200772}
+  index: 0
+  parent: {fileID: 0}
+  image_parent: {fileID: 0}
+  image: {fileID: 0}
+  middle: {fileID: 0}
+  inkHeader: {fileID: 0}
+  inkHeader_ink: {fileID: 0}
+  cardNameHeader: {fileID: 0}
+  cardNameHeader_cardName: {fileID: 0}
+  cardName2Header: {fileID: 0}
+  cardName2Header_cardName: {fileID: 0}
+  classHeader: {fileID: 0}
+  classHeader_className: {fileID: 0}
+  cardTextHeader: {fileID: 0}
+  cardTextHeader_middle: {fileID: 0}
+  powerToughness: {fileID: 0}
+  expantionName: {fileID: 0}
+  expantionName_expantion: {fileID: 0}
+  expantionName_power: {fileID: 0}
+  expantionName_power_power: {fileID: 0}
+  expantionName_toughness: {fileID: 0}
+  expantionName_toughness_toughness: {fileID: 0}
+  titleHeader: {fileID: 0}
+  titleHeader_title: {fileID: 0}
+  space1: {fileID: 0}
+  space2: {fileID: 0}
+  lores: {fileID: 0}
+  lores_lore: {fileID: 0}
+  rareHeader: {fileID: 0}
+  rareHeader_rare: {fileID: 0}
+  plusMinusHeader: {fileID: 0}
+  plusMinusHeader_label: {fileID: 0}
+  plusMinusHeader_space1: {fileID: 0}
+  plusMinusHeader_plus: {fileID: 0}
+  plusMinusHeader_space2: {fileID: 0}
+  plusMinusHeader_count: {fileID: 0}
+  plusMinusHeader_space3: {fileID: 0}
+  plusMinusHeader_minus: {fileID: 0}
+  plusMinusHeader_space4: {fileID: 0}
+  plusMinusHeader_label2: {fileID: 0}
   m_EditCardPanelManager: {fileID: 8361859509718700248}
   m_PanelPicture: {fileID: 8926446434655292024}
+  Lore1: {fileID: 0}
+  Lore2: {fileID: 0}
+  Lore3: {fileID: 0}
+  Lore4: {fileID: 0}
 --- !u!114 &6753570695332054787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7458,18 +7614,57 @@ MonoBehaviour:
   toughness: {fileID: 2432517689535145136}
   count: {fileID: 2516338344824533993}
   rareSprite: {fileID: 6637245207008552083}
+  i_lore: {fileID: 0}
   m_CardInfo: {fileID: 7336976680387633801}
   plusBtn: {fileID: 9157709856003274001}
   minusBtn: {fileID: 8471131334057830521}
-  ScrollView: {fileID: 5781072322775876073}
   cardCount: 0
-  loreList:
-  - {fileID: 6722082708257031992}
-  - {fileID: 8426571191308132024}
-  - {fileID: 2307642405998585471}
-  - {fileID: 5313505349951664464}
+  index: 0
+  parent: {fileID: 0}
+  image_parent: {fileID: 0}
+  image: {fileID: 0}
+  middle: {fileID: 0}
+  inkHeader: {fileID: 0}
+  inkHeader_ink: {fileID: 0}
+  cardNameHeader: {fileID: 0}
+  cardNameHeader_cardName: {fileID: 0}
+  cardName2Header: {fileID: 0}
+  cardName2Header_cardName: {fileID: 0}
+  classHeader: {fileID: 0}
+  classHeader_className: {fileID: 0}
+  cardTextHeader: {fileID: 0}
+  cardTextHeader_middle: {fileID: 0}
+  powerToughness: {fileID: 0}
+  expantionName: {fileID: 0}
+  expantionName_expantion: {fileID: 0}
+  expantionName_power: {fileID: 0}
+  expantionName_power_power: {fileID: 0}
+  expantionName_toughness: {fileID: 0}
+  expantionName_toughness_toughness: {fileID: 0}
+  titleHeader: {fileID: 0}
+  titleHeader_title: {fileID: 0}
+  space1: {fileID: 0}
+  space2: {fileID: 0}
+  lores: {fileID: 0}
+  lores_lore: {fileID: 0}
+  rareHeader: {fileID: 0}
+  rareHeader_rare: {fileID: 0}
+  plusMinusHeader: {fileID: 0}
+  plusMinusHeader_label: {fileID: 0}
+  plusMinusHeader_space1: {fileID: 0}
+  plusMinusHeader_plus: {fileID: 0}
+  plusMinusHeader_space2: {fileID: 0}
+  plusMinusHeader_count: {fileID: 0}
+  plusMinusHeader_space3: {fileID: 0}
+  plusMinusHeader_minus: {fileID: 0}
+  plusMinusHeader_space4: {fileID: 0}
+  plusMinusHeader_label2: {fileID: 0}
   m_EditCardPanelManager: {fileID: 8361859509718700248}
   m_PanelPicture: {fileID: 8926446434655292024}
+  Lore1: {fileID: 0}
+  Lore2: {fileID: 0}
+  Lore3: {fileID: 0}
+  Lore4: {fileID: 0}
 --- !u!114 &7336976680387633801
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11468,18 +11663,57 @@ MonoBehaviour:
   toughness: {fileID: 1264244723207387386}
   count: {fileID: 1136364366501588535}
   rareSprite: {fileID: 824321382289926808}
+  i_lore: {fileID: 0}
   m_CardInfo: {fileID: 3375837003072873070}
   plusBtn: {fileID: 6612392484103716426}
   minusBtn: {fileID: 7247345296027701635}
-  ScrollView: {fileID: 5781072322775876073}
   cardCount: 0
-  loreList:
-  - {fileID: 1808968893184871567}
-  - {fileID: 2750929652428541024}
-  - {fileID: 8867180883422352677}
-  - {fileID: 6348648558125862957}
+  index: 0
+  parent: {fileID: 0}
+  image_parent: {fileID: 0}
+  image: {fileID: 0}
+  middle: {fileID: 0}
+  inkHeader: {fileID: 0}
+  inkHeader_ink: {fileID: 0}
+  cardNameHeader: {fileID: 0}
+  cardNameHeader_cardName: {fileID: 0}
+  cardName2Header: {fileID: 0}
+  cardName2Header_cardName: {fileID: 0}
+  classHeader: {fileID: 0}
+  classHeader_className: {fileID: 0}
+  cardTextHeader: {fileID: 0}
+  cardTextHeader_middle: {fileID: 0}
+  powerToughness: {fileID: 0}
+  expantionName: {fileID: 0}
+  expantionName_expantion: {fileID: 0}
+  expantionName_power: {fileID: 0}
+  expantionName_power_power: {fileID: 0}
+  expantionName_toughness: {fileID: 0}
+  expantionName_toughness_toughness: {fileID: 0}
+  titleHeader: {fileID: 0}
+  titleHeader_title: {fileID: 0}
+  space1: {fileID: 0}
+  space2: {fileID: 0}
+  lores: {fileID: 0}
+  lores_lore: {fileID: 0}
+  rareHeader: {fileID: 0}
+  rareHeader_rare: {fileID: 0}
+  plusMinusHeader: {fileID: 0}
+  plusMinusHeader_label: {fileID: 0}
+  plusMinusHeader_space1: {fileID: 0}
+  plusMinusHeader_plus: {fileID: 0}
+  plusMinusHeader_space2: {fileID: 0}
+  plusMinusHeader_count: {fileID: 0}
+  plusMinusHeader_space3: {fileID: 0}
+  plusMinusHeader_minus: {fileID: 0}
+  plusMinusHeader_space4: {fileID: 0}
+  plusMinusHeader_label2: {fileID: 0}
   m_EditCardPanelManager: {fileID: 8361859509718700248}
   m_PanelPicture: {fileID: 8926446434655292024}
+  Lore1: {fileID: 0}
+  Lore2: {fileID: 0}
+  Lore3: {fileID: 0}
+  Lore4: {fileID: 0}
 --- !u!114 &3375837003072873070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12308,18 +12542,57 @@ MonoBehaviour:
   toughness: {fileID: 3863952661596510604}
   count: {fileID: 1905211801260214092}
   rareSprite: {fileID: 6551779252654196858}
+  i_lore: {fileID: 0}
   m_CardInfo: {fileID: 6728687948608158672}
   plusBtn: {fileID: 4666404583614875917}
   minusBtn: {fileID: 8568897069064860985}
-  ScrollView: {fileID: 5781072322775876073}
   cardCount: 0
-  loreList:
-  - {fileID: 2850367355510723752}
-  - {fileID: 8883297154663589989}
-  - {fileID: 3225221606899842}
-  - {fileID: 945731681138286654}
+  index: 0
+  parent: {fileID: 0}
+  image_parent: {fileID: 0}
+  image: {fileID: 0}
+  middle: {fileID: 0}
+  inkHeader: {fileID: 0}
+  inkHeader_ink: {fileID: 0}
+  cardNameHeader: {fileID: 0}
+  cardNameHeader_cardName: {fileID: 0}
+  cardName2Header: {fileID: 0}
+  cardName2Header_cardName: {fileID: 0}
+  classHeader: {fileID: 0}
+  classHeader_className: {fileID: 0}
+  cardTextHeader: {fileID: 0}
+  cardTextHeader_middle: {fileID: 0}
+  powerToughness: {fileID: 0}
+  expantionName: {fileID: 0}
+  expantionName_expantion: {fileID: 0}
+  expantionName_power: {fileID: 0}
+  expantionName_power_power: {fileID: 0}
+  expantionName_toughness: {fileID: 0}
+  expantionName_toughness_toughness: {fileID: 0}
+  titleHeader: {fileID: 0}
+  titleHeader_title: {fileID: 0}
+  space1: {fileID: 0}
+  space2: {fileID: 0}
+  lores: {fileID: 0}
+  lores_lore: {fileID: 0}
+  rareHeader: {fileID: 0}
+  rareHeader_rare: {fileID: 0}
+  plusMinusHeader: {fileID: 0}
+  plusMinusHeader_label: {fileID: 0}
+  plusMinusHeader_space1: {fileID: 0}
+  plusMinusHeader_plus: {fileID: 0}
+  plusMinusHeader_space2: {fileID: 0}
+  plusMinusHeader_count: {fileID: 0}
+  plusMinusHeader_space3: {fileID: 0}
+  plusMinusHeader_minus: {fileID: 0}
+  plusMinusHeader_space4: {fileID: 0}
+  plusMinusHeader_label2: {fileID: 0}
   m_EditCardPanelManager: {fileID: 8361859509718700248}
   m_PanelPicture: {fileID: 8926446434655292024}
+  Lore1: {fileID: 0}
+  Lore2: {fileID: 0}
+  Lore3: {fileID: 0}
+  Lore4: {fileID: 0}
 --- !u!114 &6728687948608158672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17128,18 +17401,57 @@ MonoBehaviour:
   toughness: {fileID: 889046414449020693}
   count: {fileID: 9078692847887820065}
   rareSprite: {fileID: 8480647349832667629}
+  i_lore: {fileID: 0}
   m_CardInfo: {fileID: 2111881251821760864}
   plusBtn: {fileID: 643662577617198401}
   minusBtn: {fileID: 221056255567379678}
-  ScrollView: {fileID: 5781072322775876073}
   cardCount: 0
-  loreList:
-  - {fileID: 9206065504260428159}
-  - {fileID: 7968521653230267702}
-  - {fileID: 7567339232099256200}
-  - {fileID: 7634444270611041096}
+  index: 0
+  parent: {fileID: 0}
+  image_parent: {fileID: 0}
+  image: {fileID: 0}
+  middle: {fileID: 0}
+  inkHeader: {fileID: 0}
+  inkHeader_ink: {fileID: 0}
+  cardNameHeader: {fileID: 0}
+  cardNameHeader_cardName: {fileID: 0}
+  cardName2Header: {fileID: 0}
+  cardName2Header_cardName: {fileID: 0}
+  classHeader: {fileID: 0}
+  classHeader_className: {fileID: 0}
+  cardTextHeader: {fileID: 0}
+  cardTextHeader_middle: {fileID: 0}
+  powerToughness: {fileID: 0}
+  expantionName: {fileID: 0}
+  expantionName_expantion: {fileID: 0}
+  expantionName_power: {fileID: 0}
+  expantionName_power_power: {fileID: 0}
+  expantionName_toughness: {fileID: 0}
+  expantionName_toughness_toughness: {fileID: 0}
+  titleHeader: {fileID: 0}
+  titleHeader_title: {fileID: 0}
+  space1: {fileID: 0}
+  space2: {fileID: 0}
+  lores: {fileID: 0}
+  lores_lore: {fileID: 0}
+  rareHeader: {fileID: 0}
+  rareHeader_rare: {fileID: 0}
+  plusMinusHeader: {fileID: 0}
+  plusMinusHeader_label: {fileID: 0}
+  plusMinusHeader_space1: {fileID: 0}
+  plusMinusHeader_plus: {fileID: 0}
+  plusMinusHeader_space2: {fileID: 0}
+  plusMinusHeader_count: {fileID: 0}
+  plusMinusHeader_space3: {fileID: 0}
+  plusMinusHeader_minus: {fileID: 0}
+  plusMinusHeader_space4: {fileID: 0}
+  plusMinusHeader_label2: {fileID: 0}
   m_EditCardPanelManager: {fileID: 8361859509718700248}
   m_PanelPicture: {fileID: 8926446434655292024}
+  Lore1: {fileID: 0}
+  Lore2: {fileID: 0}
+  Lore3: {fileID: 0}
+  Lore4: {fileID: 0}
 --- !u!114 &2111881251821760864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23465,8 +23777,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 224681253261507248}
   m_HandleRect: {fileID: 1337255348683058640}
   m_Direction: 2
-  m_Value: 0
-  m_Size: 1
+  m_Value: 1
+  m_Size: 0.24530551
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -26503,8 +26815,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13a7a1bef9e6ccb428dbb5b8d34727e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScrollView: {fileID: 5781072322775876073}
   m_image: {fileID: 9094192496980478719}
+  favoriteBtn_image: {fileID: 0}
+  FavoriteOn: {fileID: 0}
+  FavoriteOff: {fileID: 0}
+  Parent: {fileID: 0}
+  Button_Header: {fileID: 0}
+  Button_Favorite: {fileID: 0}
+  Button_Close: {fileID: 0}
+  Image: {fileID: 0}
 --- !u!1 &5917183613404122294
 GameObject:
   m_ObjectHideFlags: 0
@@ -31156,18 +31475,57 @@ MonoBehaviour:
   toughness: {fileID: 7161707454554717777}
   count: {fileID: 43786668784982357}
   rareSprite: {fileID: 4955995436793477802}
+  i_lore: {fileID: 0}
   m_CardInfo: {fileID: 2185348790586476752}
   plusBtn: {fileID: 8256784886991051548}
   minusBtn: {fileID: 1551968097457166864}
-  ScrollView: {fileID: 5781072322775876073}
   cardCount: 0
-  loreList:
-  - {fileID: 6085287357275139475}
-  - {fileID: 5055817537690449156}
-  - {fileID: 3442550726690261326}
-  - {fileID: 1419578547529760035}
+  index: 0
+  parent: {fileID: 0}
+  image_parent: {fileID: 0}
+  image: {fileID: 0}
+  middle: {fileID: 0}
+  inkHeader: {fileID: 0}
+  inkHeader_ink: {fileID: 0}
+  cardNameHeader: {fileID: 0}
+  cardNameHeader_cardName: {fileID: 0}
+  cardName2Header: {fileID: 0}
+  cardName2Header_cardName: {fileID: 0}
+  classHeader: {fileID: 0}
+  classHeader_className: {fileID: 0}
+  cardTextHeader: {fileID: 0}
+  cardTextHeader_middle: {fileID: 0}
+  powerToughness: {fileID: 0}
+  expantionName: {fileID: 0}
+  expantionName_expantion: {fileID: 0}
+  expantionName_power: {fileID: 0}
+  expantionName_power_power: {fileID: 0}
+  expantionName_toughness: {fileID: 0}
+  expantionName_toughness_toughness: {fileID: 0}
+  titleHeader: {fileID: 0}
+  titleHeader_title: {fileID: 0}
+  space1: {fileID: 0}
+  space2: {fileID: 0}
+  lores: {fileID: 0}
+  lores_lore: {fileID: 0}
+  rareHeader: {fileID: 0}
+  rareHeader_rare: {fileID: 0}
+  plusMinusHeader: {fileID: 0}
+  plusMinusHeader_label: {fileID: 0}
+  plusMinusHeader_space1: {fileID: 0}
+  plusMinusHeader_plus: {fileID: 0}
+  plusMinusHeader_space2: {fileID: 0}
+  plusMinusHeader_count: {fileID: 0}
+  plusMinusHeader_space3: {fileID: 0}
+  plusMinusHeader_minus: {fileID: 0}
+  plusMinusHeader_space4: {fileID: 0}
+  plusMinusHeader_label2: {fileID: 0}
   m_EditCardPanelManager: {fileID: 8361859509718700248}
   m_PanelPicture: {fileID: 8926446434655292024}
+  Lore1: {fileID: 0}
+  Lore2: {fileID: 0}
+  Lore3: {fileID: 0}
+  Lore4: {fileID: 0}
 --- !u!114 &2185348790586476752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31956,18 +32314,57 @@ MonoBehaviour:
   toughness: {fileID: 1792100319311068905}
   count: {fileID: 3817963809912630014}
   rareSprite: {fileID: 6108871799324047353}
+  i_lore: {fileID: 0}
   m_CardInfo: {fileID: 4628498619615504980}
   plusBtn: {fileID: 2348603200259919821}
   minusBtn: {fileID: 6859049345043721680}
-  ScrollView: {fileID: 5781072322775876073}
   cardCount: 0
-  loreList:
-  - {fileID: 7718801072298367971}
-  - {fileID: 6306023818033863217}
-  - {fileID: 8960643915587307429}
-  - {fileID: 7812946471081969679}
+  index: 0
+  parent: {fileID: 0}
+  image_parent: {fileID: 0}
+  image: {fileID: 0}
+  middle: {fileID: 0}
+  inkHeader: {fileID: 0}
+  inkHeader_ink: {fileID: 0}
+  cardNameHeader: {fileID: 0}
+  cardNameHeader_cardName: {fileID: 0}
+  cardName2Header: {fileID: 0}
+  cardName2Header_cardName: {fileID: 0}
+  classHeader: {fileID: 0}
+  classHeader_className: {fileID: 0}
+  cardTextHeader: {fileID: 0}
+  cardTextHeader_middle: {fileID: 0}
+  powerToughness: {fileID: 0}
+  expantionName: {fileID: 0}
+  expantionName_expantion: {fileID: 0}
+  expantionName_power: {fileID: 0}
+  expantionName_power_power: {fileID: 0}
+  expantionName_toughness: {fileID: 0}
+  expantionName_toughness_toughness: {fileID: 0}
+  titleHeader: {fileID: 0}
+  titleHeader_title: {fileID: 0}
+  space1: {fileID: 0}
+  space2: {fileID: 0}
+  lores: {fileID: 0}
+  lores_lore: {fileID: 0}
+  rareHeader: {fileID: 0}
+  rareHeader_rare: {fileID: 0}
+  plusMinusHeader: {fileID: 0}
+  plusMinusHeader_label: {fileID: 0}
+  plusMinusHeader_space1: {fileID: 0}
+  plusMinusHeader_plus: {fileID: 0}
+  plusMinusHeader_space2: {fileID: 0}
+  plusMinusHeader_count: {fileID: 0}
+  plusMinusHeader_space3: {fileID: 0}
+  plusMinusHeader_minus: {fileID: 0}
+  plusMinusHeader_space4: {fileID: 0}
+  plusMinusHeader_label2: {fileID: 0}
   m_EditCardPanelManager: {fileID: 8361859509718700248}
   m_PanelPicture: {fileID: 8926446434655292024}
+  Lore1: {fileID: 0}
+  Lore2: {fileID: 0}
+  Lore3: {fileID: 0}
+  Lore4: {fileID: 0}
 --- !u!114 &4628498619615504980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34251,6 +34648,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c0cda16a08ec8c43a5a87057b9fd68e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  parent: {fileID: 0}
   m_SearchClass: {fileID: 0}
   DeckName: 
   m_CardInfo_TheFirstChapter: []
@@ -34272,6 +34670,11 @@ MonoBehaviour:
   MenuObj: {fileID: 0}
   SortImage: {fileID: 0}
   DeckAllSwitchBtnImage: {fileID: 0}
+  SwitchOwn: 0
+  m_SearchFilterClass: {fileID: 0}
+  rt_EditCardPanelList: []
+  rt_content: {fileID: 0}
+  CanvasRectTransform: {fileID: 0}
 --- !u!1 &7684977289707744148
 GameObject:
   m_ObjectHideFlags: 0
@@ -34767,18 +35170,57 @@ MonoBehaviour:
   toughness: {fileID: 6358700525675039044}
   count: {fileID: 3466412672002919083}
   rareSprite: {fileID: 401110328048037059}
+  i_lore: {fileID: 0}
   m_CardInfo: {fileID: 3978609900054995125}
   plusBtn: {fileID: 2418335579453123593}
   minusBtn: {fileID: 8325074452313533612}
-  ScrollView: {fileID: 5781072322775876073}
   cardCount: 0
-  loreList:
-  - {fileID: 5030290967447191313}
-  - {fileID: 4763144079007942896}
-  - {fileID: 455123488541199336}
-  - {fileID: 1264590643553957066}
+  index: 0
+  parent: {fileID: 0}
+  image_parent: {fileID: 0}
+  image: {fileID: 0}
+  middle: {fileID: 0}
+  inkHeader: {fileID: 0}
+  inkHeader_ink: {fileID: 0}
+  cardNameHeader: {fileID: 0}
+  cardNameHeader_cardName: {fileID: 0}
+  cardName2Header: {fileID: 0}
+  cardName2Header_cardName: {fileID: 0}
+  classHeader: {fileID: 0}
+  classHeader_className: {fileID: 0}
+  cardTextHeader: {fileID: 0}
+  cardTextHeader_middle: {fileID: 0}
+  powerToughness: {fileID: 0}
+  expantionName: {fileID: 0}
+  expantionName_expantion: {fileID: 0}
+  expantionName_power: {fileID: 0}
+  expantionName_power_power: {fileID: 0}
+  expantionName_toughness: {fileID: 0}
+  expantionName_toughness_toughness: {fileID: 0}
+  titleHeader: {fileID: 0}
+  titleHeader_title: {fileID: 0}
+  space1: {fileID: 0}
+  space2: {fileID: 0}
+  lores: {fileID: 0}
+  lores_lore: {fileID: 0}
+  rareHeader: {fileID: 0}
+  rareHeader_rare: {fileID: 0}
+  plusMinusHeader: {fileID: 0}
+  plusMinusHeader_label: {fileID: 0}
+  plusMinusHeader_space1: {fileID: 0}
+  plusMinusHeader_plus: {fileID: 0}
+  plusMinusHeader_space2: {fileID: 0}
+  plusMinusHeader_count: {fileID: 0}
+  plusMinusHeader_space3: {fileID: 0}
+  plusMinusHeader_minus: {fileID: 0}
+  plusMinusHeader_space4: {fileID: 0}
+  plusMinusHeader_label2: {fileID: 0}
   m_EditCardPanelManager: {fileID: 8361859509718700248}
   m_PanelPicture: {fileID: 8926446434655292024}
+  Lore1: {fileID: 0}
+  Lore2: {fileID: 0}
+  Lore3: {fileID: 0}
+  Lore4: {fileID: 0}
 --- !u!114 &3978609900054995125
 MonoBehaviour:
   m_ObjectHideFlags: 0

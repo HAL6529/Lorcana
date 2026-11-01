@@ -76,10 +76,8 @@ public class EditCardPanelManager : MonoBehaviour
     public string DeckName = "";
 
     public List<CardInfo> m_CardInfo_TheFirstChapter = new List<CardInfo>();
-    public List<CardInfo> m_CardInfo_RiseOfTheFloodBorn = new List<CardInfo>();
     private List<CardInfo> m_CardInfoList = new List<CardInfo>();
     public List<EditCardPanel> m_EditCardPanelList_TheFirstChapter = new List<EditCardPanel>();
-    public List<EditCardPanel> m_EditCardPanelList_RiseOfTheFloodBorn = new List<EditCardPanel>();
     private List<EditCardPanel> m_EditCardPanelList = new List<EditCardPanel>();
     public List<CardInfo> DeckList = new List<CardInfo>();
     private List<EditCardPanelTemp> EditCardPanelTempList = new List<EditCardPanelTemp>();
@@ -114,30 +112,17 @@ public class EditCardPanelManager : MonoBehaviour
     public RectTransform rt_content;
     public RectTransform CanvasRectTransform;
 
-    IEnumerator Start()
+    void Start()
     {
         m_CardInfoList = m_CardInfo_TheFirstChapter;
-        yield return null;
-
-        for (int i = 0; i < m_CardInfo_RiseOfTheFloodBorn.Count; i++)
-        {
-            m_CardInfoList.Add(m_CardInfo_RiseOfTheFloodBorn[i]);
-        }
-        yield return null;
 
         for (int i = 0; i < m_CardInfoList.Count; i++)
         {
             EditCardPanelTempList.Add(new EditCardPanelTemp(m_CardInfoList[i], 0));
             EditCardPanelTempList[i].SetIndex(i);
         }
-        yield return null;
 
         m_EditCardPanelList = m_EditCardPanelList_TheFirstChapter;
-        for(int i = 0; i < m_EditCardPanelList_RiseOfTheFloodBorn.Count; i++)
-        {
-            m_EditCardPanelList.Add(m_EditCardPanelList_RiseOfTheFloodBorn[i]);
-        }
-        yield return null;
 
         float magnification_x = CanvasRectTransform.sizeDelta.x / 890;
         float magnification_y = CanvasRectTransform.sizeDelta.y / 1920;
@@ -534,26 +519,56 @@ public class EditCardPanelManager : MonoBehaviour
     public void UpdateImage(float magnification_x, float magnification_y)
     {
         parent.sizeDelta = new Vector2(parent.sizeDelta.x * magnification_x, parent.sizeDelta.y * magnification_y);
-        for (int i = 0; i < m_EditCardPanelList.Count; i++)
-        {
-            if(m_EditCardPanelList[i] == null)
-            {
-                continue;
-            }
-            m_EditCardPanelList[i].UpdateImage(magnification_x, magnification_y);
-        }
-
         float rt_EditCardPanelList_SizeY = 0;
-        for (int i = 0; i < rt_EditCardPanelList.Count; i++)
+        float size = 305 * magnification_y;
+        if(m_EditCardPanelList.Count > 10)
         {
-            rt_EditCardPanelList[i].anchorMin = new Vector2(0, 1);
-            rt_EditCardPanelList[i].anchorMax = new Vector2(0, 1);
-            rt_EditCardPanelList[i].pivot = new Vector2(0, 1);
-            rt_EditCardPanelList[i].anchoredPosition = new Vector2(0, rt_EditCardPanelList_SizeY * (-1));
-            rt_EditCardPanelList_SizeY += rt_EditCardPanelList[i].sizeDelta.y;
+            for (int i = 0; i < 10; i++)
+            {
+                if (m_EditCardPanelList[i] == null || i > rt_EditCardPanelList.Count)
+                {
+                    continue;
+                }
+                StartCoroutine(EditCardPanelListInitialize(i, rt_EditCardPanelList_SizeY, magnification_x, magnification_y));
+                rt_EditCardPanelList_SizeY += size;
+            }
+            rt_content.sizeDelta = new Vector2(rt_content.sizeDelta.x, rt_EditCardPanelList[0].sizeDelta.y * rt_EditCardPanelList.Count);
+            for (int i = 10; i < m_EditCardPanelList.Count; i++)
+            {
+                if (m_EditCardPanelList[i] == null || i > rt_EditCardPanelList.Count)
+                {
+                    continue;
+                }
+                StartCoroutine(EditCardPanelListInitialize(i, rt_EditCardPanelList_SizeY, magnification_x, magnification_y));
+                rt_EditCardPanelList_SizeY += size;
+            }
         }
+        else
+        {
+            for (int i = 0; i < m_EditCardPanelList.Count; i++)
+            {
+                if (m_EditCardPanelList[i] == null || i > rt_EditCardPanelList.Count)
+                {
+                    continue;
+                }
+                StartCoroutine(EditCardPanelListInitialize(i, rt_EditCardPanelList_SizeY, magnification_x, magnification_y));
+                rt_EditCardPanelList_SizeY += size;
+            }
+            rt_content.sizeDelta = new Vector2(rt_content.sizeDelta.x, rt_EditCardPanelList[0].sizeDelta.y * rt_EditCardPanelList.Count);
+        }
+    }
 
-        rt_content.sizeDelta = new Vector2(rt_content.sizeDelta.x, rt_EditCardPanelList[0].sizeDelta.y * rt_EditCardPanelList.Count);
+    private IEnumerator EditCardPanelListInitialize(int index, float size, float magnification_x, float magnification_y)
+    {
+        rt_EditCardPanelList[index].anchorMin = new Vector2(0, 1);
+        rt_EditCardPanelList[index].anchorMax = new Vector2(0, 1);
+        rt_EditCardPanelList[index].pivot = new Vector2(0, 1);
+        rt_EditCardPanelList[index].anchoredPosition = new Vector2(0, size * (-1));
+        m_EditCardPanelList[index].UpdateImage(magnification_x, magnification_y);
+        if(index % 5 == 0)
+        {
+            yield return null;
+        }
     }
 }
 
