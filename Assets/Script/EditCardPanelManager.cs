@@ -13,74 +13,16 @@ public class EditCardPanelManager : MonoBehaviour
         ColorSort,
     }
 
-    private class EditCardPanelTemp
-    {
-        private bool isSerachHit;
-        private CardInfo m_CardInfo;
-        private int cardCount;
-        private int index;
-
-        public EditCardPanelTemp(CardInfo m_CardInfo, int cardCount)
-        {
-            this.isSerachHit = true;
-            this.m_CardInfo = m_CardInfo;
-            this.cardCount = cardCount;
-            this.index = 0;
-        }
-
-        public int GetCardCount() 
-        {
-            return cardCount;
-        }
-
-        public CardInfo GetCardInfo()
-        {
-            return m_CardInfo;
-        }
-
-        public bool GetIsSerachHit()
-        {
-            return isSerachHit;
-        }
-
-        public int GetIndex()
-        {
-            return index;
-        }
-
-        public void SetCardCount(int paramater)
-        {
-            cardCount = paramater;
-        }
-
-        public void SetCardInfo(CardInfo paramater)
-        {
-            m_CardInfo = paramater;
-        }
-
-        public void SetIsSerachHit(bool paramater)
-        {
-            isSerachHit = paramater;
-        }
-
-        public void SetIndex(int paramater)
-        {
-            index = paramater;
-        }
-    }
-
     public RectTransform parent;
 
     public SaveDataStatic m_SaveDataStatic = new SaveDataStatic();
     public SearchClass m_SearchClass;
     public string DeckName = "";
 
-    public List<CardInfo> m_CardInfo_TheFirstChapter = new List<CardInfo>();
+    private List<CardInfo> m_CardInfo_TheFirstChapter = new List<CardInfo>();
     private List<CardInfo> m_CardInfoList = new List<CardInfo>();
-    public List<EditCardPanel> m_EditCardPanelList_TheFirstChapter = new List<EditCardPanel>();
-    private List<EditCardPanel> m_EditCardPanelList = new List<EditCardPanel>();
     public List<CardInfo> DeckList = new List<CardInfo>();
-    private List<EditCardPanelTemp> EditCardPanelTempList = new List<EditCardPanelTemp>();
+    public List<EditCardPanelTemp> EditCardPanelTempList = new List<EditCardPanelTemp>();
 
     public Sprite Common;
     public Sprite UnCommon;
@@ -105,8 +47,6 @@ public class EditCardPanelManager : MonoBehaviour
 
     public bool SwitchOwn = false;
 
-    private int standbyCnt = 0;
-
     public SearchFilterClass m_SearchFilterClass = new SearchFilterClass();
     public List<RectTransform> rt_EditCardPanelList = new List<RectTransform>();
     public RectTransform rt_content;
@@ -116,30 +56,16 @@ public class EditCardPanelManager : MonoBehaviour
     {
         m_CardInfoList = m_CardInfo_TheFirstChapter;
 
-        for (int i = 0; i < m_CardInfoList.Count; i++)
+        for(int i = 0;i < EditCardPanelTempList.Count; i++)
         {
-            EditCardPanelTempList.Add(new EditCardPanelTemp(m_CardInfoList[i], 0));
             EditCardPanelTempList[i].SetIndex(i);
         }
-
-        m_EditCardPanelList = m_EditCardPanelList_TheFirstChapter;
-
-        float magnification_x = CanvasRectTransform.sizeDelta.x / 890;
-        float magnification_y = CanvasRectTransform.sizeDelta.y / 1920;
-        UpdateImage(magnification_x, magnification_y);
+        rt_content.sizeDelta = new Vector2(rt_content.sizeDelta.x, 305 * 30);
     }
 
-    public void CheckStandby()
+    public EditCardPanelTemp GetEditCardPanelTemp(int index)
     {
-        if(standbyCnt == m_EditCardPanelList.Count)
-        {
-            //m_SearchFilterClass = new SearchFilterClass();
-            LoadDeckList();
-        }
-        else
-        {
-            standbyCnt++;
-        }
+        return EditCardPanelTempList[index];
     }
 
     private void LoadDeckList()
@@ -167,23 +93,7 @@ public class EditCardPanelManager : MonoBehaviour
 
     public void onUpdateDeckList()
     {
-        DeckList = new List<CardInfo>();
-        for (int i = 0; i < m_EditCardPanelList.Count; i++)
-        {
-            if(m_EditCardPanelList[i] == null)
-            {
-                continue;
-            }
-            int t = m_EditCardPanelList[i].cardCount;
-            if (t == 0)
-            {
-                continue;
-            }
-            for(int k = 0; k < t; k++)
-            {
-                DeckList.Add(m_EditCardPanelList[i].m_CardInfo);
-            }
-        }
+
     }
 
     public void onSearchBtn()
@@ -513,62 +423,6 @@ public class EditCardPanelManager : MonoBehaviour
                 SortImage.sprite = ColorSortIcon;
                 onColorSort(m_CardInfoList);
                 break;
-        }
-    }
-
-    public void UpdateImage(float magnification_x, float magnification_y)
-    {
-        parent.sizeDelta = new Vector2(parent.sizeDelta.x * magnification_x, parent.sizeDelta.y * magnification_y);
-        float rt_EditCardPanelList_SizeY = 0;
-        float size = 305 * magnification_y;
-        if(m_EditCardPanelList.Count > 10)
-        {
-            for (int i = 0; i < 10; i++)
-            {
-                if (m_EditCardPanelList[i] == null || i > rt_EditCardPanelList.Count)
-                {
-                    continue;
-                }
-                StartCoroutine(EditCardPanelListInitialize(i, rt_EditCardPanelList_SizeY, magnification_x, magnification_y));
-                rt_EditCardPanelList_SizeY += size;
-            }
-            rt_content.sizeDelta = new Vector2(rt_content.sizeDelta.x, rt_EditCardPanelList[0].sizeDelta.y * rt_EditCardPanelList.Count);
-            for (int i = 10; i < m_EditCardPanelList.Count; i++)
-            {
-                if (m_EditCardPanelList[i] == null || i > rt_EditCardPanelList.Count)
-                {
-                    continue;
-                }
-                StartCoroutine(EditCardPanelListInitialize(i, rt_EditCardPanelList_SizeY, magnification_x, magnification_y));
-                rt_EditCardPanelList_SizeY += size;
-            }
-        }
-        else
-        {
-            for (int i = 0; i < m_EditCardPanelList.Count; i++)
-            {
-                if (m_EditCardPanelList[i] == null || i > rt_EditCardPanelList.Count)
-                {
-                    continue;
-                }
-                StartCoroutine(EditCardPanelListInitialize(i, rt_EditCardPanelList_SizeY, magnification_x, magnification_y));
-                rt_EditCardPanelList_SizeY += size;
-            }
-            rt_content.sizeDelta = new Vector2(rt_content.sizeDelta.x, rt_EditCardPanelList[0].sizeDelta.y * rt_EditCardPanelList.Count);
-        }
-    }
-
-    private IEnumerator EditCardPanelListInitialize(int index, float size, float magnification_x, float magnification_y)
-    {
-        Vector2 left_position = new Vector2(0, 1);
-        rt_EditCardPanelList[index].anchorMin = left_position;
-        rt_EditCardPanelList[index].anchorMax = left_position;
-        rt_EditCardPanelList[index].pivot = left_position;
-        rt_EditCardPanelList[index].anchoredPosition = new Vector2(0, size * (-1));
-        m_EditCardPanelList[index].UpdateImage(magnification_x, magnification_y);
-        if(index % 5 == 0)
-        {
-            yield return null;
         }
     }
 }

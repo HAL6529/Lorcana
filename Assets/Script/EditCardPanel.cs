@@ -70,6 +70,7 @@ public class EditCardPanel : MonoBehaviour
 
     public EditCardPanelManager m_EditCardPanelManager;
     public PanelPicture m_PanelPicture;
+    public RectTransform CanvasRectTransform;
 
     public Sprite Lore1;
     public Sprite Lore2;
@@ -149,8 +150,7 @@ public class EditCardPanel : MonoBehaviour
 
     public void Start()
     {
-        SetEditCardPanel(m_CardInfo, 0, 0, true);
-        m_EditCardPanelManager.CheckStandby();
+        UpdateImage(CanvasRectTransform.sizeDelta.x / 890, CanvasRectTransform.sizeDelta.y / 1920);
     }
 
     public string GetCardNo()

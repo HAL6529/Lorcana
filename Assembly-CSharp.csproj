@@ -59,6 +59,7 @@
   <ItemGroup>
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_027_JA_03.cs" />
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_004_JA_03.cs" />
+    <Compile Include="Assets\InfiniteScroll\Loop\ItemControllerLoop.cs" />
     <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_192_JA_02.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_037_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_156_JA_01.cs" />
@@ -83,11 +84,12 @@
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_071_JA_03.cs" />
     <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_178_JA_02.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_007_JA_01.cs" />
-    <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_059_JA_02.cs" />
+    <Compile Include="Assets\Script\EditCardPanelTemp.cs" />
     <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_035_JA_02.cs" />
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_081_JA_03.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_097_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_179_JA_03.cs" />
+    <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_059_JA_02.cs" />
     <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_039_JA_02.cs" />
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_197_JA_03.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_073_JA_01.cs" />
@@ -111,6 +113,7 @@
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_054_JA_03.cs" />
     <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_114_JA_02.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_195_JA_01.cs" />
+    <Compile Include="Assets\InfiniteScroll\IInfiniteScrollSetup.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_148_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_117_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_075_JA_02.cs" />
@@ -157,6 +160,7 @@
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_183_JA_03.cs" />
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_106_JA_03.cs" />
     <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_096_JA_02.cs" />
+    <Compile Include="Assets\Animation\Script\AnimatorParameter.cs" />
     <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_004_JA_02.cs" />
     <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_030_JA_02.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_052_JA_01.cs" />
@@ -362,6 +366,7 @@
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_135_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_049_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_043_JA_03.cs" />
+    <Compile Include="Assets\InfiniteScroll\InfiniteScroll.cs" />
     <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_204_JA_02.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_157_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_050_JA_02.cs" />
@@ -405,7 +410,9 @@
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_018_JA_03.cs" />
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_078_JA_03.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_063_JA_01.cs" />
+    <Compile Include="Assets\Animation\Script\ResumeAnimator.cs" />
     <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_135_JA_02.cs" />
+    <Compile Include="Assets\InfiniteScroll\Common\Item.cs" />
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_177_JA_03.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_122_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_069_JA_03.cs" />
@@ -416,11 +423,13 @@
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_197_JA_01.cs" />
     <Compile Include="Assets\Script\NewSaveDialog.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_208_JA_01.cs" />
+    <Compile Include="Assets\Animation\Script\ActiveDeactiveObject.cs" />
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_021_JA_03.cs" />
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_129_JA_03.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_027_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_182_JA_02.cs" />
     <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_025_JA_02.cs" />
+    <Compile Include="Assets\InfiniteScroll\Limited\ItemControllerLimited.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_166_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_135_JA_03.cs" />
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_148_JA_03.cs" />
@@ -503,6 +512,7 @@
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_196_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_029_JA_02.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_215_JA_01.cs" />
+    <Compile Include="Assets\Script\EditCardPanelControllerLimited.cs" />
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_093_JA_03.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_085_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_195_JA_03.cs" />
@@ -683,9 +693,9 @@
     <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_120_JA_02.cs" />
     <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_132_JA_02.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_045_JA_01.cs" />
-    <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_163_JA_02.cs" />
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_122_JA_03.cs" />
     <Compile Include="Assets\Script\Menu.cs" />
+    <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_163_JA_02.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_035_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_060_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_097_JA_02.cs" />
@@ -722,6 +732,7 @@
     <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_146_JA_02.cs" />
     <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_211_JA_02.cs" />
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_206_JA_03.cs" />
+    <Compile Include="Assets\InfiniteScroll\Infinite\ItemControllerInfinite.cs" />
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_053_JA_03.cs" />
     <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_212_JA_02.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_014_JA_01.cs" />

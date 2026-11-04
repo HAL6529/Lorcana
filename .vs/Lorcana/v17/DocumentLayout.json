@@ -3,84 +3,124 @@
   "WorkspaceRootPath": "C:\\Users\\matty\\Unity\\Lorcana\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Library\\PackageCache\\com.unity.memoryprofiler@1.2.0\\Editor\\Utilities\\PlatformsHelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.memoryprofiler@1.2.0\\Editor\\Utilities\\PlatformsHelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Assets\\InfiniteScroll\\InfiniteScroll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\InfiniteScroll\\InfiniteScroll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\EditCardPanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\EditCardPanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Assets\\ScrollViewLoopScrollPrefabSource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\ScrollViewLoopScrollPrefabSource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\Menu\\Menu_SelectDeckPanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\Menu\\Menu_SelectDeckPanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Library\\PackageCache\\me.qiankanglai.loopscrollrect@a7a32fbe81\\Runtime\\LoopScrollPrefabSource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\me.qiankanglai.loopscrollrect@a7a32fbe81\\Runtime\\LoopScrollPrefabSource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Library\\PackageCache\\com.unity.ugui@1.0.0\\Runtime\\UI\\Core\\Layout\\HorizontalLayoutGroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.ugui@1.0.0\\Runtime\\UI\\Core\\Layout\\HorizontalLayoutGroup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Library\\PackageCache\\me.qiankanglai.loopscrollrect@a7a32fbe81\\Runtime\\LoopVerticalScrollRect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\me.qiankanglai.loopscrollrect@a7a32fbe81\\Runtime\\LoopVerticalScrollRect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\Util\\ExtendUtil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\Util\\ExtendUtil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Library\\PackageCache\\me.qiankanglai.loopscrollrect@a7a32fbe81\\Runtime\\LoopScrollRect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\me.qiankanglai.loopscrollrect@a7a32fbe81\\Runtime\\LoopScrollRect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\Menu\\Menu_ConvertSpriteFromCardNo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\Menu\\Menu_ConvertSpriteFromCardNo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\EnumController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\EnumController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\CardInfo\\TheFirstChapter\\CardInfo_171_JA_01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\CardInfo\\TheFirstChapter\\CardInfo_171_JA_01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\CardInfo\\CardInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\CardInfo\\CardInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\Menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\Menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\Menu\\SaveData.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\Menu\\SaveData.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\Menu\\Menu_Menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\Menu\\Menu_Menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\Menu\\SaveDataStatic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\Menu\\SaveDataStatic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\NewSaveDialog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\NewSaveDialog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\DialogManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\DialogManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\OKDialog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\OKDialog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\SearchClass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\SearchClass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\PanelPicture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\PanelPicture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Library\\PackageCache\\me.qiankanglai.loopscrollrect@a7a32fbe81\\Runtime\\LoopScrollRectBase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\me.qiankanglai.loopscrollrect@a7a32fbe81\\Runtime\\LoopScrollRectBase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\EditCardPanelManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\EditCardPanelManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\CardInfo\\TheFirstChapter\\CardInfo_170_JA_01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\CardInfo\\TheFirstChapter\\CardInfo_170_JA_01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Library\\PackageCache\\me.qiankanglai.loopscrollrect@a7a32fbe81\\Runtime\\LoopScrollSizeUtils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\me.qiankanglai.loopscrollrect@a7a32fbe81\\Runtime\\LoopScrollSizeUtils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Library\\PackageCache\\me.qiankanglai.loopscrollrect@a7a32fbe81\\Runtime\\LoopScrollDataSource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\me.qiankanglai.loopscrollrect@a7a32fbe81\\Runtime\\LoopScrollDataSource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\EditCardPanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\EditCardPanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Library\\PackageCache\\com.unity.ugui@1.0.0\\Runtime\\EventSystem\\EventSystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.ugui@1.0.0\\Runtime\\EventSystem\\EventSystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Library\\PackageCache\\com.unity.ugui@1.0.0\\Runtime\\EventSystem\\ExecuteEvents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.ugui@1.0.0\\Runtime\\EventSystem\\ExecuteEvents.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\Util\\ExtendUtil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\Util\\ExtendUtil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Library\\PackageCache\\com.unity.ugui@1.0.0\\Runtime\\UI\\Core\\Layout\\LayoutElement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.ugui@1.0.0\\Runtime\\UI\\Core\\Layout\\LayoutElement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\DialogManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\DialogManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\SearchFilterClass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\SearchFilterClass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\SearchClass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\SearchClass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\DeckBuild.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\DeckBuild.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\Menu\\SaveData.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\Menu\\SaveData.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\ViewMode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\ViewMode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\PanelPicture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\PanelPicture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\NewSaveDialog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\NewSaveDialog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\Menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\Menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\Menu\\Menu_ConvertSpriteFromCardNo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\Menu\\Menu_ConvertSpriteFromCardNo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\CardInfo\\CardInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\CardInfo\\CardInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\Menu\\Menu_Menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\Menu\\Menu_Menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\Menu\\Menu_SelectDeckPanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\Menu\\Menu_SelectDeckPanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\OKDialog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\OKDialog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\Menu\\SaveDataStatic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\Menu\\SaveDataStatic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\EnumController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Script\\EnumController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -94,93 +134,255 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 29,
               "Title": "EnumController.cs",
               "DocumentMoniker": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\EnumController.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\EnumController.cs",
               "ToolTip": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\EnumController.cs",
               "RelativeToolTip": "Assets\\Script\\EnumController.cs",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAAAC0AAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAAAC0AAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-28T13:38:56.982Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PlatformsHelper.cs",
-              "DocumentMoniker": "C:\\Users\\matty\\Unity\\Lorcana\\Library\\PackageCache\\com.unity.memoryprofiler@1.2.0\\Editor\\Utilities\\PlatformsHelper.cs",
-              "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.memoryprofiler@1.2.0\\Editor\\Utilities\\PlatformsHelper.cs",
-              "ToolTip": "C:\\Users\\matty\\Unity\\Lorcana\\Library\\PackageCache\\com.unity.memoryprofiler@1.2.0\\Editor\\Utilities\\PlatformsHelper.cs",
-              "RelativeToolTip": "Library\\PackageCache\\com.unity.memoryprofiler@1.2.0\\Editor\\Utilities\\PlatformsHelper.cs",
-              "ViewState": "AgIAAFMAAAAAAAAAAAAjwG4AAAAuAAAAAAAAAA==",
+              "Title": "InfiniteScroll.cs",
+              "DocumentMoniker": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\InfiniteScroll\\InfiniteScroll.cs",
+              "RelativeDocumentMoniker": "Assets\\InfiniteScroll\\InfiniteScroll.cs",
+              "ToolTip": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\InfiniteScroll\\InfiniteScroll.cs",
+              "RelativeToolTip": "Assets\\InfiniteScroll\\InfiniteScroll.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAlwEkAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-27T15:38:53.12Z",
+              "WhenOpened": "2026-11-02T03:10:11.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ScrollViewLoopScrollPrefabSource.cs",
+              "DocumentMoniker": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\ScrollViewLoopScrollPrefabSource.cs",
+              "RelativeDocumentMoniker": "Assets\\ScrollViewLoopScrollPrefabSource.cs",
+              "ToolTip": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\ScrollViewLoopScrollPrefabSource.cs",
+              "RelativeToolTip": "Assets\\ScrollViewLoopScrollPrefabSource.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T13:54:38.107Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LoopScrollDataSource.cs",
+              "DocumentMoniker": "C:\\Users\\matty\\Unity\\Lorcana\\Library\\PackageCache\\me.qiankanglai.loopscrollrect@a7a32fbe81\\Runtime\\LoopScrollDataSource.cs",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\me.qiankanglai.loopscrollrect@a7a32fbe81\\Runtime\\LoopScrollDataSource.cs",
+              "ToolTip": "C:\\Users\\matty\\Unity\\Lorcana\\Library\\PackageCache\\me.qiankanglai.loopscrollrect@a7a32fbe81\\Runtime\\LoopScrollDataSource.cs",
+              "RelativeToolTip": "Library\\PackageCache\\me.qiankanglai.loopscrollrect@a7a32fbe81\\Runtime\\LoopScrollDataSource.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T12:06:21.545Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "LayoutElement.cs",
+              "DocumentMoniker": "C:\\Users\\matty\\Unity\\Lorcana\\Library\\PackageCache\\com.unity.ugui@1.0.0\\Runtime\\UI\\Core\\Layout\\LayoutElement.cs",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.ugui@1.0.0\\Runtime\\UI\\Core\\Layout\\LayoutElement.cs",
+              "ToolTip": "C:\\Users\\matty\\Unity\\Lorcana\\Library\\PackageCache\\com.unity.ugui@1.0.0\\Runtime\\UI\\Core\\Layout\\LayoutElement.cs",
+              "RelativeToolTip": "Library\\PackageCache\\com.unity.ugui@1.0.0\\Runtime\\UI\\Core\\Layout\\LayoutElement.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T11:51:49.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoopScrollPrefabSource.cs",
+              "DocumentMoniker": "C:\\Users\\matty\\Unity\\Lorcana\\Library\\PackageCache\\me.qiankanglai.loopscrollrect@a7a32fbe81\\Runtime\\LoopScrollPrefabSource.cs",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\me.qiankanglai.loopscrollrect@a7a32fbe81\\Runtime\\LoopScrollPrefabSource.cs",
+              "ToolTip": "C:\\Users\\matty\\Unity\\Lorcana\\Library\\PackageCache\\me.qiankanglai.loopscrollrect@a7a32fbe81\\Runtime\\LoopScrollPrefabSource.cs",
+              "RelativeToolTip": "Library\\PackageCache\\me.qiankanglai.loopscrollrect@a7a32fbe81\\Runtime\\LoopScrollPrefabSource.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T11:17:42.447Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ExecuteEvents.cs",
+              "DocumentMoniker": "C:\\Users\\matty\\Unity\\Lorcana\\Library\\PackageCache\\com.unity.ugui@1.0.0\\Runtime\\EventSystem\\ExecuteEvents.cs",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.ugui@1.0.0\\Runtime\\EventSystem\\ExecuteEvents.cs",
+              "ToolTip": "C:\\Users\\matty\\Unity\\Lorcana\\Library\\PackageCache\\com.unity.ugui@1.0.0\\Runtime\\EventSystem\\ExecuteEvents.cs",
+              "RelativeToolTip": "Library\\PackageCache\\com.unity.ugui@1.0.0\\Runtime\\EventSystem\\ExecuteEvents.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAlwE0AAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T11:07:18.889Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LoopScrollRectBase.cs",
+              "DocumentMoniker": "C:\\Users\\matty\\Unity\\Lorcana\\Library\\PackageCache\\me.qiankanglai.loopscrollrect@a7a32fbe81\\Runtime\\LoopScrollRectBase.cs",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\me.qiankanglai.loopscrollrect@a7a32fbe81\\Runtime\\LoopScrollRectBase.cs",
+              "ToolTip": "C:\\Users\\matty\\Unity\\Lorcana\\Library\\PackageCache\\me.qiankanglai.loopscrollrect@a7a32fbe81\\Runtime\\LoopScrollRectBase.cs",
+              "RelativeToolTip": "Library\\PackageCache\\me.qiankanglai.loopscrollrect@a7a32fbe81\\Runtime\\LoopScrollRectBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T11:07:06.117Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "HorizontalLayoutGroup.cs",
-              "DocumentMoniker": "C:\\Users\\matty\\Unity\\Lorcana\\Library\\PackageCache\\com.unity.ugui@1.0.0\\Runtime\\UI\\Core\\Layout\\HorizontalLayoutGroup.cs",
-              "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.ugui@1.0.0\\Runtime\\UI\\Core\\Layout\\HorizontalLayoutGroup.cs",
-              "ToolTip": "C:\\Users\\matty\\Unity\\Lorcana\\Library\\PackageCache\\com.unity.ugui@1.0.0\\Runtime\\UI\\Core\\Layout\\HorizontalLayoutGroup.cs",
-              "RelativeToolTip": "Library\\PackageCache\\com.unity.ugui@1.0.0\\Runtime\\UI\\Core\\Layout\\HorizontalLayoutGroup.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAAsAAAAVAAAAAAAAAA==",
+              "Title": "LoopVerticalScrollRect.cs",
+              "DocumentMoniker": "C:\\Users\\matty\\Unity\\Lorcana\\Library\\PackageCache\\me.qiankanglai.loopscrollrect@a7a32fbe81\\Runtime\\LoopVerticalScrollRect.cs",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\me.qiankanglai.loopscrollrect@a7a32fbe81\\Runtime\\LoopVerticalScrollRect.cs",
+              "ToolTip": "C:\\Users\\matty\\Unity\\Lorcana\\Library\\PackageCache\\me.qiankanglai.loopscrollrect@a7a32fbe81\\Runtime\\LoopVerticalScrollRect.cs",
+              "RelativeToolTip": "Library\\PackageCache\\me.qiankanglai.loopscrollrect@a7a32fbe81\\Runtime\\LoopVerticalScrollRect.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-27T13:17:49.184Z"
+              "WhenOpened": "2026-11-01T11:02:39.39Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
+              "Title": "EventSystem.cs",
+              "DocumentMoniker": "C:\\Users\\matty\\Unity\\Lorcana\\Library\\PackageCache\\com.unity.ugui@1.0.0\\Runtime\\EventSystem\\EventSystem.cs",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.ugui@1.0.0\\Runtime\\EventSystem\\EventSystem.cs",
+              "ToolTip": "C:\\Users\\matty\\Unity\\Lorcana\\Library\\PackageCache\\com.unity.ugui@1.0.0\\Runtime\\EventSystem\\EventSystem.cs",
+              "RelativeToolTip": "Library\\PackageCache\\com.unity.ugui@1.0.0\\Runtime\\EventSystem\\EventSystem.cs",
+              "ViewState": "AgIAAPMBAAAAAAAAAAAlwBECAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T10:38:38.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoopScrollSizeUtils.cs",
+              "DocumentMoniker": "C:\\Users\\matty\\Unity\\Lorcana\\Library\\PackageCache\\me.qiankanglai.loopscrollrect@a7a32fbe81\\Runtime\\LoopScrollSizeUtils.cs",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\me.qiankanglai.loopscrollrect@a7a32fbe81\\Runtime\\LoopScrollSizeUtils.cs",
+              "ToolTip": "C:\\Users\\matty\\Unity\\Lorcana\\Library\\PackageCache\\me.qiankanglai.loopscrollrect@a7a32fbe81\\Runtime\\LoopScrollSizeUtils.cs",
+              "RelativeToolTip": "Library\\PackageCache\\me.qiankanglai.loopscrollrect@a7a32fbe81\\Runtime\\LoopScrollSizeUtils.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T10:27:41.876Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoopScrollRect.cs",
+              "DocumentMoniker": "C:\\Users\\matty\\Unity\\Lorcana\\Library\\PackageCache\\me.qiankanglai.loopscrollrect@a7a32fbe81\\Runtime\\LoopScrollRect.cs",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\me.qiankanglai.loopscrollrect@a7a32fbe81\\Runtime\\LoopScrollRect.cs",
+              "ToolTip": "C:\\Users\\matty\\Unity\\Lorcana\\Library\\PackageCache\\me.qiankanglai.loopscrollrect@a7a32fbe81\\Runtime\\LoopScrollRect.cs",
+              "RelativeToolTip": "Library\\PackageCache\\me.qiankanglai.loopscrollrect@a7a32fbe81\\Runtime\\LoopScrollRect.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEUAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-01T10:26:58.933Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "SearchFilterClass.cs",
+              "DocumentMoniker": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\SearchFilterClass.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\SearchFilterClass.cs",
+              "ToolTip": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\SearchFilterClass.cs",
+              "RelativeToolTip": "Assets\\Script\\SearchFilterClass.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-30T12:15:41.252Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ViewMode.cs",
+              "DocumentMoniker": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\ViewMode.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\ViewMode.cs",
+              "ToolTip": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\ViewMode.cs",
+              "RelativeToolTip": "Assets\\Script\\ViewMode.cs",
+              "ViewState": "AgIAAEYBAAAAAAAAAAAcwMwCAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-29T09:15:51.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "DeckBuild.cs",
+              "DocumentMoniker": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\DeckBuild.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\DeckBuild.cs",
+              "ToolTip": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\DeckBuild.cs",
+              "RelativeToolTip": "Assets\\Script\\DeckBuild.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEMAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-27T23:15:50.507Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
               "Title": "Menu_ConvertSpriteFromCardNo.cs",
               "DocumentMoniker": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\Menu\\Menu_ConvertSpriteFromCardNo.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\Menu\\Menu_ConvertSpriteFromCardNo.cs",
               "ToolTip": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\Menu\\Menu_ConvertSpriteFromCardNo.cs",
               "RelativeToolTip": "Assets\\Script\\Menu\\Menu_ConvertSpriteFromCardNo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAuAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-16T05:54:42.688Z"
+              "WhenOpened": "2026-09-16T05:54:42.688Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 28,
               "Title": "SaveDataStatic.cs",
               "DocumentMoniker": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\Menu\\SaveDataStatic.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\Menu\\SaveDataStatic.cs",
               "ToolTip": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\Menu\\SaveDataStatic.cs",
               "RelativeToolTip": "Assets\\Script\\Menu\\SaveDataStatic.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-12T00:06:35.802Z"
+              "WhenOpened": "2026-09-12T00:06:35.802Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 18,
               "Title": "SaveData.cs",
               "DocumentMoniker": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\Menu\\SaveData.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\Menu\\SaveData.cs",
               "ToolTip": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\Menu\\SaveData.cs",
               "RelativeToolTip": "Assets\\Script\\Menu\\SaveData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-09T14:27:05.948Z"
+              "WhenOpened": "2026-09-09T14:27:05.948Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 26,
               "Title": "Menu_SelectDeckPanel.cs",
               "DocumentMoniker": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\Menu\\Menu_SelectDeckPanel.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\Menu\\Menu_SelectDeckPanel.cs",
               "ToolTip": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\Menu\\Menu_SelectDeckPanel.cs",
               "RelativeToolTip": "Assets\\Script\\Menu\\Menu_SelectDeckPanel.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAC4AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAFYBAAAAAAAAAAAAAC4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-18T23:17:28.86Z"
+              "WhenOpened": "2026-08-18T23:17:28.86Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 12,
               "Title": "ExtendUtil.cs",
               "DocumentMoniker": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\Util\\ExtendUtil.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\Util\\ExtendUtil.cs",
@@ -188,19 +390,21 @@
               "RelativeToolTip": "Assets\\Script\\Util\\ExtendUtil.cs",
               "ViewState": "AgIAACICAAAAAAAAAAAAwFECAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-14T05:54:12.088Z"
+              "WhenOpened": "2026-08-14T05:54:12.088Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 27,
               "Title": "OKDialog.cs",
               "DocumentMoniker": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\OKDialog.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\OKDialog.cs",
               "ToolTip": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\OKDialog.cs",
               "RelativeToolTip": "Assets\\Script\\OKDialog.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAABBAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-07T14:03:57.291Z"
+              "WhenOpened": "2026-09-07T14:03:57.291Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -210,45 +414,49 @@
               "RelativeDocumentMoniker": "Assets\\Script\\DialogManager.cs",
               "ToolTip": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\DialogManager.cs",
               "RelativeToolTip": "Assets\\Script\\DialogManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAADQAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-14T05:39:05.999Z"
+              "WhenOpened": "2026-08-14T05:39:05.999Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 21,
               "Title": "NewSaveDialog.cs",
               "DocumentMoniker": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\NewSaveDialog.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\NewSaveDialog.cs",
               "ToolTip": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\NewSaveDialog.cs",
               "RelativeToolTip": "Assets\\Script\\NewSaveDialog.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAAFIAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-14T05:30:55.482Z"
+              "WhenOpened": "2026-08-14T05:30:55.482Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 22,
               "Title": "Menu.cs",
               "DocumentMoniker": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\Menu.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\Menu.cs",
               "ToolTip": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\Menu.cs",
               "RelativeToolTip": "Assets\\Script\\Menu.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAEgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-01T15:50:50.466Z"
+              "WhenOpened": "2026-07-01T15:50:50.466Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 25,
               "Title": "Menu_Menu.cs",
               "DocumentMoniker": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\Menu\\Menu_Menu.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\Menu\\Menu_Menu.cs",
               "ToolTip": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\Menu\\Menu_Menu.cs",
               "RelativeToolTip": "Assets\\Script\\Menu\\Menu_Menu.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAADEAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAAAGkAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-13T13:48:53.66Z"
+              "WhenOpened": "2026-08-13T13:48:53.66Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -258,81 +466,62 @@
               "RelativeDocumentMoniker": "Assets\\Script\\SearchClass.cs",
               "ToolTip": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\SearchClass.cs",
               "RelativeToolTip": "Assets\\Script\\SearchClass.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAlwGUAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAAYEAAAAAAAAAAAAACEDAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-09T13:06:36.96Z"
+              "WhenOpened": "2026-07-09T13:06:36.96Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CardInfo_171_JA_01.cs",
-              "DocumentMoniker": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\CardInfo\\TheFirstChapter\\CardInfo_171_JA_01.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\CardInfo\\TheFirstChapter\\CardInfo_171_JA_01.cs",
-              "ToolTip": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\CardInfo\\TheFirstChapter\\CardInfo_171_JA_01.cs",
-              "RelativeToolTip": "Assets\\Script\\CardInfo\\TheFirstChapter\\CardInfo_171_JA_01.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-16T06:13:59.741Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "CardInfo_170_JA_01.cs",
-              "DocumentMoniker": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\CardInfo\\TheFirstChapter\\CardInfo_170_JA_01.cs",
-              "RelativeDocumentMoniker": "Assets\\Script\\CardInfo\\TheFirstChapter\\CardInfo_170_JA_01.cs",
-              "ToolTip": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\CardInfo\\TheFirstChapter\\CardInfo_170_JA_01.cs",
-              "RelativeToolTip": "Assets\\Script\\CardInfo\\TheFirstChapter\\CardInfo_170_JA_01.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-16T06:13:58.281Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 20,
               "Title": "PanelPicture.cs",
               "DocumentMoniker": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\PanelPicture.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\PanelPicture.cs",
               "ToolTip": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\PanelPicture.cs",
               "RelativeToolTip": "Assets\\Script\\PanelPicture.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAGQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-25T14:56:56.907Z"
+              "WhenOpened": "2026-06-25T14:56:56.907Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 9,
               "Title": "EditCardPanel.cs",
               "DocumentMoniker": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\EditCardPanel.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\EditCardPanel.cs",
               "ToolTip": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\EditCardPanel.cs",
               "RelativeToolTip": "Assets\\Script\\EditCardPanel.cs",
-              "ViewState": "AgIAAAkCAAAAAAAAAAAAACMCAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-25T08:33:20.346Z"
+              "WhenOpened": "2026-06-25T08:33:20.346Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 6,
               "Title": "EditCardPanelManager.cs",
               "DocumentMoniker": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\EditCardPanelManager.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\EditCardPanelManager.cs",
               "ToolTip": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\EditCardPanelManager.cs",
               "RelativeToolTip": "Assets\\Script\\EditCardPanelManager.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAAL8AAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAAAHEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-25T08:33:00.749Z"
+              "WhenOpened": "2026-06-25T08:33:00.749Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 24,
               "Title": "CardInfo.cs",
               "DocumentMoniker": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\CardInfo\\CardInfo.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\CardInfo\\CardInfo.cs",
               "ToolTip": "C:\\Users\\matty\\Unity\\Lorcana\\Assets\\Script\\CardInfo\\CardInfo.cs",
               "RelativeToolTip": "Assets\\Script\\CardInfo\\CardInfo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKAAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-25T08:31:13.245Z"
+              "WhenOpened": "2026-06-25T08:31:13.245Z",
+              "EditorCaption": ""
             }
           ]
         }
