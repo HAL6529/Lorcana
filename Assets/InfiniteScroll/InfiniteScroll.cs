@@ -7,8 +7,9 @@ using System.Linq;
 public class InfiniteScroll : UIBehaviour
 {
     [SerializeField] private RectTransform CanvasRectTransform;
+    [SerializeField] private RectTransform ContentRectTransform;
 
-	private float magnification_y;
+    private float magnification_y;
     [SerializeField]
 	private RectTransform itemPrototype;
 
@@ -27,7 +28,7 @@ public class InfiniteScroll : UIBehaviour
 
 	protected int currentItemNo = 0;
 
-	public enum Direction
+    public enum Direction
 	{
 		Vertical,
 		Horizontal,
@@ -79,7 +80,7 @@ public class InfiniteScroll : UIBehaviour
 		
 		for(int i = 0; i < instantateItemCount; i++) {
 			var item = GameObject.Instantiate(itemPrototype) as RectTransform;
-			item.SetParent(transform, false);
+            item.SetParent(transform, false);
 			item.name = i.ToString();
 			item.anchoredPosition = direction == Direction.Vertical ? new Vector2(0, -itemScale * i) : new Vector2(itemScale * i, 0);
 			itemList.AddLast(item);
@@ -131,6 +132,22 @@ public class InfiniteScroll : UIBehaviour
 			onUpdateItem.Invoke(currentItemNo, item.gameObject);
         }
 	}
+
+	public void onResetValue()
+	{
+        diffPreFramePosition = 0;
+        currentItemNo = 0;
+		int cnt = 0;
+
+        ContentRectTransform.anchoredPosition = Vector2.zero;
+        foreach (var item in itemList)
+		{
+            var pos = itemScale * cnt;
+            item.anchoredPosition = (direction == Direction.Vertical) ? new Vector2(0, -pos) : new Vector2(pos, 0);
+            onUpdateItem.Invoke(cnt, item.gameObject);
+            cnt++;
+        }
+    }
 
 	[System.Serializable]
 	public class OnItemPositionChange : UnityEngine.Events.UnityEvent<int, GameObject> {}

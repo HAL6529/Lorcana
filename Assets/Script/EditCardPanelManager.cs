@@ -13,8 +13,6 @@ public class EditCardPanelManager : MonoBehaviour
         ColorSort,
     }
 
-    public RectTransform parent;
-
     public SaveDataStatic m_SaveDataStatic = new SaveDataStatic();
     public SearchClass m_SearchClass;
     public string DeckName = "";
@@ -22,7 +20,9 @@ public class EditCardPanelManager : MonoBehaviour
     private List<CardInfo> m_CardInfo_TheFirstChapter = new List<CardInfo>();
     private List<CardInfo> m_CardInfoList = new List<CardInfo>();
     public List<CardInfo> DeckList = new List<CardInfo>();
-    public List<EditCardPanelTemp> EditCardPanelTempList = new List<EditCardPanelTemp>();
+    public List<EditCardPanelTemp> EditCardPanelTempList_TheFirstChapter = new List<EditCardPanelTemp>();
+    private List<EditCardPanelTemp> EditCardPanelTempList = new List<EditCardPanelTemp>();
+    private List<EditCardPanelTemp> SortEditCardPanelTempList = new List<EditCardPanelTemp>();
 
     public Sprite Common;
     public Sprite UnCommon;
@@ -47,53 +47,35 @@ public class EditCardPanelManager : MonoBehaviour
 
     public bool SwitchOwn = false;
 
+    [SerializeField] private InfiniteScroll m_InfiniteScroll;
     public SearchFilterClass m_SearchFilterClass = new SearchFilterClass();
-    public List<RectTransform> rt_EditCardPanelList = new List<RectTransform>();
-    public RectTransform rt_content;
     public RectTransform CanvasRectTransform;
 
     void Start()
     {
         m_CardInfoList = m_CardInfo_TheFirstChapter;
 
-        for(int i = 0;i < EditCardPanelTempList.Count; i++)
+        EditCardPanelTempList = EditCardPanelTempList_TheFirstChapter;
+        for (int i = 0;i < EditCardPanelTempList.Count; i++)
         {
             EditCardPanelTempList[i].SetIndex(i);
         }
-        rt_content.sizeDelta = new Vector2(rt_content.sizeDelta.x, 305 * 30);
+        SortEditCardPanelTempList = EditCardPanelTempList;
     }
 
-    public EditCardPanelTemp GetEditCardPanelTemp(int index)
+    public EditCardPanelTemp GetEditCardPanelTemp(int itemCount)
     {
-        return EditCardPanelTempList[index];
+        return SortEditCardPanelTempList[itemCount];
     }
 
     private void LoadDeckList()
     {
-        /*onDefaultSort(m_CardInfoList);
-        List<CardInfo> TempDeckList = m_SaveDataStatic.GetCardInfoList();
-        DeckName = m_SaveDataStatic.GetDeckTitle();
-        for (int i = 0; i < TempDeckList.Count; i++)
-        {
-            for (int k = 0; k < m_EditCardPanelList.Count; k++)
-            {
-                if (m_EditCardPanelList[k] == null)
-                {
-                    continue;
-                }
 
-                if(TempDeckList[i].GetCardNo() == m_EditCardPanelList[k].GetCardNo())
-                {
-                    m_EditCardPanelList[k].onPlusBtn();
-                    continue;
-                }
-            }
-        }*/
     }
 
-    public void onUpdateDeckList()
+    public void onUpdateDeckList(int index, int cardCount)
     {
-
+        EditCardPanelTempList[index].SetCardCount(cardCount);
     }
 
     public void onSearchBtn()
@@ -125,15 +107,15 @@ public class EditCardPanelManager : MonoBehaviour
         {
             case SortStatus.Default:
                 SortImage.sprite = DefaultSortIcon;
-                onDefaultSort(m_CardInfoList);
+                onDefaultSort();
                 break;
             case SortStatus.InkSort:
                 SortImage.sprite = InkSortIcon;
-                onInkCostSort(m_CardInfoList);
+                onInkCostSort();
                 break;
             case SortStatus.ColorSort:
                 SortImage.sprite = ColorSortIcon;
-                onColorSort(m_CardInfoList);
+                onColorSort();
                 break;
         }
     }
@@ -162,248 +144,105 @@ public class EditCardPanelManager : MonoBehaviour
         {
             case SortStatus.Default:
                 SortImage.sprite = DefaultSortIcon;
-                onDefaultSort(m_CardInfoList);
+                onDefaultSort();
                 break;
             case SortStatus.InkSort:
                 SortImage.sprite = InkSortIcon;
-                onInkCostSort(m_CardInfoList);
+                onInkCostSort();
                 break;
             case SortStatus.ColorSort:
                 SortImage.sprite = ColorSortIcon;
-                onColorSort(m_CardInfoList);
+                onColorSort();
                 break;
         }
     }
 
-    private void onDefaultSort(List<CardInfo> paramaterList)
+    private void onDefaultSort()
     {
-        /*List<EditCardPanelTemp> temp_return = EditCardPanelTempList;
-        for(int i = 0; i < m_EditCardPanelList.Count; i++)
-        {
-            m_EditCardPanelList[i].SetEditCardPanel(EditCardPanelTempList[i].GetCardInfo(), EditCardPanelTempList[i].GetCardCount(), EditCardPanelTempList[i].GetIndex(), true);
-        }*/
-        /*List<EditCardPanelTemp> EditCardPanelTempList = new List<EditCardPanelTemp>();
-        List<EditCardPanelTemp> temp_return = new List<EditCardPanelTemp>();
-
-        for (int i = 0; i < m_EditCardPanelList.Count; i++)
-        {
-            if (m_EditCardPanelList[i] == null)
-            {
-                continue;
-            }
-            EditCardPanelTemp m_EditCardPanelTemp = new EditCardPanelTemp(m_EditCardPanelList[i].m_CardInfo, m_EditCardPanelList[i].cardCount);
-            EditCardPanelTempList.Add(m_EditCardPanelTemp);
-        }
-
-        for (int k = 0; k < paramaterList.Count; k++)
-        {
-            for (int i = 0; i < EditCardPanelTempList.Count; i++)
-            {
-                if (EditCardPanelTempList[i] == null)
-                {
-                    continue;
-                }
-
-                if (EditCardPanelTempList[i].m_CardInfo == paramaterList[k])
-                {
-                    temp_return.Add(EditCardPanelTempList[i]);
-                    EditCardPanelTempList[i] = null;
-                    continue;
-                }
-            }
-        }
-
-        for (int i = 0; i < temp_return.Count; i++)
-        {
-            CardInfo c = temp_return[i].m_CardInfo;
-            int n = temp_return[i].cardCount;
-            m_EditCardPanelList[i].SetEditCardPanel(c, n);
-
-            if (SwitchOwn)
-            {
-                if (n == 0)
-                {
-                    m_EditCardPanelList[i].SwitchActive(false);
-                }
-                else
-                {
-                    m_EditCardPanelList[i].SwitchActive(true);
-                }
-            }
-        }
-
-        for (int i = 0; i < m_EditCardPanelList.Count; i++)
-        {
-            if (m_EditCardPanelList[i] == null)
-            {
-                continue;
-            }
-            m_EditCardPanelList[i].isSearchHit();
-        }*/
+        SortEditCardPanelTempList = EditCardPanelTempList;
+        m_InfiniteScroll.onResetValue();
     }
 
-    private void onInkCostSort(List<CardInfo> paramaterList)
+    private void onInkCostSort()
     {
-        /*List<EditCardPanelTemp> EditCardPanelTempList = new List<EditCardPanelTemp>();
-        List<EditCardPanelTemp> temp_return = new List<EditCardPanelTemp>();
-
-        for (int i = 0; i < m_EditCardPanelList.Count; i++)
+        SortEditCardPanelTempList = new List<EditCardPanelTemp>();
+        for(int i = 0; i < 11; i++)
         {
-            if (m_EditCardPanelList[i] == null)
+            for(int k = 0; k < EditCardPanelTempList.Count; k++)
             {
-                continue;
-            }
-            EditCardPanelTemp m_EditCardPanelTemp = new EditCardPanelTemp(m_EditCardPanelList[i].m_CardInfo, m_EditCardPanelList[i].cardCount);
-            EditCardPanelTempList.Add(m_EditCardPanelTemp);
-        }
-
-        for(int k = 0; k < 11; k++)
-        {
-            for (int i = 0; i < EditCardPanelTempList.Count; i++)
-            {
-                if(EditCardPanelTempList[i] == null)
+                if(EditCardPanelTempList[k].GetCardInfo().GetInkCost() == i)
                 {
-                    continue;
-                }
-
-                if (EditCardPanelTempList[i].m_CardInfo.GetInkCost() == k)
-                {
-                    temp_return.Add(EditCardPanelTempList[i]);
-                    EditCardPanelTempList[i] = null;
-                    continue;
+                    SortEditCardPanelTempList.Add(EditCardPanelTempList[k]);
                 }
             }
         }
-
-        for (int i = 0; i < temp_return.Count; i++)
-        {
-            CardInfo c = temp_return[i].m_CardInfo;
-            int n = temp_return[i].cardCount;
-            m_EditCardPanelList[i].SetEditCardPanel(c, n);
-
-            if (SwitchOwn)
-            {
-                if (n == 0)
-                {
-                    m_EditCardPanelList[i].SwitchActive(false);
-                }
-                else
-                {
-                    m_EditCardPanelList[i].SwitchActive(true);
-                }
-            }
-        }
-
-        for (int i = 0; i < m_EditCardPanelList.Count; i++)
-        {
-            if (m_EditCardPanelList[i] == null)
-            {
-                continue;
-            }
-            m_EditCardPanelList[i].isSearchHit();
-        }*/
+        m_InfiniteScroll.onResetValue();
     }
 
-    private void onColorSort(List<CardInfo> paramaterList)
+    private void onColorSort()
     {
-        /*onDefaultSort(paramaterList);
-        List<EditCardPanelTemp> EditCardPanelTempList = new List<EditCardPanelTemp>();
-        List<EditCardPanelTemp> temp_return = new List<EditCardPanelTemp>();
-
-        for (int i = 0; i < m_EditCardPanelList.Count; i++)
-        {
-            if (m_EditCardPanelList[i] == null)
-            {
-                continue;
-            }
-            EditCardPanelTemp m_EditCardPanelTemp = new EditCardPanelTemp(m_EditCardPanelList[i].m_CardInfo, m_EditCardPanelList[i].cardCount);
-            EditCardPanelTempList.Add(m_EditCardPanelTemp);
-        }
-        List<EnumController.Colors> enumColorList = new List<EnumController.Colors>() { EnumController.Colors.Amber, EnumController.Colors.Amethyst, EnumController.Colors.Emerald, EnumController.Colors.Ruby, EnumController.Colors.Sapphire, EnumController.Colors.Steel };
-
-
-        for(int i = 0; i < EditCardPanelTempList.Count; i++)
-        {
-            List<EnumController.Colors> colors = EditCardPanelTempList[i].m_CardInfo.GetColor();
-            if (colors.Contains(EnumController.Colors.Amber))
-            {
-                temp_return.Add(EditCardPanelTempList[i]);
-            }
-        }
+        SortEditCardPanelTempList = new List<EditCardPanelTemp>();
+        List<EditCardPanelTemp> AmberEditCardPanelTempList = new List<EditCardPanelTemp>();
+        List<EditCardPanelTemp> AmethystEditCardPanelTempList = new List<EditCardPanelTemp>();
+        List<EditCardPanelTemp> EmeraldEditCardPanelTempList = new List<EditCardPanelTemp>();
+        List<EditCardPanelTemp> RubyEditCardPanelTempList = new List<EditCardPanelTemp>();
+        List<EditCardPanelTemp> SapphireEditCardPanelTempList = new List<EditCardPanelTemp>();
+        List<EditCardPanelTemp> SteelEditCardPanelTempList = new List<EditCardPanelTemp>();
 
         for (int i = 0; i < EditCardPanelTempList.Count; i++)
         {
-            List<EnumController.Colors> colors = EditCardPanelTempList[i].m_CardInfo.GetColor();
-            if (colors.Contains(EnumController.Colors.Amethyst))
+            List<EnumController.Colors> color = EditCardPanelTempList[i].GetCardInfo().GetColor();
+            switch (color[0])
             {
-                temp_return.Add(EditCardPanelTempList[i]);
+                case EnumController.Colors.Amber:
+                    AmberEditCardPanelTempList.Add(EditCardPanelTempList[i]);
+                    break;
+                case EnumController.Colors.Amethyst:
+                    AmethystEditCardPanelTempList.Add(EditCardPanelTempList[i]);
+                    break;
+                case EnumController.Colors.Emerald:
+                    EmeraldEditCardPanelTempList.Add(EditCardPanelTempList[i]);
+                    break;
+                case EnumController.Colors.Ruby:
+                    RubyEditCardPanelTempList.Add(EditCardPanelTempList[i]);
+                    break;
+                case EnumController.Colors.Sapphire:
+                    SapphireEditCardPanelTempList.Add(EditCardPanelTempList[i]);
+                    break;
+                case EnumController.Colors.Steel:
+                    SteelEditCardPanelTempList.Add(EditCardPanelTempList[i]);
+                    break;
+                default:
+                    break;
             }
         }
 
-        for (int i = 0; i < EditCardPanelTempList.Count; i++)
+        for(int i = 0; i < AmberEditCardPanelTempList.Count; i++)
         {
-            List<EnumController.Colors> colors = EditCardPanelTempList[i].m_CardInfo.GetColor();
-            if (colors.Contains(EnumController.Colors.Emerald))
-            {
-                temp_return.Add(EditCardPanelTempList[i]);
-            }
+            SortEditCardPanelTempList.Add(AmberEditCardPanelTempList[i]);
+        }
+        for (int i = 0; i < AmethystEditCardPanelTempList.Count; i++)
+        {
+            SortEditCardPanelTempList.Add(AmethystEditCardPanelTempList[i]);
+        }
+        for (int i = 0; i < EmeraldEditCardPanelTempList.Count; i++)
+        {
+            SortEditCardPanelTempList.Add(EmeraldEditCardPanelTempList[i]);
+        }
+        for (int i = 0; i < RubyEditCardPanelTempList.Count; i++)
+        {
+            SortEditCardPanelTempList.Add(RubyEditCardPanelTempList[i]);
+        }
+        for (int i = 0; i < SapphireEditCardPanelTempList.Count; i++)
+        {
+            SortEditCardPanelTempList.Add(SapphireEditCardPanelTempList[i]);
+        }
+        for (int i = 0; i < SteelEditCardPanelTempList.Count; i++)
+        {
+            SortEditCardPanelTempList.Add(SteelEditCardPanelTempList[i]);
         }
 
-        for (int i = 0; i < EditCardPanelTempList.Count; i++)
-        {
-            List<EnumController.Colors> colors = EditCardPanelTempList[i].m_CardInfo.GetColor();
-            if (colors.Contains(EnumController.Colors.Ruby))
-            {
-                temp_return.Add(EditCardPanelTempList[i]);
-            }
-        }
-
-
-        for (int i = 0; i < EditCardPanelTempList.Count; i++)
-        {
-            List<EnumController.Colors> colors = EditCardPanelTempList[i].m_CardInfo.GetColor();
-            if (colors.Contains(EnumController.Colors.Sapphire))
-            {
-                temp_return.Add(EditCardPanelTempList[i]);
-            }
-        }
-
-        for (int i = 0; i < EditCardPanelTempList.Count; i++)
-        {
-            List<EnumController.Colors> colors = EditCardPanelTempList[i].m_CardInfo.GetColor();
-            if (colors.Contains(EnumController.Colors.Steel))
-            {
-                temp_return.Add(EditCardPanelTempList[i]);
-            }
-        }
-
-        for (int i = 0; i < temp_return.Count; i++)
-        {
-            CardInfo c = temp_return[i].m_CardInfo;
-            int n = temp_return[i].cardCount;
-            m_EditCardPanelList[i].SetEditCardPanel(c, n);
-
-            if (SwitchOwn)
-            {
-                if (n == 0)
-                {
-                    m_EditCardPanelList[i].SwitchActive(false);
-                }
-                else
-                {
-                    m_EditCardPanelList[i].SwitchActive(true);
-                }
-            }
-        }
-
-        for (int i = 0; i < m_EditCardPanelList.Count; i++)
-        {
-            if (m_EditCardPanelList[i] == null)
-            {
-                continue;
-            }
-            m_EditCardPanelList[i].isSearchHit();
-        }*/
+        m_InfiniteScroll.onResetValue();
     }
 
     public void Search(SearchFilterClass paramater)
@@ -413,15 +252,15 @@ public class EditCardPanelManager : MonoBehaviour
         {
             case SortStatus.Default:
                 SortImage.sprite = DefaultSortIcon;
-                onDefaultSort(m_CardInfoList);
+                onDefaultSort();
                 break;
             case SortStatus.InkSort:
                 SortImage.sprite = InkSortIcon;
-                onInkCostSort(m_CardInfoList);
+                onInkCostSort();
                 break;
             case SortStatus.ColorSort:
                 SortImage.sprite = ColorSortIcon;
-                onColorSort(m_CardInfoList);
+                onColorSort();
                 break;
         }
     }

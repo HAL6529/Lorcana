@@ -302,28 +302,6 @@ public class EditCardPanel : MonoBehaviour
                 i_lore.color = new Color(1, 1, 1, 0);
                 return;
         }
-
-        /*if (m_CardInfo.GetLore() < 5)
-        {
-            for(int i = 0; i < 4; i++)
-            {
-                if (i < m_CardInfo.GetLore())
-                {
-                    loreList[i].SetActive(true);
-                }
-                else
-                {
-                    loreList[i].SetActive(false);
-                }
-            }
-        }
-        else if(m_CardInfo.GetLore() < 0)
-        {
-            for (int i = 0; i < 4; i++)
-            {
-                loreList[i].SetActive(false);
-            }
-        }*/
     }
 
     private void UpdatePlusMinusBtn()
@@ -351,7 +329,7 @@ public class EditCardPanel : MonoBehaviour
         }
 
         count.text = cardCount.ToString();
-        m_EditCardPanelManager.onUpdateDeckList();
+        m_EditCardPanelManager.onUpdateDeckList(index, cardCount);
     }
 
     private void UpdateRare()
