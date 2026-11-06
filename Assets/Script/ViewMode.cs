@@ -8,7 +8,6 @@ public class ViewMode : MonoBehaviour
     public EditCardPanelManager m_EditCardPanelManager;
     public List<Image> deckImageList = new List<Image>();
     public List<ViewMode_Image> ViewMode_Image_List = new List<ViewMode_Image>();
-    public GameObject DeckName;
     public Text DeckNameText;
     public Image FavoriteCard;
     public Image BackGround1;
@@ -108,9 +107,10 @@ public class ViewMode : MonoBehaviour
     private void UpdateHeader()
     {
         colors = new List<EnumController.Colors>();
-        for (int i = 0; i< m_EditCardPanelManager.DeckList.Count; i++)
+        List<CardInfo> DeckList = m_EditCardPanelManager.GetDeckList();
+        for (int i = 0; i< DeckList.Count; i++)
         {
-            List<EnumController.Colors> temp = m_EditCardPanelManager.DeckList[i].GetColor();
+            List<EnumController.Colors> temp = DeckList[i].GetColor();
             for (int k = 0; k < temp.Count; k++)
             {
                 if (colors.Contains(temp[k]))
@@ -306,7 +306,7 @@ public class ViewMode : MonoBehaviour
 
     public void UpdateDeckList()
     {
-        List<CardInfo> DeckList = m_EditCardPanelManager.DeckList;
+        List<CardInfo> DeckList = m_EditCardPanelManager.GetDeckList();
         for (int i = 0; i < ViewMode_Image_List.Count; i++)
         {
             if(i < DeckList.Count)
@@ -335,16 +335,6 @@ public class ViewMode : MonoBehaviour
     public void onCloseBtn()
     {
         this.gameObject.SetActive(false);
-    }
-
-    public void onEditDeckNameBtn()
-    {
-        DeckName.SetActive(true);
-    }
-
-    public void onDeckName_CloseBtn()
-    {
-        DeckName.SetActive(false);
     }
 
     public void UpdateImage(float magnification_x, float magnification_y)

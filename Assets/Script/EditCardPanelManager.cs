@@ -19,7 +19,7 @@ public class EditCardPanelManager : MonoBehaviour
 
     private List<CardInfo> m_CardInfo_TheFirstChapter = new List<CardInfo>();
     private List<CardInfo> m_CardInfoList = new List<CardInfo>();
-    public List<CardInfo> DeckList = new List<CardInfo>();
+    //public List<CardInfo> DeckList = new List<CardInfo>();
     public List<EditCardPanelTemp> EditCardPanelTempList_TheFirstChapter = new List<EditCardPanelTemp>();
     private List<EditCardPanelTemp> EditCardPanelTempList = new List<EditCardPanelTemp>();
     private List<EditCardPanelTemp> SortEditCardPanelTempList = new List<EditCardPanelTemp>();
@@ -61,6 +61,23 @@ public class EditCardPanelManager : MonoBehaviour
             EditCardPanelTempList[i].SetIndex(i);
         }
         SortEditCardPanelTempList = EditCardPanelTempList;
+    }
+
+    public List<CardInfo> GetDeckList()
+    {
+        List<CardInfo> list = new List<CardInfo>();
+        for (int i = 0; i < EditCardPanelTempList.Count; i++)
+        {
+            int cnt = EditCardPanelTempList[i].GetCardCount();
+            if (cnt > 0)
+            {
+                for(int k = 0; k < cnt; k++)
+                {
+                    list.Add(EditCardPanelTempList[i].GetCardInfo());
+                }
+            }
+        }
+        return list;
     }
 
     public int GetEditCardPanelTempCount()

@@ -89,9 +89,10 @@ public class DialogManager : MonoBehaviour
         SaveData += ",";
 
         List<EnumController.Colors> colors = new List<EnumController.Colors>();
-        for (int i = 0; i < m_EditCardPanelManager.DeckList.Count; i++)
+        List<CardInfo> DeckList = m_EditCardPanelManager.GetDeckList();
+        for (int i = 0; i < DeckList.Count; i++)
         {
-            List<EnumController.Colors> temp = m_EditCardPanelManager.DeckList[i].GetColor();
+            List<EnumController.Colors> temp = DeckList[i].GetColor();
             for (int k = 0; k < temp.Count; k++)
             {
                 if (colors.Contains(temp[k]))
@@ -166,11 +167,10 @@ public class DialogManager : MonoBehaviour
         SaveData += ",";
 
         SaveData += m_SaveDataStatic.GetFavoriteCardInfo().GetCardNo();
-        List<CardInfo> list = m_EditCardPanelManager.DeckList;
-        for (int i = 0; i < m_EditCardPanelManager.DeckList.Count; i++)
+        for (int i = 0; i < DeckList.Count; i++)
         {
             SaveData += ",";
-            SaveData += list[i].GetCardNo();
+            SaveData += DeckList[i].GetCardNo();
         }
         SaveData += ",";
         return SaveData;
