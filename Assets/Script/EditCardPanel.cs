@@ -22,13 +22,13 @@ public class EditCardPanel : MonoBehaviour
     public Text toughness;
     public Text count;
     public Image rareSprite;
+    public Image i_lore;
     public CardInfo m_CardInfo;
     public Button plusBtn;
     public Button minusBtn;
 
     public int cardCount;
-
-    public List<GameObject> loreList;
+    public int index;
 
     public RectTransform parent;
     public RectTransform image_parent;
@@ -56,29 +56,101 @@ public class EditCardPanel : MonoBehaviour
     public RectTransform space1;
     public RectTransform space2;
     public RectTransform lores;
-    public List<RectTransform> lores_loreList = new List<RectTransform>();
+    public RectTransform lores_lore;
     public RectTransform rareHeader;
     public RectTransform rareHeader_rare;
     public RectTransform plusMinusHeader;
     public RectTransform plusMinusHeader_label;
-    public RectTransform plusMinusHeader_space1;
     public RectTransform plusMinusHeader_plus;
-    public RectTransform plusMinusHeader_space2;
     public RectTransform plusMinusHeader_count;
-    public RectTransform plusMinusHeader_space3;
     public RectTransform plusMinusHeader_minus;
-    public RectTransform plusMinusHeader_space4;
     public RectTransform plusMinusHeader_label2;
 
     ExtendUtil m_ExtendUtil = new ExtendUtil();
 
     public EditCardPanelManager m_EditCardPanelManager;
     public PanelPicture m_PanelPicture;
+    public RectTransform CanvasRectTransform;
+
+    public Sprite Lore1;
+    public Sprite Lore2;
+    public Sprite Lore3;
+    public Sprite Lore4;
+
+    private const int parent_X = 890;
+    private const int parent_Y = 305;
+    private const int image_parent_X = 218;
+    private const int image_parent_Y = 305;
+    private const int image_X = 218;
+    private const int image_Y = 305;
+    private const int middle_X = 525;
+    private const int middle_Y = 305;
+    private const int inkHeader_X = 525;
+    private const int inkHeader_Y = 30;
+    private const int inkHeader_ink_X = 525;
+    private const int inkHeader_ink_Y = 30;
+    private const int cardNameHeader_X = 525;
+    private const int cardNameHeader_Y = 30;
+    private const int cardNameHeader_cardName_X = 525;
+    private const int cardNameHeader_cardName_Y = 30;
+    private const int cardName2Header_X = 525;
+    private const int cardName2Header_Y = 30;
+    private const int cardName2Header_cardName_X = 525;
+    private const int cardName2Header_cardName_Y = 30;
+    private const int classHeader_X = 525;
+    private const int classHeader_Y = 30;
+    private const int classHeader_className_X = 525;
+    private const int classHeader_className_Y = 30;
+    private const int cardTextHeader_X = 525;
+    private const int cardTextHeader_Y = 155;
+    private const int cardTextHeader_middle_X = 475;
+    private const int cardTextHeader_middle_Y = 155;
+    private const int powerToughness_X = 475;
+    private const int powerToughness_Y = 30;
+    private const int expantionName_X = 475;
+    private const int expantionName_Y = 30;
+    private const int expantionName_expantion_X = 401;
+    private const int expantionName_expantion_Y = 30;
+    private const int expantionName_power_X = 37;
+    private const int expantionName_power_Y = 30;
+    private const int expantionName_power_power_X = 37;
+    private const int expantionName_power_power_Y = 30;
+    private const int expantionName_toughness_X = 37;
+    private const int expantionName_toughness_Y = 30;
+    private const int expantionName_toughness_toughness_X = 37;
+    private const int expantionName_toughness_toughness_Y = 30;
+    private const int titleHeader_X = 475;
+    private const int titleHeader_Y = 30;
+    private const int titleHeader_title_X = 401;
+    private const int titleHeader_title_Y = 30;
+    private const int space1_X = 475;
+    private const int space1_Y = 5;
+    private const int space2_X = 475;
+    private const int space2_Y = 90;
+    private const int lores_X = 50;
+    private const int lores_Y = 155;
+    private const int lores_lore_X = 50;
+    private const int lores_lore_Y = 155;
+    private const int rareHeader_X = 525;
+    private const int rareHeader_Y = 30;
+    private const int rareHeader_rare_X = 30;
+    private const int rareHeader_rare_Y = 30;
+    private const int plusMinusHeader_X = 147;
+    private const int plusMinusHeader_Y = 305;
+    private const int plusMinusHeader_label_X = 147;
+    private const int plusMinusHeader_label_Y = 30;
+    private const float plusMinusHeader_plus_X = 74.71f;
+    private const int plusMinusHeader_plus_Y = 60;
+    private const int plusMinusHeader_count_X = 147;
+    private const int plusMinusHeader_count_Y = 30;
+    private const float plusMinusHeader_minus_X = 74.71f;
+    private const int plusMinusHeader_minus_Y = 60;
+    private const int plusMinusHeader_label2_X = 147;
+    private const int plusMinusHeader_label2_Y = 30;
 
     public void Start()
     {
-        SetEditCardPanel(m_CardInfo, 0);
-        m_EditCardPanelManager.CheckStandby();
+        UpdateImage(CanvasRectTransform.sizeDelta.x / 890, CanvasRectTransform.sizeDelta.y / 1920);
     }
 
     public string GetCardNo()
@@ -105,9 +177,22 @@ public class EditCardPanel : MonoBehaviour
         }
     }
 
-    public void SetEditCardPanel(CardInfo m_CardInfo, int m_count)
+    public void SetEditCardPanel(CardInfo m_CardInfo, int m_count, int index)
     {
+        this.index = index;
         this.m_CardInfo = m_CardInfo;
+        this.cardCount = m_count;
+
+        if (m_CardInfo == null)
+        {
+            SwitchActive(false);
+            return;
+        }
+        else
+        {
+            SwitchActive(true);
+        }
+
         m_sprite.sprite = m_CardInfo.GetSprite();
         inkCost.text = m_CardInfo.GetInkCost().ToString();
         cardName1.text = m_CardInfo.GetCardName1();
@@ -115,7 +200,6 @@ public class EditCardPanel : MonoBehaviour
         Class.text = EditClass(m_CardInfo.GetClassList());
         expantion.text = m_ExtendUtil.ConvertToStringFromExpantion(m_CardInfo.GetExpantion());
         title.text = m_ExtendUtil.ConvertToStringFromTitle(m_CardInfo.GetTitle());
-        this.cardCount = m_count;
 
         if (m_CardInfo.GetType() == EnumController.Type.Character)
         {
@@ -138,33 +222,30 @@ public class EditCardPanel : MonoBehaviour
     private string EditClass(List<EnumController.Class> paramater)
     {
         string temp = "";
-        
-        if(m_CardInfo.GetType() == EnumController.Type.Song)
-        {
-            temp = "アクション・歌";
-            return temp;
-        }
-        else if(m_CardInfo.GetType() == EnumController.Type.Action)
-        {
-            temp = "アクション";
-            return temp;
-        }
-        else if (m_CardInfo.GetType() == EnumController.Type.Item)
-        {
-            temp = "アイテム";
-            return temp;
-        }
 
-        for (int i = 0; i < paramater.Count; i++)
+        switch (m_CardInfo.GetType())
         {
-            if (i > 0)
-            {
-                temp += ", ";
-            }
+            case EnumController.Type.Song:
+                temp = "アクション・歌";
+                return temp;
+            case EnumController.Type.Action:
+                temp = "アクション";
+                return temp;
+            case EnumController.Type.Item:
+                temp = "アイテム";
+                return temp;
+            default:
+                for (int i = 0; i < paramater.Count; i++)
+                {
+                    if (i > 0)
+                    {
+                        temp += ", ";
+                    }
 
-            temp += m_ExtendUtil.ConvertToStringFromClass(paramater[i]);
+                    temp += m_ExtendUtil.ConvertToStringFromClass(paramater[i]);
+                }
+                return temp;
         }
-        return temp;
     }
 
     public void onMinusBtn()
@@ -201,26 +282,27 @@ public class EditCardPanel : MonoBehaviour
 
     private void UpdateLore()
     {
-        if (m_CardInfo.GetLore() < 5)
+        switch (m_CardInfo.GetLore())
         {
-            for(int i = 0; i < 4; i++)
-            {
-                if (i < m_CardInfo.GetLore())
-                {
-                    loreList[i].SetActive(true);
-                }
-                else
-                {
-                    loreList[i].SetActive(false);
-                }
-            }
-        }
-        else if(m_CardInfo.GetLore() < 0)
-        {
-            for (int i = 0; i < 4; i++)
-            {
-                loreList[i].SetActive(false);
-            }
+            case 1:
+                i_lore.color = new Color(1, 1, 1, 1);
+                i_lore.sprite = Lore1;
+                return;
+            case 2:
+                i_lore.color = new Color(1, 1, 1, 1);
+                i_lore.sprite = Lore2;
+                return;
+            case 3:
+                i_lore.color = new Color(1, 1, 1, 1);
+                i_lore.sprite = Lore3;
+                return;
+            case 4:
+                i_lore.color = new Color(1, 1, 1, 1);
+                i_lore.sprite = Lore4;
+                return;
+            default:
+                i_lore.color = new Color(1, 1, 1, 0);
+                return;
         }
     }
 
@@ -229,10 +311,6 @@ public class EditCardPanel : MonoBehaviour
         if(cardCount == 0)
         {
             minusBtn.interactable = false;
-            if (m_EditCardPanelManager.SwitchOwn)
-            {
-                SwitchActive(false);
-            }
         }
         else
         {
@@ -249,7 +327,7 @@ public class EditCardPanel : MonoBehaviour
         }
 
         count.text = cardCount.ToString();
-        m_EditCardPanelManager.onUpdateDeckList();
+        m_EditCardPanelManager.onUpdateDeckList(index, cardCount);
     }
 
     private void UpdateRare()
@@ -381,49 +459,38 @@ public class EditCardPanel : MonoBehaviour
 
     public void UpdateImage(float magnification_x, float magnification_y)
     {
-        parent.sizeDelta = new Vector2(parent.sizeDelta.x * magnification_x, parent.sizeDelta.y * magnification_y);
-        image_parent.sizeDelta = new Vector2(image_parent.sizeDelta.x * magnification_x, image_parent.sizeDelta.y * magnification_y);
-        middle.sizeDelta = new Vector2(middle.sizeDelta.x * magnification_x, middle.sizeDelta.y * magnification_y);
-        inkHeader.sizeDelta = new Vector2(inkHeader.sizeDelta.x * magnification_x, inkHeader.sizeDelta.y * magnification_y);
-        inkHeader_ink.sizeDelta = new Vector2(inkHeader_ink.sizeDelta.x * magnification_x, inkHeader_ink.sizeDelta.y * magnification_y);
-        cardNameHeader.sizeDelta = new Vector2(cardNameHeader.sizeDelta.x * magnification_x, cardNameHeader.sizeDelta.y * magnification_y);
-        cardNameHeader_cardName.sizeDelta = new Vector2(cardNameHeader_cardName.sizeDelta.x * magnification_x, cardNameHeader_cardName.sizeDelta.y * magnification_y);
-        cardName2Header.sizeDelta = new Vector2(cardName2Header.sizeDelta.x * magnification_x, cardName2Header.sizeDelta.y * magnification_y);
-        cardName2Header_cardName.sizeDelta = new Vector2(cardName2Header_cardName.sizeDelta.x * magnification_x, cardName2Header_cardName.sizeDelta.y * magnification_y);
-        classHeader.sizeDelta = new Vector2(classHeader.sizeDelta.x * magnification_x, classHeader.sizeDelta.y * magnification_y);
-        classHeader_className.sizeDelta = new Vector2(classHeader_className.sizeDelta.x * magnification_x, classHeader_className.sizeDelta.y * magnification_y);
-        cardTextHeader.sizeDelta = new Vector2(cardTextHeader.sizeDelta.x * magnification_x, cardTextHeader.sizeDelta.y * magnification_y);
-        cardTextHeader_middle.sizeDelta = new Vector2(cardTextHeader_middle.sizeDelta.x * magnification_x, cardTextHeader_middle.sizeDelta.y * magnification_y);
-        powerToughness.sizeDelta = new Vector2(powerToughness.sizeDelta.x * magnification_x, powerToughness.sizeDelta.y * magnification_y);
-        expantionName.sizeDelta = new Vector2(expantionName.sizeDelta.x * magnification_x, expantionName.sizeDelta.y * magnification_y);
-        expantionName_expantion.sizeDelta = new Vector2(expantionName_expantion.sizeDelta.x * magnification_x, expantionName_expantion.sizeDelta.y * magnification_y);
-        expantionName_power.sizeDelta = new Vector2(expantionName_power.sizeDelta.x * magnification_x, expantionName_power.sizeDelta.y * magnification_y);
-        expantionName_power_power.sizeDelta = new Vector2(expantionName_power_power.sizeDelta.x * magnification_x, expantionName_power_power.sizeDelta.y * magnification_y);
-        expantionName_toughness.sizeDelta = new Vector2(expantionName_toughness.sizeDelta.x * magnification_x, expantionName_toughness.sizeDelta.y * magnification_y);
-        expantionName_toughness_toughness.sizeDelta = new Vector2(expantionName_toughness_toughness.sizeDelta.x * magnification_x, expantionName_toughness_toughness.sizeDelta.y * magnification_y);
-        titleHeader.sizeDelta = new Vector2(titleHeader.sizeDelta.x * magnification_x, titleHeader.sizeDelta.y * magnification_y);
-        titleHeader_title.sizeDelta = new Vector2(titleHeader_title.sizeDelta.x * magnification_x, titleHeader_title.sizeDelta.y * magnification_y);
-        space1.sizeDelta = new Vector2(space1.sizeDelta.x * magnification_x, space1.sizeDelta.y * magnification_y);
-        space2.sizeDelta = new Vector2(space2.sizeDelta.x * magnification_x, space2.sizeDelta.y * magnification_y);
-        lores.sizeDelta = new Vector2(lores.sizeDelta.x * magnification_x, lores.sizeDelta.y * magnification_y);
+        parent.sizeDelta = new Vector2(parent_X * magnification_x, parent_Y * magnification_y);
+        image_parent.sizeDelta = new Vector2(image_parent_X * magnification_x, image_parent_Y * magnification_y);
+        middle.sizeDelta = new Vector2(middle_X * magnification_x, middle_Y * magnification_y);
+        inkHeader.sizeDelta = new Vector2(inkHeader_X * magnification_x, inkHeader_Y * magnification_y);
+        inkHeader_ink.sizeDelta = new Vector2(inkHeader_ink_X * magnification_x, inkHeader_ink_Y * magnification_y);
+        cardNameHeader.sizeDelta = new Vector2(cardNameHeader_X * magnification_x, cardNameHeader_Y * magnification_y);
+        cardNameHeader_cardName.sizeDelta = new Vector2(cardNameHeader_cardName_X * magnification_x, cardNameHeader_cardName_Y * magnification_y);
+        cardName2Header.sizeDelta = new Vector2(cardName2Header_X * magnification_x, cardName2Header_Y * magnification_y);
+        cardName2Header_cardName.sizeDelta = new Vector2(cardName2Header_cardName_X * magnification_x, cardName2Header_cardName_Y * magnification_y);
+        classHeader.sizeDelta = new Vector2(classHeader_X * magnification_x, classHeader_Y * magnification_y);
+        classHeader_className.sizeDelta = new Vector2(classHeader_className_X * magnification_x, classHeader_className_Y * magnification_y);
+        cardTextHeader.sizeDelta = new Vector2(cardTextHeader_X * magnification_x, cardTextHeader_Y * magnification_y);
+        cardTextHeader_middle.sizeDelta = new Vector2(cardTextHeader_middle_X * magnification_x, cardTextHeader_middle_Y * magnification_y);
+        powerToughness.sizeDelta = new Vector2(powerToughness_X, powerToughness_Y * magnification_y);
+        expantionName.sizeDelta = new Vector2(expantionName_X * magnification_x, expantionName_Y * magnification_y);
+        expantionName_expantion.sizeDelta = new Vector2(expantionName_expantion_X * magnification_x, expantionName_expantion_Y * magnification_y);
+        expantionName_power.sizeDelta = new Vector2(expantionName_power_X * magnification_x, expantionName_power_Y * magnification_y);
+        expantionName_power_power.sizeDelta = new Vector2(expantionName_power_power_X * magnification_x, expantionName_power_power_Y * magnification_y);
+        expantionName_toughness.sizeDelta = new Vector2(expantionName_toughness_X * magnification_x, expantionName_toughness_Y * magnification_y);
+        expantionName_toughness_toughness.sizeDelta = new Vector2(expantionName_toughness_toughness_X * magnification_x, expantionName_toughness_toughness_Y * magnification_y);
+        titleHeader.sizeDelta = new Vector2(titleHeader_X * magnification_x, titleHeader_Y * magnification_y);
+        titleHeader_title.sizeDelta = new Vector2(titleHeader_title_X * magnification_x, titleHeader_title_Y * magnification_y);
+        space1.sizeDelta = new Vector2(space1_X * magnification_x, space1_Y * magnification_y);
+        space2.sizeDelta = new Vector2(space2_X * magnification_x, space2_Y * magnification_y);
+        lores.sizeDelta = new Vector2(lores_X * magnification_x, lores_Y * magnification_y);
 
-        for(int i = 0; i < lores_loreList.Count; i++)
-        {
-            lores_loreList[i].sizeDelta = new Vector2(lores_loreList[i].sizeDelta.x * magnification_x, lores_loreList[i].sizeDelta.y * magnification_y);
-        }
-
-        rareHeader.sizeDelta = new Vector2(rareHeader.sizeDelta.x * magnification_x, rareHeader.sizeDelta.y * magnification_y);
+        rareHeader.sizeDelta = new Vector2(rareHeader_X * magnification_x, rareHeader_Y * magnification_y);
         
-        plusMinusHeader.sizeDelta = new Vector2(plusMinusHeader.sizeDelta.x * magnification_x, plusMinusHeader.sizeDelta.y * magnification_y);
-        plusMinusHeader_label.sizeDelta = new Vector2(plusMinusHeader_label.sizeDelta.x * magnification_x, plusMinusHeader_label.sizeDelta.y * magnification_y);
-        plusMinusHeader_space1.sizeDelta = new Vector2(plusMinusHeader_space1.sizeDelta.x * magnification_x, plusMinusHeader_space1.sizeDelta.y * magnification_y);
-
-        plusMinusHeader_space2.sizeDelta = new Vector2(plusMinusHeader_space2.sizeDelta.x * magnification_x, plusMinusHeader_space2.sizeDelta.y * magnification_y);
-        plusMinusHeader_count.sizeDelta = new Vector2(plusMinusHeader_count.sizeDelta.x * magnification_x, plusMinusHeader_count.sizeDelta.y * magnification_y);
-        plusMinusHeader_space3.sizeDelta = new Vector2(plusMinusHeader_space3.sizeDelta.x * magnification_x, plusMinusHeader_space3.sizeDelta.y * magnification_y);
-
-        plusMinusHeader_space4.sizeDelta = new Vector2(plusMinusHeader_space4.sizeDelta.x * magnification_x, plusMinusHeader_space4.sizeDelta.y * magnification_y);
-        plusMinusHeader_label2.sizeDelta = new Vector2(plusMinusHeader_label2.sizeDelta.x * magnification_x, plusMinusHeader_label2.sizeDelta.y * magnification_y);
+        plusMinusHeader.sizeDelta = new Vector2(plusMinusHeader_X * magnification_x, plusMinusHeader_Y * magnification_y);
+        plusMinusHeader_label.sizeDelta = new Vector2(plusMinusHeader_label_X * magnification_x, plusMinusHeader_label_Y * magnification_y);
+        plusMinusHeader_count.sizeDelta = new Vector2(plusMinusHeader_count_X * magnification_x, plusMinusHeader_count_Y * magnification_y);
+        plusMinusHeader_label2.sizeDelta = new Vector2(plusMinusHeader_label2_X * magnification_x, plusMinusHeader_label2_Y * magnification_y);
 
 
         float magnification = magnification_x;
@@ -431,9 +498,213 @@ public class EditCardPanel : MonoBehaviour
         {
             magnification = magnification_y;
         }
-        image.sizeDelta = new Vector2(image.sizeDelta.x * magnification, image.sizeDelta.y * magnification);
-        rareHeader_rare.sizeDelta = new Vector2(rareHeader_rare.sizeDelta.x * magnification, rareHeader_rare.sizeDelta.y * magnification);
-        plusMinusHeader_plus.sizeDelta = new Vector2(plusMinusHeader_plus.sizeDelta.x * magnification, plusMinusHeader_plus.sizeDelta.y * magnification);
-        plusMinusHeader_minus.sizeDelta = new Vector2(plusMinusHeader_minus.sizeDelta.x * magnification, plusMinusHeader_minus.sizeDelta.y * magnification);
+        image.sizeDelta = new Vector2(image_X * magnification, image_Y * magnification);
+        rareHeader_rare.sizeDelta = new Vector2(rareHeader_rare_X * magnification, rareHeader_rare_Y * magnification);
+        lores_lore.sizeDelta = new Vector2(lores_lore_X * magnification, lores_lore_Y * magnification);
+        plusMinusHeader_plus.sizeDelta = new Vector2(plusMinusHeader_plus_X * magnification, plusMinusHeader_plus_Y * magnification);
+        plusMinusHeader_minus.sizeDelta = new Vector2(plusMinusHeader_minus_X * magnification, plusMinusHeader_minus_Y * magnification);
+
+        Vector2 left_position = new Vector2(0, 1);
+        image_parent.anchorMin = left_position;
+        image_parent.anchorMax = left_position;
+        image_parent.pivot = left_position;
+        image_parent.anchoredPosition = Vector2.zero;
+
+        image.anchorMin = left_position;
+        image.anchorMax = left_position;
+        image.pivot = left_position;
+        image.anchoredPosition = new Vector2((image_parent.sizeDelta.x - image.sizeDelta.x) / 2, (image_parent.sizeDelta.y - image.sizeDelta.y) / 2);
+
+        //==============================================================================================
+        //真ん中 --ここから--
+        //==============================================================================================
+        middle.anchorMin = left_position;
+        middle.anchorMax = left_position;
+        middle.pivot = left_position;
+        middle.anchoredPosition = new Vector2(image_parent.sizeDelta.x, 0);
+
+        float middleSize_y = 0;
+        inkHeader.anchorMin = left_position;
+        inkHeader.anchorMax = left_position;
+        inkHeader.pivot = left_position;
+        inkHeader.anchoredPosition = Vector2.zero;
+
+        middleSize_y += inkHeader.sizeDelta.y;
+        cardNameHeader.anchorMin = left_position;
+        cardNameHeader.anchorMax = left_position;
+        cardNameHeader.pivot = left_position;
+        cardNameHeader.anchoredPosition = new Vector2(0, middleSize_y * (-1));
+
+        middleSize_y += cardNameHeader.sizeDelta.y;
+        cardName2Header.anchorMin = left_position;
+        cardName2Header.anchorMax = left_position;
+        cardName2Header.pivot = left_position;
+        cardName2Header.anchoredPosition = new Vector2(0, middleSize_y * (-1));
+
+        middleSize_y += cardName2Header.sizeDelta.y;
+        classHeader.anchorMin = left_position;
+        classHeader.anchorMax = left_position;
+        classHeader.pivot = left_position;
+        classHeader.anchoredPosition = new Vector2(0, middleSize_y * (-1));
+
+        middleSize_y += classHeader.sizeDelta.y;
+        cardTextHeader.anchorMin = left_position;
+        cardTextHeader.anchorMax = left_position;
+        cardTextHeader.pivot = left_position;
+        cardTextHeader.anchoredPosition = new Vector2(0, middleSize_y * (-1));
+
+        middleSize_y += cardTextHeader.sizeDelta.y;
+        rareHeader.anchorMin = left_position;
+        rareHeader.anchorMax = left_position;
+        rareHeader.pivot = left_position;
+        rareHeader.anchoredPosition = new Vector2(0, middleSize_y * (-1));
+
+        inkHeader_ink.anchorMin = left_position;
+        inkHeader_ink.anchorMax = left_position;
+        inkHeader_ink.pivot = left_position;
+        inkHeader_ink.anchoredPosition = Vector2.zero;
+
+        cardNameHeader_cardName.anchorMin = left_position;
+        cardNameHeader_cardName.anchorMax = left_position;
+        cardNameHeader_cardName.pivot = left_position;
+        cardNameHeader_cardName.anchoredPosition = Vector2.zero;
+
+        cardName2Header_cardName.anchorMin = left_position;
+        cardName2Header_cardName.anchorMax = left_position;
+        cardName2Header_cardName.pivot = left_position;
+        cardName2Header_cardName.anchoredPosition = Vector2.zero;
+
+        classHeader_className.anchorMin = left_position;
+        classHeader_className.anchorMax = left_position;
+        classHeader_className.pivot = left_position;
+        classHeader_className.anchoredPosition = Vector2.zero;
+
+        cardTextHeader_middle.anchorMin = left_position;
+        cardTextHeader_middle.anchorMax = left_position;
+        cardTextHeader_middle.pivot = left_position;
+        cardTextHeader_middle.anchoredPosition = Vector2.zero;
+
+        float cardTextHeader_middleSize_y = 0;
+        powerToughness.anchorMin = left_position;
+        powerToughness.anchorMax = left_position;
+        powerToughness.pivot = left_position;
+        powerToughness.anchoredPosition = Vector2.zero;
+
+        expantionName_expantion.anchorMin = left_position;
+        expantionName_expantion.anchorMax = left_position;
+        expantionName_expantion.pivot = left_position;
+        expantionName_expantion.anchoredPosition = Vector2.zero;
+
+        expantionName_power.anchorMin = left_position;
+        expantionName_power.anchorMax = left_position;
+        expantionName_power.pivot = left_position;
+        expantionName_power.anchoredPosition = new Vector2(expantionName_expantion.sizeDelta.x, 0);
+
+        expantionName_toughness.anchorMin = left_position;
+        expantionName_toughness.anchorMax = left_position;
+        expantionName_toughness.pivot = left_position;
+        expantionName_toughness.anchoredPosition = new Vector2(expantionName_expantion.sizeDelta.x + expantionName_power.sizeDelta.x, 0);
+
+        expantionName_power_power.anchorMin = left_position;
+        expantionName_power_power.anchorMax = left_position;
+        expantionName_power_power.pivot = left_position;
+        expantionName_power_power.anchoredPosition = Vector2.zero;
+
+        expantionName_toughness_toughness.anchorMin = left_position;
+        expantionName_toughness_toughness.anchorMax = left_position;
+        expantionName_toughness_toughness.pivot = left_position;
+        expantionName_toughness_toughness.anchoredPosition = Vector2.zero;
+
+        cardTextHeader_middleSize_y += powerToughness.sizeDelta.y;
+        titleHeader.anchorMin = left_position;
+        titleHeader.anchorMax = left_position;
+        titleHeader.pivot = left_position;
+        titleHeader.anchoredPosition = new Vector2(0, cardTextHeader_middleSize_y * (-1));
+
+        titleHeader_title.anchorMin = left_position;
+        titleHeader_title.anchorMax = left_position;
+        titleHeader_title.pivot = left_position;
+        titleHeader_title.anchoredPosition = Vector2.zero;
+
+        cardTextHeader_middleSize_y += titleHeader.sizeDelta.y;
+        space1.anchorMin = left_position;
+        space1.anchorMax = left_position;
+        space1.pivot = left_position;
+        space1.anchoredPosition = new Vector2(0, cardTextHeader_middleSize_y * (-1));
+
+        cardTextHeader_middleSize_y += space1.sizeDelta.y;
+        space2.anchorMin = left_position;
+        space2.anchorMax = left_position;
+        space2.pivot = left_position;
+        space2.anchoredPosition = new Vector2(0, cardTextHeader_middleSize_y * (-1));
+
+        lores.anchorMin = left_position;
+        lores.anchorMax = left_position;
+        lores.pivot = left_position;
+        lores.anchoredPosition = new Vector2(cardTextHeader_middle.sizeDelta.x, 0);
+
+        lores_lore.anchorMin = left_position;
+        lores_lore.anchorMax = left_position;
+        lores_lore.pivot = left_position;
+        lores_lore.anchoredPosition = new Vector2((lores.sizeDelta.x - lores_lore.sizeDelta.x) / 2, 0);
+
+        rareHeader_rare.anchorMin = left_position;
+        rareHeader_rare.anchorMax = left_position;
+        rareHeader_rare.pivot = left_position;
+        rareHeader_rare.anchoredPosition = new Vector2((rareHeader.sizeDelta.x - rareHeader_rare.sizeDelta.x) / 2, 0);
+        //==============================================================================================
+        //真ん中 --ここまで--
+        //==============================================================================================
+        //==============================================================================================
+        //プラスマイナスボタン --ここから--
+        //==============================================================================================
+
+        plusMinusHeader.anchorMin = left_position;
+        plusMinusHeader.anchorMax = left_position;
+        plusMinusHeader.pivot = left_position;
+        plusMinusHeader.anchoredPosition = new Vector2(image_parent.sizeDelta.x + middle.sizeDelta.x, 0);
+
+        float plusMinusHeaderSize_y = 0;
+
+        plusMinusHeader_label.anchorMin = left_position;
+        plusMinusHeader_label.anchorMax = left_position;
+        plusMinusHeader_label.pivot = left_position;
+        plusMinusHeader_label.anchoredPosition = Vector2.zero;
+
+        plusMinusHeaderSize_y += plusMinusHeader_label.sizeDelta.y;
+        plusMinusHeaderSize_y += 27 * magnification_y;
+
+        plusMinusHeader_plus.anchorMin = left_position;
+        plusMinusHeader_plus.anchorMax = left_position;
+        plusMinusHeader_plus.pivot = left_position;
+        plusMinusHeader_plus.anchoredPosition = new Vector2((plusMinusHeader.sizeDelta.x - plusMinusHeader_plus.sizeDelta.x) / 2, plusMinusHeaderSize_y * (-1));
+
+        plusMinusHeaderSize_y += plusMinusHeader_plus.sizeDelta.y;
+        plusMinusHeaderSize_y += 20 * magnification_y;
+
+        plusMinusHeader_count.anchorMin = left_position;
+        plusMinusHeader_count.anchorMax = left_position;
+        plusMinusHeader_count.pivot = left_position;
+        plusMinusHeader_count.anchoredPosition = new Vector2(0, plusMinusHeaderSize_y * (-1));
+
+        plusMinusHeaderSize_y += plusMinusHeader_count.sizeDelta.y;
+        plusMinusHeaderSize_y += 20 * magnification_y;
+
+        plusMinusHeader_minus.anchorMin = left_position;
+        plusMinusHeader_minus.anchorMax = left_position;
+        plusMinusHeader_minus.pivot = left_position;
+        plusMinusHeader_minus.anchoredPosition = new Vector2((plusMinusHeader.sizeDelta.x - plusMinusHeader_minus.sizeDelta.x) / 2, plusMinusHeaderSize_y * (-1));
+
+        plusMinusHeaderSize_y += plusMinusHeader_minus.sizeDelta.y;
+        plusMinusHeaderSize_y += 27 * magnification_y;
+
+        plusMinusHeader_label2.anchorMin = left_position;
+        plusMinusHeader_label2.anchorMax = left_position;
+        plusMinusHeader_label2.pivot = left_position;
+        plusMinusHeader_label2.anchoredPosition = new Vector2(0, plusMinusHeaderSize_y * (-1));
+
+        //==============================================================================================
+        //プラスマイナスボタン --ここまで--
+        //==============================================================================================
     }
 }

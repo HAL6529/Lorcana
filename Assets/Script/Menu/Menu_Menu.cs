@@ -92,6 +92,18 @@ public class Menu_Menu : MonoBehaviour
     {
         SaveData m_SaveData = new SaveData();
         SaveDataStatic m_SaveDataStatic = new SaveDataStatic(m_SaveData);
-        SceneManager.LoadScene("DeckBuild");
+        StartCoroutine(LoadSceneCoroutine("DeckBuild"));
+    }
+
+    private IEnumerator LoadSceneCoroutine(string sceneName)
+    {
+        // 非同期でシーン読み込み開始
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(sceneName);
+
+        // 読み込みが完了するまで待機（進捗率をUIに反映することも可能）
+        while (!asyncLoad.isDone)
+        {
+            yield return null;
+        }
     }
 }

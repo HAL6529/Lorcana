@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SearchFilterClass : MonoBehaviour
+public class SearchFilterClass
 {
     public bool isAmethyst;
     public bool isAmber;
