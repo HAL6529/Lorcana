@@ -94,9 +94,27 @@ public class EditCardPanelManager : MonoBehaviour
         return SortEditCardPanelTempList[itemCount];
     }
 
-    private void LoadDeckList()
+    public void LoadDeckList()
     {
+        DeckName = m_SaveDataStatic.GetDeckTitle();
+        List<CardInfo> TempDeckList = m_SaveDataStatic.GetCardInfoList();
+        for (int i = 0; i < TempDeckList.Count; i++)
+        {
+            for (int k = 0; k < EditCardPanelTempList.Count; k++)
+            {
+                if (EditCardPanelTempList[k] == null)
+                {
+                    continue;
+                }
 
+                if (TempDeckList[i].GetCardNo() == EditCardPanelTempList[k].GetCardInfo().GetCardNo())
+                {
+                    EditCardPanelTempList[k].SetCardCount(EditCardPanelTempList[k].GetCardCount() + 1);
+                    continue;
+                }
+            }
+        }
+        onDefaultSort();
     }
 
     public void onUpdateDeckList(int index, int cardCount)

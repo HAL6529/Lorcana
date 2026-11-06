@@ -21,6 +21,7 @@ public class EditCardPanelControllerLimited : UIBehaviour, IInfiniteScrollSetup
         var delta = rectTransform.sizeDelta;
         delta.y = infiniteScroll.itemScale * max;
         rectTransform.sizeDelta = delta;
+        m_EditCardPanelManager.LoadDeckList();
     }
 
     public void OnUpdateItem(int itemCount, GameObject obj)
