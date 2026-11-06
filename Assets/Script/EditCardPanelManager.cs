@@ -171,7 +171,7 @@ public class EditCardPanelManager : MonoBehaviour
         SortEditCardPanelTempList = new List<EditCardPanelTemp>();
         for(int i = 0; i < EditCardPanelTempList.Count; i++)
         {
-            if (SwitchOwn && EditCardPanelTempList[i].GetCardCount() <= 0)
+            if ((SwitchOwn && EditCardPanelTempList[i].GetCardCount() <= 0) || !m_SearchFilterClass.isSearchHit(EditCardPanelTempList[i].GetCardInfo()))
             {
                 continue;
             }
@@ -187,7 +187,7 @@ public class EditCardPanelManager : MonoBehaviour
         {
             for(int k = 0; k < EditCardPanelTempList.Count; k++)
             {
-                if (SwitchOwn && EditCardPanelTempList[k].GetCardCount() <= 0)
+                if ((SwitchOwn && EditCardPanelTempList[k].GetCardCount() <= 0) || !m_SearchFilterClass.isSearchHit(EditCardPanelTempList[k].GetCardInfo()))
                 {
                     continue;
                 }
@@ -213,7 +213,7 @@ public class EditCardPanelManager : MonoBehaviour
 
         for (int i = 0; i < EditCardPanelTempList.Count; i++)
         {
-            if (SwitchOwn && EditCardPanelTempList[i].GetCardCount() <= 0)
+            if ((SwitchOwn && EditCardPanelTempList[i].GetCardCount() <= 0) || !m_SearchFilterClass.isSearchHit(EditCardPanelTempList[i].GetCardInfo()))
             {
                 continue;
             }

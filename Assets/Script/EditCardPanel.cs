@@ -158,25 +158,6 @@ public class EditCardPanel : MonoBehaviour
         return m_CardInfo.GetCardNo();
     }
 
-    public void isSearchHit()
-    {
-        if (m_EditCardPanelManager.m_SearchFilterClass.isSearchHit(m_CardInfo))
-        {
-            if ((m_EditCardPanelManager.SwitchOwn && cardCount > 0) || !m_EditCardPanelManager.SwitchOwn)
-            {
-                SwitchActive(true);
-            }
-            else
-            {
-                SwitchActive(false);
-            }
-        }
-        else
-        {
-            SwitchActive(false);
-        }
-    }
-
     public void SetEditCardPanel(CardInfo m_CardInfo, int m_count, int index)
     {
         this.index = index;
