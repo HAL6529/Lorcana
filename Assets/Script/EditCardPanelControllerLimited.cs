@@ -35,7 +35,7 @@ public class EditCardPanelControllerLimited : UIBehaviour, IInfiniteScrollSetup
 
             var item = obj.GetComponentInChildren<EditCardPanel>();
             EditCardPanelTemp m_EditCardPanelTemp = m_EditCardPanelManager.GetEditCardPanelTemp(itemCount);
-            item.SetEditCardPanel(m_EditCardPanelTemp.GetCardInfo(), m_EditCardPanelTemp.GetCardCount(), m_EditCardPanelTemp.GetIndex(), true);
+            item.SetEditCardPanel(m_EditCardPanelTemp.GetCardInfo(), m_EditCardPanelTemp.GetCardCount(), m_EditCardPanelTemp.GetIndex());
         }
     }
 }

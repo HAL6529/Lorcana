@@ -63,8 +63,17 @@ public class EditCardPanelManager : MonoBehaviour
         SortEditCardPanelTempList = EditCardPanelTempList;
     }
 
+    public int GetEditCardPanelTempCount()
+    {
+        return SortEditCardPanelTempList.Count;
+    }
+
     public EditCardPanelTemp GetEditCardPanelTemp(int itemCount)
     {
+        if(itemCount > SortEditCardPanelTempList.Count - 1)
+        {
+            return new EditCardPanelTemp(null, 0);
+        }
         return SortEditCardPanelTempList[itemCount];
     }
 
@@ -159,7 +168,15 @@ public class EditCardPanelManager : MonoBehaviour
 
     private void onDefaultSort()
     {
-        SortEditCardPanelTempList = EditCardPanelTempList;
+        SortEditCardPanelTempList = new List<EditCardPanelTemp>();
+        for(int i = 0; i < EditCardPanelTempList.Count; i++)
+        {
+            if (SwitchOwn && EditCardPanelTempList[i].GetCardCount() <= 0)
+            {
+                continue;
+            }
+            SortEditCardPanelTempList.Add(EditCardPanelTempList[i]);
+        }
         m_InfiniteScroll.onResetValue();
     }
 
@@ -170,7 +187,12 @@ public class EditCardPanelManager : MonoBehaviour
         {
             for(int k = 0; k < EditCardPanelTempList.Count; k++)
             {
-                if(EditCardPanelTempList[k].GetCardInfo().GetInkCost() == i)
+                if (SwitchOwn && EditCardPanelTempList[k].GetCardCount() <= 0)
+                {
+                    continue;
+                }
+
+                if (EditCardPanelTempList[k].GetCardInfo().GetInkCost() == i)
                 {
                     SortEditCardPanelTempList.Add(EditCardPanelTempList[k]);
                 }
@@ -191,6 +213,10 @@ public class EditCardPanelManager : MonoBehaviour
 
         for (int i = 0; i < EditCardPanelTempList.Count; i++)
         {
+            if (SwitchOwn && EditCardPanelTempList[i].GetCardCount() <= 0)
+            {
+                continue;
+            }
             List<EnumController.Colors> color = EditCardPanelTempList[i].GetCardInfo().GetColor();
             switch (color[0])
             {

@@ -177,10 +177,13 @@ public class EditCardPanel : MonoBehaviour
         }
     }
 
-    public void SetEditCardPanel(CardInfo m_CardInfo, int m_count, int index, bool isDisplay)
+    public void SetEditCardPanel(CardInfo m_CardInfo, int m_count, int index)
     {
         this.index = index;
-        if (!isDisplay)
+        this.m_CardInfo = m_CardInfo;
+        this.cardCount = m_count;
+
+        if (m_CardInfo == null)
         {
             SwitchActive(false);
             return;
@@ -189,7 +192,7 @@ public class EditCardPanel : MonoBehaviour
         {
             SwitchActive(true);
         }
-        this.m_CardInfo = m_CardInfo;
+
         m_sprite.sprite = m_CardInfo.GetSprite();
         inkCost.text = m_CardInfo.GetInkCost().ToString();
         cardName1.text = m_CardInfo.GetCardName1();
@@ -197,7 +200,6 @@ public class EditCardPanel : MonoBehaviour
         Class.text = EditClass(m_CardInfo.GetClassList());
         expantion.text = m_ExtendUtil.ConvertToStringFromExpantion(m_CardInfo.GetExpantion());
         title.text = m_ExtendUtil.ConvertToStringFromTitle(m_CardInfo.GetTitle());
-        this.cardCount = m_count;
 
         if (m_CardInfo.GetType() == EnumController.Type.Character)
         {
@@ -309,10 +311,6 @@ public class EditCardPanel : MonoBehaviour
         if(cardCount == 0)
         {
             minusBtn.interactable = false;
-            if (m_EditCardPanelManager.SwitchOwn)
-            {
-                SwitchActive(false);
-            }
         }
         else
         {

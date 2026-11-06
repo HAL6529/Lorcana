@@ -8,6 +8,7 @@ public class InfiniteScroll : UIBehaviour
 {
     [SerializeField] private RectTransform CanvasRectTransform;
     [SerializeField] private RectTransform ContentRectTransform;
+    [SerializeField] private EditCardPanelManager m_EditCardPanelManager;
 
     private float magnification_y;
     [SerializeField]
@@ -140,6 +141,10 @@ public class InfiniteScroll : UIBehaviour
 		int cnt = 0;
 
         ContentRectTransform.anchoredPosition = Vector2.zero;
+		float size_Y = itemScale * m_EditCardPanelManager.GetEditCardPanelTempCount();
+		Vector2 vector2 = ContentRectTransform.sizeDelta;
+		ContentRectTransform.sizeDelta = new Vector2(vector2.x, size_Y);
+
         foreach (var item in itemList)
 		{
             var pos = itemScale * cnt;
