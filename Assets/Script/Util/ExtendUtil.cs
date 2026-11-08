@@ -40,6 +40,8 @@ public class ExtendUtil
                 return "王様";
             case EnumController.Class.Knight:
                 return "騎士";
+            case EnumController.Class.Madrigal:
+                return "マドリガル家";
             case EnumController.Class.Mentor:
                 return "導き手";
             case EnumController.Class.Musketeer:
@@ -81,6 +83,8 @@ public class ExtendUtil
                 return "Rise of the Floodborn -フラッドボーンの渾沌-";
             case EnumController.Expansion.IntoTheInkLands:
                 return "Into the Inklands -インクランド探訪-";
+            case EnumController.Expansion.UrsulasReturn:
+                return "Ursula's Return -逆襲のアースラ-";
             default:
                 return "";
         }
@@ -102,6 +106,8 @@ public class ExtendUtil
                 return "シンデレラ";
             case EnumController.Title.DuckTales:
                 return "ダックテイル";
+            case EnumController.Title.Encanto:
+                return "ミラベルと魔法だらけの家";
             case EnumController.Title.Fantasia:
                 return "ファンタジア";
             case EnumController.Title.Frozen:
@@ -134,6 +140,8 @@ public class ExtendUtil
                 return "トレジャー・プラネット";
             case EnumController.Title.LiloAndStitch:
                 return "リロ・アンド・スティッチ";
+            case EnumController.Title.Lorcana:
+                return "ロルカナ";
             case EnumController.Title.MickeyMouse:
                 return "ミッキーマウス";
             case EnumController.Title.Moana:
@@ -668,27 +676,29 @@ public class ExtendUtil
             case "204_JA_01":
                 return new CardInfo_204_JA_01();
             case "205_JA_01":
-                return new CardInfo();
+                return new CardInfo_205_JA_01();
             case "206_JA_01":
-                return new CardInfo();
+                return new CardInfo_206_JA_01();
             case "207_JA_01":
-                return new CardInfo();
+                return new CardInfo_207_JA_01();
             case "208_JA_01":
-                return new CardInfo();
+                return new CardInfo_208_JA_01();
             case "209_JA_01":
-                return new CardInfo();
+                return new CardInfo_209_JA_01();
             case "210_JA_01":
-                return new CardInfo();
+                return new CardInfo_210_JA_01();
             case "211_JA_01":
-                return new CardInfo();
+                return new CardInfo_211_JA_01();
             case "212_JA_01":
-                return new CardInfo();
+                return new CardInfo_212_JA_01();
             case "213_JA_01":
-                return new CardInfo();
+                return new CardInfo_213_JA_01();
             case "214_JA_01":
-                return new CardInfo();
+                return new CardInfo_214_JA_01();
             case "215_JA_01":
-                return new CardInfo();
+                return new CardInfo_215_JA_01();
+            case "216_JA_01":
+                return new CardInfo_216_JA_01();
             default:
                 return new CardInfo();
         }

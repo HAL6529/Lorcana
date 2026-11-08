@@ -23,6 +23,7 @@ public class EnumController
         Inventor, //発明家
         King, //王様
         Knight, //騎士
+        Madrigal, //マドリガル家
         Mentor, //導き手
         Musketeer, //銃士
         Pirate, //海賊
@@ -54,6 +55,7 @@ public class EnumController
         TheFirstChapter,
         RiseOfTheFloodBorn,
         IntoTheInkLands,
+        UrsulasReturn,
     }
 
     public enum KeywordAvility
@@ -63,15 +65,23 @@ public class EnumController
         Challenger3, //果敢+3
         Challenger4, //果敢+4
         Evasive, //回避
-        Shift2,
-        Shift3,
-        Shift4,
-        Shift5,
-        Shift6,
-        Singer3,
-        Singer4,
-        Singer5,
-        Support,
+        Shift2, //変身2
+        Shift3, //変身3
+        Shift4, //変身4
+        Shift5, //変身5
+        Shift6, //変身6
+        ShiftDiscardAnActionCard, //変身 ： アクション・カードを１枚捨てる
+        ShiftDiscardSongCard, //変身:歌・カードを１枚捨てる
+        ShiftDiscard2Cards, //変身:カードを２枚捨てる
+        Singer3, //歌声3
+        Singer4, //歌声4
+        Singer5, //歌声5
+        Singer7, //歌声7
+        Singer9, //歌声9
+        SingTogether7, //合唱7
+        SingTogether8, //合唱8
+        SingTogether10, //合唱10
+        Support, //支援
         Reckless, //暴勇
         Resist1, //耐久+1
         Resist2, //耐久+2
@@ -98,6 +108,7 @@ public class EnumController
         BeautyAndTheBeast, //美女と野獣
         Cinderella, //シンデレラ
         DuckTales, //ダックテイル
+        Encanto, //ミラベルと魔法だらけの家
         Fantasia, //ファンタジア
         Frozen, //アナと雪の女王
         Hercules, //ヘラクレス
