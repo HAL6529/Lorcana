@@ -201,7 +201,7 @@ public class EditCardPanel : MonoBehaviour
         expantion.text = m_ExtendUtil.ConvertToStringFromExpantion(m_CardInfo.GetExpantion());
         title.text = m_ExtendUtil.ConvertToStringFromTitle(m_CardInfo.GetTitle());
 
-        if (m_CardInfo.GetType() == EnumController.Type.Character)
+        if (m_CardInfo.GetType() == EnumController.Type.Character || m_CardInfo.GetType() == EnumController.Type.Location)
         {
             power.text = m_CardInfo.GetPower().ToString();
             toughness.text = m_CardInfo.GetToughness().ToString();
@@ -233,6 +233,9 @@ public class EditCardPanel : MonoBehaviour
                 return temp;
             case EnumController.Type.Item:
                 temp = "アイテム";
+                return temp;
+            case EnumController.Type.Location:
+                temp = "ロケーション";
                 return temp;
             default:
                 for (int i = 0; i < paramater.Count; i++)
@@ -422,7 +425,7 @@ public class EditCardPanel : MonoBehaviour
 
     public void UpdateColor2()
     {
-        if (m_CardInfo.GetType() == EnumController.Type.Character)
+        if (m_CardInfo.GetType() == EnumController.Type.Character || m_CardInfo.GetType() == EnumController.Type.Location)
         {
             return;
         }

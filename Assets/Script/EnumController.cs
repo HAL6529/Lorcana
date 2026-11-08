@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnumController
 {
+    //Classを編集する場合は、ExtendUtilも修正すること。
     public enum Class
     {
         Ally, //仲間
@@ -47,6 +48,7 @@ public class EnumController
         Ruby,
     }
 
+    //Expansionを編集する場合は、ExtendUtilも修正すること。
     public enum Expansion
     {
         TheFirstChapter,
@@ -86,6 +88,7 @@ public class EnumController
         SuccessFileCreate,
     }
 
+    //Titleを編集する場合は、ExtendUtilも修正すること。
     public enum Title
     {
         None,
