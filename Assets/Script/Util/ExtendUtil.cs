@@ -63,6 +63,10 @@ public class ExtendUtil
         {
             case EnumController.Expansion.TheFirstChapter:
                 return "The First Chapter -物語の始まり-";
+            case EnumController.Expansion.RiseOfTheFloodBorn:
+                return "Rise of the Floodborn -フラッドボーンの渾沌-";
+            case EnumController.Expansion.IntoTheInkLands:
+                return "Into the Inklands -インクランド探訪-";
             default:
                 return "";
         }

@@ -17,11 +17,9 @@ public class EditCardPanelManager : MonoBehaviour
     public SearchClass m_SearchClass;
     public string DeckName = "";
 
-    private List<CardInfo> m_CardInfo_TheFirstChapter = new List<CardInfo>();
-    private List<CardInfo> m_CardInfoList = new List<CardInfo>();
-    //public List<CardInfo> DeckList = new List<CardInfo>();
     [SerializeField] private List<EditCardPanelTemp> EditCardPanelTempList_TheFirstChapter = new List<EditCardPanelTemp>();
     [SerializeField] private List<EditCardPanelTemp> EditCardPanelTempList_RiseOfTheFloodBorn = new List<EditCardPanelTemp>();
+    [SerializeField] private List<EditCardPanelTemp> EditCardPanelTempList_IntoTheInkLands = new List<EditCardPanelTemp>();
     private List<EditCardPanelTemp> EditCardPanelTempList = new List<EditCardPanelTemp>();
     private List<EditCardPanelTemp> SortEditCardPanelTempList = new List<EditCardPanelTemp>();
 
@@ -54,12 +52,17 @@ public class EditCardPanelManager : MonoBehaviour
 
     void Start()
     {
-        m_CardInfoList = m_CardInfo_TheFirstChapter;
-
-        EditCardPanelTempList = EditCardPanelTempList_TheFirstChapter;
-        for(int i = 0; i < EditCardPanelTempList_RiseOfTheFloodBorn.Count; i++)
+        for (int i = 0; i < EditCardPanelTempList_TheFirstChapter.Count; i++)
+        {
+            EditCardPanelTempList.Add(EditCardPanelTempList_TheFirstChapter[i]);
+        }
+        for (int i = 0; i < EditCardPanelTempList_RiseOfTheFloodBorn.Count; i++)
         {
             EditCardPanelTempList.Add(EditCardPanelTempList_RiseOfTheFloodBorn[i]);
+        }
+        for (int i = 0; i < EditCardPanelTempList_IntoTheInkLands.Count; i++)
+        {
+            EditCardPanelTempList.Add(EditCardPanelTempList_IntoTheInkLands[i]);
         }
 
         for (int i = 0;i < EditCardPanelTempList.Count; i++)
