@@ -14,7 +14,7 @@ public class CardInfo_034_JA_02 : CardInfo
         this.power = -1;
         this.toughness = -1;
         this.lore = -1;
-        this.illustrator = "Antonia Flechsig";
+        this.illustrator = EnumController.Illustrator.AntoniaFlechsig;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = false; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â

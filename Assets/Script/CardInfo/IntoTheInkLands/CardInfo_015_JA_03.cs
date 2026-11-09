@@ -14,7 +14,7 @@ public class CardInfo_015_JA_03 : CardInfo
         this.power = 1;
         this.toughness = 6;
         this.lore = 2;
-        this.illustrator = "Defne Tozum / Livio Cacciatore";
+        this.illustrator = EnumController.Illustrator.DefneTozumAndLivioCacciatore;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = true; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â

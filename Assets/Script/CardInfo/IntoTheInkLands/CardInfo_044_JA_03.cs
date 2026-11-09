@@ -14,7 +14,7 @@ public class CardInfo_044_JA_03 : CardInfo
         this.power = 3;
         this.toughness = 3;
         this.lore = 1;
-        this.illustrator = "Giulia Riva";
+        this.illustrator = EnumController.Illustrator.GiuliaRiva;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = true; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â

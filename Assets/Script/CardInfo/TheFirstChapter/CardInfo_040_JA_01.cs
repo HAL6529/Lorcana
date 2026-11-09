@@ -14,7 +14,7 @@ public class CardInfo_040_JA_01 : CardInfo
         this.power = 4;
         this.toughness = 4;
         this.lore = 1;
-        this.illustrator = "Duyen Nguyen / Aubrey Archer";
+        this.illustrator = EnumController.Illustrator.DuyenNguyenAndAubreyArcher;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = false; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â

@@ -14,7 +14,7 @@ public class CardInfo_069_JA_03 : CardInfo
         this.power = 3;
         this.toughness = 5;
         this.lore = 1;
-        this.illustrator = "Wouter Bruneel";
+        this.illustrator = EnumController.Illustrator.WouterBruneel;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = false; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â

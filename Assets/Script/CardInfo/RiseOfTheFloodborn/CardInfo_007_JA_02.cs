@@ -14,7 +14,7 @@ public class CardInfo_007_JA_02 : CardInfo
         this.power = 1;
         this.toughness = 9;
         this.lore = 2;
-        this.illustrator = "Lissette Carrera";
+        this.illustrator = EnumController.Illustrator.LissetteCarrera;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = false; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â

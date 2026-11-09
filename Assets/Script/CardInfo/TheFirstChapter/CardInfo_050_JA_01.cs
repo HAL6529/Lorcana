@@ -14,7 +14,7 @@ public class CardInfo_050_JA_01 : CardInfo
         this.power = 5;
         this.toughness = 5;
         this.lore = 1;
-        this.illustrator = "Kendall Hale / Anh Dang";
+        this.illustrator = EnumController.Illustrator.KendallHaleAndAnhDang;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = false; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = true; //PIGŒø‰Ê‚ğ‚Â

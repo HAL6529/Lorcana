@@ -14,7 +14,7 @@ public class CardInfo_157_JA_02 : CardInfo
         this.power = 3;
         this.toughness = 3;
         this.lore = 3;
-        this.illustrator = "Vickey Xie / Mariana Moreno";
+        this.illustrator = EnumController.Illustrator.VickeyXieAndMarianaMoreno;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = false; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â

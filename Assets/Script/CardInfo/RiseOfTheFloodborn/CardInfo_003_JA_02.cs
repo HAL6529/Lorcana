@@ -14,7 +14,7 @@ public class CardInfo_003_JA_02 : CardInfo
         this.power = 1;
         this.toughness = 2;
         this.lore = 1;
-        this.illustrator = "Casey Robin";
+        this.illustrator = EnumController.Illustrator.CaseyRobin;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = false; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â

@@ -14,7 +14,7 @@ public class CardInfo_089_JA_02 : CardInfo
         this.power = 1;
         this.toughness = 2;
         this.lore = 2;
-        this.illustrator = "Koni";
+        this.illustrator = EnumController.Illustrator.Koni;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = false; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â

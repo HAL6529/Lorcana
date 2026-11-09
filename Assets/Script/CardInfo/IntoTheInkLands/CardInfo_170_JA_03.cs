@@ -14,7 +14,7 @@ public class CardInfo_170_JA_03 : CardInfo
         this.power = 1;
         this.toughness = 5;
         this.lore = 1;
-        this.illustrator = "Etienne Savoie";
+        this.illustrator = EnumController.Illustrator.EtienneSavoie;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = false; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â

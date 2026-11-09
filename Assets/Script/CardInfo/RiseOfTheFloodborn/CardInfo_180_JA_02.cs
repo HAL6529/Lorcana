@@ -15,7 +15,7 @@ public class CardInfo_180_JA_02 : CardInfo
         this.toughness = 10;
         this.lore = 4;
         this.lore = 4;
-        this.illustrator = "Marco Giorgianni";
+        this.illustrator = EnumController.Illustrator.MarcoGiorgianni;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = false; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â

@@ -14,7 +14,7 @@ public class CardInfo_109_JA_01 : CardInfo
         this.power = 3;
         this.toughness = 4;
         this.lore = 1;
-        this.illustrator = "Alice Pisoni / Whitney Pollett";
+        this.illustrator = EnumController.Illustrator.AlicePisoniAndWhitneyPollett;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = false; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â

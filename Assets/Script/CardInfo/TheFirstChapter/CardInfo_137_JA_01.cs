@@ -14,7 +14,7 @@ public class CardInfo_137_JA_01 : CardInfo
         this.power = 3;
         this.toughness = 3;
         this.lore = 1;
-        this.illustrator = "Hedving Haggman-Sund";
+        this.illustrator = EnumController.Illustrator.HedvigHaggman_Sund;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = false; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â

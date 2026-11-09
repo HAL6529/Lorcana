@@ -14,7 +14,7 @@ public class CardInfo_107_JA_02 : CardInfo
         this.power = 3;
         this.toughness = 1;
         this.lore = 0;
-        this.illustrator = "Cookie";
+        this.illustrator = EnumController.Illustrator.Cookie;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = false; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â

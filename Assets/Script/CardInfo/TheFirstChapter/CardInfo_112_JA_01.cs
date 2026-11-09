@@ -14,7 +14,7 @@ public class CardInfo_112_JA_01 : CardInfo
         this.power = 2;
         this.toughness = 2;
         this.lore = 1;
-        this.illustrator = "Gaku Kumatori";
+        this.illustrator = EnumController.Illustrator.GakuKumatori;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = true; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â

@@ -14,7 +14,7 @@ public class CardInfo_193_JA_03 : CardInfo
         this.power = 4;
         this.toughness = 6;
         this.lore = 1;
-        this.illustrator = "Mariana Moreno";
+        this.illustrator = EnumController.Illustrator.MarianaMoreno;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = false; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â

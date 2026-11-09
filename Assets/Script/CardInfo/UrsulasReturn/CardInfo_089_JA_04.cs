@@ -14,7 +14,7 @@ public class CardInfo_089_JA_04 : CardInfo
         this.power = 2;
         this.toughness = 1;
         this.lore = 1;
-        this.illustrator = "Jon Densk / Hayley Evans";
+        this.illustrator = EnumController.Illustrator.JonDenskAndHayleyEvans;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = true; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â

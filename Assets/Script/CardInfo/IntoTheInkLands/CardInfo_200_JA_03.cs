@@ -14,7 +14,7 @@ public class CardInfo_200_JA_03 : CardInfo
         this.power = -1;
         this.toughness = -1;
         this.lore = -1;
-        this.illustrator = "Dustin Panzino";
+        this.illustrator = EnumController.Illustrator.DustinPanzino;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = false; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â

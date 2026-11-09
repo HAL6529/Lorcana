@@ -14,7 +14,7 @@ public class CardInfo_082_JA_04 : CardInfo
         this.power = 3;
         this.toughness = 3;
         this.lore = 2;
-        this.illustrator = "Oggy Christiansson";
+        this.illustrator = EnumController.Illustrator.OggyChristiansson;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = false; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â

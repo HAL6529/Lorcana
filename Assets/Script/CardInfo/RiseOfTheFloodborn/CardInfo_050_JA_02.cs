@@ -14,7 +14,7 @@ public class CardInfo_050_JA_02 : CardInfo
         this.power = 3;
         this.toughness = 3;
         this.lore = 1;
-        this.illustrator = "Valentina Graziuso";
+        this.illustrator = EnumController.Illustrator.ValentinaGraziuso;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = true; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â

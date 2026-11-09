@@ -14,7 +14,7 @@ public class CardInfo_051_JA_02 : CardInfo
         this.power = 4;
         this.toughness = 3;
         this.lore = 1;
-        this.illustrator = "S.Shaw / L.Giammichele";
+        this.illustrator = EnumController.Illustrator.S_ShawAndL_Giammichele;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = true; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â

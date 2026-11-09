@@ -14,7 +14,7 @@ public class CardInfo_041_JA_04 : CardInfo
         this.power = 3;
         this.toughness = 3;
         this.lore = 2;
-        this.illustrator = "Otto Paredes";
+        this.illustrator = EnumController.Illustrator.OttoParedes;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = true; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â

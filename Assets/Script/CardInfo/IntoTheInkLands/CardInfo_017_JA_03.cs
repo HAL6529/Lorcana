@@ -14,7 +14,7 @@ public class CardInfo_017_JA_03 : CardInfo
         this.power = 3;
         this.toughness = 8;
         this.lore = 2;
-        this.illustrator = "Dave Alvarez / Alice Pisoni";
+        this.illustrator = EnumController.Illustrator.DaveAlvarezAndAlicePisoni;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = false; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â

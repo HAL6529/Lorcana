@@ -14,7 +14,7 @@ public class CardInfo_056_JA_02 : CardInfo
         this.power = 1;
         this.toughness = 1;
         this.lore = 3;
-        this.illustrator = "Kapik";
+        this.illustrator = EnumController.Illustrator.Kapik;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = false; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â

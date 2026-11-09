@@ -14,7 +14,7 @@ public class CardInfo_144_JA_01 : CardInfo
         this.power = 4;
         this.toughness = 3;
         this.lore = 2;
-        this.illustrator = "Cam Kendell";
+        this.illustrator = EnumController.Illustrator.CamKendell;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = false; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â

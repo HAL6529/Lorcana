@@ -14,7 +14,7 @@ public class CardInfo_075_JA_02 : CardInfo
         this.power = 5;
         this.toughness = 6;
         this.lore = 2;
-        this.illustrator = "Jeff Murchie";
+        this.illustrator = EnumController.Illustrator.JeffMurchie;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = false; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â

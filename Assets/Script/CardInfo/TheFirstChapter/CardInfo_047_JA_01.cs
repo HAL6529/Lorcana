@@ -14,7 +14,7 @@ public class CardInfo_047_JA_01 : CardInfo
         this.power = 2;
         this.toughness = 2;
         this.lore = 1;
-        this.illustrator = "Dav Augereau / Giulia Riva";
+        this.illustrator = EnumController.Illustrator.DavAugereauAndGiuliaRiva;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = true; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â

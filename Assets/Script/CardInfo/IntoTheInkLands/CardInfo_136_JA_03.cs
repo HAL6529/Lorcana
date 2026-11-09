@@ -14,7 +14,7 @@ public class CardInfo_136_JA_03 : CardInfo
         this.power = 3;
         this.toughness = 8;
         this.lore = 2;
-        this.illustrator = "Wietse Treurniet";
+        this.illustrator = EnumController.Illustrator.WietseTreurniet;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = false; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â

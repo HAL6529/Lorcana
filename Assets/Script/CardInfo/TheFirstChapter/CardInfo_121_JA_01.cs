@@ -14,7 +14,7 @@ public class CardInfo_121_JA_01 : CardInfo
         this.power = 5;
         this.toughness = 4;
         this.lore = 2;
-        this.illustrator = "Clio Wolfensberger";
+        this.illustrator = EnumController.Illustrator.ClioWolfensberger;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = true; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â

@@ -14,7 +14,7 @@ public class CardInfo_114_JA_03 : CardInfo
         this.power = 8;
         this.toughness = 8;
         this.lore = 1;
-        this.illustrator = "Sandara Tang";
+        this.illustrator = EnumController.Illustrator.SandaraTang;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = false; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â

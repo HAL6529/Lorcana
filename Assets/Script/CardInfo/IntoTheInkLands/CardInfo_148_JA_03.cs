@@ -14,7 +14,7 @@ public class CardInfo_148_JA_03 : CardInfo
         this.power = 0;
         this.toughness = 1;
         this.lore = 1;
-        this.illustrator = "Valentin Palombo";
+        this.illustrator = EnumController.Illustrator.ValentinPalombo;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = false; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â

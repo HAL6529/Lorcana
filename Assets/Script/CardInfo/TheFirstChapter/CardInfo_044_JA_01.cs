@@ -14,7 +14,7 @@ public class CardInfo_044_JA_01 : CardInfo
         this.power = 0;
         this.toughness = 5;
         this.lore = 2;
-        this.illustrator = "Marcel Berg";
+        this.illustrator = EnumController.Illustrator.MarcelBerg;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = false; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â

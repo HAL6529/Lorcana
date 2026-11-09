@@ -14,7 +14,7 @@ public class CardInfo_121_JA_03 : CardInfo
         this.power = 2;
         this.toughness = 2;
         this.lore = 2;
-        this.illustrator = "Randy Bishop";
+        this.illustrator = EnumController.Illustrator.RandyBishop;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = false; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = true; //PIGŒø‰Ê‚ğ‚Â

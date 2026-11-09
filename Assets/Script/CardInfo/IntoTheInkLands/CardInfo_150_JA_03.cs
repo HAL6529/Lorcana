@@ -14,7 +14,7 @@ public class CardInfo_150_JA_03 : CardInfo
         this.power = 4;
         this.toughness = 4;
         this.lore = 2;
-        this.illustrator = "Jenna Gray";
+        this.illustrator = EnumController.Illustrator.JennaGray;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = true; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â

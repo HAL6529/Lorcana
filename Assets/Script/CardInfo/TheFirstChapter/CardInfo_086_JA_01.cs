@@ -14,7 +14,7 @@ public class CardInfo_086_JA_01 : CardInfo
         this.power = 2;
         this.toughness = 4;
         this.lore = 3;
-        this.illustrator = "Rosa la Barbera";
+        this.illustrator = EnumController.Illustrator.RosaLaBarbera;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = false; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â

@@ -14,7 +14,7 @@ public class CardInfo_176_JA_01 : CardInfo
         this.power = 5;
         this.toughness = 6;
         this.lore = 1;
-        this.illustrator = "Oleg Yurkov";
+        this.illustrator = EnumController.Illustrator.OlegYurkov;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = false; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â

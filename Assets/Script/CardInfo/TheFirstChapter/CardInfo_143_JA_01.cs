@@ -14,7 +14,7 @@ public class CardInfo_143_JA_01 : CardInfo
         this.power = 3;
         this.toughness = 6;
         this.lore = 3;
-        this.illustrator = "Pirel";
+        this.illustrator = EnumController.Illustrator.Pirel;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = false; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â

@@ -14,7 +14,7 @@ public class CardInfo_173_JA_03 : CardInfo
         this.power = 6;
         this.toughness = 6;
         this.lore = 1;
-        this.illustrator = "Giuseppe di Maio";
+        this.illustrator = EnumController.Illustrator.GiuseppeDiMaio;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = true; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â

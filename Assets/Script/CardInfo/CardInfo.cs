@@ -14,7 +14,7 @@ public class CardInfo : MonoBehaviour
     protected int power;
     protected int toughness;
     protected int lore;
-    protected string illustrator;
+    protected EnumController.Illustrator illustrator;
     protected bool isHandDestraction;
     protected bool isCIP;
     protected bool isPIG;
@@ -78,7 +78,7 @@ public class CardInfo : MonoBehaviour
         return lore;
     }
 
-    public string GetIllustrator()
+    public EnumController.Illustrator GetIllustrator()
     {
         return illustrator;
     }
@@ -208,10 +208,10 @@ public class CardInfo : MonoBehaviour
         lore = paramater;
     }
 
-    public void SetIllustrator(string paramater)
+    /*public void SetIllustrator(string paramater)
     {
         illustrator = paramater;
-    }
+    }*/
 
     public void SetClassList(List<EnumController.Class> paramater)
     {

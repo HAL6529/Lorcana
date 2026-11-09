@@ -14,7 +14,7 @@ public class CardInfo_088_JA_01 : CardInfo
         this.power = 6;
         this.toughness = 5;
         this.lore = 2;
-        this.illustrator = "Alex Accorsi/ Kendall Hale";
+        this.illustrator = EnumController.Illustrator.AlexAccorsiAndKendallHale;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = false; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â

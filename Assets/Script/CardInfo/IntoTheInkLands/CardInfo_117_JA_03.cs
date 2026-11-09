@@ -14,7 +14,7 @@ public class CardInfo_117_JA_03 : CardInfo
         this.power = 3;
         this.toughness = 4;
         this.lore = 1;
-        this.illustrator = "Mila Useche";
+        this.illustrator = EnumController.Illustrator.MilaUseche;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = false; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â

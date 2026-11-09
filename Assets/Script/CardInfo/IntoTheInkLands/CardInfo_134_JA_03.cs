@@ -14,7 +14,7 @@ public class CardInfo_134_JA_03 : CardInfo
         this.power = 1;
         this.toughness = 5;
         this.lore = 2;
-        this.illustrator = "Kaitlin Cuthbertson";
+        this.illustrator = EnumController.Illustrator.KaitlinCuthbertson;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = false; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â

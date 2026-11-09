@@ -14,7 +14,7 @@ public class CardInfo_079_JA_04 : CardInfo
         this.power = 3;
         this.toughness = 6;
         this.lore = 2;
-        this.illustrator = "Yu Nguyen";
+        this.illustrator = EnumController.Illustrator.YuNguyen;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = true; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â

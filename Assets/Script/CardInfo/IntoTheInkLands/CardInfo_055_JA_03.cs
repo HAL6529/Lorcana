@@ -14,7 +14,7 @@ public class CardInfo_055_JA_03 : CardInfo
         this.power = 4;
         this.toughness = 4;
         this.lore = 0;
-        this.illustrator = "Jared Nickerl / Alice Pisoni";
+        this.illustrator = EnumController.Illustrator.JaredNickerlAndAlicePisoni;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = false; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â

@@ -14,7 +14,7 @@ public class CardInfo_106_JA_02 : CardInfo
         this.power = 1;
         this.toughness = 5;
         this.lore = 1;
-        this.illustrator = "Carmine Pucci / Leonardo Giammichele";
+        this.illustrator = EnumController.Illustrator.CarminePucciAndLeonardoGiammichele;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = false; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â

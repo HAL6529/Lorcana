@@ -14,7 +14,7 @@ public class CardInfo_137_JA_03 : CardInfo
         this.power = 2;
         this.toughness = 5;
         this.lore = 2;
-        this.illustrator = "Richelle Canto";
+        this.illustrator = EnumController.Illustrator.RichelleCanto;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = false; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â

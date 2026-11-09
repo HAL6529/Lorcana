@@ -14,7 +14,7 @@ public class CardInfo_093_JA_01 : CardInfo
         this.power = 2;
         this.toughness = 3;
         this.lore = 2;
-        this.illustrator = "Caner Soylu";
+        this.illustrator = EnumController.Illustrator.CanerSoylu;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = true; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â

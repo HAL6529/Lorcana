@@ -14,7 +14,7 @@ public class CardInfo_070_JA_03 : CardInfo
         this.power = 0;
         this.toughness = 1;
         this.lore = 2;
-        this.illustrator = "Massimiliano Narciso / Marieke Ferrari";
+        this.illustrator = EnumController.Illustrator.MassimilianoNarcisoAndMariekeFerrari;
         this.isHandDestraction = true; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = false; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â

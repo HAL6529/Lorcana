@@ -14,7 +14,7 @@ public class CardInfo_185_JA_03 : CardInfo
         this.power = 3;
         this.toughness = 10;
         this.lore = 3;
-        this.illustrator = "Evana Kisa / Livio Cacciatore";
+        this.illustrator = EnumController.Illustrator.EvanaKisaAndLivioCacciatore;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = false; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â

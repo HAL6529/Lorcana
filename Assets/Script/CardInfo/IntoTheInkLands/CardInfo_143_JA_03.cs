@@ -14,7 +14,7 @@ public class CardInfo_143_JA_03 : CardInfo
         this.power = 4;
         this.toughness = 8;
         this.lore = 2;
-        this.illustrator = "Ellie Horie / Jennifer Park";
+        this.illustrator = EnumController.Illustrator.EllieHorieAndJenniferPark;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = false; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â

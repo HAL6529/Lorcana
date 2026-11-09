@@ -14,7 +14,7 @@ public class CardInfo_116_JA_03 : CardInfo
         this.power = 4;
         this.toughness = 4;
         this.lore = 2;
-        this.illustrator = "Grace Tran";
+        this.illustrator = EnumController.Illustrator.GraceTran;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = false; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â

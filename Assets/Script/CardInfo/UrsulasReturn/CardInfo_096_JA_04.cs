@@ -14,7 +14,7 @@ public class CardInfo_096_JA_04 : CardInfo
         this.power = -1;
         this.toughness = -1;
         this.lore = -1;
-        this.illustrator = "matthew Robert Davies";
+        this.illustrator = EnumController.Illustrator.MatthewRobertDavies;
         this.isHandDestraction = true; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = false; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â

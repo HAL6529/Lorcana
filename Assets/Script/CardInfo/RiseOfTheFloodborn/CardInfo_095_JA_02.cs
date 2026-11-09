@@ -14,7 +14,7 @@ public class CardInfo_095_JA_02 : CardInfo
         this.power = 5;
         this.toughness = 5;
         this.lore = 2;
-        this.illustrator = "Mane Kandalyan Manderson / Luca Pinelli";
+        this.illustrator = EnumController.Illustrator.ManeKandalyanMandersonAndLucaPinelli;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = false; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â

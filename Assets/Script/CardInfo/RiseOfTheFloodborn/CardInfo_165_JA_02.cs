@@ -14,7 +14,7 @@ public class CardInfo_165_JA_02 : CardInfo
         this.power = -1;
         this.toughness = -1;
         this.lore = -1;
-        this.illustrator = "M. K. Manderson / Jochem van Gool";
+        this.illustrator = EnumController.Illustrator.M_K_Manderson_JochemVanGool;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = false; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â

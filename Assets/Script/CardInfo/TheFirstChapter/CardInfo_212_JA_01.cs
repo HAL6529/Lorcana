@@ -14,7 +14,7 @@ public class CardInfo_212_JA_01 : CardInfo
         this.power = 6;
         this.toughness = 5;
         this.lore = 0;
-        this.illustrator = "Pirel / MarcoGiorgianni";
+        this.illustrator = EnumController.Illustrator.PirelAndMarcoGiorgianni;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = false; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â

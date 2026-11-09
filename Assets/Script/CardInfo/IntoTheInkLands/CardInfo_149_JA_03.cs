@@ -14,7 +14,7 @@ public class CardInfo_149_JA_03 : CardInfo
         this.power = 3;
         this.toughness = 4;
         this.lore = 2;
-        this.illustrator = "Federico M. Cugliari";
+        this.illustrator = EnumController.Illustrator.FedericoMCugliari;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = false; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â

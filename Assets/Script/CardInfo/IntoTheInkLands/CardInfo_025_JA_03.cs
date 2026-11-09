@@ -14,7 +14,7 @@ public class CardInfo_025_JA_03 : CardInfo
         this.power = -1;
         this.toughness = -1;
         this.lore = -1;
-        this.illustrator = "Zuzana Sokolova / Livio Cacciatore";
+        this.illustrator = EnumController.Illustrator.ZuzanaSokolovaAndLivioCacciatore;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = false; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â

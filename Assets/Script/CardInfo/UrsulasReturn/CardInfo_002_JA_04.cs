@@ -14,7 +14,7 @@ public class CardInfo_002_JA_04 : CardInfo
         this.power = 1;
         this.toughness = 3;
         this.lore = 2;
-        this.illustrator = "Maxine Vee";
+        this.illustrator = EnumController.Illustrator.MaxineVee;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = true; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â

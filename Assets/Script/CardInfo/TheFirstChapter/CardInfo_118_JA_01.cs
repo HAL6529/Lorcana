@@ -14,7 +14,7 @@ public class CardInfo_118_JA_01 : CardInfo
         this.power = 4;
         this.toughness = 5;
         this.lore = 1;
-        this.illustrator = "Mel Milton";
+        this.illustrator = EnumController.Illustrator.MelMilton;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = false; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â

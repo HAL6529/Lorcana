@@ -14,7 +14,7 @@ public class CardInfo_058_JA_04 : CardInfo
         this.power = 4;
         this.toughness = 7;
         this.lore = 3;
-        this.illustrator = "LadyShalirin";
+        this.illustrator = EnumController.Illustrator.LadyShalirin;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = false; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â

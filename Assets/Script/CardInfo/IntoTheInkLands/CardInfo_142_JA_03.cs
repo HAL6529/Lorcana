@@ -14,7 +14,7 @@ public class CardInfo_142_JA_03 : CardInfo
         this.power = 3;
         this.toughness = 3;
         this.lore = 1;
-        this.illustrator = "Cecile Carre / Anna Stosik";
+        this.illustrator = EnumController.Illustrator.CecileCarreAndAnnaStosik;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = true; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â

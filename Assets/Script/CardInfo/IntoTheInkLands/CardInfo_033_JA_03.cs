@@ -14,7 +14,7 @@ public class CardInfo_033_JA_03 : CardInfo
         this.power = 2;
         this.toughness = 7;
         this.lore = 1;
-        this.illustrator = "Beverly Arce / Jonathan Livslyst";
+        this.illustrator = EnumController.Illustrator.BeverlyArceAndJonathanLivslyst;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = false; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â

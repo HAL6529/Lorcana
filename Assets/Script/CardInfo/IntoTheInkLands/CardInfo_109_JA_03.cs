@@ -14,7 +14,7 @@ public class CardInfo_109_JA_03 : CardInfo
         this.power = 4;
         this.toughness = 4;
         this.lore = 2;
-        this.illustrator = "Veronica Di Lorenzo / Livio Cacciatore";
+        this.illustrator = EnumController.Illustrator.VeronicaDiLorenzoAndLivioCacciatore;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = false; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â

@@ -14,7 +14,7 @@ public class CardInfo_011_JA_03 : CardInfo
         this.power = 4;
         this.toughness = 8;
         this.lore = 2;
-        this.illustrator = "Alexandria Neonakis";
+        this.illustrator = EnumController.Illustrator.AlexandriaNeonakis;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = false; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â

@@ -14,7 +14,7 @@ public class CardInfo_023_JA_01 : CardInfo
         this.power = 3;
         this.toughness = 5;
         this.lore = 3;
-        this.illustrator = "Simangaliso Shibaya";
+        this.illustrator = EnumController.Illustrator.SimangalisoShibaya;
         this.isHandDestraction = false; //ƒnƒ“ƒfƒXŒø‰Ê‚ğ‚Â
         this.isCIP = false; //CIPŒø‰Ê‚ğ‚Â
         this.isPIG = false; //PIGŒø‰Ê‚ğ‚Â
