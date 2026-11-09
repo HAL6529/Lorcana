@@ -17,7 +17,7 @@ public class CardInfo_024_JA_04 : CardInfo
         this.illustrator = EnumController.Illustrator.LisanneKoeteeuw;
         this.classList = new List<EnumController.Class> { EnumController.Class.FloodBorn, EnumController.Class.Villain, EnumController.Class.Princess, EnumController.Class.Sorcerer };
         this.color = new List<EnumController.Colors> { EnumController.Colors.Amber };
-        this.keywordAvility = new List<EnumController.KeywordAvility> { EnumController.KeywordAvility.ShiftDiscardSongCard };
+        this.keywordAvility = new List<EnumController.KeywordAvility> { EnumController.KeywordAvility.ShiftDiscardAnSongCard };
         this.expansion = EnumController.Expansion.UrsulasReturn;
         this.title = EnumController.Title.OneHundredAndOneDalmatians;
         this.type = EnumController.Type.Character;
