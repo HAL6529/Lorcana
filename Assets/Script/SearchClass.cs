@@ -705,17 +705,6 @@ public class SearchClass : MonoBehaviour
         m_SearchFilterClass.isRush = isRush;
         m_SearchFilterClass.isWard = isWard;
 
-        m_SearchFilterClass.isHandDestraction = isHandDestraction;
-        m_SearchFilterClass.isCIP = isCIP;
-        m_SearchFilterClass.isPIG = isPIG;
-        m_SearchFilterClass.isChallenge = isChallenge;
-        m_SearchFilterClass.isAction = isAction;
-        m_SearchFilterClass.isGetLore = isGetLore;
-        m_SearchFilterClass.isLostLore = isLostLore;
-        m_SearchFilterClass.isAddInk = isAddInk;
-        m_SearchFilterClass.isItem = isItem;
-        m_SearchFilterClass.isLocation = isLocation;
-
         if(t_TitleDropdown.text == "--‘I‘ð‚È‚µ--")
         {
             m_SearchFilterClass.title = EnumController.Title.None;

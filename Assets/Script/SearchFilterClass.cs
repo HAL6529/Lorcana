@@ -27,17 +27,6 @@ public class SearchFilterClass
     public bool isRush;
     public bool isWard;
 
-    public bool isHandDestraction;
-    public bool isCIP;
-    public bool isPIG;
-    public bool isChallenge;
-    public bool isAction;
-    public bool isGetLore;
-    public bool isLostLore;
-    public bool isAddInk;
-    public bool isItem;
-    public bool isLocation;
-
     public EnumController.Title title;
 
     public SearchFilterClass()
@@ -64,17 +53,6 @@ public class SearchFilterClass
         isReckless = false;
         isRush = false;
         isWard = false;
-
-        isHandDestraction = false;
-        isCIP = false;
-        isPIG = false;
-        isChallenge = false;
-        isAction = false;
-        isGetLore = false;
-        isLostLore = false;
-        isAddInk = false;
-        isItem = false;
-        isLocation = false;
 
         title = EnumController.Title.None;
     }
@@ -214,67 +192,6 @@ public class SearchFilterClass
         }
 
         if (!keywordJudge)
-        {
-            return false;
-        }
-
-        bool effectJudge = false;
-        if(isHandDestraction && m_CardInfo.GetIsHandDestraction())
-        {
-            effectJudge = true;
-        }
-
-        if (isCIP && m_CardInfo.GetIsCIP())
-        {
-            effectJudge = true;
-        }
-
-        if (isPIG && m_CardInfo.GetIsPIG())
-        {
-            effectJudge = true;
-        }
-
-        if (isChallenge && m_CardInfo.GetIsChallenge())
-        {
-            effectJudge = true;
-        }
-
-        if (isAction && m_CardInfo.GetIsAction())
-        {
-            effectJudge = true;
-        }
-
-        if (isGetLore && m_CardInfo.GetIsGetLore())
-        {
-            effectJudge = true;
-        }
-
-        if (isLostLore && m_CardInfo.GetIsLostLore())
-        {
-            effectJudge = true;
-        }
-
-        if (isAddInk && m_CardInfo.GetIsAddInk())
-        {
-            effectJudge = true;
-        }
-
-        if (isItem && m_CardInfo.GetIsItem())
-        {
-            effectJudge = true;
-        }
-
-        if (isLocation && m_CardInfo.GetIsLocation())
-        {
-            effectJudge = true;
-        }
-
-        if(!isHandDestraction && !isCIP && !isPIG && !isChallenge && !isAction && !isGetLore && !isLostLore && !isAddInk && !isItem && !isLocation)
-        {
-            effectJudge = true;
-        }
-
-        if (!effectJudge)
         {
             return false;
         }
