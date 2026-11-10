@@ -14,17 +14,7 @@ public class CardInfo : MonoBehaviour
     protected int power;
     protected int toughness;
     protected int lore;
-    protected string illustrator;
-    protected bool isHandDestraction;
-    protected bool isCIP;
-    protected bool isPIG;
-    protected bool isChallenge;
-    protected bool isAction;
-    protected bool isGetLore;
-    protected bool isLostLore;
-    protected bool isAddInk;
-    protected bool isItem;
-    protected bool isLocation;
+    protected EnumController.Illustrator illustrator;
     protected List<EnumController.Class> classList;
     protected List<EnumController.Colors> color;
     protected List<EnumController.KeywordAvility> keywordAvility;
@@ -78,59 +68,9 @@ public class CardInfo : MonoBehaviour
         return lore;
     }
 
-    public string GetIllustrator()
+    public EnumController.Illustrator GetIllustrator()
     {
         return illustrator;
-    }
-
-    public bool GetIsHandDestraction()
-    {
-        return isHandDestraction;
-    }
-
-    public bool GetIsCIP()
-    {
-        return isCIP;
-    }
-
-    public bool GetIsPIG()
-    {
-        return isPIG;
-    }
-
-    public bool GetIsChallenge()
-    {
-        return isChallenge;
-    }
-
-    public bool GetIsAction()
-    {
-        return isAction;
-    }
-
-    public bool GetIsGetLore()
-    {
-        return isGetLore;
-    }
-
-    public bool GetIsLostLore()
-    {
-        return isLostLore;
-    }
-
-    public bool GetIsAddInk()
-    {
-        return isAddInk;
-    }
-
-    public bool GetIsItem()
-    {
-        return isItem;
-    }
-
-    public bool GetIsLocation()
-    {
-        return isLocation;
     }
 
     public List<EnumController.Class> GetClassList()
@@ -206,11 +146,6 @@ public class CardInfo : MonoBehaviour
     public void SetLore(int paramater)
     {
         lore = paramater;
-    }
-
-    public void SetIllustrator(string paramater)
-    {
-        illustrator = paramater;
     }
 
     public void SetClassList(List<EnumController.Class> paramater)

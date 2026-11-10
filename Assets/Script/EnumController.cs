@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnumController
 {
+    //Classを編集する場合は、ExtendUtilも修正すること。
     public enum Class
     {
         Ally, //仲間
@@ -22,6 +23,7 @@ public class EnumController
         Inventor, //発明家
         King, //王様
         Knight, //騎士
+        Madrigal, //マドリガル家
         Mentor, //導き手
         Musketeer, //銃士
         Pirate, //海賊
@@ -47,11 +49,13 @@ public class EnumController
         Ruby,
     }
 
+    //Expansionを編集する場合は、ExtendUtilも修正すること。
     public enum Expansion
     {
         TheFirstChapter,
         RiseOfTheFloodBorn,
         IntoTheInkLands,
+        UrsulasReturn,
     }
 
     public enum KeywordAvility
@@ -61,15 +65,26 @@ public class EnumController
         Challenger3, //果敢+3
         Challenger4, //果敢+4
         Evasive, //回避
-        Shift2,
-        Shift3,
-        Shift4,
-        Shift5,
-        Shift6,
-        Singer3,
-        Singer4,
-        Singer5,
-        Support,
+        Shift2, //変身2
+        Shift3, //変身3
+        Shift4, //変身4
+        Shift5, //変身5
+        Shift6, //変身6
+        ShiftDiscardAnActionCard, //変身 ： アクション・カードを１枚捨てる
+        ShiftDiscardAnCharacterCard, //変身:キャラクター・カードを１枚捨てる
+        ShiftDiscardAnLocationCard, //変身:ロケーション・カードを１枚捨てる
+        ShiftDiscardAnSongCard, //変身:歌・カードを１枚捨てる
+        ShiftDiscard2Cards, //変身:カードを２枚捨てる
+        Singer3, //歌声3
+        Singer4, //歌声4
+        Singer5, //歌声5
+        Singer7, //歌声7
+        Singer9, //歌声9
+        SingTogether6, //合唱6
+        SingTogether7, //合唱7
+        SingTogether8, //合唱8
+        SingTogether10, //合唱10
+        Support, //支援
         Reckless, //暴勇
         Resist1, //耐久+1
         Resist2, //耐久+2
@@ -86,6 +101,7 @@ public class EnumController
         SuccessFileCreate,
     }
 
+    //Titleを編集する場合は、ExtendUtilも修正すること。
     public enum Title
     {
         None,
@@ -95,6 +111,7 @@ public class EnumController
         BeautyAndTheBeast, //美女と野獣
         Cinderella, //シンデレラ
         DuckTales, //ダックテイル
+        Encanto, //ミラベルと魔法だらけの家
         Fantasia, //ファンタジア
         Frozen, //アナと雪の女王
         Hercules, //ヘラクレス
@@ -152,5 +169,271 @@ public class EnumController
     {
         ConfirmOverWrite,
         ConfirmOverWrite_OverWriteBtn,
+    }
+
+    public enum Illustrator
+    {
+        AdamBunch, //Adam Bunch
+        AdamFenton, //Adam Fenton
+        AdamFord, //Adam Ford
+        AdrianneGumaya, //AdrianneGumaya
+        AishaDurmagambetova, //Aisha Durmagambetova
+        AlanBatson, //Alan Batson
+        AlexAccorsi, //AlexAccorsi
+        AlexAccorsiAndKendallHale, //Alex Accorsi/ Kendall Hale
+        AlexandriaNeonakis, //Alexandria Neonakis
+        AlexShin, //Alex Shin
+        AlibethZermeno, //Alibeth Zermeno
+        AlicePisoni, //Alice Pisoni
+        AlicePisoniAndWhitneyPollett, //Alice Pisoni / Whitney Pollett
+        AmberKommavongsa, //Amber Kommavongsa
+        AndersonMahanski, //Anderson Mahanski
+        AndreaFemerstrand, //Andrea Femerstrand
+        AndreaParisi, //Andrea Parisi
+        AndreasRocha, //Andreas Rocha
+        AndreyChumak, //Andrey Chumak
+        AndrewPena, //Andrew Pena
+        AndrewTrabbold, //Andrew Trabbold
+        AngelinaSpikeRicardo, //Angelina Spike Ricardo
+        AngieSimpson, //Angie Simpson
+        AnhDang, //Anh Dang
+        AnnaRudAndAnnnaStosik, //Anna Rud / Annna Stosik
+        AnnaRudAndLivioCacciatore, //Anna Rud / Livio Cacciatore
+        AnnaStosik, //Anna Stosik
+        AntoineCouttolenc, //Antoine Couttolenc
+        AntoniaFlechsig, //AntoniaFlechsig
+        AriannaRea, //AriannaRea
+        AubreyArcher, //Aubrey Archer
+        BeverlyArceAndJonathanLivslyst, //Beverly Arce / Jonathan Livslyst
+        BrianKesinger, //Brian Kesinger
+        BriannaGarcia, //Brianna Garcia
+        BrianWeisz, //Brian Weisz
+        BrittneyHackett, //Brittney Hackett
+        BrynJones, //Bryn Jones
+        BillRobinson, //Bill Robinson
+        BillyWimblett, //Billy Wimblett
+        CaclieCarre, //Caclie Carre
+        CamKendell, //Cam Kendell
+        CanerSoylu, //CanerSoylu
+        CarlosGomesCabral, //Carlos Gomes Cabral
+        CarlosLuzzi, //CarlosLuzzi
+        CarlosRuiz, //Carlos Ruiz
+        CarminePucci, //Carmine Pucci
+        CarminePucciAndLeonardoGiammichele, //Carmine Pucci / Leonardo Giammichele
+        CaseyRobin, //Casey Robin
+        CecileCarreAndAnnaStosik, //Cecile Carre / Anna Stosik
+        ClioWolfensberger, //ClioWolfensberger
+        ConnieKangAndJackieDroujiko, //Connie Kang / Jackie Droujiko
+        Cookie, //Cookie
+        CoryGodbey, //CoryGodbey
+        CristianRomero, //Cristian Romero
+        DavAugereau, //Dav Augereau
+        DavAugereauAndGiuliaRiva, //Dav Augereau / Giulia Riva
+        DaveAlvarezAndAlicePisoni, //Dave Alvarez / Alice Pisoni
+        DaveBeauchene, //DaveBeauchene
+        DefneTozum, //Defne Tozum
+        DefneTozumAndDennyMinonne, //Defne Tozum / Denny Minonne
+        DefneTozumAndLivioCacciatore, //Defne Tozum / Livio Cacciatore
+        DennyMinonne, //Denny Minonne
+        DevinYang, //DevinYang
+        DiogoSaito, //Diogo Saito
+        DonAguillo, //Don Aguillo
+        DustinPanzino, //Dustin Panzino
+        DustinPanzinoAndLeonardoGiammichele, //Dustin Panzino / Leonardo Giammichele
+        DuyenNguyenAndAubreyArcher, //Duyen Nguyen / Aubrey Archer
+        DylanBonner, //Dylan Bonner
+        E_MeleranciAndL_Giammichele, //E. Meleranci / L. Giammichele
+        EllieHorie, //Ellie Horie
+        EllieHorieAndJenniferPark, //Ellie Horie / Jennifer Park
+        ElliotBaumAndVivTanner, //Elliot Baum / Viv Tanner
+        ElliotBocxtaele, //Elliot Bocxtaele
+        ElodieMondoloni, //Elodie Mondoloni
+        EmilyAbeydeera, //EmilyAbeydeera
+        ErikaWiseman, //Erika Wiseman
+        ErinShin, //Erin Shin
+        EriWelli, //Eri Welli
+        EriWelliAndSamBurley, //Eri Welli / Sam Burley
+        EtienneSavoie, //Etienne Savoie
+        EvanaKisa, //EvanaKisa
+        EvanaKisAndJochemVanGool, //Evana Kis / Jochem van Gool
+        EvanaKisaAndLivioCacciatore, //Evana Kisa / Livio Cacciatore
+        EvaWidermann, //Eva Widermann
+        EverGalvezAndAnnaStosik, //Ever Galvez / Anna Stosik
+        FedericoMCugliari, //Federico M. Cugliari
+        FilipeLaurentino, //Filipe Laurentino
+        GabrielAngelo, //Gabriel Angelo
+        GabrielRomero, //GabrielRomero
+        GakuKumatori, //Gaku Kumatori
+        GiuliaRiva, //Giulia Riva
+        GiuseppeDiMaio, //Giuseppe di Maio
+        GonzaloKenny, //Gonzalo Kenny
+        GusGadgetAndLeonardoGiammichele, //GusGadget / Leonardo Giammichele
+        GraceTran, //Grace Tran
+        GrzegorzKrysinski, //Grzegorz Krysinski
+        HadjieJoos, //Hadjie Joos
+        HedvigHaggman_Sund, //Hadvig Haggman-Sund
+        HeidiNeunhoffer, //Heidi Neunhoffer
+        HedvigH_S, //Hedvig H-S
+        HyunaLee, //HyunaLee
+        IanMacDonald, //Ian MacDonald
+        IsabellaCeravolo, //IsabellaCeravolo
+        IsaiahMesq, //Isaiah Mesq
+        JackieDroujiko, //Jackie Droujiko
+        JacobMcAlister, //Jacob McAlister
+        JakeMurphy, //Jake Murphy
+        JakeParker, //Jake Parker
+        JamesCMulligan, //James C Mulligan
+        JaredMathews, //Jared Mathews
+        JaredNickerl, //JaredNickerl
+        JaredNickerlAndAlexAccorsi, //Jared Nickerl / Alex Accorsi
+        JaredNickerlAndAlicePisoni, //Jared Nickerl / Alice Pisoni
+        JeremyAdams, //Jeremy Adams
+        JaviSalas, //Javi Salas
+        JavierSalas, //JavierSalas
+        JeannePlounevez, //Jeanne Plounevez
+        JeffMerghart, //Jeff Merghart
+        JeffMurchie, //JeffMurchie
+        JennaGray, //Jenna Gray
+        JenniferGheduzziAndLivioCacciatore, //Jennifer Gheduzzi / Livio Cacciatore
+        JenniferPark, //Jennifer Park
+        JiahuiEvaGao, //Jiahui Eva Gao
+        JimmyLo, //Jimmy Lo
+        JoaoMoura, //Joao Moura
+        JochemVanGool, //Jochem van Gool
+        JohnLoren, //John Loren
+        JohnLorenAndNicholasKole, //John Loren / Nicholas Kole
+        JonasPetrauskas, //Jonas Petrauskas
+        JonathanLiyslyst, //Jonathan Liyslyst
+        JonDenskAndHayleyEvans, //Jon Densk / Hayley Evans
+        JuanDiegoLeon, //Juan Diego Leon
+        JulieVu, //Julie Vu
+        JustinGerard, //Justin Gerard
+        JustinRunfola, //Justin Runfola
+        KamilMurzynAndEriWell, //Kamil Murzyn / Eri Well
+        KasiaBrzezinska, //Kasia Brzezinska
+        Kapik, //Kapik
+        KaitlinCuthbertson, //Kaitlin Cuthbertson
+        KamilMurzyn, //KamilMurzyn
+        KendallHale, //Kendall Hale
+        KendallHaleAndAnhDang, //Kendall Hale / Anh Dang
+        KennethAnderson, //Kenneth Anderson
+        KevinHong, //Kevin Hong
+        KierstenHale, //Kiersten Hale
+        Koni, //Koni
+        KristinaChori, //KristinaChori
+        KristinaChouriAndMarianaMoreno, //Kristina Chouri / Mariana Moreno
+        KuyaJaypi, //Kuya Jaypi
+        LadyShalirin, //LadyShalirin
+        LaurenLevering, //Lauren Levering
+        LaurenWalsh, //Lauren Walsh
+        LeonardoGiammichele, //LeonardoGiammichele
+        LinhDang, //Linh Dang
+        LisanneKoeteeuw, //Lisanne Koeteeuw
+        LissetteCarrera, //Lissette Carrera
+        LouisJones, //Louis Jones
+        LucaPinelli, //Luca Pinelli
+        LuigiAime, //Luigi Aime
+        LuisHuerta, //Luis Huerta
+        M_K_Manderson_JochemVanGool, //M. K. Manderson / Jochem van Gool
+        M_RobertDaviesAndL_Giammichele, //M. Robert Davies / L. Giammichele
+        MaddieShilt, //Maddie Shilt
+        MariaDresden, //Maria Dresden
+        ManeKandalyanManderson, //ManeKandalyanManderson
+        ManeKandalyanMandersonAndLucaPinelli, //Mane Kandalyan Manderson / Luca Pinelli
+        ManeKandalyanMandersonAndPixSmith, //Mane Kandalyan Manderson / Pix Smith
+        MattChapman, //Matt Chapman
+        MarcelBerg, //Marcel Berg
+        MaliaEwart, //Malia Ewart
+        MarianaMoreno, //Mariana Moreno
+        MarioOscarGabriele, //Mario Oscar Gabriele
+        MassimilianoNarciso, //Massimiliano Narciso
+        MassimilianoNarcisoAndMariekeFerrari, //Massimiliano Narciso / Marieke Ferrari
+        MattGaser, //Matt Gaser
+        MatthewOates, //Matthew Oates
+        MatthewRobertDavies, //Matthew Robert Davies
+        MarcoGiorgianni, //MarcoGiorgianni
+        MarineJosephine, //MarineJosephine
+        MaxineVee, //Maxine Vee
+        MaxineVeeAndDavidNavarroArenas, //Maxine Vee / David Navarro Arenas
+        MckayAnderson, //Mckay Anderson
+        MelMilton, //MelMilton
+        MGiuliaRiva, //MGiulia Riva
+        MichaelGuimont, ///Michael Guimont
+        MichelaCacciatore, //Michela Cacciatore
+        MichelaCacciatoreAndGiuliaPriori, //Michela Cacciatore / Giulia Priori
+        MichaelaMartin, //Michaela Martin
+        MikeParker, //Mike Parker
+        MikeMu, //Mike Mu
+        MilaUseche, //Mila Useche
+        MilicaCelikovic, //Milica Celikovic
+        MonicaCatalano, //Monica Catalano
+        MoniekSchilder, //Moniek Schilder
+        noc4urne, //noc4urne
+        NataliaTrykowska, //Natalia Trykowska
+        NicholasKole, //NicholasKole
+        NichorasKole, //NichorasKole
+        NicolaSaviori, //Nicola Saviori
+        NicolaSavioriAndRaquelVillanueva, //Nicola Saviori / Raquel Villanueva
+        NicolasKy, //Nicolas Ky
+        NicolettaBaldari,//Nicoletta Baldari
+        OggyChristiansson, //Oggy Christiansson
+        OlegYurkov, //OlegYurkov
+        OliverDesiree, //Oliver Desiree
+        OttoParedes, //Otto Paredes
+        P_GaylordAndL_Giammichele, //P. Gaylord / L. Giammichele
+        PabloHidalgo, //Pablo Hidalgo
+        PabloHidalgoAndJeffMerghart, //Pablo Hidalgo / Jeff Merghart
+        PaoYong, //PaoYong
+        PeterBrockhammer, //Peter Brockhammer
+        PhilippKruse, //PhilippKruse
+        Pirel, //Pirel
+        PirelAndMarcoGiorgianni, //Pirel / MarcoGiorgianni
+        R_laBarberaAndL_Giammichele, //R. la Barbera / L. Giammichele
+        RachelElese, //RachelElese
+        RandyBishop, //Randy Bishop
+        RaquelVillanueva, //Raquel Villanueva
+        RiantiHidayat, //RiantiHidayat
+        RiantiHidayatAndAlicePisoni, //Rianti Hidayat / Alice Pisoni
+        RichelleCanto, //Richelle Canto
+        RobDiSalvo, //Rob Di Salvo
+        RobertoGatto, //Roberto Gatto
+        RogerPerez, //Roger Perez
+        RogerPerezAndHayleyEvans, //Roger Perez / Hayley Evans
+        RogieCustodioAndErinShin, //Rogie Custodio / Erin Shin
+        RonBaird, //Ron Baird
+        RosaLaBarbera, //Rosa la Barbera
+        RosaLaBarberaAndLeonardoGiammichele, //Rosa la Barbera / Leonardo Giammichele
+        RosaliaRadosti, //Rosalia Radosti
+        RudyAndHill, //Rudy / Hill
+        RudyHill, //Rudy Hill
+        RyanBittner, //Ryan Bittner
+        RyanMoeck, //Ryan Moeck
+        S_ShawAndL_Giammichele, //S.Shaw / L.Giammichele
+        SamantaErdini, //Samanta Erdini
+        SamNielson, //Sam Nielson
+        SandaraTang, //Sandara Tang
+        SandraRios, //Sandra Rios
+        SarahSchmidt, //Sarah Schmidt
+        SauloNate, //Saulo Nate
+        ShannonHallstein, //Shannon Hallstein
+        SimangalisoShibaya, //SimangalisoShibaya
+        SimangalisoSibaya, //SimangalisoSibaya
+        SimoneBuonfantino, //Simone Buonfantino
+        StefanoSpagnuolo, //Stefano Spagnuolo
+        StefanoZanchi, //Stefano Zanchi
+        TaniaSoler, //TaniaSoler
+        TanishaCherislin, //TanishaCherislin
+        ValentinaGraziuso, //Valentina Graziuso
+        ValentinPalombo, //Valentin Palombo
+        ValerioBuonfantino, //Valerio Buonfantino
+        VeronicaDiLorenzoAndLivioCacciatore, //Veronica Di Lorenzo / Livio Cacciatore
+        VickeyXieAndMarianaMoreno, //Vickey Xie / Mariana Moreno
+        WietseTreurniet, //Wietse Treurniet
+        WouterBruneel, //Wouter Bruneel
+        VictorYanoCovarrubias, //Victor "Yano" Covarrubias
+        YariLute, //Yari Lute
+        YeYangAndRaquelVillanueva, //Ye Yang / Raquel Villanueva
+        YuNguyen, //Yu Nguyen
+        ZuzanaSokolovaAndLivioCacciatore, //Zuzana Sokolova / Livio Cacciatore
     }
 }
