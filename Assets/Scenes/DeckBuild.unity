@@ -90390,6 +90390,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CardInfo_001_JA_01
       objectReference: {fileID: 0}
+    - target: {fileID: 4730730890806818434, guid: 50dd61500ae4ada4698b6f48a2e47073, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8118803401532215710, guid: 50dd61500ae4ada4698b6f48a2e47073, type: 3}
       propertyPath: m_PanelPicture
       value: 
@@ -90402,6 +90406,22 @@ PrefabInstance:
       propertyPath: m_EditCardPanelManager
       value: 
       objectReference: {fileID: 8361859508844763780}
+    - target: {fileID: 8590649739587579961, guid: 50dd61500ae4ada4698b6f48a2e47073, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8590649739587579961, guid: 50dd61500ae4ada4698b6f48a2e47073, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8590649739587579961, guid: 50dd61500ae4ada4698b6f48a2e47073, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 237.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8590649739587579961, guid: 50dd61500ae4ada4698b6f48a2e47073, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

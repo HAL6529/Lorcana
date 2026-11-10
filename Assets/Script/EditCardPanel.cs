@@ -24,8 +24,6 @@ public class EditCardPanel : MonoBehaviour
     public Image rareSprite;
     public Image i_lore;
     public CardInfo m_CardInfo;
-    public Button plusBtn;
-    public Button minusBtn;
 
     public int cardCount;
     public int index;
@@ -61,9 +59,7 @@ public class EditCardPanel : MonoBehaviour
     public RectTransform rareHeader_rare;
     public RectTransform plusMinusHeader;
     public RectTransform plusMinusHeader_label;
-    public RectTransform plusMinusHeader_plus;
-    public RectTransform plusMinusHeader_count;
-    public RectTransform plusMinusHeader_minus;
+    public RectTransform plusMinusHeader_button;
     public RectTransform plusMinusHeader_label2;
 
     ExtendUtil m_ExtendUtil = new ExtendUtil();
@@ -139,12 +135,8 @@ public class EditCardPanel : MonoBehaviour
     private const int plusMinusHeader_Y = 305;
     private const int plusMinusHeader_label_X = 147;
     private const int plusMinusHeader_label_Y = 30;
-    private const float plusMinusHeader_plus_X = 74.71f;
-    private const int plusMinusHeader_plus_Y = 60;
-    private const int plusMinusHeader_count_X = 147;
-    private const int plusMinusHeader_count_Y = 30;
-    private const float plusMinusHeader_minus_X = 74.71f;
-    private const int plusMinusHeader_minus_Y = 60;
+    private const int plusMinusHeader_button_X = 147;
+    private const int plusMinusHeader_button_Y = 245;
     private const int plusMinusHeader_label2_X = 147;
     private const int plusMinusHeader_label2_Y = 30;
 
@@ -311,24 +303,6 @@ public class EditCardPanel : MonoBehaviour
 
     private void UpdatePlusMinusBtn()
     {
-        if(cardCount == 0)
-        {
-            minusBtn.interactable = false;
-        }
-        else
-        {
-            minusBtn.interactable = true;
-        }
-
-        if (cardCount == 4)
-        {
-            plusBtn.interactable = false;
-        }
-        else
-        {
-            plusBtn.interactable = true;
-        }
-
         count.text = cardCount.ToString();
         m_EditCardPanelManager.onUpdateDeckList(index, cardCount);
     }
@@ -492,9 +466,8 @@ public class EditCardPanel : MonoBehaviour
         
         plusMinusHeader.sizeDelta = new Vector2(plusMinusHeader_X * magnification_x, plusMinusHeader_Y * magnification_y);
         plusMinusHeader_label.sizeDelta = new Vector2(plusMinusHeader_label_X * magnification_x, plusMinusHeader_label_Y * magnification_y);
-        plusMinusHeader_count.sizeDelta = new Vector2(plusMinusHeader_count_X * magnification_x, plusMinusHeader_count_Y * magnification_y);
+        plusMinusHeader_button.sizeDelta = new Vector2(plusMinusHeader_button_X * magnification_x, plusMinusHeader_button_Y * magnification_y);
         plusMinusHeader_label2.sizeDelta = new Vector2(plusMinusHeader_label2_X * magnification_x, plusMinusHeader_label2_Y * magnification_y);
-
 
         float magnification = magnification_x;
         if (magnification_x > magnification_y)
@@ -504,8 +477,6 @@ public class EditCardPanel : MonoBehaviour
         image.sizeDelta = new Vector2(image_X * magnification, image_Y * magnification);
         rareHeader_rare.sizeDelta = new Vector2(rareHeader_rare_X * magnification, rareHeader_rare_Y * magnification);
         lores_lore.sizeDelta = new Vector2(lores_lore_X * magnification, lores_lore_Y * magnification);
-        plusMinusHeader_plus.sizeDelta = new Vector2(plusMinusHeader_plus_X * magnification, plusMinusHeader_plus_Y * magnification);
-        plusMinusHeader_minus.sizeDelta = new Vector2(plusMinusHeader_minus_X * magnification, plusMinusHeader_minus_Y * magnification);
 
         Vector2 left_position = new Vector2(0, 1);
         image_parent.anchorMin = left_position;
@@ -518,6 +489,8 @@ public class EditCardPanel : MonoBehaviour
         image.pivot = left_position;
         image.anchoredPosition = new Vector2((image_parent.sizeDelta.x - image.sizeDelta.x) / 2, (image_parent.sizeDelta.y - image.sizeDelta.y) / 2);
 
+        int FontSize = (int)(45 * magnification);
+        count.fontSize = FontSize;
         //==============================================================================================
         //ê^ÇÒíÜ --Ç±Ç±Ç©ÇÁ--
         //==============================================================================================
@@ -675,31 +648,13 @@ public class EditCardPanel : MonoBehaviour
         plusMinusHeader_label.anchoredPosition = Vector2.zero;
 
         plusMinusHeaderSize_y += plusMinusHeader_label.sizeDelta.y;
-        plusMinusHeaderSize_y += 27 * magnification_y;
 
-        plusMinusHeader_plus.anchorMin = left_position;
-        plusMinusHeader_plus.anchorMax = left_position;
-        plusMinusHeader_plus.pivot = left_position;
-        plusMinusHeader_plus.anchoredPosition = new Vector2((plusMinusHeader.sizeDelta.x - plusMinusHeader_plus.sizeDelta.x) / 2, plusMinusHeaderSize_y * (-1));
+        plusMinusHeader_button.anchorMin = left_position;
+        plusMinusHeader_button.anchorMax = left_position;
+        plusMinusHeader_button.pivot = left_position;
+        plusMinusHeader_button.anchoredPosition = new Vector2(0, plusMinusHeaderSize_y * (-1));
 
-        plusMinusHeaderSize_y += plusMinusHeader_plus.sizeDelta.y;
-        plusMinusHeaderSize_y += 20 * magnification_y;
-
-        plusMinusHeader_count.anchorMin = left_position;
-        plusMinusHeader_count.anchorMax = left_position;
-        plusMinusHeader_count.pivot = left_position;
-        plusMinusHeader_count.anchoredPosition = new Vector2(0, plusMinusHeaderSize_y * (-1));
-
-        plusMinusHeaderSize_y += plusMinusHeader_count.sizeDelta.y;
-        plusMinusHeaderSize_y += 20 * magnification_y;
-
-        plusMinusHeader_minus.anchorMin = left_position;
-        plusMinusHeader_minus.anchorMax = left_position;
-        plusMinusHeader_minus.pivot = left_position;
-        plusMinusHeader_minus.anchoredPosition = new Vector2((plusMinusHeader.sizeDelta.x - plusMinusHeader_minus.sizeDelta.x) / 2, plusMinusHeaderSize_y * (-1));
-
-        plusMinusHeaderSize_y += plusMinusHeader_minus.sizeDelta.y;
-        plusMinusHeaderSize_y += 27 * magnification_y;
+        plusMinusHeaderSize_y += plusMinusHeader_button.sizeDelta.y;
 
         plusMinusHeader_label2.anchorMin = left_position;
         plusMinusHeader_label2.anchorMax = left_position;
