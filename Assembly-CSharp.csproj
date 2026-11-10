@@ -80,6 +80,7 @@
     <Compile Include="Assets\Script\CardInfo\UrsulasReturn\CardInfo_207_JA_04.cs" />
     <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_094_JA_02.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_131_JA_01.cs" />
+    <Compile Include="Assets\AddCardDialog.cs" />
     <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_165_JA_02.cs" />
     <Compile Include="Assets\Script\CardInfo\UrsulasReturn\CardInfo_068_JA_04.cs" />
     <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_127_JA_02.cs" />

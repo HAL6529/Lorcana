@@ -278,7 +278,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8321163952370405453}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8118803401532215710}
+        m_TargetAssemblyTypeName: EditCardPanel, Assembly-CSharp
+        m_MethodName: onAddCardButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1230627981245179830
 GameObject:
   m_ObjectHideFlags: 0
@@ -1473,6 +1485,7 @@ MonoBehaviour:
   plusMinusHeader_label: {fileID: 9025447689955758841}
   plusMinusHeader_button: {fileID: 8563748491408060797}
   plusMinusHeader_label2: {fileID: 3565776977894907286}
+  m_DialogManager: {fileID: 0}
   m_EditCardPanelManager: {fileID: 0}
   m_PanelPicture: {fileID: 0}
   CanvasRectTransform: {fileID: 0}

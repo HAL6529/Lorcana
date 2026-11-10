@@ -64,6 +64,7 @@ public class EditCardPanel : MonoBehaviour
 
     ExtendUtil m_ExtendUtil = new ExtendUtil();
 
+    public DialogManager m_DialogManager;
     public EditCardPanelManager m_EditCardPanelManager;
     public PanelPicture m_PanelPicture;
     public RectTransform CanvasRectTransform;
@@ -145,6 +146,11 @@ public class EditCardPanel : MonoBehaviour
         UpdateImage(CanvasRectTransform.sizeDelta.x / 890, CanvasRectTransform.sizeDelta.y / 1920);
     }
 
+    public void onAddCardButton()
+    {
+        m_DialogManager.AddCardDialog_Open(this);
+    }
+
     public string GetCardNo()
     {
         return m_CardInfo.GetCardNo();
@@ -169,12 +175,22 @@ public class EditCardPanel : MonoBehaviour
         }
     }
 
+    public void SetEditCardPanel(int m_count)
+    {
+        this.cardCount = m_count;
+        SetEditCardPanel2();
+    }
+
     public void SetEditCardPanel(CardInfo m_CardInfo, int m_count, int index)
     {
         this.index = index;
         this.m_CardInfo = m_CardInfo;
         this.cardCount = m_count;
+        SetEditCardPanel2();
+    }
 
+    private void SetEditCardPanel2()
+    {
         if (m_CardInfo == null)
         {
             SwitchActive(false);
@@ -241,28 +257,6 @@ public class EditCardPanel : MonoBehaviour
                 }
                 return temp;
         }
-    }
-
-    public void onMinusBtn()
-    {
-        if (cardCount == 0)
-        {
-            return;
-        }
-        cardCount--;
-        UpdatePlusMinusBtn();
-        return;
-    }
-
-    public void onPlusBtn()
-    {
-        if (cardCount == 4)
-        {
-            return;
-        }
-        cardCount++;
-        UpdatePlusMinusBtn();
-        return;
     }
 
     public void onViewBtn()
