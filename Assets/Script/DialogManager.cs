@@ -8,6 +8,8 @@ using UnityEngine.UI;
 
 public class DialogManager : MonoBehaviour
 {
+    public AddCardDialog m_AddCardDialog;
+
     public NewSaveDialog m_NewSaveDialog;
 
     public OKDialog m_OKDialog;
@@ -26,10 +28,17 @@ public class DialogManager : MonoBehaviour
 
     public void AllClose()
     {
+        m_AddCardDialog.Close();
         m_NewSaveDialog.Close();
         m_OKDialog.Close();
         m_YesOrNoDialog.Close();
         this.gameObject.SetActive(false);
+    }
+
+    public void AddCardDialog_Open(EditCardPanel paramater)
+    {
+        this.gameObject.SetActive(true);
+        m_AddCardDialog.Open(paramater);
     }
 
     public void NewSaveDialog_Open()
@@ -53,6 +62,7 @@ public class DialogManager : MonoBehaviour
     public void UpdateImage(float magnification_x, float magnification_y)
     {
         Parent.sizeDelta = new Vector2(Parent.sizeDelta.x * magnification_x, Parent.sizeDelta.y * magnification_y);
+        m_AddCardDialog.UpdateImage(magnification_x, magnification_y);
         m_NewSaveDialog.UpdateImage(magnification_x, magnification_y);
         m_OKDialog.UpdateImage(magnification_x, magnification_y);
         m_YesOrNoDialog.UpdateImage(magnification_x, magnification_y);
