@@ -84,12 +84,12 @@
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_189_JA_03.cs" />
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_002_JA_03.cs" />
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_149_JA_03.cs" />
-    <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_054_JA_02.cs" />
     <Compile Include="Assets\Script\CardInfo\UrsulasReturn\CardInfo_032_JA_04.cs" />
     <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_150_JA_02.cs" />
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_071_JA_03.cs" />
     <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_178_JA_02.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_007_JA_01.cs" />
+    <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_054_JA_02.cs" />
     <Compile Include="Assets\Script\CardInfo\UrsulasReturn\CardInfo_003_JA_04.cs" />
     <Compile Include="Assets\Script\EditCardPanelTemp.cs" />
     <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_035_JA_02.cs" />
@@ -260,9 +260,9 @@
     <Compile Include="Assets\Script\CardInfo\UrsulasReturn\CardInfo_129_JA_04.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_119_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_155_JA_02.cs" />
-    <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_202_JA_01.cs" />
-    <Compile Include="Assets\Script\SearchClass.cs" />
     <Compile Include="Assets\Script\CardInfo\UrsulasReturn\CardInfo_105_JA_04.cs" />
+    <Compile Include="Assets\Script\SearchClass.cs" />
+    <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_202_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\UrsulasReturn\CardInfo_101_JA_04.cs" />
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_182_JA_03.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_080_JA_01.cs" />
@@ -417,9 +417,9 @@
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_184_JA_03.cs" />
     <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_196_JA_02.cs" />
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_057_JA_03.cs" />
+    <Compile Include="Assets\Script\CardInfo\UrsulasReturn\CardInfo_111_JA_04.cs" />
     <Compile Include="Assets\Script\CardInfo\UrsulasReturn\CardInfo_083_JA_04.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_135_JA_01.cs" />
-    <Compile Include="Assets\Script\CardInfo\UrsulasReturn\CardInfo_111_JA_04.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_049_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_043_JA_03.cs" />
     <Compile Include="Assets\Script\CardInfo\UrsulasReturn\CardInfo_071_JA_04.cs" />
@@ -440,8 +440,8 @@
     <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_187_JA_02.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_129_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_126_JA_03.cs" />
-    <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_095_JA_02.cs" />
     <Compile Include="Assets\Script\CardInfo\UrsulasReturn\CardInfo_114_JA_04.cs" />
+    <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_095_JA_02.cs" />
     <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_168_JA_02.cs" />
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_218_JA_03.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_171_JA_01.cs" />
@@ -558,8 +558,8 @@
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_141_JA_03.cs" />
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_060_JA_03.cs" />
     <Compile Include="Assets\Script\ViewMode_Image.cs" />
-    <Compile Include="Assets\Script\CardInfo\UrsulasReturn\CardInfo_045_JA_04.cs" />
     <Compile Include="Assets\Script\CardInfo\UrsulasReturn\CardInfo_122_JA_04.cs" />
+    <Compile Include="Assets\Script\CardInfo\UrsulasReturn\CardInfo_045_JA_04.cs" />
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_125_JA_03.cs" />
     <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_124_JA_02.cs" />
     <Compile Include="Assets\Script\EnumController.cs" />
@@ -572,6 +572,7 @@
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_015_JA_03.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_172_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_185_JA_01.cs" />
+    <Compile Include="Assets\Script\CardInfo\UrsulasReturn\CardInfo_130_JA_04.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_186_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_197_JA_02.cs" />
     <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_104_JA_02.cs" />
@@ -580,7 +581,6 @@
     <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_060_JA_02.cs" />
     <Compile Include="Assets\Script\CardInfo\UrsulasReturn\CardInfo_119_JA_04.cs" />
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_068_JA_03.cs" />
-    <Compile Include="Assets\Script\CardInfo\UrsulasReturn\CardInfo_130_JA_04.cs" />
     <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_128_JA_02.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_153_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_154_JA_03.cs" />
@@ -669,10 +669,10 @@
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_013_JA_03.cs" />
     <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_118_JA_02.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_028_JA_01.cs" />
-    <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_067_JA_03.cs" />
+    <Compile Include="Assets\Script\CardInfo\UrsulasReturn\CardInfo_124_JA_04.cs" />
     <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_121_JA_02.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_152_JA_01.cs" />
-    <Compile Include="Assets\Script\CardInfo\UrsulasReturn\CardInfo_124_JA_04.cs" />
+    <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_067_JA_03.cs" />
     <Compile Include="Assets\Script\CardInfo\UrsulasReturn\CardInfo_024_JA_04.cs" />
     <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_017_JA_02.cs" />
     <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_074_JA_02.cs" />
@@ -715,8 +715,8 @@
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_066_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_152_JA_03.cs" />
     <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_062_JA_02.cs" />
-    <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_076_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\UrsulasReturn\CardInfo_115_JA_04.cs" />
+    <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_076_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_146_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\UrsulasReturn\CardInfo_030_JA_04.cs" />
     <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_076_JA_02.cs" />
