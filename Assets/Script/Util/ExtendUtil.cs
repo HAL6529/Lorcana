@@ -699,8 +699,6 @@ public class ExtendUtil
                 return new CardInfo_215_JA_01();
             case "216_JA_01":
                 return new CardInfo_216_JA_01();
-            default:
-                break;
         }
 
         switch (paramater)
@@ -1137,8 +1135,6 @@ public class ExtendUtil
                 return new CardInfo_215_JA_02();
             case "216_JA_02":
                 return new CardInfo_216_JA_02();
-            default:
-                break;
         }
 
         switch (paramater)
@@ -1587,6 +1583,454 @@ public class ExtendUtil
                 return new CardInfo_221_JA_03();
             case "222_JA_03":
                 return new CardInfo_222_JA_03();
+        }
+
+        switch (paramater)
+        {
+            case "001_JA_04":
+                return new CardInfo_001_JA_04();
+            case "002_JA_04":
+                return new CardInfo_002_JA_04();
+            case "003_JA_04":
+                return new CardInfo_003_JA_04();
+            case "004_JA_04":
+                return new CardInfo_004_JA_04();
+            case "005_JA_04":
+                return new CardInfo_005_JA_04();
+            case "006_JA_04":
+                return new CardInfo_006_JA_04();
+            case "007_JA_04":
+                return new CardInfo_007_JA_04();
+            case "008_JA_04":
+                return new CardInfo_008_JA_04();
+            case "009_JA_04":
+                return new CardInfo_009_JA_04();
+            case "010_JA_04":
+                return new CardInfo_010_JA_04();
+            case "011_JA_04":
+                return new CardInfo_011_JA_04();
+            case "012_JA_04":
+                return new CardInfo_012_JA_04();
+            case "013_JA_04":
+                return new CardInfo_013_JA_04();
+            case "014_JA_04":
+                return new CardInfo_014_JA_04();
+            case "015_JA_04":
+                return new CardInfo_015_JA_04();
+            case "016_JA_04":
+                return new CardInfo_016_JA_04();
+            case "017_JA_04":
+                return new CardInfo_017_JA_04();
+            case "018_JA_04":
+                return new CardInfo_018_JA_04();
+            case "019_JA_04":
+                return new CardInfo_019_JA_04();
+            case "020_JA_04":
+                return new CardInfo_040_JA_04();
+            case "021_JA_04":
+                return new CardInfo_041_JA_04();
+            case "022_JA_04":
+                return new CardInfo_042_JA_04();
+            case "023_JA_04":
+                return new CardInfo_043_JA_04();
+            case "024_JA_04":
+                return new CardInfo_044_JA_04();
+            case "025_JA_04":
+                return new CardInfo_045_JA_04();
+            case "026_JA_04":
+                return new CardInfo_046_JA_04();
+            case "027_JA_04":
+                return new CardInfo_047_JA_04();
+            case "028_JA_04":
+                return new CardInfo_048_JA_04();
+            case "029_JA_04":
+                return new CardInfo_049_JA_04();
+            case "030_JA_04":
+                return new CardInfo_040_JA_04();
+            case "031_JA_04":
+                return new CardInfo_041_JA_04();
+            case "032_JA_04":
+                return new CardInfo_042_JA_04();
+            case "033_JA_04":
+                return new CardInfo_043_JA_04();
+            case "034_JA_04":
+                return new CardInfo_044_JA_04();
+            case "035_JA_04":
+                return new CardInfo_045_JA_04();
+            case "036_JA_04":
+                return new CardInfo_046_JA_04();
+            case "037_JA_04":
+                return new CardInfo_047_JA_04();
+            case "038_JA_04":
+                return new CardInfo_048_JA_04();
+            case "039_JA_04":
+                return new CardInfo_049_JA_04();
+            case "040_JA_04":
+                return new CardInfo_040_JA_04();
+            case "041_JA_04":
+                return new CardInfo_041_JA_04();
+            case "042_JA_04":
+                return new CardInfo_042_JA_04();
+            case "043_JA_04":
+                return new CardInfo_043_JA_04();
+            case "044_JA_04":
+                return new CardInfo_044_JA_04();
+            case "045_JA_04":
+                return new CardInfo_045_JA_04();
+            case "046_JA_04":
+                return new CardInfo_046_JA_04();
+            case "047_JA_04":
+                return new CardInfo_047_JA_04();
+            case "048_JA_04":
+                return new CardInfo_048_JA_04();
+            case "049_JA_04":
+                return new CardInfo_049_JA_04();
+            case "050_JA_04":
+                return new CardInfo_050_JA_04();
+            case "051_JA_04":
+                return new CardInfo_051_JA_04();
+            case "052_JA_04":
+                return new CardInfo_052_JA_04();
+            case "053_JA_04":
+                return new CardInfo_053_JA_04();
+            case "054_JA_04":
+                return new CardInfo_054_JA_04();
+            case "055_JA_04":
+                return new CardInfo_055_JA_04();
+            case "056_JA_04":
+                return new CardInfo_056_JA_04();
+            case "057_JA_04":
+                return new CardInfo_057_JA_04();
+            case "058_JA_04":
+                return new CardInfo_058_JA_04();
+            case "059_JA_04":
+                return new CardInfo_059_JA_04();
+            case "060_JA_04":
+                return new CardInfo_060_JA_04();
+            case "061_JA_04":
+                return new CardInfo_061_JA_04();
+            case "062_JA_04":
+                return new CardInfo_062_JA_04();
+            case "063_JA_04":
+                return new CardInfo_063_JA_04();
+            case "064_JA_04":
+                return new CardInfo_064_JA_04();
+            case "065_JA_04":
+                return new CardInfo_065_JA_04();
+            case "066_JA_04":
+                return new CardInfo_066_JA_04();
+            case "067_JA_04":
+                return new CardInfo_067_JA_04();
+            case "068_JA_04":
+                return new CardInfo_068_JA_04();
+            case "069_JA_04":
+                return new CardInfo_069_JA_04();
+            case "070_JA_04":
+                return new CardInfo_070_JA_04();
+            case "071_JA_04":
+                return new CardInfo_071_JA_04();
+            case "072_JA_04":
+                return new CardInfo_072_JA_04();
+            case "073_JA_04":
+                return new CardInfo_073_JA_04();
+            case "074_JA_04":
+                return new CardInfo_074_JA_04();
+            case "075_JA_04":
+                return new CardInfo_075_JA_04();
+            case "076_JA_04":
+                return new CardInfo_076_JA_04();
+            case "077_JA_04":
+                return new CardInfo_077_JA_04();
+            case "078_JA_04":
+                return new CardInfo_078_JA_04();
+            case "079_JA_04":
+                return new CardInfo_079_JA_04();
+            case "080_JA_04":
+                return new CardInfo_080_JA_04();
+            case "081_JA_04":
+                return new CardInfo_081_JA_04();
+            case "082_JA_04":
+                return new CardInfo_082_JA_04();
+            case "083_JA_04":
+                return new CardInfo_083_JA_04();
+            case "084_JA_04":
+                return new CardInfo_084_JA_04();
+            case "085_JA_04":
+                return new CardInfo_085_JA_04();
+            case "086_JA_04":
+                return new CardInfo_086_JA_04();
+            case "087_JA_04":
+                return new CardInfo_087_JA_04();
+            case "088_JA_04":
+                return new CardInfo_088_JA_04();
+            case "089_JA_04":
+                return new CardInfo_089_JA_04();
+            case "090_JA_04":
+                return new CardInfo_090_JA_04();
+            case "091_JA_04":
+                return new CardInfo_091_JA_04();
+            case "092_JA_04":
+                return new CardInfo_092_JA_04();
+            case "093_JA_04":
+                return new CardInfo_093_JA_04();
+            case "094_JA_04":
+                return new CardInfo_094_JA_04();
+            case "095_JA_04":
+                return new CardInfo_095_JA_04();
+            case "096_JA_04":
+                return new CardInfo_096_JA_04();
+            case "097_JA_04":
+                return new CardInfo_097_JA_04();
+            case "098_JA_04":
+                return new CardInfo_098_JA_04();
+            case "099_JA_04":
+                return new CardInfo_099_JA_04();
+            case "100_JA_04":
+                return new CardInfo_100_JA_04();
+            case "101_JA_04":
+                return new CardInfo_101_JA_04();
+            case "102_JA_04":
+                return new CardInfo_102_JA_04();
+            case "103_JA_04":
+                return new CardInfo_103_JA_04();
+            case "104_JA_04":
+                return new CardInfo_104_JA_04();
+            case "105_JA_04":
+                return new CardInfo_105_JA_04();
+            case "106_JA_04":
+                return new CardInfo_106_JA_04();
+            case "107_JA_04":
+                return new CardInfo_107_JA_04();
+            case "108_JA_04":
+                return new CardInfo_108_JA_04();
+            case "109_JA_04":
+                return new CardInfo_109_JA_04();
+            case "110_JA_04":
+                return new CardInfo_110_JA_04();
+            case "111_JA_04":
+                return new CardInfo_111_JA_04();
+            case "112_JA_04":
+                return new CardInfo_112_JA_04();
+            case "113_JA_04":
+                return new CardInfo_113_JA_04();
+            case "114_JA_04":
+                return new CardInfo_114_JA_04();
+            case "115_JA_04":
+                return new CardInfo_115_JA_04();
+            case "116_JA_04":
+                return new CardInfo_116_JA_04();
+            case "117_JA_04":
+                return new CardInfo_117_JA_04();
+            case "118_JA_04":
+                return new CardInfo_118_JA_04();
+            case "119_JA_04":
+                return new CardInfo_119_JA_04();
+            case "120_JA_04":
+                return new CardInfo_120_JA_04();
+            case "121_JA_04":
+                return new CardInfo_121_JA_04();
+            case "122_JA_04":
+                return new CardInfo_122_JA_04();
+            case "123_JA_04":
+                return new CardInfo_123_JA_04();
+            case "124_JA_04":
+                return new CardInfo_124_JA_04();
+            case "125_JA_04":
+                return new CardInfo_125_JA_04();
+            case "126_JA_04":
+                return new CardInfo_126_JA_04();
+            case "127_JA_04":
+                return new CardInfo_127_JA_04();
+            case "128_JA_04":
+                return new CardInfo_128_JA_04();
+            case "129_JA_04":
+                return new CardInfo_129_JA_04();
+            case "130_JA_04":
+                return new CardInfo_130_JA_04();
+            case "131_JA_04":
+                return new CardInfo_131_JA_04();
+            case "132_JA_04":
+                return new CardInfo_132_JA_04();
+            case "133_JA_04":
+                return new CardInfo_133_JA_04();
+            case "134_JA_04":
+                return new CardInfo_134_JA_04();
+            case "135_JA_04":
+                return new CardInfo_135_JA_04();
+            case "136_JA_04":
+                return new CardInfo_136_JA_04();
+            case "137_JA_04":
+                return new CardInfo_137_JA_04();
+            case "138_JA_04":
+                return new CardInfo_138_JA_04();
+            case "139_JA_04":
+                return new CardInfo_139_JA_04();
+            case "140_JA_04":
+                return new CardInfo_140_JA_04();
+            case "141_JA_04":
+                return new CardInfo_141_JA_04();
+            case "142_JA_04":
+                return new CardInfo_142_JA_04();
+            case "143_JA_04":
+                return new CardInfo_143_JA_04();
+            case "144_JA_04":
+                return new CardInfo_144_JA_04();
+            case "145_JA_04":
+                return new CardInfo_145_JA_04();
+            case "146_JA_04":
+                return new CardInfo_146_JA_04();
+            case "147_JA_04":
+                return new CardInfo_147_JA_04();
+            case "148_JA_04":
+                return new CardInfo_148_JA_04();
+            case "149_JA_04":
+                return new CardInfo_149_JA_04();
+            case "150_JA_04":
+                return new CardInfo_150_JA_04();
+            case "151_JA_04":
+                return new CardInfo_151_JA_04();
+            case "152_JA_04":
+                return new CardInfo_152_JA_04();
+            case "153_JA_04":
+                return new CardInfo_153_JA_04();
+            case "154_JA_04":
+                return new CardInfo_154_JA_04();
+            case "155_JA_04":
+                return new CardInfo_155_JA_04();
+            case "156_JA_04":
+                return new CardInfo_156_JA_04();
+            case "157_JA_04":
+                return new CardInfo_157_JA_04();
+            case "158_JA_04":
+                return new CardInfo_158_JA_04();
+            case "159_JA_04":
+                return new CardInfo_159_JA_04();
+            case "160_JA_04":
+                return new CardInfo_160_JA_04();
+            case "161_JA_04":
+                return new CardInfo_161_JA_04();
+            case "162_JA_04":
+                return new CardInfo_162_JA_04();
+            case "163_JA_04":
+                return new CardInfo_163_JA_04();
+            case "164_JA_04":
+                return new CardInfo_164_JA_04();
+            case "165_JA_04":
+                return new CardInfo_165_JA_04();
+            case "166_JA_04":
+                return new CardInfo_166_JA_04();
+            case "167_JA_04":
+                return new CardInfo_167_JA_04();
+            case "168_JA_04":
+                return new CardInfo_168_JA_04();
+            case "169_JA_04":
+                return new CardInfo_169_JA_04();
+            case "170_JA_04":
+                return new CardInfo_170_JA_04();
+            case "171_JA_04":
+                return new CardInfo_171_JA_04();
+            case "172_JA_04":
+                return new CardInfo_172_JA_04();
+            case "173_JA_04":
+                return new CardInfo_173_JA_04();
+            case "174_JA_04":
+                return new CardInfo_174_JA_04();
+            case "175_JA_04":
+                return new CardInfo_175_JA_04();
+            case "176_JA_04":
+                return new CardInfo_176_JA_04();
+            case "177_JA_04":
+                return new CardInfo_177_JA_04();
+            case "178_JA_04":
+                return new CardInfo_178_JA_04();
+            case "179_JA_04":
+                return new CardInfo_179_JA_04();
+            case "180_JA_04":
+                return new CardInfo_180_JA_04();
+            case "181_JA_04":
+                return new CardInfo_181_JA_04();
+            case "182_JA_04":
+                return new CardInfo_182_JA_04();
+            case "183_JA_04":
+                return new CardInfo_183_JA_04();
+            case "184_JA_04":
+                return new CardInfo_184_JA_04();
+            case "185_JA_04":
+                return new CardInfo_185_JA_04();
+            case "186_JA_04":
+                return new CardInfo_186_JA_04();
+            case "187_JA_04":
+                return new CardInfo_187_JA_04();
+            case "188_JA_04":
+                return new CardInfo_188_JA_04();
+            case "189_JA_04":
+                return new CardInfo_189_JA_04();
+            case "190_JA_04":
+                return new CardInfo_190_JA_04();
+            case "191_JA_04":
+                return new CardInfo_191_JA_04();
+            case "192_JA_04":
+                return new CardInfo_192_JA_04();
+            case "193_JA_04":
+                return new CardInfo_193_JA_04();
+            case "194_JA_04":
+                return new CardInfo_194_JA_04();
+            case "195_JA_04":
+                return new CardInfo_195_JA_04();
+            case "196_JA_04":
+                return new CardInfo_196_JA_04();
+            case "197_JA_04":
+                return new CardInfo_197_JA_04();
+            case "198_JA_04":
+                return new CardInfo_198_JA_04();
+            case "199_JA_04":
+                return new CardInfo_199_JA_04();
+            case "200_JA_04":
+                return new CardInfo_200_JA_04();
+            case "201_JA_04":
+                return new CardInfo_201_JA_04();
+            case "202_JA_04":
+                return new CardInfo_202_JA_04();
+            case "203_JA_04":
+                return new CardInfo_203_JA_04();
+            case "204_JA_04":
+                return new CardInfo_204_JA_04();
+            case "205_JA_04":
+                return new CardInfo_205_JA_04();
+            case "206_JA_04":
+                return new CardInfo_206_JA_04();
+            case "207_JA_04":
+                return new CardInfo_207_JA_04();
+            case "208_JA_04":
+                return new CardInfo_208_JA_04();
+            case "209_JA_04":
+                return new CardInfo_209_JA_04();
+            case "210_JA_04":
+                return new CardInfo_210_JA_04();
+            case "211_JA_04":
+                return new CardInfo_211_JA_04();
+            case "212_JA_04":
+                return new CardInfo_212_JA_04();
+            case "213_JA_04":
+                return new CardInfo_213_JA_04();
+            case "214_JA_04":
+                return new CardInfo_214_JA_04();
+            case "215_JA_04":
+                return new CardInfo_215_JA_04();
+            case "216_JA_04":
+                return new CardInfo_216_JA_04();
+            case "217_JA_04":
+                return new CardInfo_217_JA_04();
+            case "218_JA_04":
+                return new CardInfo_218_JA_04();
+            case "219_JA_04":
+                return new CardInfo_219_JA_04();
+            case "220_JA_04":
+                return new CardInfo_220_JA_04();
+            case "221_JA_04":
+                return new CardInfo_221_JA_04();
+            case "222_JA_04":
+                return new CardInfo_222_JA_04();
             default:
                 return new CardInfo();
         }
