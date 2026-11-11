@@ -15,7 +15,7 @@ C:/Users/matty/Unity/Lorcana
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-60476
+53175
 Successfully changed project path to: C:/Users/matty/Unity/Lorcana
 C:/Users/matty/Unity/Lorcana
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,11 +49,11 @@ C:/Users/matty/Unity/Lorcana
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [30460] Host "[IP] 192.168.10.102 [Port] 0 [Flags] 2 [Guid] 3236336323 [EditorId] 3236336323 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-62U0HVH) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [60016] Host "[IP] 192.168.10.102 [Port] 0 [Flags] 2 [Guid] 922176272 [EditorId] 922176272 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-62U0HVH) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [30460] Host "[IP] 192.168.10.102 [Port] 0 [Flags] 2 [Guid] 3236336323 [EditorId] 3236336323 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-62U0HVH) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [60016] Host "[IP] 192.168.10.102 [Port] 0 [Flags] 2 [Guid] 922176272 [EditorId] 922176272 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-62U0HVH) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 10.97 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 12.81 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.3f1 (7cdc2969a641)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/Resources/UnitySubsystems
@@ -69,53 +69,53 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56268
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56000
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.010199 seconds.
-- Loaded All Assemblies, in  0.249 seconds
+Registered in 0.010746 seconds.
+- Loaded All Assemblies, in  0.254 seconds
 Native extension for WindowsStandalone target not found
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 Native extension for iOS target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 246 ms
+Android Extension - Scanning For ADB Devices 481 ms
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.462 seconds
-Domain Reload Profiling: 710ms
-	BeginReloadAssembly (62ms)
+- Finished resetting the current domain, in  0.716 seconds
+Domain Reload Profiling: 969ms
+	BeginReloadAssembly (66ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (0ms)
-	RebuildCommonClasses (25ms)
+	RebuildCommonClasses (23ms)
 	RebuildNativeTypeToScriptingClass (6ms)
-	initialDomainReloadingComplete (46ms)
+	initialDomainReloadingComplete (48ms)
 	LoadAllAssembliesAndSetupDomain (108ms)
-		LoadAssemblies (61ms)
+		LoadAssemblies (65ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
 		AnalyzeDomain (102ms)
 			TypeCache.Refresh (101ms)
 				TypeCache.ScanAssembly (93ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (463ms)
+	FinalizeReload (717ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (424ms)
+		SetupLoadedEditorAssemblies (675ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (331ms)
+			InitializePlatformSupportModulesInManaged (575ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (1ms)
-			ProcessInitializeOnLoadAttributes (59ms)
-			ProcessInitializeOnLoadMethodAttributes (31ms)
+			ProcessInitializeOnLoadAttributes (64ms)
+			ProcessInitializeOnLoadMethodAttributes (32ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -125,254 +125,126 @@ Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\matty\Unity\Lorcana\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\matty\Unity\Lorcana\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.592 seconds
-Refreshing native plugins compatible for Editor in 4.47 ms, found 5 plugins.
+- Loaded All Assemblies, in  0.710 seconds
+Refreshing native plugins compatible for Editor in 6.19 ms, found 5 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.456 seconds
-Domain Reload Profiling: 1045ms
-	BeginReloadAssembly (89ms)
+- Finished resetting the current domain, in  0.461 seconds
+Domain Reload Profiling: 1168ms
+	BeginReloadAssembly (93ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (3ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (15ms)
-	RebuildCommonClasses (22ms)
-	RebuildNativeTypeToScriptingClass (6ms)
-	initialDomainReloadingComplete (33ms)
-	LoadAllAssembliesAndSetupDomain (438ms)
-		LoadAssemblies (254ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (227ms)
-			TypeCache.Refresh (202ms)
-				TypeCache.ScanAssembly (194ms)
-			ScanForSourceGeneratedMonoScriptInfo (15ms)
-			ResolveRequiredComponents (10ms)
-	FinalizeReload (456ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (321ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (26ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (54ms)
-			ProcessInitializeOnLoadAttributes (204ms)
-			ProcessInitializeOnLoadMethodAttributes (27ms)
-			AfterProcessingInitializeOnLoad (7ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (10ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 8.03 ms, found 5 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5418 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 77 unused Assets / (249.3 KB). Loaded Objects now: 5874.
-Memory consumption went from 173.4 MB to 173.1 MB.
-Total: 3.186200 ms (FindLiveObjects: 0.294500 ms CreateObjectMapping: 0.178700 ms MarkObjects: 2.489200 ms  DeleteObjects: 0.222800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 1805848.918936 seconds.
-  path: Assets/Script/CardInfo/ShimmeringSkies/CardInfo_032_JA_05.cs
-  artifactKey: Guid(14b5f5434bea0e147b57b1c2a892d6cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/CardInfo/ShimmeringSkies/CardInfo_032_JA_05.cs using Guid(14b5f5434bea0e147b57b1c2a892d6cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d09ea683199ce25e989bee2776da0de') in 0.002029 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 1.161547 seconds.
-  path: Assets/Script/CardInfo/ShimmeringSkies/CardInfo_030_JA_05.cs
-  artifactKey: Guid(3f15669f9b97b56459149f23071b38de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/CardInfo/ShimmeringSkies/CardInfo_030_JA_05.cs using Guid(3f15669f9b97b56459149f23071b38de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47e756ce20a40a77542e48fd3425d700') in 0.000529 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 1.623152 seconds.
-  path: Assets/Script/CardInfo/ShimmeringSkies/CardInfo_018_JA_05.cs
-  artifactKey: Guid(2d8ab57a02f65f04494373a3e3831983) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/CardInfo/ShimmeringSkies/CardInfo_018_JA_05.cs using Guid(2d8ab57a02f65f04494373a3e3831983) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8b94140c07d4f2ba05fd039f29b11d0') in 0.000488 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 1.541778 seconds.
-  path: Assets/Script/CardInfo/ShimmeringSkies/CardInfo_007_JA_05.cs
-  artifactKey: Guid(d9a28e386f5eebd4897cf309447e9fa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/CardInfo/ShimmeringSkies/CardInfo_007_JA_05.cs using Guid(d9a28e386f5eebd4897cf309447e9fa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac8778448c28149e989a148d1f8c1ffc') in 0.000465 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 1.594738 seconds.
-  path: Assets/Script/CardInfo/ShimmeringSkies/CardInfo_005_JA_05.cs
-  artifactKey: Guid(35453c2321030a143a4a2f7a7986f29a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/CardInfo/ShimmeringSkies/CardInfo_005_JA_05.cs using Guid(35453c2321030a143a4a2f7a7986f29a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c945cbfdfc3af55810e1658302dac3d6') in 0.000448 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 1.233008 seconds.
-  path: Assets/Script/CardInfo/ShimmeringSkies/CardInfo_002_JA_05.cs
-  artifactKey: Guid(4ce531e44923b2243a5421474988a167) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/CardInfo/ShimmeringSkies/CardInfo_002_JA_05.cs using Guid(4ce531e44923b2243a5421474988a167) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '409c14d442948e4c1a83b8fe9ad4795e') in 0.000470 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 100.738372 seconds.
-  path: Assets/Script/CardInfo/RiseOfTheFloodborn/CardInfo_050_JA_02.cs
-  artifactKey: Guid(e352599209c40e041b42bf9b6e19c4f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/CardInfo/RiseOfTheFloodborn/CardInfo_050_JA_02.cs using Guid(e352599209c40e041b42bf9b6e19c4f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2ca2741c6ef2cee277c7dd10cd22d96') in 0.000499 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 2.080097 seconds.
-  path: Assets/Script/CardInfo/IntoTheInkLands/CardInfo_050_JA_03.cs
-  artifactKey: Guid(ddc2b32257a64594687fb3f3dac01966) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/CardInfo/IntoTheInkLands/CardInfo_050_JA_03.cs using Guid(ddc2b32257a64594687fb3f3dac01966) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56eec3e4d648f9714abc36fb0d579e1b') in 0.000468 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 1.403496 seconds.
-  path: Assets/Script/CardInfo/TheFirstChapter/CardInfo_050_JA_01.cs
-  artifactKey: Guid(c25310616d606604a9b34b1a00b1c8a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/CardInfo/TheFirstChapter/CardInfo_050_JA_01.cs using Guid(c25310616d606604a9b34b1a00b1c8a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8779c6e5bf633aada8b7f51e4f712fe2') in 0.000500 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 1.794048 seconds.
-  path: Assets/Script/CardInfo/UrsulasReturn/CardInfo_050_JA_04.cs
-  artifactKey: Guid(57b28fd0cb165984ba2eafdacf2aaf76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/CardInfo/UrsulasReturn/CardInfo_050_JA_04.cs using Guid(57b28fd0cb165984ba2eafdacf2aaf76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '207fc64859599ede9d0c829c4a9a8fc5') in 0.000462 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 11.290984 seconds.
-  path: Assets/Script/CardInfo/ShimmeringSkies/CardInfo_049_JA_05.cs
-  artifactKey: Guid(f946ee9f1496a4b48bda7167ea78f4ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/CardInfo/ShimmeringSkies/CardInfo_049_JA_05.cs using Guid(f946ee9f1496a4b48bda7167ea78f4ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd86a9e93d63a84fe430d705088440d8d') in 0.000728 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 52.431706 seconds.
-  path: Assets/Script/CardInfo/ShimmeringSkies/CardInfo_047_JA_05.cs
-  artifactKey: Guid(cb5c6c48edce9854aa3892fdb6de9797) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/CardInfo/ShimmeringSkies/CardInfo_047_JA_05.cs using Guid(cb5c6c48edce9854aa3892fdb6de9797) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38a2398d6c2ca4ab1c1727ca2f6a73fb') in 0.000508 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 5.434585 seconds.
-  path: Assets/Script/CardInfo/TheFirstChapter/CardInfo_016_JA_01.cs
-  artifactKey: Guid(c17ee1e9023dd3a4986f06bd474906b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/CardInfo/TheFirstChapter/CardInfo_016_JA_01.cs using Guid(c17ee1e9023dd3a4986f06bd474906b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6532f41ebc0fe9248013656996b885a9') in 0.000467 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 16.689894 seconds.
-  path: Assets/Scenes/New Scene.unity
-  artifactKey: Guid(d2f59dde923d8014ba7ca03649b52826) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/New Scene.unity using Guid(d2f59dde923d8014ba7ca03649b52826) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25f906282b71222b2087ac0a60bcfa1f') in 0.000412 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 88.220098 seconds.
-  path: Assets/Script/CardInfo/ShimmeringSkies/CardInfo_040_JA_05.cs
-  artifactKey: Guid(2487cdd0044b5ed4d896eb74bd3755f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/CardInfo/ShimmeringSkies/CardInfo_040_JA_05.cs using Guid(2487cdd0044b5ed4d896eb74bd3755f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0cb92de3e14ad5144d5ec294ff0fe2f') in 0.000475 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 11.233149 seconds.
-  path: Assets/Script/CardInfo/ShimmeringSkies/CardInfo_040_JA_05.cs
-  artifactKey: Guid(2487cdd0044b5ed4d896eb74bd3755f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/CardInfo/ShimmeringSkies/CardInfo_040_JA_05.cs using Guid(2487cdd0044b5ed4d896eb74bd3755f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14e515fac3604015d01569f25571cbc7') in 0.000691 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 66.420766 seconds.
-  path: Assets/Script/CardInfo/ShimmeringSkies/CardInfo_042_JA_05.cs
-  artifactKey: Guid(1e13dce3d1557ac479897b4ac0ff3f0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/CardInfo/ShimmeringSkies/CardInfo_042_JA_05.cs using Guid(1e13dce3d1557ac479897b4ac0ff3f0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea9db57aa3d634f3aa0e2ce155c32c5d') in 0.000517 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\matty\Unity\Lorcana\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\matty\Unity\Lorcana\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.561 seconds
-Refreshing native plugins compatible for Editor in 5.18 ms, found 5 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.747 seconds
-Domain Reload Profiling: 1305ms
-	BeginReloadAssembly (106ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (8ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (28ms)
-	RebuildCommonClasses (20ms)
+	RebuildCommonClasses (21ms)
 	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (25ms)
-	LoadAllAssembliesAndSetupDomain (400ms)
-		LoadAssemblies (234ms)
+	initialDomainReloadingComplete (37ms)
+	LoadAllAssembliesAndSetupDomain (549ms)
+		LoadAssemblies (333ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (205ms)
-			TypeCache.Refresh (190ms)
-				TypeCache.ScanAssembly (182ms)
-			ScanForSourceGeneratedMonoScriptInfo (3ms)
-			ResolveRequiredComponents (11ms)
-	FinalizeReload (747ms)
+		AnalyzeDomain (259ms)
+			TypeCache.Refresh (216ms)
+				TypeCache.ScanAssembly (205ms)
+			ScanForSourceGeneratedMonoScriptInfo (22ms)
+			ResolveRequiredComponents (21ms)
+	FinalizeReload (461ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (296ms)
+		SetupLoadedEditorAssemblies (327ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (28ms)
 			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (61ms)
-			ProcessInitializeOnLoadAttributes (177ms)
-			ProcessInitializeOnLoadMethodAttributes (19ms)
+			BeforeProcessingInitializeOnLoad (56ms)
+			ProcessInitializeOnLoadAttributes (202ms)
+			ProcessInitializeOnLoadMethodAttributes (29ms)
 			AfterProcessingInitializeOnLoad (7ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (17ms)
-Refreshing native plugins compatible for Editor in 5.68 ms, found 5 plugins.
+		AwakeInstancesAfterBackupRestoration (8ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 5.86 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5411 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 49 unused Assets / (221.4 KB). Loaded Objects now: 5880.
-Memory consumption went from 171.8 MB to 171.5 MB.
-Total: 2.732800 ms (FindLiveObjects: 0.281400 ms CreateObjectMapping: 0.213500 ms MarkObjects: 2.093700 ms  DeleteObjects: 0.143300 ms)
+Unloading 5529 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 77 unused Assets / (248.8 KB). Loaded Objects now: 5985.
+Memory consumption went from 176.5 MB to 176.2 MB.
+Total: 3.716100 ms (FindLiveObjects: 0.292500 ms CreateObjectMapping: 0.173600 ms MarkObjects: 2.958200 ms  DeleteObjects: 0.290900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1828107.146736 seconds.
+  path: Assets/Script/CardInfo/ShimmeringSkies/CardInfo_166_JA_05.cs
+  artifactKey: Guid(bdb3bb1ad16b20f4e8b79dd1c64a8e9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/CardInfo/ShimmeringSkies/CardInfo_166_JA_05.cs using Guid(bdb3bb1ad16b20f4e8b79dd1c64a8e9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fd8fec068a3fd182ed71ce16adbb054') in 0.002287 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\matty\Unity\Lorcana\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\matty\Unity\Lorcana\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.577 seconds
+Refreshing native plugins compatible for Editor in 4.87 ms, found 5 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.717 seconds
+Domain Reload Profiling: 1290ms
+	BeginReloadAssembly (126ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (29ms)
+	RebuildCommonClasses (22ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (27ms)
+	LoadAllAssembliesAndSetupDomain (391ms)
+		LoadAssemblies (241ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (205ms)
+			TypeCache.Refresh (189ms)
+				TypeCache.ScanAssembly (182ms)
+			ScanForSourceGeneratedMonoScriptInfo (4ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (718ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (291ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (26ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (59ms)
+			ProcessInitializeOnLoadAttributes (176ms)
+			ProcessInitializeOnLoadMethodAttributes (20ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Refreshing native plugins compatible for Editor in 4.39 ms, found 5 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5556 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (222.2 KB). Loaded Objects now: 6025.
+Memory consumption went from 175.3 MB to 175.1 MB.
+Total: 2.488700 ms (FindLiveObjects: 0.263900 ms CreateObjectMapping: 0.163800 ms MarkObjects: 1.921000 ms  DeleteObjects: 0.139300 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -388,10 +260,66 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 32.407590 seconds.
-  path: Assets/Script/CardInfo/ShimmeringSkies/CardInfo_042_JA_05.cs
-  artifactKey: Guid(1e13dce3d1557ac479897b4ac0ff3f0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/CardInfo/ShimmeringSkies/CardInfo_042_JA_05.cs using Guid(1e13dce3d1557ac479897b4ac0ff3f0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '244e7e348a823a005ab205393240820e') in 0.002048 seconds
+  Time since last request: 298.803544 seconds.
+  path: Assets/Script/CardInfo/ShimmeringSkies/CardInfo_003_JA_05.cs
+  artifactKey: Guid(4d1c52df982f4794aa9891d3f366876c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/CardInfo/ShimmeringSkies/CardInfo_003_JA_05.cs using Guid(4d1c52df982f4794aa9891d3f366876c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14cf50a671d50e634944002afb240a43') in 0.001948 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 53.564185 seconds.
+  path: Assets/Script/CardInfo/ShimmeringSkies/CardInfo_019_JA_05.cs
+  artifactKey: Guid(9fbbd08489ad9aa429623858a415dc8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/CardInfo/ShimmeringSkies/CardInfo_019_JA_05.cs using Guid(9fbbd08489ad9aa429623858a415dc8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7e1d7360c0c69803fb7ac58357c977d') in 0.000615 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 69.058190 seconds.
+  path: Assets/Script/CardInfo/ShimmeringSkies/CardInfo_027_JA_05.cs
+  artifactKey: Guid(3e9c3d6002b0ee44a887766cd53488b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/CardInfo/ShimmeringSkies/CardInfo_027_JA_05.cs using Guid(3e9c3d6002b0ee44a887766cd53488b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '191e491dddd831ad76174964f09b821d') in 0.000488 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 46.572175 seconds.
+  path: Assets/Script/CardInfo/ShimmeringSkies/CardInfo_047_JA_05.cs
+  artifactKey: Guid(cb5c6c48edce9854aa3892fdb6de9797) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/CardInfo/ShimmeringSkies/CardInfo_047_JA_05.cs using Guid(cb5c6c48edce9854aa3892fdb6de9797) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e46fe1b48ed1c5a2499b2b8bbb9926de') in 0.000466 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 45.354520 seconds.
+  path: Assets/Script/CardInfo/ShimmeringSkies/CardInfo_050_JA_05.cs
+  artifactKey: Guid(adce9ecaccb560c4e8af56cfcb705476) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/CardInfo/ShimmeringSkies/CardInfo_050_JA_05.cs using Guid(adce9ecaccb560c4e8af56cfcb705476) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '139647af7c75a48a509d6a0bd896972f') in 0.000449 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 84.952474 seconds.
+  path: Assets/Script/CardInfo/ShimmeringSkies/CardInfo_084_JA_05.cs
+  artifactKey: Guid(e6d6ad1a2fbca8d4a98043d0149c14a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/CardInfo/ShimmeringSkies/CardInfo_084_JA_05.cs using Guid(e6d6ad1a2fbca8d4a98043d0149c14a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fd84a39a22d23e251014d10a9bfa088') in 0.000465 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 53.163729 seconds.
+  path: Assets/Script/CardInfo/ShimmeringSkies/CardInfo_093_JA_05.cs
+  artifactKey: Guid(44715948fc8943046aae16acbadc9b5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/CardInfo/ShimmeringSkies/CardInfo_093_JA_05.cs using Guid(44715948fc8943046aae16acbadc9b5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55d303dc23d05aa4ae7eea48268dabe9') in 0.000566 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 37.279590 seconds.
+  path: Assets/Script/CardInfo/ShimmeringSkies/CardInfo_096_JA_05.cs
+  artifactKey: Guid(a500114b298133b459de7c4760ce11fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/CardInfo/ShimmeringSkies/CardInfo_096_JA_05.cs using Guid(a500114b298133b459de7c4760ce11fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6102a6cf246ac26e067379fe84358e5e') in 0.000641 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
@@ -399,53 +327,53 @@ Received Prepare
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\matty\Unity\Lorcana\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\matty\Unity\Lorcana\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.515 seconds
-Refreshing native plugins compatible for Editor in 4.80 ms, found 5 plugins.
+- Loaded All Assemblies, in  0.547 seconds
+Refreshing native plugins compatible for Editor in 5.13 ms, found 5 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.673 seconds
-Domain Reload Profiling: 1185ms
-	BeginReloadAssembly (111ms)
+- Finished resetting the current domain, in  0.709 seconds
+Domain Reload Profiling: 1253ms
+	BeginReloadAssembly (122ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (10ms)
+		DisableScriptedObjects (8ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (26ms)
-	RebuildCommonClasses (20ms)
-	RebuildNativeTypeToScriptingClass (6ms)
-	initialDomainReloadingComplete (27ms)
-	LoadAllAssembliesAndSetupDomain (347ms)
-		LoadAssemblies (211ms)
+		CreateAndSetChildDomain (32ms)
+	RebuildCommonClasses (21ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (24ms)
+	LoadAllAssembliesAndSetupDomain (369ms)
+		LoadAssemblies (232ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (180ms)
-			TypeCache.Refresh (166ms)
-				TypeCache.ScanAssembly (160ms)
+		AnalyzeDomain (189ms)
+			TypeCache.Refresh (173ms)
+				TypeCache.ScanAssembly (167ms)
 			ScanForSourceGeneratedMonoScriptInfo (3ms)
-			ResolveRequiredComponents (11ms)
-	FinalizeReload (674ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (709ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (275ms)
+		SetupLoadedEditorAssemblies (295ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (26ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (51ms)
-			ProcessInitializeOnLoadAttributes (165ms)
-			ProcessInitializeOnLoadMethodAttributes (24ms)
+			BeforeProcessingInitializeOnLoad (68ms)
+			ProcessInitializeOnLoadAttributes (170ms)
+			ProcessInitializeOnLoadMethodAttributes (21ms)
 			AfterProcessingInitializeOnLoad (5ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (9ms)
-Refreshing native plugins compatible for Editor in 4.76 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 4.79 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5420 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 49 unused Assets / (221.8 KB). Loaded Objects now: 5894.
-Memory consumption went from 171.9 MB to 171.7 MB.
-Total: 2.418700 ms (FindLiveObjects: 0.250800 ms CreateObjectMapping: 0.141700 ms MarkObjects: 1.886600 ms  DeleteObjects: 0.138900 ms)
+Unloading 5565 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (222.1 KB). Loaded Objects now: 6039.
+Memory consumption went from 175.5 MB to 175.3 MB.
+Total: 2.503000 ms (FindLiveObjects: 0.264600 ms CreateObjectMapping: 0.154800 ms MarkObjects: 1.948000 ms  DeleteObjects: 0.135000 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -460,57 +388,145 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
+Received Import Request.
+  Time since last request: 139.233983 seconds.
+  path: Assets/Script/CardInfo/ShimmeringSkies/CardInfo_106_JA_05.cs
+  artifactKey: Guid(58d64e83b8c700b4896dcd2ac35a24cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/CardInfo/ShimmeringSkies/CardInfo_106_JA_05.cs using Guid(58d64e83b8c700b4896dcd2ac35a24cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b10a3d9b0fff45186a6c0ca4ab6e7e1') in 0.001687 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.075732 seconds.
+  path: Assets/Script/CardInfo/ShimmeringSkies/CardInfo_107_JA_05.cs
+  artifactKey: Guid(1026724aed9bb5e40b50636107008cb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/CardInfo/ShimmeringSkies/CardInfo_107_JA_05.cs using Guid(1026724aed9bb5e40b50636107008cb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73ba42becb404c0da8d9921cb55b5de5') in 0.000514 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 42.767554 seconds.
+  path: Assets/Script/CardInfo/ShimmeringSkies/CardInfo_118_JA_05.cs
+  artifactKey: Guid(da7419b464261574c9b1bab22cc0891f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/CardInfo/ShimmeringSkies/CardInfo_118_JA_05.cs using Guid(da7419b464261574c9b1bab22cc0891f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b4249498abf4ae7a199e64ae2a7768c') in 0.000564 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 53.157353 seconds.
+  path: Assets/Script/CardInfo/ShimmeringSkies/CardInfo_121_JA_05.cs
+  artifactKey: Guid(6231c57d846af764e94f89602199e144) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/CardInfo/ShimmeringSkies/CardInfo_121_JA_05.cs using Guid(6231c57d846af764e94f89602199e144) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6716d7fc58317addf148972a0504bee6') in 0.000484 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.543810 seconds.
+  path: Assets/Script/CardInfo/ShimmeringSkies/CardInfo_136_JA_05.cs
+  artifactKey: Guid(987904a16102d334596eae6b564a6bd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/CardInfo/ShimmeringSkies/CardInfo_136_JA_05.cs using Guid(987904a16102d334596eae6b564a6bd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11b9e4425542cf30238aeecfe26e6ad1') in 0.000434 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 48.415485 seconds.
+  path: Assets/Script/CardInfo/ShimmeringSkies/CardInfo_150_JA_05.cs
+  artifactKey: Guid(77f9e3fb28a9f1247b9a8d9be7750c5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/CardInfo/ShimmeringSkies/CardInfo_150_JA_05.cs using Guid(77f9e3fb28a9f1247b9a8d9be7750c5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0969a0a8344f6270481f8d670406450') in 0.000460 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 37.672389 seconds.
+  path: Assets/Script/CardInfo/ShimmeringSkies/CardInfo_154_JA_05.cs
+  artifactKey: Guid(69030bb93d9379f4f86ee8f8fcb8121a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/CardInfo/ShimmeringSkies/CardInfo_154_JA_05.cs using Guid(69030bb93d9379f4f86ee8f8fcb8121a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcd301abbb19380a53d7832edb2061e1') in 0.000519 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 42.475514 seconds.
+  path: Assets/Script/CardInfo/ShimmeringSkies/CardInfo_161_JA_05.cs
+  artifactKey: Guid(b79f5ee19007a484a92d014059832283) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/CardInfo/ShimmeringSkies/CardInfo_161_JA_05.cs using Guid(b79f5ee19007a484a92d014059832283) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c05bbf8f375b8c79ae53becd922f3fbb') in 0.000682 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 88.342606 seconds.
+  path: Assets/Script/CardInfo/ShimmeringSkies/CardInfo_183_JA_05.cs
+  artifactKey: Guid(aebe9312292051544ac7a1dc934b799e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/CardInfo/ShimmeringSkies/CardInfo_183_JA_05.cs using Guid(aebe9312292051544ac7a1dc934b799e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f5e173d762931071224bebcfb5caf86') in 0.000541 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 73.751342 seconds.
+  path: Assets/Script/CardInfo/ShimmeringSkies/CardInfo_194_JA_05.cs
+  artifactKey: Guid(2a60341af8860df4f8884d2d71483ce6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/CardInfo/ShimmeringSkies/CardInfo_194_JA_05.cs using Guid(2a60341af8860df4f8884d2d71483ce6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78f1c6acc2246447eb75025ec0fcc689') in 0.000492 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 38.220644 seconds.
+  path: Assets/Script/CardInfo/ShimmeringSkies/CardInfo_203_JA_05.cs
+  artifactKey: Guid(794f45d3805a3fe4790b6c084d20a834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/CardInfo/ShimmeringSkies/CardInfo_203_JA_05.cs using Guid(794f45d3805a3fe4790b6c084d20a834) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f28ad01f0625e1cc9c0ad3345b68fa16') in 0.000526 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\matty\Unity\Lorcana\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\matty\Unity\Lorcana\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.732 seconds
-Refreshing native plugins compatible for Editor in 4.52 ms, found 5 plugins.
+- Loaded All Assemblies, in  0.577 seconds
+Refreshing native plugins compatible for Editor in 5.08 ms, found 5 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.807 seconds
-Domain Reload Profiling: 1536ms
-	BeginReloadAssembly (188ms)
+- Finished resetting the current domain, in  0.749 seconds
+Domain Reload Profiling: 1324ms
+	BeginReloadAssembly (129ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (15ms)
+		DisableScriptedObjects (7ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (73ms)
+		CreateAndSetChildDomain (35ms)
 	RebuildCommonClasses (23ms)
-	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (27ms)
-	LoadAllAssembliesAndSetupDomain (483ms)
-		LoadAssemblies (324ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (26ms)
+	LoadAllAssembliesAndSetupDomain (388ms)
+		LoadAssemblies (247ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (220ms)
-			TypeCache.Refresh (204ms)
-				TypeCache.ScanAssembly (189ms)
-			ScanForSourceGeneratedMonoScriptInfo (5ms)
-			ResolveRequiredComponents (12ms)
-	FinalizeReload (808ms)
+		AnalyzeDomain (193ms)
+			TypeCache.Refresh (177ms)
+				TypeCache.ScanAssembly (169ms)
+			ScanForSourceGeneratedMonoScriptInfo (3ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (750ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (311ms)
+		SetupLoadedEditorAssemblies (307ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (29ms)
-			SetLoadedEditorAssemblies (4ms)
+			InitializePlatformSupportModulesInManaged (31ms)
+			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (55ms)
-			ProcessInitializeOnLoadAttributes (196ms)
-			ProcessInitializeOnLoadMethodAttributes (21ms)
+			BeforeProcessingInitializeOnLoad (67ms)
+			ProcessInitializeOnLoadAttributes (180ms)
+			ProcessInitializeOnLoadMethodAttributes (19ms)
 			AfterProcessingInitializeOnLoad (6ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (10ms)
-Refreshing native plugins compatible for Editor in 4.62 ms, found 5 plugins.
+		AwakeInstancesAfterBackupRestoration (9ms)
+Refreshing native plugins compatible for Editor in 6.55 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 5455 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 49 unused Assets / (221.4 KB). Loaded Objects now: 5933.
-Memory consumption went from 172.8 MB to 172.6 MB.
-Total: 3.173800 ms (FindLiveObjects: 0.309300 ms CreateObjectMapping: 0.190500 ms MarkObjects: 2.527500 ms  DeleteObjects: 0.146000 ms)
+Unloading 5574 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 49 unused Assets / (221.2 KB). Loaded Objects now: 6053.
+Memory consumption went from 175.6 MB to 175.4 MB.
+Total: 3.018300 ms (FindLiveObjects: 0.294600 ms CreateObjectMapping: 0.184300 ms MarkObjects: 2.362100 ms  DeleteObjects: 0.176600 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
