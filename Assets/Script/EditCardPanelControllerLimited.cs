@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class EditCardPanelControllerLimited : UIBehaviour, IInfiniteScrollSetup
 {
     [SerializeField] private EditCardPanelManager m_EditCardPanelManager;
-    [SerializeField, Range(1, 999)]
+    [SerializeField, Range(1, 9999)]
     private int max = 30;
 
     public void OnPostSetupItems()

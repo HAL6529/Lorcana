@@ -14,7 +14,7 @@ public class CardInfo_108_JA_04 : CardInfo
         this.power = 3;
         this.toughness = 3;
         this.lore = 1;
-        this.illustrator = EnumController.Illustrator.AntoineCouttolenc;
+        this.illustrator = EnumController.Illustrator.AntoneCouttolenc;
         this.classList = new List<EnumController.Class>() { EnumController.Class.StoryBorn, EnumController.Class.Hero, EnumController.Class.Prince };
         this.color = new List<EnumController.Colors> { EnumController.Colors.Ruby };
         this.keywordAvility = new List<EnumController.KeywordAvility> { EnumController.KeywordAvility.Rush };
