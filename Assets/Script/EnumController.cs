@@ -31,6 +31,7 @@ public class EnumController
         Princess, //プリンセス
         Puppy, //子犬
         Queen, //女王
+        Racer, //レーサー
         SevenDwarfs, //7人の小人
         StoryBorn, //ストーリーボーン
         Sorcerer, //魔法使い
@@ -56,6 +57,7 @@ public class EnumController
         RiseOfTheFloodBorn,
         IntoTheInkLands,
         UrsulasReturn,
+        ShimmeringSkies,
     }
 
     public enum KeywordAvility
@@ -78,6 +80,7 @@ public class EnumController
         Singer3, //歌声3
         Singer4, //歌声4
         Singer5, //歌声5
+        Singer6, //歌声6
         Singer7, //歌声7
         Singer9, //歌声9
         SingTogether6, //合唱6
@@ -109,6 +112,7 @@ public class EnumController
         AliceInWonderland, //不思議の国のアリス
         AtlantisTheLostEmpire, //アトランティス 失われた帝国
         BeautyAndTheBeast, //美女と野獣
+        BrotherBear, //ブラザー・ベア
         Cinderella, //シンデレラ
         DuckTales, //ダックテイル
         Encanto, //ミラベルと魔法だらけの家
@@ -192,17 +196,20 @@ public class EnumController
         AndreaParisi, //Andrea Parisi
         AndreasRocha, //Andreas Rocha
         AndreyChumak, //Andrey Chumak
+        AndrewParisi, //Andrew Parisi
         AndrewPena, //Andrew Pena
         AndrewTrabbold, //Andrew Trabbold
+        AndyEstradaAndStefanoZanchi, //Andy Estrada / Stefano Zanchi
         AngelinaSpikeRicardo, //Angelina Spike Ricardo
         AngieSimpson, //Angie Simpson
         AnhDang, //Anh Dang
         AnnaRudAndAnnnaStosik, //Anna Rud / Annna Stosik
         AnnaRudAndLivioCacciatore, //Anna Rud / Livio Cacciatore
         AnnaStosik, //Anna Stosik
-        AntoineCouttolenc, //Antoine Couttolenc
-        AntoniaFlechsig, //AntoniaFlechsig
-        AriannaRea, //AriannaRea
+        AntoneCouttolenc, //Antone Couttolenc
+        AntoniaFlechsig, //Antonia Flechsig
+        AriannaRea, //Arianna Rea
+        ArisZentelis, //Aris Zentelis
         AubreyArcher, //Aubrey Archer
         BeverlyArceAndJonathanLivslyst, //Beverly Arce / Jonathan Livslyst
         BrianKesinger, //Brian Kesinger
@@ -220,8 +227,11 @@ public class EnumController
         CarlosRuiz, //Carlos Ruiz
         CarminePucci, //Carmine Pucci
         CarminePucciAndLeonardoGiammichele, //Carmine Pucci / Leonardo Giammichele
+        CesarVergara, //Cesar Vergara
         CaseyRobin, //Casey Robin
         CecileCarreAndAnnaStosik, //Cecile Carre / Anna Stosik
+        CesarVergaraAndEriWelli, //Cesar Vergara / EriWelli
+        ChunxiMu, //Chunxi Mu
         ClioWolfensberger, //ClioWolfensberger
         ConnieKangAndJackieDroujiko, //Connie Kang / Jackie Droujiko
         Cookie, //Cookie
@@ -238,10 +248,12 @@ public class EnumController
         DevinYang, //DevinYang
         DiogoSaito, //Diogo Saito
         DonAguillo, //Don Aguillo
+        DouglasDeLaHoz, //Douglas DeLaHoz
         DustinPanzino, //Dustin Panzino
         DustinPanzinoAndLeonardoGiammichele, //Dustin Panzino / Leonardo Giammichele
         DuyenNguyenAndAubreyArcher, //Duyen Nguyen / Aubrey Archer
         DylanBonner, //Dylan Bonner
+        DylanBonnerAndCelesteJamneck, //Dylan Bonner / Celeste Jamneck
         E_MeleranciAndL_Giammichele, //E. Meleranci / L. Giammichele
         EllieHorie, //Ellie Horie
         EllieHorieAndJenniferPark, //Ellie Horie / Jennifer Park
@@ -261,6 +273,7 @@ public class EnumController
         EverGalvezAndAnnaStosik, //Ever Galvez / Anna Stosik
         FedericoMCugliari, //Federico M. Cugliari
         FilipeLaurentino, //Filipe Laurentino
+        FrancescoDippolitoAndGiuseppeDiMaio, //Francesco Dippolito / Giuseppe di Maio
         GabrielAngelo, //Gabriel Angelo
         GabrielRomero, //GabrielRomero
         GakuKumatori, //Gaku Kumatori
@@ -271,6 +284,7 @@ public class EnumController
         GraceTran, //Grace Tran
         GrzegorzKrysinski, //Grzegorz Krysinski
         HadjieJoos, //Hadjie Joos
+        HadjieJoosAndPixSmith, //Hadjie Joos / PixSmith
         HedvigHaggman_Sund, //Hadvig Haggman-Sund
         HeidiNeunhoffer, //Heidi Neunhoffer
         HedvigH_S, //Hedvig H-S
@@ -278,11 +292,13 @@ public class EnumController
         IanMacDonald, //Ian MacDonald
         IsabellaCeravolo, //IsabellaCeravolo
         IsaiahMesq, //Isaiah Mesq
-        JackieDroujiko, //Jackie Droujiko
+        IvanShavrin, //Ivan Shavrin
+        JackieDroujko, //Jackie Droujko
         JacobMcAlister, //Jacob McAlister
         JakeMurphy, //Jake Murphy
         JakeParker, //Jake Parker
         JamesCMulligan, //James C Mulligan
+        JamesReySanchez, //James Rey Sanchez
         JaredMathews, //Jared Mathews
         JaredNickerl, //JaredNickerl
         JaredNickerlAndAlexAccorsi, //Jared Nickerl / Alex Accorsi
@@ -296,6 +312,7 @@ public class EnumController
         JennaGray, //Jenna Gray
         JenniferGheduzziAndLivioCacciatore, //Jennifer Gheduzzi / Livio Cacciatore
         JenniferPark, //Jennifer Park
+        JenniferParkAndLivioCacciatore, //Jennifer Park / Livio Cacciatore
         JiahuiEvaGao, //Jiahui Eva Gao
         JimmyLo, //Jimmy Lo
         JoaoMoura, //Joao Moura
@@ -306,6 +323,7 @@ public class EnumController
         JonathanLiyslyst, //Jonathan Liyslyst
         JonDenskAndHayleyEvans, //Jon Densk / Hayley Evans
         JuanDiegoLeon, //Juan Diego Leon
+        JulienVandols, //Julien Vandols
         JulieVu, //Julie Vu
         JustinGerard, //Justin Gerard
         JustinRunfola, //Justin Runfola
@@ -324,6 +342,7 @@ public class EnumController
         KristinaChouriAndMarianaMoreno, //Kristina Chouri / Mariana Moreno
         KuyaJaypi, //Kuya Jaypi
         LadyShalirin, //LadyShalirin
+        LaurenBarger, //Lauren Barger
         LaurenLevering, //Lauren Levering
         LaurenWalsh, //Lauren Walsh
         LeonardoGiammichele, //LeonardoGiammichele
@@ -399,10 +418,12 @@ public class EnumController
         RobertoGatto, //Roberto Gatto
         RogerPerez, //Roger Perez
         RogerPerezAndHayleyEvans, //Roger Perez / Hayley Evans
+        RogerPerezAndLeonardoGiammichele, //Roger Perez / Leonardo Giammichele
         RogieCustodioAndErinShin, //Rogie Custodio / Erin Shin
         RonBaird, //Ron Baird
         RosaLaBarbera, //Rosa la Barbera
         RosaLaBarberaAndLeonardoGiammichele, //Rosa la Barbera / Leonardo Giammichele
+        RosaLaBarberaAndLivioCacciatore, //Rosa la Barbera / Livio Cacciatore
         RosaliaRadosti, //Rosalia Radosti
         RudyAndHill, //Rudy / Hill
         RudyHill, //Rudy Hill
@@ -423,6 +444,8 @@ public class EnumController
         StefanoZanchi, //Stefano Zanchi
         TaniaSoler, //TaniaSoler
         TanishaCherislin, //TanishaCherislin
+        ThereseVildefall, //Therese Vildefall
+        Taraneh, //Taraneh
         ValentinaGraziuso, //Valentina Graziuso
         ValentinPalombo, //Valentin Palombo
         ValerioBuonfantino, //Valerio Buonfantino

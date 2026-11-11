@@ -56,6 +56,8 @@ public class ExtendUtil
                 return "子犬";
             case EnumController.Class.Queen:
                 return "女王";
+            case EnumController.Class.Racer:
+                return "レーサー";
             case EnumController.Class.SevenDwarfs:
                 return "7人の小人";
             case EnumController.Class.StoryBorn:
@@ -85,6 +87,8 @@ public class ExtendUtil
                 return "Into the Inklands -インクランド探訪-";
             case EnumController.Expansion.UrsulasReturn:
                 return "Ursula's Return -逆襲のアースラ-";
+            case EnumController.Expansion.ShimmeringSkies:
+                return "Shimmering Skies -星々の輝き-";
             default:
                 return "";
         }
@@ -102,6 +106,8 @@ public class ExtendUtil
                 return "アトランティス 失われた帝国";
             case EnumController.Title.BeautyAndTheBeast:
                 return "美女と野獣";
+            case EnumController.Title.BrotherBear:
+                return "ブラザー・ベア";
             case EnumController.Title.Cinderella:
                 return "シンデレラ";
             case EnumController.Title.DuckTales:
@@ -1664,7 +1670,7 @@ public class ExtendUtil
             case "038_JA_04":
                 return new CardInfo_048_JA_04();
             case "039_JA_04":
-                return new CardInfo_049_JA_04();
+                return new CardInfo_039_JA_04();
             case "040_JA_04":
                 return new CardInfo_040_JA_04();
             case "041_JA_04":
