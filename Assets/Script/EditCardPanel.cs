@@ -73,6 +73,7 @@ public class EditCardPanel : MonoBehaviour
     public Sprite Lore2;
     public Sprite Lore3;
     public Sprite Lore4;
+    public Sprite Lore5;
 
     private const int parent_X = 890;
     private const int parent_Y = 305;
@@ -288,6 +289,10 @@ public class EditCardPanel : MonoBehaviour
             case 4:
                 i_lore.color = new Color(1, 1, 1, 1);
                 i_lore.sprite = Lore4;
+                return;
+            case 5:
+                i_lore.color = new Color(1, 1, 1, 1);
+                i_lore.sprite = Lore5;
                 return;
             default:
                 i_lore.color = new Color(1, 1, 1, 0);

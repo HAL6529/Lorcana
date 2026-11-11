@@ -1493,6 +1493,7 @@ MonoBehaviour:
   Lore2: {fileID: 21300000, guid: c061e38d9dfd07b48a78ed18b627dd5e, type: 3}
   Lore3: {fileID: 21300000, guid: 702d914d29ba3ec408504cdfe9998c6f, type: 3}
   Lore4: {fileID: 21300000, guid: 269b69eb13f48e54da833527f308758f, type: 3}
+  Lore5: {fileID: 21300000, guid: ee167949da4205844b2063e01b2d9c2a, type: 3}
 --- !u!1 &4985050498712867578
 GameObject:
   m_ObjectHideFlags: 0
