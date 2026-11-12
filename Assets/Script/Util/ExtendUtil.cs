@@ -32,6 +32,8 @@ public class ExtendUtil
                 return "ヒーロー";
             case EnumController.Class.Hunny:
                 return "ハニー";
+            case EnumController.Class.Illusion:
+                return "イリュージョン";
             case EnumController.Class.Hyena:
                 return "ハイエナ";
             case EnumController.Class.Inventor:
@@ -89,6 +91,8 @@ public class ExtendUtil
                 return "Ursula's Return -逆襲のアースラ-";
             case EnumController.Expansion.ShimmeringSkies:
                 return "Shimmering Skies -星々の輝き-";
+            case EnumController.Expansion.ArchaziasIsland:
+                return "Archazias Island -アーケイジアと魔法の島-";
             default:
                 return "";
         }
@@ -106,6 +110,8 @@ public class ExtendUtil
                 return "アトランティス 失われた帝国";
             case EnumController.Title.BeautyAndTheBeast:
                 return "美女と野獣";
+            case EnumController.Title.Bolt:
+                return "ボルト";
             case EnumController.Title.BrotherBear:
                 return "ブラザー・ベア";
             case EnumController.Title.Cinderella:
@@ -144,6 +150,8 @@ public class ExtendUtil
                 return "The Tale of a Mouse";
             case EnumController.Title.TreasurePlanet:
                 return "トレジャー・プラネット";
+            case EnumController.Title.LadyAndTheTramp:
+                return "わんわん物語";
             case EnumController.Title.LiloAndStitch:
                 return "リロ・アンド・スティッチ";
             case EnumController.Title.Lorcana:

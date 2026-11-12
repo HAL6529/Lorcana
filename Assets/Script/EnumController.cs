@@ -20,6 +20,7 @@ public class EnumController
         Hero, //ヒーロー
         Hunny, //ハニー
         Hyena, //ハイエナ
+        Illusion, //イリュージョン
         Inventor, //発明家
         King, //王様
         Knight, //騎士
@@ -58,6 +59,7 @@ public class EnumController
         IntoTheInkLands,
         UrsulasReturn,
         ShimmeringSkies,
+        ArchaziasIsland,
     }
 
     public enum KeywordAvility
@@ -69,6 +71,7 @@ public class EnumController
         Challenger4, //果敢+4
         Challenger7, //果敢+7
         Evasive, //回避
+        PuppyShift3, //子犬変身3
         Shift2, //変身2
         Shift3, //変身3
         Shift4, //変身4
@@ -95,6 +98,7 @@ public class EnumController
         Resist2, //耐久+2
         Resist3, //耐久+3
         Rush, //突進
+        Vanish, //霧消
         Ward, //魔除
 
     }
@@ -115,6 +119,7 @@ public class EnumController
         AliceInWonderland, //不思議の国のアリス
         AtlantisTheLostEmpire, //アトランティス 失われた帝国
         BeautyAndTheBeast, //美女と野獣
+        Bolt, //ボルト
         BrotherBear, //ブラザー・ベア
         Cinderella, //シンデレラ
         DuckTales, //ダックテイル
@@ -134,6 +139,7 @@ public class EnumController
         TheSwordInTheStone, //王様の剣
         TheTaleOfAMouse, //The Tale of a Mouse
         TreasurePlanet, //トレジャー・プラネット
+        LadyAndTheTramp, //わんわん物語
         LiloAndStitch, //リロ・アンド・スティッチ
         Lorcana, //ロルカナ
         MickeyMouse, //ミッキーマウス
@@ -224,7 +230,7 @@ public class EnumController
         BrynJones, //Bryn Jones
         BillRobinson, //Bill Robinson
         BillyWimblett, //Billy Wimblett
-        CaclieCarre, //Caclie Carre
+        CecileCarre, //Cecile Carre
         CamKendell, //Cam Kendell
         CanerSoylu, //CanerSoylu
         CarlosGomesCabral, //Carlos Gomes Cabral
@@ -282,6 +288,7 @@ public class EnumController
         FedericoMariaCugliari, //Federico Maria Cugliari
         FedericoMCugliari, //Federico M. Cugliari
         FilipeLaurentino, //Filipe Laurentino
+        FrancescoColucci, //Francesco Colucci
         FrancescoDippolitoAndGiuseppeDiMaio, //Francesco D'ippolito / Giuseppe di Maio
         FrenchCarlomagno, //French Carlomagno
         Gabe, //Gabe
@@ -338,7 +345,7 @@ public class EnumController
         JonDenskAndHayleyEvans, //Jon Densk / Hayley Evans
         JosepSole, //Josep Sole
         JuanDiegoLeon, //Juan Diego Leon
-        JulienVandols, //Julien Vandols
+        JulienVandois, //Julien Vandois
         JulieVu, //Julie Vu
         JustinGerard, //Justin Gerard
         JustinRunfola, //Justin Runfola
@@ -383,6 +390,7 @@ public class EnumController
         MarcelBerg, //Marcel Berg
         MaliaEwart, //Malia Ewart
         MarianaMoreno, //Mariana Moreno
+        MarioManzanares, //Mario Manzanares
         MarioOscarGabriele, //Mario Oscar Gabriele
         MassimilianoNarciso, //Massimiliano Narciso
         MassimilianoNarcisoAndMariekeFerrari, //Massimiliano Narciso / Marieke Ferrari
@@ -391,6 +399,7 @@ public class EnumController
         MatthewRobertDavies, //Matthew Robert Davies
         MarcoGiorgianni, //MarcoGiorgianni
         MarineJosephine, //MarineJosephine
+        MaxGrecke, //Max Grecke
         MaxineVee, //Maxine Vee
         MaxineVeeAndDavidNavarroArenas, //Maxine Vee / David Navarro Arenas
         MckayAnderson, //Mckay Anderson
@@ -412,6 +421,7 @@ public class EnumController
         NicholasKole, //NicholasKole
         NichorasKole, //NichorasKole
         NicolaSaviori, //Nicola Saviori
+        NicolaSavioriAndLivioCacciatore, //Nicola Saviori / Livio Cacciatore
         NicolaSavioriAndRaquelVillanueva, //Nicola Saviori / Raquel Villanueva
         NicolasKy, //Nicolas Ky
         NicolettaBaldari,//Nicoletta Baldari
@@ -457,6 +467,7 @@ public class EnumController
         SandraRios, //Sandra Rios
         SarahSchmidt, //Sarah Schmidt
         SauloNate, //Saulo Nate
+        SCG, //SCG
         ShannonHallstein, //Shannon Hallstein
         SimangalisoShibaya, //SimangalisoShibaya
         SimangalisoSibaya, //SimangalisoSibaya
