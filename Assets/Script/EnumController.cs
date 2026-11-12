@@ -33,6 +33,7 @@ public class EnumController
         Puppy, //子犬
         Queen, //女王
         Racer, //レーサー
+        Robot, //ロボット
         SevenDwarfs, //7人の小人
         StoryBorn, //ストーリーボーン
         Sorcerer, //魔法使い
@@ -77,6 +78,7 @@ public class EnumController
         Shift4, //変身4
         Shift5, //変身5
         Shift6, //変身6
+        Shift7, //変身7
         ShiftDiscardAnActionCard, //変身 ： アクション・カードを１枚捨てる
         ShiftDiscardAnCharacterCard, //変身:キャラクター・カードを１枚捨てる
         ShiftDiscardAnLocationCard, //変身:ロケーション・カードを１枚捨てる
@@ -119,6 +121,7 @@ public class EnumController
         AliceInWonderland, //不思議の国のアリス
         AtlantisTheLostEmpire, //アトランティス 失われた帝国
         BeautyAndTheBeast, //美女と野獣
+        BigHero6, //ベイマックス
         Bolt, //ボルト
         BrotherBear, //ブラザー・ベア
         Cinderella, //シンデレラ
@@ -129,6 +132,7 @@ public class EnumController
         Hercules, //ヘラクレス
         TaleSpin, //テイルスピン
         Tangled, //塔の上のラプンツェル
+        TheAristocats, //おしゃれキャット
         TheEmperorsNewGroove, //ラマになった王様
         TheGreatMouseDetective, //オリビアちゃんの大冒険
         TheJungleBook, //ジャングル・ブック
@@ -288,6 +292,7 @@ public class EnumController
         FedericoMariaCugliari, //Federico Maria Cugliari
         FedericoMCugliari, //Federico M. Cugliari
         FilipeLaurentino, //Filipe Laurentino
+        FlorenciaVazquez, //Florencia Vazquez
         FrancescoColucci, //Francesco Colucci
         FrancescoDippolitoAndGiuseppeDiMaio, //Francesco D'ippolito / Giuseppe di Maio
         FrenchCarlomagno, //French Carlomagno
@@ -296,6 +301,7 @@ public class EnumController
         GabrielQuinn, //Gabriel Quinn
         GabrielRomero, //GabrielRomero
         GakuKumatori, //Gaku Kumatori
+        GeoffreyBoudout, //Geoffrey Boudout
         GianlucaBarone, //Gianluca Barone
         GiuliaRiva, //Giulia Riva
         GiuseppeDiMaio, //Giuseppe di Maio
@@ -337,6 +343,7 @@ public class EnumController
         JiahuiEvaGao, //Jiahui Eva Gao
         JimmyLo, //Jimmy Lo
         JoaoMoura, //Joao Moura
+        JocelynSepulveda, //Jocelyn Sepulveda
         JochemVanGool, //Jochem van Gool
         JohnLoren, //John Loren
         JohnLorenAndNicholasKole, //John Loren / Nicholas Kole
@@ -466,11 +473,14 @@ public class EnumController
         SandaraTang, //Sandara Tang
         SandraRios, //Sandra Rios
         SarahSchmidt, //Sarah Schmidt
+        SaraLeal_Loyal, //Sara Leal(Loyal)
         SauloNate, //Saulo Nate
         SCG, //SCG
+        SerenaWade, //Serena Wade
         ShannonHallstein, //Shannon Hallstein
         SimangalisoShibaya, //SimangalisoShibaya
         SimangalisoSibaya, //SimangalisoSibaya
+        SimangalisoSibayaAndMarioManzanares, //Simangaliso Sibaya / Mario Manzanares
         SimoneBuonfantino, //Simone Buonfantino
         StefanoSpagnuolo, //Stefano Spagnuolo
         StefanoZanchi, //Stefano Zanchi
@@ -479,6 +489,7 @@ public class EnumController
         ThereseVildefall, //Therese Vildefall
         Taraneh, //Taraneh
         ToniBruno, //Toni Bruno
+        TonyBancroftAndLindsayWeyman, //Tony Bancroft / Lindsay Weyman
         ValentinaGraziuso, //Valentina Graziuso
         ValentinPalombo, //Valentin Palombo
         ValerioBuonfantino, //Valerio Buonfantino

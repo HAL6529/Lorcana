@@ -60,6 +60,8 @@ public class ExtendUtil
                 return "女王";
             case EnumController.Class.Racer:
                 return "レーサー";
+            case EnumController.Class.Robot:
+                return "ロボット";
             case EnumController.Class.SevenDwarfs:
                 return "7人の小人";
             case EnumController.Class.StoryBorn:
@@ -110,6 +112,8 @@ public class ExtendUtil
                 return "アトランティス 失われた帝国";
             case EnumController.Title.BeautyAndTheBeast:
                 return "美女と野獣";
+            case EnumController.Title.BigHero6:
+                return "ベイマックス";
             case EnumController.Title.Bolt:
                 return "ボルト";
             case EnumController.Title.BrotherBear:
@@ -130,6 +134,8 @@ public class ExtendUtil
                 return "テイルスピン";
             case EnumController.Title.Tangled:
                 return "塔の上のラプンツェル";
+            case EnumController.Title.TheAristocats:
+                return "おしゃれキャット";
             case EnumController.Title.TheEmperorsNewGroove:
                 return "ラマになった王様";
             case EnumController.Title.TheGreatMouseDetective:
