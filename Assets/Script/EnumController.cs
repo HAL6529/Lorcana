@@ -100,6 +100,7 @@ public class EnumController
         Resist2, //ëœãv+2
         Resist3, //ëœãv+3
         Rush, //ìÀêi
+        UniversalShift4, //ÇæÇÍÇ≈Ç‡ïœêg4
         Vanish, //ñ∂è¡
         Ward, //ñÇèú
 
@@ -204,6 +205,7 @@ public class EnumController
         AlibethZermeno, //Alibeth Zermeno
         AlicePisoni, //Alice Pisoni
         AlicePisoniAndWhitneyPollett, //Alice Pisoni / Whitney Pollett
+        AmandaMacFarlane, //Amanda Mac Farlane
         AmberKommavongsa, //Amber Kommavongsa
         AndersonMahanski, //Anderson Mahanski
         AndreaFemerstrand, //Andrea Femerstrand
@@ -214,6 +216,7 @@ public class EnumController
         AndrewPena, //Andrew Pena
         AndrewThompson, //Andrew Thompson
         AndrewTrabbold, //Andrew Trabbold
+        AndyEstradaAndGregShrader, //Andy Estrada / Greg Shrader
         AndyEstradaAndStefanoZanchi, //Andy Estrada / Stefano Zanchi
         AngelinaSpikeRicardo, //Angelina Spike Ricardo
         AngieSimpson, //Angie Simpson
@@ -221,6 +224,7 @@ public class EnumController
         AnnaRudAndAnnnaStosik, //Anna Rud / Annna Stosik
         AnnaRudAndLivioCacciatore, //Anna Rud / Livio Cacciatore
         AnnaStosik, //Anna Stosik
+        AntoineCouttolencAndSamantaErdini, //Antoine Couttolenc / Samanta Erdini
         AntoneCouttolenc, //Antone Couttolenc
         AntoniaFlechsig, //Antonia Flechsig
         AriannaRea, //Arianna Rea
@@ -366,6 +370,7 @@ public class EnumController
         KendallHaleAndAnhDang, //Kendall Hale / Anh Dang
         KennethAnderson, //Kenneth Anderson
         KevinHong, //Kevin Hong
+        KevinSidharta, //Kevin Sidharta
         KierstenHale, //Kiersten Hale
         Koni, //Koni
         KristinaChori, //KristinaChori
@@ -377,6 +382,7 @@ public class EnumController
         LaurenWalsh, //Lauren Walsh
         LavaHijzelaarAndEllieHorie, //Lava Hijzelaar / Ellie Horie
         LeonardoGiammichele, //LeonardoGiammichele
+        LeviRogers, //Levi Rogers
         LinhDang, //Linh Dang
         LisanneKoeteeuw, //Lisanne Koeteeuw
         LisaParfenova, //Lisa Parfenova
@@ -409,6 +415,7 @@ public class EnumController
         MaxGrecke, //Max Grecke
         MaxineVee, //Maxine Vee
         MaxineVeeAndDavidNavarroArenas, //Maxine Vee / David Navarro Arenas
+        MaxUlichney, //Max Ulichney
         MckayAnderson, //Mckay Anderson
         MelMilton, //MelMilton
         MGiuliaRiva, //MGiulia Riva
@@ -477,6 +484,7 @@ public class EnumController
         SauloNate, //Saulo Nate
         SCG, //SCG
         SerenaWade, //Serena Wade
+        SergioMancinelli, //Sergio Mancinelli
         ShannonHallstein, //Shannon Hallstein
         SimangalisoShibaya, //SimangalisoShibaya
         SimangalisoSibaya, //SimangalisoSibaya
@@ -488,6 +496,8 @@ public class EnumController
         TanishaCherislin, //TanishaCherislin
         ThereseVildefall, //Therese Vildefall
         Taraneh, //Taraneh
+        TeresitaQAndSCG, //Teresita Q. / SCG
+        TomBancroft, //Tom Bancroft
         ToniBruno, //Toni Bruno
         TonyBancroftAndLindsayWeyman, //Tony Bancroft / Lindsay Weyman
         ValentinaGraziuso, //Valentina Graziuso
