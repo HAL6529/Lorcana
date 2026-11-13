@@ -6,7 +6,7 @@ public class CardInfo_206_JA_05 : CardInfo
 {
     public CardInfo_206_JA_05()
     {
-        this.cardNo = "017_JA_05";
+        this.cardNo = "206_JA_05";
         this.inkCost = 4;
         this.availableInk = true;
         this.cardName1 = "ヴァネロペ・フォン・シュウィーツ";
