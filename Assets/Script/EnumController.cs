@@ -230,10 +230,12 @@ public class EnumController
         AriannaRea, //Arianna Rea
         ArisZentelis, //Aris Zentelis
         AubreyArcher, //Aubrey Archer
+        BeatriceBlue, //Beatrice Blue
         BeverlyArceAndJonathanLivslyst, //Beverly Arce / Jonathan Livslyst
         BrianKesinger, //Brian Kesinger
         BriannaGarcia, //Brianna Garcia
         BrianWeisz, //Brian Weisz
+        BrieSchmida, //Brie Schmida
         BrittneyHackett, //Brittney Hackett
         BrynJones, //Bryn Jones
         BillRobinson, //Bill Robinson
@@ -246,6 +248,7 @@ public class EnumController
         CarlosRuiz, //Carlos Ruiz
         CarminePucci, //Carmine Pucci
         CarminePucciAndLeonardoGiammichele, //Carmine Pucci / Leonardo Giammichele
+        CelesteJamneck, //Celeste Jamneck
         CesarVergara, //Cesar Vergara
         CaseyRobin, //Casey Robin
         CecileCarreAndAnnaStosik, //Cecile Carre / Anna Stosik
@@ -342,6 +345,7 @@ public class EnumController
         JennaGray, //Jenna Gray
         JenniferGheduzziAndLivioCacciatore, //Jennifer Gheduzzi / Livio Cacciatore
         JenniferPark, //Jennifer Park
+        JenniferParkAndLeonardoGiammichele, //Jennifer Park / Leonardo Giammichele
         JenniferParkAndLivioCacciatore, //Jennifer Park / Livio Cacciatore
         JenniferWu, //Jennifer Wu
         JiahuiEvaGao, //Jiahui Eva Gao
@@ -377,6 +381,7 @@ public class EnumController
         KristinaChouriAndMarianaMoreno, //Kristina Chouri / Mariana Moreno
         KuyaJaypi, //Kuya Jaypi
         LadyShalirin, //LadyShalirin
+        LauraPauselli, //Laura Pauselli
         LaurenBarger, //Lauren Barger
         LaurenLevering, //Lauren Levering
         LaurenWalsh, //Lauren Walsh
@@ -411,6 +416,7 @@ public class EnumController
         MatthewOates, //Matthew Oates
         MatthewRobertDavies, //Matthew Robert Davies
         MarcoGiorgianni, //MarcoGiorgianni
+        MariaZafrilla, //Maria Zafrilla
         MarineJosephine, //MarineJosephine
         MaxGrecke, //Max Grecke
         MaxineVee, //Maxine Vee
@@ -452,12 +458,14 @@ public class EnumController
         PhilippKruse, //PhilippKruse
         Pirel, //Pirel
         PirelAndMarcoGiorgianni, //Pirel / MarcoGiorgianni
+        PixSmith, //Pix Smith
         R_laBarberaAndL_Giammichele, //R. la Barbera / L. Giammichele
         RachelElese, //RachelElese
         RandyBishop, //Randy Bishop
         RaquelVillanueva, //Raquel Villanueva
         RiantiHidayat, //RiantiHidayat
         RiantiHidayatAndAlicePisoni, //Rianti Hidayat / Alice Pisoni
+        RicardoCaria, //Ricardo Caria
         RichelleCanto, //Richelle Canto
         RobDiSalvo, //Rob Di Salvo
         RobertoGatto, //Roberto Gatto
@@ -477,6 +485,7 @@ public class EnumController
         S_ShawAndL_Giammichele, //S.Shaw / L.Giammichele
         SamantaErdini, //Samanta Erdini
         SamNielson, //Sam Nielson
+        Samoldstoree, //Samoldstoree
         SandaraTang, //Sandara Tang
         SandraRios, //Sandra Rios
         SarahSchmidt, //Sarah Schmidt
@@ -508,8 +517,10 @@ public class EnumController
         WietseTreurniet, //Wietse Treurniet
         WouterBruneel, //Wouter Bruneel
         VanessaMorales, //Vanessa Morales
-        VictorYanoCovarrubias, //Victor "Yano" Covarrubias
+        YanoAndMilicaCelikovic, //"Yano" / Milica Celikovic
         YariLute, //Yari Lute
+        VictorYanoCovarrubias, //Victor "Yano" Covarrubias
+        VivTanner, //Viv Tanner
         YeYangAndRaquelVillanueva, //Ye Yang / Raquel Villanueva
         YuNguyen, //Yu Nguyen
         ZuzanaSokolovaAndLivioCacciatore, //Zuzana Sokolova / Livio Cacciatore
