@@ -21,6 +21,7 @@ public class EditCardPanel : MonoBehaviour
     public Text power;
     public Text toughness;
     public Text count;
+    public Text t_lore;
     public Image rareSprite;
     public Image i_lore;
     public CardInfo m_CardInfo;
@@ -55,6 +56,7 @@ public class EditCardPanel : MonoBehaviour
     public RectTransform space2;
     public RectTransform lores;
     public RectTransform lores_lore;
+    public RectTransform lores_lore_text;
     public RectTransform rareHeader;
     public RectTransform rareHeader_rare;
     public RectTransform plusMinusHeader;
@@ -69,11 +71,7 @@ public class EditCardPanel : MonoBehaviour
     public PanelPicture m_PanelPicture;
     public RectTransform CanvasRectTransform;
 
-    public Sprite Lore1;
-    public Sprite Lore2;
-    public Sprite Lore3;
-    public Sprite Lore4;
-    public Sprite Lore5;
+    public Sprite Lore;
 
     private const int parent_X = 890;
     private const int parent_Y = 305;
@@ -272,31 +270,18 @@ public class EditCardPanel : MonoBehaviour
 
     private void UpdateLore()
     {
-        switch (m_CardInfo.GetLore())
+        int cnt = m_CardInfo.GetLore();
+        if (cnt > 0)
         {
-            case 1:
-                i_lore.color = new Color(1, 1, 1, 1);
-                i_lore.sprite = Lore1;
-                return;
-            case 2:
-                i_lore.color = new Color(1, 1, 1, 1);
-                i_lore.sprite = Lore2;
-                return;
-            case 3:
-                i_lore.color = new Color(1, 1, 1, 1);
-                i_lore.sprite = Lore3;
-                return;
-            case 4:
-                i_lore.color = new Color(1, 1, 1, 1);
-                i_lore.sprite = Lore4;
-                return;
-            case 5:
-                i_lore.color = new Color(1, 1, 1, 1);
-                i_lore.sprite = Lore5;
-                return;
-            default:
-                i_lore.color = new Color(1, 1, 1, 0);
-                return;
+            i_lore.color = new Color(1, 1, 1, 220f / 255f);
+            i_lore.sprite = Lore;
+            t_lore.text = cnt.ToString();
+        }
+        else
+        {
+            i_lore.color = new Color(1, 1, 1, 0);
+            i_lore.sprite = null;
+            t_lore.text = "";
         }
     }
 
@@ -476,6 +461,7 @@ public class EditCardPanel : MonoBehaviour
         image.sizeDelta = new Vector2(image_X * magnification, image_Y * magnification);
         rareHeader_rare.sizeDelta = new Vector2(rareHeader_rare_X * magnification, rareHeader_rare_Y * magnification);
         lores_lore.sizeDelta = new Vector2(lores_lore_X * magnification, lores_lore_Y * magnification);
+        lores_lore_text.sizeDelta = new Vector2(lores_lore_X * magnification, lores_lore_Y * magnification);
 
         Vector2 left_position = new Vector2(0, 1);
         image_parent.anchorMin = left_position;
