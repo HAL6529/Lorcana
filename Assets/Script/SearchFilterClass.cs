@@ -27,6 +27,15 @@ public class SearchFilterClass
     public bool r_legendary;
     public bool r_enchanted;
 
+    public int inkcost_lowerlimit;
+    public int inkcost_upperlimit;
+    public int power_lowerlimit;
+    public int power_upperlimit;
+    public int toughness_lowerlimit;
+    public int toughness_upperlimit;
+    public int lores_lowerlimit;
+    public int lores_upperlimit;
+
     public bool isBodyGuard;
     public bool isChallenger;
     public bool isEvasive;
@@ -63,6 +72,15 @@ public class SearchFilterClass
         r_superrare = true;
         r_legendary = true;
         r_enchanted = true;
+
+        inkcost_lowerlimit = 0;
+        inkcost_upperlimit = 12;
+        power_lowerlimit = 0;
+        power_upperlimit = 12;
+        toughness_lowerlimit = 0;
+        toughness_upperlimit = 12;
+        lores_lowerlimit = 0;
+        lores_upperlimit = 5;
 
         isBodyGuard = false;
         isChallenger = false;
@@ -199,6 +217,70 @@ public class SearchFilterClass
         }
 
         if (!rarityJudge)
+        {
+            return false;
+        }
+
+        bool inkcostJudge = false;
+        int inkcost = m_CardInfo.GetInkCost();
+        if (inkcost_lowerlimit == 0 && inkcost_upperlimit == 12)
+        {
+            inkcostJudge = true;
+        }
+        if (inkcost >= inkcost_lowerlimit && inkcost_upperlimit >= inkcost)
+        {
+            inkcostJudge = true;
+        }
+
+        if (!inkcostJudge)
+        {
+            return false;
+        }
+
+        bool powerJudge = false;
+        int power = m_CardInfo.GetPower();
+        if (power_lowerlimit == 0 && power_upperlimit == 12)
+        {
+            powerJudge = true;
+        }
+        if (power >= power_lowerlimit && power_upperlimit >= power)
+        {
+            powerJudge = true;
+        }
+
+        if (!powerJudge)
+        {
+            return false;
+        }
+
+        bool toughnessJudge = false;
+        int toughness = m_CardInfo.GetToughness();
+        if (toughness_lowerlimit == 0 && toughness_upperlimit == 12)
+        {
+            toughnessJudge = true;
+        }
+        if (toughness >= toughness_lowerlimit && toughness_upperlimit >= toughness)
+        {
+            toughnessJudge = true;
+        }
+
+        if (!toughnessJudge)
+        {
+            return false;
+        }
+
+        bool loresJudge = false;
+        int lores = m_CardInfo.GetLore();
+        if(lores_lowerlimit == 0 && lores_upperlimit == 5)
+        {
+            loresJudge = true;
+        }
+        if (lores >= lores_lowerlimit && lores_upperlimit >= lores)
+        {
+            loresJudge = true;
+        }
+
+        if (!loresJudge)
         {
             return false;
         }

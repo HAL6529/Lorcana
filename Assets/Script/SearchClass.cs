@@ -179,6 +179,50 @@ public class SearchClass : MonoBehaviour
     public RectTransform keyword_header_right_ward_text;
     public RectTransform keyword_header_right_null;
     public RectTransform space4;
+    public RectTransform inkcostExplanation_header;
+    public RectTransform inkcostExplanation_header_text;
+    public RectTransform inkcost_header;
+    public RectTransform inkcost_header_space;
+    public RectTransform inkcost_header_lowerLimitText;
+    public RectTransform inkcost_header_lowerDropdown;
+    public RectTransform inkcost_header_space2;
+    public RectTransform inkcost_header_upperLimitText;
+    public RectTransform inkcost_header_upperDropdown;
+    public RectTransform inkcost_header_space3;
+    public RectTransform space5;
+    public RectTransform powerExplanation_header;
+    public RectTransform powerExplanation_header_text;
+    public RectTransform power_header;
+    public RectTransform power_header_space;
+    public RectTransform power_header_lowerLimitText;
+    public RectTransform power_header_lowerDropdown;
+    public RectTransform power_header_space2;
+    public RectTransform power_header_upperLimitText;
+    public RectTransform power_header_upperDropdown;
+    public RectTransform power_header_space3;
+    public RectTransform space6;
+    public RectTransform toughnessExplanation_header;
+    public RectTransform toughnessExplanation_header_text;
+    public RectTransform toughness_header;
+    public RectTransform toughness_header_space;
+    public RectTransform toughness_header_lowerLimitText;
+    public RectTransform toughness_header_lowerDropdown;
+    public RectTransform toughness_header_space2;
+    public RectTransform toughness_header_upperLimitText;
+    public RectTransform toughness_header_upperDropdown;
+    public RectTransform toughness_header_space3;
+    public RectTransform space7;
+    public RectTransform loresExplanation_header;
+    public RectTransform loresExplanation_header_text;
+    public RectTransform lores_header;
+    public RectTransform lores_header_space;
+    public RectTransform lores_header_lowerLimitText;
+    public RectTransform lores_header_lowerDropdown;
+    public RectTransform lores_header_space2;
+    public RectTransform lores_header_upperLimitText;
+    public RectTransform lores_header_upperDropdown;
+    public RectTransform lores_header_space3;
+    public RectTransform space8;
     public RectTransform titleExplanation_header;
     public RectTransform titleExplanation_header_text1;
     public RectTransform titleExplanation_header_text2;
@@ -189,7 +233,7 @@ public class SearchClass : MonoBehaviour
     public RectTransform title_header_dropdown_Content_Item_ItemBackGround;
     public RectTransform title_header_dropdown_Content_Item_Checkmark;
     public RectTransform title_header_dropdown_Content_Item_Label;
-    public RectTransform space6;
+    public RectTransform space9;
     public RectTransform searchBtn_header;
     public RectTransform searchBtn;
     public RectTransform searchBtn_text;
@@ -200,7 +244,16 @@ public class SearchClass : MonoBehaviour
     public RectTransform searchReset_header_Button;
     public RectTransform searchReset_header_space;
 
+    public Dropdown m_InkLowerLimitDropdown;
+    public Dropdown m_InkUpperLimitDropdown;
+    public Dropdown m_PowerLowerLimitDropdown;
+    public Dropdown m_PowerUpperLimitDropdown;
+    public Dropdown m_ToughnessLowerLimitDropdown;
+    public Dropdown m_ToughnessUpperLimitDropdown;
+    public Dropdown m_LoresLowerLimitDropdown;
+    public Dropdown m_LoresUpperLimitDropdown;
     public Dropdown m_TitleDropdown;
+
     public Text t_TitleDropdown;
 
     public ExtendUtil m_ExtendUtil = new ExtendUtil();
@@ -564,6 +617,82 @@ public class SearchClass : MonoBehaviour
         }
     }
 
+    public void onInkCostChanged(string paramater)
+    {
+        switch (paramater)
+        {
+            case "Upper":
+                if(m_InkLowerLimitDropdown.value > m_InkUpperLimitDropdown.value)
+                {
+                    m_InkLowerLimitDropdown.value = m_InkUpperLimitDropdown.value;
+                }
+                return; ;
+            case "Lower":
+                if (m_InkLowerLimitDropdown.value > m_InkUpperLimitDropdown.value)
+                {
+                    m_InkUpperLimitDropdown.value = m_InkLowerLimitDropdown.value;
+                }
+                return; ;
+        }
+    }
+
+    public void onPowerChanged(string paramater)
+    {
+        switch (paramater)
+        {
+            case "Upper":
+                if (m_PowerLowerLimitDropdown.value > m_PowerUpperLimitDropdown.value)
+                {
+                    m_PowerLowerLimitDropdown.value = m_PowerUpperLimitDropdown.value;
+                }
+                return; ;
+            case "Lower":
+                if (m_PowerLowerLimitDropdown.value > m_PowerUpperLimitDropdown.value)
+                {
+                    m_PowerUpperLimitDropdown.value = m_PowerLowerLimitDropdown.value;
+                }
+                return; ;
+        }
+    }
+
+    public void onToughnessChanged(string paramater)
+    {
+        switch (paramater)
+        {
+            case "Upper":
+                if (m_ToughnessLowerLimitDropdown.value > m_ToughnessUpperLimitDropdown.value)
+                {
+                    m_ToughnessLowerLimitDropdown.value = m_ToughnessUpperLimitDropdown.value;
+                }
+                return; ;
+            case "Lower":
+                if (m_ToughnessLowerLimitDropdown.value > m_ToughnessUpperLimitDropdown.value)
+                {
+                    m_ToughnessUpperLimitDropdown.value = m_ToughnessLowerLimitDropdown.value;
+                }
+                return; ;
+        }
+    }
+
+    public void onLoresChanged(string paramater)
+    {
+        switch (paramater)
+        {
+            case "Upper":
+                if (m_LoresLowerLimitDropdown.value > m_LoresUpperLimitDropdown.value)
+                {
+                    m_LoresLowerLimitDropdown.value = m_LoresUpperLimitDropdown.value;
+                }
+                return; ;
+            case "Lower":
+                if (m_LoresLowerLimitDropdown.value > m_LoresUpperLimitDropdown.value)
+                {
+                    m_LoresUpperLimitDropdown.value = m_LoresLowerLimitDropdown.value;
+                }
+                return; ;
+        }
+    }
+
     public void onSearchBtn()
     {
         SearchFilterClass m_SearchFilterClass = new SearchFilterClass();
@@ -589,6 +718,15 @@ public class SearchClass : MonoBehaviour
         m_SearchFilterClass.r_superrare = r_superrare;
         m_SearchFilterClass.r_legendary = r_legendary;
         m_SearchFilterClass.r_enchanted = r_enchanted;
+
+        m_SearchFilterClass.inkcost_lowerlimit = m_InkLowerLimitDropdown.value;
+        m_SearchFilterClass.inkcost_upperlimit = m_InkUpperLimitDropdown.value;
+        m_SearchFilterClass.power_lowerlimit = m_PowerLowerLimitDropdown.value;
+        m_SearchFilterClass.power_upperlimit = m_PowerUpperLimitDropdown.value;
+        m_SearchFilterClass.toughness_lowerlimit = m_ToughnessLowerLimitDropdown.value;
+        m_SearchFilterClass.toughness_upperlimit = m_ToughnessUpperLimitDropdown.value;
+        m_SearchFilterClass.lores_lowerlimit = m_LoresLowerLimitDropdown.value;
+        m_SearchFilterClass.lores_upperlimit = m_LoresUpperLimitDropdown.value;
 
         m_SearchFilterClass.isBodyGuard = isBodyGuard;
         m_SearchFilterClass.isChallenger = isChallenger;
@@ -773,6 +911,14 @@ public class SearchClass : MonoBehaviour
         isWard = false;
         WardBtn.sprite = s_checkbtn_off;
 
+        m_InkLowerLimitDropdown.value = 0;
+        m_InkUpperLimitDropdown.value = 12;
+        m_PowerLowerLimitDropdown.value = 0;
+        m_PowerUpperLimitDropdown.value = 12;
+        m_ToughnessLowerLimitDropdown.value = 0;
+        m_ToughnessUpperLimitDropdown.value = 12;
+        m_LoresLowerLimitDropdown.value = 0;
+        m_LoresUpperLimitDropdown.value = 5;
         m_TitleDropdown.value = 0;
     }
 
@@ -853,7 +999,56 @@ public class SearchClass : MonoBehaviour
         keyword_header_right_ward_space.sizeDelta = new Vector2(keyword_header_right_ward_space.sizeDelta.x * magnification_x, keyword_header_right_ward_space.sizeDelta.y * magnification_y);
         keyword_header_right_ward_text.sizeDelta = new Vector2(keyword_header_right_ward_text.sizeDelta.x * magnification_x, keyword_header_right_ward_text.sizeDelta.y * magnification_y);
         keyword_header_right_null.sizeDelta = new Vector2(keyword_header_right_null.sizeDelta.x * magnification_x, keyword_header_right_null.sizeDelta.y * magnification_y);
+        
         space4.sizeDelta = new Vector2(space4.sizeDelta.x * magnification_x, space4.sizeDelta.y * magnification_y);
+        inkcostExplanation_header.sizeDelta = new Vector2(inkcostExplanation_header.sizeDelta.x * magnification_x, inkcostExplanation_header.sizeDelta.y * magnification_y);
+        inkcostExplanation_header_text.sizeDelta = new Vector2(inkcostExplanation_header_text.sizeDelta.x * magnification_x, inkcostExplanation_header_text.sizeDelta.y * magnification_y);
+        inkcost_header.sizeDelta = new Vector2(inkcost_header.sizeDelta.x * magnification_x, inkcost_header.sizeDelta.y * magnification_y);
+        inkcost_header_space.sizeDelta = new Vector2(inkcost_header_space.sizeDelta.x * magnification_x, inkcost_header_space.sizeDelta.y * magnification_y);
+        inkcost_header_lowerLimitText.sizeDelta = new Vector2(inkcost_header_lowerLimitText.sizeDelta.x * magnification_x, inkcost_header_lowerLimitText.sizeDelta.y * magnification_y);
+        inkcost_header_lowerDropdown.sizeDelta = new Vector2(inkcost_header_lowerDropdown.sizeDelta.x * magnification_x, inkcost_header_lowerDropdown.sizeDelta.y * magnification_y);
+        inkcost_header_space2.sizeDelta = new Vector2(inkcost_header_space2.sizeDelta.x * magnification_x, inkcost_header_space2.sizeDelta.y * magnification_y);
+        inkcost_header_upperLimitText.sizeDelta = new Vector2(inkcost_header_upperLimitText.sizeDelta.x * magnification_x, inkcost_header_upperLimitText.sizeDelta.y * magnification_y);
+        inkcost_header_upperDropdown.sizeDelta = new Vector2(inkcost_header_upperDropdown.sizeDelta.x * magnification_x, inkcost_header_upperDropdown.sizeDelta.y * magnification_y);
+        inkcost_header_space3.sizeDelta = new Vector2(inkcost_header_space3.sizeDelta.x * magnification_x, inkcost_header_space3.sizeDelta.y * magnification_y);
+        
+        space5.sizeDelta = new Vector2(space5.sizeDelta.x * magnification_x, space5.sizeDelta.y * magnification_y);
+        powerExplanation_header.sizeDelta = new Vector2(powerExplanation_header.sizeDelta.x * magnification_x, powerExplanation_header.sizeDelta.y * magnification_y);
+        powerExplanation_header_text.sizeDelta = new Vector2(powerExplanation_header_text.sizeDelta.x * magnification_x, powerExplanation_header_text.sizeDelta.y * magnification_y);
+        power_header.sizeDelta = new Vector2(power_header.sizeDelta.x * magnification_x, power_header.sizeDelta.y * magnification_y);
+        power_header_space.sizeDelta = new Vector2(power_header_space.sizeDelta.x * magnification_x, power_header_space.sizeDelta.y * magnification_y);
+        power_header_lowerLimitText.sizeDelta = new Vector2(power_header_lowerLimitText.sizeDelta.x * magnification_x, power_header_lowerLimitText.sizeDelta.y * magnification_y);
+        power_header_lowerDropdown.sizeDelta = new Vector2(power_header_lowerDropdown.sizeDelta.x * magnification_x, power_header_lowerDropdown.sizeDelta.y * magnification_y);
+        power_header_space2.sizeDelta = new Vector2(power_header_space2.sizeDelta.x * magnification_x, power_header_space2.sizeDelta.y * magnification_y);
+        power_header_upperLimitText.sizeDelta = new Vector2(power_header_upperLimitText.sizeDelta.x * magnification_x, power_header_upperLimitText.sizeDelta.y * magnification_y);
+        power_header_upperDropdown.sizeDelta = new Vector2(power_header_upperDropdown.sizeDelta.x * magnification_x, power_header_upperDropdown.sizeDelta.y * magnification_y);
+        power_header_space3.sizeDelta = new Vector2(power_header_space3.sizeDelta.x * magnification_x, power_header_space3.sizeDelta.y * magnification_y);
+
+        space6.sizeDelta = new Vector2(space6.sizeDelta.x * magnification_x, space6.sizeDelta.y * magnification_y);
+        toughnessExplanation_header.sizeDelta = new Vector2(toughnessExplanation_header.sizeDelta.x * magnification_x, toughnessExplanation_header.sizeDelta.y * magnification_y);
+        toughnessExplanation_header_text.sizeDelta = new Vector2(toughnessExplanation_header_text.sizeDelta.x * magnification_x, toughnessExplanation_header_text.sizeDelta.y * magnification_y);
+        toughness_header.sizeDelta = new Vector2(toughness_header.sizeDelta.x * magnification_x, toughness_header.sizeDelta.y * magnification_y);
+        toughness_header_space.sizeDelta = new Vector2(toughness_header_space.sizeDelta.x * magnification_x, toughness_header_space.sizeDelta.y * magnification_y);
+        toughness_header_lowerLimitText.sizeDelta = new Vector2(toughness_header_lowerLimitText.sizeDelta.x * magnification_x, toughness_header_lowerLimitText.sizeDelta.y * magnification_y);
+        toughness_header_lowerDropdown.sizeDelta = new Vector2(toughness_header_lowerDropdown.sizeDelta.x * magnification_x, toughness_header_lowerDropdown.sizeDelta.y * magnification_y);
+        toughness_header_space2.sizeDelta = new Vector2(toughness_header_space2.sizeDelta.x * magnification_x, toughness_header_space2.sizeDelta.y * magnification_y);
+        toughness_header_upperLimitText.sizeDelta = new Vector2(toughness_header_upperLimitText.sizeDelta.x * magnification_x, toughness_header_upperLimitText.sizeDelta.y * magnification_y);
+        toughness_header_upperDropdown.sizeDelta = new Vector2(toughness_header_upperDropdown.sizeDelta.x * magnification_x, toughness_header_upperDropdown.sizeDelta.y * magnification_y);
+        toughness_header_space3.sizeDelta = new Vector2(toughness_header_space3.sizeDelta.x * magnification_x, toughness_header_space3.sizeDelta.y * magnification_y);
+        
+        space7.sizeDelta = new Vector2(space7.sizeDelta.x * magnification_x, space7.sizeDelta.y * magnification_y);
+        loresExplanation_header.sizeDelta = new Vector2(loresExplanation_header.sizeDelta.x * magnification_x, loresExplanation_header.sizeDelta.y * magnification_y);
+        loresExplanation_header_text.sizeDelta = new Vector2(loresExplanation_header_text.sizeDelta.x * magnification_x, loresExplanation_header_text.sizeDelta.y * magnification_y);
+        lores_header.sizeDelta = new Vector2(lores_header.sizeDelta.x * magnification_x, lores_header.sizeDelta.y * magnification_y);
+        lores_header_space.sizeDelta = new Vector2(lores_header_space.sizeDelta.x * magnification_x, lores_header_space.sizeDelta.y * magnification_y);
+        lores_header_lowerLimitText.sizeDelta = new Vector2(lores_header_lowerLimitText.sizeDelta.x * magnification_x, lores_header_lowerLimitText.sizeDelta.y * magnification_y);
+        lores_header_lowerDropdown.sizeDelta = new Vector2(lores_header_lowerDropdown.sizeDelta.x * magnification_x, lores_header_lowerDropdown.sizeDelta.y * magnification_y);
+        lores_header_space2.sizeDelta = new Vector2(lores_header_space2.sizeDelta.x * magnification_x, lores_header_space2.sizeDelta.y * magnification_y);
+        lores_header_upperLimitText.sizeDelta = new Vector2(lores_header_upperLimitText.sizeDelta.x * magnification_x, lores_header_upperLimitText.sizeDelta.y * magnification_y);
+        lores_header_upperDropdown.sizeDelta = new Vector2(lores_header_upperDropdown.sizeDelta.x * magnification_x, lores_header_upperDropdown.sizeDelta.y * magnification_y);
+        lores_header_space3.sizeDelta = new Vector2(lores_header_space3.sizeDelta.x * magnification_x, lores_header_space3.sizeDelta.y * magnification_y);
+
+        space8.sizeDelta = new Vector2(space8.sizeDelta.x * magnification_x, space8.sizeDelta.y * magnification_y);
         titleExplanation_header.sizeDelta = new Vector2(titleExplanation_header.sizeDelta.x * magnification_x, titleExplanation_header.sizeDelta.y * magnification_y);
         titleExplanation_header_text1.sizeDelta = new Vector2(titleExplanation_header_text1.sizeDelta.x * magnification_x, titleExplanation_header_text1.sizeDelta.y * magnification_y);
         titleExplanation_header_text2.sizeDelta = new Vector2(titleExplanation_header_text2.sizeDelta.x * magnification_x, titleExplanation_header_text2.sizeDelta.y * magnification_y);
@@ -864,7 +1059,8 @@ public class SearchClass : MonoBehaviour
         title_header_dropdown_Content_Item_ItemBackGround.sizeDelta = new Vector2(title_header_dropdown_Content_Item_ItemBackGround.sizeDelta.x * magnification_x, title_header_dropdown_Content_Item_ItemBackGround.sizeDelta.y * magnification_y);
         title_header_dropdown_Content_Item_Checkmark.sizeDelta = new Vector2(title_header_dropdown_Content_Item_Checkmark.sizeDelta.x * magnification_x, title_header_dropdown_Content_Item_Checkmark.sizeDelta.y * magnification_y);
         title_header_dropdown_Content_Item_Label.sizeDelta = new Vector2(title_header_dropdown_Content_Item_Label.sizeDelta.x * magnification_x, title_header_dropdown_Content_Item_Label.sizeDelta.y * magnification_y);
-        space6.sizeDelta = new Vector2(space6.sizeDelta.x * magnification_x, space6.sizeDelta.y * magnification_y);
+
+        space9.sizeDelta = new Vector2(space9.sizeDelta.x * magnification_x, space9.sizeDelta.y * magnification_y);
         searchBtn_header.sizeDelta = new Vector2(searchBtn_header.sizeDelta.x * magnification_x, searchBtn_header.sizeDelta.y * magnification_y);
         searchReset.sizeDelta = new Vector2(searchReset.sizeDelta.x * magnification_x, searchReset.sizeDelta.y * magnification_y);
         searchReset_header.sizeDelta = new Vector2(searchReset_header.sizeDelta.x * magnification_x, searchReset_header.sizeDelta.y * magnification_y);
