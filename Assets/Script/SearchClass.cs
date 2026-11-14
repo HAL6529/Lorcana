@@ -84,6 +84,8 @@ public class SearchClass : MonoBehaviour
     public RectTransform closeBtn_Header;
     public RectTransform closeBtn_Header_closeBtn;
     public RectTransform space1;
+    public RectTransform r_ScrollView;
+    public RectTransform r_ScrollView_content;
     public RectTransform InkwellExplanation_Header;
     public RectTransform InkwellExplanation_Header_text;
     public RectTransform Inkwell_Header;
@@ -733,6 +735,24 @@ public class SearchClass : MonoBehaviour
         a_isSong = true;
         a_SongBtn.color = new(1, 1, 1, 1);
 
+        r_common = true;
+        r_commonBtn_background.color = new(1, 1, 1, 1);
+        r_commonBtn.color = new(1, 1, 1, 1);
+        r_uncommon = true;
+        r_uncommonBtn_background.color = new(1, 1, 1, 1);
+        r_uncommonBtn.color = new(1, 1, 1, 1);
+        r_rare = true;
+        r_rareBtn_background.color = new(1, 1, 1, 1);
+        r_rareBtn.color = new(1, 1, 1, 1);
+        r_superrare = true;
+        r_superrareBtn_background.color = new(1, 1, 1, 1);
+        r_superrareBtn.color = new(1, 1, 1, 1);
+        r_legendary = true;
+        r_legendaryBtn_background.color = new(1, 1, 1, 1);
+        r_legendaryBtn.color = new(1, 1, 1, 1);
+        r_enchanted = true;
+        r_enchantedBtn_background.color = new(1, 1, 1, 1);
+        r_enchantedBtn.color = new(1, 1, 1, 1);
 
         isBodyGuard = false;
         BodyGuardBtn.sprite = s_checkbtn_off;
@@ -762,6 +782,8 @@ public class SearchClass : MonoBehaviour
         closeBtn_Header.sizeDelta = new Vector2(closeBtn_Header.sizeDelta.x * magnification_x, closeBtn_Header.sizeDelta.y * magnification_y);
 
         space1.sizeDelta = new Vector2(space1.sizeDelta.x * magnification_x, space1.sizeDelta.y * magnification_y);
+        r_ScrollView.sizeDelta = new Vector2(r_ScrollView.sizeDelta.x * magnification_x, r_ScrollView.sizeDelta.y * magnification_y);
+        r_ScrollView_content.sizeDelta = new Vector2(r_ScrollView_content.sizeDelta.x * magnification_x, r_ScrollView_content.sizeDelta.y * magnification_y);
         InkwellExplanation_Header.sizeDelta = new Vector2(InkwellExplanation_Header.sizeDelta.x * magnification_x, InkwellExplanation_Header.sizeDelta.y * magnification_y);
         InkwellExplanation_Header_text.sizeDelta = new Vector2(InkwellExplanation_Header_text.sizeDelta.x * magnification_x, InkwellExplanation_Header_text.sizeDelta.y * magnification_y);
         Inkwell_Header.sizeDelta = new Vector2(Inkwell_Header.sizeDelta.x * magnification_x, Inkwell_Header.sizeDelta.y * magnification_y);
@@ -901,187 +923,5 @@ public class SearchClass : MonoBehaviour
 
         searchBtn.sizeDelta = new Vector2(searchBtn.sizeDelta.x * magnification, searchBtn.sizeDelta.y * magnification);
         searchBtn_text.sizeDelta = new Vector2(searchBtn_text.sizeDelta.x * magnification, searchBtn_text.sizeDelta.y * magnification);
-
-        float Search_Y = 0;
-        closeBtn_Header.anchorMin = new Vector2(0, 1);
-        closeBtn_Header.anchorMax = new Vector2(0, 1);
-        closeBtn_Header.pivot = new Vector2(0, 1);
-        closeBtn_Header.anchoredPosition = Vector2.zero;
-
-        closeBtn_Header_closeBtn.anchorMin = new Vector2(1, 1);
-        closeBtn_Header_closeBtn.anchorMax = new Vector2(1, 1);
-        closeBtn_Header_closeBtn.pivot = new Vector2(1, 1);
-        closeBtn_Header_closeBtn.anchoredPosition = Vector2.zero;
-
-        Search_Y += closeBtn_Header.sizeDelta.y;
-        space1.anchorMin = new Vector2(0, 1);
-        space1.anchorMax = new Vector2(0, 1);
-        space1.pivot = new Vector2(0, 1);
-        space1.anchoredPosition = new Vector2(0, Search_Y * (-1));
-
-        Search_Y += space1.sizeDelta.y;
-        InkwellExplanation_Header.anchorMin = new Vector2(0, 1);
-        InkwellExplanation_Header.anchorMax = new Vector2(0, 1);
-        InkwellExplanation_Header.pivot = new Vector2(0, 1);
-        InkwellExplanation_Header.anchoredPosition = new Vector2(0, Search_Y * (-1));
-
-        InkwellExplanation_Header_text.anchorMin = new Vector2(0, 1);
-        InkwellExplanation_Header_text.anchorMax = new Vector2(0, 1);
-        InkwellExplanation_Header_text.pivot = new Vector2(0, 1);
-        InkwellExplanation_Header_text.anchoredPosition = new Vector2((InkwellExplanation_Header.sizeDelta.x - InkwellExplanation_Header.sizeDelta.x) / 2, 0);
-
-        Search_Y += InkwellExplanation_Header.sizeDelta.y;
-        Inkwell_Header.anchorMin = new Vector2(0, 1);
-        Inkwell_Header.anchorMax = new Vector2(0, 1);
-        Inkwell_Header.pivot = new Vector2(0, 1);
-        Inkwell_Header.anchoredPosition = new Vector2(0, Search_Y * (-1));
-
-        Search_Y += Inkwell_Header.sizeDelta.y;
-        space1_1.anchorMin = new Vector2(0, 1);
-        space1_1.anchorMax = new Vector2(0, 1);
-        space1_1.pivot = new Vector2(0, 1);
-        space1_1.anchoredPosition = new Vector2(0, Search_Y * (-1));
-
-        Search_Y += space1_1.sizeDelta.y;
-        colorExplanation_Header.anchorMin = new Vector2(0, 1);
-        colorExplanation_Header.anchorMax = new Vector2(0, 1);
-        colorExplanation_Header.pivot = new Vector2(0, 1);
-        colorExplanation_Header.anchoredPosition = new Vector2(0, Search_Y * (-1));
-
-        colorExplanation_Header_text1.anchorMin = new Vector2(0, 1);
-        colorExplanation_Header_text1.anchorMax = new Vector2(0, 1);
-        colorExplanation_Header_text1.pivot = new Vector2(0, 1);
-        colorExplanation_Header_text1.anchoredPosition = new Vector2((colorExplanation_Header.sizeDelta.x - colorExplanation_Header_text1.sizeDelta.x) / 2, 0);
-
-        colorExplanation_Header_text2.anchorMin = new Vector2(0, 1);
-        colorExplanation_Header_text2.anchorMax = new Vector2(0, 1);
-        colorExplanation_Header_text2.pivot = new Vector2(0, 1);
-        colorExplanation_Header_text2.anchoredPosition = new Vector2((colorExplanation_Header.sizeDelta.x - colorExplanation_Header_text2.sizeDelta.x) / 2, colorExplanation_Header_text1.sizeDelta.y * (-1));
-
-        Search_Y += colorExplanation_Header.sizeDelta.y;
-        colors_Header.anchorMin = new Vector2(0, 1);
-        colors_Header.anchorMax = new Vector2(0, 1);
-        colors_Header.pivot = new Vector2(0, 1);
-        colors_Header.anchoredPosition = new Vector2(0, Search_Y * (-1));
-
-        Search_Y += colors_Header.sizeDelta.y;
-        space2.anchorMin = new Vector2(0, 1);
-        space2.anchorMax = new Vector2(0, 1);
-        space2.pivot = new Vector2(0, 1);
-        space2.anchoredPosition = new Vector2(0, Search_Y * (-1));
-
-        Search_Y += space2.sizeDelta.y;
-        typeExplanation_Header.anchorMin = new Vector2(0, 1);
-        typeExplanation_Header.anchorMax = new Vector2(0, 1);
-        typeExplanation_Header.pivot = new Vector2(0, 1);
-        typeExplanation_Header.anchoredPosition = new Vector2(0, Search_Y * (-1));
-
-        typeExplanation_Header_text1.anchorMin = new Vector2(0, 1);
-        typeExplanation_Header_text1.anchorMax = new Vector2(0, 1);
-        typeExplanation_Header_text1.pivot = new Vector2(0, 1);
-        typeExplanation_Header_text1.anchoredPosition = new Vector2((typeExplanation_Header.sizeDelta.x - typeExplanation_Header_text1.sizeDelta.x) / 2, 0);
-
-        typeExplanation_Header_text2.anchorMin = new Vector2(0, 1);
-        typeExplanation_Header_text2.anchorMax = new Vector2(0, 1);
-        typeExplanation_Header_text2.pivot = new Vector2(0, 1);
-        typeExplanation_Header_text2.anchoredPosition = new Vector2((typeExplanation_Header.sizeDelta.x - typeExplanation_Header_text2.sizeDelta.x) / 2, typeExplanation_Header_text1.sizeDelta.y * (-1));
-
-        Search_Y += typeExplanation_Header.sizeDelta.y;
-        type_Header.anchorMin = new Vector2(0, 1);
-        type_Header.anchorMax = new Vector2(0, 1);
-        type_Header.pivot = new Vector2(0, 1);
-        type_Header.anchoredPosition = new Vector2(0, Search_Y * (-1));
-
-        Search_Y += type_Header.sizeDelta.y;
-        space3.anchorMin = new Vector2(0, 1);
-        space3.anchorMax = new Vector2(0, 1);
-        space3.pivot = new Vector2(0, 1);
-        space3.anchoredPosition = new Vector2(0, Search_Y * (-1));
-
-        Search_Y += space3.sizeDelta.y;
-        rarityExplanation_header.anchorMin = new Vector2(0, 1);
-        rarityExplanation_header.anchorMax = new Vector2(0, 1);
-        rarityExplanation_header.pivot = new Vector2(0, 1);
-        rarityExplanation_header.anchoredPosition = new Vector2(0, Search_Y * (-1));
-
-        rarityExplanation_header_text1.anchorMin = new Vector2(0, 1);
-        rarityExplanation_header_text1.anchorMax = new Vector2(0, 1);
-        rarityExplanation_header_text1.pivot = new Vector2(0, 1);
-        rarityExplanation_header_text1.anchoredPosition = new Vector2((rarityExplanation_header.sizeDelta.x - rarityExplanation_header_text1.sizeDelta.x) / 2, 0);
-
-        rarityExplanation_header_text2.anchorMin = new Vector2(0, 1);
-        rarityExplanation_header_text2.anchorMax = new Vector2(0, 1);
-        rarityExplanation_header_text2.pivot = new Vector2(0, 1);
-        rarityExplanation_header_text2.anchoredPosition = new Vector2((rarityExplanation_header.sizeDelta.x - rarityExplanation_header_text2.sizeDelta.x) / 2, typeExplanation_Header_text1.sizeDelta.y * (-1));
-
-        Search_Y += rarityExplanation_header.sizeDelta.y;
-        rarity_Header.anchorMin = new Vector2(0, 1);
-        rarity_Header.anchorMax = new Vector2(0, 1);
-        rarity_Header.pivot = new Vector2(0, 1);
-        rarity_Header.anchoredPosition = new Vector2(0, Search_Y * (-1));
-
-        Search_Y += rarity_Header.sizeDelta.y;
-        space3_1.anchorMin = new Vector2(0, 1);
-        space3_1.anchorMax = new Vector2(0, 1);
-        space3_1.pivot = new Vector2(0, 1);
-        space3_1.anchoredPosition = new Vector2(0, Search_Y * (-1));
-
-        Search_Y += space3_1.sizeDelta.y;
-        keywordExplanation_header.anchorMin = new Vector2(0, 1);
-        keywordExplanation_header.anchorMax = new Vector2(0, 1);
-        keywordExplanation_header.pivot = new Vector2(0, 1);
-        keywordExplanation_header.anchoredPosition = new Vector2(0, Search_Y * (-1));
-
-        keywordExplanation_header_text1.anchorMin = new Vector2(0, 1);
-        keywordExplanation_header_text1.anchorMax = new Vector2(0, 1);
-        keywordExplanation_header_text1.pivot = new Vector2(0, 1);
-        keywordExplanation_header_text1.anchoredPosition = new Vector2((keywordExplanation_header.sizeDelta.x - keywordExplanation_header_text1.sizeDelta.x) / 2, 0);
-
-        keywordExplanation_header_text2.anchorMin = new Vector2(0, 1);
-        keywordExplanation_header_text2.anchorMax = new Vector2(0, 1);
-        keywordExplanation_header_text2.pivot = new Vector2(0, 1);
-        keywordExplanation_header_text2.anchoredPosition = new Vector2((keywordExplanation_header.sizeDelta.x - keywordExplanation_header_text2.sizeDelta.x) / 2, keywordExplanation_header_text1.sizeDelta.y * (-1));
-
-        Search_Y += keywordExplanation_header.sizeDelta.y;
-        keyword_header.anchorMin = new Vector2(0, 1);
-        keyword_header.anchorMax = new Vector2(0, 1);
-        keyword_header.pivot = new Vector2(0, 1);
-        keyword_header.anchoredPosition = new Vector2(0, Search_Y * (-1));
-
-        Search_Y += keyword_header.sizeDelta.y;
-        space4.anchorMin = new Vector2(0, 1);
-        space4.anchorMax = new Vector2(0, 1);
-        space4.pivot = new Vector2(0, 1);
-        space4.anchoredPosition = new Vector2(0, Search_Y * (-1));
-
-        Search_Y += space4.sizeDelta.y;
-        titleExplanation_header.anchorMin = new Vector2(0, 1);
-        titleExplanation_header.anchorMax = new Vector2(0, 1);
-        titleExplanation_header.pivot = new Vector2(0, 1);
-        titleExplanation_header.anchoredPosition = new Vector2(0, Search_Y * (-1));
-
-        Search_Y += titleExplanation_header.sizeDelta.y;
-        title_header.anchorMin = new Vector2(0, 1);
-        title_header.anchorMax = new Vector2(0, 1);
-        title_header.pivot = new Vector2(0, 1);
-        title_header.anchoredPosition = new Vector2(0, Search_Y * (-1));
-
-        Search_Y += title_header.sizeDelta.y;
-        space6.anchorMin = new Vector2(0, 1);
-        space6.anchorMax = new Vector2(0, 1);
-        space6.pivot = new Vector2(0, 1);
-        space6.anchoredPosition = new Vector2(0, Search_Y * (-1));
-
-        Search_Y += space6.sizeDelta.y;
-        searchBtn_header.anchorMin = new Vector2(0, 1);
-        searchBtn_header.anchorMax = new Vector2(0, 1);
-        searchBtn_header.pivot = new Vector2(0, 1);
-        searchBtn_header.anchoredPosition = new Vector2(0, Search_Y * (-1));
-
-        Search_Y += searchBtn_header.sizeDelta.y;
-        searchReset.anchorMin = new Vector2(0, 1);
-        searchReset.anchorMax = new Vector2(0, 1);
-        searchReset.pivot = new Vector2(0, 1);
-        searchReset.anchoredPosition = new Vector2(0, Search_Y * (-1));
     }
 }
