@@ -20,6 +20,13 @@ public class SearchFilterClass
     public bool a_isItem;
     public bool a_isSong;
 
+    public bool r_common;
+    public bool r_uncommon;
+    public bool r_rare;
+    public bool r_superrare;
+    public bool r_legendary;
+    public bool r_enchanted;
+
     public bool isBodyGuard;
     public bool isChallenger;
     public bool isEvasive;
@@ -49,6 +56,13 @@ public class SearchFilterClass
         a_isLocation = true;
         a_isItem = true;
         a_isSong = true;
+
+        r_common = true;
+        r_uncommon = true;
+        r_rare = true;
+        r_superrare = true;
+        r_legendary = true;
+        r_enchanted = true;
 
         isBodyGuard = false;
         isChallenger = false;
@@ -148,6 +162,43 @@ public class SearchFilterClass
         }
 
         if (!typeJudge)
+        {
+            return false;
+        }
+
+        EnumController.Rare rarity = m_CardInfo.GetRare();
+        bool rarityJudge = false;
+        if (r_common && rarity == EnumController.Rare.Common)
+        {
+            rarityJudge = true;
+        }
+
+        if(r_uncommon && rarity == EnumController.Rare.Uncommon)
+        {
+            rarityJudge = true;
+        }
+
+        if (r_rare && rarity == EnumController.Rare.Rare)
+        {
+            rarityJudge = true;
+        }
+
+        if (r_superrare && rarity == EnumController.Rare.SuperRare)
+        {
+            rarityJudge = true;
+        }
+
+        if (r_legendary && rarity == EnumController.Rare.Legendary)
+        {
+            rarityJudge = true;
+        }
+
+        if (r_enchanted && rarity == EnumController.Rare.Enchanted)
+        {
+            rarityJudge = true;
+        }
+
+        if (!rarityJudge)
         {
             return false;
         }
