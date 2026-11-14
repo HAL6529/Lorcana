@@ -8,6 +8,9 @@ public class SearchClass : MonoBehaviour
     public Sprite s_checkbtn_on;
     public Sprite s_checkbtn_off;
 
+    public Image InkAvailableBtn;
+    public Image InkDisavailableBtn;
+
     public Image AmethystBtn;
     public Image AmberBtn;
     public Image EmeraldBtn;
@@ -30,6 +33,9 @@ public class SearchClass : MonoBehaviour
     public Image RecklessBtn;
     public Image RushBtn;
     public Image WardBtn;
+
+    public bool isInkAvailable;
+    public bool isInkDisavailable;
 
     public bool isAmethyst;
     public bool isAmber;
@@ -58,6 +64,12 @@ public class SearchClass : MonoBehaviour
     public RectTransform closeBtn_Header;
     public RectTransform closeBtn_Header_closeBtn;
     public RectTransform space1;
+    public RectTransform InkwellExplanation_Header;
+    public RectTransform InkwellExplanation_Header_text;
+    public RectTransform Inkwell_Header;
+    public RectTransform Inkwell_Header_available;
+    public RectTransform Inkwell_Header_disavailable;
+    public RectTransform space1_1;
     public RectTransform colorExplanation_Header;
     public RectTransform colorExplanation_Header_text1;
     public RectTransform colorExplanation_Header_text2;
@@ -167,6 +179,9 @@ public class SearchClass : MonoBehaviour
 
     void Start()
     {
+        isInkAvailable = true;
+        isInkDisavailable = true;
+
         isAmethyst = true;
         isAmber = true;
         isEmerald = true;
@@ -472,9 +487,43 @@ public class SearchClass : MonoBehaviour
         }
     }
 
+    public void onInkAvailable(string paramater)
+    {
+        switch (paramater)
+        {
+            case "Aavailable":
+                if (isInkAvailable)
+                {
+                    this.isInkAvailable = false;
+                    InkAvailableBtn.color = new(1, 1, 1, 50f / 255f);
+                }
+                else
+                {
+                    this.isInkAvailable = true;
+                    InkAvailableBtn.color = new(1, 1, 1, 1);
+                }
+                break;
+            case "Disavailable":
+                if (isInkDisavailable)
+                {
+                    this.isInkDisavailable = false;
+                    InkDisavailableBtn.color = new(1, 1, 1, 50f / 255f);
+                }
+                else
+                {
+                    this.isInkDisavailable = true;
+                    InkDisavailableBtn.color = new(1, 1, 1, 1);
+                }
+                break;
+        }
+    }
+
     public void onSearchBtn()
     {
         SearchFilterClass m_SearchFilterClass = new SearchFilterClass();
+        m_SearchFilterClass.isInkAvailable = isInkAvailable;
+        m_SearchFilterClass.isInkDisavailable = isInkDisavailable;
+
         m_SearchFilterClass.isAmethyst = isAmethyst;
         m_SearchFilterClass.isAmber = isAmber;
         m_SearchFilterClass.isEmerald = isEmerald;
@@ -513,6 +562,11 @@ public class SearchClass : MonoBehaviour
 
     public void onResetBtn()
     {
+        isInkAvailable = true;
+        InkAvailableBtn.color = new(1, 1, 1, 1);
+        isInkDisavailable = true;
+        InkDisavailableBtn.color = new(1, 1, 1, 1);
+
         isAmethyst = true;
         AmethystBtn.color = new(1, 1, 1, 1);
         isAmber = true;
@@ -566,6 +620,13 @@ public class SearchClass : MonoBehaviour
         closeBtn_Header.sizeDelta = new Vector2(closeBtn_Header.sizeDelta.x * magnification_x, closeBtn_Header.sizeDelta.y * magnification_y);
 
         space1.sizeDelta = new Vector2(space1.sizeDelta.x * magnification_x, space1.sizeDelta.y * magnification_y);
+        InkwellExplanation_Header.sizeDelta = new Vector2(InkwellExplanation_Header.sizeDelta.x * magnification_x, InkwellExplanation_Header.sizeDelta.y * magnification_y);
+        InkwellExplanation_Header_text.sizeDelta = new Vector2(InkwellExplanation_Header_text.sizeDelta.x * magnification_x, InkwellExplanation_Header_text.sizeDelta.y * magnification_y);
+        Inkwell_Header.sizeDelta = new Vector2(Inkwell_Header.sizeDelta.x * magnification_x, Inkwell_Header.sizeDelta.y * magnification_y);
+        Inkwell_Header_available.sizeDelta = new Vector2(Inkwell_Header_available.sizeDelta.x * magnification_x, Inkwell_Header_available.sizeDelta.y * magnification_y);
+        Inkwell_Header_disavailable.sizeDelta = new Vector2(Inkwell_Header_disavailable.sizeDelta.x * magnification_x, Inkwell_Header_disavailable.sizeDelta.y * magnification_y);
+
+        space1_1.sizeDelta = new Vector2(space1_1.sizeDelta.x * magnification_x, space1_1.sizeDelta.y * magnification_y);
         colorExplanation_Header.sizeDelta = new Vector2(colorExplanation_Header.sizeDelta.x * magnification_x, colorExplanation_Header.sizeDelta.y * magnification_y);
         colorExplanation_Header_text1.sizeDelta = new Vector2(colorExplanation_Header_text1.sizeDelta.x * magnification_x, colorExplanation_Header_text1.sizeDelta.y * magnification_y);
         colorExplanation_Header_text2.sizeDelta = new Vector2(colorExplanation_Header_text2.sizeDelta.x * magnification_x, colorExplanation_Header_text2.sizeDelta.y * magnification_y);
@@ -697,6 +758,29 @@ public class SearchClass : MonoBehaviour
         space1.anchoredPosition = new Vector2(0, Search_Y * (-1));
 
         Search_Y += space1.sizeDelta.y;
+        InkwellExplanation_Header.anchorMin = new Vector2(0, 1);
+        InkwellExplanation_Header.anchorMax = new Vector2(0, 1);
+        InkwellExplanation_Header.pivot = new Vector2(0, 1);
+        InkwellExplanation_Header.anchoredPosition = new Vector2(0, Search_Y * (-1));
+
+        InkwellExplanation_Header_text.anchorMin = new Vector2(0, 1);
+        InkwellExplanation_Header_text.anchorMax = new Vector2(0, 1);
+        InkwellExplanation_Header_text.pivot = new Vector2(0, 1);
+        InkwellExplanation_Header_text.anchoredPosition = new Vector2((InkwellExplanation_Header.sizeDelta.x - InkwellExplanation_Header.sizeDelta.x) / 2, 0);
+
+        Search_Y += InkwellExplanation_Header.sizeDelta.y;
+        Inkwell_Header.anchorMin = new Vector2(0, 1);
+        Inkwell_Header.anchorMax = new Vector2(0, 1);
+        Inkwell_Header.pivot = new Vector2(0, 1);
+        Inkwell_Header.anchoredPosition = new Vector2(0, Search_Y * (-1));
+
+        Search_Y += Inkwell_Header.sizeDelta.y;
+        space1_1.anchorMin = new Vector2(0, 1);
+        space1_1.anchorMax = new Vector2(0, 1);
+        space1_1.pivot = new Vector2(0, 1);
+        space1_1.anchoredPosition = new Vector2(0, Search_Y * (-1));
+
+        Search_Y += space1_1.sizeDelta.y;
         colorExplanation_Header.anchorMin = new Vector2(0, 1);
         colorExplanation_Header.anchorMax = new Vector2(0, 1);
         colorExplanation_Header.pivot = new Vector2(0, 1);

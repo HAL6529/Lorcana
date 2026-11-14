@@ -43,8 +43,8 @@ MonoBehaviour:
     y: 0
     width: 388.66663
     height: 1001.3334
-  m_MinSize: {x: 276, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 12}
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 87
+  controlID: 37
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -93,7 +93,7 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 623.3333
-    height: 658.6667
+    height: 655.3333
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 15}
@@ -117,9 +117,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 658.6667
+    y: 655.3333
     width: 1279.3334
-    height: 342.6667
+    height: 346.00006
   m_MinSize: {x: 101, y: 121}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 13}
@@ -244,7 +244,7 @@ MonoBehaviour:
     x: 0
     y: 0
     width: 1279.3334
-    height: 658.6667
+    height: 655.3333
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
@@ -267,7 +267,7 @@ MonoBehaviour:
     x: 623.3333
     y: 0
     width: 656.00006
-    height: 658.6667
+    height: 655.3333
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 17}
@@ -344,9 +344,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 865.3334
-    y: 938
+    y: 934.6667
     width: 1278.3334
-    height: 321.6667
+    height: 325.00006
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -419,7 +419,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 30be0000
     m_LastClickedID: 48688
-    m_ExpandedIDs: 0000000030be0000
+    m_ExpandedIDs: 00000000b2bb0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -447,7 +447,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000030be0000
+    m_ExpandedIDs: 00000000b2bb0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -526,7 +526,7 @@ MonoBehaviour:
     x: 865.3334
     y: 279.33334
     width: 622.3333
-    height: 637.6667
+    height: 634.3333
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -540,9 +540,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 4c7c0000
-      m_LastClickedID: 31820
-      m_ExpandedIDs: cafaffffee7400004c7c0000107d0000
+      m_SelectedIDs: c07a0000
+      m_LastClickedID: 31424
+      m_ExpandedIDs: 52daffff64daffff66daffff42f4ffff0cfbffff3271000088730000767a0000c07a00007e7b0000187f0000a29d000056a20000e2a40000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -586,10 +586,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 801.3334
-    y: 72.66667
-    width: 834.00006
-    height: 833.6667
+    x: 1488.6667
+    y: 279.33334
+    width: 654.00006
+    height: 637.6667
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -935,9 +935,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.2108, y: 2.6003726, z: -3.8968763}
+    m_Target: {x: 3.2646947, y: 5.805253, z: -3.9398143}
     speed: 2
-    m_Value: {x: 0.2108, y: 2.6003726, z: -3.8968763}
+    m_Value: {x: 3.2646947, y: 5.805253, z: -3.9398143}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -987,9 +987,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 3.0296896
+    m_Target: 7.323712
     speed: 2
-    m_Value: 3.0296896
+    m_Value: 7.323712
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1037,7 +1037,7 @@ MonoBehaviour:
     x: 1488.6667
     y: 279.33334
     width: 654.00006
-    height: 637.6667
+    height: 634.3333
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1072,7 +1072,7 @@ MonoBehaviour:
     - UnityEditor.DeviceSimulation.ApplicationSettingsPlugin
     pluginStates:
     - '{}'
-    scale: 23
+    scale: 27
     fitToScreenEnabled: 0
     rotationDegree: 0
     highlightSafeAreaEnabled: 0

@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class SearchFilterClass
 {
+    public bool isInkAvailable;
+    public bool isInkDisavailable;
+
     public bool isAmethyst;
     public bool isAmber;
     public bool isEmerald;
@@ -31,6 +34,9 @@ public class SearchFilterClass
 
     public SearchFilterClass()
     {
+        isInkAvailable = true;
+        isInkDisavailable = true;
+
         isAmethyst = true;
         isAmber = true;
         isEmerald = true;
@@ -59,6 +65,24 @@ public class SearchFilterClass
 
     public bool isSearchHit(CardInfo m_CardInfo)
     {
+        bool inkwell =m_CardInfo.GetAvailableInk();
+        bool inkwellJudge = false;
+
+        if (isInkAvailable && inkwell)
+        {
+            inkwellJudge = true;
+        }
+
+        if (isInkDisavailable && !inkwell)
+        {
+            inkwellJudge = true;
+        }
+
+        if (!inkwellJudge)
+        {
+            return false;
+        }
+
         List<EnumController.Colors> colorList = m_CardInfo.GetColor();
         bool colorJudge = false;
         if(isAmethyst && colorList.Contains(EnumController.Colors.Amethyst))
