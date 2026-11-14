@@ -31,17 +31,6 @@ public class SearchClass : MonoBehaviour
     public Image RushBtn;
     public Image WardBtn;
 
-    public Image HandDestractionBtn;
-    public Image CIPBtn;
-    public Image PIGBtn;
-    public Image ChallengeBtn;
-    public Image ActionBtn;
-    public Image GetLoreBtn;
-    public Image LostLoreBtn;
-    public Image AddInkBtn;
-    public Image ItemBtn;
-    public Image LocationBtn;
-
     public bool isAmethyst;
     public bool isAmber;
     public bool isEmerald;
@@ -64,17 +53,6 @@ public class SearchClass : MonoBehaviour
     public bool isReckless;
     public bool isRush;
     public bool isWard;
-
-    public bool isHandDestraction;
-    public bool isCIP;
-    public bool isPIG;
-    public bool isChallenge;
-    public bool isAction;
-    public bool isGetLore;
-    public bool isLostLore;
-    public bool isAddInk;
-    public bool isItem;
-    public bool isLocation;
 
     public RectTransform parent;
     public RectTransform closeBtn_Header;
@@ -150,53 +128,6 @@ public class SearchClass : MonoBehaviour
     public RectTransform keyword_header_right_ward_text;
     public RectTransform keyword_header_right_null;
     public RectTransform space4;
-    public RectTransform abilityExplanation_header;
-    public RectTransform abilityExplanation_header_text1;
-    public RectTransform abilityExplanation_header_text2;
-    public RectTransform ability_header;
-    public RectTransform ability_header_left;
-    public RectTransform ability_header_left_handDestruction;
-    public RectTransform ability_header_left_handDestruction_btn;
-    public RectTransform ability_header_left_handDestruction_space;
-    public RectTransform ability_header_left_handDestruction_text;
-    public RectTransform ability_header_left_CIP;
-    public RectTransform ability_header_left_CIP_btn;
-    public RectTransform ability_header_left_CIP_space;
-    public RectTransform ability_header_left_CIP_text;
-    public RectTransform ability_header_left_PIG;
-    public RectTransform ability_header_left_PIG_btn;
-    public RectTransform ability_header_left_PIG_space;
-    public RectTransform ability_header_left_PIG_text;
-    public RectTransform ability_header_left_challenge;
-    public RectTransform ability_header_left_challenge_btn;
-    public RectTransform ability_header_left_challenge_space;
-    public RectTransform ability_header_left_challenge_text;
-    public RectTransform ability_header_left_action;
-    public RectTransform ability_header_left_action_btn;
-    public RectTransform ability_header_left_action_space;
-    public RectTransform ability_header_left_action_text;
-    public RectTransform ability_header_right;
-    public RectTransform ability_header_right_getLore;
-    public RectTransform ability_header_right_getLore_btn;
-    public RectTransform ability_header_right_getLore_space;
-    public RectTransform ability_header_right_getLore_text;
-    public RectTransform ability_header_right_lostLore;
-    public RectTransform ability_header_right_lostLore_btn;
-    public RectTransform ability_header_right_lostLore_space;
-    public RectTransform ability_header_right_lostLore_text;
-    public RectTransform ability_header_right_addInk;
-    public RectTransform ability_header_right_addInk_btn;
-    public RectTransform ability_header_right_addInk_space;
-    public RectTransform ability_header_right_addInk_text;
-    public RectTransform ability_header_right_item;
-    public RectTransform ability_header_right_item_btn;
-    public RectTransform ability_header_right_item_space;
-    public RectTransform ability_header_right_item_text;
-    public RectTransform ability_header_right_location;
-    public RectTransform ability_header_right_locationbtn;
-    public RectTransform ability_header_right_location_space;
-    public RectTransform ability_header_right_location_text;
-    public RectTransform space5;
     public RectTransform titleExplanation_header;
     public RectTransform titleExplanation_header_text1;
     public RectTransform titleExplanation_header_text2;
@@ -259,17 +190,6 @@ public class SearchClass : MonoBehaviour
         isRush = false;
         isWard = false;
 
-        isHandDestraction = false;
-        isCIP = false;
-        isPIG = false;
-        isChallenge = false;
-        isAction = false;
-        isGetLore = false;
-        isLostLore = false;
-        isAddInk = false;
-        isItem = false;
-        isLocation = false;
-
         m_TitleDropdown.ClearOptions();
         for(int i = 0; i < TitleDropdownList.Count; i++)
         {
@@ -288,133 +208,6 @@ public class SearchClass : MonoBehaviour
     public void onCloseBtn()
     {
         this.gameObject.SetActive(false);
-    }
-
-    public void onAbilityBtn(string paramater)
-    {
-        switch (paramater)
-        {
-            case "HandDestraction":
-                if (isHandDestraction)
-                {
-                    isHandDestraction = false;
-                    HandDestractionBtn.sprite = s_checkbtn_off;
-                }
-                else
-                {
-                    isHandDestraction = true;
-                    HandDestractionBtn.sprite = s_checkbtn_on;
-                }
-                break;
-            case "CIP":
-                if (isCIP)
-                {
-                    isCIP = false;
-                    CIPBtn.sprite = s_checkbtn_off;
-                }
-                else
-                {
-                    isCIP = true;
-                    CIPBtn.sprite = s_checkbtn_on;
-                }
-                break;
-            case "PIG":
-                if (isPIG)
-                {
-                    isPIG = false;
-                    PIGBtn.sprite = s_checkbtn_off;
-                }
-                else
-                {
-                    isPIG = true;
-                    PIGBtn.sprite = s_checkbtn_on;
-                }
-                break;
-            case "Challenge":
-                if (isChallenge)
-                {
-                    isChallenge = false;
-                    ChallengeBtn.sprite = s_checkbtn_off;
-                }
-                else
-                {
-                    isChallenge = true;
-                    ChallengeBtn.sprite = s_checkbtn_on;
-                }
-                break;
-            case "Action":
-                if (isAction)
-                {
-                    isAction = false;
-                    ActionBtn.sprite = s_checkbtn_off;
-                }
-                else
-                {
-                    isAction = true;
-                    ActionBtn.sprite = s_checkbtn_on;
-                }
-                break;
-            case "GetLore":
-                if (isGetLore)
-                {
-                    isGetLore = false;
-                    GetLoreBtn.sprite = s_checkbtn_off;
-                }
-                else
-                {
-                    isGetLore = true;
-                    GetLoreBtn.sprite = s_checkbtn_on;
-                }
-                break;
-            case "LostLore":
-                if (isLostLore)
-                {
-                    isLostLore = false;
-                    LostLoreBtn.sprite = s_checkbtn_off;
-                }
-                else
-                {
-                    isLostLore = true;
-                    LostLoreBtn.sprite = s_checkbtn_on;
-                }
-                break;
-            case "AddInk":
-                if (isAddInk)
-                {
-                    isAddInk = false;
-                    AddInkBtn.sprite = s_checkbtn_off;
-                }
-                else
-                {
-                    isAddInk = true;
-                    AddInkBtn.sprite = s_checkbtn_on;
-                }
-                break;
-            case "Item":
-                if (isItem)
-                {
-                    isItem = false;
-                    ItemBtn.sprite = s_checkbtn_off;
-                }
-                else
-                {
-                    isItem = true;
-                    ItemBtn.sprite = s_checkbtn_on;
-                }
-                break;
-            case "Location":
-                if (isLocation)
-                {
-                    isLocation = false;
-                    LocationBtn.sprite = s_checkbtn_off;
-                }
-                else
-                {
-                    isLocation = true;
-                    LocationBtn.sprite = s_checkbtn_on;
-                }
-                break;
-        }
     }
 
     public void onColorBtn(string paramater)
@@ -764,27 +557,6 @@ public class SearchClass : MonoBehaviour
         isWard = false;
         WardBtn.sprite = s_checkbtn_off;
 
-        isHandDestraction = false;
-        HandDestractionBtn.sprite = s_checkbtn_off;
-        isCIP = false;
-        CIPBtn.sprite = s_checkbtn_off;
-        isPIG = false;
-        PIGBtn.sprite = s_checkbtn_off;
-        isChallenge = false;
-        ChallengeBtn.sprite = s_checkbtn_off;
-        isAction = false;
-        ActionBtn.sprite = s_checkbtn_off;
-        isGetLore = false;
-        GetLoreBtn.sprite = s_checkbtn_off;
-        isLostLore = false;
-        LostLoreBtn.sprite = s_checkbtn_off;
-        isAddInk = false;
-        AddInkBtn.sprite = s_checkbtn_off;
-        isItem = false;
-        ItemBtn.sprite = s_checkbtn_off;
-        isLocation = false;
-        LocationBtn.sprite = s_checkbtn_off;
-
         m_TitleDropdown.value = 0;
     }
 
@@ -850,53 +622,6 @@ public class SearchClass : MonoBehaviour
         keyword_header_right_ward_text.sizeDelta = new Vector2(keyword_header_right_ward_text.sizeDelta.x * magnification_x, keyword_header_right_ward_text.sizeDelta.y * magnification_y);
         keyword_header_right_null.sizeDelta = new Vector2(keyword_header_right_null.sizeDelta.x * magnification_x, keyword_header_right_null.sizeDelta.y * magnification_y);
         space4.sizeDelta = new Vector2(space4.sizeDelta.x * magnification_x, space4.sizeDelta.y * magnification_y);
-        abilityExplanation_header.sizeDelta = new Vector2(abilityExplanation_header.sizeDelta.x * magnification_x, abilityExplanation_header.sizeDelta.y * magnification_y);
-        abilityExplanation_header_text1.sizeDelta = new Vector2(abilityExplanation_header_text1.sizeDelta.x * magnification_x, abilityExplanation_header_text1.sizeDelta.y * magnification_y);
-        abilityExplanation_header_text2.sizeDelta = new Vector2(abilityExplanation_header_text2.sizeDelta.x * magnification_x, abilityExplanation_header_text2.sizeDelta.y * magnification_y);
-        ability_header.sizeDelta = new Vector2(ability_header.sizeDelta.x * magnification_x, ability_header.sizeDelta.y * magnification_y);
-        ability_header_left.sizeDelta = new Vector2(ability_header_left.sizeDelta.x * magnification_x, ability_header_left.sizeDelta.y * magnification_y);
-        ability_header_left_handDestruction.sizeDelta = new Vector2(ability_header_left_handDestruction.sizeDelta.x * magnification_x, ability_header_left_handDestruction.sizeDelta.y * magnification_y);
-
-        ability_header_left_handDestruction_space.sizeDelta = new Vector2(ability_header_left_handDestruction_space.sizeDelta.x * magnification_x, ability_header_left_handDestruction_space.sizeDelta.y * magnification_y);
-        ability_header_left_handDestruction_text.sizeDelta = new Vector2(ability_header_left_handDestruction_text.sizeDelta.x * magnification_x, ability_header_left_handDestruction_text.sizeDelta.y * magnification_y);
-        ability_header_left_CIP.sizeDelta = new Vector2(ability_header_left_CIP.sizeDelta.x * magnification_x, ability_header_left_CIP.sizeDelta.y * magnification_y);
-
-        ability_header_left_CIP_space.sizeDelta = new Vector2(ability_header_left_CIP_space.sizeDelta.x * magnification_x, ability_header_left_CIP_space.sizeDelta.y * magnification_y);
-        ability_header_left_CIP_text.sizeDelta = new Vector2(ability_header_left_CIP_text.sizeDelta.x * magnification_x, ability_header_left_CIP_text.sizeDelta.y * magnification_y);
-        ability_header_left_PIG.sizeDelta = new Vector2(ability_header_left_PIG.sizeDelta.x * magnification_x, ability_header_left_PIG.sizeDelta.y * magnification_y);
-
-        ability_header_left_PIG_space.sizeDelta = new Vector2(ability_header_left_PIG_space.sizeDelta.x * magnification_x, ability_header_left_PIG_space.sizeDelta.y * magnification_y);
-        ability_header_left_PIG_text.sizeDelta = new Vector2(ability_header_left_PIG_text.sizeDelta.x * magnification_x, ability_header_left_PIG_text.sizeDelta.y * magnification_y);
-        ability_header_left_challenge.sizeDelta = new Vector2(ability_header_left_challenge.sizeDelta.x * magnification_x, ability_header_left_challenge.sizeDelta.y * magnification_y);
-
-        ability_header_left_challenge_space.sizeDelta = new Vector2(ability_header_left_challenge_space.sizeDelta.x * magnification_x, ability_header_left_challenge_space.sizeDelta.y * magnification_y);
-        ability_header_left_challenge_text.sizeDelta = new Vector2(ability_header_left_challenge_text.sizeDelta.x * magnification_x, ability_header_left_challenge_text.sizeDelta.y * magnification_y);
-        ability_header_left_action.sizeDelta = new Vector2(ability_header_left_action.sizeDelta.x * magnification_x, ability_header_left_action.sizeDelta.y * magnification_y);
-
-        ability_header_left_action_space.sizeDelta = new Vector2(ability_header_left_action_space.sizeDelta.x * magnification_x, ability_header_left_action_space.sizeDelta.y * magnification_y);
-        ability_header_left_action_text.sizeDelta = new Vector2(ability_header_left_action_text.sizeDelta.x * magnification_x, ability_header_left_action_text.sizeDelta.y * magnification_y);
-        ability_header_right.sizeDelta = new Vector2(ability_header_right.sizeDelta.x * magnification_x, ability_header_right.sizeDelta.y * magnification_y);
-        ability_header_right_getLore.sizeDelta = new Vector2(ability_header_right_getLore.sizeDelta.x * magnification_x, ability_header_right_getLore.sizeDelta.y * magnification_y);
-
-        ability_header_right_getLore_space.sizeDelta = new Vector2(ability_header_right_getLore_space.sizeDelta.x * magnification_x, ability_header_right_getLore_space.sizeDelta.y * magnification_y);
-        ability_header_right_getLore_text.sizeDelta = new Vector2(ability_header_right_getLore_text.sizeDelta.x * magnification_x, ability_header_right_getLore_text.sizeDelta.y * magnification_y);
-        ability_header_right_lostLore.sizeDelta = new Vector2(ability_header_right_lostLore.sizeDelta.x * magnification_x, ability_header_right_lostLore.sizeDelta.y * magnification_y);
-
-        ability_header_right_lostLore_space.sizeDelta = new Vector2(ability_header_right_lostLore_space.sizeDelta.x * magnification_x, ability_header_right_lostLore_space.sizeDelta.y * magnification_y);
-        ability_header_right_lostLore_text.sizeDelta = new Vector2(ability_header_right_lostLore_text.sizeDelta.x * magnification_x, ability_header_right_lostLore_text.sizeDelta.y * magnification_y);
-        ability_header_right_addInk.sizeDelta = new Vector2(ability_header_right_addInk.sizeDelta.x * magnification_x, ability_header_right_addInk.sizeDelta.y * magnification_y);
-
-        ability_header_right_addInk_space.sizeDelta = new Vector2(ability_header_right_addInk_space.sizeDelta.x * magnification_x, ability_header_right_addInk_space.sizeDelta.y * magnification_y);
-        ability_header_right_addInk_text.sizeDelta = new Vector2(ability_header_right_addInk_text.sizeDelta.x * magnification_x, ability_header_right_addInk_text.sizeDelta.y * magnification_y);
-        ability_header_right_item.sizeDelta = new Vector2(ability_header_right_item.sizeDelta.x * magnification_x, ability_header_right_item.sizeDelta.y * magnification_y);
-
-        ability_header_right_item_space.sizeDelta = new Vector2(ability_header_right_item_space.sizeDelta.x * magnification_x, ability_header_right_item_space.sizeDelta.y * magnification_y);
-        ability_header_right_item_text.sizeDelta = new Vector2(ability_header_right_item_text.sizeDelta.x * magnification_x, ability_header_right_item_text.sizeDelta.y * magnification_y);
-        ability_header_right_location.sizeDelta = new Vector2(ability_header_right_location.sizeDelta.x * magnification_x, ability_header_right_location.sizeDelta.y * magnification_y);
-
-        ability_header_right_location_space.sizeDelta = new Vector2(ability_header_right_location_space.sizeDelta.x * magnification_x, ability_header_right_location_space.sizeDelta.y * magnification_y);
-        ability_header_right_location_text.sizeDelta = new Vector2(ability_header_right_location_text.sizeDelta.x * magnification_x, ability_header_right_location_text.sizeDelta.y * magnification_y);
-        space5.sizeDelta = new Vector2(space5.sizeDelta.x * magnification_x, space5.sizeDelta.y * magnification_y);
         titleExplanation_header.sizeDelta = new Vector2(titleExplanation_header.sizeDelta.x * magnification_x, titleExplanation_header.sizeDelta.y * magnification_y);
         titleExplanation_header_text1.sizeDelta = new Vector2(titleExplanation_header_text1.sizeDelta.x * magnification_x, titleExplanation_header_text1.sizeDelta.y * magnification_y);
         titleExplanation_header_text2.sizeDelta = new Vector2(titleExplanation_header_text2.sizeDelta.x * magnification_x, titleExplanation_header_text2.sizeDelta.y * magnification_y);
@@ -951,16 +676,6 @@ public class SearchClass : MonoBehaviour
         keyword_header_right_rush_btn.sizeDelta = new Vector2(keyword_header_right_rush_btn.sizeDelta.x * magnification, keyword_header_right_rush_btn.sizeDelta.y * magnification);
         keyword_header_right_ward_btn.sizeDelta = new Vector2(keyword_header_right_ward_btn.sizeDelta.x * magnification, keyword_header_right_ward_btn.sizeDelta.y * magnification);
 
-        ability_header_left_handDestruction_btn.sizeDelta = new Vector2(ability_header_left_handDestruction_btn.sizeDelta.x * magnification, ability_header_left_handDestruction_btn.sizeDelta.y * magnification);
-        ability_header_left_CIP_btn.sizeDelta = new Vector2(ability_header_left_CIP_btn.sizeDelta.x * magnification, ability_header_left_CIP_btn.sizeDelta.y * magnification);
-        ability_header_left_PIG_btn.sizeDelta = new Vector2(ability_header_left_PIG_btn.sizeDelta.x * magnification, ability_header_left_PIG_btn.sizeDelta.y * magnification);
-        ability_header_left_challenge_btn.sizeDelta = new Vector2(ability_header_left_challenge_btn.sizeDelta.x * magnification, ability_header_left_challenge_btn.sizeDelta.y * magnification);
-        ability_header_left_action_btn.sizeDelta = new Vector2(ability_header_left_action_btn.sizeDelta.x * magnification, ability_header_left_action_btn.sizeDelta.y * magnification);
-        ability_header_right_getLore_btn.sizeDelta = new Vector2(ability_header_right_getLore_btn.sizeDelta.x * magnification, ability_header_right_getLore_btn.sizeDelta.y * magnification);
-        ability_header_right_lostLore_btn.sizeDelta = new Vector2(ability_header_right_lostLore_btn.sizeDelta.x * magnification, ability_header_right_lostLore_btn.sizeDelta.y * magnification);
-        ability_header_right_addInk_btn.sizeDelta = new Vector2(ability_header_right_addInk_btn.sizeDelta.x * magnification, ability_header_right_addInk_btn.sizeDelta.y * magnification);
-        ability_header_right_item_btn.sizeDelta = new Vector2(ability_header_right_item_btn.sizeDelta.x * magnification, ability_header_right_item_btn.sizeDelta.y * magnification);
-        ability_header_right_locationbtn.sizeDelta = new Vector2(ability_header_right_locationbtn.sizeDelta.x * magnification, ability_header_right_locationbtn.sizeDelta.y * magnification);
         searchBtn.sizeDelta = new Vector2(searchBtn.sizeDelta.x * magnification, searchBtn.sizeDelta.y * magnification);
         searchBtn_text.sizeDelta = new Vector2(searchBtn_text.sizeDelta.x * magnification, searchBtn_text.sizeDelta.y * magnification);
 
@@ -1066,24 +781,6 @@ public class SearchClass : MonoBehaviour
         space4.anchoredPosition = new Vector2(0, Search_Y * (-1));
 
         Search_Y += space4.sizeDelta.y;
-        abilityExplanation_header.anchorMin = new Vector2(0, 1);
-        abilityExplanation_header.anchorMax = new Vector2(0, 1);
-        abilityExplanation_header.pivot = new Vector2(0, 1);
-        abilityExplanation_header.anchoredPosition = new Vector2(0, Search_Y * (-1));
-
-        Search_Y += abilityExplanation_header.sizeDelta.y;
-        ability_header.anchorMin = new Vector2(0, 1);
-        ability_header.anchorMax = new Vector2(0, 1);
-        ability_header.pivot = new Vector2(0, 1);
-        ability_header.anchoredPosition = new Vector2(0, Search_Y * (-1));
-
-        Search_Y += ability_header.sizeDelta.y;
-        space5.anchorMin = new Vector2(0, 1);
-        space5.anchorMax = new Vector2(0, 1);
-        space5.pivot = new Vector2(0, 1);
-        space5.anchoredPosition = new Vector2(0, Search_Y * (-1));
-
-        Search_Y += space5.sizeDelta.y;
         titleExplanation_header.anchorMin = new Vector2(0, 1);
         titleExplanation_header.anchorMax = new Vector2(0, 1);
         titleExplanation_header.pivot = new Vector2(0, 1);
