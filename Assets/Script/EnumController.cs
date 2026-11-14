@@ -63,6 +63,8 @@ public class EnumController
         ArchaziasIsland,
     }
 
+
+    //KeywordAvility‚ğ•ÒW‚·‚éê‡‚ÍASearchFilterClass‚àC³‚·‚é‚±‚ÆB
     public enum KeywordAvility
     {
         Bodyguard,

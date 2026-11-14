@@ -211,9 +211,11 @@ public class SearchFilterClass
         }
 
         if (isChallenger 
-            && (keywordList.Contains(EnumController.KeywordAvility.Challenger2) 
+            && (keywordList.Contains(EnumController.KeywordAvility.Challenger1) 
+            || keywordList.Contains(EnumController.KeywordAvility.Challenger2) 
             || keywordList.Contains(EnumController.KeywordAvility.Challenger3) 
-            || keywordList.Contains(EnumController.KeywordAvility.Challenger4)))
+            || keywordList.Contains(EnumController.KeywordAvility.Challenger4)
+            || keywordList.Contains(EnumController.KeywordAvility.Challenger7)))
         {
             keywordJudge = true;
         }
@@ -224,11 +226,19 @@ public class SearchFilterClass
         }
 
         if (isShift 
-            && (keywordList.Contains(EnumController.KeywordAvility.Shift2)
+            && (keywordList.Contains(EnumController.KeywordAvility.PuppyShift3)
+            || keywordList.Contains(EnumController.KeywordAvility.Shift2)
             || keywordList.Contains(EnumController.KeywordAvility.Shift3)
             || keywordList.Contains(EnumController.KeywordAvility.Shift4)
             || keywordList.Contains(EnumController.KeywordAvility.Shift5)
-            || keywordList.Contains(EnumController.KeywordAvility.Shift6)))
+            || keywordList.Contains(EnumController.KeywordAvility.Shift6)
+            || keywordList.Contains(EnumController.KeywordAvility.Shift7)
+            || keywordList.Contains(EnumController.KeywordAvility.ShiftDiscardAnActionCard)
+            || keywordList.Contains(EnumController.KeywordAvility.ShiftDiscardAnCharacterCard)
+            || keywordList.Contains(EnumController.KeywordAvility.ShiftDiscardAnLocationCard)
+            || keywordList.Contains(EnumController.KeywordAvility.ShiftDiscardAnSongCard)
+            || keywordList.Contains(EnumController.KeywordAvility.ShiftDiscard2Cards)
+            || keywordList.Contains(EnumController.KeywordAvility.UniversalShift4)))
         {
             keywordJudge = true;
         }
@@ -236,7 +246,10 @@ public class SearchFilterClass
         if (isSinger 
             && (keywordList.Contains(EnumController.KeywordAvility.Singer3)
             || keywordList.Contains(EnumController.KeywordAvility.Singer4)
-            || keywordList.Contains(EnumController.KeywordAvility.Singer5)))
+            || keywordList.Contains(EnumController.KeywordAvility.Singer5)
+            || keywordList.Contains(EnumController.KeywordAvility.Singer6)
+            || keywordList.Contains(EnumController.KeywordAvility.Singer7)
+            || keywordList.Contains(EnumController.KeywordAvility.Singer9)))
         {
             keywordJudge = true;
         }
