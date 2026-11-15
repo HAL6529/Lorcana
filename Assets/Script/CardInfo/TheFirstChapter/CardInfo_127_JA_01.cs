@@ -15,12 +15,12 @@ public class CardInfo_127_JA_01 : CardInfo
         this.toughness = 4;
         this.lore = 2;
         this.illustrator = EnumController.Illustrator.KennethAnderson;
-        this.classList = new List<EnumController.Class> { EnumController.Class.StoryBorn, EnumController.Class.Villain, EnumController.Class.Deity };
+        this.classList = new List<EnumController.Class> { EnumController.Class.StoryBorn, EnumController.Class.Tigger };
         this.color = new List<EnumController.Colors> { EnumController.Colors.Ruby };
-        this.keywordAvility = new List<EnumController.KeywordAvility>() { EnumController.KeywordAvility.Reckless };
+        this.keywordAvility = new List<EnumController.KeywordAvility>() { EnumController.KeywordAvility.Evasive };
         this.expansion = EnumController.Expansion.TheFirstChapter;
-        this.title = EnumController.Title.Moana;
+        this.title = EnumController.Title.WinnieThePooh;
         this.type = EnumController.Type.Character;
-        this.rare = EnumController.Rare.SuperRare;
+        this.rare = EnumController.Rare.Uncommon;
     }
 }

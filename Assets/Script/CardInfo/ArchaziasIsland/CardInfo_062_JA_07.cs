@@ -17,7 +17,7 @@ public class CardInfo_062_JA_07 : CardInfo
         this.illustrator = EnumController.Illustrator.AndreaFemerstrand;
         this.classList = new List<EnumController.Class> { EnumController.Class.DreamBorn, EnumController.Class.Ally, EnumController.Class.Illusion };
         this.color = new List<EnumController.Colors> { EnumController.Colors.Amethyst };
-        this.keywordAvility = new List<EnumController.KeywordAvility> { EnumController.KeywordAvility.Evasive };
+        this.keywordAvility = new List<EnumController.KeywordAvility> { EnumController.KeywordAvility.Vanish };
         this.expansion = EnumController.Expansion.ArchaziasIsland;
         this.title = EnumController.Title.Aladdin;
         this.type = EnumController.Type.Character;

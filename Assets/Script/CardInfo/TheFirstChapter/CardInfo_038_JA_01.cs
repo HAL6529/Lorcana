@@ -7,7 +7,7 @@ public class CardInfo_038_JA_01 : CardInfo
     public CardInfo_038_JA_01()
     {
         this.cardNo = "038_JA_01";
-        this.inkCost = 7;
+        this.inkCost = 2;
         this.availableInk = true;
         this.cardName1 = "ファシリエ";
         this.cardName2 = "イカサマ師";

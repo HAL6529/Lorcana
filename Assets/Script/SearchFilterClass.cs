@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class SearchFilterClass
 {
+    public bool isInkAvailable;
+    public bool isInkDisavailable;
+
     public bool isAmethyst;
     public bool isAmber;
     public bool isEmerald;
@@ -17,20 +20,42 @@ public class SearchFilterClass
     public bool a_isItem;
     public bool a_isSong;
 
+    public bool r_common;
+    public bool r_uncommon;
+    public bool r_rare;
+    public bool r_superrare;
+    public bool r_legendary;
+    public bool r_enchanted;
+
+    public int inkcost_lowerlimit;
+    public int inkcost_upperlimit;
+    public int power_lowerlimit;
+    public int power_upperlimit;
+    public int toughness_lowerlimit;
+    public int toughness_upperlimit;
+    public int lores_lowerlimit;
+    public int lores_upperlimit;
+
     public bool isBodyGuard;
     public bool isChallenger;
     public bool isEvasive;
     public bool isShift;
     public bool isSinger;
+    public bool isSingTogether;
     public bool isSupport;
     public bool isReckless;
+    public bool isResist;
     public bool isRush;
+    public bool isVanish;
     public bool isWard;
 
     public EnumController.Title title;
 
     public SearchFilterClass()
     {
+        isInkAvailable = true;
+        isInkDisavailable = true;
+
         isAmethyst = true;
         isAmber = true;
         isEmerald = true;
@@ -44,14 +69,33 @@ public class SearchFilterClass
         a_isItem = true;
         a_isSong = true;
 
+        r_common = true;
+        r_uncommon = true;
+        r_rare = true;
+        r_superrare = true;
+        r_legendary = true;
+        r_enchanted = true;
+
+        inkcost_lowerlimit = 0;
+        inkcost_upperlimit = 12;
+        power_lowerlimit = 0;
+        power_upperlimit = 12;
+        toughness_lowerlimit = 0;
+        toughness_upperlimit = 12;
+        lores_lowerlimit = 0;
+        lores_upperlimit = 5;
+
         isBodyGuard = false;
         isChallenger = false;
         isEvasive = false;
         isShift = false;
         isSinger = false;
+        isSingTogether = false;
         isSupport = false;
         isReckless = false;
+        isResist = false;
         isRush = false;
+        isVanish = false;
         isWard = false;
 
         title = EnumController.Title.None;
@@ -59,6 +103,24 @@ public class SearchFilterClass
 
     public bool isSearchHit(CardInfo m_CardInfo)
     {
+        bool inkwell =m_CardInfo.GetAvailableInk();
+        bool inkwellJudge = false;
+
+        if (isInkAvailable && inkwell)
+        {
+            inkwellJudge = true;
+        }
+
+        if (isInkDisavailable && !inkwell)
+        {
+            inkwellJudge = true;
+        }
+
+        if (!inkwellJudge)
+        {
+            return false;
+        }
+
         List<EnumController.Colors> colorList = m_CardInfo.GetColor();
         bool colorJudge = false;
         if(isAmethyst && colorList.Contains(EnumController.Colors.Amethyst))
@@ -128,6 +190,107 @@ public class SearchFilterClass
             return false;
         }
 
+        EnumController.Rare rarity = m_CardInfo.GetRare();
+        bool rarityJudge = false;
+        if (r_common && rarity == EnumController.Rare.Common)
+        {
+            rarityJudge = true;
+        }
+
+        if(r_uncommon && rarity == EnumController.Rare.Uncommon)
+        {
+            rarityJudge = true;
+        }
+
+        if (r_rare && rarity == EnumController.Rare.Rare)
+        {
+            rarityJudge = true;
+        }
+
+        if (r_superrare && rarity == EnumController.Rare.SuperRare)
+        {
+            rarityJudge = true;
+        }
+
+        if (r_legendary && rarity == EnumController.Rare.Legendary)
+        {
+            rarityJudge = true;
+        }
+
+        if (r_enchanted && rarity == EnumController.Rare.Enchanted)
+        {
+            rarityJudge = true;
+        }
+
+        if (!rarityJudge)
+        {
+            return false;
+        }
+
+        bool inkcostJudge = false;
+        int inkcost = m_CardInfo.GetInkCost();
+        if (inkcost_lowerlimit == 0 && inkcost_upperlimit == 12)
+        {
+            inkcostJudge = true;
+        }
+        if (inkcost >= inkcost_lowerlimit && inkcost_upperlimit >= inkcost)
+        {
+            inkcostJudge = true;
+        }
+
+        if (!inkcostJudge)
+        {
+            return false;
+        }
+
+        bool powerJudge = false;
+        int power = m_CardInfo.GetPower();
+        if (power_lowerlimit == 0 && power_upperlimit == 12)
+        {
+            powerJudge = true;
+        }
+        if (power >= power_lowerlimit && power_upperlimit >= power)
+        {
+            powerJudge = true;
+        }
+
+        if (!powerJudge)
+        {
+            return false;
+        }
+
+        bool toughnessJudge = false;
+        int toughness = m_CardInfo.GetToughness();
+        if (toughness_lowerlimit == 0 && toughness_upperlimit == 12)
+        {
+            toughnessJudge = true;
+        }
+        if (toughness >= toughness_lowerlimit && toughness_upperlimit >= toughness)
+        {
+            toughnessJudge = true;
+        }
+
+        if (!toughnessJudge)
+        {
+            return false;
+        }
+
+        bool loresJudge = false;
+        int lores = m_CardInfo.GetLore();
+        if(lores_lowerlimit == 0 && lores_upperlimit == 5)
+        {
+            loresJudge = true;
+        }
+        if (lores >= lores_lowerlimit && lores_upperlimit >= lores)
+        {
+            loresJudge = true;
+        }
+
+        if (!loresJudge)
+        {
+            return false;
+        }
+
         List<EnumController.KeywordAvility> keywordList = m_CardInfo.GetKeywordAvility();
         bool keywordJudge = false;
         if (isBodyGuard && keywordList.Contains(EnumController.KeywordAvility.Bodyguard))
@@ -136,9 +299,11 @@ public class SearchFilterClass
         }
 
         if (isChallenger 
-            && (keywordList.Contains(EnumController.KeywordAvility.Challenger2) 
+            && (keywordList.Contains(EnumController.KeywordAvility.Challenger1) 
+            || keywordList.Contains(EnumController.KeywordAvility.Challenger2) 
             || keywordList.Contains(EnumController.KeywordAvility.Challenger3) 
-            || keywordList.Contains(EnumController.KeywordAvility.Challenger4)))
+            || keywordList.Contains(EnumController.KeywordAvility.Challenger4)
+            || keywordList.Contains(EnumController.KeywordAvility.Challenger7)))
         {
             keywordJudge = true;
         }
@@ -149,11 +314,19 @@ public class SearchFilterClass
         }
 
         if (isShift 
-            && (keywordList.Contains(EnumController.KeywordAvility.Shift2)
+            && (keywordList.Contains(EnumController.KeywordAvility.PuppyShift3)
+            || keywordList.Contains(EnumController.KeywordAvility.Shift2)
             || keywordList.Contains(EnumController.KeywordAvility.Shift3)
             || keywordList.Contains(EnumController.KeywordAvility.Shift4)
             || keywordList.Contains(EnumController.KeywordAvility.Shift5)
-            || keywordList.Contains(EnumController.KeywordAvility.Shift6)))
+            || keywordList.Contains(EnumController.KeywordAvility.Shift6)
+            || keywordList.Contains(EnumController.KeywordAvility.Shift7)
+            || keywordList.Contains(EnumController.KeywordAvility.ShiftDiscardAnActionCard)
+            || keywordList.Contains(EnumController.KeywordAvility.ShiftDiscardAnCharacterCard)
+            || keywordList.Contains(EnumController.KeywordAvility.ShiftDiscardAnLocationCard)
+            || keywordList.Contains(EnumController.KeywordAvility.ShiftDiscardAnSongCard)
+            || keywordList.Contains(EnumController.KeywordAvility.ShiftDiscard2Cards)
+            || keywordList.Contains(EnumController.KeywordAvility.UniversalShift4)))
         {
             keywordJudge = true;
         }
@@ -161,7 +334,27 @@ public class SearchFilterClass
         if (isSinger 
             && (keywordList.Contains(EnumController.KeywordAvility.Singer3)
             || keywordList.Contains(EnumController.KeywordAvility.Singer4)
-            || keywordList.Contains(EnumController.KeywordAvility.Singer5)))
+            || keywordList.Contains(EnumController.KeywordAvility.Singer5)
+            || keywordList.Contains(EnumController.KeywordAvility.Singer6)
+            || keywordList.Contains(EnumController.KeywordAvility.Singer7)
+            || keywordList.Contains(EnumController.KeywordAvility.Singer9)))
+        {
+            keywordJudge = true;
+        }
+
+        if (isResist 
+            && (keywordList.Contains(EnumController.KeywordAvility.Resist1)
+            || keywordList.Contains(EnumController.KeywordAvility.Resist2)
+            || keywordList.Contains(EnumController.KeywordAvility.Resist3)))
+        {
+            keywordJudge = true;
+        }
+
+        if (isSingTogether 
+            && (keywordList.Contains(EnumController.KeywordAvility.SingTogether6)
+            || keywordList.Contains(EnumController.KeywordAvility.SingTogether7)
+            || keywordList.Contains(EnumController.KeywordAvility.SingTogether8)
+            || keywordList.Contains(EnumController.KeywordAvility.SingTogether10)))
         {
             keywordJudge = true;
         }
@@ -186,7 +379,12 @@ public class SearchFilterClass
             keywordJudge = true;
         }
 
-        if (!isBodyGuard && !isChallenger && !isEvasive && !isShift && !isSinger && !isSupport && !isReckless && !isRush && !isWard)
+        if (isVanish && keywordList.Contains(EnumController.KeywordAvility.Vanish))
+        {
+            keywordJudge = true;
+        }
+
+        if (!isBodyGuard && !isChallenger && !isEvasive && !isShift && !isSinger && !isResist && !isSupport && !isReckless && !isRush && !isWard && !isSingTogether && !isVanish)
         {
             keywordJudge = true;
         }
