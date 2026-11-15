@@ -41,9 +41,12 @@ public class SearchFilterClass
     public bool isEvasive;
     public bool isShift;
     public bool isSinger;
+    public bool isSingTogether;
     public bool isSupport;
     public bool isReckless;
+    public bool isResist;
     public bool isRush;
+    public bool isVanish;
     public bool isWard;
 
     public EnumController.Title title;
@@ -87,9 +90,12 @@ public class SearchFilterClass
         isEvasive = false;
         isShift = false;
         isSinger = false;
+        isSingTogether = false;
         isSupport = false;
         isReckless = false;
+        isResist = false;
         isRush = false;
+        isVanish = false;
         isWard = false;
 
         title = EnumController.Title.None;
@@ -336,6 +342,23 @@ public class SearchFilterClass
             keywordJudge = true;
         }
 
+        if (isResist 
+            && (keywordList.Contains(EnumController.KeywordAvility.Resist1)
+            || keywordList.Contains(EnumController.KeywordAvility.Resist2)
+            || keywordList.Contains(EnumController.KeywordAvility.Resist3)))
+        {
+            keywordJudge = true;
+        }
+
+        if (isSingTogether 
+            && (keywordList.Contains(EnumController.KeywordAvility.SingTogether6)
+            || keywordList.Contains(EnumController.KeywordAvility.SingTogether7)
+            || keywordList.Contains(EnumController.KeywordAvility.SingTogether8)
+            || keywordList.Contains(EnumController.KeywordAvility.SingTogether10)))
+        {
+            keywordJudge = true;
+        }
+
         if (isSupport && keywordList.Contains(EnumController.KeywordAvility.Support))
         {
             keywordJudge = true;
@@ -356,7 +379,12 @@ public class SearchFilterClass
             keywordJudge = true;
         }
 
-        if (!isBodyGuard && !isChallenger && !isEvasive && !isShift && !isSinger && !isSupport && !isReckless && !isRush && !isWard)
+        if (isVanish && keywordList.Contains(EnumController.KeywordAvility.Vanish))
+        {
+            keywordJudge = true;
+        }
+
+        if (!isBodyGuard && !isChallenger && !isEvasive && !isShift && !isSinger && !isResist && !isSupport && !isReckless && !isRush && !isWard && !isSingTogether && !isVanish)
         {
             keywordJudge = true;
         }
