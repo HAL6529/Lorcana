@@ -13,7 +13,7 @@ public class CardInfo_105_JA_05 : CardInfo
         this.cardName2 = "ñ{ñΩÉ`Å[ÉÄ";
         this.power = 3;
         this.toughness = 5;
-        this.lore =21;
+        this.lore = 2;
         this.illustrator = EnumController.Illustrator.FedericoMariaCugliari;
         this.classList = new List<EnumController.Class>() { EnumController.Class.StoryBorn, EnumController.Class.Ally };
         this.color = new List<EnumController.Colors> { EnumController.Colors.Ruby };
