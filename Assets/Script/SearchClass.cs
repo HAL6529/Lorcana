@@ -37,6 +37,49 @@ public class SearchClass : MonoBehaviour
     public Image r_enchantedBtn_background;
     public Image r_enchantedBtn;
 
+    public Image b_StoryBorn;
+    public Image b_DreamBorn;
+    public Image b_FloodBorn;
+    public Image b_SevenDwarf;
+    public Image b_Illusion;
+    public Image b_Vineling;
+    public Image b_Villain;
+    public Image b_Alien;
+    public Image b_Gargoyle;
+    public Image b_Captain;
+    public Image b_Super;
+    public Image b_Titan;
+    public Image b_Team;
+    public Image b_Tigger;
+    public Image b_Toy;
+    public Image b_Dragon;
+    public Image b_Hyena;
+    public Image b_Hunny;
+    public Image b_Hero;
+    public Image b_Prince;
+    public Image b_Princess;
+    public Image b_Broom;
+    public Image b_Madrigal;
+    public Image b_Monster;
+    public Image b_Racer;
+    public Image b_RedPanda;
+    public Image b_Robot;
+    public Image b_Ally;
+    public Image b_Queen;
+    public Image b_Fairy;
+    public Image b_Puppy;
+    public Image b_Mentor;
+    public Image b_Giant;
+    public Image b_Dinosaur;
+    public Image b_Detective;
+    public Image b_Pirate;
+    public Image b_King;
+    public Image b_Inventor;
+    public Image b_Deity;
+    public Image b_Musketeer;
+    public Image b_Knight;
+    public Image b_Sorcerer;
+
     public Image BodyGuardBtn;
     public Image ChallengerBtn;
     public Image EvasiveBtn;
@@ -72,6 +115,49 @@ public class SearchClass : MonoBehaviour
     public bool r_superrare;
     public bool r_legendary;
     public bool r_enchanted;
+
+    public bool isAlly;
+    public bool isAlien;
+    public bool isBroom;
+    public bool isCaptain;
+    public bool isDetective;
+    public bool isDeity;
+    public bool isDinosaur;
+    public bool isDragon;
+    public bool isDreamBorn;
+    public bool isFairy;
+    public bool isFloodBorn;
+    public bool isGargoyle;
+    public bool isGiant;
+    public bool isHero;
+    public bool isHunny;
+    public bool isHyena;
+    public bool isIllusion;
+    public bool isInventor;
+    public bool isKing;
+    public bool isKnight;
+    public bool isMadrigal;
+    public bool isMentor;
+    public bool isMonster;
+    public bool isMusketeer;
+    public bool isPirate;
+    public bool isPrince;
+    public bool isPrincess;
+    public bool isPuppy;
+    public bool isQueen;
+    public bool isRacer;
+    public bool isRedPanda;
+    public bool isRobot;
+    public bool isSevenDwarf;
+    public bool isStoryBorn;
+    public bool isSorcerer;
+    public bool isSuper;
+    public bool isTeam;
+    public bool isTigger;
+    public bool isTitan;
+    public bool isToy;
+    public bool isVillain;
+    public bool isVineling;
 
     public bool isBodyGuard;
     public bool isChallenger;
@@ -141,6 +227,71 @@ public class SearchClass : MonoBehaviour
     public RectTransform rarity_Header_enchanted;
     public RectTransform rarity_Header_enchanted_image;
     public RectTransform space3_1;
+    public RectTransform classExplanation_Header;
+    public RectTransform classExplanation_Header_text1;
+    public RectTransform classExplanation_Header_text2;
+    public RectTransform class_Header;
+    public RectTransform class_Header_space1;
+    public RectTransform class_Header_line1;
+    public RectTransform class_Header_line1_button1;
+    public RectTransform class_Header_line1_button2;
+    public RectTransform class_Header_line1_button3;
+    public RectTransform class_Header_space2;
+    public RectTransform class_Header_line2;
+    public RectTransform class_Header_line2_button1;
+    public RectTransform class_Header_line2_button2;
+    public RectTransform class_Header_line2_button3;
+    public RectTransform class_Header_line2_button4;
+    public RectTransform class_Header_line2_button5;
+    public RectTransform class_Header_space3;
+    public RectTransform class_Header_line3;
+    public RectTransform class_Header_line3_button1;
+    public RectTransform class_Header_line3_button2;
+    public RectTransform class_Header_line3_button3;
+    public RectTransform class_Header_line3_button4;
+    public RectTransform class_Header_line3_button5;
+    public RectTransform class_Header_space4;
+    public RectTransform class_Header_line4;
+    public RectTransform class_Header_line4_button1;
+    public RectTransform class_Header_line4_button2;
+    public RectTransform class_Header_line4_button3;
+    public RectTransform class_Header_line4_button4;
+    public RectTransform class_Header_line4_button5;
+    public RectTransform class_Header_space5;
+    public RectTransform class_Header_line5;
+    public RectTransform class_Header_line5_button1;
+    public RectTransform class_Header_line5_button2;
+    public RectTransform class_Header_line5_button3;
+    public RectTransform class_Header_line5_button4;
+    public RectTransform class_Header_line5_button5;
+    public RectTransform class_Header_space6;
+    public RectTransform class_Header_line6;
+    public RectTransform class_Header_line6_button1;
+    public RectTransform class_Header_line6_button2;
+    public RectTransform class_Header_line6_button3;
+    public RectTransform class_Header_line6_button4;
+    public RectTransform class_Header_line6_button5;
+    public RectTransform class_Header_space7;
+    public RectTransform class_Header_line7;
+    public RectTransform class_Header_line7_button1;
+    public RectTransform class_Header_line7_button2;
+    public RectTransform class_Header_line7_button3;
+    public RectTransform class_Header_line7_button4;
+    public RectTransform class_Header_line7_button5;
+    public RectTransform class_Header_space8;
+    public RectTransform class_Header_line8;
+    public RectTransform class_Header_line8_button1;
+    public RectTransform class_Header_line8_button2;
+    public RectTransform class_Header_line8_button3;
+    public RectTransform class_Header_line8_button4;
+    public RectTransform class_Header_line8_button5;
+    public RectTransform class_Header_space9;
+    public RectTransform class_Header_line9;
+    public RectTransform class_Header_line9_button1;
+    public RectTransform class_Header_line9_button2;
+    public RectTransform class_Header_line9_button3;
+    public RectTransform class_Header_line9_button4;
+    public RectTransform space3_2;
     public RectTransform keywordExplanation_header;
     public RectTransform keywordExplanation_header_text1;
     public RectTransform keywordExplanation_header_text2;
@@ -311,6 +462,49 @@ public class SearchClass : MonoBehaviour
         r_legendary = true;
         r_enchanted = true;
 
+        isAlly = true;
+        isAlien = true;
+        isBroom = true;
+        isCaptain = true;
+        isDetective = true;
+        isDeity = true;
+        isDinosaur = true;
+        isDragon = true;
+        isDreamBorn = true;
+        isFairy = true;
+        isFloodBorn = true;
+        isGargoyle = true;
+        isGiant = true;
+        isHero = true;
+        isHunny = true;
+        isHyena = true;
+        isIllusion = true;
+        isInventor = true;
+        isKing = true;
+        isKnight = true;
+        isMadrigal = true;
+        isMentor = true;
+        isMonster = true;
+        isMusketeer = true;
+        isPirate = true;
+        isPrince = true;
+        isPrincess = true;
+        isPuppy = true;
+        isQueen = true;
+        isRacer = true;
+        isRedPanda = true;
+        isRobot = true;
+        isSevenDwarf = true;
+        isStoryBorn = true;
+        isSorcerer = true;
+        isSuper = true;
+        isTeam = true;
+        isTigger = true;
+        isTitan = true;
+        isToy = true;
+        isVillain = true;
+        isVineling = true;
+
         isBodyGuard = false;
         isChallenger = false;
         isEvasive = false;
@@ -341,8 +535,627 @@ public class SearchClass : MonoBehaviour
         this.gameObject.SetActive(false);
     }
 
+    public void onClassBtn(string paramater)
+    {
+        if (isAlly && isAlien && isBroom && isCaptain && isDetective && isDeity && isDinosaur && isDragon && isDreamBorn && isFairy && isFloodBorn
+            && isGargoyle && isGiant && isHero && isHunny && isHyena && isIllusion && isInventor && isKing && isKnight && isMadrigal && isMentor && isMonster
+            && isMusketeer && isPirate && isPrince && isPrincess && isPuppy && isQueen && isRacer && isRedPanda && isRobot && isSevenDwarf && isStoryBorn
+            && isSorcerer && isSuper && isTeam && isTigger && isTitan && isToy && isVillain && isVineling)
+        {
+            isAlly = false;
+            isAlien = false;
+            isBroom = false;
+            isCaptain = false;
+            isDetective = false;
+            isDeity = false;
+            isDinosaur = false;
+            isDragon = false;
+            isDreamBorn = false;
+            isFairy = false;
+            isFloodBorn = false;
+            isGargoyle = false;
+            isGiant = false;
+            isHero = false;
+            isHunny = false;
+            isHyena = false;
+            isIllusion = false;
+            isInventor = false;
+            isKing = false;
+            isKnight = false;
+            isMadrigal = false;
+            isMentor = false;
+            isMonster = false;
+            isMusketeer = false;
+            isPirate = false;
+            isPrince = false;
+            isPrincess = false;
+            isPuppy = false;
+            isQueen = false;
+            isRacer = false;
+            isRedPanda = false;
+            isRobot = false;
+            isSevenDwarf = false;
+            isStoryBorn = false;
+            isSorcerer = false;
+            isSuper = false;
+            isTeam = false;
+            isTigger = false;
+            isTitan = false;
+            isToy = false;
+            isVillain = false;
+            isVineling = false;
+
+            b_StoryBorn.color = new(1, 1, 1, 50f / 255f);
+            b_DreamBorn.color = new(1, 1, 1, 50f / 255f);
+            b_FloodBorn.color = new(1, 1, 1, 50f / 255f);
+            b_SevenDwarf.color = new(1, 1, 1, 50f / 255f);
+            b_Illusion.color = new(1, 1, 1, 50f / 255f);
+            b_Vineling.color = new(1, 1, 1, 50f / 255f);
+            b_Villain.color = new(1, 1, 1, 50f / 255f);
+            b_Alien.color = new(1, 1, 1, 50f / 255f);
+            b_Gargoyle.color = new(1, 1, 1, 50f / 255f);
+            b_Captain.color = new(1, 1, 1, 50f / 255f);
+            b_Super.color = new(1, 1, 1, 50f / 255f);
+            b_Titan.color = new(1, 1, 1, 50f / 255f);
+            b_Team.color = new(1, 1, 1, 50f / 255f);
+            b_Tigger.color = new(1, 1, 1, 50f / 255f);
+            b_Toy.color = new(1, 1, 1, 50f / 255f);
+            b_Dragon.color = new(1, 1, 1, 50f / 255f);
+            b_Hyena.color = new(1, 1, 1, 50f / 255f);
+            b_Hunny.color = new(1, 1, 1, 50f / 255f);
+            b_Hero.color = new(1, 1, 1, 50f / 255f);
+            b_Prince.color = new(1, 1, 1, 50f / 255f);
+            b_Princess.color = new(1, 1, 1, 50f / 255f);
+            b_Broom.color = new(1, 1, 1, 50f / 255f);
+            b_Madrigal.color = new(1, 1, 1, 50f / 255f);
+            b_Monster.color = new(1, 1, 1, 50f / 255f);
+            b_Racer.color = new(1, 1, 1, 50f / 255f);
+            b_RedPanda.color = new(1, 1, 1, 50f / 255f);
+            b_Robot.color = new(1, 1, 1, 50f / 255f);
+            b_Ally.color = new(1, 1, 1, 50f / 255f);
+            b_Queen.color = new(1, 1, 1, 50f / 255f);
+            b_Fairy.color = new(1, 1, 1, 50f / 255f);
+            b_Puppy.color = new(1, 1, 1, 50f / 255f);
+            b_Mentor.color = new(1, 1, 1, 50f / 255f);
+            b_Giant.color = new(1, 1, 1, 50f / 255f);
+            b_Dinosaur.color = new(1, 1, 1, 50f / 255f);
+            b_Detective.color = new(1, 1, 1, 50f / 255f);
+            b_Pirate.color = new(1, 1, 1, 50f / 255f);
+            b_King.color = new(1, 1, 1, 50f / 255f);
+            b_Inventor.color = new(1, 1, 1, 50f / 255f);
+            b_Deity.color = new(1, 1, 1, 50f / 255f);
+            b_Musketeer.color = new(1, 1, 1, 50f / 255f);
+            b_Knight.color = new(1, 1, 1, 50f / 255f);
+            b_Sorcerer.color = new(1, 1, 1, 50f / 255f);
+        }
+
+        switch (paramater)
+        {
+            case "Ally":
+                if (isAlly)
+                {
+                    isAlly = false;
+                    b_Ally.color = new(1, 1, 1, 50f / 255f);
+                }
+                else
+                {
+                    isAlly = true;
+                    b_Ally.color = new(1, 1, 1, 1);
+                }
+                break;
+            case "Alien":
+                if (isAlien)
+                {
+                    isAlien = false;
+                    b_Alien.color = new(1, 1, 1, 50f / 255f);
+                }
+                else
+                {
+                    isAlien = true;
+                    b_Alien.color = new(1, 1, 1, 1);
+                }
+                break;
+            case "Broom":
+                if (isBroom)
+                {
+                    isBroom = false;
+                    b_Broom.color = new(1, 1, 1, 50f / 255f);
+                }
+                else
+                {
+                    isBroom = true;
+                    b_Broom.color = new(1, 1, 1, 1);
+                }
+                break;
+            case "Captain":
+                if (isCaptain)
+                {
+                    isCaptain = false;
+                    b_Captain.color = new(1, 1, 1, 50f / 255f);
+                }
+                else
+                {
+                    isCaptain = true;
+                    b_Captain.color = new(1, 1, 1, 1);
+                }
+                break;
+            case "Detective":
+                if (isDetective)
+                {
+                    isDetective = false;
+                    b_Detective.color = new(1, 1, 1, 50f / 255f);
+                }
+                else
+                {
+                    isDetective = true;
+                    b_Detective.color = new(1, 1, 1, 1);
+                }
+                break;
+            case "Deity":
+                if (isDeity)
+                {
+                    isDeity = false;
+                    b_Deity.color = new(1, 1, 1, 50f / 255f);
+                }
+                else
+                {
+                    isDeity = true;
+                    b_Deity.color = new(1, 1, 1, 1);
+                }
+                break;
+            case "Dinosaur":
+                if (isDinosaur)
+                {
+                    isDinosaur = false;
+                    b_Dinosaur.color = new(1, 1, 1, 50f / 255f);
+                }
+                else
+                {
+                    isDinosaur = true;
+                    b_Dinosaur.color = new(1, 1, 1, 1);
+                }
+                break;
+            case "Dragon":
+                if (isDragon)
+                {
+                    isDragon = false;
+                    b_Dragon.color = new(1, 1, 1, 50f / 255f);
+                }
+                else
+                {
+                    isDragon = true;
+                    b_Dragon.color = new(1, 1, 1, 1);
+                }
+                break;
+            case "DreamBorn":
+                if (isDreamBorn)
+                {
+                    isDreamBorn = false;
+                    b_DreamBorn.color = new(1, 1, 1, 50f / 255f);
+                }
+                else
+                {
+                    isDreamBorn = true;
+                    b_DreamBorn.color = new(1, 1, 1, 1);
+                }
+                break;
+            case "Fairy":
+                if (isFairy)
+                {
+                    isFairy = false;
+                    b_Fairy.color = new(1, 1, 1, 50f / 255f);
+                }
+                else
+                {
+                    isFairy = true;
+                    b_Fairy.color = new(1, 1, 1, 1);
+                }
+                break;
+            case "FloodBorn":
+                if (isFloodBorn)
+                {
+                    isFloodBorn = false;
+                    b_FloodBorn.color = new(1, 1, 1, 50f / 255f);
+                }
+                else
+                {
+                    isFloodBorn = true;
+                    b_FloodBorn.color = new(1, 1, 1, 1);
+                }
+                break;
+            case "Gargoyle":
+                if (isGargoyle)
+                {
+                    isGargoyle = false;
+                    b_Gargoyle.color = new(1, 1, 1, 50f / 255f);
+                }
+                else
+                {
+                    isGargoyle = true;
+                    b_Gargoyle.color = new(1, 1, 1, 1);
+                }
+                break;
+            case "Giant":
+                if (isGiant)
+                {
+                    isGiant = false;
+                    b_Giant.color = new(1, 1, 1, 50f / 255f);
+                }
+                else
+                {
+                    isGiant = true;
+                    b_Giant.color = new(1, 1, 1, 1);
+                }
+                break;
+            case "Hero":
+                if (isHero)
+                {
+                    isHero = false;
+                    b_Hero.color = new(1, 1, 1, 50f / 255f);
+                }
+                else
+                {
+                    isHero = true;
+                    b_Hero.color = new(1, 1, 1, 1);
+                }
+                break;
+            case "Hunny":
+                if (isHunny)
+                {
+                    isHunny = false;
+                    b_Hunny.color = new(1, 1, 1, 50f / 255f);
+                }
+                else
+                {
+                    isHunny = true;
+                    b_Hunny.color = new(1, 1, 1, 1);
+                }
+                break;
+            case "Hyena":
+                if (isHyena)
+                {
+                    isHyena = false;
+                    b_Hyena.color = new(1, 1, 1, 50f / 255f);
+                }
+                else
+                {
+                    isHyena = true;
+                    b_Hyena.color = new(1, 1, 1, 1);
+                }
+                break;
+            case "Illusion":
+                if (isIllusion)
+                {
+                    isIllusion = false;
+                    b_Illusion.color = new(1, 1, 1, 50f / 255f);
+                }
+                else
+                {
+                    isIllusion = true;
+                    b_Illusion.color = new(1, 1, 1, 1);
+                }
+                break;
+            case "Inventor":
+                if (isInventor)
+                {
+                    isInventor = false;
+                    b_Inventor.color = new(1, 1, 1, 50f / 255f);
+                }
+                else
+                {
+                    isInventor = true;
+                    b_Inventor.color = new(1, 1, 1, 1);
+                }
+                break;
+            case "King":
+                if (isKing)
+                {
+                    isKing = false;
+                    b_King.color = new(1, 1, 1, 50f / 255f);
+                }
+                else
+                {
+                    isKing = true;
+                    b_King.color = new(1, 1, 1, 1);
+                }
+                break;
+            case "Knight":
+                if (isKnight)
+                {
+                    isKnight = false;
+                    b_Knight.color = new(1, 1, 1, 50f / 255f);
+                }
+                else
+                {
+                    isKnight = true;
+                    b_Knight.color = new(1, 1, 1, 1);
+                }
+                break;
+            case "Madrigal":
+                if (isMadrigal)
+                {
+                    isMadrigal = false;
+                    b_Madrigal.color = new(1, 1, 1, 50f / 255f);
+                }
+                else
+                {
+                    isMadrigal = true;
+                    b_Madrigal.color = new(1, 1, 1, 1);
+                }
+                break;
+            case "Mentor":
+                if (isMentor)
+                {
+                    isMentor = false;
+                    b_Mentor.color = new(1, 1, 1, 50f / 255f);
+                }
+                else
+                {
+                    isMentor = true;
+                    b_Mentor.color = new(1, 1, 1, 1);
+                }
+                break;
+            case "Monster":
+                if (isMonster)
+                {
+                    isMonster = false;
+                    b_Monster.color = new(1, 1, 1, 50f / 255f);
+                }
+                else
+                {
+                    isMonster = true;
+                    b_Monster.color = new(1, 1, 1, 1);
+                }
+                break;
+            case "Musketeer":
+                if (isMusketeer)
+                {
+                    isMusketeer = false;
+                    b_Musketeer.color = new(1, 1, 1, 50f / 255f);
+                }
+                else
+                {
+                    isMusketeer = true;
+                    b_Musketeer.color = new(1, 1, 1, 1);
+                }
+                break;
+            case "Pirate":
+                if (isPirate)
+                {
+                    isPirate = false;
+                    b_Pirate.color = new(1, 1, 1, 50f / 255f);
+                }
+                else
+                {
+                    isPirate = true;
+                    b_Pirate.color = new(1, 1, 1, 1);
+                }
+                break;
+            case "Prince":
+                if (isPrince)
+                {
+                    isPrince = false;
+                    b_Prince.color = new(1, 1, 1, 50f / 255f);
+                }
+                else
+                {
+                    isPrince = true;
+                    b_Prince.color = new(1, 1, 1, 1);
+                }
+                break;
+            case "Princess":
+                if (isPrincess)
+                {
+                    isPrincess = false;
+                    b_Princess.color = new(1, 1, 1, 50f / 255f);
+                }
+                else
+                {
+                    isPrincess = true;
+                    b_Princess.color = new(1, 1, 1, 1);
+                }
+                break;
+            case "Puppy":
+                if (isPuppy)
+                {
+                    isPuppy = false;
+                    b_Puppy.color = new(1, 1, 1, 50f / 255f);
+                }
+                else
+                {
+                    isPuppy = true;
+                    b_Puppy.color = new(1, 1, 1, 1);
+                }
+                break;
+            case "Queen":
+                if (isQueen)
+                {
+                    isQueen = false;
+                    b_Queen.color = new(1, 1, 1, 50f / 255f);
+                }
+                else
+                {
+                    isQueen = true;
+                    b_Queen.color = new(1, 1, 1, 1);
+                }
+                break;
+            case "Racer":
+                if (isRacer)
+                {
+                    isRacer = false;
+                    b_Racer.color = new(1, 1, 1, 50f / 255f);
+                }
+                else
+                {
+                    isRacer = true;
+                    b_Racer.color = new(1, 1, 1, 1);
+                }
+                break;
+            case "RedPanda":
+                if (isRedPanda)
+                {
+                    isRedPanda = false;
+                    b_RedPanda.color = new(1, 1, 1, 50f / 255f);
+                }
+                else
+                {
+                    isRedPanda = true;
+                    b_RedPanda.color = new(1, 1, 1, 1);
+                }
+                break;
+            case "Robot":
+                if (isRobot)
+                {
+                    isRobot = false;
+                    b_Robot.color = new(1, 1, 1, 50f / 255f);
+                }
+                else
+                {
+                    isRobot = true;
+                    b_Robot.color = new(1, 1, 1, 1);
+                }
+                break;
+            case "SevenDwarf":
+                if (isSevenDwarf)
+                {
+                    isSevenDwarf = false;
+                    b_SevenDwarf.color = new(1, 1, 1, 50f / 255f);
+                }
+                else
+                {
+                    isSevenDwarf = true;
+                    b_SevenDwarf.color = new(1, 1, 1, 1);
+                }
+                break;
+            case "StoryBorn":
+                if (isStoryBorn)
+                {
+                    isStoryBorn = false;
+                    b_StoryBorn.color = new(1, 1, 1, 50f / 255f);
+                }
+                else
+                {
+                    isStoryBorn = true;
+                    b_StoryBorn.color = new(1, 1, 1, 1);
+                }
+                break;
+            case "Sorcerer":
+                if (isSorcerer)
+                {
+                    isSorcerer = false;
+                    b_Sorcerer.color = new(1, 1, 1, 50f / 255f);
+                }
+                else
+                {
+                    isSorcerer = true;
+                    b_Sorcerer.color = new(1, 1, 1, 1);
+                }
+                break;
+            case "Super":
+                if (isSuper)
+                {
+                    isSuper = false;
+                    b_Super.color = new(1, 1, 1, 50f / 255f);
+                }
+                else
+                {
+                    isSuper = true;
+                    b_Super.color = new(1, 1, 1, 1);
+                }
+                break;
+            case "Team":
+                if (isTeam)
+                {
+                    isTeam = false;
+                    b_Team.color = new(1, 1, 1, 50f / 255f);
+                }
+                else
+                {
+                    isTeam = true;
+                    b_Team.color = new(1, 1, 1, 1);
+                }
+                break;
+            case "Tigger":
+                if (isTigger)
+                {
+                    isTigger = false;
+                    b_Tigger.color = new(1, 1, 1, 50f / 255f);
+                }
+                else
+                {
+                    isTigger = true;
+                    b_Tigger.color = new(1, 1, 1, 1);
+                }
+                break;
+            case "Titan":
+                if (isTitan)
+                {
+                    isTitan = false;
+                    b_Titan.color = new(1, 1, 1, 50f / 255f);
+                }
+                else
+                {
+                    isTitan = true;
+                    b_Titan.color = new(1, 1, 1, 1);
+                }
+                break;
+            case "Toy":
+                if (isToy)
+                {
+                    isToy = false;
+                    b_Toy.color = new(1, 1, 1, 50f / 255f);
+                }
+                else
+                {
+                    isToy = true;
+                    b_Toy.color = new(1, 1, 1, 1);
+                }
+                break;
+            case "Villain":
+                if (isVillain)
+                {
+                    isVillain = false;
+                    b_Villain.color = new(1, 1, 1, 50f / 255f);
+                }
+                else
+                {
+                    isVillain = true;
+                    b_Villain.color = new(1, 1, 1, 1);
+                }
+                break;
+            case "Vineling":
+                if (isVineling)
+                {
+                    isVineling = false;
+                    b_Vineling.color = new(1, 1, 1, 50f / 255f);
+                }
+                else
+                {
+                    isVineling = true;
+                    b_Vineling.color = new(1, 1, 1, 1);
+                }
+                break;
+        }
+    }
+
     public void onColorBtn(string paramater)
     {
+        if(isAmethyst && isAmber && isEmerald && isSapphire && isSteel && isRuby)
+        {
+            isAmethyst = false;
+            AmethystBtn.color = new(1, 1, 1, 50f / 255f);
+            isAmber = false;
+            AmberBtn.color = new(1, 1, 1, 50f / 255f);
+            isEmerald = false;
+            EmeraldBtn.color = new(1, 1, 1, 50f / 255f);
+            isSapphire = false;
+            SapphireBtn.color = new(1, 1, 1, 50f / 255f);
+            isSteel = false;
+            SteelBtn.color = new(1, 1, 1, 50f / 255f);
+            isRuby = false;
+            RubyBtn.color = new(1, 1, 1, 50f / 255f);
+        }
+
         switch (paramater)
         {
             case "Amethyst":
@@ -574,6 +1387,20 @@ public class SearchClass : MonoBehaviour
 
     public void onTypeBtn(string paramater)
     {
+        if(a_isAction && a_isCharacter && a_isLocation && a_isItem && a_isSong)
+        {
+            this.a_isAction = false;
+            a_ActionBtn.color = new(1, 1, 1, 50f / 255f);
+            this.a_isCharacter = false;
+            a_CharacterBtn.color = new(1, 1, 1, 50f / 255f);
+            this.a_isLocation = false;
+            a_LocationBtn.color = new(1, 1, 1, 50f / 255f);
+            this.a_isItem = false;
+            a_ItemBtn.color = new(1, 1, 1, 50f / 255f);
+            this.a_isSong = false;
+            a_SongBtn.color = new(1, 1, 1, 50f / 255f);
+        }
+
         switch (paramater)
         {
             case "Action":
@@ -772,6 +1599,49 @@ public class SearchClass : MonoBehaviour
         m_SearchFilterClass.r_legendary = r_legendary;
         m_SearchFilterClass.r_enchanted = r_enchanted;
 
+        m_SearchFilterClass.isAlly = isAlly;
+        m_SearchFilterClass.isAlien = isAlien;
+        m_SearchFilterClass.isBroom = isBroom;
+        m_SearchFilterClass.isCaptain = isCaptain;
+        m_SearchFilterClass.isDetective = isDetective;
+        m_SearchFilterClass.isDeity = isDeity;
+        m_SearchFilterClass.isDinosaur = isDinosaur;
+        m_SearchFilterClass.isDragon = isDragon;
+        m_SearchFilterClass.isDreamBorn = isDreamBorn;
+        m_SearchFilterClass.isFairy = isFairy;
+        m_SearchFilterClass.isFloodBorn = isFloodBorn;
+        m_SearchFilterClass.isGargoyle = isGargoyle;
+        m_SearchFilterClass.isGiant = isGiant;
+        m_SearchFilterClass.isHero = isHero;
+        m_SearchFilterClass.isHunny = isHunny;
+        m_SearchFilterClass.isHyena = isHyena;
+        m_SearchFilterClass.isIllusion = isIllusion;
+        m_SearchFilterClass.isInventor = isInventor;
+        m_SearchFilterClass.isKing = isKing;
+        m_SearchFilterClass.isKnight = isKnight;
+        m_SearchFilterClass.isMadrigal = isMadrigal;
+        m_SearchFilterClass.isMentor = isMentor;
+        m_SearchFilterClass.isMonster = isMonster;
+        m_SearchFilterClass.isMusketeer = isMusketeer;
+        m_SearchFilterClass.isPirate = isPirate;
+        m_SearchFilterClass.isPrince = isPrince;
+        m_SearchFilterClass.isPrincess = isPrincess;
+        m_SearchFilterClass.isPuppy = isPuppy;
+        m_SearchFilterClass.isQueen = isQueen;
+        m_SearchFilterClass.isRacer = isRacer;
+        m_SearchFilterClass.isRedPanda = isRedPanda;
+        m_SearchFilterClass.isRobot = isRobot;
+        m_SearchFilterClass.isSevenDwarf = isSevenDwarf;
+        m_SearchFilterClass.isStoryBorn = isStoryBorn;
+        m_SearchFilterClass.isSorcerer = isSorcerer;
+        m_SearchFilterClass.isSuper = isSuper;
+        m_SearchFilterClass.isTeam = isTeam;
+        m_SearchFilterClass.isTigger = isTigger;
+        m_SearchFilterClass.isTitan = isTitan;
+        m_SearchFilterClass.isToy = isToy;
+        m_SearchFilterClass.isVillain = isVillain;
+        m_SearchFilterClass.isVineling = isVineling;
+
         m_SearchFilterClass.inkcost_lowerlimit = m_InkLowerLimitDropdown.value;
         m_SearchFilterClass.inkcost_upperlimit = m_InkUpperLimitDropdown.value;
         m_SearchFilterClass.power_lowerlimit = m_PowerLowerLimitDropdown.value;
@@ -809,6 +1679,32 @@ public class SearchClass : MonoBehaviour
 
     public void onRarityBtn(string paramater)
     {
+        if (r_common && r_uncommon && r_rare && r_superrare && r_legendary && r_enchanted)
+        {
+            r_common = false;
+            r_commonBtn_background.color = new(200f / 255f, 200f / 255f, 200f / 255f, 50f / 255f);
+            r_commonBtn.color = new(70f / 255f, 70f / 255f, 70f / 255f, 255f);
+
+            r_uncommon = false;
+            r_uncommonBtn_background.color = new(200f / 255f, 200f / 255f, 200f / 255f, 50f / 255f);
+            r_uncommonBtn.color = new(70f / 255f, 70f / 255f, 70f / 255f, 255f);
+
+            r_rare = false;
+            r_rareBtn_background.color = new(200f / 255f, 200f / 255f, 200f / 255f, 50f / 255f);
+            r_rareBtn.color = new(70f / 255f, 70f / 255f, 70f / 255f, 255f);
+
+            r_superrare = false;
+            r_superrareBtn_background.color = new(200f / 255f, 200f / 255f, 200f / 255f, 50f / 255f);
+            r_superrareBtn.color = new(70f / 255f, 70f / 255f, 70f / 255f, 255f);
+
+            r_legendary = false;
+            r_legendaryBtn_background.color = new(200f / 255f, 200f / 255f, 200f / 255f, 50f / 255f);
+            r_legendaryBtn.color = new(70f / 255f, 70f / 255f, 70f / 255f, 255f);
+
+            r_enchanted = false;
+            r_enchantedBtn_background.color = new(200f / 255f, 200f / 255f, 200f / 255f, 50f / 255f);
+            r_enchantedBtn.color = new(70f / 255f, 70f / 255f, 70f / 255f, 255f);
+        }
         switch (paramater)
         {
             case "Common":
@@ -948,6 +1844,92 @@ public class SearchClass : MonoBehaviour
         r_enchantedBtn_background.color = new(1, 1, 1, 1);
         r_enchantedBtn.color = new(1, 1, 1, 1);
 
+        isAlly = true;
+        isAlien = true;
+        isBroom = true;
+        isCaptain = true;
+        isDetective = true;
+        isDeity = true;
+        isDinosaur = true;
+        isDragon = true;
+        isDreamBorn = true;
+        isFairy = true;
+        isFloodBorn = true;
+        isGargoyle = true;
+        isGiant = true;
+        isHero = true;
+        isHunny = true;
+        isHyena = true;
+        isIllusion = true;
+        isInventor = true;
+        isKing = true;
+        isKnight = true;
+        isMadrigal = true;
+        isMentor = true;
+        isMonster = true;
+        isMusketeer = true;
+        isPirate = true;
+        isPrince = true;
+        isPrincess = true;
+        isPuppy = true;
+        isQueen = true;
+        isRacer = true;
+        isRedPanda = true;
+        isRobot = true;
+        isSevenDwarf = true;
+        isStoryBorn = true;
+        isSorcerer = true;
+        isSuper = true;
+        isTeam = true;
+        isTigger = true;
+        isTitan = true;
+        isToy = true;
+        isVillain = true;
+        isVineling = true;
+
+        b_StoryBorn.color = new(1, 1, 1, 1);
+        b_DreamBorn.color = new(1, 1, 1, 1);
+        b_FloodBorn.color = new(1, 1, 1, 1);
+        b_SevenDwarf.color = new(1, 1, 1, 1);
+        b_Illusion.color = new(1, 1, 1, 1);
+        b_Vineling.color = new(1, 1, 1, 1);
+        b_Villain.color = new(1, 1, 1, 1);
+        b_Alien.color = new(1, 1, 1, 1);
+        b_Gargoyle.color = new(1, 1, 1, 1);
+        b_Captain.color = new(1, 1, 1, 1);
+        b_Super.color = new(1, 1, 1, 1);
+        b_Titan.color = new(1, 1, 1, 1);
+        b_Team.color = new(1, 1, 1, 1);
+        b_Tigger.color = new(1, 1, 1, 1);
+        b_Toy.color = new(1, 1, 1, 1);
+        b_Dragon.color = new(1, 1, 1, 1);
+        b_Hyena.color = new(1, 1, 1, 1);
+        b_Hunny.color = new(1, 1, 1, 1);
+        b_Hero.color = new(1, 1, 1, 1);
+        b_Prince.color = new(1, 1, 1, 1);
+        b_Princess.color = new(1, 1, 1, 1);
+        b_Broom.color = new(1, 1, 1, 1);
+        b_Madrigal.color = new(1, 1, 1, 1);
+        b_Monster.color = new(1, 1, 1, 1);
+        b_Racer.color = new(1, 1, 1, 1);
+        b_RedPanda.color = new(1, 1, 1, 1);
+        b_Robot.color = new(1, 1, 1, 1);
+        b_Ally.color = new(1, 1, 1, 1);
+        b_Queen.color = new(1, 1, 1, 1);
+        b_Fairy.color = new(1, 1, 1, 1);
+        b_Puppy.color = new(1, 1, 1, 1);
+        b_Mentor.color = new(1, 1, 1, 1);
+        b_Giant.color = new(1, 1, 1, 1);
+        b_Dinosaur.color = new(1, 1, 1, 1);
+        b_Detective.color = new(1, 1, 1, 1);
+        b_Pirate.color = new(1, 1, 1, 1);
+        b_King.color = new(1, 1, 1, 1);
+        b_Inventor.color = new(1, 1, 1, 1);
+        b_Deity.color = new(1, 1, 1, 1);
+        b_Musketeer.color = new(1, 1, 1, 1);
+        b_Knight.color = new(1, 1, 1, 1);
+        b_Sorcerer.color = new(1, 1, 1, 1);
+
         isBodyGuard = false;
         BodyGuardBtn.sprite = s_checkbtn_off;
         isChallenger = false;
@@ -1018,6 +2000,72 @@ public class SearchClass : MonoBehaviour
         rarity_Header.sizeDelta = new Vector2(rarity_Header.sizeDelta.x * magnification_x, rarity_Header.sizeDelta.y * magnification_y);
 
         space3_1.sizeDelta = new Vector2(space3_1.sizeDelta.x * magnification_x, space3_1.sizeDelta.y * magnification_y);
+        classExplanation_Header.sizeDelta = new Vector2(classExplanation_Header.sizeDelta.x * magnification_x, classExplanation_Header.sizeDelta.y * magnification_y);
+        classExplanation_Header_text1.sizeDelta = new Vector2(classExplanation_Header_text1.sizeDelta.x * magnification_x, classExplanation_Header_text1.sizeDelta.y * magnification_y);
+        classExplanation_Header_text2.sizeDelta = new Vector2(classExplanation_Header_text2.sizeDelta.x * magnification_x, classExplanation_Header_text2.sizeDelta.y * magnification_y);
+        class_Header.sizeDelta = new Vector2(class_Header.sizeDelta.x * magnification_x, class_Header.sizeDelta.y * magnification_y);
+        class_Header_space1.sizeDelta = new Vector2(class_Header_space1.sizeDelta.x * magnification_x, class_Header_space1.sizeDelta.y * magnification_y);
+        class_Header_line1.sizeDelta = new Vector2(class_Header_line1.sizeDelta.x * magnification_x, class_Header_line1.sizeDelta.y * magnification_y);
+        class_Header_line1_button1.sizeDelta = new Vector2(class_Header_line1_button1.sizeDelta.x * magnification_x, class_Header_line1_button1.sizeDelta.y * magnification_y);
+        class_Header_line1_button2.sizeDelta = new Vector2(class_Header_line1_button2.sizeDelta.x * magnification_x, class_Header_line1_button2.sizeDelta.y * magnification_y);
+        class_Header_line1_button3.sizeDelta = new Vector2(class_Header_line1_button3.sizeDelta.x * magnification_x, class_Header_line1_button3.sizeDelta.y * magnification_y);
+        class_Header_space2.sizeDelta = new Vector2(class_Header_space2.sizeDelta.x * magnification_x, class_Header_space2.sizeDelta.y * magnification_y);
+        class_Header_line2.sizeDelta = new Vector2(class_Header_line2.sizeDelta.x * magnification_x, class_Header_line2.sizeDelta.y * magnification_y);
+        class_Header_line2_button1.sizeDelta = new Vector2(class_Header_line2_button1.sizeDelta.x * magnification_x, class_Header_line2_button1.sizeDelta.y * magnification_y);
+        class_Header_line2_button2.sizeDelta = new Vector2(class_Header_line2_button2.sizeDelta.x * magnification_x, class_Header_line2_button2.sizeDelta.y * magnification_y);
+        class_Header_line2_button3.sizeDelta = new Vector2(class_Header_line2_button3.sizeDelta.x * magnification_x, class_Header_line2_button3.sizeDelta.y * magnification_y);
+        class_Header_line2_button4.sizeDelta = new Vector2(class_Header_line2_button4.sizeDelta.x * magnification_x, class_Header_line2_button4.sizeDelta.y * magnification_y);
+        class_Header_line2_button5.sizeDelta = new Vector2(class_Header_line2_button5.sizeDelta.x * magnification_x, class_Header_line2_button5.sizeDelta.y * magnification_y);
+        class_Header_space3.sizeDelta = new Vector2(class_Header_space3.sizeDelta.x * magnification_x, class_Header_space3.sizeDelta.y * magnification_y);
+        class_Header_line3.sizeDelta = new Vector2(class_Header_line3.sizeDelta.x * magnification_x, class_Header_line3.sizeDelta.y * magnification_y);
+        class_Header_line3_button1.sizeDelta = new Vector2(class_Header_line3_button1.sizeDelta.x * magnification_x, class_Header_line3_button1.sizeDelta.y * magnification_y);
+        class_Header_line3_button2.sizeDelta = new Vector2(class_Header_line3_button2.sizeDelta.x * magnification_x, class_Header_line3_button2.sizeDelta.y * magnification_y);
+        class_Header_line3_button3.sizeDelta = new Vector2(class_Header_line3_button3.sizeDelta.x * magnification_x, class_Header_line3_button3.sizeDelta.y * magnification_y);
+        class_Header_line3_button4.sizeDelta = new Vector2(class_Header_line3_button4.sizeDelta.x * magnification_x, class_Header_line3_button4.sizeDelta.y * magnification_y);
+        class_Header_line3_button5.sizeDelta = new Vector2(class_Header_line3_button5.sizeDelta.x * magnification_x, class_Header_line3_button5.sizeDelta.y * magnification_y);
+        class_Header_space4.sizeDelta = new Vector2(class_Header_space4.sizeDelta.x * magnification_x, class_Header_space4.sizeDelta.y * magnification_y);
+        class_Header_line4.sizeDelta = new Vector2(class_Header_line4.sizeDelta.x * magnification_x, class_Header_line4.sizeDelta.y * magnification_y);
+        class_Header_line4_button1.sizeDelta = new Vector2(class_Header_line4_button1.sizeDelta.x * magnification_x, class_Header_line4_button1.sizeDelta.y * magnification_y);
+        class_Header_line4_button2.sizeDelta = new Vector2(class_Header_line4_button2.sizeDelta.x * magnification_x, class_Header_line4_button2.sizeDelta.y * magnification_y);
+        class_Header_line4_button3.sizeDelta = new Vector2(class_Header_line4_button3.sizeDelta.x * magnification_x, class_Header_line4_button3.sizeDelta.y * magnification_y);
+        class_Header_line4_button4.sizeDelta = new Vector2(class_Header_line4_button4.sizeDelta.x * magnification_x, class_Header_line4_button4.sizeDelta.y * magnification_y);
+        class_Header_line4_button5.sizeDelta = new Vector2(class_Header_line4_button5.sizeDelta.x * magnification_x, class_Header_line4_button5.sizeDelta.y * magnification_y);
+        class_Header_space5.sizeDelta = new Vector2(class_Header_space5.sizeDelta.x * magnification_x, class_Header_space5.sizeDelta.y * magnification_y);
+        class_Header_line5.sizeDelta = new Vector2(class_Header_line5.sizeDelta.x * magnification_x, class_Header_line5.sizeDelta.y * magnification_y);
+        class_Header_line5_button1.sizeDelta = new Vector2(class_Header_line5_button1.sizeDelta.x * magnification_x, class_Header_line5_button1.sizeDelta.y * magnification_y);
+        class_Header_line5_button2.sizeDelta = new Vector2(class_Header_line5_button2.sizeDelta.x * magnification_x, class_Header_line5_button2.sizeDelta.y * magnification_y);
+        class_Header_line5_button3.sizeDelta = new Vector2(class_Header_line5_button3.sizeDelta.x * magnification_x, class_Header_line5_button3.sizeDelta.y * magnification_y);
+        class_Header_line5_button4.sizeDelta = new Vector2(class_Header_line5_button4.sizeDelta.x * magnification_x, class_Header_line5_button4.sizeDelta.y * magnification_y);
+        class_Header_line5_button5.sizeDelta = new Vector2(class_Header_line5_button5.sizeDelta.x * magnification_x, class_Header_line5_button5.sizeDelta.y * magnification_y);
+        class_Header_space6.sizeDelta = new Vector2(class_Header_space6.sizeDelta.x * magnification_x, class_Header_space6.sizeDelta.y * magnification_y);
+        class_Header_line6.sizeDelta = new Vector2(class_Header_line6.sizeDelta.x * magnification_x, class_Header_line6.sizeDelta.y * magnification_y);
+        class_Header_line6_button1.sizeDelta = new Vector2(class_Header_line6_button1.sizeDelta.x * magnification_x, class_Header_line6_button1.sizeDelta.y * magnification_y);
+        class_Header_line6_button2.sizeDelta = new Vector2(class_Header_line6_button2.sizeDelta.x * magnification_x, class_Header_line6_button2.sizeDelta.y * magnification_y);
+        class_Header_line6_button3.sizeDelta = new Vector2(class_Header_line6_button3.sizeDelta.x * magnification_x, class_Header_line6_button3.sizeDelta.y * magnification_y);
+        class_Header_line6_button4.sizeDelta = new Vector2(class_Header_line6_button4.sizeDelta.x * magnification_x, class_Header_line6_button4.sizeDelta.y * magnification_y);
+        class_Header_line6_button5.sizeDelta = new Vector2(class_Header_line6_button5.sizeDelta.x * magnification_x, class_Header_line6_button5.sizeDelta.y * magnification_y);
+        class_Header_space7.sizeDelta = new Vector2(class_Header_space7.sizeDelta.x * magnification_x, class_Header_space7.sizeDelta.y * magnification_y);
+        class_Header_line7.sizeDelta = new Vector2(class_Header_line7.sizeDelta.x * magnification_x, class_Header_line7.sizeDelta.y * magnification_y);
+        class_Header_line7_button1.sizeDelta = new Vector2(class_Header_line7_button1.sizeDelta.x * magnification_x, class_Header_line7_button1.sizeDelta.y * magnification_y);
+        class_Header_line7_button2.sizeDelta = new Vector2(class_Header_line7_button2.sizeDelta.x * magnification_x, class_Header_line7_button2.sizeDelta.y * magnification_y);
+        class_Header_line7_button3.sizeDelta = new Vector2(class_Header_line7_button3.sizeDelta.x * magnification_x, class_Header_line7_button3.sizeDelta.y * magnification_y);
+        class_Header_line7_button4.sizeDelta = new Vector2(class_Header_line7_button4.sizeDelta.x * magnification_x, class_Header_line7_button4.sizeDelta.y * magnification_y);
+        class_Header_line7_button5.sizeDelta = new Vector2(class_Header_line7_button5.sizeDelta.x * magnification_x, class_Header_line7_button5.sizeDelta.y * magnification_y);
+        class_Header_space8.sizeDelta = new Vector2(class_Header_space8.sizeDelta.x * magnification_x, class_Header_space8.sizeDelta.y * magnification_y);
+        class_Header_line8.sizeDelta = new Vector2(class_Header_line8.sizeDelta.x * magnification_x, class_Header_line8.sizeDelta.y * magnification_y);
+        class_Header_line8_button1.sizeDelta = new Vector2(class_Header_line8_button1.sizeDelta.x * magnification_x, class_Header_line8_button1.sizeDelta.y * magnification_y);
+        class_Header_line8_button2.sizeDelta = new Vector2(class_Header_line8_button2.sizeDelta.x * magnification_x, class_Header_line8_button2.sizeDelta.y * magnification_y);
+        class_Header_line8_button3.sizeDelta = new Vector2(class_Header_line8_button3.sizeDelta.x * magnification_x, class_Header_line8_button3.sizeDelta.y * magnification_y);
+        class_Header_line8_button4.sizeDelta = new Vector2(class_Header_line8_button4.sizeDelta.x * magnification_x, class_Header_line8_button4.sizeDelta.y * magnification_y);
+        class_Header_line8_button5.sizeDelta = new Vector2(class_Header_line8_button5.sizeDelta.x * magnification_x, class_Header_line8_button5.sizeDelta.y * magnification_y);
+        class_Header_space9.sizeDelta = new Vector2(class_Header_space9.sizeDelta.x * magnification_x, class_Header_space9.sizeDelta.y * magnification_y);
+        class_Header_line9.sizeDelta = new Vector2(class_Header_line9.sizeDelta.x * magnification_x, class_Header_line9.sizeDelta.y * magnification_y);
+        class_Header_line9_button1.sizeDelta = new Vector2(class_Header_line9_button1.sizeDelta.x * magnification_x, class_Header_line9_button1.sizeDelta.y * magnification_y);
+        class_Header_line9_button2.sizeDelta = new Vector2(class_Header_line9_button2.sizeDelta.x * magnification_x, class_Header_line9_button2.sizeDelta.y * magnification_y);
+        class_Header_line9_button3.sizeDelta = new Vector2(class_Header_line9_button3.sizeDelta.x * magnification_x, class_Header_line9_button3.sizeDelta.y * magnification_y);
+        class_Header_line9_button4.sizeDelta = new Vector2(class_Header_line9_button4.sizeDelta.x * magnification_x, class_Header_line9_button4.sizeDelta.y * magnification_y);
+        space3_2.sizeDelta = new Vector2(space3_2.sizeDelta.x * magnification_x, space3_2.sizeDelta.y * magnification_y);
+
         keywordExplanation_header.sizeDelta = new Vector2(keywordExplanation_header.sizeDelta.x * magnification_x, keywordExplanation_header.sizeDelta.y * magnification_y);
         keywordExplanation_header_text1.sizeDelta = new Vector2(keywordExplanation_header_text1.sizeDelta.x * magnification_x, keywordExplanation_header_text1.sizeDelta.y * magnification_y);
         keywordExplanation_header_text2.sizeDelta = new Vector2(keywordExplanation_header_text2.sizeDelta.x * magnification_x, keywordExplanation_header_text2.sizeDelta.y * magnification_y);

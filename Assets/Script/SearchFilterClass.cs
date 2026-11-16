@@ -36,6 +36,49 @@ public class SearchFilterClass
     public int lores_lowerlimit;
     public int lores_upperlimit;
 
+    public bool isAlly;
+    public bool isAlien;
+    public bool isBroom;
+    public bool isCaptain;
+    public bool isDetective;
+    public bool isDeity;
+    public bool isDinosaur;
+    public bool isDragon;
+    public bool isDreamBorn;
+    public bool isFairy;
+    public bool isFloodBorn;
+    public bool isGargoyle;
+    public bool isGiant;
+    public bool isHero;
+    public bool isHunny;
+    public bool isHyena;
+    public bool isIllusion;
+    public bool isInventor;
+    public bool isKing;
+    public bool isKnight;
+    public bool isMadrigal;
+    public bool isMentor;
+    public bool isMonster;
+    public bool isMusketeer;
+    public bool isPirate;
+    public bool isPrince;
+    public bool isPrincess;
+    public bool isPuppy;
+    public bool isQueen;
+    public bool isRacer;
+    public bool isRedPanda;
+    public bool isRobot;
+    public bool isSevenDwarf;
+    public bool isStoryBorn;
+    public bool isSorcerer;
+    public bool isSuper;
+    public bool isTeam;
+    public bool isTigger;
+    public bool isTitan;
+    public bool isToy;
+    public bool isVillain;
+    public bool isVineling;
+
     public bool isBodyGuard;
     public bool isChallenger;
     public bool isEvasive;
@@ -84,6 +127,49 @@ public class SearchFilterClass
         toughness_upperlimit = 12;
         lores_lowerlimit = 0;
         lores_upperlimit = 5;
+
+        isAlly = true;
+        isAlien = true;
+        isBroom = true;
+        isCaptain = true;
+        isDetective = true;
+        isDeity = true;
+        isDinosaur = true;
+        isDragon = true;
+        isDreamBorn = true;
+        isFairy = true;
+        isFloodBorn = true;
+        isGargoyle = true;
+        isGiant = true;
+        isHero = true;
+        isHunny = true;
+        isHyena = true;
+        isIllusion = true;
+        isInventor = true;
+        isKing = true;
+        isKnight = true;
+        isMadrigal = true;
+        isMentor = true;
+        isMonster = true;
+        isMusketeer = true;
+        isPirate = true;
+        isPrince = true;
+        isPrincess = true;
+        isPuppy = true;
+        isQueen = true;
+        isRacer = true;
+        isRedPanda = true;
+        isRobot = true;
+        isSevenDwarf = true;
+        isStoryBorn = true;
+        isSorcerer = true;
+        isSuper = true;
+        isTeam = true;
+        isTigger = true;
+        isTitan = true;
+        isToy = true;
+        isVillain = true;
+        isVineling = true;
 
         isBodyGuard = false;
         isChallenger = false;
@@ -287,6 +373,231 @@ public class SearchFilterClass
         }
 
         if (!loresJudge)
+        {
+            return false;
+        }
+
+        bool classJudge = false;
+        List<EnumController.Class> classList = m_CardInfo.GetClassList();
+        if (isAlly && classList.Contains(EnumController.Class.Ally))
+        {
+            classJudge = true;
+        }
+
+        if(isAlien && classList.Contains(EnumController.Class.Alien))
+        {
+            classJudge = true;
+        }
+
+        if(isBroom && classList.Contains(EnumController.Class.Broom))
+        {
+            classJudge = true;
+        }
+
+        if(isCaptain && classList.Contains(EnumController.Class.Captain))
+        {
+            classJudge = true;
+        }
+
+        if(isDetective && classList.Contains(EnumController.Class.Detective))
+        {
+            classJudge = true;
+        }
+
+        if(isDeity && classList.Contains(EnumController.Class.Deity))
+        {
+            classJudge = true;
+        }
+
+        if (isDinosaur && classList.Contains(EnumController.Class.Dinosaur))
+        {
+            classJudge = true;
+        }
+
+        if (isDragon && classList.Contains(EnumController.Class.Dragon))
+        {
+            classJudge = true;
+        }
+
+        if (isDreamBorn && classList.Contains(EnumController.Class.DreamBorn))
+        {
+            classJudge = true;
+        }
+
+        if (isFairy && classList.Contains(EnumController.Class.Fairy))
+        {
+            classJudge = true;
+        }
+
+        if (isFloodBorn && classList.Contains(EnumController.Class.FloodBorn))
+        {
+            classJudge = true;
+        }
+
+        if (isGargoyle && classList.Contains(EnumController.Class.Gargoyle))
+        {
+            classJudge = true;
+        }
+
+        if (isGiant && classList.Contains(EnumController.Class.Giant))
+        {
+            classJudge = true;
+        }
+
+        if (isHero && classList.Contains(EnumController.Class.Hero))
+        {
+            classJudge = true;
+        }
+
+        if (isHunny && classList.Contains(EnumController.Class.Hunny))
+        {
+            classJudge = true;
+        }
+
+        if (isHyena && classList.Contains(EnumController.Class.Hyena))
+        {
+            classJudge = true;
+        }
+
+        if (isIllusion && classList.Contains(EnumController.Class.Illusion))
+        {
+            classJudge = true;
+        }
+
+        if (isInventor && classList.Contains(EnumController.Class.Inventor))
+        {
+            classJudge = true;
+        }
+
+        if (isKing && classList.Contains(EnumController.Class.King))
+        {
+            classJudge = true;
+        }
+
+        if (isKnight && classList.Contains(EnumController.Class.Knight))
+        {
+            classJudge = true;
+        }
+
+        if (isMadrigal && classList.Contains(EnumController.Class.Madrigal))
+        {
+            classJudge = true;
+        }
+
+        if (isMentor && classList.Contains(EnumController.Class.Mentor))
+        {
+            classJudge = true;
+        }
+
+        if (isMonster && classList.Contains(EnumController.Class.Monster))
+        {
+            classJudge = true;
+        }
+
+        if (isMusketeer && classList.Contains(EnumController.Class.Musketeer))
+        {
+            classJudge = true;
+        }
+
+        if (isPirate && classList.Contains(EnumController.Class.Pirate))
+        {
+            classJudge = true;
+        }
+
+        if (isPrince && classList.Contains(EnumController.Class.Prince))
+        {
+            classJudge = true;
+        }
+
+        if (isPrincess && classList.Contains(EnumController.Class.Princess))
+        {
+            classJudge = true;
+        }
+
+        if (isPuppy && classList.Contains(EnumController.Class.Puppy))
+        {
+            classJudge = true;
+        }
+
+        if (isQueen && classList.Contains(EnumController.Class.Queen))
+        {
+            classJudge = true;
+        }
+
+        if (isRacer && classList.Contains(EnumController.Class.Racer))
+        {
+            classJudge = true;
+        }
+
+        if (isRedPanda && classList.Contains(EnumController.Class.RedPanda))
+        {
+            classJudge = true;
+        }
+
+        if (isRobot && classList.Contains(EnumController.Class.Robot))
+        {
+            classJudge = true;
+        }
+
+        if (isSevenDwarf && classList.Contains(EnumController.Class.SevenDwarfs))
+        {
+            classJudge = true;
+        }
+
+        if (isStoryBorn && classList.Contains(EnumController.Class.StoryBorn))
+        {
+            classJudge = true;
+        }
+
+        if (isSorcerer && classList.Contains(EnumController.Class.Sorcerer))
+        {
+            classJudge = true;
+        }
+
+        if (isSuper && classList.Contains(EnumController.Class.Super))
+        {
+            classJudge = true;
+        }
+
+        if (isTeam && classList.Contains(EnumController.Class.Team))
+        {
+            classJudge = true;
+        }
+
+        if (isTigger && classList.Contains(EnumController.Class.Tigger))
+        {
+            classJudge = true;
+        }
+
+        if (isTitan && classList.Contains(EnumController.Class.Titan))
+        {
+            classJudge = true;
+        }
+
+        if (isToy && classList.Contains(EnumController.Class.Toy))
+        {
+            classJudge = true;
+        }
+
+        if (isVillain && classList.Contains(EnumController.Class.Villain))
+        {
+            classJudge = true;
+        }
+
+        if (isVineling && classList.Contains(EnumController.Class.Vineling))
+        {
+            classJudge = true;
+        }
+
+        if (isAlly && isAlien && isBroom && isCaptain && isDetective && isDeity && isDinosaur && isDragon && isDreamBorn && isFairy && isFloodBorn
+            && isGargoyle && isGiant && isHero && isHunny && isHyena && isIllusion && isInventor && isKing && isKnight && isMadrigal && isMentor && isMonster
+            && isMusketeer && isPirate && isPrince && isPrincess && isPuppy && isQueen && isRacer && isRedPanda && isRobot && isSevenDwarf && isStoryBorn
+            && isSorcerer && isSuper && isTeam && isTigger && isTitan && isToy && isVillain && isVineling)
+        {
+            classJudge = true;
+        }
+
+        if (!classJudge)
         {
             return false;
         }
