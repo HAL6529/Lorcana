@@ -93,6 +93,8 @@ public class ExtendUtil
                 return "Ursula's Return -逆襲のアースラ-";
             case EnumController.Expansion.ShimmeringSkies:
                 return "Shimmering Skies -星々の輝き-";
+            case EnumController.Expansion.AzuriteSea:
+                return "Azurite Sea -大いなるアズライト-";
             case EnumController.Expansion.ArchaziasIsland:
                 return "Archazias Island -アーケイジアと魔法の島-";
             default:
@@ -118,6 +120,8 @@ public class ExtendUtil
                 return "ボルト";
             case EnumController.Title.BrotherBear:
                 return "ブラザー・ベア";
+            case EnumController.Title.Chipmunk:
+                return "チップとデール";
             case EnumController.Title.Cinderella:
                 return "シンデレラ";
             case EnumController.Title.DuckTales:
@@ -170,6 +174,8 @@ public class ExtendUtil
                 return "ムーラン";
             case EnumController.Title.OneHundredAndOneDalmatians:
                 return "101匹わんちゃん";
+            case EnumController.Title.OswaldTheLuckyRabbit:
+                return "オズワルド・ザ・ラッキー・ラビット";
             case EnumController.Title.PeterPan:
                 return "ピーターパン";
             case EnumController.Title.Pinocchio:

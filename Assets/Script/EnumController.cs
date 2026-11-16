@@ -60,6 +60,7 @@ public class EnumController
         IntoTheInkLands,
         UrsulasReturn,
         ShimmeringSkies,
+        AzuriteSea,
         ArchaziasIsland,
     }
 
@@ -75,6 +76,7 @@ public class EnumController
         Challenger7, //果敢+7
         Evasive, //回避
         PuppyShift3, //子犬変身3
+        Shift1, //変身1
         Shift2, //変身2
         Shift3, //変身3
         Shift4, //変身4
@@ -127,6 +129,7 @@ public class EnumController
         BigHero6, //ベイマックス
         Bolt, //ボルト
         BrotherBear, //ブラザー・ベア
+        Chipmunk, // チップとデール
         Cinderella, //シンデレラ
         DuckTales, //ダックテイル
         Encanto, //ミラベルと魔法だらけの家
@@ -153,6 +156,7 @@ public class EnumController
         Moana, //モアナと伝説の海
         Mulan, //ムーラン
         OneHundredAndOneDalmatians, //101匹わんちゃん
+        OswaldTheLuckyRabbit, //オズワルド・ザ・ラッキー・ラビット
         PeterPan, //ピーターパン
         Pinocchio, //ピノキオ
         RayaAndTheLastDragon, //ラーヤと龍の王国
@@ -197,16 +201,19 @@ public class EnumController
         AdamFenton, //Adam Fenton
         AdamFord, //Adam Ford
         AdrianneGumaya, //AdrianneGumaya
+        AilbethZermeno, //Ailbeth Zermeno
         AishaDurmagambetova, //Aisha Durmagambetova
         AlanBatson, //Alan Batson
         AlexAccorsi, //AlexAccorsi
         AlexAccorsiAndKendallHale, //Alex Accorsi/ Kendall Hale
+        AlexandraHefez, //Alexandra Hefez
         AlexandriaNeonakis, //Alexandria Neonakis
         AlexaRockman, //Alexa Rockman
         AlexShin, //Alex Shin
         AlibethZermeno, //Alibeth Zermeno
         AlicePisoni, //Alice Pisoni
         AlicePisoniAndWhitneyPollett, //Alice Pisoni / Whitney Pollett
+        AmandaDuarteAndJulioCesar, //Amanda Duarte / Julio Cesar
         AmandaMacFarlane, //Amanda Mac Farlane
         AmberKommavongsa, //Amber Kommavongsa
         AndersonMahanski, //Anderson Mahanski
@@ -216,6 +223,7 @@ public class EnumController
         AndreyChumak, //Andrey Chumak
         AndrewParisi, //Andrew Parisi
         AndrewPena, //Andrew Pena
+        AndrewPenaAndAubreyArcher, // Andrew Pena / Aubrey Archer
         AndrewThompson, //Andrew Thompson
         AndrewTrabbold, //Andrew Trabbold
         AndyEstradaAndGregShrader, //Andy Estrada / Greg Shrader
@@ -226,10 +234,12 @@ public class EnumController
         AnnaRudAndAnnnaStosik, //Anna Rud / Annna Stosik
         AnnaRudAndLivioCacciatore, //Anna Rud / Livio Cacciatore
         AnnaStosik, //Anna Stosik
+        AntoineCouttolenc, //Antoine Couttolenc
         AntoineCouttolencAndSamantaErdini, //Antoine Couttolenc / Samanta Erdini
         AntoneCouttolenc, //Antone Couttolenc
         AntoniaFlechsig, //Antonia Flechsig
         AriannaRea, //Arianna Rea
+        AristeidisZentelis, //Aristeidis Zentelis
         ArisZentelis, //Aris Zentelis
         AubreyArcher, //Aubrey Archer
         BeatriceBlue, //Beatrice Blue
@@ -242,20 +252,23 @@ public class EnumController
         BrynJones, //Bryn Jones
         BillRobinson, //Bill Robinson
         BillyWimblett, //Billy Wimblett
-        CecileCarre, //Cecile Carre
         CamKendell, //Cam Kendell
+        CamKendellAndDaniellePowers, //Cam Kendell / Danielle Powers
         CanerSoylu, //CanerSoylu
         CarlosGomesCabral, //Carlos Gomes Cabral
         CarlosLuzzi, //CarlosLuzzi
         CarlosRuiz, //Carlos Ruiz
         CarminePucci, //Carmine Pucci
         CarminePucciAndLeonardoGiammichele, //Carmine Pucci / Leonardo Giammichele
-        CelesteJamneck, //Celeste Jamneck
-        CesarVergara, //Cesar Vergara
         CaseyRobin, //Casey Robin
+        CecileCarre, //Cecile Carre
         CecileCarreAndAnnaStosik, //Cecile Carre / Anna Stosik
+        CelesteJamneck, //Celeste Jamneck
+        CelesteJamneckAndMarianaMoreno, // Celeste Jamneck / Mariana Moreno
+        CesarVergara, //Cesar Vergara
         CesarVergaraAndEriWelli, //Cesar Vergara / EriWelli
         ChunxiMu, //Chunxi Mu
+        ClarieHummel, //Clarie Hummel
         ClioWolfensberger, //ClioWolfensberger
         ConnieKangAndJackieDroujiko, //Connie Kang / Jackie Droujiko
         Cookie, //Cookie
@@ -271,10 +284,13 @@ public class EnumController
         DefneTozumAndLivioCacciatore, //Defne Tozum / Livio Cacciatore
         DennyMinonne, //Denny Minonne
         DevinYang, //DevinYang
+        DiegoMachuca, // Diego Machuca
         DinulescuAlexandru, //Dinulescu Alexandru
         DiogoSaito, //Diogo Saito
+        DomenicoRusso, //Domenico Russo
         DominikMayer, //Dominik Mayer
         DonAguillo, //Don Aguillo
+        DougasDeLaHoz, // Dougas De La Hoz
         DouglasDeLaHoz, //Douglas DeLaHoz
         DustinPanzino, //Dustin Panzino
         DustinPanzinoAndLeonardoGiammichele, //Dustin Panzino / Leonardo Giammichele
@@ -284,6 +300,7 @@ public class EnumController
         E_MeleranciAndL_Giammichele, //E. Meleranci / L. Giammichele
         EllieHorie, //Ellie Horie
         EllieHorieAndJenniferPark, //Ellie Horie / Jennifer Park
+        EllieHorieAndMaraTango, //Ellie Horie / Mara Tango
         ElliotBaumAndVivTanner, //Elliot Baum / Viv Tanner
         ElliotBocxtaele, //Elliot Bocxtaele
         ElodieMondoloni, //Elodie Mondoloni
@@ -305,6 +322,7 @@ public class EnumController
         FrancescoColucci, //Francesco Colucci
         FrancescoDippolitoAndGiuseppeDiMaio, //Francesco D'ippolito / Giuseppe di Maio
         FrenchCarlomagno, //French Carlomagno
+        FrenchCarlomagnoAndMarianaMoreno, // French Carlomagno / Mariana Moreno
         Gabe, //Gabe
         GabrielAngelo, //Gabriel Angelo
         GabrielQuinn, //Gabriel Quinn
@@ -318,6 +336,7 @@ public class EnumController
         GusGadgetAndLeonardoGiammichele, //GusGadget / Leonardo Giammichele
         GraceTran, //Grace Tran
         GrzegorzKrysinski, //Grzegorz Krysinski
+        Gwawi, //Gwawi
         HadjieJoos, //Hadjie Joos
         HadjieJoosAndPixSmith, //Hadjie Joos / PixSmith
         HedvigHaggman_Sund, //Hadvig Haggman-Sund
@@ -325,6 +344,7 @@ public class EnumController
         HedvigH_S, //Hedvig H-S
         HyunaLee, //HyunaLee
         IanMacDonald, //Ian MacDonald
+        IlariaSposetti, //Ilaria Sposetti
         IsabellaCeravolo, //IsabellaCeravolo
         IsaiahMesq, //Isaiah Mesq
         IvanShavrin, //Ivan Shavrin
@@ -381,12 +401,16 @@ public class EnumController
         Koni, //Koni
         KristinaChori, //KristinaChori
         KristinaChouriAndMarianaMoreno, //Kristina Chouri / Mariana Moreno
+        KristenKaluba, //Kristen Kaluba
         KuyaJaypi, //Kuya Jaypi
         LadyShalirin, //LadyShalirin
+        LaiaLopez, //Laia Lopez
         LauraPauselli, //Laura Pauselli
+        LauraDePascale, //Laura De Pascale
         LaurenBarger, //Lauren Barger
         LaurenLevering, //Lauren Levering
         LaurenWalsh, //Lauren Walsh
+        LavaHijzelaar, //LavaHijzelaar
         LavaHijzelaarAndEllieHorie, //Lava Hijzelaar / Ellie Horie
         LeonardoGiammichele, //LeonardoGiammichele
         LeviRogers, //Levi Rogers
@@ -419,6 +443,7 @@ public class EnumController
         MatthewRobertDavies, //Matthew Robert Davies
         MarcoGiorgianni, //MarcoGiorgianni
         MariaZafrilla, //Maria Zafrilla
+        MarianaMorenoAndPeterBrockhammer, // Mariana Moreno / Peter Brockhammer
         MarineJosephine, //MarineJosephine
         MaxGrecke, //Max Grecke
         MaxineVee, //Maxine Vee
@@ -433,6 +458,7 @@ public class EnumController
         MichaelaMartin, //Michaela Martin
         MikeParker, //Mike Parker
         MikeMu, //Mike Mu
+        MikeMuAndLivioCacciatore, //Mike Mu / Livio Cacciatore
         MilaUseche, //Mila Useche
         MilicaCelikovic, //Milica Celikovic
         MonicaCatalano, //Monica Catalano
@@ -448,8 +474,11 @@ public class EnumController
         NicolasKy, //Nicolas Ky
         NicolettaBaldari,//Nicoletta Baldari
         OggyChristiansson, //Oggy Christiansson
+        OggysonArt, // Oggyson Art
         OlegYurkov, //OlegYurkov
         OliverDesiree, //Oliver Desiree
+        OmarLozano, //Omar Lozano
+        OrnellaSavarese, //Ornella Savarese
         OttoParedes, //Otto Paredes
         OttoSchmidt, //Otto Schmidt
         P_GaylordAndL_Giammichele, //P. Gaylord / L. Giammichele
@@ -485,6 +514,7 @@ public class EnumController
         RyanBittner, //Ryan Bittner
         RyanMoeck, //Ryan Moeck
         S_ShawAndL_Giammichele, //S.Shaw / L.Giammichele
+        SedaCoskun, //Seda Coskun
         SamantaErdini, //Samanta Erdini
         SamNielson, //Sam Nielson
         Samoldstoree, //Samoldstoree
@@ -501,6 +531,7 @@ public class EnumController
         SimangalisoSibaya, //SimangalisoSibaya
         SimangalisoSibayaAndMarioManzanares, //Simangaliso Sibaya / Mario Manzanares
         SimoneBuonfantino, //Simone Buonfantino
+        SimoneTentoni, //Simone Tentoni
         StefanoSpagnuolo, //Stefano Spagnuolo
         StefanoZanchi, //Stefano Zanchi
         TaniaSoler, //TaniaSoler
@@ -509,20 +540,23 @@ public class EnumController
         Taraneh, //Taraneh
         TeresitaQAndSCG, //Teresita Q. / SCG
         TomBancroft, //Tom Bancroft
+        TomBancroftAndKristenBreshears, // Tom Bancroft / Kristen Breshears
         ToniBruno, //Toni Bruno
         TonyBancroftAndLindsayWeyman, //Tony Bancroft / Lindsay Weyman
+        UrsulaDorada, //Ursula Dorada
         ValentinaGraziuso, //Valentina Graziuso
         ValentinPalombo, //Valentin Palombo
         ValerioBuonfantino, //Valerio Buonfantino
+        VanessaMorales, //Vanessa Morales
         VeronicaDiLorenzoAndLivioCacciatore, //Veronica Di Lorenzo / Livio Cacciatore
         VickeyXieAndMarianaMoreno, //Vickey Xie / Mariana Moreno
-        WietseTreurniet, //Wietse Treurniet
-        WouterBruneel, //Wouter Bruneel
-        VanessaMorales, //Vanessa Morales
-        YanoAndMilicaCelikovic, //"Yano" / Milica Celikovic
-        YariLute, //Yari Lute
         VictorYanoCovarrubias, //Victor "Yano" Covarrubias
         VivTanner, //Viv Tanner
+        WhitneyPollett, // Whitney Pollett
+        WietseTreurniet, //Wietse Treurniet
+        WouterBruneel, //Wouter Bruneel
+        YanoAndMilicaCelikovic, //"Yano" / Milica Celikovic
+        YariLute, //Yari Lute
         YeYangAndRaquelVillanueva, //Ye Yang / Raquel Villanueva
         YuNguyen, //Yu Nguyen
         ZuzanaSokolovaAndLivioCacciatore, //Zuzana Sokolova / Livio Cacciatore

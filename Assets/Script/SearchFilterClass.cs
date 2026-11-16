@@ -315,6 +315,7 @@ public class SearchFilterClass
 
         if (isShift 
             && (keywordList.Contains(EnumController.KeywordAvility.PuppyShift3)
+            || keywordList.Contains(EnumController.KeywordAvility.Shift1)
             || keywordList.Contains(EnumController.KeywordAvility.Shift2)
             || keywordList.Contains(EnumController.KeywordAvility.Shift3)
             || keywordList.Contains(EnumController.KeywordAvility.Shift4)
