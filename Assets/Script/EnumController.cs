@@ -13,10 +13,13 @@ public class EnumController
         Captain, //キャプテン
         Detective, //名探偵
         Deity, //神格
+        Dinosaur, //恐竜
         Dragon, //ドラゴン
         DreamBorn, //ドリームボーン
         Fairy, //妖精
         FloodBorn, //フラッドボーン
+        Gargoyle, //ガーゴイル
+        Giant, //巨人
         Hero, //ヒーロー
         Hunny, //ハニー
         Hyena, //ハイエナ
@@ -26,6 +29,7 @@ public class EnumController
         Knight, //騎士
         Madrigal, //マドリガル家
         Mentor, //導き手
+        Monster, //モンスター
         Musketeer, //銃士
         Pirate, //海賊
         Prince,　//プリンス
@@ -33,13 +37,18 @@ public class EnumController
         Puppy, //子犬
         Queen, //女王
         Racer, //レーサー
+        RedPanda, //レッサーパンダ
         Robot, //ロボット
         SevenDwarfs, //7人の小人
         StoryBorn, //ストーリーボーン
         Sorcerer, //魔法使い
+        Super, //スーパー
+        Team, //チーム
         Tigger, //ティガー
         Titan, //タイタン
+        Toy, //トイ
         Villain, //ヴィラン
+        Vineling, //ヴァインリング
     }
 
     public enum Colors
