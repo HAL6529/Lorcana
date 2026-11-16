@@ -436,8 +436,8 @@
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_193_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\ShimmeringSkies\CardInfo_001_JA_05.cs" />
     <Compile Include="Assets\Script\CardInfo\AzuriteSea\CardInfo_001_JA_06.cs" />
-    <Compile Include="Assets\Script\CardInfo\ArchaziasIsland\CardInfo_205_JA_07.cs" />
     <Compile Include="Assets\Script\CardInfo\AzuriteSea\CardInfo_203_JA_06.cs" />
+    <Compile Include="Assets\Script\CardInfo\ArchaziasIsland\CardInfo_205_JA_07.cs" />
     <Compile Include="Assets\Script\CardInfo\ShimmeringSkies\CardInfo_222_JA_05.cs" />
     <Compile Include="Assets\Script\CardInfo\AzuriteSea\CardInfo_005_JA_06.cs" />
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_084_JA_03.cs" />
@@ -628,8 +628,8 @@
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_204_JA_03.cs" />
     <Compile Include="Assets\Script\CardInfo\ArchaziasIsland\CardInfo_023_JA_07.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_143_JA_01.cs" />
-    <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_044_JA_03.cs" />
     <Compile Include="Assets\Script\CardInfo\AzuriteSea\CardInfo_129_JA_06.cs" />
+    <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_044_JA_03.cs" />
     <Compile Include="Assets\Script\CardInfo\UrsulasReturn\CardInfo_004_JA_04.cs" />
     <Compile Include="Assets\Script\CardInfo\AzuriteSea\CardInfo_065_JA_06.cs" />
     <Compile Include="Assets\Script\YesOrNoDialog.cs" />
@@ -664,8 +664,8 @@
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_175_JA_03.cs" />
     <Compile Include="Assets\Script\CardInfo\AzuriteSea\CardInfo_037_JA_06.cs" />
     <Compile Include="Assets\Script\CardInfo\UrsulasReturn\CardInfo_041_JA_04.cs" />
-    <Compile Include="Assets\Script\CardInfo\ShimmeringSkies\CardInfo_022_JA_05.cs" />
     <Compile Include="Assets\Script\CardInfo\AzuriteSea\CardInfo_109_JA_06.cs" />
+    <Compile Include="Assets\Script\CardInfo\ShimmeringSkies\CardInfo_022_JA_05.cs" />
     <Compile Include="Assets\Script\CardInfo\AzuriteSea\CardInfo_158_JA_06.cs" />
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_164_JA_03.cs" />
     <Compile Include="Assets\Script\CardInfo\AzuriteSea\CardInfo_089_JA_06.cs" />
@@ -1015,8 +1015,8 @@
     <Compile Include="Assets\Script\CardInfo\ShimmeringSkies\CardInfo_092_JA_05.cs" />
     <Compile Include="Assets\Script\CardInfo\ShimmeringSkies\CardInfo_188_JA_05.cs" />
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_144_JA_03.cs" />
-    <Compile Include="Assets\Script\CardInfo\AzuriteSea\CardInfo_188_JA_06.cs" />
     <Compile Include="Assets\Script\CardInfo\AzuriteSea\CardInfo_208_JA_06.cs" />
+    <Compile Include="Assets\Script\CardInfo\AzuriteSea\CardInfo_188_JA_06.cs" />
     <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_208_JA_02.cs" />
     <Compile Include="Assets\Script\CardInfo\ArchaziasIsland\CardInfo_038_JA_07.cs" />
     <Compile Include="Assets\Script\CardInfo\ShimmeringSkies\CardInfo_141_JA_05.cs" />
@@ -1053,8 +1053,8 @@
     <Compile Include="Assets\Script\CardInfo\AzuriteSea\CardInfo_128_JA_06.cs" />
     <Compile Include="Assets\Script\CardInfo\AzuriteSea\CardInfo_024_JA_06.cs" />
     <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_101_JA_02.cs" />
-    <Compile Include="Assets\Script\CardInfo\AzuriteSea\CardInfo_003_JA_06.cs" />
     <Compile Include="Assets\Script\CardInfo\AzuriteSea\CardInfo_179_JA_06.cs" />
+    <Compile Include="Assets\Script\CardInfo\AzuriteSea\CardInfo_003_JA_06.cs" />
     <Compile Include="Assets\Script\CardInfo\ShimmeringSkies\CardInfo_217_JA_05.cs" />
     <Compile Include="Assets\Script\CardInfo\UrsulasReturn\CardInfo_201_JA_04.cs" />
     <Compile Include="Assets\Script\CardInfo\ArchaziasIsland\CardInfo_153_JA_07.cs" />
@@ -1157,9 +1157,9 @@
     <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_147_JA_02.cs" />
     <Compile Include="Assets\Script\CardInfo\UrsulasReturn\CardInfo_028_JA_04.cs" />
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_158_JA_03.cs" />
-    <Compile Include="Assets\Script\CardInfo\AzuriteSea\CardInfo_117_JA_06.cs" />
-    <Compile Include="Assets\Script\CardInfo\AzuriteSea\CardInfo_058_JA_06.cs" />
     <Compile Include="Assets\Script\CardInfo\AzuriteSea\CardInfo_135_JA_06.cs" />
+    <Compile Include="Assets\Script\CardInfo\AzuriteSea\CardInfo_058_JA_06.cs" />
+    <Compile Include="Assets\Script\CardInfo\AzuriteSea\CardInfo_117_JA_06.cs" />
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_031_JA_03.cs" />
     <Compile Include="Assets\Script\CardInfo\ArchaziasIsland\CardInfo_206_JA_07.cs" />
     <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_015_JA_02.cs" />
@@ -1203,8 +1203,8 @@
     <Compile Include="Assets\Script\CardInfo\ArchaziasIsland\CardInfo_164_JA_07.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_109_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\ArchaziasIsland\CardInfo_108_JA_07.cs" />
-    <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_036_JA_02.cs" />
     <Compile Include="Assets\Script\CardInfo\AzuriteSea\CardInfo_112_JA_06.cs" />
+    <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_036_JA_02.cs" />
     <Compile Include="Assets\Script\CardInfo\ShimmeringSkies\CardInfo_167_JA_05.cs" />
     <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_085_JA_02.cs" />
     <Compile Include="Assets\Script\CardInfo\ArchaziasIsland\CardInfo_101_JA_07.cs" />
@@ -1461,8 +1461,8 @@
     <Compile Include="Assets\Script\CardInfo\AzuriteSea\CardInfo_016_JA_06.cs" />
     <Compile Include="Assets\Script\CardInfo\UrsulasReturn\CardInfo_115_JA_04.cs" />
     <Compile Include="Assets\Script\CardInfo\ArchaziasIsland\CardInfo_007_JA_07.cs" />
-    <Compile Include="Assets\Script\CardInfo\AzuriteSea\CardInfo_046_JA_06.cs" />
     <Compile Include="Assets\Script\CardInfo\AzuriteSea\CardInfo_149_JA_06.cs" />
+    <Compile Include="Assets\Script\CardInfo\AzuriteSea\CardInfo_046_JA_06.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_146_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\ShimmeringSkies\CardInfo_103_JA_05.cs" />
     <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_076_JA_02.cs" />
