@@ -14,7 +14,7 @@ public class CardInfo_098_JA_03 : CardInfo
         this.power = -1;
         this.toughness = -1;
         this.lore = -1;
-        this.illustrator = EnumController.Illustrator.MckayAnderson;
+        this.illustrator = EnumController.Illustrator.McKayAnderson;
         this.classList = new List<EnumController.Class>();
         this.color = new List<EnumController.Colors> { EnumController.Colors.Emerald };
         this.keywordAvility = new List<EnumController.KeywordAvility>();

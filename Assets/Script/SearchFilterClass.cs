@@ -666,6 +666,7 @@ public class SearchFilterClass
             && (keywordList.Contains(EnumController.KeywordAvility.SingTogether6)
             || keywordList.Contains(EnumController.KeywordAvility.SingTogether7)
             || keywordList.Contains(EnumController.KeywordAvility.SingTogether8)
+            || keywordList.Contains(EnumController.KeywordAvility.SingTogether9)
             || keywordList.Contains(EnumController.KeywordAvility.SingTogether10)))
         {
             keywordJudge = true;

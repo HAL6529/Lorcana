@@ -115,6 +115,8 @@ public class ExtendUtil
                 return "Azurite Sea -大いなるアズライト-";
             case EnumController.Expansion.ArchaziasIsland:
                 return "Archazias Island -アーケイジアと魔法の島-";
+            case EnumController.Expansion.ReignOfJafar:
+                return "Reign of Jafar -ジャファーの王権-";
             default:
                 return "";
         }
