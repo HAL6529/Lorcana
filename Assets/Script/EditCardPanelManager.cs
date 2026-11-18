@@ -24,6 +24,7 @@ public class EditCardPanelManager : MonoBehaviour
     [SerializeField] private List<EditCardPanelTemp> EditCardPanelTempList_ShimmeringSkies = new List<EditCardPanelTemp>();
     [SerializeField] private List<EditCardPanelTemp> EditCardPanelTempList_AzuriteSea = new List<EditCardPanelTemp>();
     [SerializeField] private List<EditCardPanelTemp> EditCardPanelTempList_ArchaziasIsland = new List<EditCardPanelTemp>();
+    [SerializeField] private List<EditCardPanelTemp> EditCardPanelTempList_ReignOfJafar = new List<EditCardPanelTemp>();
     private List<EditCardPanelTemp> EditCardPanelTempList = new List<EditCardPanelTemp>();
     private List<EditCardPanelTemp> SortEditCardPanelTempList = new List<EditCardPanelTemp>();
 
@@ -83,6 +84,10 @@ public class EditCardPanelManager : MonoBehaviour
         for (int i = 0; i < EditCardPanelTempList_ArchaziasIsland.Count; i++)
         {
             EditCardPanelTempList.Add(EditCardPanelTempList_ArchaziasIsland[i]);
+        }
+        for (int i = 0; i < EditCardPanelTempList_ReignOfJafar.Count; i++)
+        {
+            EditCardPanelTempList.Add(EditCardPanelTempList_ReignOfJafar[i]);
         }
 
         for (int i = 0;i < EditCardPanelTempList.Count; i++)
