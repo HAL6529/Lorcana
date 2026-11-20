@@ -322,14 +322,14 @@ public class EditCardPanel : MonoBehaviour
             case EnumController.Rare.Legendary:
                 rareSprite.sprite = m_EditCardPanelManager.Legendary;
                 return;
+            case EnumController.Rare.Epic:
+                rareSprite.sprite = m_EditCardPanelManager.Epic;
+                return;
             case EnumController.Rare.Enchanted:
                 rareSprite.sprite = m_EditCardPanelManager.Enchanted;
                 return;
             case EnumController.Rare.Iconic:
                 rareSprite.sprite = m_EditCardPanelManager.Iconic;
-                return;
-            case EnumController.Rare.Promo:
-                rareSprite.sprite = m_EditCardPanelManager.Promo;
                 return;
             default:
                 rareSprite.sprite = null;

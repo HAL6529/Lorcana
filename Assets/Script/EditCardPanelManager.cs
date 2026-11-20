@@ -33,9 +33,9 @@ public class EditCardPanelManager : MonoBehaviour
     public Sprite Rare;
     public Sprite SuperRare;
     public Sprite Legendary;
+    public Sprite Epic;
     public Sprite Enchanted;
     public Sprite Iconic;
-    public Sprite Promo;
 
     public Sprite DefaultSortIcon;
     public Sprite InkSortIcon;
