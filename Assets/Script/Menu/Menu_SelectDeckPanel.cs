@@ -29,9 +29,11 @@ public class Menu_SelectDeckPanel : MonoBehaviour
 
     private SaveData m_SaveData;
 
-    public Menu_Menu m_Menu_Menu;
+    [SerializeField] private Menu_Menu m_Menu_Menu;
 
-    public Menu_ConvertSpriteFromCardNo m_Menu_ConvertSpriteFromCardNo;
+    [SerializeField] private RectTransform CanvasRectTransform;
+    [SerializeField] private Menu_ConvertSpriteFromCardNo m_Menu_ConvertSpriteFromCardNo;
+    [SerializeField] private InfiniteScrollForMenu m_InfiniteScrollForMenu;
 
     public RectTransform Parent;
     public RectTransform Image_Parent;
@@ -61,6 +63,11 @@ public class Menu_SelectDeckPanel : MonoBehaviour
     public RectTransform space3;
     public RectTransform Button_Parent;
     public List<RectTransform> ButtonList = new List<RectTransform>();
+
+    public void Start()
+    {
+        UpdateImage(CanvasRectTransform.sizeDelta.x / 890, CanvasRectTransform.sizeDelta.y / 1920);
+    }
 
     public void SetSaveData(SaveData paramater)
     {
@@ -121,6 +128,7 @@ public class Menu_SelectDeckPanel : MonoBehaviour
         {
             Debug.Log(e);
         }
+        m_InfiniteScrollForMenu.onResetValue();
     }
 
     private void FixImage()
