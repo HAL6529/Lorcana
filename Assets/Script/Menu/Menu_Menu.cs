@@ -9,7 +9,7 @@ using UnityEngine.SceneManagement;
 
 public class Menu_Menu : MonoBehaviour
 {
-    public List<Menu_SelectDeckPanel> list = new List<Menu_SelectDeckPanel>();
+    //public List<Menu_SelectDeckPanel> list = new List<Menu_SelectDeckPanel>();
 
     private ExtendUtil m_ExtendUtil = new ExtendUtil();
 
@@ -18,11 +18,14 @@ public class Menu_Menu : MonoBehaviour
     public RectTransform ScrollView_Parent;
     public RectTransform ScrollView_Space;
     public RectTransform ScrollView;
+    public RectTransform content;
     public RectTransform Header_Parent_Parent;
     public RectTransform Header_Parent;
-    //public RectTransform Header_Text;
     public RectTransform Header_Header_CreateBtn;
     public RectTransform Header_CreateBtn;
+
+    private List<string> SaveData_stringList = new List<string>();
+    private List<SaveData> SaveDataList = new List<SaveData>();
 
     public void Start()
     {
@@ -32,6 +35,7 @@ public class Menu_Menu : MonoBehaviour
         ScrollView_Parent.sizeDelta = new Vector2(ScrollView_Parent.sizeDelta.x * magnification_x, ScrollView_Parent.sizeDelta.y * magnification_y);
         ScrollView_Space.sizeDelta = new Vector2(ScrollView_Space.sizeDelta.x * magnification_x, ScrollView_Space.sizeDelta.y * magnification_y);
         ScrollView.sizeDelta = new Vector2(ScrollView.sizeDelta.x * magnification_x, ScrollView.sizeDelta.y * magnification_y);
+        content.sizeDelta = new Vector2(content.sizeDelta.x * magnification_x, content.sizeDelta.y * magnification_y);
         Header_Parent_Parent.sizeDelta = new Vector2(Header_Parent_Parent.sizeDelta.x * magnification_x, Header_Parent_Parent.sizeDelta.y * magnification_y);
         Header_Parent.sizeDelta = new Vector2(Header_Parent.sizeDelta.x * magnification_x, Header_Parent.sizeDelta.y * magnification_y);
         Header_Header_CreateBtn.sizeDelta = new Vector2(Header_Header_CreateBtn.sizeDelta.x * magnification_x, Header_Header_CreateBtn.sizeDelta.y * magnification_y);
@@ -44,47 +48,49 @@ public class Menu_Menu : MonoBehaviour
         }
         Header_CreateBtn.sizeDelta = new Vector2(Header_CreateBtn.sizeDelta.x * magnification, Header_CreateBtn.sizeDelta.y * magnification);
 
-        for (int i = 0; i < list.Count; i++)
-        {
-            list[i].UpdateImage(magnification_x, magnification_y);
-        }
         Load();
+    }
+
+    public int GetSaveDataListCount()
+    {
+        return SaveDataList.Count;
+    }
+
+    public SaveData GetSaveDataList(int index)
+    {
+        if(index > SaveData_stringList.Count - 1)
+        {
+            return new SaveData();
+        }
+        return SaveDataList[index];
     }
 
     public void Load()
     {
         try
         {
+            SaveDataList = new List<SaveData>();
             //string pass = m_ExtendUtil.GetSecureDataPath() + "/Save";
             string pass = m_ExtendUtil.GetSecureDataPath();
-            if(pass == "")
+            if (pass == "")
             {
-                for (int i = 0; i < list.Count; i++)
-                {
-                    list[i].SetText("");
-                }
+                SaveData_stringList = new List<string>();
+                return;
             }
 
-            List<string> SaveDataList = new List<string>(Directory.GetFiles(pass));
+            SaveData_stringList = new List<string>(Directory.GetFiles(pass));
 
-            for (int i = 0; i < list.Count; i++)
+            for (int i = 0; i < SaveData_stringList.Count; i++)
             {
-                if (i > SaveDataList.Count - 1)
-                {
-                    list[i].SetSaveData(new SaveData());
-                    continue;
-                }
-                StreamReader sr = new StreamReader(SaveDataList[i]);
+                StreamReader sr = new StreamReader(SaveData_stringList[i]);
                 string s = sr.ReadToEnd();
-                list[i].SetSaveData(new SaveData(s, SaveDataList[i]));
+                SaveDataList.Add(new SaveData(s, SaveData_stringList[i]));
                 sr.Close();
             }
-        }catch(Exception e)
+        }
+        catch (Exception e)
         {
-            for (int i = 0; i < list.Count; i++)
-            {
-                list[i].SetText("");
-            }
+
         }
     }
 
