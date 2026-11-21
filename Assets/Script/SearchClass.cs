@@ -80,6 +80,22 @@ public class SearchClass : MonoBehaviour
     public Image b_Knight;
     public Image b_Sorcerer;
 
+    public Image b_TheFirstChapter;
+    public Image b_RiseOfTheFloodBorn;
+    public Image b_IntoTheInkLands;
+    public Image b_UrsulasReturn;
+    public Image b_ShimmeringSkies;
+    public Image b_AzuriteSea;
+    public Image b_ArchaziasIsland;
+    public Image b_ReignOfJafar;
+    public Image b_Fabled_vol1;
+    public Image b_Fabled_vol2;
+    public Image b_WinterSpellInTheWell;
+    public Image b_WinterSpell;
+    public Image b_WildsUnknown;
+    public Image b_AttackOfTheVine;
+    public Image b_HyperiaCity;
+
     public Image BodyGuardBtn;
     public Image ChallengerBtn;
     public Image EvasiveBtn;
@@ -158,6 +174,22 @@ public class SearchClass : MonoBehaviour
     public bool isToy;
     public bool isVillain;
     public bool isVineling;
+
+    public bool isTheFirstChapter;
+    public bool isRiseOfTheFloodBorn;
+    public bool isIntoTheInkLands;
+    public bool isUrsulasReturn;
+    public bool isShimmeringSkies;
+    public bool isAzuriteSea;
+    public bool isArchaziasIsland;
+    public bool isReignOfJafar;
+    public bool isFabled_vol1;
+    public bool isFabled_vol2;
+    public bool isWinterSpellInTheWell;
+    public bool isWinterSpell;
+    public bool isWildsUnknown;
+    public bool isAttackOfTheVine;
+    public bool isHyperiaCity;
 
     public bool isBodyGuard;
     public bool isChallenger;
@@ -241,57 +273,102 @@ public class SearchClass : MonoBehaviour
     public RectTransform class_Header_line2_button1;
     public RectTransform class_Header_line2_button2;
     public RectTransform class_Header_line2_button3;
-    public RectTransform class_Header_line2_button4;
-    public RectTransform class_Header_line2_button5;
     public RectTransform class_Header_space3;
     public RectTransform class_Header_line3;
     public RectTransform class_Header_line3_button1;
     public RectTransform class_Header_line3_button2;
     public RectTransform class_Header_line3_button3;
-    public RectTransform class_Header_line3_button4;
-    public RectTransform class_Header_line3_button5;
     public RectTransform class_Header_space4;
     public RectTransform class_Header_line4;
     public RectTransform class_Header_line4_button1;
     public RectTransform class_Header_line4_button2;
     public RectTransform class_Header_line4_button3;
-    public RectTransform class_Header_line4_button4;
-    public RectTransform class_Header_line4_button5;
     public RectTransform class_Header_space5;
     public RectTransform class_Header_line5;
     public RectTransform class_Header_line5_button1;
     public RectTransform class_Header_line5_button2;
     public RectTransform class_Header_line5_button3;
-    public RectTransform class_Header_line5_button4;
-    public RectTransform class_Header_line5_button5;
     public RectTransform class_Header_space6;
     public RectTransform class_Header_line6;
     public RectTransform class_Header_line6_button1;
     public RectTransform class_Header_line6_button2;
     public RectTransform class_Header_line6_button3;
-    public RectTransform class_Header_line6_button4;
-    public RectTransform class_Header_line6_button5;
     public RectTransform class_Header_space7;
     public RectTransform class_Header_line7;
     public RectTransform class_Header_line7_button1;
     public RectTransform class_Header_line7_button2;
     public RectTransform class_Header_line7_button3;
-    public RectTransform class_Header_line7_button4;
-    public RectTransform class_Header_line7_button5;
     public RectTransform class_Header_space8;
     public RectTransform class_Header_line8;
     public RectTransform class_Header_line8_button1;
     public RectTransform class_Header_line8_button2;
     public RectTransform class_Header_line8_button3;
-    public RectTransform class_Header_line8_button4;
-    public RectTransform class_Header_line8_button5;
     public RectTransform class_Header_space9;
     public RectTransform class_Header_line9;
     public RectTransform class_Header_line9_button1;
     public RectTransform class_Header_line9_button2;
     public RectTransform class_Header_line9_button3;
-    public RectTransform class_Header_line9_button4;
+    public RectTransform class_Header_space10;
+    public RectTransform class_Header_line10;
+    public RectTransform class_Header_line10_button1;
+    public RectTransform class_Header_line10_button2;
+    public RectTransform class_Header_line10_button3;
+    public RectTransform class_Header_space11;
+    public RectTransform class_Header_line11;
+    public RectTransform class_Header_line11_button1;
+    public RectTransform class_Header_line11_button2;
+    public RectTransform class_Header_line11_button3;
+    public RectTransform class_Header_space12;
+    public RectTransform class_Header_line12;
+    public RectTransform class_Header_line12_button1;
+    public RectTransform class_Header_line12_button2;
+    public RectTransform class_Header_line12_button3;
+    public RectTransform class_Header_space13;
+    public RectTransform class_Header_line13;
+    public RectTransform class_Header_line13_button1;
+    public RectTransform class_Header_line13_button2;
+    public RectTransform class_Header_line13_button3;
+    public RectTransform class_Header_space14;
+    public RectTransform class_Header_line14;
+    public RectTransform class_Header_line14_button1;
+    public RectTransform class_Header_line14_button2;
+    public RectTransform class_Header_line14_button3;
     public RectTransform space3_2;
+    public RectTransform expantionExplanation_Header;
+    public RectTransform expantionExplanation_Header_text1;
+    public RectTransform expantionExplanation_Header_text2;
+    public RectTransform expantion_Header;
+    public RectTransform expantion_Header_space;
+    public RectTransform expantion_Header_button1;
+    public RectTransform expantion_Header_space1;
+    public RectTransform expantion_Header_button2;
+    public RectTransform expantion_Header_space2;
+    public RectTransform expantion_Header_button3;
+    public RectTransform expantion_Header_space3;
+    public RectTransform expantion_Header_button4;
+    public RectTransform expantion_Header_space4;
+    public RectTransform expantion_Header_button5;
+    public RectTransform expantion_Header_space5;
+    public RectTransform expantion_Header_button6;
+    public RectTransform expantion_Header_space6;
+    public RectTransform expantion_Header_button7;
+    public RectTransform expantion_Header_space7;
+    public RectTransform expantion_Header_button8;
+    public RectTransform expantion_Header_space8;
+    public RectTransform expantion_Header_button9;
+    public RectTransform expantion_Header_space9;
+    public RectTransform expantion_Header_button10;
+    public RectTransform expantion_Header_space10;
+    public RectTransform expantion_Header_button11;
+    public RectTransform expantion_Header_space11;
+    public RectTransform expantion_Header_button12;
+    public RectTransform expantion_Header_space12;
+    public RectTransform expantion_Header_button13;
+    public RectTransform expantion_Header_space13;
+    public RectTransform expantion_Header_button14;
+    public RectTransform expantion_Header_space14;
+    public RectTransform expantion_Header_button15;
+    public RectTransform space3_3;
     public RectTransform keywordExplanation_header;
     public RectTransform keywordExplanation_header_text1;
     public RectTransform keywordExplanation_header_text2;
@@ -504,6 +581,22 @@ public class SearchClass : MonoBehaviour
         isToy = true;
         isVillain = true;
         isVineling = true;
+
+        isTheFirstChapter = true;
+        isRiseOfTheFloodBorn = true;
+        isIntoTheInkLands = true;
+        isUrsulasReturn = true;
+        isShimmeringSkies = true;
+        isAzuriteSea = true;
+        isArchaziasIsland = true;
+        isReignOfJafar = true;
+        isFabled_vol1 = true;
+        isFabled_vol2 = true;
+        isWinterSpellInTheWell = true;
+        isWinterSpell = true;
+        isWildsUnknown = true;
+        isAttackOfTheVine = true;
+        isHyperiaCity = true;
 
         isBodyGuard = false;
         isChallenger = false;
@@ -1385,6 +1478,230 @@ public class SearchClass : MonoBehaviour
         return;
     }
 
+    public void onExpantionBtn(string paramater)
+    {
+        if(isTheFirstChapter && isRiseOfTheFloodBorn && isIntoTheInkLands && isUrsulasReturn && isShimmeringSkies && isAzuriteSea
+            && isArchaziasIsland && isReignOfJafar && isFabled_vol1 && isFabled_vol2 && isWinterSpellInTheWell && isWinterSpell
+            && isWildsUnknown && isAttackOfTheVine && isHyperiaCity)
+        {
+            isTheFirstChapter = false;
+            isRiseOfTheFloodBorn = false;
+            isIntoTheInkLands = false;
+            isUrsulasReturn = false;
+            isShimmeringSkies = false;
+            isAzuriteSea = false;
+            isArchaziasIsland = false;
+            isReignOfJafar = false;
+            isFabled_vol1 = false;
+            isFabled_vol2 = false;
+            isWinterSpellInTheWell = false;
+            isWinterSpell = false;
+            isWildsUnknown = false;
+            isAttackOfTheVine = false;
+            isHyperiaCity = false;
+
+            b_TheFirstChapter.color = new(1, 1, 1, 50f / 255f);
+            b_RiseOfTheFloodBorn.color = new(1, 1, 1, 50f / 255f);
+            b_IntoTheInkLands.color = new(1, 1, 1, 50f / 255f);
+            b_UrsulasReturn.color = new(1, 1, 1, 50f / 255f);
+            b_ShimmeringSkies.color = new(1, 1, 1, 50f / 255f);
+            b_AzuriteSea.color = new(1, 1, 1, 50f / 255f);
+            b_ArchaziasIsland.color = new(1, 1, 1, 50f / 255f);
+            b_ReignOfJafar.color = new(1, 1, 1, 50f / 255f);
+            b_Fabled_vol1.color = new(1, 1, 1, 50f / 255f);
+            b_Fabled_vol2.color = new(1, 1, 1, 50f / 255f);
+            b_WinterSpellInTheWell.color = new(1, 1, 1, 50f / 255f);
+            b_WinterSpell.color = new(1, 1, 1, 50f / 255f);
+            b_WildsUnknown.color = new(1, 1, 1, 50f / 255f);
+            b_AttackOfTheVine.color = new(1, 1, 1, 50f / 255f);
+            b_HyperiaCity.color = new(1, 1, 1, 50f / 255f);
+        }
+        switch (paramater)
+        {
+            case "TheFirstChapter":
+                if (isTheFirstChapter)
+                {
+                    isTheFirstChapter = false;
+                    b_TheFirstChapter.color = new(1, 1, 1, 50f / 255f);
+                }
+                else
+                {
+                    isTheFirstChapter = true;
+                    b_TheFirstChapter.color = new(1, 1, 1, 1);
+                }
+                break;
+            case "RiseOfTheFloodBorn":
+                if (isRiseOfTheFloodBorn)
+                {
+                    isRiseOfTheFloodBorn = false;
+                    b_RiseOfTheFloodBorn.color = new(1, 1, 1, 50f / 255f);
+                }
+                else
+                {
+                    isRiseOfTheFloodBorn = true;
+                    b_RiseOfTheFloodBorn.color = new(1, 1, 1, 1);
+                }
+                break;
+            case "IntoTheInkLands":
+                if (isIntoTheInkLands)
+                {
+                    isIntoTheInkLands = false;
+                    b_IntoTheInkLands.color = new(1, 1, 1, 50f / 255f);
+                }
+                else
+                {
+                    isIntoTheInkLands = true;
+                    b_IntoTheInkLands.color = new(1, 1, 1, 1);
+                }
+                break;
+            case "UrsulasReturn":
+                if (isUrsulasReturn)
+                {
+                    isUrsulasReturn = false;
+                    b_UrsulasReturn.color = new(1, 1, 1, 50f / 255f);
+                }
+                else
+                {
+                    isUrsulasReturn = true;
+                    b_UrsulasReturn.color = new(1, 1, 1, 1);
+                }
+                break;
+            case "ShimmeringSkies":
+                if (isShimmeringSkies)
+                {
+                    isShimmeringSkies = false;
+                    b_ShimmeringSkies.color = new(1, 1, 1, 50f / 255f);
+                }
+                else
+                {
+                    isShimmeringSkies = true;
+                    b_ShimmeringSkies.color = new(1, 1, 1, 1);
+                }
+                break;
+            case "AzuriteSea":
+                if (isAzuriteSea)
+                {
+                    isAzuriteSea = false;
+                    b_AzuriteSea.color = new(1, 1, 1, 50f / 255f);
+                }
+                else
+                {
+                    isAzuriteSea = true;
+                    b_AzuriteSea.color = new(1, 1, 1, 1);
+                }
+                break;
+            case "ArchaziasIsland":
+                if (isArchaziasIsland)
+                {
+                    isArchaziasIsland = false;
+                    b_ArchaziasIsland.color = new(1, 1, 1, 50f / 255f);
+                }
+                else
+                {
+                    isArchaziasIsland = true;
+                    b_ArchaziasIsland.color = new(1, 1, 1, 1);
+                }
+                break;
+            case "ReignOfJafar":
+                if (isReignOfJafar)
+                {
+                    isReignOfJafar = false;
+                    b_ReignOfJafar.color = new(1, 1, 1, 50f / 255f);
+                }
+                else
+                {
+                    isReignOfJafar = true;
+                    b_ReignOfJafar.color = new(1, 1, 1, 1);
+                }
+                break;
+            case "Fabled_vol1":
+                if (isFabled_vol1)
+                {
+                    isFabled_vol1 = false;
+                    b_Fabled_vol1.color = new(1, 1, 1, 50f / 255f);
+                }
+                else
+                {
+                    isFabled_vol1 = true;
+                    b_Fabled_vol1.color = new(1, 1, 1, 1);
+                }
+                break;
+            case "Fabled_vol2":
+                if (isFabled_vol2)
+                {
+                    isFabled_vol2 = false;
+                    b_Fabled_vol2.color = new(1, 1, 1, 50f / 255f);
+                }
+                else
+                {
+                    isFabled_vol2 = true;
+                    b_Fabled_vol2.color = new(1, 1, 1, 1);
+                }
+                break;
+            case "WinterSpellInTheWell":
+                if (isWinterSpellInTheWell)
+                {
+                    isWinterSpellInTheWell = false;
+                    b_WinterSpellInTheWell.color = new(1, 1, 1, 50f / 255f);
+                }
+                else
+                {
+                    isWinterSpellInTheWell = true;
+                    b_WinterSpellInTheWell.color = new(1, 1, 1, 1);
+                }
+                break;
+            case "WinterSpell":
+                if (isWinterSpell)
+                {
+                    isWinterSpell = false;
+                    b_WinterSpell.color = new(1, 1, 1, 50f / 255f);
+                }
+                else
+                {
+                    isWinterSpell = true;
+                    b_WinterSpell.color = new(1, 1, 1, 1);
+                }
+                break;
+            case "WildsUnknown":
+                if (isWildsUnknown)
+                {
+                    isWildsUnknown = false;
+                    b_WildsUnknown.color = new(1, 1, 1, 50f / 255f);
+                }
+                else
+                {
+                    isWildsUnknown = true;
+                    b_WildsUnknown.color = new(1, 1, 1, 1);
+                }
+                break;
+            case "AttackOfTheVine":
+                if (isAttackOfTheVine)
+                {
+                    isAttackOfTheVine = false;
+                    b_AttackOfTheVine.color = new(1, 1, 1, 50f / 255f);
+                }
+                else
+                {
+                    isAttackOfTheVine = true;
+                    b_AttackOfTheVine.color = new(1, 1, 1, 1);
+                }
+                break;
+            case "HyperiaCity":
+                if (isHyperiaCity)
+                {
+                    isHyperiaCity = false;
+                    b_HyperiaCity.color = new(1, 1, 1, 50f / 255f);
+                }
+                else
+                {
+                    isHyperiaCity = true;
+                    b_HyperiaCity.color = new(1, 1, 1, 1);
+                }
+                break;
+            
+        }
+    }
+
     public void onTypeBtn(string paramater)
     {
         if(a_isAction && a_isCharacter && a_isLocation && a_isItem && a_isSong)
@@ -1463,11 +1780,19 @@ public class SearchClass : MonoBehaviour
                     a_SongBtn.color = new(1, 1, 1, 1);
                 }
                 break;
+            
         }
     }
 
     public void onInkAvailable(string paramater)
     {
+        if(isInkAvailable && isInkDisavailable)
+        {
+            this.isInkAvailable = false;
+            InkAvailableBtn.color = new(1, 1, 1, 50f / 255f);
+            this.isInkDisavailable = false;
+            InkDisavailableBtn.color = new(1, 1, 1, 50f / 255f);
+        }
         switch (paramater)
         {
             case "Aavailable":
@@ -1641,6 +1966,22 @@ public class SearchClass : MonoBehaviour
         m_SearchFilterClass.isToy = isToy;
         m_SearchFilterClass.isVillain = isVillain;
         m_SearchFilterClass.isVineling = isVineling;
+
+        m_SearchFilterClass.isTheFirstChapter = isTheFirstChapter;
+        m_SearchFilterClass.isRiseOfTheFloodBorn = isRiseOfTheFloodBorn;
+        m_SearchFilterClass.isIntoTheInkLands = isIntoTheInkLands;
+        m_SearchFilterClass.isUrsulasReturn = isUrsulasReturn;
+        m_SearchFilterClass.isShimmeringSkies = isShimmeringSkies;
+        m_SearchFilterClass.isAzuriteSea = isAzuriteSea;
+        m_SearchFilterClass.isArchaziasIsland = isArchaziasIsland;
+        m_SearchFilterClass.isReignOfJafar = isReignOfJafar;
+        m_SearchFilterClass.isFabled_vol1 = isFabled_vol1;
+        m_SearchFilterClass.isFabled_vol2 = isFabled_vol2;
+        m_SearchFilterClass.isWinterSpellInTheWell = isWinterSpellInTheWell;
+        m_SearchFilterClass.isWinterSpell = isWinterSpell;
+        m_SearchFilterClass.isWildsUnknown = isWildsUnknown;
+        m_SearchFilterClass.isAttackOfTheVine = isAttackOfTheVine;
+        m_SearchFilterClass.isHyperiaCity = isHyperiaCity;
 
         m_SearchFilterClass.inkcost_lowerlimit = m_InkLowerLimitDropdown.value;
         m_SearchFilterClass.inkcost_upperlimit = m_InkUpperLimitDropdown.value;
@@ -1930,6 +2271,38 @@ public class SearchClass : MonoBehaviour
         b_Knight.color = new(1, 1, 1, 1);
         b_Sorcerer.color = new(1, 1, 1, 1);
 
+        isTheFirstChapter = true;
+        isRiseOfTheFloodBorn = true;
+        isIntoTheInkLands = true;
+        isUrsulasReturn = true;
+        isShimmeringSkies = true;
+        isAzuriteSea = true;
+        isArchaziasIsland = true;
+        isReignOfJafar = true;
+        isFabled_vol1 = true;
+        isFabled_vol2 = true;
+        isWinterSpellInTheWell = true;
+        isWinterSpell = true;
+        isWildsUnknown = true;
+        isAttackOfTheVine = true;
+        isHyperiaCity = true;
+
+        b_TheFirstChapter.color = new(1, 1, 1, 1);
+        b_RiseOfTheFloodBorn.color = new(1, 1, 1, 1);
+        b_IntoTheInkLands.color = new(1, 1, 1, 1);
+        b_UrsulasReturn.color = new(1, 1, 1, 1);
+        b_ShimmeringSkies.color = new(1, 1, 1, 1);
+        b_AzuriteSea.color = new(1, 1, 1, 1);
+        b_ArchaziasIsland.color = new(1, 1, 1, 1);
+        b_ReignOfJafar.color = new(1, 1, 1, 1);
+        b_Fabled_vol1.color = new(1, 1, 1, 1);
+        b_Fabled_vol2.color = new(1, 1, 1, 1);
+        b_WinterSpellInTheWell.color = new(1, 1, 1, 1);
+        b_WinterSpell.color = new(1, 1, 1, 1);
+        b_WildsUnknown.color = new(1, 1, 1, 1);
+        b_AttackOfTheVine.color = new(1, 1, 1, 1);
+        b_HyperiaCity.color = new(1, 1, 1, 1);
+
         isBodyGuard = false;
         BodyGuardBtn.sprite = s_checkbtn_off;
         isChallenger = false;
@@ -2014,57 +2387,103 @@ public class SearchClass : MonoBehaviour
         class_Header_line2_button1.sizeDelta = new Vector2(class_Header_line2_button1.sizeDelta.x * magnification_x, class_Header_line2_button1.sizeDelta.y * magnification_y);
         class_Header_line2_button2.sizeDelta = new Vector2(class_Header_line2_button2.sizeDelta.x * magnification_x, class_Header_line2_button2.sizeDelta.y * magnification_y);
         class_Header_line2_button3.sizeDelta = new Vector2(class_Header_line2_button3.sizeDelta.x * magnification_x, class_Header_line2_button3.sizeDelta.y * magnification_y);
-        class_Header_line2_button4.sizeDelta = new Vector2(class_Header_line2_button4.sizeDelta.x * magnification_x, class_Header_line2_button4.sizeDelta.y * magnification_y);
-        class_Header_line2_button5.sizeDelta = new Vector2(class_Header_line2_button5.sizeDelta.x * magnification_x, class_Header_line2_button5.sizeDelta.y * magnification_y);
         class_Header_space3.sizeDelta = new Vector2(class_Header_space3.sizeDelta.x * magnification_x, class_Header_space3.sizeDelta.y * magnification_y);
         class_Header_line3.sizeDelta = new Vector2(class_Header_line3.sizeDelta.x * magnification_x, class_Header_line3.sizeDelta.y * magnification_y);
         class_Header_line3_button1.sizeDelta = new Vector2(class_Header_line3_button1.sizeDelta.x * magnification_x, class_Header_line3_button1.sizeDelta.y * magnification_y);
         class_Header_line3_button2.sizeDelta = new Vector2(class_Header_line3_button2.sizeDelta.x * magnification_x, class_Header_line3_button2.sizeDelta.y * magnification_y);
         class_Header_line3_button3.sizeDelta = new Vector2(class_Header_line3_button3.sizeDelta.x * magnification_x, class_Header_line3_button3.sizeDelta.y * magnification_y);
-        class_Header_line3_button4.sizeDelta = new Vector2(class_Header_line3_button4.sizeDelta.x * magnification_x, class_Header_line3_button4.sizeDelta.y * magnification_y);
-        class_Header_line3_button5.sizeDelta = new Vector2(class_Header_line3_button5.sizeDelta.x * magnification_x, class_Header_line3_button5.sizeDelta.y * magnification_y);
         class_Header_space4.sizeDelta = new Vector2(class_Header_space4.sizeDelta.x * magnification_x, class_Header_space4.sizeDelta.y * magnification_y);
         class_Header_line4.sizeDelta = new Vector2(class_Header_line4.sizeDelta.x * magnification_x, class_Header_line4.sizeDelta.y * magnification_y);
         class_Header_line4_button1.sizeDelta = new Vector2(class_Header_line4_button1.sizeDelta.x * magnification_x, class_Header_line4_button1.sizeDelta.y * magnification_y);
         class_Header_line4_button2.sizeDelta = new Vector2(class_Header_line4_button2.sizeDelta.x * magnification_x, class_Header_line4_button2.sizeDelta.y * magnification_y);
         class_Header_line4_button3.sizeDelta = new Vector2(class_Header_line4_button3.sizeDelta.x * magnification_x, class_Header_line4_button3.sizeDelta.y * magnification_y);
-        class_Header_line4_button4.sizeDelta = new Vector2(class_Header_line4_button4.sizeDelta.x * magnification_x, class_Header_line4_button4.sizeDelta.y * magnification_y);
-        class_Header_line4_button5.sizeDelta = new Vector2(class_Header_line4_button5.sizeDelta.x * magnification_x, class_Header_line4_button5.sizeDelta.y * magnification_y);
         class_Header_space5.sizeDelta = new Vector2(class_Header_space5.sizeDelta.x * magnification_x, class_Header_space5.sizeDelta.y * magnification_y);
         class_Header_line5.sizeDelta = new Vector2(class_Header_line5.sizeDelta.x * magnification_x, class_Header_line5.sizeDelta.y * magnification_y);
         class_Header_line5_button1.sizeDelta = new Vector2(class_Header_line5_button1.sizeDelta.x * magnification_x, class_Header_line5_button1.sizeDelta.y * magnification_y);
         class_Header_line5_button2.sizeDelta = new Vector2(class_Header_line5_button2.sizeDelta.x * magnification_x, class_Header_line5_button2.sizeDelta.y * magnification_y);
         class_Header_line5_button3.sizeDelta = new Vector2(class_Header_line5_button3.sizeDelta.x * magnification_x, class_Header_line5_button3.sizeDelta.y * magnification_y);
-        class_Header_line5_button4.sizeDelta = new Vector2(class_Header_line5_button4.sizeDelta.x * magnification_x, class_Header_line5_button4.sizeDelta.y * magnification_y);
-        class_Header_line5_button5.sizeDelta = new Vector2(class_Header_line5_button5.sizeDelta.x * magnification_x, class_Header_line5_button5.sizeDelta.y * magnification_y);
         class_Header_space6.sizeDelta = new Vector2(class_Header_space6.sizeDelta.x * magnification_x, class_Header_space6.sizeDelta.y * magnification_y);
         class_Header_line6.sizeDelta = new Vector2(class_Header_line6.sizeDelta.x * magnification_x, class_Header_line6.sizeDelta.y * magnification_y);
         class_Header_line6_button1.sizeDelta = new Vector2(class_Header_line6_button1.sizeDelta.x * magnification_x, class_Header_line6_button1.sizeDelta.y * magnification_y);
         class_Header_line6_button2.sizeDelta = new Vector2(class_Header_line6_button2.sizeDelta.x * magnification_x, class_Header_line6_button2.sizeDelta.y * magnification_y);
         class_Header_line6_button3.sizeDelta = new Vector2(class_Header_line6_button3.sizeDelta.x * magnification_x, class_Header_line6_button3.sizeDelta.y * magnification_y);
-        class_Header_line6_button4.sizeDelta = new Vector2(class_Header_line6_button4.sizeDelta.x * magnification_x, class_Header_line6_button4.sizeDelta.y * magnification_y);
-        class_Header_line6_button5.sizeDelta = new Vector2(class_Header_line6_button5.sizeDelta.x * magnification_x, class_Header_line6_button5.sizeDelta.y * magnification_y);
         class_Header_space7.sizeDelta = new Vector2(class_Header_space7.sizeDelta.x * magnification_x, class_Header_space7.sizeDelta.y * magnification_y);
         class_Header_line7.sizeDelta = new Vector2(class_Header_line7.sizeDelta.x * magnification_x, class_Header_line7.sizeDelta.y * magnification_y);
         class_Header_line7_button1.sizeDelta = new Vector2(class_Header_line7_button1.sizeDelta.x * magnification_x, class_Header_line7_button1.sizeDelta.y * magnification_y);
         class_Header_line7_button2.sizeDelta = new Vector2(class_Header_line7_button2.sizeDelta.x * magnification_x, class_Header_line7_button2.sizeDelta.y * magnification_y);
         class_Header_line7_button3.sizeDelta = new Vector2(class_Header_line7_button3.sizeDelta.x * magnification_x, class_Header_line7_button3.sizeDelta.y * magnification_y);
-        class_Header_line7_button4.sizeDelta = new Vector2(class_Header_line7_button4.sizeDelta.x * magnification_x, class_Header_line7_button4.sizeDelta.y * magnification_y);
-        class_Header_line7_button5.sizeDelta = new Vector2(class_Header_line7_button5.sizeDelta.x * magnification_x, class_Header_line7_button5.sizeDelta.y * magnification_y);
         class_Header_space8.sizeDelta = new Vector2(class_Header_space8.sizeDelta.x * magnification_x, class_Header_space8.sizeDelta.y * magnification_y);
         class_Header_line8.sizeDelta = new Vector2(class_Header_line8.sizeDelta.x * magnification_x, class_Header_line8.sizeDelta.y * magnification_y);
         class_Header_line8_button1.sizeDelta = new Vector2(class_Header_line8_button1.sizeDelta.x * magnification_x, class_Header_line8_button1.sizeDelta.y * magnification_y);
         class_Header_line8_button2.sizeDelta = new Vector2(class_Header_line8_button2.sizeDelta.x * magnification_x, class_Header_line8_button2.sizeDelta.y * magnification_y);
         class_Header_line8_button3.sizeDelta = new Vector2(class_Header_line8_button3.sizeDelta.x * magnification_x, class_Header_line8_button3.sizeDelta.y * magnification_y);
-        class_Header_line8_button4.sizeDelta = new Vector2(class_Header_line8_button4.sizeDelta.x * magnification_x, class_Header_line8_button4.sizeDelta.y * magnification_y);
-        class_Header_line8_button5.sizeDelta = new Vector2(class_Header_line8_button5.sizeDelta.x * magnification_x, class_Header_line8_button5.sizeDelta.y * magnification_y);
         class_Header_space9.sizeDelta = new Vector2(class_Header_space9.sizeDelta.x * magnification_x, class_Header_space9.sizeDelta.y * magnification_y);
         class_Header_line9.sizeDelta = new Vector2(class_Header_line9.sizeDelta.x * magnification_x, class_Header_line9.sizeDelta.y * magnification_y);
         class_Header_line9_button1.sizeDelta = new Vector2(class_Header_line9_button1.sizeDelta.x * magnification_x, class_Header_line9_button1.sizeDelta.y * magnification_y);
         class_Header_line9_button2.sizeDelta = new Vector2(class_Header_line9_button2.sizeDelta.x * magnification_x, class_Header_line9_button2.sizeDelta.y * magnification_y);
         class_Header_line9_button3.sizeDelta = new Vector2(class_Header_line9_button3.sizeDelta.x * magnification_x, class_Header_line9_button3.sizeDelta.y * magnification_y);
-        class_Header_line9_button4.sizeDelta = new Vector2(class_Header_line9_button4.sizeDelta.x * magnification_x, class_Header_line9_button4.sizeDelta.y * magnification_y);
+        class_Header_space10.sizeDelta = new Vector2(class_Header_space10.sizeDelta.x * magnification_x, class_Header_space10.sizeDelta.y * magnification_y);
+        class_Header_line10.sizeDelta = new Vector2(class_Header_line10.sizeDelta.x * magnification_x, class_Header_line10.sizeDelta.y * magnification_y);
+        class_Header_line10_button1.sizeDelta = new Vector2(class_Header_line10_button1.sizeDelta.x * magnification_x, class_Header_line10_button1.sizeDelta.y * magnification_y);
+        class_Header_line10_button2.sizeDelta = new Vector2(class_Header_line10_button2.sizeDelta.x * magnification_x, class_Header_line10_button2.sizeDelta.y * magnification_y);
+        class_Header_line10_button3.sizeDelta = new Vector2(class_Header_line10_button3.sizeDelta.x * magnification_x, class_Header_line10_button3.sizeDelta.y * magnification_y);
+        class_Header_space11.sizeDelta = new Vector2(class_Header_space11.sizeDelta.x * magnification_x, class_Header_space11.sizeDelta.y * magnification_y);
+        class_Header_line11.sizeDelta = new Vector2(class_Header_line11.sizeDelta.x * magnification_x, class_Header_line11.sizeDelta.y * magnification_y);
+        class_Header_line11_button1.sizeDelta = new Vector2(class_Header_line11_button1.sizeDelta.x * magnification_x, class_Header_line11_button1.sizeDelta.y * magnification_y);
+        class_Header_line11_button2.sizeDelta = new Vector2(class_Header_line11_button2.sizeDelta.x * magnification_x, class_Header_line11_button2.sizeDelta.y * magnification_y);
+        class_Header_line11_button3.sizeDelta = new Vector2(class_Header_line11_button3.sizeDelta.x * magnification_x, class_Header_line11_button3.sizeDelta.y * magnification_y);
+        class_Header_space12.sizeDelta = new Vector2(class_Header_space12.sizeDelta.x * magnification_x, class_Header_space12.sizeDelta.y * magnification_y);
+        class_Header_line12.sizeDelta = new Vector2(class_Header_line12.sizeDelta.x * magnification_x, class_Header_line12.sizeDelta.y * magnification_y);
+        class_Header_line12_button1.sizeDelta = new Vector2(class_Header_line12_button1.sizeDelta.x * magnification_x, class_Header_line12_button1.sizeDelta.y * magnification_y);
+        class_Header_line12_button2.sizeDelta = new Vector2(class_Header_line12_button2.sizeDelta.x * magnification_x, class_Header_line12_button2.sizeDelta.y * magnification_y);
+        class_Header_line12_button3.sizeDelta = new Vector2(class_Header_line12_button3.sizeDelta.x * magnification_x, class_Header_line12_button3.sizeDelta.y * magnification_y);
+        class_Header_space13.sizeDelta = new Vector2(class_Header_space13.sizeDelta.x * magnification_x, class_Header_space13.sizeDelta.y * magnification_y);
+        class_Header_line13.sizeDelta = new Vector2(class_Header_line13.sizeDelta.x * magnification_x, class_Header_line13.sizeDelta.y * magnification_y);
+        class_Header_line13_button1.sizeDelta = new Vector2(class_Header_line13_button1.sizeDelta.x * magnification_x, class_Header_line13_button1.sizeDelta.y * magnification_y);
+        class_Header_line13_button2.sizeDelta = new Vector2(class_Header_line13_button2.sizeDelta.x * magnification_x, class_Header_line13_button2.sizeDelta.y * magnification_y);
+        class_Header_line13_button3.sizeDelta = new Vector2(class_Header_line13_button3.sizeDelta.x * magnification_x, class_Header_line13_button3.sizeDelta.y * magnification_y);
+        class_Header_space14.sizeDelta = new Vector2(class_Header_space14.sizeDelta.x * magnification_x, class_Header_space14.sizeDelta.y * magnification_y);
+        class_Header_line14.sizeDelta = new Vector2(class_Header_line14.sizeDelta.x * magnification_x, class_Header_line14.sizeDelta.y * magnification_y);
+        class_Header_line14_button1.sizeDelta = new Vector2(class_Header_line14_button1.sizeDelta.x * magnification_x, class_Header_line14_button1.sizeDelta.y * magnification_y);
+        class_Header_line14_button2.sizeDelta = new Vector2(class_Header_line14_button2.sizeDelta.x * magnification_x, class_Header_line14_button2.sizeDelta.y * magnification_y);
+        class_Header_line14_button3.sizeDelta = new Vector2(class_Header_line14_button3.sizeDelta.x * magnification_x, class_Header_line14_button3.sizeDelta.y * magnification_y);
         space3_2.sizeDelta = new Vector2(space3_2.sizeDelta.x * magnification_x, space3_2.sizeDelta.y * magnification_y);
+
+        expantionExplanation_Header.sizeDelta = new Vector2(expantionExplanation_Header.sizeDelta.x * magnification_x, expantionExplanation_Header.sizeDelta.y * magnification_y);
+        expantionExplanation_Header_text1.sizeDelta = new Vector2(expantionExplanation_Header_text1.sizeDelta.x * magnification_x, expantionExplanation_Header_text1.sizeDelta.y * magnification_y);
+        expantionExplanation_Header_text2.sizeDelta = new Vector2(expantionExplanation_Header_text2.sizeDelta.x * magnification_x, expantionExplanation_Header_text2.sizeDelta.y * magnification_y);
+        expantion_Header.sizeDelta = new Vector2(expantion_Header.sizeDelta.x * magnification_x, expantion_Header.sizeDelta.y * magnification_y);
+        expantion_Header_space.sizeDelta = new Vector2(expantion_Header_space.sizeDelta.x * magnification_x, expantion_Header_space.sizeDelta.y * magnification_y);
+        expantion_Header_button1.sizeDelta = new Vector2(expantion_Header_button1.sizeDelta.x * magnification_x, expantion_Header_button1.sizeDelta.y * magnification_y);
+        expantion_Header_space1.sizeDelta = new Vector2(expantion_Header_space1.sizeDelta.x * magnification_x, expantion_Header_space1.sizeDelta.y * magnification_y);
+        expantion_Header_button2.sizeDelta = new Vector2(expantion_Header_button2.sizeDelta.x * magnification_x, expantion_Header_button2.sizeDelta.y * magnification_y);
+        expantion_Header_space2.sizeDelta = new Vector2(expantion_Header_space2.sizeDelta.x * magnification_x, expantion_Header_space2.sizeDelta.y * magnification_y);
+        expantion_Header_button3.sizeDelta = new Vector2(expantion_Header_button3.sizeDelta.x * magnification_x, expantion_Header_button3.sizeDelta.y * magnification_y);
+        expantion_Header_space3.sizeDelta = new Vector2(expantion_Header_space3.sizeDelta.x * magnification_x, expantion_Header_space3.sizeDelta.y * magnification_y);
+        expantion_Header_button4.sizeDelta = new Vector2(expantion_Header_button4.sizeDelta.x * magnification_x, expantion_Header_button4.sizeDelta.y * magnification_y);
+        expantion_Header_space4.sizeDelta = new Vector2(expantion_Header_space4.sizeDelta.x * magnification_x, expantion_Header_space4.sizeDelta.y * magnification_y);
+        expantion_Header_button5.sizeDelta = new Vector2(expantion_Header_button5.sizeDelta.x * magnification_x, expantion_Header_button5.sizeDelta.y * magnification_y);
+        expantion_Header_space5.sizeDelta = new Vector2(expantion_Header_space5.sizeDelta.x * magnification_x, expantion_Header_space5.sizeDelta.y * magnification_y);
+        expantion_Header_button6.sizeDelta = new Vector2(expantion_Header_button6.sizeDelta.x * magnification_x, expantion_Header_button6.sizeDelta.y * magnification_y);
+        expantion_Header_space6.sizeDelta = new Vector2(expantion_Header_space6.sizeDelta.x * magnification_x, expantion_Header_space6.sizeDelta.y * magnification_y);
+        expantion_Header_button7.sizeDelta = new Vector2(expantion_Header_button7.sizeDelta.x * magnification_x, expantion_Header_button7.sizeDelta.y * magnification_y);
+        expantion_Header_space7.sizeDelta = new Vector2(expantion_Header_space7.sizeDelta.x * magnification_x, expantion_Header_space7.sizeDelta.y * magnification_y);
+        expantion_Header_button8.sizeDelta = new Vector2(expantion_Header_button8.sizeDelta.x * magnification_x, expantion_Header_button8.sizeDelta.y * magnification_y);
+        expantion_Header_space8.sizeDelta = new Vector2(expantion_Header_space8.sizeDelta.x * magnification_x, expantion_Header_space8.sizeDelta.y * magnification_y);
+        expantion_Header_button9.sizeDelta = new Vector2(expantion_Header_button9.sizeDelta.x * magnification_x, expantion_Header_button9.sizeDelta.y * magnification_y);
+        expantion_Header_space9.sizeDelta = new Vector2(expantion_Header_space9.sizeDelta.x * magnification_x, expantion_Header_space9.sizeDelta.y * magnification_y);
+        expantion_Header_button10.sizeDelta = new Vector2(expantion_Header_button10.sizeDelta.x * magnification_x, expantion_Header_button10.sizeDelta.y * magnification_y);
+        expantion_Header_space10.sizeDelta = new Vector2(expantion_Header_space10.sizeDelta.x * magnification_x, expantion_Header_space10.sizeDelta.y * magnification_y);
+        expantion_Header_button11.sizeDelta = new Vector2(expantion_Header_button11.sizeDelta.x * magnification_x, expantion_Header_button11.sizeDelta.y * magnification_y);
+        expantion_Header_space11.sizeDelta = new Vector2(expantion_Header_space11.sizeDelta.x * magnification_x, expantion_Header_space11.sizeDelta.y * magnification_y);
+        expantion_Header_button12.sizeDelta = new Vector2(expantion_Header_button12.sizeDelta.x * magnification_x, expantion_Header_button12.sizeDelta.y * magnification_y);
+        expantion_Header_space12.sizeDelta = new Vector2(expantion_Header_space12.sizeDelta.x * magnification_x, expantion_Header_space12.sizeDelta.y * magnification_y);
+        expantion_Header_button13.sizeDelta = new Vector2(expantion_Header_button13.sizeDelta.x * magnification_x, expantion_Header_button13.sizeDelta.y * magnification_y);
+        expantion_Header_space13.sizeDelta = new Vector2(expantion_Header_space13.sizeDelta.x * magnification_x, expantion_Header_space13.sizeDelta.y * magnification_y);
+        expantion_Header_button14.sizeDelta = new Vector2(expantion_Header_button14.sizeDelta.x * magnification_x, expantion_Header_button14.sizeDelta.y * magnification_y);
+        expantion_Header_space14.sizeDelta = new Vector2(expantion_Header_space14.sizeDelta.x * magnification_x, expantion_Header_space14.sizeDelta.y * magnification_y);
+        expantion_Header_button15.sizeDelta = new Vector2(expantion_Header_button15.sizeDelta.x * magnification_x, expantion_Header_button15.sizeDelta.y * magnification_y);
+        space3_3.sizeDelta = new Vector2(space3_3.sizeDelta.x * magnification_x, space3_3.sizeDelta.y * magnification_y);
 
         keywordExplanation_header.sizeDelta = new Vector2(keywordExplanation_header.sizeDelta.x * magnification_x, keywordExplanation_header.sizeDelta.y * magnification_y);
         keywordExplanation_header_text1.sizeDelta = new Vector2(keywordExplanation_header_text1.sizeDelta.x * magnification_x, keywordExplanation_header_text1.sizeDelta.y * magnification_y);
