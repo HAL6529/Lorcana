@@ -76,6 +76,7 @@ public class EditCardPanel : MonoBehaviour
     public EditCardPanelManager m_EditCardPanelManager;
     public PanelPicture m_PanelPicture;
     public RectTransform CanvasRectTransform;
+    [SerializeField] private Menu_ConvertSpriteFromCardNo m_Menu_ConvertSpriteFromCardNo;
 
     public Sprite Lore;
 
@@ -212,7 +213,7 @@ public class EditCardPanel : MonoBehaviour
             SwitchActive(true);
         }
 
-        m_sprite.sprite = m_CardInfo.GetSprite();
+        m_sprite.sprite = m_Menu_ConvertSpriteFromCardNo.ConvertSpriteFromCardNo(m_CardInfo.GetCardNo());
         inkCost.text = m_CardInfo.GetInkCost().ToString();
         cardName1.text = m_CardInfo.GetCardName1();
         cardName2.text = m_CardInfo.GetCardName2();

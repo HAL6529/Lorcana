@@ -34,10 +34,12 @@ public class PanelPicture : MonoBehaviour
 
     private bool favoriteBtn = false;
 
+    [SerializeField] private Menu_ConvertSpriteFromCardNo m_Menu_ConvertSpriteFromCardNo;
+
     public void SetView(CardInfo m_CardInfo)
     {
         c = m_CardInfo;
-        m_image.sprite = m_CardInfo.GetSprite();
+        m_image.sprite = m_Menu_ConvertSpriteFromCardNo.ConvertSpriteFromCardNo(m_CardInfo.GetCardNo());
         this.gameObject.SetActive(true);
         if(m_CardInfo.GetCardNo() == m_SaveDataStatic.GetFavoriteCardInfo().GetCardNo())
         {

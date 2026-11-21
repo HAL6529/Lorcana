@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EditCardPanelTemp : MonoBehaviour
+public class EditCardPanelTemp
 {
     [SerializeField] private bool isSerachHit;
     [SerializeField] private CardInfo m_CardInfo;
