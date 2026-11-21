@@ -76,6 +76,7 @@ public class EditCardPanel : MonoBehaviour
     public EditCardPanelManager m_EditCardPanelManager;
     public PanelPicture m_PanelPicture;
     public RectTransform CanvasRectTransform;
+    [SerializeField] private Menu_ConvertSpriteFromCardNo m_Menu_ConvertSpriteFromCardNo;
 
     public Sprite Lore;
 
@@ -212,7 +213,7 @@ public class EditCardPanel : MonoBehaviour
             SwitchActive(true);
         }
 
-        m_sprite.sprite = m_CardInfo.GetSprite();
+        m_sprite.sprite = m_Menu_ConvertSpriteFromCardNo.ConvertSpriteFromCardNo(m_CardInfo.GetCardNo());
         inkCost.text = m_CardInfo.GetInkCost().ToString();
         cardName1.text = m_CardInfo.GetCardName1();
         cardName2.text = m_CardInfo.GetCardName2();
@@ -322,14 +323,14 @@ public class EditCardPanel : MonoBehaviour
             case EnumController.Rare.Legendary:
                 rareSprite.sprite = m_EditCardPanelManager.Legendary;
                 return;
+            case EnumController.Rare.Epic:
+                rareSprite.sprite = m_EditCardPanelManager.Epic;
+                return;
             case EnumController.Rare.Enchanted:
                 rareSprite.sprite = m_EditCardPanelManager.Enchanted;
                 return;
             case EnumController.Rare.Iconic:
                 rareSprite.sprite = m_EditCardPanelManager.Iconic;
-                return;
-            case EnumController.Rare.Promo:
-                rareSprite.sprite = m_EditCardPanelManager.Promo;
                 return;
             default:
                 rareSprite.sprite = null;

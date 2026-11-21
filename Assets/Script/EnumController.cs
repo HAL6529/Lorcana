@@ -72,6 +72,8 @@ public class EnumController
         AzuriteSea,
         ArchaziasIsland,
         ReignOfJafar,
+        Fabled_vol1,
+        Fabled_vol2,
     }
 
 
@@ -144,6 +146,7 @@ public class EnumController
         Chipmunk, // チップとデール
         Cinderella, //シンデレラ
         DuckTales, //ダックテイル
+        Dumbo, //ダンボ
         Encanto, //ミラベルと魔法だらけの家
         Fantasia, //ファンタジア
         Frozen, //アナと雪の女王
@@ -196,9 +199,9 @@ public class EnumController
         Rare,
         SuperRare,
         Legendary,
+        Epic,
         Enchanted,
         Iconic,
-        Promo,
     }
 
     public enum YesOrNoParamater
@@ -507,6 +510,7 @@ public class EnumController
         NicolaSavioriAndRaquelVillanueva, //Nicola Saviori / Raquel Villanueva
         NicolasKy, //Nicolas Ky
         NicolettaBaldari,//Nicoletta Baldari
+        Noukah, //Noukah
         OggyChristiansson, //Oggy Christiansson
         OggysonArt, // Oggyson Art
         OlegYurkov, //OlegYurkov
@@ -537,6 +541,7 @@ public class EnumController
         RichelleCanto, //Richelle Canto
         RobDiSalvo, //Rob Di Salvo
         RobertoGatto, //Roberto Gatto
+        RodrigoCamilo, // Rodrigo Camilo
         RogerPerez, //Roger Perez
         RogerPerezAndHayleyEvans, //Roger Perez / Hayley Evans
         RogerPerezAndLeonardoGiammichele, //Roger Perez / Leonardo Giammichele

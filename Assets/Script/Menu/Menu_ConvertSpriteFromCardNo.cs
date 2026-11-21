@@ -4,886 +4,1901 @@ using UnityEngine;
 
 public class Menu_ConvertSpriteFromCardNo : MonoBehaviour
 {
-    public List<Sprite> TheFirstChapterList = new List<Sprite> ();
-    public List<Sprite> RiseOfTheFloodBornList = new List<Sprite>();
     public Sprite noImage;
 
     public Sprite ConvertSpriteFromCardNo(string paramater)
     {
+        string expantion = "";
         switch (paramater)
         {
             case "001_JA_01":
-                return TheFirstChapterList[0];
             case "002_JA_01":
-                return TheFirstChapterList[1];
             case "003_JA_01":
-                return TheFirstChapterList[2];
             case "004_JA_01":
-                return TheFirstChapterList[3];
             case "005_JA_01":
-                return TheFirstChapterList[4];
             case "006_JA_01":
-                return TheFirstChapterList[5];
             case "007_JA_01":
-                return TheFirstChapterList[6];
             case "008_JA_01":
-                return TheFirstChapterList[7];
             case "009_JA_01":
-                return TheFirstChapterList[8];
             case "010_JA_01":
-                return TheFirstChapterList[9];
             case "011_JA_01":
-                return TheFirstChapterList[10];
             case "012_JA_01":
-                return TheFirstChapterList[11];
             case "013_JA_01":
-                return TheFirstChapterList[12];
             case "014_JA_01":
-                return TheFirstChapterList[13];
             case "015_JA_01":
-                return TheFirstChapterList[14];
             case "016_JA_01":
-                return TheFirstChapterList[15];
             case "017_JA_01":
-                return TheFirstChapterList[16];
             case "018_JA_01":
-                return TheFirstChapterList[17];
             case "019_JA_01":
-                return TheFirstChapterList[18];
             case "020_JA_01":
-                return TheFirstChapterList[19];
             case "021_JA_01":
-                return TheFirstChapterList[20];
             case "022_JA_01":
-                return TheFirstChapterList[21];
             case "023_JA_01":
-                return TheFirstChapterList[22];
             case "024_JA_01":
-                return TheFirstChapterList[23];
             case "025_JA_01":
-                return TheFirstChapterList[24];
             case "026_JA_01":
-                return TheFirstChapterList[25];
             case "027_JA_01":
-                return TheFirstChapterList[26];
             case "028_JA_01":
-                return TheFirstChapterList[27];
             case "029_JA_01":
-                return TheFirstChapterList[28];
             case "030_JA_01":
-                return TheFirstChapterList[29];
             case "031_JA_01":
-                return TheFirstChapterList[30];
             case "032_JA_01":
-                return TheFirstChapterList[31];
             case "033_JA_01":
-                return TheFirstChapterList[32];
             case "034_JA_01":
-                return TheFirstChapterList[33];
             case "035_JA_01":
-                return TheFirstChapterList[34];
             case "036_JA_01":
-                return TheFirstChapterList[35];
             case "037_JA_01":
-                return TheFirstChapterList[36];
             case "038_JA_01":
-                return TheFirstChapterList[37];
             case "039_JA_01":
-                return TheFirstChapterList[38];
             case "040_JA_01":
-                return TheFirstChapterList[39];
             case "041_JA_01":
-                return TheFirstChapterList[40];
             case "042_JA_01":
-                return TheFirstChapterList[41];
             case "043_JA_01":
-                return TheFirstChapterList[42];
             case "044_JA_01":
-                return TheFirstChapterList[43];
             case "045_JA_01":
-                return TheFirstChapterList[44];
             case "046_JA_01":
-                return TheFirstChapterList[45];
             case "047_JA_01":
-                return TheFirstChapterList[46];
             case "048_JA_01":
-                return TheFirstChapterList[47];
             case "049_JA_01":
-                return TheFirstChapterList[48];
             case "050_JA_01":
-                return TheFirstChapterList[49];
             case "051_JA_01":
-                return TheFirstChapterList[50];
             case "052_JA_01":
-                return TheFirstChapterList[51];
             case "053_JA_01":
-                return TheFirstChapterList[52];
             case "054_JA_01":
-                return TheFirstChapterList[53];
             case "055_JA_01":
-                return TheFirstChapterList[54];
             case "056_JA_01":
-                return TheFirstChapterList[55];
             case "057_JA_01":
-                return TheFirstChapterList[56];
             case "058_JA_01":
-                return TheFirstChapterList[57];
             case "059_JA_01":
-                return TheFirstChapterList[58];
             case "060_JA_01":
-                return TheFirstChapterList[59];
             case "061_JA_01":
-                return TheFirstChapterList[60];
             case "062_JA_01":
-                return TheFirstChapterList[61];
             case "063_JA_01":
-                return TheFirstChapterList[62];
             case "064_JA_01":
-                return TheFirstChapterList[63];
             case "065_JA_01":
-                return TheFirstChapterList[64];
             case "066_JA_01":
-                return TheFirstChapterList[65];
             case "067_JA_01":
-                return TheFirstChapterList[66];
             case "068_JA_01":
-                return TheFirstChapterList[67];
             case "069_JA_01":
-                return TheFirstChapterList[68];
             case "070_JA_01":
-                return TheFirstChapterList[69];
             case "071_JA_01":
-                return TheFirstChapterList[70];
             case "072_JA_01":
-                return TheFirstChapterList[71];
             case "073_JA_01":
-                return TheFirstChapterList[72];
             case "074_JA_01":
-                return TheFirstChapterList[73];
             case "075_JA_01":
-                return TheFirstChapterList[74];
             case "076_JA_01":
-                return TheFirstChapterList[75];
             case "077_JA_01":
-                return TheFirstChapterList[76];
             case "078_JA_01":
-                return TheFirstChapterList[77];
             case "079_JA_01":
-                return TheFirstChapterList[78];
             case "080_JA_01":
-                return TheFirstChapterList[79];
             case "081_JA_01":
-                return TheFirstChapterList[80];
             case "082_JA_01":
-                return TheFirstChapterList[81];
             case "083_JA_01":
-                return TheFirstChapterList[82];
             case "084_JA_01":
-                return TheFirstChapterList[83];
             case "085_JA_01":
-                return TheFirstChapterList[84];
             case "086_JA_01":
-                return TheFirstChapterList[85];
             case "087_JA_01":
-                return TheFirstChapterList[86];
             case "088_JA_01":
-                return TheFirstChapterList[87];
             case "089_JA_01":
-                return TheFirstChapterList[88];
             case "090_JA_01":
-                return TheFirstChapterList[89];
             case "091_JA_01":
-                return TheFirstChapterList[90];
             case "092_JA_01":
-                return TheFirstChapterList[91];
             case "093_JA_01":
-                return TheFirstChapterList[92];
             case "094_JA_01":
-                return TheFirstChapterList[93];
             case "095_JA_01":
-                return TheFirstChapterList[94];
             case "096_JA_01":
-                return TheFirstChapterList[95];
             case "097_JA_01":
-                return TheFirstChapterList[96];
             case "098_JA_01":
-                return TheFirstChapterList[97];
             case "099_JA_01":
-                return TheFirstChapterList[98];
             case "100_JA_01":
-                return TheFirstChapterList[99];
             case "101_JA_01":
-                return TheFirstChapterList[100];
             case "102_JA_01":
-                return TheFirstChapterList[101];
             case "103_JA_01":
-                return TheFirstChapterList[102];
             case "104_JA_01":
-                return TheFirstChapterList[103];
             case "105_JA_01":
-                return TheFirstChapterList[104];
             case "106_JA_01":
-                return TheFirstChapterList[105];
             case "107_JA_01":
-                return TheFirstChapterList[106];
             case "108_JA_01":
-                return TheFirstChapterList[107];
             case "109_JA_01":
-                return TheFirstChapterList[108];
             case "110_JA_01":
-                return TheFirstChapterList[109];
             case "111_JA_01":
-                return TheFirstChapterList[110];
             case "112_JA_01":
-                return TheFirstChapterList[111];
             case "113_JA_01":
-                return TheFirstChapterList[112];
             case "114_JA_01":
-                return TheFirstChapterList[113];
             case "115_JA_01":
-                return TheFirstChapterList[114];
             case "116_JA_01":
-                return TheFirstChapterList[115];
             case "117_JA_01":
-                return TheFirstChapterList[116];
             case "118_JA_01":
-                return TheFirstChapterList[117];
             case "119_JA_01":
-                return TheFirstChapterList[118];
             case "120_JA_01":
-                return TheFirstChapterList[119];
             case "121_JA_01":
-                return TheFirstChapterList[120];
             case "122_JA_01":
-                return TheFirstChapterList[121];
             case "123_JA_01":
-                return TheFirstChapterList[122];
             case "124_JA_01":
-                return TheFirstChapterList[123];
             case "125_JA_01":
-                return TheFirstChapterList[124];
             case "126_JA_01":
-                return TheFirstChapterList[125];
             case "127_JA_01":
-                return TheFirstChapterList[126];
             case "128_JA_01":
-                return TheFirstChapterList[127];
             case "129_JA_01":
-                return TheFirstChapterList[128];
             case "130_JA_01":
-                return TheFirstChapterList[129];
             case "131_JA_01":
-                return TheFirstChapterList[130];
             case "132_JA_01":
-                return TheFirstChapterList[131];
             case "133_JA_01":
-                return TheFirstChapterList[132];
             case "134_JA_01":
-                return TheFirstChapterList[133];
             case "135_JA_01":
-                return TheFirstChapterList[134];
             case "136_JA_01":
-                return TheFirstChapterList[135];
             case "137_JA_01":
-                return TheFirstChapterList[136];
             case "138_JA_01":
-                return TheFirstChapterList[137];
             case "139_JA_01":
-                return TheFirstChapterList[138];
             case "140_JA_01":
-                return TheFirstChapterList[139];
             case "141_JA_01":
-                return TheFirstChapterList[140];
             case "142_JA_01":
-                return TheFirstChapterList[141];
             case "143_JA_01":
-                return TheFirstChapterList[142];
             case "144_JA_01":
-                return TheFirstChapterList[143];
             case "145_JA_01":
-                return TheFirstChapterList[144];
             case "146_JA_01":
-                return TheFirstChapterList[145];
             case "147_JA_01":
-                return TheFirstChapterList[146];
             case "148_JA_01":
-                return TheFirstChapterList[147];
             case "149_JA_01":
-                return TheFirstChapterList[148];
             case "150_JA_01":
-                return TheFirstChapterList[149];
             case "151_JA_01":
-                return TheFirstChapterList[150];
             case "152_JA_01":
-                return TheFirstChapterList[151];
             case "153_JA_01":
-                return TheFirstChapterList[152];
             case "154_JA_01":
-                return TheFirstChapterList[153];
             case "155_JA_01":
-                return TheFirstChapterList[154];
             case "156_JA_01":
-                return TheFirstChapterList[155];
             case "157_JA_01":
-                return TheFirstChapterList[156];
             case "158_JA_01":
-                return TheFirstChapterList[157];
             case "159_JA_01":
-                return TheFirstChapterList[158];
             case "160_JA_01":
-                return TheFirstChapterList[159];
             case "161_JA_01":
-                return TheFirstChapterList[160];
             case "162_JA_01":
-                return TheFirstChapterList[161];
             case "163_JA_01":
-                return TheFirstChapterList[162];
             case "164_JA_01":
-                return TheFirstChapterList[163];
             case "165_JA_01":
-                return TheFirstChapterList[164];
             case "166_JA_01":
-                return TheFirstChapterList[165];
             case "167_JA_01":
-                return TheFirstChapterList[166];
             case "168_JA_01":
-                return TheFirstChapterList[167];
             case "169_JA_01":
-                return TheFirstChapterList[168];
             case "170_JA_01":
-                return TheFirstChapterList[169];
             case "171_JA_01":
-                return TheFirstChapterList[170];
             case "172_JA_01":
-                return TheFirstChapterList[171];
             case "173_JA_01":
-                return TheFirstChapterList[172];
             case "174_JA_01":
-                return TheFirstChapterList[173];
             case "175_JA_01":
-                return TheFirstChapterList[174];
             case "176_JA_01":
-                return TheFirstChapterList[175];
             case "177_JA_01":
-                return TheFirstChapterList[176];
             case "178_JA_01":
-                return TheFirstChapterList[177];
             case "179_JA_01":
-                return TheFirstChapterList[178];
             case "180_JA_01":
-                return TheFirstChapterList[179];
             case "181_JA_01":
-                return TheFirstChapterList[180];
             case "182_JA_01":
-                return TheFirstChapterList[181];
             case "183_JA_01":
-                return TheFirstChapterList[182];
             case "184_JA_01":
-                return TheFirstChapterList[183];
             case "185_JA_01":
-                return TheFirstChapterList[184];
             case "186_JA_01":
-                return TheFirstChapterList[185];
             case "187_JA_01":
-                return TheFirstChapterList[186];
             case "188_JA_01":
-                return TheFirstChapterList[187];
             case "189_JA_01":
-                return TheFirstChapterList[188];
             case "190_JA_01":
-                return TheFirstChapterList[189];
             case "191_JA_01":
-                return TheFirstChapterList[190];
             case "192_JA_01":
-                return TheFirstChapterList[191];
             case "193_JA_01":
-                return TheFirstChapterList[192];
             case "194_JA_01":
-                return TheFirstChapterList[193];
             case "195_JA_01":
-                return TheFirstChapterList[194];
             case "196_JA_01":
-                return TheFirstChapterList[195];
             case "197_JA_01":
-                return TheFirstChapterList[196];
             case "198_JA_01":
-                return TheFirstChapterList[197];
             case "199_JA_01":
-                return TheFirstChapterList[198];
             case "200_JA_01":
-                return TheFirstChapterList[199];
             case "201_JA_01":
-                return TheFirstChapterList[200];
             case "202_JA_01":
-                return TheFirstChapterList[201];
             case "203_JA_01":
-                return TheFirstChapterList[202];
             case "204_JA_01":
-                return TheFirstChapterList[203];
             case "205_JA_01":
-                return TheFirstChapterList[204];
             case "206_JA_01":
-                return TheFirstChapterList[205];
             case "207_JA_01":
-                return TheFirstChapterList[206];
             case "208_JA_01":
-                return TheFirstChapterList[207];
             case "209_JA_01":
-                return TheFirstChapterList[208];
             case "210_JA_01":
-                return TheFirstChapterList[209];
             case "211_JA_01":
-                return TheFirstChapterList[210];
             case "212_JA_01":
-                return TheFirstChapterList[211];
             case "213_JA_01":
-                return TheFirstChapterList[212];
             case "214_JA_01":
-                return TheFirstChapterList[213];
             case "215_JA_01":
-                return TheFirstChapterList[214];
             case "216_JA_01":
-                return TheFirstChapterList[215];
-            default:
+                expantion = "TheFirstChapter";
                 break;
         }
-
         switch (paramater)
         {
             case "001_JA_02":
-                return RiseOfTheFloodBornList[0];
             case "002_JA_02":
-                return RiseOfTheFloodBornList[1];
             case "003_JA_02":
-                return RiseOfTheFloodBornList[2];
             case "004_JA_02":
-                return RiseOfTheFloodBornList[3];
             case "005_JA_02":
-                return RiseOfTheFloodBornList[4];
             case "006_JA_02":
-                return RiseOfTheFloodBornList[5];
             case "007_JA_02":
-                return RiseOfTheFloodBornList[6];
             case "008_JA_02":
-                return RiseOfTheFloodBornList[7];
             case "009_JA_02":
-                return RiseOfTheFloodBornList[8];
             case "010_JA_02":
-                return RiseOfTheFloodBornList[9];
             case "011_JA_02":
-                return RiseOfTheFloodBornList[10];
             case "012_JA_02":
-                return RiseOfTheFloodBornList[11];
             case "013_JA_02":
-                return RiseOfTheFloodBornList[12];
             case "014_JA_02":
-                return RiseOfTheFloodBornList[13];
             case "015_JA_02":
-                return RiseOfTheFloodBornList[14];
             case "016_JA_02":
-                return RiseOfTheFloodBornList[15];
             case "017_JA_02":
-                return RiseOfTheFloodBornList[16];
             case "018_JA_02":
-                return RiseOfTheFloodBornList[17];
             case "019_JA_02":
-                return RiseOfTheFloodBornList[18];
             case "020_JA_02":
-                return RiseOfTheFloodBornList[19];
             case "021_JA_02":
-                return RiseOfTheFloodBornList[20];
             case "022_JA_02":
-                return RiseOfTheFloodBornList[21];
             case "023_JA_02":
-                return RiseOfTheFloodBornList[22];
             case "024_JA_02":
-                return RiseOfTheFloodBornList[23];
             case "025_JA_02":
-                return RiseOfTheFloodBornList[24];
             case "026_JA_02":
-                return RiseOfTheFloodBornList[25];
             case "027_JA_02":
-                return RiseOfTheFloodBornList[26];
             case "028_JA_02":
-                return RiseOfTheFloodBornList[27];
             case "029_JA_02":
-                return RiseOfTheFloodBornList[28];
             case "030_JA_02":
-                return RiseOfTheFloodBornList[29];
             case "031_JA_02":
-                return RiseOfTheFloodBornList[30];
             case "032_JA_02":
-                return RiseOfTheFloodBornList[31];
             case "033_JA_02":
-                return RiseOfTheFloodBornList[32];
             case "034_JA_02":
-                return RiseOfTheFloodBornList[33];
             case "035_JA_02":
-                return RiseOfTheFloodBornList[34];
             case "036_JA_02":
-                return RiseOfTheFloodBornList[35];
             case "037_JA_02":
-                return RiseOfTheFloodBornList[36];
             case "038_JA_02":
-                return RiseOfTheFloodBornList[37];
             case "039_JA_02":
-                return RiseOfTheFloodBornList[38];
             case "040_JA_02":
-                return RiseOfTheFloodBornList[39];
             case "041_JA_02":
-                return RiseOfTheFloodBornList[40];
             case "042_JA_02":
-                return RiseOfTheFloodBornList[41];
             case "043_JA_02":
-                return RiseOfTheFloodBornList[42];
             case "044_JA_02":
-                return RiseOfTheFloodBornList[43];
             case "045_JA_02":
-                return RiseOfTheFloodBornList[44];
             case "046_JA_02":
-                return RiseOfTheFloodBornList[45];
             case "047_JA_02":
-                return RiseOfTheFloodBornList[46];
             case "048_JA_02":
-                return RiseOfTheFloodBornList[47];
             case "049_JA_02":
-                return RiseOfTheFloodBornList[48];
             case "050_JA_02":
-                return RiseOfTheFloodBornList[49];
             case "051_JA_02":
-                return RiseOfTheFloodBornList[50];
             case "052_JA_02":
-                return RiseOfTheFloodBornList[51];
             case "053_JA_02":
-                return RiseOfTheFloodBornList[52];
             case "054_JA_02":
-                return RiseOfTheFloodBornList[53];
             case "055_JA_02":
-                return RiseOfTheFloodBornList[54];
             case "056_JA_02":
-                return RiseOfTheFloodBornList[55];
             case "057_JA_02":
-                return RiseOfTheFloodBornList[56];
             case "058_JA_02":
-                return RiseOfTheFloodBornList[57];
             case "059_JA_02":
-                return RiseOfTheFloodBornList[58];
             case "060_JA_02":
-                return RiseOfTheFloodBornList[59];
             case "061_JA_02":
-                return RiseOfTheFloodBornList[60];
             case "062_JA_02":
-                return RiseOfTheFloodBornList[61];
             case "063_JA_02":
-                return RiseOfTheFloodBornList[62];
             case "064_JA_02":
-                return RiseOfTheFloodBornList[63];
             case "065_JA_02":
-                return RiseOfTheFloodBornList[64];
             case "066_JA_02":
-                return RiseOfTheFloodBornList[65];
             case "067_JA_02":
-                return RiseOfTheFloodBornList[66];
             case "068_JA_02":
-                return RiseOfTheFloodBornList[67];
             case "069_JA_02":
-                return RiseOfTheFloodBornList[68];
             case "070_JA_02":
-                return RiseOfTheFloodBornList[69];
             case "071_JA_02":
-                return RiseOfTheFloodBornList[70];
             case "072_JA_02":
-                return RiseOfTheFloodBornList[71];
             case "073_JA_02":
-                return RiseOfTheFloodBornList[72];
             case "074_JA_02":
-                return RiseOfTheFloodBornList[73];
             case "075_JA_02":
-                return RiseOfTheFloodBornList[74];
             case "076_JA_02":
-                return RiseOfTheFloodBornList[75];
             case "077_JA_02":
-                return RiseOfTheFloodBornList[76];
             case "078_JA_02":
-                return RiseOfTheFloodBornList[77];
             case "079_JA_02":
-                return RiseOfTheFloodBornList[78];
             case "080_JA_02":
-                return RiseOfTheFloodBornList[79];
             case "081_JA_02":
-                return RiseOfTheFloodBornList[80];
             case "082_JA_02":
-                return RiseOfTheFloodBornList[81];
             case "083_JA_02":
-                return RiseOfTheFloodBornList[82];
             case "084_JA_02":
-                return RiseOfTheFloodBornList[83];
             case "085_JA_02":
-                return RiseOfTheFloodBornList[84];
             case "086_JA_02":
-                return RiseOfTheFloodBornList[85];
             case "087_JA_02":
-                return RiseOfTheFloodBornList[86];
             case "088_JA_02":
-                return RiseOfTheFloodBornList[87];
             case "089_JA_02":
-                return RiseOfTheFloodBornList[88];
             case "090_JA_02":
-                return RiseOfTheFloodBornList[89];
             case "091_JA_02":
-                return RiseOfTheFloodBornList[90];
             case "092_JA_02":
-                return RiseOfTheFloodBornList[91];
             case "093_JA_02":
-                return RiseOfTheFloodBornList[92];
             case "094_JA_02":
-                return RiseOfTheFloodBornList[93];
             case "095_JA_02":
-                return RiseOfTheFloodBornList[94];
             case "096_JA_02":
-                return RiseOfTheFloodBornList[95];
             case "097_JA_02":
-                return RiseOfTheFloodBornList[96];
             case "098_JA_02":
-                return RiseOfTheFloodBornList[97];
             case "099_JA_02":
-                return RiseOfTheFloodBornList[98];
             case "100_JA_02":
-                return RiseOfTheFloodBornList[99];
             case "101_JA_02":
-                return RiseOfTheFloodBornList[100];
             case "102_JA_02":
-                return RiseOfTheFloodBornList[101];
             case "103_JA_02":
-                return RiseOfTheFloodBornList[102];
             case "104_JA_02":
-                return RiseOfTheFloodBornList[103];
             case "105_JA_02":
-                return RiseOfTheFloodBornList[104];
             case "106_JA_02":
-                return RiseOfTheFloodBornList[105];
             case "107_JA_02":
-                return RiseOfTheFloodBornList[106];
             case "108_JA_02":
-                return RiseOfTheFloodBornList[107];
             case "109_JA_02":
-                return RiseOfTheFloodBornList[108];
             case "110_JA_02":
-                return RiseOfTheFloodBornList[109];
             case "111_JA_02":
-                return RiseOfTheFloodBornList[110];
             case "112_JA_02":
-                return RiseOfTheFloodBornList[111];
             case "113_JA_02":
-                return RiseOfTheFloodBornList[112];
             case "114_JA_02":
-                return RiseOfTheFloodBornList[113];
             case "115_JA_02":
-                return RiseOfTheFloodBornList[114];
             case "116_JA_02":
-                return RiseOfTheFloodBornList[115];
             case "117_JA_02":
-                return RiseOfTheFloodBornList[116];
             case "118_JA_02":
-                return RiseOfTheFloodBornList[117];
             case "119_JA_02":
-                return RiseOfTheFloodBornList[118];
             case "120_JA_02":
-                return RiseOfTheFloodBornList[119];
             case "121_JA_02":
-                return RiseOfTheFloodBornList[120];
             case "122_JA_02":
-                return RiseOfTheFloodBornList[121];
             case "123_JA_02":
-                return RiseOfTheFloodBornList[122];
             case "124_JA_02":
-                return RiseOfTheFloodBornList[123];
             case "125_JA_02":
-                return RiseOfTheFloodBornList[124];
             case "126_JA_02":
-                return RiseOfTheFloodBornList[125];
             case "127_JA_02":
-                return RiseOfTheFloodBornList[126];
             case "128_JA_02":
-                return RiseOfTheFloodBornList[127];
             case "129_JA_02":
-                return RiseOfTheFloodBornList[128];
             case "130_JA_02":
-                return RiseOfTheFloodBornList[129];
             case "131_JA_02":
-                return RiseOfTheFloodBornList[130];
             case "132_JA_02":
-                return RiseOfTheFloodBornList[131];
             case "133_JA_02":
-                return RiseOfTheFloodBornList[132];
             case "134_JA_02":
-                return RiseOfTheFloodBornList[133];
             case "135_JA_02":
-                return RiseOfTheFloodBornList[134];
             case "136_JA_02":
-                return RiseOfTheFloodBornList[135];
             case "137_JA_02":
-                return RiseOfTheFloodBornList[136];
             case "138_JA_02":
-                return RiseOfTheFloodBornList[137];
             case "139_JA_02":
-                return RiseOfTheFloodBornList[138];
             case "140_JA_02":
-                return RiseOfTheFloodBornList[139];
             case "141_JA_02":
-                return RiseOfTheFloodBornList[140];
             case "142_JA_02":
-                return RiseOfTheFloodBornList[141];
             case "143_JA_02":
-                return RiseOfTheFloodBornList[142];
             case "144_JA_02":
-                return RiseOfTheFloodBornList[143];
             case "145_JA_02":
-                return RiseOfTheFloodBornList[144];
             case "146_JA_02":
-                return RiseOfTheFloodBornList[145];
             case "147_JA_02":
-                return RiseOfTheFloodBornList[146];
             case "148_JA_02":
-                return RiseOfTheFloodBornList[147];
             case "149_JA_02":
-                return RiseOfTheFloodBornList[148];
             case "150_JA_02":
-                return RiseOfTheFloodBornList[149];
             case "151_JA_02":
-                return RiseOfTheFloodBornList[150];
             case "152_JA_02":
-                return RiseOfTheFloodBornList[151];
             case "153_JA_02":
-                return RiseOfTheFloodBornList[152];
             case "154_JA_02":
-                return RiseOfTheFloodBornList[153];
             case "155_JA_02":
-                return RiseOfTheFloodBornList[154];
             case "156_JA_02":
-                return RiseOfTheFloodBornList[155];
             case "157_JA_02":
-                return RiseOfTheFloodBornList[156];
             case "158_JA_02":
-                return RiseOfTheFloodBornList[157];
             case "159_JA_02":
-                return RiseOfTheFloodBornList[158];
             case "160_JA_02":
-                return RiseOfTheFloodBornList[159];
             case "161_JA_02":
-                return RiseOfTheFloodBornList[160];
             case "162_JA_02":
-                return RiseOfTheFloodBornList[161];
             case "163_JA_02":
-                return RiseOfTheFloodBornList[162];
             case "164_JA_02":
-                return RiseOfTheFloodBornList[163];
             case "165_JA_02":
-                return RiseOfTheFloodBornList[164];
             case "166_JA_02":
-                return RiseOfTheFloodBornList[165];
             case "167_JA_02":
-                return RiseOfTheFloodBornList[166];
             case "168_JA_02":
-                return RiseOfTheFloodBornList[167];
             case "169_JA_02":
-                return RiseOfTheFloodBornList[168];
             case "170_JA_02":
-                return RiseOfTheFloodBornList[169];
             case "171_JA_02":
-                return RiseOfTheFloodBornList[170];
             case "172_JA_02":
-                return RiseOfTheFloodBornList[171];
             case "173_JA_02":
-                return RiseOfTheFloodBornList[172];
             case "174_JA_02":
-                return RiseOfTheFloodBornList[173];
             case "175_JA_02":
-                return RiseOfTheFloodBornList[174];
             case "176_JA_02":
-                return RiseOfTheFloodBornList[175];
             case "177_JA_02":
-                return RiseOfTheFloodBornList[176];
             case "178_JA_02":
-                return RiseOfTheFloodBornList[177];
             case "179_JA_02":
-                return RiseOfTheFloodBornList[178];
             case "180_JA_02":
-                return RiseOfTheFloodBornList[179];
             case "181_JA_02":
-                return RiseOfTheFloodBornList[180];
             case "182_JA_02":
-                return RiseOfTheFloodBornList[181];
             case "183_JA_02":
-                return RiseOfTheFloodBornList[182];
             case "184_JA_02":
-                return RiseOfTheFloodBornList[183];
             case "185_JA_02":
-                return RiseOfTheFloodBornList[184];
             case "186_JA_02":
-                return RiseOfTheFloodBornList[185];
             case "187_JA_02":
-                return RiseOfTheFloodBornList[186];
             case "188_JA_02":
-                return RiseOfTheFloodBornList[187];
             case "189_JA_02":
-                return RiseOfTheFloodBornList[188];
             case "190_JA_02":
-                return RiseOfTheFloodBornList[189];
             case "191_JA_02":
-                return RiseOfTheFloodBornList[190];
             case "192_JA_02":
-                return RiseOfTheFloodBornList[191];
             case "193_JA_02":
-                return RiseOfTheFloodBornList[192];
             case "194_JA_02":
-                return RiseOfTheFloodBornList[193];
             case "195_JA_02":
-                return RiseOfTheFloodBornList[194];
             case "196_JA_02":
-                return RiseOfTheFloodBornList[195];
             case "197_JA_02":
-                return RiseOfTheFloodBornList[196];
             case "198_JA_02":
-                return RiseOfTheFloodBornList[197];
             case "199_JA_02":
-                return RiseOfTheFloodBornList[198];
             case "200_JA_02":
-                return RiseOfTheFloodBornList[199];
             case "201_JA_02":
-                return RiseOfTheFloodBornList[200];
             case "202_JA_02":
-                return RiseOfTheFloodBornList[201];
             case "203_JA_02":
-                return RiseOfTheFloodBornList[202];
             case "204_JA_02":
-                return RiseOfTheFloodBornList[203];
             case "205_JA_02":
-                return RiseOfTheFloodBornList[204];
             case "206_JA_02":
-                return RiseOfTheFloodBornList[205];
             case "207_JA_02":
-                return RiseOfTheFloodBornList[206];
             case "208_JA_02":
-                return RiseOfTheFloodBornList[207];
             case "209_JA_02":
-                return RiseOfTheFloodBornList[208];
             case "210_JA_02":
-                return RiseOfTheFloodBornList[209];
             case "211_JA_02":
-                return RiseOfTheFloodBornList[210];
             case "212_JA_02":
-                return RiseOfTheFloodBornList[211];
             case "213_JA_02":
-                return RiseOfTheFloodBornList[212];
             case "214_JA_02":
-                return RiseOfTheFloodBornList[213];
             case "215_JA_02":
-                return RiseOfTheFloodBornList[214];
             case "216_JA_02":
-                return RiseOfTheFloodBornList[215];
-            default:
-                return noImage;
+                expantion = "RiseOfTheFloodborn";
+                break;
         }
+        switch (paramater)
+        {
+            case "001_JA_03":
+            case "002_JA_03":
+            case "003_JA_03":
+            case "004_JA_03":
+            case "005_JA_03":
+            case "006_JA_03":
+            case "007_JA_03":
+            case "008_JA_03":
+            case "009_JA_03":
+            case "010_JA_03":
+            case "011_JA_03":
+            case "012_JA_03":
+            case "013_JA_03":
+            case "014_JA_03":
+            case "015_JA_03":
+            case "016_JA_03":
+            case "017_JA_03":
+            case "018_JA_03":
+            case "019_JA_03":
+            case "020_JA_03":
+            case "021_JA_03":
+            case "022_JA_03":
+            case "023_JA_03":
+            case "024_JA_03":
+            case "025_JA_03":
+            case "026_JA_03":
+            case "027_JA_03":
+            case "028_JA_03":
+            case "029_JA_03":
+            case "030_JA_03":
+            case "031_JA_03":
+            case "032_JA_03":
+            case "033_JA_03":
+            case "034_JA_03":
+            case "035_JA_03":
+            case "036_JA_03":
+            case "037_JA_03":
+            case "038_JA_03":
+            case "039_JA_03":
+            case "040_JA_03":
+            case "041_JA_03":
+            case "042_JA_03":
+            case "043_JA_03":
+            case "044_JA_03":
+            case "045_JA_03":
+            case "046_JA_03":
+            case "047_JA_03":
+            case "048_JA_03":
+            case "049_JA_03":
+            case "050_JA_03":
+            case "051_JA_03":
+            case "052_JA_03":
+            case "053_JA_03":
+            case "054_JA_03":
+            case "055_JA_03":
+            case "056_JA_03":
+            case "057_JA_03":
+            case "058_JA_03":
+            case "059_JA_03":
+            case "060_JA_03":
+            case "061_JA_03":
+            case "062_JA_03":
+            case "063_JA_03":
+            case "064_JA_03":
+            case "065_JA_03":
+            case "066_JA_03":
+            case "067_JA_03":
+            case "068_JA_03":
+            case "069_JA_03":
+            case "070_JA_03":
+            case "071_JA_03":
+            case "072_JA_03":
+            case "073_JA_03":
+            case "074_JA_03":
+            case "075_JA_03":
+            case "076_JA_03":
+            case "077_JA_03":
+            case "078_JA_03":
+            case "079_JA_03":
+            case "080_JA_03":
+            case "081_JA_03":
+            case "082_JA_03":
+            case "083_JA_03":
+            case "084_JA_03":
+            case "085_JA_03":
+            case "086_JA_03":
+            case "087_JA_03":
+            case "088_JA_03":
+            case "089_JA_03":
+            case "090_JA_03":
+            case "091_JA_03":
+            case "092_JA_03":
+            case "093_JA_03":
+            case "094_JA_03":
+            case "095_JA_03":
+            case "096_JA_03":
+            case "097_JA_03":
+            case "098_JA_03":
+            case "099_JA_03":
+            case "100_JA_03":
+            case "101_JA_03":
+            case "102_JA_03":
+            case "103_JA_03":
+            case "104_JA_03":
+            case "105_JA_03":
+            case "106_JA_03":
+            case "107_JA_03":
+            case "108_JA_03":
+            case "109_JA_03":
+            case "110_JA_03":
+            case "111_JA_03":
+            case "112_JA_03":
+            case "113_JA_03":
+            case "114_JA_03":
+            case "115_JA_03":
+            case "116_JA_03":
+            case "117_JA_03":
+            case "118_JA_03":
+            case "119_JA_03":
+            case "120_JA_03":
+            case "121_JA_03":
+            case "122_JA_03":
+            case "123_JA_03":
+            case "124_JA_03":
+            case "125_JA_03":
+            case "126_JA_03":
+            case "127_JA_03":
+            case "128_JA_03":
+            case "129_JA_03":
+            case "130_JA_03":
+            case "131_JA_03":
+            case "132_JA_03":
+            case "133_JA_03":
+            case "134_JA_03":
+            case "135_JA_03":
+            case "136_JA_03":
+            case "137_JA_03":
+            case "138_JA_03":
+            case "139_JA_03":
+            case "140_JA_03":
+            case "141_JA_03":
+            case "142_JA_03":
+            case "143_JA_03":
+            case "144_JA_03":
+            case "145_JA_03":
+            case "146_JA_03":
+            case "147_JA_03":
+            case "148_JA_03":
+            case "149_JA_03":
+            case "150_JA_03":
+            case "151_JA_03":
+            case "152_JA_03":
+            case "153_JA_03":
+            case "154_JA_03":
+            case "155_JA_03":
+            case "156_JA_03":
+            case "157_JA_03":
+            case "158_JA_03":
+            case "159_JA_03":
+            case "160_JA_03":
+            case "161_JA_03":
+            case "162_JA_03":
+            case "163_JA_03":
+            case "164_JA_03":
+            case "165_JA_03":
+            case "166_JA_03":
+            case "167_JA_03":
+            case "168_JA_03":
+            case "169_JA_03":
+            case "170_JA_03":
+            case "171_JA_03":
+            case "172_JA_03":
+            case "173_JA_03":
+            case "174_JA_03":
+            case "175_JA_03":
+            case "176_JA_03":
+            case "177_JA_03":
+            case "178_JA_03":
+            case "179_JA_03":
+            case "180_JA_03":
+            case "181_JA_03":
+            case "182_JA_03":
+            case "183_JA_03":
+            case "184_JA_03":
+            case "185_JA_03":
+            case "186_JA_03":
+            case "187_JA_03":
+            case "188_JA_03":
+            case "189_JA_03":
+            case "190_JA_03":
+            case "191_JA_03":
+            case "192_JA_03":
+            case "193_JA_03":
+            case "194_JA_03":
+            case "195_JA_03":
+            case "196_JA_03":
+            case "197_JA_03":
+            case "198_JA_03":
+            case "199_JA_03":
+            case "200_JA_03":
+            case "201_JA_03":
+            case "202_JA_03":
+            case "203_JA_03":
+            case "204_JA_03":
+            case "205_JA_03":
+            case "206_JA_03":
+            case "207_JA_03":
+            case "208_JA_03":
+            case "209_JA_03":
+            case "210_JA_03":
+            case "211_JA_03":
+            case "212_JA_03":
+            case "213_JA_03":
+            case "214_JA_03":
+            case "215_JA_03":
+            case "216_JA_03":
+            case "217_JA_03":
+            case "218_JA_03":
+            case "219_JA_03":
+            case "220_JA_03":
+            case "221_JA_03":
+            case "222_JA_03":
+                expantion = "IntoTheInklands";
+                break;
+        }
+        switch (paramater)
+        {
+            case "001_JA_04":
+            case "002_JA_04":
+            case "003_JA_04":
+            case "004_JA_04":
+            case "005_JA_04":
+            case "006_JA_04":
+            case "007_JA_04":
+            case "008_JA_04":
+            case "009_JA_04":
+            case "010_JA_04":
+            case "011_JA_04":
+            case "012_JA_04":
+            case "013_JA_04":
+            case "014_JA_04":
+            case "015_JA_04":
+            case "016_JA_04":
+            case "017_JA_04":
+            case "018_JA_04":
+            case "019_JA_04":
+            case "020_JA_04":
+            case "021_JA_04":
+            case "022_JA_04":
+            case "023_JA_04":
+            case "024_JA_04":
+            case "025_JA_04":
+            case "026_JA_04":
+            case "027_JA_04":
+            case "028_JA_04":
+            case "029_JA_04":
+            case "030_JA_04":
+            case "031_JA_04":
+            case "032_JA_04":
+            case "033_JA_04":
+            case "034_JA_04":
+            case "035_JA_04":
+            case "036_JA_04":
+            case "037_JA_04":
+            case "038_JA_04":
+            case "039_JA_04":
+            case "040_JA_04":
+            case "041_JA_04":
+            case "042_JA_04":
+            case "043_JA_04":
+            case "044_JA_04":
+            case "045_JA_04":
+            case "046_JA_04":
+            case "047_JA_04":
+            case "048_JA_04":
+            case "049_JA_04":
+            case "050_JA_04":
+            case "051_JA_04":
+            case "052_JA_04":
+            case "053_JA_04":
+            case "054_JA_04":
+            case "055_JA_04":
+            case "056_JA_04":
+            case "057_JA_04":
+            case "058_JA_04":
+            case "059_JA_04":
+            case "060_JA_04":
+            case "061_JA_04":
+            case "062_JA_04":
+            case "063_JA_04":
+            case "064_JA_04":
+            case "065_JA_04":
+            case "066_JA_04":
+            case "067_JA_04":
+            case "068_JA_04":
+            case "069_JA_04":
+            case "070_JA_04":
+            case "071_JA_04":
+            case "072_JA_04":
+            case "073_JA_04":
+            case "074_JA_04":
+            case "075_JA_04":
+            case "076_JA_04":
+            case "077_JA_04":
+            case "078_JA_04":
+            case "079_JA_04":
+            case "080_JA_04":
+            case "081_JA_04":
+            case "082_JA_04":
+            case "083_JA_04":
+            case "084_JA_04":
+            case "085_JA_04":
+            case "086_JA_04":
+            case "087_JA_04":
+            case "088_JA_04":
+            case "089_JA_04":
+            case "090_JA_04":
+            case "091_JA_04":
+            case "092_JA_04":
+            case "093_JA_04":
+            case "094_JA_04":
+            case "095_JA_04":
+            case "096_JA_04":
+            case "097_JA_04":
+            case "098_JA_04":
+            case "099_JA_04":
+            case "100_JA_04":
+            case "101_JA_04":
+            case "102_JA_04":
+            case "103_JA_04":
+            case "104_JA_04":
+            case "105_JA_04":
+            case "106_JA_04":
+            case "107_JA_04":
+            case "108_JA_04":
+            case "109_JA_04":
+            case "110_JA_04":
+            case "111_JA_04":
+            case "112_JA_04":
+            case "113_JA_04":
+            case "114_JA_04":
+            case "115_JA_04":
+            case "116_JA_04":
+            case "117_JA_04":
+            case "118_JA_04":
+            case "119_JA_04":
+            case "120_JA_04":
+            case "121_JA_04":
+            case "122_JA_04":
+            case "123_JA_04":
+            case "124_JA_04":
+            case "125_JA_04":
+            case "126_JA_04":
+            case "127_JA_04":
+            case "128_JA_04":
+            case "129_JA_04":
+            case "130_JA_04":
+            case "131_JA_04":
+            case "132_JA_04":
+            case "133_JA_04":
+            case "134_JA_04":
+            case "135_JA_04":
+            case "136_JA_04":
+            case "137_JA_04":
+            case "138_JA_04":
+            case "139_JA_04":
+            case "140_JA_04":
+            case "141_JA_04":
+            case "142_JA_04":
+            case "143_JA_04":
+            case "144_JA_04":
+            case "145_JA_04":
+            case "146_JA_04":
+            case "147_JA_04":
+            case "148_JA_04":
+            case "149_JA_04":
+            case "150_JA_04":
+            case "151_JA_04":
+            case "152_JA_04":
+            case "153_JA_04":
+            case "154_JA_04":
+            case "155_JA_04":
+            case "156_JA_04":
+            case "157_JA_04":
+            case "158_JA_04":
+            case "159_JA_04":
+            case "160_JA_04":
+            case "161_JA_04":
+            case "162_JA_04":
+            case "163_JA_04":
+            case "164_JA_04":
+            case "165_JA_04":
+            case "166_JA_04":
+            case "167_JA_04":
+            case "168_JA_04":
+            case "169_JA_04":
+            case "170_JA_04":
+            case "171_JA_04":
+            case "172_JA_04":
+            case "173_JA_04":
+            case "174_JA_04":
+            case "175_JA_04":
+            case "176_JA_04":
+            case "177_JA_04":
+            case "178_JA_04":
+            case "179_JA_04":
+            case "180_JA_04":
+            case "181_JA_04":
+            case "182_JA_04":
+            case "183_JA_04":
+            case "184_JA_04":
+            case "185_JA_04":
+            case "186_JA_04":
+            case "187_JA_04":
+            case "188_JA_04":
+            case "189_JA_04":
+            case "190_JA_04":
+            case "191_JA_04":
+            case "192_JA_04":
+            case "193_JA_04":
+            case "194_JA_04":
+            case "195_JA_04":
+            case "196_JA_04":
+            case "197_JA_04":
+            case "198_JA_04":
+            case "199_JA_04":
+            case "200_JA_04":
+            case "201_JA_04":
+            case "202_JA_04":
+            case "203_JA_04":
+            case "204_JA_04":
+            case "205_JA_04":
+            case "206_JA_04":
+            case "207_JA_04":
+            case "208_JA_04":
+            case "209_JA_04":
+            case "210_JA_04":
+            case "211_JA_04":
+            case "212_JA_04":
+            case "213_JA_04":
+            case "214_JA_04":
+            case "215_JA_04":
+            case "216_JA_04":
+            case "217_JA_04":
+            case "218_JA_04":
+            case "219_JA_04":
+            case "220_JA_04":
+            case "221_JA_04":
+            case "222_JA_04":
+                expantion = "Ursula'sReturn";
+                break;
+        }
+        switch (paramater)
+        {
+            case "001_JA_05":
+            case "002_JA_05":
+            case "003_JA_05":
+            case "004_JA_05":
+            case "005_JA_05":
+            case "006_JA_05":
+            case "007_JA_05":
+            case "008_JA_05":
+            case "009_JA_05":
+            case "010_JA_05":
+            case "011_JA_05":
+            case "012_JA_05":
+            case "013_JA_05":
+            case "014_JA_05":
+            case "015_JA_05":
+            case "016_JA_05":
+            case "017_JA_05":
+            case "018_JA_05":
+            case "019_JA_05":
+            case "020_JA_05":
+            case "021_JA_05":
+            case "022_JA_05":
+            case "023_JA_05":
+            case "024_JA_05":
+            case "025_JA_05":
+            case "026_JA_05":
+            case "027_JA_05":
+            case "028_JA_05":
+            case "029_JA_05":
+            case "030_JA_05":
+            case "031_JA_05":
+            case "032_JA_05":
+            case "033_JA_05":
+            case "034_JA_05":
+            case "035_JA_05":
+            case "036_JA_05":
+            case "037_JA_05":
+            case "038_JA_05":
+            case "039_JA_05":
+            case "040_JA_05":
+            case "041_JA_05":
+            case "042_JA_05":
+            case "043_JA_05":
+            case "044_JA_05":
+            case "045_JA_05":
+            case "046_JA_05":
+            case "047_JA_05":
+            case "048_JA_05":
+            case "049_JA_05":
+            case "050_JA_05":
+            case "051_JA_05":
+            case "052_JA_05":
+            case "053_JA_05":
+            case "054_JA_05":
+            case "055_JA_05":
+            case "056_JA_05":
+            case "057_JA_05":
+            case "058_JA_05":
+            case "059_JA_05":
+            case "060_JA_05":
+            case "061_JA_05":
+            case "062_JA_05":
+            case "063_JA_05":
+            case "064_JA_05":
+            case "065_JA_05":
+            case "066_JA_05":
+            case "067_JA_05":
+            case "068_JA_05":
+            case "069_JA_05":
+            case "070_JA_05":
+            case "071_JA_05":
+            case "072_JA_05":
+            case "073_JA_05":
+            case "074_JA_05":
+            case "075_JA_05":
+            case "076_JA_05":
+            case "077_JA_05":
+            case "078_JA_05":
+            case "079_JA_05":
+            case "080_JA_05":
+            case "081_JA_05":
+            case "082_JA_05":
+            case "083_JA_05":
+            case "084_JA_05":
+            case "085_JA_05":
+            case "086_JA_05":
+            case "087_JA_05":
+            case "088_JA_05":
+            case "089_JA_05":
+            case "090_JA_05":
+            case "091_JA_05":
+            case "092_JA_05":
+            case "093_JA_05":
+            case "094_JA_05":
+            case "095_JA_05":
+            case "096_JA_05":
+            case "097_JA_05":
+            case "098_JA_05":
+            case "099_JA_05":
+            case "100_JA_05":
+            case "101_JA_05":
+            case "102_JA_05":
+            case "103_JA_05":
+            case "104_JA_05":
+            case "105_JA_05":
+            case "106_JA_05":
+            case "107_JA_05":
+            case "108_JA_05":
+            case "109_JA_05":
+            case "110_JA_05":
+            case "111_JA_05":
+            case "112_JA_05":
+            case "113_JA_05":
+            case "114_JA_05":
+            case "115_JA_05":
+            case "116_JA_05":
+            case "117_JA_05":
+            case "118_JA_05":
+            case "119_JA_05":
+            case "120_JA_05":
+            case "121_JA_05":
+            case "122_JA_05":
+            case "123_JA_05":
+            case "124_JA_05":
+            case "125_JA_05":
+            case "126_JA_05":
+            case "127_JA_05":
+            case "128_JA_05":
+            case "129_JA_05":
+            case "130_JA_05":
+            case "131_JA_05":
+            case "132_JA_05":
+            case "133_JA_05":
+            case "134_JA_05":
+            case "135_JA_05":
+            case "136_JA_05":
+            case "137_JA_05":
+            case "138_JA_05":
+            case "139_JA_05":
+            case "140_JA_05":
+            case "141_JA_05":
+            case "142_JA_05":
+            case "143_JA_05":
+            case "144_JA_05":
+            case "145_JA_05":
+            case "146_JA_05":
+            case "147_JA_05":
+            case "148_JA_05":
+            case "149_JA_05":
+            case "150_JA_05":
+            case "151_JA_05":
+            case "152_JA_05":
+            case "153_JA_05":
+            case "154_JA_05":
+            case "155_JA_05":
+            case "156_JA_05":
+            case "157_JA_05":
+            case "158_JA_05":
+            case "159_JA_05":
+            case "160_JA_05":
+            case "161_JA_05":
+            case "162_JA_05":
+            case "163_JA_05":
+            case "164_JA_05":
+            case "165_JA_05":
+            case "166_JA_05":
+            case "167_JA_05":
+            case "168_JA_05":
+            case "169_JA_05":
+            case "170_JA_05":
+            case "171_JA_05":
+            case "172_JA_05":
+            case "173_JA_05":
+            case "174_JA_05":
+            case "175_JA_05":
+            case "176_JA_05":
+            case "177_JA_05":
+            case "178_JA_05":
+            case "179_JA_05":
+            case "180_JA_05":
+            case "181_JA_05":
+            case "182_JA_05":
+            case "183_JA_05":
+            case "184_JA_05":
+            case "185_JA_05":
+            case "186_JA_05":
+            case "187_JA_05":
+            case "188_JA_05":
+            case "189_JA_05":
+            case "190_JA_05":
+            case "191_JA_05":
+            case "192_JA_05":
+            case "193_JA_05":
+            case "194_JA_05":
+            case "195_JA_05":
+            case "196_JA_05":
+            case "197_JA_05":
+            case "198_JA_05":
+            case "199_JA_05":
+            case "200_JA_05":
+            case "201_JA_05":
+            case "202_JA_05":
+            case "203_JA_05":
+            case "204_JA_05":
+            case "205_JA_05":
+            case "206_JA_05":
+            case "207_JA_05":
+            case "208_JA_05":
+            case "209_JA_05":
+            case "210_JA_05":
+            case "211_JA_05":
+            case "212_JA_05":
+            case "213_JA_05":
+            case "214_JA_05":
+            case "215_JA_05":
+            case "216_JA_05":
+            case "217_JA_05":
+            case "218_JA_05":
+            case "219_JA_05":
+            case "220_JA_05":
+            case "221_JA_05":
+            case "222_JA_05":
+                expantion = "ShimmeringSkies";
+                break;
+        }
+        switch (paramater)
+        {
+            case "001_JA_06":
+            case "002_JA_06":
+            case "003_JA_06":
+            case "004_JA_06":
+            case "005_JA_06":
+            case "006_JA_06":
+            case "007_JA_06":
+            case "008_JA_06":
+            case "009_JA_06":
+            case "010_JA_06":
+            case "011_JA_06":
+            case "012_JA_06":
+            case "013_JA_06":
+            case "014_JA_06":
+            case "015_JA_06":
+            case "016_JA_06":
+            case "017_JA_06":
+            case "018_JA_06":
+            case "019_JA_06":
+            case "020_JA_06":
+            case "021_JA_06":
+            case "022_JA_06":
+            case "023_JA_06":
+            case "024_JA_06":
+            case "025_JA_06":
+            case "026_JA_06":
+            case "027_JA_06":
+            case "028_JA_06":
+            case "029_JA_06":
+            case "030_JA_06":
+            case "031_JA_06":
+            case "032_JA_06":
+            case "033_JA_06":
+            case "034_JA_06":
+            case "035_JA_06":
+            case "036_JA_06":
+            case "037_JA_06":
+            case "038_JA_06":
+            case "039_JA_06":
+            case "040_JA_06":
+            case "041_JA_06":
+            case "042_JA_06":
+            case "043_JA_06":
+            case "044_JA_06":
+            case "045_JA_06":
+            case "046_JA_06":
+            case "047_JA_06":
+            case "048_JA_06":
+            case "049_JA_06":
+            case "050_JA_06":
+            case "051_JA_06":
+            case "052_JA_06":
+            case "053_JA_06":
+            case "054_JA_06":
+            case "055_JA_06":
+            case "056_JA_06":
+            case "057_JA_06":
+            case "058_JA_06":
+            case "059_JA_06":
+            case "060_JA_06":
+            case "061_JA_06":
+            case "062_JA_06":
+            case "063_JA_06":
+            case "064_JA_06":
+            case "065_JA_06":
+            case "066_JA_06":
+            case "067_JA_06":
+            case "068_JA_06":
+            case "069_JA_06":
+            case "070_JA_06":
+            case "071_JA_06":
+            case "072_JA_06":
+            case "073_JA_06":
+            case "074_JA_06":
+            case "075_JA_06":
+            case "076_JA_06":
+            case "077_JA_06":
+            case "078_JA_06":
+            case "079_JA_06":
+            case "080_JA_06":
+            case "081_JA_06":
+            case "082_JA_06":
+            case "083_JA_06":
+            case "084_JA_06":
+            case "085_JA_06":
+            case "086_JA_06":
+            case "087_JA_06":
+            case "088_JA_06":
+            case "089_JA_06":
+            case "090_JA_06":
+            case "091_JA_06":
+            case "092_JA_06":
+            case "093_JA_06":
+            case "094_JA_06":
+            case "095_JA_06":
+            case "096_JA_06":
+            case "097_JA_06":
+            case "098_JA_06":
+            case "099_JA_06":
+            case "100_JA_06":
+            case "101_JA_06":
+            case "102_JA_06":
+            case "103_JA_06":
+            case "104_JA_06":
+            case "105_JA_06":
+            case "106_JA_06":
+            case "107_JA_06":
+            case "108_JA_06":
+            case "109_JA_06":
+            case "110_JA_06":
+            case "111_JA_06":
+            case "112_JA_06":
+            case "113_JA_06":
+            case "114_JA_06":
+            case "115_JA_06":
+            case "116_JA_06":
+            case "117_JA_06":
+            case "118_JA_06":
+            case "119_JA_06":
+            case "120_JA_06":
+            case "121_JA_06":
+            case "122_JA_06":
+            case "123_JA_06":
+            case "124_JA_06":
+            case "125_JA_06":
+            case "126_JA_06":
+            case "127_JA_06":
+            case "128_JA_06":
+            case "129_JA_06":
+            case "130_JA_06":
+            case "131_JA_06":
+            case "132_JA_06":
+            case "133_JA_06":
+            case "134_JA_06":
+            case "135_JA_06":
+            case "136_JA_06":
+            case "137_JA_06":
+            case "138_JA_06":
+            case "139_JA_06":
+            case "140_JA_06":
+            case "141_JA_06":
+            case "142_JA_06":
+            case "143_JA_06":
+            case "144_JA_06":
+            case "145_JA_06":
+            case "146_JA_06":
+            case "147_JA_06":
+            case "148_JA_06":
+            case "149_JA_06":
+            case "150_JA_06":
+            case "151_JA_06":
+            case "152_JA_06":
+            case "153_JA_06":
+            case "154_JA_06":
+            case "155_JA_06":
+            case "156_JA_06":
+            case "157_JA_06":
+            case "158_JA_06":
+            case "159_JA_06":
+            case "160_JA_06":
+            case "161_JA_06":
+            case "162_JA_06":
+            case "163_JA_06":
+            case "164_JA_06":
+            case "165_JA_06":
+            case "166_JA_06":
+            case "167_JA_06":
+            case "168_JA_06":
+            case "169_JA_06":
+            case "170_JA_06":
+            case "171_JA_06":
+            case "172_JA_06":
+            case "173_JA_06":
+            case "174_JA_06":
+            case "175_JA_06":
+            case "176_JA_06":
+            case "177_JA_06":
+            case "178_JA_06":
+            case "179_JA_06":
+            case "180_JA_06":
+            case "181_JA_06":
+            case "182_JA_06":
+            case "183_JA_06":
+            case "184_JA_06":
+            case "185_JA_06":
+            case "186_JA_06":
+            case "187_JA_06":
+            case "188_JA_06":
+            case "189_JA_06":
+            case "190_JA_06":
+            case "191_JA_06":
+            case "192_JA_06":
+            case "193_JA_06":
+            case "194_JA_06":
+            case "195_JA_06":
+            case "196_JA_06":
+            case "197_JA_06":
+            case "198_JA_06":
+            case "199_JA_06":
+            case "200_JA_06":
+            case "201_JA_06":
+            case "202_JA_06":
+            case "203_JA_06":
+            case "204_JA_06":
+            case "205_JA_06":
+            case "206_JA_06":
+            case "207_JA_06":
+            case "208_JA_06":
+            case "209_JA_06":
+            case "210_JA_06":
+            case "211_JA_06":
+            case "212_JA_06":
+            case "213_JA_06":
+            case "214_JA_06":
+            case "215_JA_06":
+            case "216_JA_06":
+            case "217_JA_06":
+            case "218_JA_06":
+            case "219_JA_06":
+            case "220_JA_06":
+            case "221_JA_06":
+            case "222_JA_06":
+                expantion = "AzuriteSea";
+                break;
+        }
+        switch (paramater)
+        {
+            case "001_JA_07":
+            case "002_JA_07":
+            case "003_JA_07":
+            case "004_JA_07":
+            case "005_JA_07":
+            case "006_JA_07":
+            case "007_JA_07":
+            case "008_JA_07":
+            case "009_JA_07":
+            case "010_JA_07":
+            case "011_JA_07":
+            case "012_JA_07":
+            case "013_JA_07":
+            case "014_JA_07":
+            case "015_JA_07":
+            case "016_JA_07":
+            case "017_JA_07":
+            case "018_JA_07":
+            case "019_JA_07":
+            case "020_JA_07":
+            case "021_JA_07":
+            case "022_JA_07":
+            case "023_JA_07":
+            case "024_JA_07":
+            case "025_JA_07":
+            case "026_JA_07":
+            case "027_JA_07":
+            case "028_JA_07":
+            case "029_JA_07":
+            case "030_JA_07":
+            case "031_JA_07":
+            case "032_JA_07":
+            case "033_JA_07":
+            case "034_JA_07":
+            case "035_JA_07":
+            case "036_JA_07":
+            case "037_JA_07":
+            case "038_JA_07":
+            case "039_JA_07":
+            case "040_JA_07":
+            case "041_JA_07":
+            case "042_JA_07":
+            case "043_JA_07":
+            case "044_JA_07":
+            case "045_JA_07":
+            case "046_JA_07":
+            case "047_JA_07":
+            case "048_JA_07":
+            case "049_JA_07":
+            case "050_JA_07":
+            case "051_JA_07":
+            case "052_JA_07":
+            case "053_JA_07":
+            case "054_JA_07":
+            case "055_JA_07":
+            case "056_JA_07":
+            case "057_JA_07":
+            case "058_JA_07":
+            case "059_JA_07":
+            case "060_JA_07":
+            case "061_JA_07":
+            case "062_JA_07":
+            case "063_JA_07":
+            case "064_JA_07":
+            case "065_JA_07":
+            case "066_JA_07":
+            case "067_JA_07":
+            case "068_JA_07":
+            case "069_JA_07":
+            case "070_JA_07":
+            case "071_JA_07":
+            case "072_JA_07":
+            case "073_JA_07":
+            case "074_JA_07":
+            case "075_JA_07":
+            case "076_JA_07":
+            case "077_JA_07":
+            case "078_JA_07":
+            case "079_JA_07":
+            case "080_JA_07":
+            case "081_JA_07":
+            case "082_JA_07":
+            case "083_JA_07":
+            case "084_JA_07":
+            case "085_JA_07":
+            case "086_JA_07":
+            case "087_JA_07":
+            case "088_JA_07":
+            case "089_JA_07":
+            case "090_JA_07":
+            case "091_JA_07":
+            case "092_JA_07":
+            case "093_JA_07":
+            case "094_JA_07":
+            case "095_JA_07":
+            case "096_JA_07":
+            case "097_JA_07":
+            case "098_JA_07":
+            case "099_JA_07":
+            case "100_JA_07":
+            case "101_JA_07":
+            case "102_JA_07":
+            case "103_JA_07":
+            case "104_JA_07":
+            case "105_JA_07":
+            case "106_JA_07":
+            case "107_JA_07":
+            case "108_JA_07":
+            case "109_JA_07":
+            case "110_JA_07":
+            case "111_JA_07":
+            case "112_JA_07":
+            case "113_JA_07":
+            case "114_JA_07":
+            case "115_JA_07":
+            case "116_JA_07":
+            case "117_JA_07":
+            case "118_JA_07":
+            case "119_JA_07":
+            case "120_JA_07":
+            case "121_JA_07":
+            case "122_JA_07":
+            case "123_JA_07":
+            case "124_JA_07":
+            case "125_JA_07":
+            case "126_JA_07":
+            case "127_JA_07":
+            case "128_JA_07":
+            case "129_JA_07":
+            case "130_JA_07":
+            case "131_JA_07":
+            case "132_JA_07":
+            case "133_JA_07":
+            case "134_JA_07":
+            case "135_JA_07":
+            case "136_JA_07":
+            case "137_JA_07":
+            case "138_JA_07":
+            case "139_JA_07":
+            case "140_JA_07":
+            case "141_JA_07":
+            case "142_JA_07":
+            case "143_JA_07":
+            case "144_JA_07":
+            case "145_JA_07":
+            case "146_JA_07":
+            case "147_JA_07":
+            case "148_JA_07":
+            case "149_JA_07":
+            case "150_JA_07":
+            case "151_JA_07":
+            case "152_JA_07":
+            case "153_JA_07":
+            case "154_JA_07":
+            case "155_JA_07":
+            case "156_JA_07":
+            case "157_JA_07":
+            case "158_JA_07":
+            case "159_JA_07":
+            case "160_JA_07":
+            case "161_JA_07":
+            case "162_JA_07":
+            case "163_JA_07":
+            case "164_JA_07":
+            case "165_JA_07":
+            case "166_JA_07":
+            case "167_JA_07":
+            case "168_JA_07":
+            case "169_JA_07":
+            case "170_JA_07":
+            case "171_JA_07":
+            case "172_JA_07":
+            case "173_JA_07":
+            case "174_JA_07":
+            case "175_JA_07":
+            case "176_JA_07":
+            case "177_JA_07":
+            case "178_JA_07":
+            case "179_JA_07":
+            case "180_JA_07":
+            case "181_JA_07":
+            case "182_JA_07":
+            case "183_JA_07":
+            case "184_JA_07":
+            case "185_JA_07":
+            case "186_JA_07":
+            case "187_JA_07":
+            case "188_JA_07":
+            case "189_JA_07":
+            case "190_JA_07":
+            case "191_JA_07":
+            case "192_JA_07":
+            case "193_JA_07":
+            case "194_JA_07":
+            case "195_JA_07":
+            case "196_JA_07":
+            case "197_JA_07":
+            case "198_JA_07":
+            case "199_JA_07":
+            case "200_JA_07":
+            case "201_JA_07":
+            case "202_JA_07":
+            case "203_JA_07":
+            case "204_JA_07":
+            case "205_JA_07":
+            case "206_JA_07":
+            case "207_JA_07":
+            case "208_JA_07":
+            case "209_JA_07":
+            case "210_JA_07":
+            case "211_JA_07":
+            case "212_JA_07":
+            case "213_JA_07":
+            case "214_JA_07":
+            case "215_JA_07":
+            case "216_JA_07":
+            case "217_JA_07":
+            case "218_JA_07":
+            case "219_JA_07":
+            case "220_JA_07":
+            case "221_JA_07":
+            case "222_JA_07":
+                expantion = "ArchaziasIsland";
+                break;
+        }
+        switch (paramater)
+        {
+            case "001_JA_08":
+            case "002_JA_08":
+            case "003_JA_08":
+            case "004_JA_08":
+            case "005_JA_08":
+            case "006_JA_08":
+            case "007_JA_08":
+            case "008_JA_08":
+            case "009_JA_08":
+            case "010_JA_08":
+            case "011_JA_08":
+            case "012_JA_08":
+            case "013_JA_08":
+            case "014_JA_08":
+            case "015_JA_08":
+            case "016_JA_08":
+            case "017_JA_08":
+            case "018_JA_08":
+            case "019_JA_08":
+            case "020_JA_08":
+            case "021_JA_08":
+            case "022_JA_08":
+            case "023_JA_08":
+            case "024_JA_08":
+            case "025_JA_08":
+            case "026_JA_08":
+            case "027_JA_08":
+            case "028_JA_08":
+            case "029_JA_08":
+            case "030_JA_08":
+            case "031_JA_08":
+            case "032_JA_08":
+            case "033_JA_08":
+            case "034_JA_08":
+            case "035_JA_08":
+            case "036_JA_08":
+            case "037_JA_08":
+            case "038_JA_08":
+            case "039_JA_08":
+            case "040_JA_08":
+            case "041_JA_08":
+            case "042_JA_08":
+            case "043_JA_08":
+            case "044_JA_08":
+            case "045_JA_08":
+            case "046_JA_08":
+            case "047_JA_08":
+            case "048_JA_08":
+            case "049_JA_08":
+            case "050_JA_08":
+            case "051_JA_08":
+            case "052_JA_08":
+            case "053_JA_08":
+            case "054_JA_08":
+            case "055_JA_08":
+            case "056_JA_08":
+            case "057_JA_08":
+            case "058_JA_08":
+            case "059_JA_08":
+            case "060_JA_08":
+            case "061_JA_08":
+            case "062_JA_08":
+            case "063_JA_08":
+            case "064_JA_08":
+            case "065_JA_08":
+            case "066_JA_08":
+            case "067_JA_08":
+            case "068_JA_08":
+            case "069_JA_08":
+            case "070_JA_08":
+            case "071_JA_08":
+            case "072_JA_08":
+            case "073_JA_08":
+            case "074_JA_08":
+            case "075_JA_08":
+            case "076_JA_08":
+            case "077_JA_08":
+            case "078_JA_08":
+            case "079_JA_08":
+            case "080_JA_08":
+            case "081_JA_08":
+            case "082_JA_08":
+            case "083_JA_08":
+            case "084_JA_08":
+            case "085_JA_08":
+            case "086_JA_08":
+            case "087_JA_08":
+            case "088_JA_08":
+            case "089_JA_08":
+            case "090_JA_08":
+            case "091_JA_08":
+            case "092_JA_08":
+            case "093_JA_08":
+            case "094_JA_08":
+            case "095_JA_08":
+            case "096_JA_08":
+            case "097_JA_08":
+            case "098_JA_08":
+            case "099_JA_08":
+            case "100_JA_08":
+            case "101_JA_08":
+            case "102_JA_08":
+            case "103_JA_08":
+            case "104_JA_08":
+            case "105_JA_08":
+            case "106_JA_08":
+            case "107_JA_08":
+            case "108_JA_08":
+            case "109_JA_08":
+            case "110_JA_08":
+            case "111_JA_08":
+            case "112_JA_08":
+            case "113_JA_08":
+            case "114_JA_08":
+            case "115_JA_08":
+            case "116_JA_08":
+            case "117_JA_08":
+            case "118_JA_08":
+            case "119_JA_08":
+            case "120_JA_08":
+            case "121_JA_08":
+            case "122_JA_08":
+            case "123_JA_08":
+            case "124_JA_08":
+            case "125_JA_08":
+            case "126_JA_08":
+            case "127_JA_08":
+            case "128_JA_08":
+            case "129_JA_08":
+            case "130_JA_08":
+            case "131_JA_08":
+            case "132_JA_08":
+            case "133_JA_08":
+            case "134_JA_08":
+            case "135_JA_08":
+            case "136_JA_08":
+            case "137_JA_08":
+            case "138_JA_08":
+            case "139_JA_08":
+            case "140_JA_08":
+            case "141_JA_08":
+            case "142_JA_08":
+            case "143_JA_08":
+            case "144_JA_08":
+            case "145_JA_08":
+            case "146_JA_08":
+            case "147_JA_08":
+            case "148_JA_08":
+            case "149_JA_08":
+            case "150_JA_08":
+            case "151_JA_08":
+            case "152_JA_08":
+            case "153_JA_08":
+            case "154_JA_08":
+            case "155_JA_08":
+            case "156_JA_08":
+            case "157_JA_08":
+            case "158_JA_08":
+            case "159_JA_08":
+            case "160_JA_08":
+            case "161_JA_08":
+            case "162_JA_08":
+            case "163_JA_08":
+            case "164_JA_08":
+            case "165_JA_08":
+            case "166_JA_08":
+            case "167_JA_08":
+            case "168_JA_08":
+            case "169_JA_08":
+            case "170_JA_08":
+            case "171_JA_08":
+            case "172_JA_08":
+            case "173_JA_08":
+            case "174_JA_08":
+            case "175_JA_08":
+            case "176_JA_08":
+            case "177_JA_08":
+            case "178_JA_08":
+            case "179_JA_08":
+            case "180_JA_08":
+            case "181_JA_08":
+            case "182_JA_08":
+            case "183_JA_08":
+            case "184_JA_08":
+            case "185_JA_08":
+            case "186_JA_08":
+            case "187_JA_08":
+            case "188_JA_08":
+            case "189_JA_08":
+            case "190_JA_08":
+            case "191_JA_08":
+            case "192_JA_08":
+            case "193_JA_08":
+            case "194_JA_08":
+            case "195_JA_08":
+            case "196_JA_08":
+            case "197_JA_08":
+            case "198_JA_08":
+            case "199_JA_08":
+            case "200_JA_08":
+            case "201_JA_08":
+            case "202_JA_08":
+            case "203_JA_08":
+            case "204_JA_08":
+            case "205_JA_08":
+            case "206_JA_08":
+            case "207_JA_08":
+            case "208_JA_08":
+            case "209_JA_08":
+            case "210_JA_08":
+            case "211_JA_08":
+            case "212_JA_08":
+            case "213_JA_08":
+            case "214_JA_08":
+            case "215_JA_08":
+            case "216_JA_08":
+            case "217_JA_08":
+            case "218_JA_08":
+            case "219_JA_08":
+            case "220_JA_08":
+            case "221_JA_08":
+            case "222_JA_08":
+                expantion = "ReignOfJafar";
+                break;
+        }
+        switch (paramater)
+        {
+            case "001_JA_09":
+            case "004_JA_09":
+            case "006_JA_09":
+            case "026_JA_09":
+            case "045_JA_09":
+            case "046_JA_09":
+            case "047_JA_09":
+            case "064_JA_09":
+            case "076_JA_09":
+            case "094_JA_09":
+            case "100_JA_09":
+            case "109_JA_09":
+            case "110_JA_09":
+            case "111_JA_09":
+            case "117_JA_09":
+            case "142_JA_09":
+            case "178_JA_09":
+            case "205_JA_09":
+            case "206_JA_09":
+            case "209_JA_09":
+            case "210_JA_09":
+            case "212_JA_09":
+            case "213_JA_09":
+            case "215_JA_09":
+            case "218_JA_09":
+            case "222_JA_09":
+            case "224_JA_09":
+            case "225_JA_09":
+            case "228_JA_09":
+            case "229_JA_09":
+            case "231_JA_09":
+            case "233_JA_09":
+            case "235_JA_09":
+            case "237_JA_09":
+            case "240_JA_09":
+            case "242_JA_09":
+                expantion = "FABLEDvol.1";
+                break;
+        }
+        switch (paramater)
+        {
+            case "005_JA_09":
+            case "044_JA_09":
+            case "074_JA_09":
+            case "075_JA_09":
+            case "077_JA_09":
+            case "078_JA_09":
+            case "112_JA_09":
+            case "113_JA_09":
+            case "114_JA_09":
+            case "130_JA_09":
+            case "141_JA_09":
+            case "143_JA_09":
+            case "173_JA_09":
+            case "174_JA_09":
+            case "175_JA_09":
+            case "176_JA_09":
+            case "207_JA_09":
+            case "208_JA_09":
+            case "211_JA_09":
+            case "214_JA_09":
+            case "216_JA_09":
+            case "217_JA_09":
+            case "219_JA_09":
+            case "220_JA_09":
+            case "221_JA_09":
+            case "223_JA_09":
+            case "226_JA_09":
+            case "227_JA_09":
+            case "230_JA_09":
+            case "232_JA_09":
+            case "234_JA_09":
+            case "236_JA_09":
+            case "238_JA_09":
+            case "239_JA_09":
+            case "241_JA_09": 
+                expantion = "FABLEDvol.2";
+                break;
+        }
+        if(expantion == "")
+        {
+            return noImage;
+        }
+        Sprite sprite = Resources.Load<Sprite>("picture/lorcana/" + expantion + "/" + paramater);
+        return sprite;
     }
 }

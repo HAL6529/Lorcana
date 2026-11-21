@@ -311,7 +311,8 @@ public class ViewMode : MonoBehaviour
         {
             if(i < DeckList.Count)
             {
-                ViewMode_Image_List[i].SetImage(DeckList[i].m_sprite, true);
+                Sprite sprite = m_Menu_ConvertSpriteFromCardNo.ConvertSpriteFromCardNo(DeckList[i].GetCardNo());
+                ViewMode_Image_List[i].SetImage(sprite, true);
             }
             else
             {
