@@ -74,6 +74,11 @@ public class EnumController
         ReignOfJafar,
         Fabled_vol1,
         Fabled_vol2,
+        WinterSpellInTheWell,
+        WinterSpell,
+        WildsUnknown,
+        AttackOfTheVine,
+        HyperiaCity,
     }
 
 

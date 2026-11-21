@@ -79,6 +79,22 @@ public class SearchFilterClass
     public bool isVillain;
     public bool isVineling;
 
+    public bool isTheFirstChapter;
+    public bool isRiseOfTheFloodBorn;
+    public bool isIntoTheInkLands;
+    public bool isUrsulasReturn;
+    public bool isShimmeringSkies;
+    public bool isAzuriteSea;
+    public bool isArchaziasIsland;
+    public bool isReignOfJafar;
+    public bool isFabled_vol1;
+    public bool isFabled_vol2;
+    public bool isWinterSpellInTheWell;
+    public bool isWinterSpell;
+    public bool isWildsUnknown;
+    public bool isAttackOfTheVine;
+    public bool isHyperiaCity;
+
     public bool isBodyGuard;
     public bool isChallenger;
     public bool isEvasive;
@@ -170,6 +186,22 @@ public class SearchFilterClass
         isToy = true;
         isVillain = true;
         isVineling = true;
+
+        isTheFirstChapter = true;
+        isRiseOfTheFloodBorn = true;
+        isIntoTheInkLands = true;
+        isUrsulasReturn = true;
+        isShimmeringSkies = true;
+        isAzuriteSea = true;
+        isArchaziasIsland = true;
+        isReignOfJafar = true;
+        isFabled_vol1 = true;
+        isFabled_vol2 = true;
+        isWinterSpellInTheWell = true;
+        isWinterSpell = true;
+        isWildsUnknown = true;
+        isAttackOfTheVine = true;
+        isHyperiaCity = true;
 
         isBodyGuard = false;
         isChallenger = false;
@@ -598,6 +630,79 @@ public class SearchFilterClass
         }
 
         if (!classJudge)
+        {
+            return false;
+        }
+
+        EnumController.Expansion expantion = m_CardInfo.GetExpantion();
+        bool expantionJudge = false;
+        if (isTheFirstChapter && expantion == EnumController.Expansion.TheFirstChapter)
+        {
+            expantionJudge = true;
+        }
+        if (isRiseOfTheFloodBorn && expantion == EnumController.Expansion.RiseOfTheFloodBorn)
+        {
+            expantionJudge = true;
+        }
+        if (isIntoTheInkLands && expantion == EnumController.Expansion.IntoTheInkLands)
+        {
+            expantionJudge = true;
+        }
+        if (isUrsulasReturn && expantion == EnumController.Expansion.UrsulasReturn)
+        {
+            expantionJudge = true;
+        }
+        if (isShimmeringSkies && expantion == EnumController.Expansion.ShimmeringSkies)
+        {
+            expantionJudge = true;
+        }
+        if (isAzuriteSea && expantion == EnumController.Expansion.AzuriteSea)
+        {
+            expantionJudge = true;
+        }
+        if (isArchaziasIsland && expantion == EnumController.Expansion.ArchaziasIsland)
+        {
+            expantionJudge = true;
+        }
+        if (isReignOfJafar && expantion == EnumController.Expansion.ReignOfJafar)
+        {
+            expantionJudge = true;
+        }
+        if (isFabled_vol1 && expantion == EnumController.Expansion.Fabled_vol1)
+        {
+            expantionJudge = true;
+        }
+        if (isFabled_vol2 && expantion == EnumController.Expansion.Fabled_vol2)
+        {
+            expantionJudge = true;
+        }
+        if (isWinterSpellInTheWell && expantion == EnumController.Expansion.WinterSpellInTheWell)
+        {
+            expantionJudge = true;
+        }
+        if (isWinterSpell && expantion == EnumController.Expansion.WinterSpell)
+        {
+            expantionJudge = true;
+        }
+        if (isWildsUnknown && expantion == EnumController.Expansion.WildsUnknown)
+        {
+            expantionJudge = true;
+        }
+        if (isAttackOfTheVine && expantion == EnumController.Expansion.AttackOfTheVine)
+        {
+            expantionJudge = true;
+        }
+        if (isHyperiaCity && expantion == EnumController.Expansion.HyperiaCity)
+        {
+            expantionJudge = true;
+        }
+        if (isTheFirstChapter && isRiseOfTheFloodBorn && isIntoTheInkLands && isUrsulasReturn && isShimmeringSkies && isAzuriteSea
+            && isArchaziasIsland && isReignOfJafar && isFabled_vol1 && isFabled_vol2 && isWinterSpellInTheWell && isWinterSpell
+            && isWildsUnknown && isAttackOfTheVine && isHyperiaCity)
+        {
+            expantionJudge = true;
+        }
+        if (!expantionJudge)
         {
             return false;
         }

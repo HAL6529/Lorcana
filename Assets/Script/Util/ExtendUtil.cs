@@ -117,6 +117,20 @@ public class ExtendUtil
                 return "Archazias Island -アーケイジアと魔法の島-";
             case EnumController.Expansion.ReignOfJafar:
                 return "Reign of Jafar -ジャファーの王権-";
+            case EnumController.Expansion.Fabled_vol1:
+                return "Fabled -物語のおもいで- vol.1";
+            case EnumController.Expansion.Fabled_vol2:
+                return "Fabled -物語のおもいで- vol.2";
+            case EnumController.Expansion.WinterSpellInTheWell:
+                return "Winter Spell in the Well -キュレーターズ・ライブラリー-";
+            case EnumController.Expansion.WinterSpell:
+                return "Winter Spell -キュレーターズ・ライブラリー-";
+            case EnumController.Expansion.WildsUnknown:
+                return "Wilds Unknown -未知なる彼方へ!-";
+            case EnumController.Expansion.AttackOfTheVine:
+                return "Attack of the Vine -ヴァインズ・アタック!-";
+            case EnumController.Expansion.HyperiaCity:
+                return "Hyperia City -ハイペリアシティ-";
             default:
                 return "";
         }
