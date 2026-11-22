@@ -108,6 +108,7 @@ public class SearchClass : MonoBehaviour
     public Image WardBtn;
     public Image SingTogetherBtn;
     public Image VanishBtn;
+    public Image AlertBtn;
 
     public bool isInkAvailable;
     public bool isInkDisavailable;
@@ -203,6 +204,7 @@ public class SearchClass : MonoBehaviour
     public bool isRush;
     public bool isVanish;
     public bool isWard;
+    public bool isAlert;
 
     public RectTransform parent;
     public RectTransform closeBtn_Header;
@@ -398,6 +400,10 @@ public class SearchClass : MonoBehaviour
     public RectTransform keyword_header_left_resist_btn;
     public RectTransform keyword_header_left_resist_space;
     public RectTransform keyword_header_left_resist_text;
+    public RectTransform keyword_header_left_alert;
+    public RectTransform keyword_header_left_alert_btn;
+    public RectTransform keyword_header_left_alert_space;
+    public RectTransform keyword_header_left_alert_text;
     public RectTransform keyword_header_right;
     public RectTransform keyword_header_right_support;
     public RectTransform keyword_header_right_support_btn;
@@ -423,6 +429,7 @@ public class SearchClass : MonoBehaviour
     public RectTransform keyword_header_right_vanish_btn;
     public RectTransform keyword_header_right_vanish_space;
     public RectTransform keyword_header_right_vanish_text;
+    public RectTransform keyword_header_right_null;
     public RectTransform space4;
     public RectTransform inkcostExplanation_header;
     public RectTransform inkcostExplanation_header_text;
@@ -603,6 +610,8 @@ public class SearchClass : MonoBehaviour
         isEvasive = false;
         isShift = false;
         isSinger = false;
+        isResist = false;
+        isAlert = false;
         isSupport = false;
         isReckless = false;
         isRush = false;
@@ -1330,6 +1339,18 @@ public class SearchClass : MonoBehaviour
     {
         switch (paramater)
         {
+            case "Alert":
+                if (isAlert)
+                {
+                    this.isAlert = false;
+                    AlertBtn.sprite = s_checkbtn_off;
+                }
+                else
+                {
+                    this.isAlert = true;
+                    AlertBtn.sprite = s_checkbtn_on;
+                }
+                break;
             case "Bodyguard":
                 if (isBodyGuard)
                 {
@@ -1992,6 +2013,7 @@ public class SearchClass : MonoBehaviour
         m_SearchFilterClass.lores_lowerlimit = m_LoresLowerLimitDropdown.value;
         m_SearchFilterClass.lores_upperlimit = m_LoresUpperLimitDropdown.value;
 
+        m_SearchFilterClass.isAlert = isAlert;
         m_SearchFilterClass.isBodyGuard = isBodyGuard;
         m_SearchFilterClass.isChallenger = isChallenger;
         m_SearchFilterClass.isEvasive = isEvasive;
@@ -2303,6 +2325,8 @@ public class SearchClass : MonoBehaviour
         b_AttackOfTheVine.color = new(1, 1, 1, 1);
         b_HyperiaCity.color = new(1, 1, 1, 1);
 
+        isAlert = false;
+        AlertBtn.sprite = s_checkbtn_off;
         isBodyGuard = false;
         BodyGuardBtn.sprite = s_checkbtn_off;
         isChallenger = false;
@@ -2510,6 +2534,11 @@ public class SearchClass : MonoBehaviour
 
         keyword_header_left_singer_space.sizeDelta = new Vector2(keyword_header_left_singer_space.sizeDelta.x * magnification_x, keyword_header_left_singer_space.sizeDelta.y * magnification_y);
         keyword_header_left_singer_text.sizeDelta = new Vector2(keyword_header_left_singer_text.sizeDelta.x * magnification_x, keyword_header_left_singer_text.sizeDelta.y * magnification_y);
+
+        keyword_header_left_alert.sizeDelta = new Vector2(keyword_header_left_alert.sizeDelta.x * magnification_x, keyword_header_left_alert.sizeDelta.y * magnification_y);
+        keyword_header_left_alert_space.sizeDelta = new Vector2(keyword_header_left_alert_space.sizeDelta.x * magnification_x, keyword_header_left_alert_space.sizeDelta.y * magnification_y);
+        keyword_header_left_alert_text.sizeDelta = new Vector2(keyword_header_left_alert_text.sizeDelta.x * magnification_x, keyword_header_left_alert_text.sizeDelta.y * magnification_y);
+
         keyword_header_right.sizeDelta = new Vector2(keyword_header_right.sizeDelta.x * magnification_x, keyword_header_right.sizeDelta.y * magnification_y);
         keyword_header_right_support.sizeDelta = new Vector2(keyword_header_right_support.sizeDelta.x * magnification_x, keyword_header_right_support.sizeDelta.y * magnification_y);
 
@@ -2539,7 +2568,7 @@ public class SearchClass : MonoBehaviour
         keyword_header_right_vanish.sizeDelta = new Vector2(keyword_header_right_vanish.sizeDelta.x * magnification_x, keyword_header_right_vanish.sizeDelta.y * magnification_y);
         keyword_header_right_vanish_space.sizeDelta = new Vector2(keyword_header_right_vanish_space.sizeDelta.x * magnification_x, keyword_header_right_vanish_space.sizeDelta.y * magnification_y);
         keyword_header_right_vanish_text.sizeDelta = new Vector2(keyword_header_right_vanish_text.sizeDelta.x * magnification_x, keyword_header_right_vanish_text.sizeDelta.y * magnification_y);
-
+        keyword_header_right_null.sizeDelta = new Vector2(keyword_header_right_null.sizeDelta.x * magnification_x, keyword_header_right_null.sizeDelta.y * magnification_y);
         space4.sizeDelta = new Vector2(space4.sizeDelta.x * magnification_x, space4.sizeDelta.y * magnification_y);
         inkcostExplanation_header.sizeDelta = new Vector2(inkcostExplanation_header.sizeDelta.x * magnification_x, inkcostExplanation_header.sizeDelta.y * magnification_y);
         inkcostExplanation_header_text.sizeDelta = new Vector2(inkcostExplanation_header_text.sizeDelta.x * magnification_x, inkcostExplanation_header_text.sizeDelta.y * magnification_y);
@@ -2653,6 +2682,7 @@ public class SearchClass : MonoBehaviour
         keyword_header_left_shift_btn.sizeDelta = new Vector2(keyword_header_left_shift_btn.sizeDelta.x * magnification, keyword_header_left_shift_btn.sizeDelta.y * magnification);
         keyword_header_left_singer_btn.sizeDelta = new Vector2(keyword_header_left_singer_btn.sizeDelta.x * magnification, keyword_header_left_singer_btn.sizeDelta.y * magnification);
         keyword_header_left_resist_btn.sizeDelta = new Vector2(keyword_header_left_resist_btn.sizeDelta.x * magnification, keyword_header_left_resist_btn.sizeDelta.y * magnification);
+        keyword_header_left_alert_btn.sizeDelta = new Vector2(keyword_header_left_alert_btn.sizeDelta.x * magnification, keyword_header_left_alert_btn.sizeDelta.y * magnification);
         keyword_header_right_support_btn.sizeDelta = new Vector2(keyword_header_right_support_btn.sizeDelta.x * magnification, keyword_header_right_support_btn.sizeDelta.y * magnification);
         keyword_header_right_reckless_btn.sizeDelta = new Vector2(keyword_header_right_reckless_btn.sizeDelta.x * magnification, keyword_header_right_reckless_btn.sizeDelta.y * magnification);
         keyword_header_right_rush_btn.sizeDelta = new Vector2(keyword_header_right_rush_btn.sizeDelta.x * magnification, keyword_header_right_rush_btn.sizeDelta.y * magnification);

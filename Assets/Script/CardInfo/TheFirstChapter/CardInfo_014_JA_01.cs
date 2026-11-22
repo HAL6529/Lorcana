@@ -14,7 +14,7 @@ public class CardInfo_014_JA_01 : CardInfo
         this.power = 1;
         this.toughness = 6;
         this.lore = 3;
-        this.illustrator = EnumController.Illustrator.NichorasKole;
+        this.illustrator = EnumController.Illustrator.NicholasKole;
         this.classList = new List<EnumController.Class> { EnumController.Class.StoryBorn, EnumController.Class.Hero, EnumController.Class.Princess };
         this.color = new List<EnumController.Colors> { EnumController.Colors.Amber };
         this.keywordAvility = new List<EnumController.KeywordAvility>();
