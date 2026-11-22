@@ -1894,7 +1894,113 @@ public class Menu_ConvertSpriteFromCardNo : MonoBehaviour
                 expantion = "FABLEDvol.2";
                 break;
         }
-        if(expantion == "")
+        switch (paramater)
+        {
+            case "005_JA_10":
+            case "007_JA_10":
+            case "014_JA_10":
+            case "015_JA_10":
+            case "021_JA_10":
+            case "024_JA_10":
+            case "025_JA_10":
+            case "026_JA_10":
+            case "028_JA_10":
+            case "029_JA_10":
+            case "032_JA_10":
+            case "034_JA_10":
+            case "035_JA_10":
+            case "036_JA_10":
+            case "037_JA_10":
+            case "038_JA_10":
+            case "039_JA_10":
+            case "043_JA_10":
+            case "049_JA_10":
+            case "050_JA_10":
+            case "051_JA_10":
+            case "061_JA_10":
+            case "063_JA_10":
+            case "070_JA_10":
+            case "071_JA_10":
+            case "074_JA_10":
+            case "075_JA_10":
+            case "077_JA_10":
+            case "078_JA_10":
+            case "079_JA_10":
+            case "082_JA_10":
+            case "083_JA_10":
+            case "087_JA_10":
+            case "089_JA_10":
+            case "097_JA_10":
+            case "098_JA_10":
+            case "100_JA_10":
+            case "102_JA_10":
+            case "103_JA_10":
+            case "110_JA_10":
+            case "111_JA_10":
+            case "114_JA_10":
+            case "118_JA_10":
+            case "119_JA_10":
+            case "120_JA_10":
+            case "122_JA_10":
+            case "129_JA_10":
+            case "133_JA_10":
+            case "137_JA_10":
+            case "138_JA_10":
+            case "141_JA_10":
+            case "146_JA_10":
+            case "150_JA_10":
+            case "154_JA_10":
+            case "155_JA_10":
+            case "156_JA_10":
+            case "157_JA_10":
+            case "160_JA_10":
+            case "161_JA_10":
+            case "162_JA_10":
+            case "163_JA_10": 
+            case "165_JA_10":
+            case "166_JA_10":
+            case "169_JA_10":
+            case "170_JA_10":
+            case "172_JA_10":
+            case "173_JA_10":
+            case "174_JA_10":
+            case "175_JA_10":
+            case "176_JA_10":
+            case "178_JA_10":
+            case "179_JA_10": 
+            case "180_JA_10":
+            case "181_JA_10":
+            case "183_JA_10":
+            case "185_JA_10":
+            case "187_JA_10":
+            case "188_JA_10":
+            case "190_JA_10":
+            case "194_JA_10":
+            case "196_JA_10":
+            case "199_JA_10":
+            case "200_JA_10":
+            case "202_JA_10":
+            case "203_JA_10":
+            case "205_JA_10":
+            case "207_JA_10":
+            case "208_JA_10":
+            case "210_JA_10":
+            case "212_JA_10":
+            case "214_JA_10": 
+            case "217_JA_10":
+            case "220_JA_10":
+            case "223_JA_10":
+            case "225_JA_10":
+            case "226_JA_10":
+            case "234_JA_10":
+            case "235_JA_10": 
+            case "236_JA_10":
+            case "238_JA_10":
+            case "239_JA_10":
+                expantion = "WinterSpellInTheWell";
+                break;
+        }
+        if (expantion == "")
         {
             return noImage;
         }

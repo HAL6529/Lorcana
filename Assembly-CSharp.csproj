@@ -525,8 +525,8 @@
     <Compile Include="Assets\Script\CardInfo\FABLED_vol1\CardInfo_004_JA_09.cs" />
     <Compile Include="Assets\Script\CardInfo\AzuriteSea\CardInfo_001_JA_06.cs" />
     <Compile Include="Assets\Script\CardInfo\AzuriteSea\CardInfo_203_JA_06.cs" />
-    <Compile Include="Assets\Script\CardInfo\ArchaziasIsland\CardInfo_205_JA_07.cs" />
     <Compile Include="Assets\Script\CardInfo\WinterSpellInTheWell\CardInfo_214_JA_10.cs" />
+    <Compile Include="Assets\Script\CardInfo\ArchaziasIsland\CardInfo_205_JA_07.cs" />
     <Compile Include="Assets\Script\CardInfo\ShimmeringSkies\CardInfo_222_JA_05.cs" />
     <Compile Include="Assets\Script\CardInfo\FABLED_vol2\CardInfo_141_JA_09.cs" />
     <Compile Include="Assets\Script\CardInfo\ReignOfJafer\CardInfo_198_JA_08.cs" />
