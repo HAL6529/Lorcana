@@ -231,6 +231,7 @@ public class EnumController
         AishaDurmagambetova, //Aisha Durmagambetova
         AishDurmagmbetova, // Aish Durmagmbetova
         AlanBatson, //Alan Batson
+        AlbertoDalLago, // Alberto Dal Lago
         AlejandroHernandez, //Alejandro Hernandez
         AlexAccorsi, //AlexAccorsi
         AlexAccorsiAndKendallHale, //Alex Accorsi/ Kendall Hale
@@ -323,6 +324,7 @@ public class EnumController
         DefneTozumAndDennyMinonne, //Defne Tozum / Denny Minonne
         DefneTozumAndLivioCacciatore, //Defne Tozum / Livio Cacciatore
         DennyMinonne, //Denny Minonne
+        DevinElleKurtz, // Devin ElleKurtz
         DevinYang, //Devin Yang
         DevMadan, // Dev Madan
         DiegoMachuca, // Diego Machuca
@@ -492,30 +494,32 @@ public class EnumController
         M_K_Manderson_JochemVanGool, //M. K. Manderson / Jochem van Gool
         M_RobertDaviesAndL_Giammichele, //M. Robert Davies / L. Giammichele
         MaddieShilt, //Maddie Shilt
-        MariaDresden, //Maria Dresden
         ManeKandalyanManderson, //ManeKandalyanManderson
         ManeKandalyanMandersonAndLucaPinelli, //Mane Kandalyan Manderson / Luca Pinelli
         ManeKandalyanMandersonAndPixSmith, //Mane Kandalyan Manderson / Pix Smith
-        MattChapman, //Matt Chapman
-        MatteoMarzocco, //Matteo Marzocco
-        MarcelBerg, //Marcel Berg
         MaliaEwart, //Malia Ewart
+        MarcelBerg, //Marcel Berg
         MarceloVignali, // Marcelo Vignali
+        MarcinPanasiuk, // Marcin Panasiuk
+        MarcoGiorgianni, //MarcoGiorgiann
+        MarcoGuadalupi, //Marco Guadalupi
+        MariaDresden, //Maria Dresden
+        MariaEwart, // Maria Ewart
         MarianaMoreno, //Mariana Moreno
+        MarianaMuGaliano, // Mariana "mu" Galiano
+        MarineJosephine, //MarineJosephine
         MarioManzanares, //Mario Manzanares
         MarioOscarGabriele, //Mario Oscar Gabriele
         MartaAndreeva, // Marta Andreeva
         MassimilianoNarciso, //Massimiliano Narciso
         MassimilianoNarcisoAndMariekeFerrari, //Massimiliano Narciso / Marieke Ferrari
+        MattChapman, //Matt Chapman
+        MatteoMarzocco, //Matteo Marzocco
         MattGaser, //Matt Gaser
         MatthewOates, //Matthew Oates
         MatthewRobertDavies, //Matthew Robert Davies
-        MarcoGiorgianni, //MarcoGiorgiann
-        MarcoGuadalupi, //Marco Guadalupi
-        MariaEwart, // Maria Ewart
         MarianaMorenoAndPeterBrockhammer, // Mariana Moreno / Peter Brockhammer
         MariaZafrilla, //Maria Zafrilla
-        MarineJosephine, //MarineJosephine
         MaxGrecke, //Max Grecke
         MaximilienBorie, // Maximilien Borie
         MaxineVee, //Maxine Vee
@@ -619,6 +623,7 @@ public class EnumController
         SimoneBuonfantino, //Simone Buonfantino
         SimoneGiovanardi, //Simone Giovanardi
         SimoneTentoni, //Simone Tentoni
+        SlawomirManiak, // Slawomir Maniak
         StefanoSpagnuolo, //Stefano Spagnuolo
         StefanoZanchi, //Stefano Zanchi
         SvetlozaraNikolova, // Svetlozara Nikolova
@@ -629,6 +634,7 @@ public class EnumController
         ThereseVildefall, //Therese Vildefall
         TomBancroft, //Tom Bancroft
         TomBancroftAndKristenBreshears, // Tom Bancroft / Kristen Breshears
+        TomekPietrzyk, // Tomek Pietrzyk
         ToniBruno, //Toni Bruno
         TonyBancroftAndLindsayWeyman, //Tony Bancroft / Lindsay Weyman
         UrsulaDorada, //Ursula Dorada

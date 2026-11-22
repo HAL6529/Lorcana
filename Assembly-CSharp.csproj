@@ -137,10 +137,10 @@
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_054_JA_03.cs" />
     <Compile Include="Assets\Script\CardInfo\ArchaziasIsland\CardInfo_115_JA_07.cs" />
     <Compile Include="Assets\Script\CardInfo\ShimmeringSkies\CardInfo_210_JA_05.cs" />
-    <Compile Include="Assets\Script\CardInfo\WinterSpellInTheWell\CardInfo_049_JA_10.cs" />
-    <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_148_JA_01.cs" />
-    <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_117_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\WinterSpellInTheWell\CardInfo_102_JA_10.cs" />
+    <Compile Include="Assets\Script\CardInfo\WinterSpellInTheWell\CardInfo_049_JA_10.cs" />
+    <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_117_JA_01.cs" />
+    <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_148_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\ArchaziasIsland\CardInfo_022_JA_07.cs" />
     <Compile Include="Assets\Script\CardInfo\AzuriteSea\CardInfo_192_JA_06.cs" />
     <Compile Include="Assets\Script\CardInfo\ArchaziasIsland\CardInfo_126_JA_07.cs" />
@@ -367,6 +367,7 @@
     <Compile Include="Assets\Script\CardInfo\ArchaziasIsland\CardInfo_040_JA_07.cs" />
     <Compile Include="Assets\Script\CardInfo\ShimmeringSkies\CardInfo_053_JA_05.cs" />
     <Compile Include="Assets\Script\CardInfo\AzuriteSea\CardInfo_191_JA_06.cs" />
+    <Compile Include="Assets\Script\CardInfo\WinterSpellInTheWell\CardInfo_207_JA_10.cs" />
     <Compile Include="Assets\Script\CardInfo\ShimmeringSkies\CardInfo_014_JA_05.cs" />
     <Compile Include="Assets\Script\CardInfo\UrsulasReturn\CardInfo_027_JA_04.cs" />
     <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_002_JA_02.cs" />
@@ -393,6 +394,7 @@
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_176_JA_03.cs" />
     <Compile Include="Assets\Script\CardInfo\UrsulasReturn\CardInfo_002_JA_04.cs" />
     <Compile Include="Assets\Script\CardInfo\ArchaziasIsland\CardInfo_050_JA_07.cs" />
+    <Compile Include="Assets\Script\CardInfo\WinterSpellInTheWell\CardInfo_217_JA_10.cs" />
     <Compile Include="Assets\Script\CardInfo\ReignOfJafer\CardInfo_186_JA_08.cs" />
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_073_JA_03.cs" />
     <Compile Include="Assets\Script\CardInfo\AzuriteSea\CardInfo_087_JA_06.cs" />
@@ -524,6 +526,7 @@
     <Compile Include="Assets\Script\CardInfo\AzuriteSea\CardInfo_001_JA_06.cs" />
     <Compile Include="Assets\Script\CardInfo\AzuriteSea\CardInfo_203_JA_06.cs" />
     <Compile Include="Assets\Script\CardInfo\ArchaziasIsland\CardInfo_205_JA_07.cs" />
+    <Compile Include="Assets\Script\CardInfo\WinterSpellInTheWell\CardInfo_214_JA_10.cs" />
     <Compile Include="Assets\Script\CardInfo\ShimmeringSkies\CardInfo_222_JA_05.cs" />
     <Compile Include="Assets\Script\CardInfo\FABLED_vol2\CardInfo_141_JA_09.cs" />
     <Compile Include="Assets\Script\CardInfo\ReignOfJafer\CardInfo_198_JA_08.cs" />
@@ -571,12 +574,13 @@
     <Compile Include="Assets\Script\CardInfo\UrsulasReturn\CardInfo_064_JA_04.cs" />
     <Compile Include="Assets\Script\CardInfo\FABLED_vol2\CardInfo_075_JA_09.cs" />
     <Compile Include="Assets\Script\CardInfo\FABLED_vol1\CardInfo_215_JA_09.cs" />
+    <Compile Include="Assets\Script\CardInfo\WinterSpellInTheWell\CardInfo_225_JA_10.cs" />
     <Compile Include="Assets\Script\CardInfo\ShimmeringSkies\CardInfo_093_JA_05.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_197_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\UrsulasReturn\CardInfo_107_JA_04.cs" />
+    <Compile Include="Assets\Script\CardInfo\WinterSpellInTheWell\CardInfo_100_JA_10.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_208_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\ArchaziasIsland\CardInfo_127_JA_07.cs" />
-    <Compile Include="Assets\Script\CardInfo\WinterSpellInTheWell\CardInfo_100_JA_10.cs" />
     <Compile Include="Assets\Animation\Script\ActiveDeactiveObject.cs" />
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_021_JA_03.cs" />
     <Compile Include="Assets\Script\CardInfo\ShimmeringSkies\CardInfo_031_JA_05.cs" />
@@ -591,6 +595,7 @@
     <Compile Include="Assets\Script\CardInfo\UrsulasReturn\CardInfo_192_JA_04.cs" />
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_135_JA_03.cs" />
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_148_JA_03.cs" />
+    <Compile Include="Assets\Script\CardInfo\WinterSpellInTheWell\CardInfo_220_JA_10.cs" />
     <Compile Include="Assets\Script\CardInfo\ShimmeringSkies\CardInfo_135_JA_05.cs" />
     <Compile Include="Assets\Script\CardInfo\UrsulasReturn\CardInfo_160_JA_04.cs" />
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_050_JA_03.cs" />
@@ -692,6 +697,7 @@
     <Compile Include="Assets\Script\CardInfo\UrsulasReturn\CardInfo_035_JA_04.cs" />
     <Compile Include="Assets\Script\CardInfo\ArchaziasIsland\CardInfo_095_JA_07.cs" />
     <Compile Include="Assets\Script\CardInfo\ArchaziasIsland\CardInfo_082_JA_07.cs" />
+    <Compile Include="Assets\Script\CardInfo\WinterSpellInTheWell\CardInfo_205_JA_10.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_085_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\AzuriteSea\CardInfo_029_JA_06.cs" />
     <Compile Include="Assets\Script\CardInfo\AzuriteSea\CardInfo_216_JA_06.cs" />
@@ -807,6 +813,7 @@
     <Compile Include="Assets\Script\CardInfo\UrsulasReturn\CardInfo_041_JA_04.cs" />
     <Compile Include="Assets\Script\CardInfo\AzuriteSea\CardInfo_109_JA_06.cs" />
     <Compile Include="Assets\Script\CardInfo\ShimmeringSkies\CardInfo_022_JA_05.cs" />
+    <Compile Include="Assets\Script\CardInfo\WinterSpellInTheWell\CardInfo_208_JA_10.cs" />
     <Compile Include="Assets\Script\CardInfo\AzuriteSea\CardInfo_158_JA_06.cs" />
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_164_JA_03.cs" />
     <Compile Include="Assets\Script\CardInfo\AzuriteSea\CardInfo_089_JA_06.cs" />
@@ -902,9 +909,9 @@
     <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_061_JA_02.cs" />
     <Compile Include="Assets\Script\CardInfo\UrsulasReturn\CardInfo_046_JA_04.cs" />
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_124_JA_03.cs" />
+    <Compile Include="Assets\Script\CardInfo\WinterSpellInTheWell\CardInfo_169_JA_10.cs" />
     <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_093_JA_02.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_008_JA_01.cs" />
-    <Compile Include="Assets\Script\CardInfo\WinterSpellInTheWell\CardInfo_169_JA_10.cs" />
     <Compile Include="Assets\Script\CardInfo\WinterSpellInTheWell\CardInfo_166_JA_10.cs" />
     <Compile Include="Assets\Script\CardInfo\ReignOfJafer\CardInfo_136_JA_08.cs" />
     <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_158_JA_02.cs" />
@@ -934,9 +941,9 @@
     <Compile Include="Assets\Script\CardInfo\ReignOfJafer\CardInfo_031_JA_08.cs" />
     <Compile Include="Assets\Script\CardInfo\FABLED_vol1\CardInfo_117_JA_09.cs" />
     <Compile Include="Assets\Script\CardInfo\AzuriteSea\CardInfo_022_JA_06.cs" />
+    <Compile Include="Assets\Script\CardInfo\WinterSpellInTheWell\CardInfo_103_JA_10.cs" />
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_122_JA_03.cs" />
     <Compile Include="Assets\Script\CardInfo\ShimmeringSkies\CardInfo_087_JA_05.cs" />
-    <Compile Include="Assets\Script\CardInfo\WinterSpellInTheWell\CardInfo_103_JA_10.cs" />
     <Compile Include="Assets\Script\CardInfo\AzuriteSea\CardInfo_104_JA_06.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_035_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\UrsulasReturn\CardInfo_063_JA_04.cs" />
@@ -966,9 +973,9 @@
     <Compile Include="Assets\Script\CardInfo\ShimmeringSkies\CardInfo_208_JA_05.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_133_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\UrsulasReturn\CardInfo_012_JA_04.cs" />
-    <Compile Include="Assets\Script\CardInfo\AzuriteSea\CardInfo_202_JA_06.cs" />
     <Compile Include="Assets\Script\CardInfo\WinterSpellInTheWell\CardInfo_061_JA_10.cs" />
     <Compile Include="Assets\Script\CardInfo\ReignOfJafer\CardInfo_161_JA_08.cs" />
+    <Compile Include="Assets\Script\CardInfo\AzuriteSea\CardInfo_202_JA_06.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_124_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_011_JA_03.cs" />
     <Compile Include="Assets\Script\CardInfo\ReignOfJafer\CardInfo_129_JA_08.cs" />
@@ -1319,6 +1326,7 @@
     <Compile Include="Assets\Script\CardInfo\ArchaziasIsland\CardInfo_179_JA_07.cs" />
     <Compile Include="Assets\Script\CardInfo\WinterSpellInTheWell\CardInfo_028_JA_10.cs" />
     <Compile Include="Assets\Script\CardInfo\CardInfo.cs" />
+    <Compile Include="Assets\Script\CardInfo\WinterSpellInTheWell\CardInfo_239_JA_10.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_125_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\UrsulasReturn\CardInfo_203_JA_04.cs" />
     <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_161_JA_02.cs" />
@@ -1352,6 +1360,7 @@
     <Compile Include="Assets\Script\CardInfo\ArchaziasIsland\CardInfo_083_JA_07.cs" />
     <Compile Include="Assets\Script\CardInfo\ArchaziasIsland\CardInfo_048_JA_07.cs" />
     <Compile Include="Assets\Script\CardInfo\FABLED_vol2\CardInfo_227_JA_09.cs" />
+    <Compile Include="Assets\Script\CardInfo\WinterSpellInTheWell\CardInfo_212_JA_10.cs" />
     <Compile Include="Assets\Script\CardInfo\ShimmeringSkies\CardInfo_122_JA_05.cs" />
     <Compile Include="Assets\Script\CardInfo\ArchaziasIsland\CardInfo_129_JA_07.cs" />
     <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_153_JA_02.cs" />
@@ -1378,6 +1387,7 @@
     <Compile Include="Assets\Script\CardInfo\ReignOfJafer\CardInfo_047_JA_08.cs" />
     <Compile Include="Assets\Script\CardInfo\ArchaziasIsland\CardInfo_119_JA_07.cs" />
     <Compile Include="Assets\Script\CardInfo\ReignOfJafer\CardInfo_043_JA_08.cs" />
+    <Compile Include="Assets\Script\CardInfo\WinterSpellInTheWell\CardInfo_236_JA_10.cs" />
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_220_JA_03.cs" />
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_142_JA_03.cs" />
     <Compile Include="Assets\Script\CardInfo\AzuriteSea\CardInfo_107_JA_06.cs" />
@@ -1462,6 +1472,7 @@
     <Compile Include="Assets\Script\CardInfo\ShimmeringSkies\CardInfo_176_JA_05.cs" />
     <Compile Include="Assets\Script\CardInfo\AzuriteSea\CardInfo_176_JA_06.cs" />
     <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_176_JA_02.cs" />
+    <Compile Include="Assets\Script\CardInfo\WinterSpellInTheWell\CardInfo_234_JA_10.cs" />
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_038_JA_03.cs" />
     <Compile Include="Assets\Script\CardInfo\UrsulasReturn\CardInfo_139_JA_04.cs" />
     <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_187_JA_02.cs" />
@@ -1581,6 +1592,7 @@
     <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_169_JA_02.cs" />
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_207_JA_03.cs" />
     <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_043_JA_02.cs" />
+    <Compile Include="Assets\Script\CardInfo\WinterSpellInTheWell\CardInfo_226_JA_10.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_182_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\UrsulasReturn\CardInfo_150_JA_04.cs" />
     <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_181_JA_02.cs" />
@@ -1610,6 +1622,7 @@
     <Compile Include="Assets\Script\CardInfo\ReignOfJafer\CardInfo_097_JA_08.cs" />
     <Compile Include="Assets\Script\CardInfo\ShimmeringSkies\CardInfo_024_JA_05.cs" />
     <Compile Include="Assets\Script\CardInfo\WinterSpellInTheWell\CardInfo_110_JA_10.cs" />
+    <Compile Include="Assets\Script\CardInfo\WinterSpellInTheWell\CardInfo_210_JA_10.cs" />
     <Compile Include="Assets\Script\CardInfo\ReignOfJafer\CardInfo_127_JA_08.cs" />
     <Compile Include="Assets\Script\CardInfo\ReignOfJafer\CardInfo_215_JA_08.cs" />
     <Compile Include="Assets\Script\CardInfo\AzuriteSea\CardInfo_050_JA_06.cs" />
@@ -1631,6 +1644,7 @@
     <Compile Include="Assets\Script\CardInfo\WinterSpellInTheWell\CardInfo_025_JA_10.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_199_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_036_JA_01.cs" />
+    <Compile Include="Assets\Script\CardInfo\WinterSpellInTheWell\CardInfo_223_JA_10.cs" />
     <Compile Include="Assets\Script\CardInfo\ReignOfJafer\CardInfo_096_JA_08.cs" />
     <Compile Include="Assets\Script\CardInfo\ArchaziasIsland\CardInfo_098_JA_07.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_172_JA_01.cs" />
@@ -1767,6 +1781,7 @@
     <Compile Include="Assets\Script\CardInfo\IntoTheInkLands\CardInfo_136_JA_03.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_200_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\AzuriteSea\CardInfo_132_JA_06.cs" />
+    <Compile Include="Assets\Script\CardInfo\WinterSpellInTheWell\CardInfo_238_JA_10.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_090_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\ArchaziasIsland\CardInfo_092_JA_07.cs" />
     <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_179_JA_02.cs" />
@@ -1834,6 +1849,7 @@
     <Compile Include="Assets\Script\CardInfo\FABLED_vol1\CardInfo_006_JA_09.cs" />
     <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_088_JA_02.cs" />
     <Compile Include="Assets\Script\CardInfo\ShimmeringSkies\CardInfo_060_JA_05.cs" />
+    <Compile Include="Assets\Script\CardInfo\WinterSpellInTheWell\CardInfo_235_JA_10.cs" />
     <Compile Include="Assets\Script\CardInfo\UrsulasReturn\CardInfo_113_JA_04.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_120_JA_01.cs" />
     <Compile Include="Assets\Script\CardInfo\ReignOfJafer\CardInfo_150_JA_08.cs" />
