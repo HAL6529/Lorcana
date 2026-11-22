@@ -95,6 +95,7 @@ public class SearchFilterClass
     public bool isAttackOfTheVine;
     public bool isHyperiaCity;
 
+    public bool isAlert;
     public bool isBodyGuard;
     public bool isChallenger;
     public bool isEvasive;
@@ -203,6 +204,7 @@ public class SearchFilterClass
         isAttackOfTheVine = true;
         isHyperiaCity = true;
 
+        isAlert = false;
         isBodyGuard = false;
         isChallenger = false;
         isEvasive = false;
@@ -709,6 +711,11 @@ public class SearchFilterClass
 
         List<EnumController.KeywordAvility> keywordList = m_CardInfo.GetKeywordAvility();
         bool keywordJudge = false;
+        if (isAlert && keywordList.Contains(EnumController.KeywordAvility.Alert))
+        {
+            keywordJudge = true;
+        }
+
         if (isBodyGuard && keywordList.Contains(EnumController.KeywordAvility.Bodyguard))
         {
             keywordJudge = true;
@@ -719,6 +726,7 @@ public class SearchFilterClass
             || keywordList.Contains(EnumController.KeywordAvility.Challenger2) 
             || keywordList.Contains(EnumController.KeywordAvility.Challenger3) 
             || keywordList.Contains(EnumController.KeywordAvility.Challenger4)
+            || keywordList.Contains(EnumController.KeywordAvility.Challenger5)
             || keywordList.Contains(EnumController.KeywordAvility.Challenger7)))
         {
             keywordJudge = true;
@@ -802,7 +810,7 @@ public class SearchFilterClass
             keywordJudge = true;
         }
 
-        if (!isBodyGuard && !isChallenger && !isEvasive && !isShift && !isSinger && !isResist && !isSupport && !isReckless && !isRush && !isWard && !isSingTogether && !isVanish)
+        if (!isAlert && !isBodyGuard && !isChallenger && !isEvasive && !isShift && !isSinger && !isResist && !isSupport && !isReckless && !isRush && !isWard && !isSingTogether && !isVanish)
         {
             keywordJudge = true;
         }
