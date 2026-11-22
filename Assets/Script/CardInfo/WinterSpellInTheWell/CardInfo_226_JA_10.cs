@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CardInfo_226_JA_03 : CardInfo
+public class CardInfo_226_JA_10 : CardInfo
 {
-    public CardInfo_226_JA_03()
+    public CardInfo_226_JA_10()
     {
-        this.cardNo = "226_JA_03";
+        this.cardNo = "226_JA_10";
         this.inkCost = 4;
         this.availableInk = true;
         this.cardName1 = "ホーンド・キング";

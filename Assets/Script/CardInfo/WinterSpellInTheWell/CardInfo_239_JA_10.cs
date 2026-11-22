@@ -9,7 +9,7 @@ public class CardInfo_239_JA_10 : CardInfo
         this.cardNo = "239_JA_10";
         this.inkCost = 5;
         this.availableInk = false;
-        this.cardName1 = "ニック・ワイルドニック・ワイルド";
+        this.cardName1 = "ニック・ワイルド";
         this.cardName2 = "不屈の捜査官";
         this.power = 5;
         this.toughness = 4;
