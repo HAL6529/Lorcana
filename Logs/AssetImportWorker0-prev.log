@@ -15,7 +15,7 @@ C:/Users/matty/Unity/Lorcana
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-50914
+60324
 Successfully changed project path to: C:/Users/matty/Unity/Lorcana
 C:/Users/matty/Unity/Lorcana
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,11 +49,11 @@ C:/Users/matty/Unity/Lorcana
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [34780] Host "[IP] 192.168.10.102 [Port] 0 [Flags] 2 [Guid] 1303053031 [EditorId] 1303053031 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-62U0HVH) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [54424] Host "[IP] 192.168.10.102 [Port] 0 [Flags] 2 [Guid] 1411627755 [EditorId] 1411627755 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-62U0HVH) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [34780] Host "[IP] 192.168.10.102 [Port] 0 [Flags] 2 [Guid] 1303053031 [EditorId] 1303053031 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-62U0HVH) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [54424] Host "[IP] 192.168.10.102 [Port] 0 [Flags] 2 [Guid] 1411627755 [EditorId] 1411627755 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-62U0HVH) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 11.76 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 10.96 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.3f1 (7cdc2969a641)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/Resources/UnitySubsystems
@@ -69,54 +69,54 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56376
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56804
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.008994 seconds.
-- Loaded All Assemblies, in  0.237 seconds
+Registered in 0.011074 seconds.
+- Loaded All Assemblies, in  0.253 seconds
 Native extension for WindowsStandalone target not found
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 [usbmuxd] Send listen message
 Native extension for iOS target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 240 ms
+Android Extension - Scanning For ADB Devices 299 ms
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.463 seconds
-Domain Reload Profiling: 699ms
-	BeginReloadAssembly (60ms)
+- Finished resetting the current domain, in  0.527 seconds
+Domain Reload Profiling: 779ms
+	BeginReloadAssembly (65ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (22ms)
-	RebuildNativeTypeToScriptingClass (6ms)
-	initialDomainReloadingComplete (44ms)
-	LoadAllAssembliesAndSetupDomain (103ms)
-		LoadAssemblies (59ms)
+	RebuildCommonClasses (24ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (49ms)
+	LoadAllAssembliesAndSetupDomain (106ms)
+		LoadAssemblies (63ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (98ms)
-			TypeCache.Refresh (97ms)
+		AnalyzeDomain (100ms)
+			TypeCache.Refresh (99ms)
 				TypeCache.ScanAssembly (90ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (463ms)
+	FinalizeReload (527ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (426ms)
+		SetupLoadedEditorAssemblies (490ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (323ms)
+			InitializePlatformSupportModulesInManaged (388ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (1ms)
-			ProcessInitializeOnLoadAttributes (67ms)
-			ProcessInitializeOnLoadMethodAttributes (31ms)
+			ProcessInitializeOnLoadAttributes (63ms)
+			ProcessInitializeOnLoadMethodAttributes (35ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -126,54 +126,54 @@ Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\matty\Unity\Lorcana\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\matty\Unity\Lorcana\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.595 seconds
-Refreshing native plugins compatible for Editor in 5.10 ms, found 5 plugins.
+- Loaded All Assemblies, in  0.603 seconds
+Refreshing native plugins compatible for Editor in 6.97 ms, found 5 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.495 seconds
-Domain Reload Profiling: 1087ms
-	BeginReloadAssembly (94ms)
+- Finished resetting the current domain, in  0.566 seconds
+Domain Reload Profiling: 1166ms
+	BeginReloadAssembly (93ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (3ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (15ms)
-	RebuildCommonClasses (23ms)
+		CreateAndSetChildDomain (16ms)
+	RebuildCommonClasses (24ms)
 	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (33ms)
-	LoadAllAssembliesAndSetupDomain (435ms)
-		LoadAssemblies (249ms)
+	initialDomainReloadingComplete (38ms)
+	LoadAllAssembliesAndSetupDomain (437ms)
+		LoadAssemblies (248ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (229ms)
-			TypeCache.Refresh (209ms)
-				TypeCache.ScanAssembly (199ms)
-			ScanForSourceGeneratedMonoScriptInfo (17ms)
-			ResolveRequiredComponents (3ms)
-	FinalizeReload (495ms)
+		AnalyzeDomain (234ms)
+			TypeCache.Refresh (208ms)
+				TypeCache.ScanAssembly (195ms)
+			ScanForSourceGeneratedMonoScriptInfo (22ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (567ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (363ms)
+		SetupLoadedEditorAssemblies (428ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (30ms)
+			InitializePlatformSupportModulesInManaged (33ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (60ms)
-			ProcessInitializeOnLoadAttributes (220ms)
-			ProcessInitializeOnLoadMethodAttributes (42ms)
-			AfterProcessingInitializeOnLoad (9ms)
+			BeforeProcessingInitializeOnLoad (70ms)
+			ProcessInitializeOnLoadAttributes (273ms)
+			ProcessInitializeOnLoadMethodAttributes (41ms)
+			AfterProcessingInitializeOnLoad (8ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (9ms)
+		AwakeInstancesAfterBackupRestoration (11ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 8.87 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 5.09 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 6421 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 77 unused Assets / (248.7 KB). Loaded Objects now: 6877.
 Memory consumption went from 200.0 MB to 199.8 MB.
-Total: 5.182800 ms (FindLiveObjects: 0.861300 ms CreateObjectMapping: 0.310000 ms MarkObjects: 3.633600 ms  DeleteObjects: 0.376400 ms)
+Total: 3.380400 ms (FindLiveObjects: 0.363700 ms CreateObjectMapping: 0.308400 ms MarkObjects: 2.434800 ms  DeleteObjects: 0.272300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -187,236 +187,11 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
 ========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\matty\Unity\Lorcana\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\matty\Unity\Lorcana\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.547 seconds
-Refreshing native plugins compatible for Editor in 4.59 ms, found 5 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.693 seconds
-Domain Reload Profiling: 1237ms
-	BeginReloadAssembly (116ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (8ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (29ms)
-	RebuildCommonClasses (24ms)
-	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (25ms)
-	LoadAllAssembliesAndSetupDomain (372ms)
-		LoadAssemblies (234ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (185ms)
-			TypeCache.Refresh (179ms)
-				TypeCache.ScanAssembly (173ms)
-			ScanForSourceGeneratedMonoScriptInfo (4ms)
-			ResolveRequiredComponents (2ms)
-	FinalizeReload (693ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (279ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (25ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (53ms)
-			ProcessInitializeOnLoadAttributes (173ms)
-			ProcessInitializeOnLoadMethodAttributes (19ms)
-			AfterProcessingInitializeOnLoad (5ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (9ms)
-Refreshing native plugins compatible for Editor in 4.74 ms, found 5 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6415 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 49 unused Assets / (220.9 KB). Loaded Objects now: 6883.
-Memory consumption went from 197.6 MB to 197.4 MB.
-Total: 2.838400 ms (FindLiveObjects: 0.302700 ms CreateObjectMapping: 0.193800 ms MarkObjects: 2.194400 ms  DeleteObjects: 0.146600 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
 Received Import Request.
-  Time since last request: 765301.049042 seconds.
-  path: Assets/Script/CardInfo/WinterSpellInTheWell/CardInfo_039_JA_10.cs
-  artifactKey: Guid(fc8c350ef398b6e4b9ebfa33b0b41fed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/CardInfo/WinterSpellInTheWell/CardInfo_039_JA_10.cs using Guid(fc8c350ef398b6e4b9ebfa33b0b41fed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '813d9c1663b74b4d4bc5cb35f31fb209') in 0.001658 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 113.966557 seconds.
-  path: Assets/Script/CardInfo/WinterSpellInTheWell/CardInfo_097_JA_10.cs
-  artifactKey: Guid(6e19a4c9282fdf246a90be7c29cedf15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/CardInfo/WinterSpellInTheWell/CardInfo_097_JA_10.cs using Guid(6e19a4c9282fdf246a90be7c29cedf15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4aedbcd42053c8023d01117d2c82bd2') in 0.000482 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 103.083972 seconds.
-  path: Assets/Script/CardInfo/WinterSpellInTheWell/CardInfo_146_JA_10.cs
-  artifactKey: Guid(c4162203232acc6408914d87514c206a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/CardInfo/WinterSpellInTheWell/CardInfo_146_JA_10.cs using Guid(c4162203232acc6408914d87514c206a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64a39ef649616b78c751418fc03e0828') in 0.000696 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 1.508871 seconds.
-  path: Assets/Script/CardInfo/WinterSpellInTheWell/CardInfo_150_JA_10.cs
-  artifactKey: Guid(86c39b6ae6badd34ea6d89641740edd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/CardInfo/WinterSpellInTheWell/CardInfo_150_JA_10.cs using Guid(86c39b6ae6badd34ea6d89641740edd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ae7ba630ea361b0512fd46cfcad1e63') in 0.000564 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 92.548221 seconds.
-  path: Assets/Script/CardInfo/WinterSpellInTheWell/CardInfo_173_JA_10.cs
-  artifactKey: Guid(ba41e87bd77eca644b8b898ba0e31df3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/CardInfo/WinterSpellInTheWell/CardInfo_173_JA_10.cs using Guid(ba41e87bd77eca644b8b898ba0e31df3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87295e4e04f6596e3545e4c903d37246') in 0.000556 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 2.339417 seconds.
-  path: Assets/Script/CardInfo/WinterSpellInTheWell/CardInfo_175_JA_10.cs
-  artifactKey: Guid(9e8dffbeb1449af4b82903a1ca700267) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/CardInfo/WinterSpellInTheWell/CardInfo_175_JA_10.cs using Guid(9e8dffbeb1449af4b82903a1ca700267) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93e2d9d9145a5f4015f1e77a3d346e54') in 0.000431 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.541599 seconds.
-  path: Assets/Script/CardInfo/WinterSpellInTheWell/CardInfo_174_JA_10.cs
-  artifactKey: Guid(78a92415c80f902449744544a54c671a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/CardInfo/WinterSpellInTheWell/CardInfo_174_JA_10.cs using Guid(78a92415c80f902449744544a54c671a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e66fdd3c33e03413a732f3675bb8511') in 0.000448 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 321.716713 seconds.
-  path: Assets/Script/CardInfo/WinterSpellInTheWell/CardInfo_217_JA_10.cs
-  artifactKey: Guid(1f8bdf7040451ce4694bb6728bb4b31d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/CardInfo/WinterSpellInTheWell/CardInfo_217_JA_10.cs using Guid(1f8bdf7040451ce4694bb6728bb4b31d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09d3213a80f6534d56f184dc222ceb8d') in 0.000817 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 97.713891 seconds.
-  path: Assets/Script/CardInfo/WinterSpellInTheWell/CardInfo_239_JA_10.cs
-  artifactKey: Guid(2a3b25591e1da6349b9a5ed2d17d623f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/CardInfo/WinterSpellInTheWell/CardInfo_239_JA_10.cs using Guid(2a3b25591e1da6349b9a5ed2d17d623f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5aec936bd0d4eec98d195d20a92d14c4') in 0.000494 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 1.675735 seconds.
-  path: Assets/Script/CardInfo/WinterSpellInTheWell/CardInfo_238_JA_10.cs
-  artifactKey: Guid(7736b1f24b8a6754c814c218ffe015f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/CardInfo/WinterSpellInTheWell/CardInfo_238_JA_10.cs using Guid(7736b1f24b8a6754c814c218ffe015f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccaed5b364330af92057ae1d6b440584') in 0.000471 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 15.575564 seconds.
-  path: Assets/Script/CardInfo/WinterSpellInTheWell/CardInfo_238_JA_10.cs
-  artifactKey: Guid(7736b1f24b8a6754c814c218ffe015f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/CardInfo/WinterSpellInTheWell/CardInfo_238_JA_10.cs using Guid(7736b1f24b8a6754c814c218ffe015f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a53b3504431ae511a209fe44c60e76a4') in 0.000626 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.321647 seconds.
-  path: Assets/Script/CardInfo/WinterSpellInTheWell/CardInfo_236_JA_10.cs
-  artifactKey: Guid(b6d7bf88f31f72e40b02e78556da8b2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/CardInfo/WinterSpellInTheWell/CardInfo_236_JA_10.cs using Guid(b6d7bf88f31f72e40b02e78556da8b2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b207482add8160e258c72e90dcdff79') in 0.000458 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 1.615175 seconds.
-  path: Assets/Script/CardInfo/WinterSpellInTheWell/CardInfo_235_JA_10.cs
-  artifactKey: Guid(d7df208cde5aa7e40ad0722af4fcdfd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/CardInfo/WinterSpellInTheWell/CardInfo_235_JA_10.cs using Guid(d7df208cde5aa7e40ad0722af4fcdfd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abb75bde7d9038ead2484613f829399d') in 0.000459 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 3.056256 seconds.
-  path: Assets/Script/CardInfo/WinterSpellInTheWell/CardInfo_234_JA_10.cs
-  artifactKey: Guid(2266aaffd6414dc498c53d05a8298b12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/CardInfo/WinterSpellInTheWell/CardInfo_234_JA_10.cs using Guid(2266aaffd6414dc498c53d05a8298b12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d89e2f3a611ceab8415b8a301e15d11') in 0.000423 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.623278 seconds.
-  path: Assets/Script/CardInfo/WinterSpellInTheWell/CardInfo_226_JA_10.cs
-  artifactKey: Guid(ce5140f9b0ecd9a46aba8093c98f0094) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/CardInfo/WinterSpellInTheWell/CardInfo_226_JA_10.cs using Guid(ce5140f9b0ecd9a46aba8093c98f0094) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d098c2b600e54adf2501a8d12aa5723') in 0.000541 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.673363 seconds.
-  path: Assets/Script/CardInfo/WinterSpellInTheWell/CardInfo_225_JA_10.cs
-  artifactKey: Guid(8e180f9abd0e8c94ca3e6a3bac4391fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/CardInfo/WinterSpellInTheWell/CardInfo_225_JA_10.cs using Guid(8e180f9abd0e8c94ca3e6a3bac4391fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2957e50d673d7a58af25167a0ae7f4f6') in 0.000478 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.722055 seconds.
-  path: Assets/Script/CardInfo/WinterSpellInTheWell/CardInfo_223_JA_10.cs
-  artifactKey: Guid(11b4e92a12b425a42af0af7b481b8992) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/CardInfo/WinterSpellInTheWell/CardInfo_223_JA_10.cs using Guid(11b4e92a12b425a42af0af7b481b8992) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '149f0a625133500c5baa4c390937a2ba') in 0.000458 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 2.037139 seconds.
-  path: Assets/Script/CardInfo/WinterSpellInTheWell/CardInfo_220_JA_10.cs
-  artifactKey: Guid(0867d8069f392fc44ae1ff0b019de90f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/CardInfo/WinterSpellInTheWell/CardInfo_220_JA_10.cs using Guid(0867d8069f392fc44ae1ff0b019de90f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a7ff096f3995734dd62bd103302068d') in 0.000434 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 13.773846 seconds.
-  path: Assets/Script/CardInfo/WinterSpellInTheWell/CardInfo_223_JA_10.cs
-  artifactKey: Guid(11b4e92a12b425a42af0af7b481b8992) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/CardInfo/WinterSpellInTheWell/CardInfo_223_JA_10.cs using Guid(11b4e92a12b425a42af0af7b481b8992) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e8aec3c124bdf9411a4d05e64aba170') in 0.000461 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 11.187520 seconds.
-  path: Assets/Script/CardInfo/WinterSpellInTheWell/CardInfo_225_JA_10.cs
-  artifactKey: Guid(8e180f9abd0e8c94ca3e6a3bac4391fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/CardInfo/WinterSpellInTheWell/CardInfo_225_JA_10.cs using Guid(8e180f9abd0e8c94ca3e6a3bac4391fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e70015f5d15f4b86fddce4fa45a9547e') in 0.000474 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 11.304610 seconds.
-  path: Assets/Script/CardInfo/WinterSpellInTheWell/CardInfo_235_JA_10.cs
-  artifactKey: Guid(d7df208cde5aa7e40ad0722af4fcdfd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/CardInfo/WinterSpellInTheWell/CardInfo_235_JA_10.cs using Guid(d7df208cde5aa7e40ad0722af4fcdfd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0809ce848360f0119725af1e16b9e495') in 0.000464 seconds
+  Time since last request: 768260.863378 seconds.
+  path: Assets/Script/CardInfo/WinterSpellInTheWell/CardInfo_170_JA_10.cs
+  artifactKey: Guid(ccf45bbfa62880948911e62ecd27b145) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Script/CardInfo/WinterSpellInTheWell/CardInfo_170_JA_10.cs using Guid(ccf45bbfa62880948911e62ecd27b145) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fc83ced54faca1765c2abc73f4fa3d9') in 0.002115 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
@@ -425,445 +200,52 @@ Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\matty\Unity\Lorcana\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\matty\Unity\Lorcana\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 - Loaded All Assemblies, in  0.538 seconds
-Refreshing native plugins compatible for Editor in 5.12 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 5.88 ms, found 5 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for iOS target not found
 Native extension for Android target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.785 seconds
-Domain Reload Profiling: 1320ms
-	BeginReloadAssembly (109ms)
+- Finished resetting the current domain, in  0.710 seconds
+Domain Reload Profiling: 1245ms
+	BeginReloadAssembly (113ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (8ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (28ms)
-	RebuildCommonClasses (21ms)
-	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (23ms)
-	LoadAllAssembliesAndSetupDomain (375ms)
-		LoadAssemblies (228ms)
+	RebuildCommonClasses (22ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (26ms)
+	LoadAllAssembliesAndSetupDomain (367ms)
+		LoadAssemblies (231ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (189ms)
-			TypeCache.Refresh (183ms)
-				TypeCache.ScanAssembly (176ms)
+		AnalyzeDomain (180ms)
+			TypeCache.Refresh (174ms)
+				TypeCache.ScanAssembly (167ms)
 			ScanForSourceGeneratedMonoScriptInfo (4ms)
 			ResolveRequiredComponents (3ms)
-	FinalizeReload (785ms)
+	FinalizeReload (710ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (321ms)
+		SetupLoadedEditorAssemblies (279ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (40ms)
-			SetLoadedEditorAssemblies (4ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (67ms)
-			ProcessInitializeOnLoadAttributes (185ms)
-			ProcessInitializeOnLoadMethodAttributes (20ms)
-			AfterProcessingInitializeOnLoad (6ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (11ms)
-Refreshing native plugins compatible for Editor in 6.02 ms, found 5 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6414 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 49 unused Assets / (221.4 KB). Loaded Objects now: 6888.
-Memory consumption went from 197.3 MB to 197.1 MB.
-Total: 3.731900 ms (FindLiveObjects: 0.374600 ms CreateObjectMapping: 0.215500 ms MarkObjects: 2.791900 ms  DeleteObjects: 0.348700 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 60.056705 seconds.
-  path: Assets/Script/CardInfo/WinterSpellInTheWell/CardInfo_226_JA_10.cs
-  artifactKey: Guid(ce5140f9b0ecd9a46aba8093c98f0094) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Script/CardInfo/WinterSpellInTheWell/CardInfo_226_JA_10.cs using Guid(ce5140f9b0ecd9a46aba8093c98f0094) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad8dd4688e6e90bdec3f3c27c7723553') in 0.002049 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\matty\Unity\Lorcana\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\matty\Unity\Lorcana\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.532 seconds
-Refreshing native plugins compatible for Editor in 5.35 ms, found 5 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.689 seconds
-Domain Reload Profiling: 1217ms
-	BeginReloadAssembly (108ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (7ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (30ms)
-	RebuildCommonClasses (21ms)
-	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (27ms)
-	LoadAllAssembliesAndSetupDomain (366ms)
-		LoadAssemblies (213ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (193ms)
-			TypeCache.Refresh (191ms)
-				TypeCache.ScanAssembly (185ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (3ms)
-	FinalizeReload (689ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (283ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (25ms)
+			InitializePlatformSupportModulesInManaged (27ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (57ms)
-			ProcessInitializeOnLoadAttributes (172ms)
-			ProcessInitializeOnLoadMethodAttributes (18ms)
-			AfterProcessingInitializeOnLoad (6ms)
+			BeforeProcessingInitializeOnLoad (54ms)
+			ProcessInitializeOnLoadAttributes (170ms)
+			ProcessInitializeOnLoadMethodAttributes (19ms)
+			AfterProcessingInitializeOnLoad (5ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (10ms)
-Refreshing native plugins compatible for Editor in 4.66 ms, found 5 plugins.
+Refreshing native plugins compatible for Editor in 4.65 ms, found 5 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 6414 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 49 unused Assets / (222.1 KB). Loaded Objects now: 6893.
-Memory consumption went from 197.4 MB to 197.1 MB.
-Total: 2.569400 ms (FindLiveObjects: 0.303900 ms CreateObjectMapping: 0.193400 ms MarkObjects: 1.923400 ms  DeleteObjects: 0.147600 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\matty\Unity\Lorcana\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\matty\Unity\Lorcana\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.631 seconds
-Refreshing native plugins compatible for Editor in 6.96 ms, found 5 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.876 seconds
-Domain Reload Profiling: 1503ms
-	BeginReloadAssembly (115ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (7ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (30ms)
-	RebuildCommonClasses (24ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (27ms)
-	LoadAllAssembliesAndSetupDomain (453ms)
-		LoadAssemblies (277ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (220ms)
-			TypeCache.Refresh (212ms)
-				TypeCache.ScanAssembly (204ms)
-			ScanForSourceGeneratedMonoScriptInfo (4ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (876ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (297ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (28ms)
-			SetLoadedEditorAssemblies (4ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (57ms)
-			ProcessInitializeOnLoadAttributes (184ms)
-			ProcessInitializeOnLoadMethodAttributes (19ms)
-			AfterProcessingInitializeOnLoad (6ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (9ms)
-Refreshing native plugins compatible for Editor in 4.49 ms, found 5 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6415 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 49 unused Assets / (221.0 KB). Loaded Objects now: 6898.
-Memory consumption went from 197.6 MB to 197.4 MB.
-Total: 2.650200 ms (FindLiveObjects: 0.314900 ms CreateObjectMapping: 0.189700 ms MarkObjects: 2.001900 ms  DeleteObjects: 0.143100 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 346.342701 seconds.
-  path: Assets/Resources/picture/lorcana/WinterSpell
-  artifactKey: Guid(bfe30633cf8738b4ea1bb9413b776825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/picture/lorcana/WinterSpell using Guid(bfe30633cf8738b4ea1bb9413b776825) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '232090e8b28a5d5c6298b6cbfe342786') in 0.002566 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 28.521685 seconds.
-  path: Assets/Resources/picture/lorcana/WinterSpellInTheWell
-  artifactKey: Guid(f1d8ac9f4708c8f4999f56ce3e20ded6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/picture/lorcana/WinterSpellInTheWell using Guid(f1d8ac9f4708c8f4999f56ce3e20ded6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43034126e7135e0fedb38d0506a381c1') in 0.000471 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\matty\Unity\Lorcana\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\matty\Unity\Lorcana\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.613 seconds
-Refreshing native plugins compatible for Editor in 5.35 ms, found 5 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.845 seconds
-Domain Reload Profiling: 1455ms
-	BeginReloadAssembly (132ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (10ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (42ms)
-	RebuildCommonClasses (21ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (23ms)
-	LoadAllAssembliesAndSetupDomain (425ms)
-		LoadAssemblies (254ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (216ms)
-			TypeCache.Refresh (209ms)
-				TypeCache.ScanAssembly (200ms)
-			ScanForSourceGeneratedMonoScriptInfo (4ms)
-			ResolveRequiredComponents (3ms)
-	FinalizeReload (846ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (327ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (32ms)
-			SetLoadedEditorAssemblies (4ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (64ms)
-			ProcessInitializeOnLoadAttributes (197ms)
-			ProcessInitializeOnLoadMethodAttributes (22ms)
-			AfterProcessingInitializeOnLoad (6ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
-Refreshing native plugins compatible for Editor in 7.10 ms, found 5 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6414 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 49 unused Assets / (221.1 KB). Loaded Objects now: 6903.
+Unloading 49 unused Assets / (221.9 KB). Loaded Objects now: 6883.
 Memory consumption went from 197.3 MB to 197.1 MB.
-Total: 3.632300 ms (FindLiveObjects: 0.363800 ms CreateObjectMapping: 0.213200 ms MarkObjects: 2.878600 ms  DeleteObjects: 0.175900 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 18.493644 seconds.
-  path: Assets/Resources/picture/lorcana/WildsUnknown
-  artifactKey: Guid(6f188cf522e4910459a886c6afe086de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/picture/lorcana/WildsUnknown using Guid(6f188cf522e4910459a886c6afe086de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e7b83cd896fb4e088da8b904f3837a0') in 0.001821 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.639077 seconds.
-  path: Assets/Resources/picture/lorcana/WildsUnknown/013_JA_12.png
-  artifactKey: Guid(3e6dc8a17227a08479fd5354569b5c3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/picture/lorcana/WildsUnknown/013_JA_12.png using Guid(3e6dc8a17227a08479fd5354569b5c3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2a21100ef4684114bc22d545225f4d5') in 0.042939 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 8.357605 seconds.
-  path: Assets/Resources/picture/lorcana/WinterSpellInTheWell/034_JA_10.png
-  artifactKey: Guid(c3e32b5c9475d8345b7b13f2567a0886) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/picture/lorcana/WinterSpellInTheWell/034_JA_10.png using Guid(c3e32b5c9475d8345b7b13f2567a0886) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '221a35eb61447cb203bf389e9328733d') in 0.012616 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.411844 seconds.
-  path: Assets/Resources/picture/lorcana/WinterSpellInTheWell/043_JA_10.png
-  artifactKey: Guid(756851543bf361041a38b481b75fcee6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/picture/lorcana/WinterSpellInTheWell/043_JA_10.png using Guid(756851543bf361041a38b481b75fcee6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dae0f6fcff048c04ce56ae978368521b') in 0.068456 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 14.445180 seconds.
-  path: Assets/Resources/picture/lorcana/WildsUnknown/009_JA_12.png
-  artifactKey: Guid(2ddaef84a80703544b2c634327bc31b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/picture/lorcana/WildsUnknown/009_JA_12.png using Guid(2ddaef84a80703544b2c634327bc31b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '942f392625e8eacfd1af4af24f5fb9ee') in 0.010434 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 5.380782 seconds.
-  path: Assets/Resources/picture/lorcana/WinterSpellInTheWell/032_JA_10.png
-  artifactKey: Guid(4faf88eabb8b10f4f824f92b9ca30afd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/picture/lorcana/WinterSpellInTheWell/032_JA_10.png using Guid(4faf88eabb8b10f4f824f92b9ca30afd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aced066394e72f379b0824507714b603') in 0.009851 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.216058 seconds.
-  path: Assets/Resources/picture/lorcana/WinterSpellInTheWell/043_JA_10.png
-  artifactKey: Guid(756851543bf361041a38b481b75fcee6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/picture/lorcana/WinterSpellInTheWell/043_JA_10.png using Guid(756851543bf361041a38b481b75fcee6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '815b19edad1fc86cdb0c3b9b4e9a6b25') in 0.012846 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 5.555191 seconds.
-  path: Assets/Resources/picture/lorcana/WinterSpellInTheWell/043_JA_10.png
-  artifactKey: Guid(756851543bf361041a38b481b75fcee6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/picture/lorcana/WinterSpellInTheWell/043_JA_10.png using Guid(756851543bf361041a38b481b75fcee6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd25585c3cb7e90400121ecb47e2ac736') in 0.010086 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 4.419508 seconds.
-  path: Assets/Resources/picture/lorcana/WinterSpell/023_JA_11.png
-  artifactKey: Guid(50bd0613b89fffa49b87aa55186c1379) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/picture/lorcana/WinterSpell/023_JA_11.png using Guid(50bd0613b89fffa49b87aa55186c1379) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '270a15b2b36546f74066e64021eb54c0') in 0.010438 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 4.838472 seconds.
-  path: Assets/Resources/picture/lorcana/WinterSpellInTheWell/036_JA_10.png
-  artifactKey: Guid(31f2d4825cc921e4cba20ffe5fabcfb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/picture/lorcana/WinterSpellInTheWell/036_JA_10.png using Guid(31f2d4825cc921e4cba20ffe5fabcfb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21aed5086330b3af66591788fde897b9') in 0.013388 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 7.614531 seconds.
-  path: Assets/Resources/picture/lorcana/WinterSpellInTheWell/043_JA_10.png
-  artifactKey: Guid(756851543bf361041a38b481b75fcee6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Resources/picture/lorcana/WinterSpellInTheWell/043_JA_10.png using Guid(756851543bf361041a38b481b75fcee6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4cac3e5d3efd19933c1b75dc801cfac') in 0.012161 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 10.64 ms, found 5 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 7 unused Assets / (196.2 KB). Loaded Objects now: 6909.
-Memory consumption went from 99.0 MB to 98.8 MB.
-Total: 3.533100 ms (FindLiveObjects: 0.385900 ms CreateObjectMapping: 0.250900 ms MarkObjects: 2.696100 ms  DeleteObjects: 0.199000 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\matty\Unity\Lorcana\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\matty\Unity\Lorcana\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.532 seconds
-Refreshing native plugins compatible for Editor in 5.70 ms, found 5 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.767 seconds
-Domain Reload Profiling: 1296ms
-	BeginReloadAssembly (109ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (7ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (28ms)
-	RebuildCommonClasses (22ms)
-	RebuildNativeTypeToScriptingClass (7ms)
-	initialDomainReloadingComplete (23ms)
-	LoadAllAssembliesAndSetupDomain (368ms)
-		LoadAssemblies (227ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (185ms)
-			TypeCache.Refresh (181ms)
-				TypeCache.ScanAssembly (174ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (3ms)
-	FinalizeReload (767ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (329ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (27ms)
-			SetLoadedEditorAssemblies (4ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (63ms)
-			ProcessInitializeOnLoadAttributes (203ms)
-			ProcessInitializeOnLoadMethodAttributes (24ms)
-			AfterProcessingInitializeOnLoad (7ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
-Refreshing native plugins compatible for Editor in 6.30 ms, found 5 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6415 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 49 unused Assets / (221.2 KB). Loaded Objects now: 6913.
-Memory consumption went from 197.7 MB to 197.5 MB.
-Total: 2.898600 ms (FindLiveObjects: 0.314300 ms CreateObjectMapping: 0.179900 ms MarkObjects: 2.252600 ms  DeleteObjects: 0.151000 ms)
+Total: 3.095100 ms (FindLiveObjects: 0.342300 ms CreateObjectMapping: 0.207600 ms MarkObjects: 2.295900 ms  DeleteObjects: 0.248300 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):

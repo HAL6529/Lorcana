@@ -430,5 +430,7 @@ public class Menu_SelectDeckPanel : MonoBehaviour
         Colors_mark4.sizeDelta = new Vector2(Colors_mark4.sizeDelta.x * magnification, Colors_mark4.sizeDelta.y * magnification);
         Colors_mark5.sizeDelta = new Vector2(Colors_mark5.sizeDelta.x * magnification, Colors_mark5.sizeDelta.y * magnification);
         Colors_mark6.sizeDelta = new Vector2(Colors_mark6.sizeDelta.x * magnification, Colors_mark6.sizeDelta.y * magnification);
+
+        m_Text.fontSize = (int)(m_Text.fontSize * magnification);
     }
 }

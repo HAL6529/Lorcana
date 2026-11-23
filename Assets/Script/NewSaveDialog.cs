@@ -25,6 +25,10 @@ public class NewSaveDialog : MonoBehaviour
     public RectTransform inputField_Btn;
     public RectTransform space3;
 
+    public Text t_message;
+    public Text t_input_deckName;
+    public Text t_saveBtn;
+
     //private const string Extension = ".txt";
 
     private ExtendUtil m_ExtendUtil = new ExtendUtil();
@@ -111,5 +115,9 @@ public class NewSaveDialog : MonoBehaviour
         }
         CloseBtn.sizeDelta = new Vector2(CloseBtn.sizeDelta.x * magnification, CloseBtn.sizeDelta.y * magnification);
         inputField_Btn.sizeDelta = new Vector2(inputField_Btn.sizeDelta.x * magnification, inputField_Btn.sizeDelta.y * magnification);
+
+        t_message.fontSize = (int)(t_message.fontSize * magnification);
+        t_input_deckName.fontSize = (int)(t_input_deckName.fontSize * magnification);
+        t_saveBtn.fontSize = (int)(t_saveBtn.fontSize * magnification);
     }
 }

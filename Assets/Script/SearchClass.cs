@@ -24,17 +24,11 @@ public class SearchClass : MonoBehaviour
     public Image a_ItemBtn;
     public Image a_SongBtn;
 
-    public Image r_commonBtn_background;
     public Image r_commonBtn;
-    public Image r_uncommonBtn_background;
     public Image r_uncommonBtn;
-    public Image r_rareBtn_background;
     public Image r_rareBtn;
-    public Image r_superrareBtn_background;
     public Image r_superrareBtn;
-    public Image r_legendaryBtn_background;
     public Image r_legendaryBtn;
-    public Image r_enchantedBtn_background;
     public Image r_enchantedBtn;
 
     public Image b_StoryBorn;
@@ -248,18 +242,25 @@ public class SearchClass : MonoBehaviour
     public RectTransform rarityExplanation_header_text1;
     public RectTransform rarityExplanation_header_text2;
     public RectTransform rarity_Header;
-    public RectTransform rarity_Header_common;
-    public RectTransform rarity_Header_common_image;
-    public RectTransform rarity_Header_uncommon;
-    public RectTransform rarity_Header_uncommon_image;
-    public RectTransform rarity_Header_rare;
-    public RectTransform rarity_Header_rare_image;
-    public RectTransform rarity_Header_superrare;
-    public RectTransform rarity_Header_superrare_image;
-    public RectTransform rarity_Header_legendary;
-    public RectTransform rarity_Header_legendary_image;
-    public RectTransform rarity_Header_enchanted;
-    public RectTransform rarity_Header_enchanted_image;
+    public RectTransform rarity_Header_space_1;
+    public RectTransform rarity_Header_left;
+    public RectTransform rarity_Header_left_space;
+    public RectTransform rarity_Header_left_common;
+    public RectTransform rarity_Header_left_space_1;
+    public RectTransform rarity_Header_left_rare;
+    public RectTransform rarity_Header_left_space_2;
+    public RectTransform rarity_Header_left_legendary;
+    public RectTransform rarity_Header_left_space_3;
+    public RectTransform rarity_Header_space_2;
+    public RectTransform rarity_Header_right;
+    public RectTransform rarity_Header_right_space;
+    public RectTransform rarity_Header_right_uncommon;
+    public RectTransform rarity_Header_right_space_1;
+    public RectTransform rarity_Header_right_superrare;
+    public RectTransform rarity_Header_right_space_2;
+    public RectTransform rarity_Header_right_enchanted;
+    public RectTransform rarity_Header_right_space_3;
+    public RectTransform rarity_Header_space_3;
     public RectTransform space3_1;
     public RectTransform classExplanation_Header;
     public RectTransform classExplanation_Header_text1;
@@ -2045,27 +2046,21 @@ public class SearchClass : MonoBehaviour
         if (r_common && r_uncommon && r_rare && r_superrare && r_legendary && r_enchanted)
         {
             r_common = false;
-            r_commonBtn_background.color = new(200f / 255f, 200f / 255f, 200f / 255f, 50f / 255f);
             r_commonBtn.color = new(70f / 255f, 70f / 255f, 70f / 255f, 255f);
 
             r_uncommon = false;
-            r_uncommonBtn_background.color = new(200f / 255f, 200f / 255f, 200f / 255f, 50f / 255f);
             r_uncommonBtn.color = new(70f / 255f, 70f / 255f, 70f / 255f, 255f);
 
             r_rare = false;
-            r_rareBtn_background.color = new(200f / 255f, 200f / 255f, 200f / 255f, 50f / 255f);
             r_rareBtn.color = new(70f / 255f, 70f / 255f, 70f / 255f, 255f);
 
             r_superrare = false;
-            r_superrareBtn_background.color = new(200f / 255f, 200f / 255f, 200f / 255f, 50f / 255f);
             r_superrareBtn.color = new(70f / 255f, 70f / 255f, 70f / 255f, 255f);
 
             r_legendary = false;
-            r_legendaryBtn_background.color = new(200f / 255f, 200f / 255f, 200f / 255f, 50f / 255f);
             r_legendaryBtn.color = new(70f / 255f, 70f / 255f, 70f / 255f, 255f);
 
             r_enchanted = false;
-            r_enchantedBtn_background.color = new(200f / 255f, 200f / 255f, 200f / 255f, 50f / 255f);
             r_enchantedBtn.color = new(70f / 255f, 70f / 255f, 70f / 255f, 255f);
         }
         switch (paramater)
@@ -2074,13 +2069,11 @@ public class SearchClass : MonoBehaviour
                 if (r_common)
                 {
                     r_common = false;
-                    r_commonBtn_background.color = new(200f / 255f, 200f / 255f, 200f / 255f, 50f / 255f);
                     r_commonBtn.color = new(70f / 255f, 70f / 255f, 70f / 255f, 255f);
                 }
                 else
                 {
                     r_common = true;
-                    r_commonBtn_background.color = new(1, 1, 1, 1);
                     r_commonBtn.color = new(1, 1, 1, 1);
                 }
                 break;
@@ -2088,13 +2081,11 @@ public class SearchClass : MonoBehaviour
                 if (r_uncommon)
                 {
                     r_uncommon = false;
-                    r_uncommonBtn_background.color = new(200f / 255f, 200f / 255f, 200f / 255f, 50f / 255f);
                     r_uncommonBtn.color = new(70f / 255f, 70f / 255f, 70f / 255f, 255f);
                 }
                 else
                 {
                     r_uncommon = true;
-                    r_uncommonBtn_background.color = new(1, 1, 1, 1);
                     r_uncommonBtn.color = new(1, 1, 1, 1);
                 }
                 break;
@@ -2102,13 +2093,11 @@ public class SearchClass : MonoBehaviour
                 if (r_rare)
                 {
                     r_rare = false;
-                    r_rareBtn_background.color = new(200f / 255f, 200f / 255f, 200f / 255f, 50f / 255f);
                     r_rareBtn.color = new(70f / 255f, 70f / 255f, 70f / 255f, 255f);
                 }
                 else
                 {
                     r_rare = true;
-                    r_rareBtn_background.color = new(1, 1, 1, 1);
                     r_rareBtn.color = new(1, 1, 1, 1);
                 }
                 break;
@@ -2116,13 +2105,11 @@ public class SearchClass : MonoBehaviour
                 if (r_superrare)
                 {
                     r_superrare = false;
-                    r_superrareBtn_background.color = new(200f / 255f, 200f / 255f, 200f / 255f, 50f / 255f);
                     r_superrareBtn.color = new(70f / 255f, 70f / 255f, 70f / 255f, 255f);
                 }
                 else
                 {
                     r_superrare = true;
-                    r_superrareBtn_background.color = new(1, 1, 1, 1);
                     r_superrareBtn.color = new(1, 1, 1, 1);
                 }
                 break;
@@ -2130,13 +2117,11 @@ public class SearchClass : MonoBehaviour
                 if (r_legendary)
                 {
                     r_legendary = false;
-                    r_legendaryBtn_background.color = new(200f / 255f, 200f / 255f, 200f / 255f, 50f / 255f);
                     r_legendaryBtn.color = new(70f / 255f, 70f / 255f, 70f / 255f, 255f);
                 }
                 else
                 {
                     r_legendary = true;
-                    r_legendaryBtn_background.color = new(1, 1, 1, 1);
                     r_legendaryBtn.color = new(1, 1, 1, 1);
                 }
                 break;
@@ -2144,13 +2129,11 @@ public class SearchClass : MonoBehaviour
                 if (r_enchanted)
                 {
                     r_enchanted = false;
-                    r_enchantedBtn_background.color = new(200f / 255f, 200f / 255f, 200f / 255f, 50f / 255f);
                     r_enchantedBtn.color = new(70f / 255f, 70f / 255f, 70f / 255f, 255f);
                 }
                 else
                 {
                     r_enchanted = true;
-                    r_enchantedBtn_background.color = new(1, 1, 1, 1);
                     r_enchantedBtn.color = new(1, 1, 1, 1);
                 }
                 break;
@@ -2189,22 +2172,16 @@ public class SearchClass : MonoBehaviour
         a_SongBtn.color = new(1, 1, 1, 1);
 
         r_common = true;
-        r_commonBtn_background.color = new(1, 1, 1, 1);
         r_commonBtn.color = new(1, 1, 1, 1);
         r_uncommon = true;
-        r_uncommonBtn_background.color = new(1, 1, 1, 1);
         r_uncommonBtn.color = new(1, 1, 1, 1);
         r_rare = true;
-        r_rareBtn_background.color = new(1, 1, 1, 1);
         r_rareBtn.color = new(1, 1, 1, 1);
         r_superrare = true;
-        r_superrareBtn_background.color = new(1, 1, 1, 1);
         r_superrareBtn.color = new(1, 1, 1, 1);
         r_legendary = true;
-        r_legendaryBtn_background.color = new(1, 1, 1, 1);
         r_legendaryBtn.color = new(1, 1, 1, 1);
         r_enchanted = true;
-        r_enchantedBtn_background.color = new(1, 1, 1, 1);
         r_enchantedBtn.color = new(1, 1, 1, 1);
 
         isAlly = true;
@@ -2389,10 +2366,41 @@ public class SearchClass : MonoBehaviour
         typeExplanation_Header_text2.sizeDelta = new Vector2(typeExplanation_Header_text2.sizeDelta.x * magnification_x, typeExplanation_Header_text2.sizeDelta.y * magnification_y);
         type_Header.sizeDelta = new Vector2(type_Header.sizeDelta.x * magnification_x, type_Header.sizeDelta.y * magnification_y);
 
+        type_Header_action.sizeDelta = new Vector2(type_Header_action.sizeDelta.x * magnification_x, type_Header_action.sizeDelta.y * magnification_y);
+        type_Header_action_text.sizeDelta = new Vector2(type_Header_action_text.sizeDelta.x * magnification_x, type_Header_action_text.sizeDelta.y * magnification_y);
+        type_Header_character.sizeDelta = new Vector2(type_Header_character.sizeDelta.x * magnification_x, type_Header_character.sizeDelta.y * magnification_y);
+        type_Header_character_text.sizeDelta = new Vector2(type_Header_character_text.sizeDelta.x * magnification_x, type_Header_character_text.sizeDelta.y * magnification_y);
+        type_Header_location.sizeDelta = new Vector2(type_Header_location.sizeDelta.x * magnification_x, type_Header_location.sizeDelta.y * magnification_y);
+        type_Header_location_text.sizeDelta = new Vector2(type_Header_location_text.sizeDelta.x * magnification_x, type_Header_location_text.sizeDelta.y * magnification_y);
+        type_Header_item.sizeDelta = new Vector2(type_Header_item.sizeDelta.x * magnification_x, type_Header_item.sizeDelta.y * magnification_y);
+        type_Header_item_text.sizeDelta = new Vector2(type_Header_item_text.sizeDelta.x * magnification_x, type_Header_item_text.sizeDelta.y * magnification_y);
+        type_Header_song.sizeDelta = new Vector2(type_Header_song.sizeDelta.x * magnification_x, type_Header_song.sizeDelta.y * magnification_y);
+        type_Header_song_text.sizeDelta = new Vector2(type_Header_song_text.sizeDelta.x * magnification_x, type_Header_song_text.sizeDelta.y * magnification_y);
+
         space3.sizeDelta = new Vector2(space3.sizeDelta.x * magnification_x, space3.sizeDelta.y * magnification_y);
         rarityExplanation_header.sizeDelta = new Vector2(rarityExplanation_header.sizeDelta.x * magnification_x, rarityExplanation_header.sizeDelta.y * magnification_y);
         rarityExplanation_header_text1.sizeDelta = new Vector2(rarityExplanation_header_text1.sizeDelta.x * magnification_x, rarityExplanation_header_text1.sizeDelta.y * magnification_y);
         rarityExplanation_header_text2.sizeDelta = new Vector2(rarityExplanation_header_text2.sizeDelta.x * magnification_x, rarityExplanation_header_text2.sizeDelta.y * magnification_y);
+
+        rarity_Header_space_1.sizeDelta = new Vector2(rarity_Header_space_1.sizeDelta.x * magnification_x, rarity_Header_space_1.sizeDelta.y * magnification_y);
+        rarity_Header_left.sizeDelta = new Vector2(rarity_Header_left.sizeDelta.x * magnification_x, rarity_Header_left.sizeDelta.y * magnification_y);
+        rarity_Header_left_space.sizeDelta = new Vector2(rarity_Header_left_space.sizeDelta.x * magnification_x, rarity_Header_left_space.sizeDelta.y * magnification_y);
+        rarity_Header_left_common.sizeDelta = new Vector2(rarity_Header_left_common.sizeDelta.x * magnification_x, rarity_Header_left_common.sizeDelta.y * magnification_y);
+        rarity_Header_left_space_1.sizeDelta = new Vector2(rarity_Header_left_space_1.sizeDelta.x * magnification_x, rarity_Header_left_space_1.sizeDelta.y * magnification_y);
+        rarity_Header_left_rare.sizeDelta = new Vector2(rarity_Header_left_rare.sizeDelta.x * magnification_x, rarity_Header_left_rare.sizeDelta.y * magnification_y);
+        rarity_Header_left_space_2.sizeDelta = new Vector2(rarity_Header_left_space_2.sizeDelta.x * magnification_x, rarity_Header_left_space_2.sizeDelta.y * magnification_y);
+        rarity_Header_left_legendary.sizeDelta = new Vector2(rarity_Header_left_legendary.sizeDelta.x * magnification_x, rarity_Header_left_legendary.sizeDelta.y * magnification_y);
+        rarity_Header_left_space_3.sizeDelta = new Vector2(rarity_Header_left_space_3.sizeDelta.x * magnification_x, rarity_Header_left_space_3.sizeDelta.y * magnification_y);
+        rarity_Header_space_2.sizeDelta = new Vector2(rarity_Header_space_2.sizeDelta.x * magnification_x, rarity_Header_space_2.sizeDelta.y * magnification_y);
+        rarity_Header_right.sizeDelta = new Vector2(rarity_Header_right.sizeDelta.x * magnification_x, rarity_Header_right.sizeDelta.y * magnification_y);
+        rarity_Header_right_space.sizeDelta = new Vector2(rarity_Header_right_space.sizeDelta.x * magnification_x, rarity_Header_right_space.sizeDelta.y * magnification_y);
+        rarity_Header_right_uncommon.sizeDelta = new Vector2(rarity_Header_right_uncommon.sizeDelta.x * magnification_x, rarity_Header_right_uncommon.sizeDelta.y * magnification_y);
+        rarity_Header_right_space_1.sizeDelta = new Vector2(rarity_Header_right_space_1.sizeDelta.x * magnification_x, rarity_Header_right_space_1.sizeDelta.y * magnification_y);
+        rarity_Header_right_superrare.sizeDelta = new Vector2(rarity_Header_right_superrare.sizeDelta.x * magnification_x, rarity_Header_right_superrare.sizeDelta.y * magnification_y);
+        rarity_Header_right_space_2.sizeDelta = new Vector2(rarity_Header_right_space_2.sizeDelta.x * magnification_x, rarity_Header_right_space_2.sizeDelta.y * magnification_y);
+        rarity_Header_right_enchanted.sizeDelta = new Vector2(rarity_Header_right_enchanted.sizeDelta.x * magnification_x, rarity_Header_right_enchanted.sizeDelta.y * magnification_y);
+        rarity_Header_right_space_3.sizeDelta = new Vector2(rarity_Header_right_space_3.sizeDelta.x * magnification_x, rarity_Header_right_space_3.sizeDelta.y * magnification_y);
+        rarity_Header_space_3.sizeDelta = new Vector2(rarity_Header_space_3.sizeDelta.x * magnification_x, rarity_Header_space_3.sizeDelta.y * magnification_y);
 
         rarity_Header.sizeDelta = new Vector2(rarity_Header.sizeDelta.x * magnification_x, rarity_Header.sizeDelta.y * magnification_y);
 
@@ -2651,30 +2659,6 @@ public class SearchClass : MonoBehaviour
         colors_Header_sapphire.sizeDelta = new Vector2(colors_Header_sapphire.sizeDelta.x * magnification, colors_Header_sapphire.sizeDelta.y * magnification);
         colors_Header_steel.sizeDelta = new Vector2(colors_Header_steel.sizeDelta.x * magnification, colors_Header_steel.sizeDelta.y * magnification);
         colors_Header_ruby.sizeDelta = new Vector2(colors_Header_ruby.sizeDelta.x * magnification, colors_Header_ruby.sizeDelta.y * magnification);
-
-        type_Header_action.sizeDelta = new Vector2(type_Header_action.sizeDelta.x * magnification, type_Header_action.sizeDelta.y * magnification);
-        type_Header_action_text.sizeDelta = new Vector2(type_Header_action_text.sizeDelta.x * magnification, type_Header_action_text.sizeDelta.y * magnification);
-        type_Header_character.sizeDelta = new Vector2(type_Header_character.sizeDelta.x * magnification, type_Header_character.sizeDelta.y * magnification);
-        type_Header_character_text.sizeDelta = new Vector2(type_Header_character_text.sizeDelta.x * magnification, type_Header_character_text.sizeDelta.y * magnification);
-        type_Header_location.sizeDelta = new Vector2(type_Header_location.sizeDelta.x * magnification, type_Header_location.sizeDelta.y * magnification);
-        type_Header_location_text.sizeDelta = new Vector2(type_Header_location_text.sizeDelta.x * magnification, type_Header_location_text.sizeDelta.y * magnification);
-        type_Header_item.sizeDelta = new Vector2(type_Header_item.sizeDelta.x * magnification, type_Header_item.sizeDelta.y * magnification);
-        type_Header_item_text.sizeDelta = new Vector2(type_Header_item_text.sizeDelta.x * magnification, type_Header_item_text.sizeDelta.y * magnification);
-        type_Header_song.sizeDelta = new Vector2(type_Header_song.sizeDelta.x * magnification, type_Header_song.sizeDelta.y * magnification);
-        type_Header_song_text.sizeDelta = new Vector2(type_Header_song_text.sizeDelta.x * magnification, type_Header_song_text.sizeDelta.y * magnification);
-
-        rarity_Header_common.sizeDelta = new Vector2(rarity_Header_common.sizeDelta.x * magnification, rarity_Header_common.sizeDelta.y * magnification);
-        rarity_Header_common_image.sizeDelta = new Vector2(rarity_Header_common_image.sizeDelta.x * magnification, rarity_Header_common_image.sizeDelta.y * magnification);
-        rarity_Header_uncommon.sizeDelta = new Vector2(rarity_Header_uncommon.sizeDelta.x * magnification, rarity_Header_uncommon.sizeDelta.y * magnification);
-        rarity_Header_uncommon_image.sizeDelta = new Vector2(rarity_Header_uncommon_image.sizeDelta.x * magnification, rarity_Header_uncommon_image.sizeDelta.y * magnification);
-        rarity_Header_rare.sizeDelta = new Vector2(rarity_Header_rare.sizeDelta.x * magnification, rarity_Header_rare.sizeDelta.y * magnification);
-        rarity_Header_rare_image.sizeDelta = new Vector2(rarity_Header_rare_image.sizeDelta.x * magnification, rarity_Header_rare_image.sizeDelta.y * magnification);
-        rarity_Header_superrare.sizeDelta = new Vector2(rarity_Header_superrare.sizeDelta.x * magnification, rarity_Header_superrare.sizeDelta.y * magnification);
-        rarity_Header_superrare_image.sizeDelta = new Vector2(rarity_Header_superrare_image.sizeDelta.x * magnification, rarity_Header_superrare_image.sizeDelta.y * magnification);
-        rarity_Header_legendary.sizeDelta = new Vector2(rarity_Header_legendary.sizeDelta.x * magnification, rarity_Header_legendary.sizeDelta.y * magnification);
-        rarity_Header_legendary_image.sizeDelta = new Vector2(rarity_Header_legendary_image.sizeDelta.x * magnification, rarity_Header_legendary_image.sizeDelta.y * magnification);
-        rarity_Header_enchanted.sizeDelta = new Vector2(rarity_Header_enchanted.sizeDelta.x * magnification, rarity_Header_enchanted.sizeDelta.y * magnification);
-        rarity_Header_enchanted_image.sizeDelta = new Vector2(rarity_Header_enchanted_image.sizeDelta.x * magnification, rarity_Header_enchanted_image.sizeDelta.y * magnification);
 
         keyword_header_left_bodyguard_btn.sizeDelta = new Vector2(keyword_header_left_bodyguard_btn.sizeDelta.x * magnification, keyword_header_left_bodyguard_btn.sizeDelta.y * magnification);
         keyword_header_left_challenger_btn.sizeDelta = new Vector2(keyword_header_left_challenger_btn.sizeDelta.x * magnification, keyword_header_left_challenger_btn.sizeDelta.y * magnification);

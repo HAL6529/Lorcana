@@ -21,6 +21,8 @@ public class YesOrNoDialog : MonoBehaviour
     public RectTransform Parent_space3;
 
     public Text m_Text;
+    public Text yesText;
+    public Text noText;
 
     public DialogManager m_DialogManager;
     private EnumController.YesOrNoParamater Paramater;
@@ -92,5 +94,15 @@ public class YesOrNoDialog : MonoBehaviour
         Parent_buttons_no.sizeDelta = new Vector2(Parent_buttons_no.sizeDelta.x * magnification_x, Parent_buttons_no.sizeDelta.y * magnification_y);
         Parent_buttons_space3.sizeDelta = new Vector2(Parent_buttons_space3.sizeDelta.x * magnification_x, Parent_buttons_space3.sizeDelta.y * magnification_y);
         Parent_space3.sizeDelta = new Vector2(Parent_space3.sizeDelta.x * magnification_x, Parent_space3.sizeDelta.y * magnification_y);
+
+        float magnification = magnification_x;
+        if (magnification_x > magnification_y)
+        {
+            magnification = magnification_y;
+        }
+
+        m_Text.fontSize = (int)(m_Text.fontSize * magnification);
+        yesText.fontSize = (int)(yesText.fontSize * magnification);
+        noText.fontSize = (int)(noText.fontSize * magnification);
     }
 }
