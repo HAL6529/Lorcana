@@ -1,0 +1,26 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class CardInfo_227_JA_11 : CardInfo
+{
+    public CardInfo_227_JA_11()
+    {
+        this.cardNo = "227_JA_11";
+        this.inkCost = 5;
+        this.availableInk = true;
+        this.cardName1 = "アナ";
+        this.cardName2 = "なごみの女王";
+        this.power = 5;
+        this.toughness = 5;
+        this.lore = 1;
+        this.illustrator = EnumController.Illustrator.GiuliaRiva;
+        this.classList = new List<EnumController.Class>() { EnumController.Class.FloodBorn, EnumController.Class.Hero, EnumController.Class.Queen };
+        this.color = new List<EnumController.Colors> { EnumController.Colors.Amethyst };
+        this.keywordAvility = new List<EnumController.KeywordAvility>();
+        this.expansion = EnumController.Expansion.WinterSpell;
+        this.title = EnumController.Title.Frozen;
+        this.type = EnumController.Type.Character;
+        this.rare = EnumController.Rare.Enchanted;
+    }
+}
