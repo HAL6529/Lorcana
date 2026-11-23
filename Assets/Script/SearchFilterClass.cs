@@ -25,7 +25,9 @@ public class SearchFilterClass
     public bool r_rare;
     public bool r_superrare;
     public bool r_legendary;
+    public bool r_epic;
     public bool r_enchanted;
+    public bool r_iconic;
 
     public int inkcost_lowerlimit;
     public int inkcost_upperlimit;
@@ -134,7 +136,9 @@ public class SearchFilterClass
         r_rare = true;
         r_superrare = true;
         r_legendary = true;
+        r_epic = true;
         r_enchanted = true;
+        r_iconic = true;
 
         inkcost_lowerlimit = 0;
         inkcost_upperlimit = 12;
@@ -337,7 +341,17 @@ public class SearchFilterClass
             rarityJudge = true;
         }
 
+        if (r_epic && rarity == EnumController.Rare.Epic)
+        {
+            rarityJudge = true;
+        }
+
         if (r_enchanted && rarity == EnumController.Rare.Enchanted)
+        {
+            rarityJudge = true;
+        }
+
+        if (r_iconic && rarity == EnumController.Rare.Iconic)
         {
             rarityJudge = true;
         }

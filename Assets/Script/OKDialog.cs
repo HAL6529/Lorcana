@@ -8,6 +8,7 @@ public class OKDialog : MonoBehaviour
     public DialogManager m_DialogManager;
 
     public Text m_Text;
+    public Text buttonText;
 
     public RectTransform Parent;
     public RectTransform header;
@@ -73,5 +74,8 @@ public class OKDialog : MonoBehaviour
             magnification = magnification_y;
         }
         okBtn.sizeDelta = new Vector2(okBtn.sizeDelta.x * magnification, okBtn.sizeDelta.y * magnification);
+
+        m_Text.fontSize = (int)(m_Text.fontSize * magnification);
+        buttonText.fontSize = (int)(buttonText.fontSize * magnification);
     }
 }
