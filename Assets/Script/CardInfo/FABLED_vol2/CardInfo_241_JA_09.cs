@@ -21,6 +21,6 @@ public class CardInfo_241_JA_09 : CardInfo
         this.expansion = EnumController.Expansion.Fabled_vol2;
         this.title = EnumController.Title.MickeyMouse;
         this.type = EnumController.Type.Character;
-        this.rare = EnumController.Rare.Enchanted;
+        this.rare = EnumController.Rare.Iconic;
     }
 }

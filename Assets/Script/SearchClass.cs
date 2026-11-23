@@ -29,7 +29,9 @@ public class SearchClass : MonoBehaviour
     public Image r_rareBtn;
     public Image r_superrareBtn;
     public Image r_legendaryBtn;
+    public Image r_epicBtn;
     public Image r_enchantedBtn;
+    public Image r_iconicBtn;
 
     public Image b_StoryBorn;
     public Image b_DreamBorn;
@@ -125,7 +127,9 @@ public class SearchClass : MonoBehaviour
     public bool r_rare;
     public bool r_superrare;
     public bool r_legendary;
+    public bool r_epic;
     public bool r_enchanted;
+    public bool r_iconic;
 
     public bool isAlly;
     public bool isAlien;
@@ -251,6 +255,8 @@ public class SearchClass : MonoBehaviour
     public RectTransform rarity_Header_left_space_2;
     public RectTransform rarity_Header_left_legendary;
     public RectTransform rarity_Header_left_space_3;
+    public RectTransform rarity_Header_left_enchanted;
+    public RectTransform rarity_Header_left_space_4;
     public RectTransform rarity_Header_space_2;
     public RectTransform rarity_Header_right;
     public RectTransform rarity_Header_right_space;
@@ -258,8 +264,10 @@ public class SearchClass : MonoBehaviour
     public RectTransform rarity_Header_right_space_1;
     public RectTransform rarity_Header_right_superrare;
     public RectTransform rarity_Header_right_space_2;
-    public RectTransform rarity_Header_right_enchanted;
+    public RectTransform rarity_Header_right_epic;
     public RectTransform rarity_Header_right_space_3;
+    public RectTransform rarity_Header_right_iconic;
+    public RectTransform rarity_Header_right_space_4;
     public RectTransform rarity_Header_space_3;
     public RectTransform space3_1;
     public RectTransform classExplanation_Header;
@@ -490,12 +498,11 @@ public class SearchClass : MonoBehaviour
     public RectTransform searchBtn_header;
     public RectTransform searchBtn;
     public RectTransform searchBtn_text;
+    public RectTransform space10;
     public RectTransform searchReset;
     public RectTransform searchReset_header;
     public RectTransform searchReset_header_text;
-    public RectTransform searchReset_header_text_text;
     public RectTransform searchReset_header_Button;
-    public RectTransform searchReset_header_space;
 
     public Dropdown m_InkLowerLimitDropdown;
     public Dropdown m_InkUpperLimitDropdown;
@@ -545,7 +552,9 @@ public class SearchClass : MonoBehaviour
         r_rare = true;
         r_superrare = true;
         r_legendary = true;
+        r_epic = true;
         r_enchanted = true;
+        r_iconic = true;
 
         isAlly = true;
         isAlien = true;
@@ -1944,7 +1953,9 @@ public class SearchClass : MonoBehaviour
         m_SearchFilterClass.r_rare = r_rare;
         m_SearchFilterClass.r_superrare = r_superrare;
         m_SearchFilterClass.r_legendary = r_legendary;
+        m_SearchFilterClass.r_epic = r_epic;
         m_SearchFilterClass.r_enchanted = r_enchanted;
+        m_SearchFilterClass.r_iconic = r_iconic;
 
         m_SearchFilterClass.isAlly = isAlly;
         m_SearchFilterClass.isAlien = isAlien;
@@ -2043,7 +2054,7 @@ public class SearchClass : MonoBehaviour
 
     public void onRarityBtn(string paramater)
     {
-        if (r_common && r_uncommon && r_rare && r_superrare && r_legendary && r_enchanted)
+        if (r_common && r_uncommon && r_rare && r_superrare && r_legendary && r_epic && r_enchanted && r_iconic)
         {
             r_common = false;
             r_commonBtn.color = new(70f / 255f, 70f / 255f, 70f / 255f, 255f);
@@ -2060,8 +2071,14 @@ public class SearchClass : MonoBehaviour
             r_legendary = false;
             r_legendaryBtn.color = new(70f / 255f, 70f / 255f, 70f / 255f, 255f);
 
+            r_epic = false;
+            r_epicBtn.color = new(70f / 255f, 70f / 255f, 70f / 255f, 255f);
+
             r_enchanted = false;
             r_enchantedBtn.color = new(70f / 255f, 70f / 255f, 70f / 255f, 255f);
+
+            r_iconic = false;
+            r_iconicBtn.color = new(70f / 255f, 70f / 255f, 70f / 255f, 255f);
         }
         switch (paramater)
         {
@@ -2125,6 +2142,18 @@ public class SearchClass : MonoBehaviour
                     r_legendaryBtn.color = new(1, 1, 1, 1);
                 }
                 break;
+            case "Epic":
+                if (r_epic)
+                {
+                    r_epic = false;
+                    r_epicBtn.color = new(70f / 255f, 70f / 255f, 70f / 255f, 255f);
+                }
+                else
+                {
+                    r_epic = true;
+                    r_epicBtn.color = new(1, 1, 1, 1);
+                }
+                break;
             case "Enchanted":
                 if (r_enchanted)
                 {
@@ -2135,6 +2164,18 @@ public class SearchClass : MonoBehaviour
                 {
                     r_enchanted = true;
                     r_enchantedBtn.color = new(1, 1, 1, 1);
+                }
+                break;
+            case "Iconic":
+                if (r_iconic)
+                {
+                    r_iconic = false;
+                    r_iconicBtn.color = new(70f / 255f, 70f / 255f, 70f / 255f, 255f);
+                }
+                else
+                {
+                    r_iconic = true;
+                    r_iconicBtn.color = new(1, 1, 1, 1);
                 }
                 break;
         }
@@ -2181,8 +2222,12 @@ public class SearchClass : MonoBehaviour
         r_superrareBtn.color = new(1, 1, 1, 1);
         r_legendary = true;
         r_legendaryBtn.color = new(1, 1, 1, 1);
+        r_epic = true;
+        r_epicBtn.color = new(1, 1, 1, 1);
         r_enchanted = true;
         r_enchantedBtn.color = new(1, 1, 1, 1);
+        r_iconic = true;
+        r_iconicBtn.color = new(1, 1, 1, 1);
 
         isAlly = true;
         isAlien = true;
@@ -2391,6 +2436,8 @@ public class SearchClass : MonoBehaviour
         rarity_Header_left_space_2.sizeDelta = new Vector2(rarity_Header_left_space_2.sizeDelta.x * magnification_x, rarity_Header_left_space_2.sizeDelta.y * magnification_y);
         rarity_Header_left_legendary.sizeDelta = new Vector2(rarity_Header_left_legendary.sizeDelta.x * magnification_x, rarity_Header_left_legendary.sizeDelta.y * magnification_y);
         rarity_Header_left_space_3.sizeDelta = new Vector2(rarity_Header_left_space_3.sizeDelta.x * magnification_x, rarity_Header_left_space_3.sizeDelta.y * magnification_y);
+        rarity_Header_left_enchanted.sizeDelta = new Vector2(rarity_Header_left_enchanted.sizeDelta.x * magnification_x, rarity_Header_left_enchanted.sizeDelta.y * magnification_y);
+        rarity_Header_left_space_4.sizeDelta = new Vector2(rarity_Header_left_space_4.sizeDelta.x * magnification_x, rarity_Header_left_space_4.sizeDelta.y * magnification_y);
         rarity_Header_space_2.sizeDelta = new Vector2(rarity_Header_space_2.sizeDelta.x * magnification_x, rarity_Header_space_2.sizeDelta.y * magnification_y);
         rarity_Header_right.sizeDelta = new Vector2(rarity_Header_right.sizeDelta.x * magnification_x, rarity_Header_right.sizeDelta.y * magnification_y);
         rarity_Header_right_space.sizeDelta = new Vector2(rarity_Header_right_space.sizeDelta.x * magnification_x, rarity_Header_right_space.sizeDelta.y * magnification_y);
@@ -2398,8 +2445,10 @@ public class SearchClass : MonoBehaviour
         rarity_Header_right_space_1.sizeDelta = new Vector2(rarity_Header_right_space_1.sizeDelta.x * magnification_x, rarity_Header_right_space_1.sizeDelta.y * magnification_y);
         rarity_Header_right_superrare.sizeDelta = new Vector2(rarity_Header_right_superrare.sizeDelta.x * magnification_x, rarity_Header_right_superrare.sizeDelta.y * magnification_y);
         rarity_Header_right_space_2.sizeDelta = new Vector2(rarity_Header_right_space_2.sizeDelta.x * magnification_x, rarity_Header_right_space_2.sizeDelta.y * magnification_y);
-        rarity_Header_right_enchanted.sizeDelta = new Vector2(rarity_Header_right_enchanted.sizeDelta.x * magnification_x, rarity_Header_right_enchanted.sizeDelta.y * magnification_y);
+        rarity_Header_right_epic.sizeDelta = new Vector2(rarity_Header_right_epic.sizeDelta.x * magnification_x, rarity_Header_right_epic.sizeDelta.y * magnification_y);
         rarity_Header_right_space_3.sizeDelta = new Vector2(rarity_Header_right_space_3.sizeDelta.x * magnification_x, rarity_Header_right_space_3.sizeDelta.y * magnification_y);
+        rarity_Header_right_iconic.sizeDelta = new Vector2(rarity_Header_right_iconic.sizeDelta.x * magnification_x, rarity_Header_right_iconic.sizeDelta.y * magnification_y);
+        rarity_Header_right_space_4.sizeDelta = new Vector2(rarity_Header_right_space_4.sizeDelta.x * magnification_x, rarity_Header_right_space_4.sizeDelta.y * magnification_y);
         rarity_Header_space_3.sizeDelta = new Vector2(rarity_Header_space_3.sizeDelta.x * magnification_x, rarity_Header_space_3.sizeDelta.y * magnification_y);
 
         rarity_Header.sizeDelta = new Vector2(rarity_Header.sizeDelta.x * magnification_x, rarity_Header.sizeDelta.y * magnification_y);
@@ -2639,12 +2688,12 @@ public class SearchClass : MonoBehaviour
 
         space9.sizeDelta = new Vector2(space9.sizeDelta.x * magnification_x, space9.sizeDelta.y * magnification_y);
         searchBtn_header.sizeDelta = new Vector2(searchBtn_header.sizeDelta.x * magnification_x, searchBtn_header.sizeDelta.y * magnification_y);
+
+        space10.sizeDelta = new Vector2(space10.sizeDelta.x * magnification_x, space10.sizeDelta.y * magnification_y);
         searchReset.sizeDelta = new Vector2(searchReset.sizeDelta.x * magnification_x, searchReset.sizeDelta.y * magnification_y);
         searchReset_header.sizeDelta = new Vector2(searchReset_header.sizeDelta.x * magnification_x, searchReset_header.sizeDelta.y * magnification_y);
         searchReset_header_text.sizeDelta = new Vector2(searchReset_header_text.sizeDelta.x * magnification_x, searchReset_header_text.sizeDelta.y * magnification_y);
-        searchReset_header_text_text.sizeDelta = new Vector2(searchReset_header_text_text.sizeDelta.x * magnification_x, searchReset_header_text_text.sizeDelta.y * magnification_y);
         searchReset_header_Button.sizeDelta = new Vector2(searchReset_header_Button.sizeDelta.x * magnification_x, searchReset_header_Button.sizeDelta.y * magnification_y);
-        searchReset_header_space.sizeDelta = new Vector2(searchReset_header_space.sizeDelta.x * magnification_x, searchReset_header_space.sizeDelta.y * magnification_y);
 
         float magnification = magnification_x;
         if (magnification_x > magnification_y)
