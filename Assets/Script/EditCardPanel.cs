@@ -254,8 +254,14 @@ public class EditCardPanel : MonoBehaviour
             case EnumController.Type.Item:
                 temp = "アイテム";
                 return temp;
+            case EnumController.Type.ItemHunny:
+                temp = "アイテム・ハニー";
+                return temp;
             case EnumController.Type.Location:
                 temp = "ロケーション";
+                return temp;
+            case EnumController.Type.LocationHunny:
+                temp = "ロケーション・ハニー";
                 return temp;
             default:
                 for (int i = 0; i < paramater.Count; i++)
