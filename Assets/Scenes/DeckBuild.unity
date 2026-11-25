@@ -66648,7 +66648,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_EditCardPanelManager: {fileID: 8361859508844763780}
-  max: 2288
+  max: 2533
 --- !u!222 &8392046684178512010
 CanvasRenderer:
   m_ObjectHideFlags: 0

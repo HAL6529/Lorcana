@@ -97,6 +97,7 @@ public class EnumController
         ComboShift6, //まとめて変身6
         DuoShift0, //おふたり変身0
         Evasive, //回避
+        FloodBornShift7, //フラッドボーン変身7
         MadrigalShift3, //マドリガル家変身3
         PuppyShift3, //子犬変身3
         PotatoShift5, //ポテト変身5
@@ -281,6 +282,7 @@ public class EnumController
         AndrewParisi, //Andrew Parisi
         AndrewPena, //Andrew Pena
         AndrewPenaAndAubreyArcher, // Andrew Pena / Aubrey Archer
+        AndrewPenaAndSergioMancinelli, // Andrew Pena / Sergio Mancinelli
         AndrewTheophilopoulos, //Andrew Theophilopoulos
         AndrewThompson, //Andrew Thompson
         AndrewTrabbold, //Andrew Trabbold
@@ -308,6 +310,7 @@ public class EnumController
         BeatriceBlueAndOttoParedes, // Beatrice Blue / Otto Paredes
         BenoMeli, //Beno Meli
         BeverlyArceAndJonathanLivslyst, //Beverly Arce / Jonathan Livslyst
+        BrettOwens, // Brett Owens
         BrianKesinger, //Brian Kesinger
         BriannaGarcia, //Brianna Garcia
         BrianWeisz, //Brian Weisz
@@ -328,6 +331,7 @@ public class EnumController
         CarlosRuiz, //Carlos Ruiz
         CarminePucci, //Carmine Pucci
         CarminePucciAndLeonardoGiammichele, //Carmine Pucci / Leonardo Giammichele
+        CaroWaro, //Caro Waro
         CaseyRobin, //Casey Robin
         CecileCarre, //Cecile Carre
         CecileCarreAndAnnaStosik, //Cecile Carre / Anna Stosik
@@ -388,6 +392,8 @@ public class EnumController
         ElliotBocxtaele, //Elliot Bocxtaele
         ElodieMondoloni, //Elodie Mondoloni
         EmilyAbeydeera, //EmilyAbeydeera
+        EricaDurso, //Erica D'urso
+        EricTan, // Eric Tan
         ErikaWiseman, //Erika Wiseman
         ErinShin, //Erin Shin
         EriWelli, //Eri Welli
@@ -501,6 +507,7 @@ public class EnumController
         KaitlinCuthbertson, //Kaitlin Cuthbertson
         KarenHallion, //Karen Hallion
         KasiaBrzezinska, //Kasia Brzezinska
+        KatlinCuthbertson, // Katlin Cuthbertson
         KatyaCyan, // Katya Cyan
         KeiYotsuba, //Kei Yotsuba
         KendallHale, //Kendall Hale
@@ -543,6 +550,7 @@ public class EnumController
         LuigiAime, //Luigi Aime
         LuisHuerta, //Luis Huerta
         LynnsMagicWorlds, // Lynn's Magic Worlds
+        LyleCruse, // Lyle Cruse
         M_K_Manderson_JochemVanGool, //M. K. Manderson / Jochem van Gool
         M_RobertDaviesAndL_Giammichele, //M. Robert Davies / L. Giammichele
         MaddieShilt, //Maddie Shilt
@@ -614,6 +622,7 @@ public class EnumController
         NicolettaBaldari,//Nicoletta Baldari
         NicolettaBaldariAndPatriBalanovsky, // Nicoletta Baldari / Patri Balanovsky
         Noukah, //Noukah
+        NuelSalinasAndPaloGraglia, //Nuel Salinas / Palo Graglia
         OggyChristiansson, //Oggy Christiansson
         OggysonArt, // Oggyson Art
         OlegYurkov, //OlegYurkov
@@ -704,6 +713,7 @@ public class EnumController
         TomBancroft, //Tom Bancroft
         TomBancroftAndKristenBreshears, // Tom Bancroft / Kristen Breshears
         TomekPietrzyk, // Tomek Pietrzyk
+        TomWhalen, // Tom Whalen
         ToniBruno, //Toni Bruno
         TonyBancroftAndLindsayWeyman, //Tony Bancroft / Lindsay Weyman
         UrsulaDorada, //Ursula Dorada
