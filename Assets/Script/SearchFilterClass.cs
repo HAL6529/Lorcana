@@ -304,6 +304,11 @@ public class SearchFilterClass
             typeJudge = true;
         }
 
+        if (a_isItem && type == EnumController.Type.ItemHunny)
+        {
+            typeJudge = true;
+        }
+
         if (a_isSong && type == EnumController.Type.Song)
         {
             typeJudge = true;
@@ -498,6 +503,16 @@ public class SearchFilterClass
         }
 
         if (isHunny && classList.Contains(EnumController.Class.Hunny))
+        {
+            classJudge = true;
+        }
+
+        if (isHunny && type == EnumController.Type.ItemHunny)
+        {
+            classJudge = true;
+        }
+
+        if (isHunny && type == EnumController.Type.LocationHunny)
         {
             classJudge = true;
         }
@@ -752,7 +767,12 @@ public class SearchFilterClass
         }
 
         if (isShift 
-            && (keywordList.Contains(EnumController.KeywordAvility.PuppyShift3)
+            && (keywordList.Contains(EnumController.KeywordAvility.ComboShift4)
+            || keywordList.Contains(EnumController.KeywordAvility.ComboShift6)
+            || keywordList.Contains(EnumController.KeywordAvility.DuoShift0)
+            || keywordList.Contains(EnumController.KeywordAvility.MadrigalShift3)
+            || keywordList.Contains(EnumController.KeywordAvility.PotatoShift5)
+            || keywordList.Contains(EnumController.KeywordAvility.PuppyShift3)
             || keywordList.Contains(EnumController.KeywordAvility.Shift1)
             || keywordList.Contains(EnumController.KeywordAvility.Shift2)
             || keywordList.Contains(EnumController.KeywordAvility.Shift3)
@@ -765,6 +785,10 @@ public class SearchFilterClass
             || keywordList.Contains(EnumController.KeywordAvility.ShiftDiscardAnLocationCard)
             || keywordList.Contains(EnumController.KeywordAvility.ShiftDiscardAnSongCard)
             || keywordList.Contains(EnumController.KeywordAvility.ShiftDiscard2Cards)
+            || keywordList.Contains(EnumController.KeywordAvility.TemporaryRedPandaShift2)
+            || keywordList.Contains(EnumController.KeywordAvility.TemporaryShift3)
+            || keywordList.Contains(EnumController.KeywordAvility.TemporaryShift4)
+            || keywordList.Contains(EnumController.KeywordAvility.TemporaryShift7)
             || keywordList.Contains(EnumController.KeywordAvility.UniversalShift4)))
         {
             keywordJudge = true;
@@ -790,7 +814,8 @@ public class SearchFilterClass
         }
 
         if (isSingTogether 
-            && (keywordList.Contains(EnumController.KeywordAvility.SingTogether6)
+            && (keywordList.Contains(EnumController.KeywordAvility.SingTogether5)
+            || keywordList.Contains(EnumController.KeywordAvility.SingTogether6)
             || keywordList.Contains(EnumController.KeywordAvility.SingTogether7)
             || keywordList.Contains(EnumController.KeywordAvility.SingTogether8)
             || keywordList.Contains(EnumController.KeywordAvility.SingTogether9)
