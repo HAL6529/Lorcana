@@ -11,7 +11,7 @@ public class EnumController
         Alien, //エイリアン
         Broom, //ほうき
         Captain, //キャプテン
-        Detective, //名探偵
+        Detective, //探偵
         Deity, //神格
         Dinosaur, //恐竜
         Dragon, //ドラゴン
@@ -48,7 +48,7 @@ public class EnumController
         Tigger, //ティガー
         Titan, //タイタン
         Toy, //トイ
-        Villain, //ヴィラン
+        Villain, //ヴィランズ
         Vineling, //ヴァインリング
     }
 

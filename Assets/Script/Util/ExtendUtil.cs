@@ -18,6 +18,8 @@ public class ExtendUtil
                 return "ほうき";
             case EnumController.Class.Captain:
                 return "キャプテン";
+            case EnumController.Class.Detective:
+                return "探偵";
             case EnumController.Class.Deity:
                 return "神格";
             case EnumController.Class.Dinosaur:
@@ -74,16 +76,16 @@ public class ExtendUtil
                 return "レッサーパンダ";
             case EnumController.Class.Robot:
                 return "ロボット";
-            case EnumController.Class.Super:
-                return "スーパー";
-            case EnumController.Class.Team:
-                return "チーム";
             case EnumController.Class.SevenDwarfs:
                 return "7人の小人";
             case EnumController.Class.StoryBorn:
                 return "ストーリーボーン";
             case EnumController.Class.Sorcerer:
                 return "魔法使い";
+            case EnumController.Class.Super:
+                return "スーパー";
+            case EnumController.Class.Team:
+                return "チーム";
             case EnumController.Class.Tigger:
                 return "ティガー";
             case EnumController.Class.Titan:
@@ -148,38 +150,58 @@ public class ExtendUtil
                 return "不思議の国のアリス";
             case EnumController.Title.AtlantisTheLostEmpire:
                 return "アトランティス 失われた帝国";
+            case EnumController.Title.Bambi:
+                return "バンビ";
             case EnumController.Title.BeautyAndTheBeast:
                 return "美女と野獣";
             case EnumController.Title.BigHero6:
                 return "ベイマックス";
             case EnumController.Title.Bolt:
                 return "ボルト";
+            case EnumController.Title.Brave:
+                return "メリダとおそろしの森";
             case EnumController.Title.BrotherBear:
                 return "ブラザー・ベア";
             case EnumController.Title.Chipmunk:
                 return "チップとデール";
             case EnumController.Title.Cinderella:
                 return "シンデレラ";
+            case EnumController.Title.Coco:
+                return "リメンバー・ミー";
+            case EnumController.Title.DarkwingDuck:
+                return "ダックにおまかせ ダークウィング・ダック";
             case EnumController.Title.DuckTales:
                 return "ダックテイル";
+            case EnumController.Title.Dumbo:
+                return "ダンボ";
             case EnumController.Title.Encanto:
                 return "ミラベルと魔法だらけの家";
             case EnumController.Title.Fantasia:
                 return "ファンタジア";
             case EnumController.Title.Frozen:
                 return "アナと雪の女王";
+            case EnumController.Title.Gargoyles:
+                return "ガーゴイルズ";
             case EnumController.Title.Hercules:
                 return "ヘラクレス";
             case EnumController.Title.TaleSpin:
                 return "テイルスピン";
             case EnumController.Title.Tangled:
                 return "塔の上のラプンツェル";
+            case EnumController.Title.TheAdventuresOfIchabodAndMrToad:
+                return "イカボードとトード氏";
             case EnumController.Title.TheAristocats:
                 return "おしゃれキャット";
+            case EnumController.Title.TheBlackCauldron:
+                return "コルドロン";
             case EnumController.Title.TheEmperorsNewGroove:
                 return "ラマになった王様";
+            case EnumController.Title.TheFoxAndTheHound:
+                return "きつねと猟犬";
             case EnumController.Title.TheGreatMouseDetective:
                 return "オリビアちゃんの大冒険";
+            case EnumController.Title.TheIncredibles:
+                return "Mr.インクレディブル";
             case EnumController.Title.TheJungleBook:
                 return "ジャングル・ブック";
             case EnumController.Title.TheLionKing:
@@ -194,8 +216,12 @@ public class ExtendUtil
                 return "王様の剣";
             case EnumController.Title.TheTaleOfAMouse:
                 return "The Tale of a Mouse";
+            case EnumController.Title.ToyStory:
+                return "トイ・ストーリー";
             case EnumController.Title.TreasurePlanet:
                 return "トレジャー・プラネット";
+            case EnumController.Title.TurningRed:
+                return "私ときどきレッサーパンダ";
             case EnumController.Title.LadyAndTheTramp:
                 return "わんわん物語";
             case EnumController.Title.LiloAndStitch:
@@ -216,6 +242,8 @@ public class ExtendUtil
                 return "ピーターパン";
             case EnumController.Title.Pinocchio:
                 return "ピノキオ";
+            case EnumController.Title.Pocahontas:
+                return "ポカホンタス";
             case EnumController.Title.RayaAndTheLastDragon:
                 return "ラーヤと龍の王国";
             case EnumController.Title.RobinHood:
@@ -224,6 +252,8 @@ public class ExtendUtil
                 return "眠れる森の美女";
             case EnumController.Title.SnowWhiteAndTheSevenDwarfs:
                 return "白雪姫";
+            case EnumController.Title.Up:
+                return "カールじいさんの空飛ぶ家";
             case EnumController.Title.WinnieThePooh:
                 return "クマのプーさん";
             case EnumController.Title.WreckItRalph:
@@ -243,48 +273,118 @@ public class ExtendUtil
                 return EnumController.Title.Aladdin;
             case "不思議の国のアリス":
                 return EnumController.Title.AliceInWonderland;
+            case "アトランティス 失われた帝国":
+                return EnumController.Title.AtlantisTheLostEmpire;
+            case "バンビ":
+                return EnumController.Title.Bambi;
             case "美女と野獣":
                 return EnumController.Title.BeautyAndTheBeast;
+            case "ベイマックス":
+                return EnumController.Title.BigHero6;
+            case "ボルト":
+                return EnumController.Title.Bolt;
+            case "メリダとおそろしの森":
+                return EnumController.Title.Brave;
+            case "ブラザー・ベア":
+                return EnumController.Title.BrotherBear;
+            case "チップとデール":
+                return EnumController.Title.Chipmunk;
             case "シンデレラ":
                 return EnumController.Title.Cinderella;
+            case "リメンバー・ミー":
+                return EnumController.Title.Coco;
+            case "ダックにおまかせ ダークウィング・ダック":
+                return EnumController.Title.DarkwingDuck;
+            case "ダックテイル":
+                return EnumController.Title.DuckTales;
+            case "ダンボ":
+                return EnumController.Title.Dumbo;
+            case "ミラベルと魔法だらけの家":
+                return EnumController.Title.Encanto;
             case "ファンタジア":
                 return EnumController.Title.Fantasia;
             case "アナと雪の女王":
                 return EnumController.Title.Frozen;
+            case "ガーゴイルズ":
+                return EnumController.Title.Gargoyles;
             case "ヘラクレス":
                 return EnumController.Title.Hercules;
+            case "テイルスピン":
+                return EnumController.Title.TaleSpin;
             case "塔の上のラプンツェル":
                 return EnumController.Title.Tangled;
-            case  "ラマになった王様":
+            case "イカボードとトード氏":
+                return EnumController.Title.TheAdventuresOfIchabodAndMrToad;
+            case "おしゃれキャット":
+                return EnumController.Title.TheAristocats;
+            case "コルドロン":
+                return EnumController.Title.TheBlackCauldron;
+            case "ラマになった王様":
                 return EnumController.Title.TheEmperorsNewGroove;
-            case  "ライオンキング":
+            case "きつねと猟犬":
+                return EnumController.Title.TheFoxAndTheHound;
+            case "オリビアちゃんの大冒険":
+                return EnumController.Title.TheGreatMouseDetective;
+            case "Mr.インクレディブル":
+                return EnumController.Title.TheIncredibles;
+            case "ジャングル・ブック":
+                return EnumController.Title.TheJungleBook;
+            case "ライオンキング":
                 return EnumController.Title.TheLionKing;
-            case  "リトル・マーメイド":
+            case "リトル・マーメイド":
                 return EnumController.Title.TheLittleMermaid;
-            case  "プリンセスと魔法のキス":
+            case "プリンセスと魔法のキス":
                 return EnumController.Title.ThePrincessAndTheFrog;
-            case  "王様の剣":
+            case "ビアンカの大冒険":
+                return EnumController.Title.TheRescuers;
+            case "王様の剣":
                 return EnumController.Title.TheSwordInTheStone;
-            case  "トレジャー・プラネット":
+            case "The Tale of a Mouse":
+                return EnumController.Title.TheTaleOfAMouse;
+            case "トイ・ストーリー":
+                return EnumController.Title.ToyStory;
+            case "トレジャー・プラネット":
                 return EnumController.Title.TreasurePlanet;
-            case  "リロ・アンド・スティッチ":
+            case "私ときどきレッサーパンダ":
+                return EnumController.Title.TurningRed;
+            case "わんわん物語":
+                return EnumController.Title.LadyAndTheTramp;
+            case "リロ・アンド・スティッチ":
                 return EnumController.Title.LiloAndStitch;
-            case  "ミッキーマウス":
+            case "ロルカナ":
+                return EnumController.Title.Lorcana;
+            case "ミッキーマウス":
                 return EnumController.Title.MickeyMouse;
-            case  "モアナと伝説の海":
+            case "モアナと伝説の海":
                 return EnumController.Title.Moana;
-            case  "ムーラン":
+            case "ムーラン":
                 return EnumController.Title.Mulan;
-            case  "101匹わんちゃん":
+            case "101匹わんちゃん":
                 return EnumController.Title.OneHundredAndOneDalmatians;
-            case  "ピーターパン":
+            case "オズワルド・ザ・ラッキー・ラビット":
+                return EnumController.Title.OswaldTheLuckyRabbit;
+            case "ピーターパン":
                 return EnumController.Title.PeterPan;
-            case  "ロビン・フッド":
+            case "ピノキオ":
+                return EnumController.Title.Pinocchio;
+            case "ポカホンタス":
+                return EnumController.Title.Pocahontas;
+            case "ラーヤと龍の王国":
+                return EnumController.Title.RayaAndTheLastDragon;
+            case "ロビン・フッド":
                 return EnumController.Title.RobinHood;
-            case  "眠れる森の美女":
+            case "眠れる森の美女":
                 return EnumController.Title.SleepingBeauty;
             case "白雪姫":
                 return EnumController.Title.SnowWhiteAndTheSevenDwarfs;
+            case "カールじいさんの空飛ぶ家":
+                return EnumController.Title.Up;
+            case "クマのプーさん":
+                return EnumController.Title.WinnieThePooh;
+            case "シュガーラッシュ":
+                return EnumController.Title.WreckItRalph;
+            case "ズートピア":
+                return EnumController.Title.Zootopia;
             default:
                 return EnumController.Title.None;
         }
