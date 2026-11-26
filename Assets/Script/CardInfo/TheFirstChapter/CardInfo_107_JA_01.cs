@@ -19,7 +19,7 @@ public class CardInfo_107_JA_01 : CardInfo
         this.color = new List<EnumController.Colors> { EnumController.Colors.Ruby };
         this.keywordAvility = new List<EnumController.KeywordAvility>();
         this.expansion = EnumController.Expansion.TheFirstChapter;
-        this.title = EnumController.Title.OneHundredAndOneDalmatians;
+        this.title = EnumController.Title.PeterPan;
         this.type = EnumController.Type.Character;
         this.rare = EnumController.Rare.Rare;
     }

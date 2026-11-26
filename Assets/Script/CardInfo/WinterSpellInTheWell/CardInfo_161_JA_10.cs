@@ -20,7 +20,7 @@ public class CardInfo_161_JA_10 : CardInfo
         this.keywordAvility = new List<EnumController.KeywordAvility>();
         this.expansion = EnumController.Expansion.WinterSpellInTheWell;
         this.title = EnumController.Title.TheBlackCauldron;
-        this.type = EnumController.Type.Character;
+        this.type = EnumController.Type.Action;
         this.rare = EnumController.Rare.Common;
     }
 }

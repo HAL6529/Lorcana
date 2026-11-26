@@ -155,7 +155,7 @@ public class EnumController
         SuccessFileCreate,
     }
 
-    //Titleを編集する場合は、ExtendUtilも修正すること。
+    //Titleを編集する場合は、ExtendUtil, SearchClassも修正すること。
     public enum Title
     {
         None,
