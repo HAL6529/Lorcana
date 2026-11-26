@@ -9,7 +9,7 @@ public class CardInfo_021_JA_02 : CardInfo
         this.cardNo = "021_JA_02";
         this.inkCost = 2;
         this.availableInk = true;
-        this.cardName1 = "ƒ‰ƒvƒ“ƒcƒFƒ‹";
+        this.cardName1 = "‚Ë‚Ú‚·‚¯";
         this.cardName2 = "‚¤‚Æ‚¤‚Æ";
         this.power = 2;
         this.toughness = 3;

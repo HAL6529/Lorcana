@@ -9,7 +9,7 @@ public class CardInfo_114_JA_11 : CardInfo
         this.cardNo = "114_JA_11";
         this.inkCost = 3;
         this.availableInk = true;
-        this.cardName1 = "アグナル！";
+        this.cardName1 = "アグナル";
         this.cardName2 = "アレンデールの王";
         this.power = 3;
         this.toughness = 4;

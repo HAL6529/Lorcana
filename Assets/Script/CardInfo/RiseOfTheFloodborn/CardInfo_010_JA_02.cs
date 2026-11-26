@@ -19,7 +19,7 @@ public class CardInfo_010_JA_02 : CardInfo
         this.color = new List<EnumController.Colors> { EnumController.Colors.Amber };
         this.keywordAvility = new List<EnumController.KeywordAvility>();
         this.expansion = EnumController.Expansion.RiseOfTheFloodBorn;
-        this.title = EnumController.Title.Cinderella;
+        this.title = EnumController.Title.SnowWhiteAndTheSevenDwarfs;
         this.type = EnumController.Type.Character;
         this.rare = EnumController.Rare.Common;
     }

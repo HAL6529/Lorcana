@@ -20,7 +20,7 @@ public class CardInfo_199_JA_10 : CardInfo
         this.keywordAvility = new List<EnumController.KeywordAvility>();
         this.expansion = EnumController.Expansion.WinterSpellInTheWell;
         this.title = EnumController.Title.TheGreatMouseDetective;
-        this.type = EnumController.Type.Character;
+        this.type = EnumController.Type.Item;
         this.rare = EnumController.Rare.Uncommon;
     }
 }

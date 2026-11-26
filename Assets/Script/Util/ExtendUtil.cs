@@ -232,6 +232,8 @@ public class ExtendUtil
                 return "ミッキーマウス";
             case EnumController.Title.Moana:
                 return "モアナと伝説の海";
+            case EnumController.Title.MonstersInc:
+                return "モンスターズインク";
             case EnumController.Title.Mulan:
                 return "ムーラン";
             case EnumController.Title.OneHundredAndOneDalmatians:
@@ -357,6 +359,8 @@ public class ExtendUtil
                 return EnumController.Title.MickeyMouse;
             case "モアナと伝説の海":
                 return EnumController.Title.Moana;
+            case "モンスターズインク":
+                return EnumController.Title.MonstersInc;
             case "ムーラン":
                 return EnumController.Title.Mulan;
             case "101匹わんちゃん":

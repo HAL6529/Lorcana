@@ -16,7 +16,7 @@ public class CardInfo_207_JA_11 : CardInfo
         this.lore = 2;
         this.illustrator = EnumController.Illustrator.FedericoMariaCugliari;
         this.classList = new List<EnumController.Class> { EnumController.Class.StoryBorn, EnumController.Class.Hero, EnumController.Class.Alien };
-        this.color = new List<EnumController.Colors> { EnumController.Colors.Steel };
+        this.color = new List<EnumController.Colors> { EnumController.Colors.Amber };
         this.keywordAvility = new List<EnumController.KeywordAvility>();
         this.expansion = EnumController.Expansion.WinterSpell;
         this.title = EnumController.Title.LiloAndStitch;
