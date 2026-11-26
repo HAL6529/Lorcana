@@ -15,7 +15,7 @@ public class CardInfo_002_JA_01 : CardInfo
         this.toughness = 3;
         this.lore = 1;
         this.illustrator = EnumController.Illustrator.AlicePisoni;
-        this.classList = new List<EnumController.Class> { EnumController.Class.Hero, EnumController.Class.Princess, EnumController.Class.StoryBorn};
+        this.classList = new List<EnumController.Class> { EnumController.Class.StoryBorn, EnumController.Class.Hero, EnumController.Class.Princess};
         this.color = new List<EnumController.Colors> { EnumController.Colors.Amber };
         this.keywordAvility = new List<EnumController.KeywordAvility>() { EnumController.KeywordAvility.Singer5 };
         this.expansion = EnumController.Expansion.TheFirstChapter;

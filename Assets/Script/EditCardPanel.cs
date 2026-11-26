@@ -270,7 +270,10 @@ public class EditCardPanel : MonoBehaviour
             default:
                 for (int i = 0; i < paramater.Count; i++)
                 {
-                    temp += ", ";
+                    if(i > 0)
+                    {
+                        temp += ", ";
+                    }
                     temp += m_ExtendUtil.ConvertToStringFromClass(paramater[i]);
                 }
                 return temp;
