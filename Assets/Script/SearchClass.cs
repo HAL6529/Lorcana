@@ -98,13 +98,14 @@ public class SearchClass : MonoBehaviour
     public Image ShiftBtn;
     public Image SingerBtn;
     public Image ResistBtn;
+    public Image AlertBtn;
     public Image SupportBtn;
     public Image RecklessBtn;
     public Image RushBtn;
     public Image WardBtn;
     public Image SingTogetherBtn;
     public Image VanishBtn;
-    public Image AlertBtn;
+    public Image AdventurousBtn;
 
     public bool isInkAvailable;
     public bool isInkDisavailable;
@@ -190,6 +191,8 @@ public class SearchClass : MonoBehaviour
     public bool isAttackOfTheVine;
     public bool isHyperiaCity;
 
+    public bool isAdventurous;
+    public bool isAlert;
     public bool isBodyGuard;
     public bool isChallenger;
     public bool isEvasive;
@@ -202,7 +205,6 @@ public class SearchClass : MonoBehaviour
     public bool isRush;
     public bool isVanish;
     public bool isWard;
-    public bool isAlert;
 
     public RectTransform parent;
     public RectTransform closeBtn_Header;
@@ -438,7 +440,10 @@ public class SearchClass : MonoBehaviour
     public RectTransform keyword_header_right_vanish_btn;
     public RectTransform keyword_header_right_vanish_space;
     public RectTransform keyword_header_right_vanish_text;
-    public RectTransform keyword_header_right_null;
+    public RectTransform keyword_header_right_adventurous;
+    public RectTransform keyword_header_right_adventurous_btn;
+    public RectTransform keyword_header_right_adventurous_space;
+    public RectTransform keyword_header_right_adventurous_text;
     public RectTransform space4;
     public RectTransform inkcostExplanation_header;
     public RectTransform inkcostExplanation_header_text;
@@ -615,13 +620,14 @@ public class SearchClass : MonoBehaviour
         isAttackOfTheVine = true;
         isHyperiaCity = true;
 
+        isAdventurous = false;
+        isAlert = false;
         isBodyGuard = false;
         isChallenger = false;
         isEvasive = false;
         isShift = false;
         isSinger = false;
         isResist = false;
-        isAlert = false;
         isSupport = false;
         isReckless = false;
         isRush = false;
@@ -1349,6 +1355,18 @@ public class SearchClass : MonoBehaviour
     {
         switch (paramater)
         {
+            case "Adventurous":
+                if (isAdventurous)
+                {
+                    this.isAdventurous = false;
+                    AdventurousBtn.sprite = s_checkbtn_off;
+                }
+                else
+                {
+                    this.isAdventurous = true;
+                    AdventurousBtn.sprite = s_checkbtn_on;
+                }
+                break;
             case "Alert":
                 if (isAlert)
                 {
@@ -2025,6 +2043,7 @@ public class SearchClass : MonoBehaviour
         m_SearchFilterClass.lores_lowerlimit = m_LoresLowerLimitDropdown.value;
         m_SearchFilterClass.lores_upperlimit = m_LoresUpperLimitDropdown.value;
 
+        m_SearchFilterClass.isAdventurous = isAdventurous;
         m_SearchFilterClass.isAlert = isAlert;
         m_SearchFilterClass.isBodyGuard = isBodyGuard;
         m_SearchFilterClass.isChallenger = isChallenger;
@@ -2347,6 +2366,8 @@ public class SearchClass : MonoBehaviour
         b_AttackOfTheVine.color = new(1, 1, 1, 1);
         b_HyperiaCity.color = new(1, 1, 1, 1);
 
+        isAdventurous = false;
+        AdventurousBtn.sprite = s_checkbtn_off;
         isAlert = false;
         AlertBtn.sprite = s_checkbtn_off;
         isBodyGuard = false;
@@ -2625,7 +2646,11 @@ public class SearchClass : MonoBehaviour
         keyword_header_right_vanish.sizeDelta = new Vector2(keyword_header_right_vanish.sizeDelta.x * magnification_x, keyword_header_right_vanish.sizeDelta.y * magnification_y);
         keyword_header_right_vanish_space.sizeDelta = new Vector2(keyword_header_right_vanish_space.sizeDelta.x * magnification_x, keyword_header_right_vanish_space.sizeDelta.y * magnification_y);
         keyword_header_right_vanish_text.sizeDelta = new Vector2(keyword_header_right_vanish_text.sizeDelta.x * magnification_x, keyword_header_right_vanish_text.sizeDelta.y * magnification_y);
-        keyword_header_right_null.sizeDelta = new Vector2(keyword_header_right_null.sizeDelta.x * magnification_x, keyword_header_right_null.sizeDelta.y * magnification_y);
+
+        keyword_header_right_adventurous.sizeDelta = new Vector2(keyword_header_right_adventurous.sizeDelta.x * magnification_x, keyword_header_right_adventurous.sizeDelta.y * magnification_y);
+        keyword_header_right_adventurous_space.sizeDelta = new Vector2(keyword_header_right_adventurous_space.sizeDelta.x * magnification_x, keyword_header_right_adventurous_space.sizeDelta.y * magnification_y);
+        keyword_header_right_adventurous_text.sizeDelta = new Vector2(keyword_header_right_adventurous_text.sizeDelta.x * magnification_x, keyword_header_right_adventurous_text.sizeDelta.y * magnification_y);
+
         space4.sizeDelta = new Vector2(space4.sizeDelta.x * magnification_x, space4.sizeDelta.y * magnification_y);
         inkcostExplanation_header.sizeDelta = new Vector2(inkcostExplanation_header.sizeDelta.x * magnification_x, inkcostExplanation_header.sizeDelta.y * magnification_y);
         inkcostExplanation_header_text.sizeDelta = new Vector2(inkcostExplanation_header_text.sizeDelta.x * magnification_x, inkcostExplanation_header_text.sizeDelta.y * magnification_y);
@@ -2722,6 +2747,7 @@ public class SearchClass : MonoBehaviour
         keyword_header_right_ward_btn.sizeDelta = new Vector2(keyword_header_right_ward_btn.sizeDelta.x * magnification, keyword_header_right_ward_btn.sizeDelta.y * magnification);
         keyword_header_right_singtogether_btn.sizeDelta = new Vector2(keyword_header_right_singtogether_btn.sizeDelta.x * magnification, keyword_header_right_singtogether_btn.sizeDelta.y * magnification);
         keyword_header_right_vanish_btn.sizeDelta = new Vector2(keyword_header_right_vanish_btn.sizeDelta.x * magnification, keyword_header_right_vanish_btn.sizeDelta.y * magnification);
+        keyword_header_right_adventurous_btn.sizeDelta = new Vector2(keyword_header_right_adventurous_btn.sizeDelta.x * magnification, keyword_header_right_adventurous_btn.sizeDelta.y * magnification);
 
         searchBtn.sizeDelta = new Vector2(searchBtn.sizeDelta.x * magnification, searchBtn.sizeDelta.y * magnification);
         searchBtn_text.sizeDelta = new Vector2(searchBtn_text.sizeDelta.x * magnification, searchBtn_text.sizeDelta.y * magnification);

@@ -253,24 +253,24 @@ public class EditCardPanel : MonoBehaviour
                 return temp;
             case EnumController.Type.Item:
                 temp = "アイテム";
-                return temp;
-            case EnumController.Type.ItemHunny:
-                temp = "アイテム・ハニー";
+                for (int i = 0; i < paramater.Count; i++)
+                {
+                    temp += ", ";
+                    temp += m_ExtendUtil.ConvertToStringFromClass(paramater[i]);
+                }
                 return temp;
             case EnumController.Type.Location:
                 temp = "ロケーション";
-                return temp;
-            case EnumController.Type.LocationHunny:
-                temp = "ロケーション・ハニー";
+                for (int i = 0; i < paramater.Count; i++)
+                {
+                    temp += ", ";
+                    temp += m_ExtendUtil.ConvertToStringFromClass(paramater[i]);
+                }
                 return temp;
             default:
                 for (int i = 0; i < paramater.Count; i++)
                 {
-                    if (i > 0)
-                    {
-                        temp += ", ";
-                    }
-
+                    temp += ", ";
                     temp += m_ExtendUtil.ConvertToStringFromClass(paramater[i]);
                 }
                 return temp;

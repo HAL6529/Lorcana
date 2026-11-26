@@ -97,6 +97,7 @@ public class SearchFilterClass
     public bool isAttackOfTheVine;
     public bool isHyperiaCity;
 
+    public bool isAdventurous;
     public bool isAlert;
     public bool isBodyGuard;
     public bool isChallenger;
@@ -208,6 +209,7 @@ public class SearchFilterClass
         isAttackOfTheVine = true;
         isHyperiaCity = true;
 
+        isAdventurous = false;
         isAlert = false;
         isBodyGuard = false;
         isChallenger = false;
@@ -300,11 +302,6 @@ public class SearchFilterClass
         }
 
         if (a_isItem && type == EnumController.Type.Item)
-        {
-            typeJudge = true;
-        }
-
-        if (a_isItem && type == EnumController.Type.ItemHunny)
         {
             typeJudge = true;
         }
@@ -503,16 +500,6 @@ public class SearchFilterClass
         }
 
         if (isHunny && classList.Contains(EnumController.Class.Hunny))
-        {
-            classJudge = true;
-        }
-
-        if (isHunny && type == EnumController.Type.ItemHunny)
-        {
-            classJudge = true;
-        }
-
-        if (isHunny && type == EnumController.Type.LocationHunny)
         {
             classJudge = true;
         }
@@ -740,6 +727,11 @@ public class SearchFilterClass
 
         List<EnumController.KeywordAvility> keywordList = m_CardInfo.GetKeywordAvility();
         bool keywordJudge = false;
+        if (isAdventurous && keywordList.Contains(EnumController.KeywordAvility.Adventurous))
+        {
+            keywordJudge = true;
+        }
+
         if (isAlert && keywordList.Contains(EnumController.KeywordAvility.Alert))
         {
             keywordJudge = true;
@@ -785,6 +777,7 @@ public class SearchFilterClass
             || keywordList.Contains(EnumController.KeywordAvility.ShiftDiscardAnLocationCard)
             || keywordList.Contains(EnumController.KeywordAvility.ShiftDiscardAnSongCard)
             || keywordList.Contains(EnumController.KeywordAvility.ShiftDiscard2Cards)
+            || keywordList.Contains(EnumController.KeywordAvility.ShiftRemove2InkDrops)
             || keywordList.Contains(EnumController.KeywordAvility.TemporaryRedPandaShift2)
             || keywordList.Contains(EnumController.KeywordAvility.TemporaryShift3)
             || keywordList.Contains(EnumController.KeywordAvility.TemporaryShift4)
@@ -795,11 +788,13 @@ public class SearchFilterClass
         }
 
         if (isSinger 
-            && (keywordList.Contains(EnumController.KeywordAvility.Singer3)
+            && (keywordList.Contains(EnumController.KeywordAvility.Singer2)
+            || keywordList.Contains(EnumController.KeywordAvility.Singer3)
             || keywordList.Contains(EnumController.KeywordAvility.Singer4)
             || keywordList.Contains(EnumController.KeywordAvility.Singer5)
             || keywordList.Contains(EnumController.KeywordAvility.Singer6)
             || keywordList.Contains(EnumController.KeywordAvility.Singer7)
+            || keywordList.Contains(EnumController.KeywordAvility.Singer8)
             || keywordList.Contains(EnumController.KeywordAvility.Singer9)))
         {
             keywordJudge = true;
@@ -814,7 +809,8 @@ public class SearchFilterClass
         }
 
         if (isSingTogether 
-            && (keywordList.Contains(EnumController.KeywordAvility.SingTogether5)
+            && (keywordList.Contains(EnumController.KeywordAvility.SingTogether3)
+            || keywordList.Contains(EnumController.KeywordAvility.SingTogether5)
             || keywordList.Contains(EnumController.KeywordAvility.SingTogether6)
             || keywordList.Contains(EnumController.KeywordAvility.SingTogether7)
             || keywordList.Contains(EnumController.KeywordAvility.SingTogether8)
@@ -849,7 +845,7 @@ public class SearchFilterClass
             keywordJudge = true;
         }
 
-        if (!isAlert && !isBodyGuard && !isChallenger && !isEvasive && !isShift && !isSinger && !isResist && !isSupport && !isReckless && !isRush && !isWard && !isSingTogether && !isVanish)
+        if (!isAdventurous && !isAlert && !isBodyGuard && !isChallenger && !isEvasive && !isShift && !isSinger && !isResist && !isSupport && !isReckless && !isRush && !isWard && !isSingTogether && !isVanish)
         {
             keywordJudge = true;
         }
