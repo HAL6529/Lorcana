@@ -15,12 +15,12 @@ public class CardInfo_174_JA_13 : CardInfo
         this.toughness = -1;
         this.lore = -1;
         this.illustrator = EnumController.Illustrator.KaitlinCuthbertson;
-        this.classList = new List<EnumController.Class>();
+        this.classList = new List<EnumController.Class> { EnumController.Class.Hunny };
         this.color = new List<EnumController.Colors> { EnumController.Colors.Sapphire };
         this.keywordAvility = new List<EnumController.KeywordAvility>();
         this.expansion = EnumController.Expansion.AttackOfTheVine;
         this.title = EnumController.Title.WinnieThePooh;
-        this.type = EnumController.Type.ItemHunny;
+        this.type = EnumController.Type.Item;
         this.rare = EnumController.Rare.Uncommon;
     }
 }
