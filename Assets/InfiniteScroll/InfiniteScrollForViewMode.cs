@@ -1,0 +1,192 @@
+using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.EventSystems;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+public class InfiniteScrollForViewMode : UIBehaviour
+{
+    [SerializeField] private RectTransform CanvasRectTransform;
+
+    [SerializeField] private RectTransform ContentRectTransform;
+
+    [SerializeField] private EditCardPanelManager m_EditCardPanelManager;
+
+    [SerializeField] private ViewMode m_ViewMode;
+
+    private float magnification_y;
+    [SerializeField]
+    private RectTransform itemPrototype;
+
+    [SerializeField, Range(0, 30)]
+    int instantateItemCount = 9;
+
+    [SerializeField]
+    private Direction direction;
+
+    public OnItemPositionChange onUpdateItem = new OnItemPositionChange();
+
+    [System.NonSerialized]
+    public LinkedList<RectTransform> itemList = new LinkedList<RectTransform>();
+
+    protected float diffPreFramePosition = 0;
+
+    protected int currentItemNo = 0;
+
+    public enum Direction
+    {
+        Vertical,
+        Horizontal,
+    }
+
+    // cache component
+
+    private RectTransform _rectTransform;
+    protected RectTransform rectTransform
+    {
+        get
+        {
+            if (_rectTransform == null) _rectTransform = GetComponent<RectTransform>();
+            return _rectTransform;
+        }
+    }
+
+    private float anchoredPosition
+    {
+        get
+        {
+            return direction == Direction.Vertical ? -rectTransform.anchoredPosition.y : rectTransform.anchoredPosition.x;
+        }
+    }
+
+    private float _itemScale = -1;
+    public float itemScale
+    {
+        get
+        {
+            if (itemPrototype != null && _itemScale == -1)
+            {
+                _itemScale = direction == Direction.Vertical ? itemPrototype.sizeDelta.y * magnification_y : itemPrototype.sizeDelta.x;
+            }
+            return _itemScale;
+        }
+    }
+
+    protected override void Start()
+    {
+        magnification_y = CanvasRectTransform.sizeDelta.y / 1920;
+        var controllers = GetComponents<MonoBehaviour>()
+                .Where(item => item is IInfiniteScrollSetup)
+                .Select(item => item as IInfiniteScrollSetup)
+                .ToList();
+
+        // create items
+
+        var scrollRect = GetComponentInParent<ScrollRect>();
+        scrollRect.horizontal = direction == Direction.Horizontal;
+        scrollRect.vertical = direction == Direction.Vertical;
+        scrollRect.content = rectTransform;
+
+        itemPrototype.gameObject.SetActive(false);
+
+        for (int i = 0; i < instantateItemCount; i++)
+        {
+            var item = GameObject.Instantiate(itemPrototype) as RectTransform;
+            item.SetParent(transform, false);
+            item.name = i.ToString();
+            item.anchoredPosition = direction == Direction.Vertical ? new Vector2(0, -itemScale * i) : new Vector2(itemScale * i, 0);
+            itemList.AddLast(item);
+
+            item.gameObject.SetActive(true);
+
+            foreach (var controller in controllers)
+            {
+                controller.OnUpdateItem(i, item.gameObject);
+            }
+        }
+
+        foreach (var controller in controllers)
+        {
+            controller.OnPostSetupItems();
+        }
+    }
+
+    void Update()
+    {
+        if (itemList.First == null)
+        {
+            return;
+        }
+
+        while (anchoredPosition - diffPreFramePosition < -itemScale * 2)
+        {
+            diffPreFramePosition -= itemScale;
+
+            var item = itemList.First.Value;
+            itemList.RemoveFirst();
+            itemList.AddLast(item);
+
+            var pos = itemScale * instantateItemCount + itemScale * currentItemNo;
+            item.anchoredPosition = (direction == Direction.Vertical) ? new Vector2(0, -pos) : new Vector2(pos, 0);
+
+            onUpdateItem.Invoke(currentItemNo + instantateItemCount, item.gameObject);
+
+            currentItemNo++;
+        }
+
+        while (anchoredPosition - diffPreFramePosition > 0)
+        {
+            diffPreFramePosition += itemScale;
+
+            var item = itemList.Last.Value;
+            itemList.RemoveLast();
+            itemList.AddFirst(item);
+
+            currentItemNo--;
+
+            var pos = itemScale * currentItemNo;
+            item.anchoredPosition = (direction == Direction.Vertical) ? new Vector2(0, -pos) : new Vector2(pos, 0);
+            onUpdateItem.Invoke(currentItemNo, item.gameObject);
+        }
+    }
+
+    public void onResetValue()
+    {
+        diffPreFramePosition = 0;
+        currentItemNo = 0;
+        int cnt = 0;
+
+        ContentRectTransform.anchoredPosition = Vector2.zero;
+
+        int c_size = 0;
+        if (m_ViewMode.m_GetMytEditCardPanelTempList.Count > 0)
+        {
+            if(m_ViewMode.m_GetMytEditCardPanelTempList.Count % 5 > 0)
+            {
+                
+                c_size = (int)(Math.Truncate((double)m_ViewMode.m_GetMytEditCardPanelTempList.Count / 5) + 1);
+            }
+            else
+            {
+                c_size = (int)(Math.Truncate((double)m_ViewMode.m_GetMytEditCardPanelTempList.Count / 5));
+            }
+
+        }
+
+        float size_Y = itemScale * c_size;
+        Vector2 vector2 = ContentRectTransform.sizeDelta;
+        ContentRectTransform.sizeDelta = new Vector2(vector2.x , size_Y);
+
+        foreach (var item in itemList)
+        {
+            var pos = itemScale * cnt;
+            item.anchoredPosition = (direction == Direction.Vertical) ? new Vector2(0, -pos) : new Vector2(pos, 0);
+            onUpdateItem.Invoke(cnt, item.gameObject);
+            cnt++;
+        }
+    }
+
+    [System.Serializable]
+    public class OnItemPositionChange : UnityEngine.Events.UnityEvent<int, GameObject> { }
+}

@@ -6,8 +6,7 @@ using UnityEngine.UI;
 public class ViewMode : MonoBehaviour
 {
     public EditCardPanelManager m_EditCardPanelManager;
-    public List<Image> deckImageList = new List<Image>();
-    public List<ViewMode_Image> ViewMode_Image_List = new List<ViewMode_Image>();
+    public List<EditCardPanelTemp> m_GetMytEditCardPanelTempList = new List<EditCardPanelTemp>();
     public Text DeckNameText;
     public Image FavoriteCard;
     public Image BackGround1;
@@ -62,36 +61,11 @@ public class ViewMode : MonoBehaviour
     public RectTransform hand_line3;
     public List<RectTransform> hand_line3_list = new List<RectTransform>();
     public RectTransform scrollView;
-    public RectTransform scrollView_line1;
-    public RectTransform scrollView_line2;
-    public RectTransform scrollView_line3;
-    public RectTransform scrollView_line4;
-    public RectTransform scrollView_line5;
-    public RectTransform scrollView_line6;
-    public RectTransform scrollView_line7;
-    public RectTransform scrollView_line8;
-    public RectTransform scrollView_line9;
-    public RectTransform scrollView_line10;
-    public RectTransform scrollView_line11;
-    public RectTransform scrollView_line12;
-    public RectTransform scrollView_line13;
-    public List<RectTransform> scrollView_line1_list = new List<RectTransform>();
-    public List<RectTransform> scrollView_line2_list = new List<RectTransform>();
-    public List<RectTransform> scrollView_line3_list = new List<RectTransform>();
-    public List<RectTransform> scrollView_line4_list = new List<RectTransform>();
-    public List<RectTransform> scrollView_line5_list = new List<RectTransform>();
-    public List<RectTransform> scrollView_line6_list = new List<RectTransform>();
-    public List<RectTransform> scrollView_line7_list = new List<RectTransform>();
-    public List<RectTransform> scrollView_line8_list = new List<RectTransform>();
-    public List<RectTransform> scrollView_line9_list = new List<RectTransform>();
-    public List<RectTransform> scrollView_line10_list = new List<RectTransform>();
-    public List<RectTransform> scrollView_line11_list = new List<RectTransform>();
-    public List<RectTransform> scrollView_line12_list = new List<RectTransform>();
-    public List<RectTransform> scrollView_line13_list = new List<RectTransform>();
 
     public SaveDataStatic m_SaveDataStatic = new SaveDataStatic();
     private ExtendUtil m_ExtendUtil = new ExtendUtil();
     public Menu_ConvertSpriteFromCardNo m_Menu_ConvertSpriteFromCardNo;
+    [SerializeField] private InfiniteScrollForViewMode m_InfiniteScrollForViewMode;
 
     private List<EnumController.Colors> colors = new List<EnumController.Colors>();
 
@@ -306,26 +280,8 @@ public class ViewMode : MonoBehaviour
 
     public void UpdateDeckList()
     {
-        List<CardInfo> DeckList = m_EditCardPanelManager.GetDeckList();
-        for (int i = 0; i < ViewMode_Image_List.Count; i++)
-        {
-            if(i < DeckList.Count)
-            {
-                Sprite sprite = m_Menu_ConvertSpriteFromCardNo.ConvertSpriteFromCardNo(DeckList[i].GetCardNo());
-                ViewMode_Image_List[i].SetImage(sprite, true);
-            }
-            else
-            {
-                if (i < DeckList.Count + (130 - DeckList.Count) % 10)
-                {
-                    ViewMode_Image_List[i].SetImage(null, true);
-                }
-                else
-                {
-                    ViewMode_Image_List[i].SetImage(null, false);
-                }
-            }
-        }
+        m_GetMytEditCardPanelTempList = m_EditCardPanelManager.GetMytEditCardPanelTempList();
+        m_InfiniteScrollForViewMode.onResetValue();
     }
 
     private void UpdateDeckName()
@@ -381,82 +337,6 @@ public class ViewMode : MonoBehaviour
         header_header_line3_mark5.sizeDelta = new Vector2(header_header_line3_mark5.sizeDelta.x * magnification, header_header_line3_mark5.sizeDelta.y * magnification);
         header_header_line3_mark6.sizeDelta = new Vector2(header_header_line3_mark6.sizeDelta.x * magnification, header_header_line3_mark6.sizeDelta.y * magnification);
         scrollView.sizeDelta = new Vector2(scrollView.sizeDelta.x * magnification, scrollView.sizeDelta.y * magnification);
-        scrollView_line1.sizeDelta = new Vector2(scrollView_line1.sizeDelta.x * magnification, scrollView_line1.sizeDelta.y * magnification);
-        scrollView_line2.sizeDelta = new Vector2(scrollView_line2.sizeDelta.x * magnification, scrollView_line2.sizeDelta.y * magnification);
-        scrollView_line3.sizeDelta = new Vector2(scrollView_line3.sizeDelta.x * magnification, scrollView_line3.sizeDelta.y * magnification);
-        scrollView_line4.sizeDelta = new Vector2(scrollView_line4.sizeDelta.x * magnification, scrollView_line4.sizeDelta.y * magnification);
-        scrollView_line5.sizeDelta = new Vector2(scrollView_line5.sizeDelta.x * magnification, scrollView_line5.sizeDelta.y * magnification);
-        scrollView_line6.sizeDelta = new Vector2(scrollView_line6.sizeDelta.x * magnification, scrollView_line6.sizeDelta.y * magnification);
-        scrollView_line7.sizeDelta = new Vector2(scrollView_line7.sizeDelta.x * magnification, scrollView_line7.sizeDelta.y * magnification);
-        scrollView_line8.sizeDelta = new Vector2(scrollView_line8.sizeDelta.x * magnification, scrollView_line8.sizeDelta.y * magnification);
-        scrollView_line9.sizeDelta = new Vector2(scrollView_line9.sizeDelta.x * magnification, scrollView_line9.sizeDelta.y * magnification);
-        scrollView_line10.sizeDelta = new Vector2(scrollView_line10.sizeDelta.x * magnification, scrollView_line10.sizeDelta.y * magnification);
-        scrollView_line11.sizeDelta = new Vector2(scrollView_line11.sizeDelta.x * magnification, scrollView_line11.sizeDelta.y * magnification);
-        scrollView_line12.sizeDelta = new Vector2(scrollView_line12.sizeDelta.x * magnification, scrollView_line12.sizeDelta.y * magnification);
-        scrollView_line13.sizeDelta = new Vector2(scrollView_line13.sizeDelta.x * magnification, scrollView_line13.sizeDelta.y * magnification);
-
-        for (int i = 0; i < hand_line1_list.Count; i++)
-        {
-            hand_line1_list[i].sizeDelta = new Vector2(hand_line1_list[i].sizeDelta.x * magnification, hand_line1_list[i].sizeDelta.y * magnification);
-        }
-
-        for (int i = 0; i < hand_line3_list.Count; i++)
-        {
-            hand_line3_list[i].sizeDelta = new Vector2(hand_line3_list[i].sizeDelta.x * magnification, hand_line3_list[i].sizeDelta.y * magnification);
-        }
-
-        for (int i = 0; i < scrollView_line1_list.Count; i++)
-        {
-            scrollView_line1_list[i].sizeDelta = new Vector2(scrollView_line1_list[i].sizeDelta.x * magnification, scrollView_line1_list[i].sizeDelta.y * magnification);
-        }
-        for (int i = 0; i < scrollView_line2_list.Count; i++)
-        {
-            scrollView_line2_list[i].sizeDelta = new Vector2(scrollView_line2_list[i].sizeDelta.x * magnification, scrollView_line2_list[i].sizeDelta.y * magnification);
-        }
-        for (int i = 0; i < scrollView_line3_list.Count; i++)
-        {
-            scrollView_line3_list[i].sizeDelta = new Vector2(scrollView_line3_list[i].sizeDelta.x * magnification, scrollView_line3_list[i].sizeDelta.y * magnification);
-        }
-        for (int i = 0; i < scrollView_line4_list.Count; i++)
-        {
-            scrollView_line4_list[i].sizeDelta = new Vector2(scrollView_line4_list[i].sizeDelta.x * magnification, scrollView_line4_list[i].sizeDelta.y * magnification);
-        }
-        for (int i = 0; i < scrollView_line5_list.Count; i++)
-        {
-            scrollView_line5_list[i].sizeDelta = new Vector2(scrollView_line5_list[i].sizeDelta.x * magnification, scrollView_line5_list[i].sizeDelta.y * magnification);
-        }
-        for (int i = 0; i < scrollView_line6_list.Count; i++)
-        {
-            scrollView_line6_list[i].sizeDelta = new Vector2(scrollView_line6_list[i].sizeDelta.x * magnification, scrollView_line6_list[i].sizeDelta.y * magnification);
-        }
-        for (int i = 0; i < scrollView_line7_list.Count; i++)
-        {
-            scrollView_line7_list[i].sizeDelta = new Vector2(scrollView_line7_list[i].sizeDelta.x * magnification, scrollView_line7_list[i].sizeDelta.y * magnification);
-        }
-        for (int i = 0; i < scrollView_line8_list.Count; i++)
-        {
-            scrollView_line8_list[i].sizeDelta = new Vector2(scrollView_line8_list[i].sizeDelta.x * magnification, scrollView_line8_list[i].sizeDelta.y * magnification);
-        }
-        for (int i = 0; i < scrollView_line9_list.Count; i++)
-        {
-            scrollView_line9_list[i].sizeDelta = new Vector2(scrollView_line9_list[i].sizeDelta.x * magnification, scrollView_line9_list[i].sizeDelta.y * magnification);
-        }
-        for (int i = 0; i < scrollView_line10_list.Count; i++)
-        {
-            scrollView_line10_list[i].sizeDelta = new Vector2(scrollView_line10_list[i].sizeDelta.x * magnification, scrollView_line10_list[i].sizeDelta.y * magnification);
-        }
-        for (int i = 0; i < scrollView_line11_list.Count; i++)
-        {
-            scrollView_line11_list[i].sizeDelta = new Vector2(scrollView_line11_list[i].sizeDelta.x * magnification, scrollView_line11_list[i].sizeDelta.y * magnification);
-        }
-        for (int i = 0; i < scrollView_line12_list.Count; i++)
-        {
-            scrollView_line12_list[i].sizeDelta = new Vector2(scrollView_line12_list[i].sizeDelta.x * magnification, scrollView_line12_list[i].sizeDelta.y * magnification);
-        }
-        for (int i = 0; i < scrollView_line13_list.Count; i++)
-        {
-            scrollView_line13_list[i].sizeDelta = new Vector2(scrollView_line13_list[i].sizeDelta.x * magnification, scrollView_line13_list[i].sizeDelta.y * magnification);
-        }
 
         Vector2 left_position = new Vector2(0, 1);
         Vector2 right_position = new Vector2(1, 1);
@@ -654,83 +534,5 @@ public class ViewMode : MonoBehaviour
         scrollView.anchorMax = left_position;
         scrollView.pivot = left_position;
         scrollView.anchoredPosition = new Vector2((Parent.sizeDelta.x - scrollView.sizeDelta.x) / 2, (header.sizeDelta.y + hand.sizeDelta.y) * (-1));
-
-        float scrollView_Y = 0;
-        scrollView_line1.anchorMin = left_position;
-        scrollView_line1.anchorMax = left_position;
-        scrollView_line1.pivot = left_position;
-        scrollView_line1.anchoredPosition = Vector2.zero;
-
-        scrollView_Y += scrollView_line1.sizeDelta.y;
-        scrollView_line2.anchorMin = left_position;
-        scrollView_line2.anchorMax = left_position;
-        scrollView_line2.pivot = left_position;
-        scrollView_line2.anchoredPosition = new Vector2(0, scrollView_Y * (-1));
-
-        scrollView_Y += scrollView_line2.sizeDelta.y;
-        scrollView_line3.anchorMin = left_position;
-        scrollView_line3.anchorMax = left_position;
-        scrollView_line3.pivot = left_position;
-        scrollView_line3.anchoredPosition = new Vector2(0, scrollView_Y * (-1));
-
-        scrollView_Y += scrollView_line3.sizeDelta.y;
-        scrollView_line4.anchorMin = left_position;
-        scrollView_line4.anchorMax = left_position;
-        scrollView_line4.pivot = left_position;
-        scrollView_line4.anchoredPosition = new Vector2(0, scrollView_Y * (-1));
-
-        scrollView_Y += scrollView_line4.sizeDelta.y;
-        scrollView_line5.anchorMin = left_position;
-        scrollView_line5.anchorMax = left_position;
-        scrollView_line5.pivot = left_position;
-        scrollView_line5.anchoredPosition = new Vector2(0, scrollView_Y * (-1));
-
-        scrollView_Y += scrollView_line5.sizeDelta.y;
-        scrollView_line6.anchorMin = left_position;
-        scrollView_line6.anchorMax = left_position;
-        scrollView_line6.pivot = left_position;
-        scrollView_line6.anchoredPosition = new Vector2(0, scrollView_Y * (-1));
-
-        scrollView_Y += scrollView_line6.sizeDelta.y;
-        scrollView_line7.anchorMin = left_position;
-        scrollView_line7.anchorMax = left_position;
-        scrollView_line7.pivot = left_position;
-        scrollView_line7.anchoredPosition = new Vector2(0, scrollView_Y * (-1));
-
-        scrollView_Y += scrollView_line7.sizeDelta.y;
-        scrollView_line8.anchorMin = left_position;
-        scrollView_line8.anchorMax = left_position;
-        scrollView_line8.pivot = left_position;
-        scrollView_line8.anchoredPosition = new Vector2(0, scrollView_Y * (-1));
-
-        scrollView_Y += scrollView_line8.sizeDelta.y;
-        scrollView_line9.anchorMin = left_position;
-        scrollView_line9.anchorMax = left_position;
-        scrollView_line9.pivot = left_position;
-        scrollView_line9.anchoredPosition = new Vector2(0, scrollView_Y * (-1));
-
-        scrollView_Y += scrollView_line9.sizeDelta.y;
-        scrollView_line10.anchorMin = left_position;
-        scrollView_line10.anchorMax = left_position;
-        scrollView_line10.pivot = left_position;
-        scrollView_line10.anchoredPosition = new Vector2(0, scrollView_Y * (-1));
-
-        scrollView_Y += scrollView_line10.sizeDelta.y;
-        scrollView_line11.anchorMin = left_position;
-        scrollView_line11.anchorMax = left_position;
-        scrollView_line11.pivot = left_position;
-        scrollView_line11.anchoredPosition = new Vector2(0, scrollView_Y * (-1));
-
-        scrollView_Y += scrollView_line11.sizeDelta.y;
-        scrollView_line12.anchorMin = left_position;
-        scrollView_line12.anchorMax = left_position;
-        scrollView_line12.pivot = left_position;
-        scrollView_line12.anchoredPosition = new Vector2(0, scrollView_Y * (-1));
-
-        scrollView_Y += scrollView_line12.sizeDelta.y;
-        scrollView_line13.anchorMin = left_position;
-        scrollView_line13.anchorMax = left_position;
-        scrollView_line13.pivot = left_position;
-        scrollView_line13.anchoredPosition = new Vector2(0, scrollView_Y * (-1));
     }
 }

@@ -1320,6 +1320,7 @@
     <Compile Include="Assets\Script\CardInfo\HyperiaCity\CardInfo_136_JA_14.cs" />
     <Compile Include="Assets\Script\CardInfo\WildsUnknown\CardInfo_144_JA_12.cs" />
     <Compile Include="Assets\Script\CardInfo\TheFirstChapter\CardInfo_072_JA_01.cs" />
+    <Compile Include="Assets\InfiniteScroll\InfiniteScrollForViewMode.cs" />
     <Compile Include="Assets\Script\CardInfo\ReignOfJafer\CardInfo_040_JA_08.cs" />
     <Compile Include="Assets\Script\CardInfo\ArchaziasIsland\CardInfo_208_JA_07.cs" />
     <Compile Include="Assets\Script\CardInfo\UrsulasReturn\CardInfo_118_JA_04.cs" />
@@ -1360,6 +1361,7 @@
     <Compile Include="Assets\Script\CardInfo\ReignOfJafer\CardInfo_029_JA_08.cs" />
     <Compile Include="Assets\Script\CardInfo\UrsulasReturn\CardInfo_052_JA_04.cs" />
     <Compile Include="Assets\Script\CardInfo\ReignOfJafer\CardInfo_146_JA_08.cs" />
+    <Compile Include="Assets\ViewModeItemControllerLimited.cs" />
     <Compile Include="Assets\Script\CardInfo\AzuriteSea\CardInfo_199_JA_06.cs" />
     <Compile Include="Assets\Script\CardInfo\ShimmeringSkies\CardInfo_017_JA_05.cs" />
     <Compile Include="Assets\Script\CardInfo\ReignOfJafer\CardInfo_054_JA_08.cs" />
@@ -2863,6 +2865,7 @@
     <Compile Include="Assets\Script\CardInfo\ReignOfJafer\CardInfo_187_JA_08.cs" />
     <Compile Include="Assets\Script\CardInfo\WildsUnknown\CardInfo_032_JA_12.cs" />
     <Compile Include="Assets\Script\CardInfo\RiseOfTheFloodborn\CardInfo_185_JA_02.cs" />
+    <Compile Include="Assets\ViewModeItemManager.cs" />
     <Compile Include="Assets\Script\CardInfo\AzuriteSea\CardInfo_139_JA_06.cs" />
   </ItemGroup>
   <ItemGroup>
