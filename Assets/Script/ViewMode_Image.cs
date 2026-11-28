@@ -6,24 +6,21 @@ using UnityEngine.UI;
 public class ViewMode_Image : MonoBehaviour
 {
     public Image m_Image;
-    
-    public void SetImage(Sprite paramater, bool isDisplay)
-    {
-        if(paramater == null && !isDisplay)
-        {
-            this.gameObject.SetActive(false);
-            return;
-        }
-        m_Image.sprite = paramater;
+    public Image countImage;
+    public Text m_Text;
 
+    public void SetImage(Sprite paramater, int count)
+    {
         if(paramater == null)
         {
             m_Image.color = new Color(1, 1, 1, 0);
+            countImage.color = new Color(1, 1, 1, 0);
+            m_Text.text = "";
+            return;
         }
-        else 
-        {
-            m_Image.color = new Color(1, 1, 1, 1);
-        }
-        this.gameObject.SetActive(true);
+        m_Image.sprite = paramater;
+        m_Image.color = new Color(1, 1, 1, 1);
+        countImage.color = new Color(1, 1, 1, 1);
+        m_Text.text = count.ToString();
     }
 }

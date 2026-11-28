@@ -149,6 +149,105 @@ public class EditCardPanelManager : MonoBehaviour
         SortEditCardPanelTempList = EditCardPanelTempList;
     }
 
+    public List<EditCardPanelTemp> GetMytEditCardPanelTempList()
+    {
+        List<EditCardPanelTemp> list = new List<EditCardPanelTemp>();
+        switch (m_SortStatus)
+        {
+            case SortStatus.InkSort:
+                for (int i = 0; i < 11; i++)
+                {
+                    for (int k = 0; k < EditCardPanelTempList.Count; k++)
+                    {
+                        if (EditCardPanelTempList[k].GetCardCount() <= 0)
+                        {
+                            continue;
+                        }
+
+                        if (EditCardPanelTempList[k].GetCardInfo().GetInkCost() == i)
+                        {
+                            list.Add(EditCardPanelTempList[k]);
+                        }
+                    }
+                }
+                return list;
+            case SortStatus.ColorSort:
+                List<EditCardPanelTemp> AmberEditCardPanelTempList = new List<EditCardPanelTemp>();
+                List<EditCardPanelTemp> AmethystEditCardPanelTempList = new List<EditCardPanelTemp>();
+                List<EditCardPanelTemp> EmeraldEditCardPanelTempList = new List<EditCardPanelTemp>();
+                List<EditCardPanelTemp> RubyEditCardPanelTempList = new List<EditCardPanelTemp>();
+                List<EditCardPanelTemp> SapphireEditCardPanelTempList = new List<EditCardPanelTemp>();
+                List<EditCardPanelTemp> SteelEditCardPanelTempList = new List<EditCardPanelTemp>();
+
+                for (int i = 0; i < EditCardPanelTempList.Count; i++)
+                {
+                    if (EditCardPanelTempList[i].GetCardCount() <= 0)
+                    {
+                        continue;
+                    }
+                    List<EnumController.Colors> color = EditCardPanelTempList[i].GetCardInfo().GetColor();
+                    switch (color[0])
+                    {
+                        case EnumController.Colors.Amber:
+                            AmberEditCardPanelTempList.Add(EditCardPanelTempList[i]);
+                            break;
+                        case EnumController.Colors.Amethyst:
+                            AmethystEditCardPanelTempList.Add(EditCardPanelTempList[i]);
+                            break;
+                        case EnumController.Colors.Emerald:
+                            EmeraldEditCardPanelTempList.Add(EditCardPanelTempList[i]);
+                            break;
+                        case EnumController.Colors.Ruby:
+                            RubyEditCardPanelTempList.Add(EditCardPanelTempList[i]);
+                            break;
+                        case EnumController.Colors.Sapphire:
+                            SapphireEditCardPanelTempList.Add(EditCardPanelTempList[i]);
+                            break;
+                        case EnumController.Colors.Steel:
+                            SteelEditCardPanelTempList.Add(EditCardPanelTempList[i]);
+                            break;
+                        default:
+                            break;
+                    }
+                }
+
+                for (int i = 0; i < AmberEditCardPanelTempList.Count; i++)
+                {
+                    list.Add(AmberEditCardPanelTempList[i]);
+                }
+                for (int i = 0; i < AmethystEditCardPanelTempList.Count; i++)
+                {
+                    list.Add(AmethystEditCardPanelTempList[i]);
+                }
+                for (int i = 0; i < EmeraldEditCardPanelTempList.Count; i++)
+                {
+                    list.Add(EmeraldEditCardPanelTempList[i]);
+                }
+                for (int i = 0; i < RubyEditCardPanelTempList.Count; i++)
+                {
+                    list.Add(RubyEditCardPanelTempList[i]);
+                }
+                for (int i = 0; i < SapphireEditCardPanelTempList.Count; i++)
+                {
+                    list.Add(SapphireEditCardPanelTempList[i]);
+                }
+                for (int i = 0; i < SteelEditCardPanelTempList.Count; i++)
+                {
+                    list.Add(SteelEditCardPanelTempList[i]);
+                }
+                return list;
+        }
+        for (int i = 0; i < EditCardPanelTempList.Count; i++)
+        {
+            if (EditCardPanelTempList[i].GetCardCount() <= 0)
+            {
+                continue;
+            }
+            list.Add(EditCardPanelTempList[i]);
+        }
+        return list;
+    }
+
     public List<CardInfo> GetDeckList()
     {
         List<CardInfo> list = new List<CardInfo>();
